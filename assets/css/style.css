@@ -1235,3 +1235,68 @@ footer {
     font-size: 0.9rem;
     color: var(--text-secondary);
 }
+
+/* ==========================================================
+   SELF-HOSTED FONTS
+   Fraunces + Manrope served from assets/fonts/ so the site
+   renders correctly behind the Great Firewall — Google Fonts
+   is blocked in mainland China and its <link> would stall
+   first paint. font-display: swap keeps text visible.
+   ========================================================== */
+
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/fraunces-normal-500.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../fonts/fraunces-normal-600.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/fraunces-normal-700.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Fraunces';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/fraunces-italic-400.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/manrope-normal-400.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/manrope-normal-500.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../fonts/manrope-normal-600.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/manrope-normal-700.woff2') format('woff2');
+}

@@ -59,10 +59,10 @@ CSS, and the service context resolve correctly.
 
 ## 4. Known performance risks (pre-launch)
 
-1. **Google Fonts blocked in mainland China.** The site links Google Fonts (Fraunces + Manrope)
-   with `preconnect` but no self-hosted fallback. China-based recruiters (a core audience) may see
-   a flash or a fallback system font. **Action:** self-host the woff2 files and add
-   `font-display: swap` (stack constraint §"Audience"). This is the single biggest remaining
+1. ~~**Google Fonts blocked in mainland China.**~~ **Resolved (2026-07-17):** Fraunces + Manrope
+   are now self-hosted as woff2 in `assets/fonts/` (8 `@font-face` rules in `style.css`,
+   `font-display: swap`). The Google Fonts `<link>` was removed, so the site no longer depends on
+   any China-blocked resource. This was the key enabler for the Gitee/China deployment. This is the single biggest remaining
    perf/availability item.
 2. **Missing images.** Certificate, portrait, and WeChat-QR images are not yet in the repo
    (see ASSET_INVENTORY). Placeholders are shown until supplied. When added, keep each ≤ 300 KB
