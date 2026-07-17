@@ -27,6 +27,20 @@
     --radius-sm:       8px;
     --radius-lg:       16px;
 
+    /* ── Spacing scale (8px base) ───────────────────────── */
+    /* Tokenised in Stage 4 (VISUAL_IDENTITY.md §5) so rhythm
+       stays consistent across components and sections. */
+    --space-1:         0.5rem;   /* 8px  */
+    --space-2:         1rem;     /* 16px */
+    --space-3:         1.5rem;   /* 24px */
+    --space-4:         2rem;     /* 32px */
+    --space-5:         3rem;     /* 48px */
+    --space-6:         4rem;     /* 64px */
+    --space-7:         6rem;     /* 96px */
+    --space-8:         8rem;     /* 128px */
+    --section-py:      112px;    /* desktop section padding */
+    --section-py-mobile: 80px;   /* ≤900px section padding */
+
     /* ── Animation ───────────────────────────────────────── */
     --transition:      300ms ease;
 

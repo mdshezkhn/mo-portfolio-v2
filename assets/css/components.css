@@ -142,6 +142,15 @@
     background: var(--accent-soft);
 }
 
+/* Inline SVG icons (replaces emoji — premium, consistent,
+   no icon font). Sits inline with button / meta text. */
+.ic {
+    width: 1.1em;
+    height: 1.1em;
+    flex-shrink: 0;
+    vertical-align: -0.15em;
+}
+
 /* ==========================================================
    SHARED COMPONENT TOKENS (§2–§11)
    Consolidated declarations extracted from individual

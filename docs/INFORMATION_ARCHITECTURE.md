@@ -1,6 +1,20 @@
 # Information Architecture & Wireframe Specification
 
-**Version:** 1.1 (Approved) · Single page, anchor navigation
+**Version:** 1.2 (Approved) · Single page, anchor navigation · Cinematic six-act narrative (Doc 1C §15)
+
+## 0. Cinematic Narrative Framework (Six Acts)
+
+The portfolio is a single-page cinematic narrative, not a collection of unrelated
+sections. Every section is grouped under one of six acts so the recruiter moves
+impression → journey → evidence → classroom → future → invitation without
+backtracking (Doc 1C §15, PRD §5). The section order below is the approved act order.
+
+1. **Act I – The First Impression** (Hero & identity) → `Hero`
+2. **Act II – The Journey** (Story & experience) → `Story`, `Journey`
+3. **Act III – The Evidence** (Achievements & impact) → `Impact`, `Credentials`
+4. **Act IV – The Classroom** (Teaching philosophy, gallery, research) → `Philosophy`, `Moments`, `Research`
+5. **Act V – The Future** (Vision, leadership, innovation) → `Leadership`
+6. **Act VI – The Invitation** (Contact & call to action) → `Contact`
 
 ## 1. Recruiter Journey Mapping
 | Time | Question | Section(s) | Outcome |
@@ -11,19 +25,37 @@
 | 30–45s | How does he think/grow? | Philosophy, Leadership, Journey | Depth confirmed |
 | 45–60s | How do I act? | Persistent nav CTA + Contact | CV downloaded or contact made |
 
-## 2. Page Order (approved)
+## 2. Page Order (approved — six-act arc)
+
+Grouped by act (§0); section widths preserved from v1.1.
+
+**Act I – The First Impression**
 1. **Hero** (1120) – all pillars
-2. **Impact Highlights** (1120) – ships hidden unless >=3 verified stats
-3. **My Story** (720)
-4. **Teaching Impact** (1120)
-5. **Teaching Philosophy** (720)
-6. **Leadership & Teacher Development** (1120)
-7. **Professional Journey** (1120)
-8. **Research & Innovation** (720)
-9. **Classroom Moments** (1120)
-10. **Credentials** (1120)
-11. **Contact** (720)
+
+**Act II – The Journey**
+2. **Story** (720) – About Me
+3. **Journey** (1120) – Professional Journey timeline
+
+**Act III – The Evidence**
+4. **Impact** (1120) – Skills & Proficiencies
+5. **Credentials** (1120) – Education & Certifications
+
+**Act IV – The Classroom**
+6. **Philosophy** (720) – Teaching philosophy
+7. **Moments** (1120) – Classroom Moments / gallery
+8. **Research** (720) – PGCE practitioner research
+
+**Act V – The Future**
+9. **Leadership** (1120) – Leadership & Direction
+
+**Act VI – The Invitation**
+10. **Contact** (720) – Contact & CTA
 Footer.
+
+> Note: "Impact Highlights" and a standalone "Teaching Impact" section from the
+> v1.1 blueprint were consolidated into the live `Impact` (Skills & Proficiencies)
+> section. If distinct evidence cards are later authored, reintroduce them inside
+> Act III. Testimonials remain hidden until real content exists.
 
 ## 3. Section Specifications
 **Hero** (<=100vh, min 640px): eyebrow (INTERNATIONAL EDUCATOR · [LOCATION]) · name (serif display) · value proposition (<=14 words) · **location + availability line** · Download CV (primary) + Get in touch (secondary) · portrait (5-col, 12px radius) · one static-capable violet wash · subtle scroll cue. Desktop 7/5 split; mobile stacked, full-width CTAs.

@@ -51,8 +51,18 @@ Primary: international school principals, academic directors, heads of school, H
 ## 8. Navigation
 Sticky. Desktop: Logo | My Story | Impact | Philosophy | Leadership | Journey | Research | Moments | Credentials | Contact | [Download CV] (CTA). Mobile: drawer (focus trap, Esc close, scroll lock, aria-expanded). Skip-to-content link first.
 
-## 9. Information Architecture (approved order)
-Hero → Impact Highlights → My Story → Teaching Impact → Teaching Philosophy → Leadership & Teacher Development → Professional Journey → Research & Innovation → Classroom Moments → Credentials → Contact → Footer. Testimonials placeholder hidden until real content exists.
+## 9. Information Architecture (approved order — six-act narrative, Doc 1C §15)
+Single page, anchor navigation, ordered as a cinematic arc (impression → journey →
+evidence → classroom → future → invitation):
+
+**Act I – First Impression:** Hero
+**Act II – The Journey:** Story → Journey
+**Act III – The Evidence:** Impact (Skills & Proficiencies) → Credentials
+**Act IV – The Classroom:** Philosophy → Moments (Gallery) → Research
+**Act V – The Future:** Leadership & Direction
+**Act VI – The Invitation:** Contact → Footer
+
+Testimonials placeholder hidden until real content exists.
 
 ## 10. Safeguarding Policy (mandatory)
 No identifiable students without documented consent. Prefer environments, materials, adult workshops, or wide shots without identifiable faces. Follow school policies. Every image: consent status logged in ASSETS.md before entering the repo. A safeguarding & ethics statement appears in Credentials.

@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set JS-availability flag before first paint. The .reveal hidden
+         state in animations.css is gated on .js, so content stays visible
+         without JS and is never hidden-then-flashed when JS is present. -->
+    <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 
     <!-- Primary Meta -->
     <title>Mohammed Shehzad Khan | International Primary Educator</title>
@@ -100,11 +105,13 @@
                 </button>
                 <ul class="nav-links" id="nav-menu">
                     <li><a href="#story">Story</a></li>
-                    <li><a href="#impact">Impact</a></li>
                     <li><a href="#journey">Journey</a></li>
-                    <li><a href="#leadership">Leadership</a></li>
-                    <li><a href="#research">Research</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#credentials">Credentials</a></li>
+                    <li><a href="#philosophy">Philosophy</a></li>
                     <li><a href="#moments">Gallery</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <a href="assets/documents/Mohammed_Shehzad_Khan_CV.pdf" class="btn btn-primary nav-cta">Download CV</a>
@@ -113,7 +120,7 @@
     </header>
 
     <main id="main-content" tabindex="-1">
-        <!-- HERO -->
+        <!-- ACT I — THE FIRST IMPRESSION (Hero & identity) -->
         <section id="hero" aria-labelledby="hero-heading">
             <div class="container hero-grid">
                 <div class="hero-content">
@@ -121,12 +128,15 @@
                     <h1 id="hero-heading">Mohammed Shehzad Khan</h1>
                     <p class="hero-description">International educator combining classroom excellence, teacher development and evidence-informed practice across multilingual learning environments.</p>
                     <div class="button-group">
-                        <a href="assets/documents/Mohammed_Shehzad_Khan_CV.pdf" class="btn btn-primary" download><span aria-hidden="true">↓</span> Download CV</a>
+                        <a href="assets/documents/Mohammed_Shehzad_Khan_CV.pdf" class="btn btn-primary" download>
+                            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v9m0 0l-4-4m4 4l4-4M5 19h14"/></svg>
+                            Download CV
+                        </a>
                         <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                     </div>
                     <ul class="hero-meta">
-                        <li><span aria-hidden="true">📍</span> Zhengzhou, China</li>
-                        <li><span aria-hidden="true">✔</span> Open to International Opportunities</li>
+                        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.5-6-10a6 6 0 1112 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></svg> Zhengzhou, China</li>
+                        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg> Open to International Opportunities</li>
                     </ul>
                 </div>
                 <div class="hero-image">
@@ -135,7 +145,7 @@
             </div>
         </section>
 
-        <!-- STORY -->
+        <!-- ACT II — THE JOURNEY (Story & experience) -->
         <section id="story" aria-labelledby="story-heading">
             <div class="container reveal">
                 <h2 id="story-heading">About Me</h2>
@@ -146,120 +156,6 @@
             </div>
         </section>
 
-        <!-- IMPACT -->
-        <section id="impact" aria-labelledby="impact-heading">
-            <div class="container reveal">
-                <span class="eyebrow">Expertise</span>
-                <h2 id="impact-heading">Skills &amp; Proficiencies</h2>
-
-                <dl class="stats-grid">
-                    <div class="stat-card">
-                        <dt class="stat-label">Years</dt>
-                        <dd class="stat-num">10+</dd>
-                    </div>
-                    <div class="stat-card">
-                        <dt class="stat-label">Countries</dt>
-                        <dd class="stat-num">2</dd>
-                    </div>
-                    <div class="stat-card">
-                        <dt class="stat-label">Schools</dt>
-                        <dd class="stat-num">4</dd>
-                    </div>
-                    <div class="stat-card">
-                        <dt class="stat-label">Qualifications</dt>
-                        <dd class="stat-num">MA</dd>
-                        <dd class="stat-label">PGCE &middot; B.Ed &middot; B.Sc</dd>
-                    </div>
-                </dl>
-
-                <div class="skill-clusters">
-                    <div class="skill-cluster">
-                        <h3>Classroom &amp; Pedagogy</h3>
-                        <ul class="chips">
-                            <li class="chip">EAL / ESL Instruction</li>
-                            <li class="chip">Primary Literacy Development</li>
-                            <li class="chip">Differentiated Instruction</li>
-                            <li class="chip">Formative &amp; Summative Assessment</li>
-                            <li class="chip">Inclusive Practice</li>
-                            <li class="chip">IB PYP-Aligned Planning</li>
-                        </ul>
-                    </div>
-                    <div class="skill-cluster">
-                        <h3>STEM Integration</h3>
-                        <ul class="chips">
-                            <li class="chip">Cross-Curricular Science &amp; Maths</li>
-                            <li class="chip">Inquiry-Based Learning (5E Model)</li>
-                            <li class="chip">White Rose Maths</li>
-                            <li class="chip">PhET Simulations</li>
-                            <li class="chip">Explorify</li>
-                        </ul>
-                    </div>
-                    <div class="skill-cluster">
-                        <h3>Leadership &amp; Training</h3>
-                        <ul class="chips">
-                            <li class="chip">Teacher Mentoring</li>
-                            <li class="chip">Instructional Quality Assurance</li>
-                            <li class="chip">Curriculum Development</li>
-                            <li class="chip">Professional Development Design</li>
-                            <li class="chip">Performance Coaching</li>
-                        </ul>
-                    </div>
-                    <div class="skill-cluster">
-                        <h3>Research &amp; Frameworks</h3>
-                        <ul class="chips">
-                            <li class="chip">Dialogic Teaching (Alexander, 2020)</li>
-                            <li class="chip">Translanguaging</li>
-                            <li class="chip">Thematic Analysis (Braun &amp; Clarke)</li>
-                            <li class="chip">BERA Guidelines</li>
-                            <li class="chip">Questioning Strategies</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PHILOSOPHY -->
-        <section id="philosophy" aria-labelledby="philosophy-heading">
-            <div class="container reveal">
-                <span class="eyebrow">Professional Identity</span>
-                <h2 id="philosophy-heading">The Philosophy Behind the <em>Teaching</em></h2>
-                <div class="about-grid">
-                    <div>
-                        <blockquote class="about-quote">I believe every multilingual learner carries a <em>unique linguistic landscape</em> — my role is to map it, honour it, and build bridges toward confident academic expression.</blockquote>
-                    </div>
-                    <div class="about-body">
-                        <div class="about-pillar">
-                            <h3>Classroom Strengths</h3>
-                            <p>Language acquisition, literacy development, and inclusive practice for multilingual learners. Structured lessons using formative assessment and differentiation to build confidence in speaking, reading, and academic writing.</p>
-                        </div>
-                        <div class="about-pillar">
-                            <h3>STEM Foundations</h3>
-                            <p>A B.Sc. in Physics and inquiry-based teaching practice underpin a growing strength in cross-curricular science and maths integration — strengthening my primary/EAL profile rather than redefining it.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- LEADERSHIP -->
-        <section id="leadership" aria-labelledby="leadership-heading">
-            <div class="container reveal">
-                <span class="eyebrow">Future Focus</span>
-                <h2 id="leadership-heading">Leadership &amp; Direction</h2>
-                <div class="about-grid">
-                    <div class="about-pillar">
-                        <h3>Leadership Value</h3>
-                        <p>Curriculum development, teacher mentoring, and training design — supporting instructional quality across school and organisational contexts, from single classrooms to teams of 200+ educators.</p>
-                    </div>
-                    <div class="about-pillar">
-                        <h3>Career Direction</h3>
-                        <p>Seeking international or UK-aligned schools in the Gulf and Southeast Asia for an August 2027 start, growing into curriculum, pastoral, or STEM-integration leadership roles.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- JOURNEY -->
         <section id="journey" aria-labelledby="journey-heading">
             <div class="container reveal">
                 <span class="eyebrow">Career Journey</span>
@@ -404,40 +300,78 @@
             </div>
         </section>
 
-        <!-- RESEARCH -->
-        <section id="research" aria-labelledby="research-heading">
+        <!-- ACT III — THE EVIDENCE (Achievements & impact) -->
+        <section id="impact" aria-labelledby="impact-heading">
             <div class="container reveal">
-                <span class="eyebrow">Practitioner Research</span>
-                <h2 id="research-heading">PGCE <em>Research</em></h2>
-                <div class="research-card">
-                    <h3 class="research-title">A Critical Reflection on How Questioning Strategies Can Be Used to Facilitate High-Quality Teaching and Learning in a Bilingual Primary School Setting</h3>
-                    <ul class="research-meta-tags" aria-label="Research metadata">
-                        <li class="badge">75/100 · Master's Level</li>
-                        <li class="badge">University of Cumbria · PGCE7002</li>
-                        <li class="badge">Marked by Christelle Blach-Davies</li>
-                    </ul>
-                    <p class="research-body">Practitioner research examining how questioning strategies can be used to facilitate high-quality teaching and learning and support participation equity in a bilingual primary classroom. The marker noted particular strength in methodology and literature review. Grade is provisional pending university exam board ratification — standard process, not an incomplete qualification.</p>
+                <span class="eyebrow">Expertise</span>
+                <h2 id="impact-heading">Skills &amp; Proficiencies</h2>
+
+                <dl class="stats-grid">
+                    <div class="stat-card">
+                        <dt class="stat-label">Years</dt>
+                        <dd class="stat-num">10+</dd>
+                    </div>
+                    <div class="stat-card">
+                        <dt class="stat-label">Countries</dt>
+                        <dd class="stat-num">2</dd>
+                    </div>
+                    <div class="stat-card">
+                        <dt class="stat-label">Schools</dt>
+                        <dd class="stat-num">4</dd>
+                    </div>
+                    <div class="stat-card">
+                        <dt class="stat-label">Qualifications</dt>
+                        <dd class="stat-num">MA</dd>
+                        <dd class="stat-label">PGCE &middot; B.Ed &middot; B.Sc</dd>
+                    </div>
+                </dl>
+
+                <div class="skill-clusters">
+                    <div class="skill-cluster">
+                        <h3>Classroom &amp; Pedagogy</h3>
+                        <ul class="chips">
+                            <li class="chip">EAL / ESL Instruction</li>
+                            <li class="chip">Primary Literacy Development</li>
+                            <li class="chip">Differentiated Instruction</li>
+                            <li class="chip">Formative &amp; Summative Assessment</li>
+                            <li class="chip">Inclusive Practice</li>
+                            <li class="chip">IB PYP-Aligned Planning</li>
+                        </ul>
+                    </div>
+                    <div class="skill-cluster">
+                        <h3>STEM Integration</h3>
+                        <ul class="chips">
+                            <li class="chip">Cross-Curricular Science &amp; Maths</li>
+                            <li class="chip">Inquiry-Based Learning (5E Model)</li>
+                            <li class="chip">White Rose Maths</li>
+                            <li class="chip">PhET Simulations</li>
+                            <li class="chip">Explorify</li>
+                        </ul>
+                    </div>
+                    <div class="skill-cluster">
+                        <h3>Leadership &amp; Training</h3>
+                        <ul class="chips">
+                            <li class="chip">Teacher Mentoring</li>
+                            <li class="chip">Instructional Quality Assurance</li>
+                            <li class="chip">Curriculum Development</li>
+                            <li class="chip">Professional Development Design</li>
+                            <li class="chip">Performance Coaching</li>
+                        </ul>
+                    </div>
+                    <div class="skill-cluster">
+                        <h3>Research &amp; Frameworks</h3>
+                        <ul class="chips">
+                            <li class="chip">Dialogic Teaching (Alexander, 2020)</li>
+                            <li class="chip">Translanguaging</li>
+                            <li class="chip">Thematic Analysis (Braun &amp; Clarke)</li>
+                            <li class="chip">BERA Guidelines</li>
+                            <li class="chip">Questioning Strategies</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- GALLERY / MOMENTS -->
-        <section id="moments" aria-labelledby="moments-heading">
-            <div class="container reveal">
-                <span class="eyebrow">Teaching in Practice</span>
-                <h2 id="moments-heading">A Look Inside the <em>Classroom</em></h2>
-                <!-- Placeholder until a real video ID is supplied (Autonomous Protocol pause reason #2):
-                     swap .video-placeholder for:
-                     <iframe src="https://www.youtube.com/embed/REAL_ID"
-                             title="Teaching demonstration" allowfullscreen></iframe> -->
-                <div class="video-wrap video-placeholder" role="img" aria-label="Teaching demonstration video — coming soon">
-                    <span class="video-play" aria-hidden="true">&#9654;</span>
-                    <p class="video-note">Teaching demonstration video coming soon</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CREDENTIALS -->
         <section id="credentials" aria-labelledby="credentials-heading">
             <div class="container reveal">
                 <span class="eyebrow">Academic Formation</span>
@@ -526,10 +460,151 @@
                         <p>Formal certification once the exam board ratifies the provisional grade.</p>
                     </div>
                 </div>
+
+                <h3 class="subsection-title">Languages</h3>
+                <ul class="lang-list">
+                    <li><strong>English</strong> — fluent (teaching &amp; assessment medium)</li>
+                    <li><strong>Hindi</strong> — [NEEDS INPUT: proficiency level]</li>
+                    <li><strong>Urdu</strong> — [NEEDS INPUT: proficiency level]</li>
+                    <li><strong>Mandarin Chinese</strong> — [NEEDS INPUT: proficiency level]</li>
+                </ul>
+
+                <h3 class="subsection-title">Safeguarding &amp; Ethics</h3>
+                <p class="safeguard-note">All classroom photography on this site is published only with documented parental or guardian consent and in line with school safeguarding policy. No identifiable students appear without consent; images are chosen to show environment, materials, and practice rather than individual faces. Professional references and employment documents are shared on request only.</p>
             </div>
         </section>
 
-        <!-- CONTACT -->
+        <!-- ACT IV — THE CLASSROOM (Teaching philosophy, gallery, research) -->
+        <section id="philosophy" aria-labelledby="philosophy-heading">
+            <div class="container reveal">
+                <span class="eyebrow">Professional Identity</span>
+                <h2 id="philosophy-heading">The Philosophy Behind the <em>Teaching</em></h2>
+                <div class="about-grid">
+                    <div>
+                        <blockquote class="about-quote">I believe every multilingual learner carries a <em>unique linguistic landscape</em> — my role is to map it, honour it, and build bridges toward confident academic expression.</blockquote>
+                    </div>
+                    <div class="about-body">
+                        <div class="about-pillar">
+                            <h3>Classroom Strengths</h3>
+                            <p>Language acquisition, literacy development, and inclusive practice for multilingual learners. Structured lessons using formative assessment and differentiation to build confidence in speaking, reading, and academic writing.</p>
+                        </div>
+                        <div class="about-pillar">
+                            <h3>STEM Foundations</h3>
+                            <p>A B.Sc. in Physics and inquiry-based teaching practice underpin a growing strength in cross-curricular science and maths integration — strengthening my primary/EAL profile rather than redefining it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="moments" aria-labelledby="moments-heading">
+            <div class="container reveal">
+                <span class="eyebrow">Teaching in Practice</span>
+                <h2 id="moments-heading">A Look Inside the <em>Classroom</em></h2>
+                <p class="moments-intro">Real moments from bilingual primary classrooms — inquiry, literacy, and STEM in action. Every image is published only with safeguarding consent.</p>
+
+                <div class="gallery" data-gallery>
+                    <div class="gallery-filters" role="group" aria-label="Filter classroom moments by theme">
+                        <button type="button" class="gallery-filter is-active" data-filter="all" aria-pressed="true">All</button>
+                        <button type="button" class="gallery-filter" data-filter="literacy" aria-pressed="false">Literacy</button>
+                        <button type="button" class="gallery-filter" data-filter="stem" aria-pressed="false">STEM</button>
+                        <button type="button" class="gallery-filter" data-filter="language" aria-pressed="false">EAL &amp; Language</button>
+                    </div>
+
+                    <!-- Captions are placeholders — replace with accurate descriptions when
+                         real photos are supplied (safeguarding + content accuracy). -->
+                    <ul class="gallery-grid">
+                        <li class="gallery-item" data-category="literacy">
+                            <figure>
+                                <img src="assets/images/classroom/2025-Classroom-Guided-Reading.webp" alt="Classroom moment — a small group engaged in guided reading" loading="lazy" width="800" height="600">
+                                <figcaption>Small-group guided reading in a bilingual primary classroom.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="gallery-item" data-category="stem">
+                            <figure>
+                                <img src="assets/images/classroom/2025-Classroom-STEM-Activity.webp" alt="Classroom moment — students exploring a hands-on STEM activity" loading="lazy" width="800" height="600">
+                                <figcaption>Hands-on STEM: building and testing ideas through inquiry.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="gallery-item" data-category="language">
+                            <figure>
+                                <img src="assets/images/classroom/2025-Classroom-EAL-Lesson.webp" alt="Classroom moment — an EAL speaking and listening activity" loading="lazy" width="800" height="600">
+                                <figcaption>EAL speaking and listening — confidence through communicative tasks.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="gallery-item" data-category="literacy">
+                            <figure>
+                                <img src="assets/images/classroom/2023-Classroom-Writing.webp" alt="Classroom moment — students drafting and editing writing" loading="lazy" width="800" height="600">
+                                <figcaption>Writing workshop: drafting, feedback, and redrafting.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="gallery-item" data-category="stem">
+                            <figure>
+                                <img src="assets/images/classroom/2023-Classroom-Science.webp" alt="Classroom moment — a primary science investigation" loading="lazy" width="800" height="600">
+                                <figcaption>Primary science: questioning and observing the world.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="gallery-item" data-category="language">
+                            <figure>
+                                <img src="assets/images/classroom/2024-Classroom-Group-Work.webp" alt="Classroom moment — collaborative language learning" loading="lazy" width="800" height="600">
+                                <figcaption>Collaborative learning that builds language and relationships.</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+
+                    <p class="gallery-empty" hidden>No moments in this category yet.</p>
+                </div>
+
+                <h3 class="subsection-title">Teaching Demonstration</h3>
+                <!-- Placeholder until a real video is supplied (Autonomous Protocol pause reason #2).
+                     Swap .video-placeholder for a self-hosted <video> or, if unavoidable, a YouTube
+                     embed. Note: YouTube is blocked in mainland China — prefer a self-hosted .mp4. -->
+                <div class="video-wrap video-placeholder" role="img" aria-label="Teaching demonstration video — coming soon">
+                    <span class="video-play" aria-hidden="true">&#9654;</span>
+                    <p class="video-note">Teaching demonstration video coming soon</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" aria-labelledby="research-heading">
+            <div class="container reveal">
+                <span class="eyebrow">Practitioner Research</span>
+                <h2 id="research-heading">PGCE <em>Research</em></h2>
+                <div class="research-card">
+                    <h3 class="research-title">A Critical Reflection on How Questioning Strategies Can Be Used to Facilitate High-Quality Teaching and Learning in a Bilingual Primary School Setting</h3>
+                    <ul class="research-meta-tags" aria-label="Research metadata">
+                        <li class="badge">75/100 · Master's Level</li>
+                        <li class="badge">University of Cumbria · PGCE7002</li>
+                        <li class="badge">Marked by Christelle Blach-Davies</li>
+                    </ul>
+                    <p class="research-body">Practitioner research examining how questioning strategies can be used to facilitate high-quality teaching and learning and support participation equity in a bilingual primary classroom. The marker noted particular strength in methodology and literature review. Grade is provisional pending university exam board ratification — standard process, not an incomplete qualification.</p>
+                    <h3 class="research-sub">How this research changed my classroom</h3>
+                    <p>[NEEDS INPUT: 2–3 sentences on a concrete change to your practice — e.g., a questioning routine you now use, and its effect on student participation or equity.]</p>
+                    <h3 class="research-sub">Publications</h3>
+                    <p>[NEEDS INPUT: list any published or submitted works, or remove this slot.]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACT V — THE FUTURE (Vision, leadership, innovation) -->
+        <section id="leadership" aria-labelledby="leadership-heading">
+            <div class="container reveal">
+                <span class="eyebrow">Future Focus</span>
+                <h2 id="leadership-heading">Leadership &amp; Direction</h2>
+                <div class="about-grid">
+                    <div class="about-pillar">
+                        <h3>Leadership Value</h3>
+                        <p>Curriculum development, teacher mentoring, and training design — supporting instructional quality across school and organisational contexts, from single classrooms to teams of 200+ educators.</p>
+                    </div>
+                    <div class="about-pillar">
+                        <h3>Career Direction</h3>
+                        <p>Seeking international or UK-aligned schools in the Gulf and Southeast Asia for an August 2027 start, growing into curriculum, pastoral, or STEM-integration leadership roles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACT VI — THE INVITATION (Contact & call to action) -->
         <section id="contact" aria-labelledby="contact-heading">
             <div class="container reveal">
                 <span class="eyebrow">Get In Touch</span>
@@ -575,8 +650,23 @@
     <!-- ===================================================== -->
 
     <footer>
-        <div class="container">
-            <p>© 2026 Mohammed Shehzad Khan</p>
+        <div class="container footer-inner">
+            <p class="footer-copy">© 2026 Mohammed Shehzad Khan</p>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="#story">Story</a>
+                <a href="#journey">Journey</a>
+                <a href="#impact">Impact</a>
+                <a href="#credentials">Credentials</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="#moments">Gallery</a>
+                <a href="#research">Research</a>
+                <a href="#leadership">Leadership</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/mdshezkhn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:mdshezkhn@hotmail.com">Email</a>
+            </div>
         </div>
     </footer>
 

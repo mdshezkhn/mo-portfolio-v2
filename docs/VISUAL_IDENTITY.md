@@ -1,94 +1,184 @@
 # Visual Identity & Design Language Guide
 
-**Version:** 1.1 (Approved)
+**Version:** 2.0 (Reconciled to live build — 2026-07-17)
+**Authority:** Design-system layer of Project Meridian. Subordinate to Document 1 (1A/1B/1C) and the Creative Constitution (2A). Where this guide and 2A conflict, 2A wins.
+
+> **Reconciliation note.** v1.1 of this guide specified a *dark violet* system
+> (`--bg:#0B0B0D`, `--accent:#7C5CFC`, grain, violet underglows). The implemented
+> build is a *light navy editorial* system and uses none of those treatments. Document
+> 2A §12 explicitly describes a light mood — "natural light, open spaces, a beautifully
+> designed international school campus, premium materials" — so per the authority order
+> (2A > older specs) this guide is reconciled to the **live light/navy build**. All
+> v1.1 divergences are corrected inline below.
+
+---
 
 ## 1. Governing Principles
-1. **Design for longevity** – credible for 5+ years; timeless over trendy; any "current-year trend" pattern rejected by default
-2. **Calm authority** – composed, precise, warm; nothing shouts
-3. **Evidence has visual priority** – strongest emphasis reserved for evidence, not decoration
-4. **One accent, used with discipline** – violet means "this matters or is interactive"
-5. **Pillars shape emphasis** – every section visually reinforces at least one pillar
+1. **Design for longevity** — credible for 5+ years; timeless over trendy.
+2. **Calm authority** — composed, precise, warm; nothing shouts.
+3. **Evidence has visual priority** — strongest emphasis reserved for evidence, not decoration.
+4. **One accent (navy), used with discipline** — navy means "this matters or is interactive."
+5. **Pillars shape emphasis** — every section visually reinforces at least one pillar.
+
+---
 
 ## 2. Mood
-Editorial, not promotional. A beautifully typeset journal profile of an educator. Dark quiet backdrop, generous space. Feeling: serious, accomplished, human. **Backgrounds must never compete with content** – if noticeable while reading, too strong.
+Light, editorial, not promotional. A beautifully typeset journal profile of an educator.
+Soft near-white backdrop, generous space, natural light. Feeling: serious, accomplished,
+human. **Backgrounds must never compete with content** — if noticeable while reading, too strong.
 
-## 3. Color Tokens
+---
+
+## 3. Color Tokens (live values, 2A-aligned)
+
 | Token | Value | Role |
 |---|---|---|
-| --bg | #0B0B0D | Page background |
-| --bg-elevated | #121216 | Section alternation |
-| --surface | #17171C | Cards |
-| --surface-raised | #1E1E24 | Hover, nested cards |
-| --text | #F5F5F7 | Headings, primary (~17:1) |
-| --text-secondary | #B9B9C3 | Body (~10:1) |
-| --text-muted | #8A8A96 | Captions, metadata (~5:1) |
-| --accent | #7C5CFC | Buttons, borders, markers, glows (non-text UI) |
-| --accent-text | #A78BFA | Link text, highlights (~7:1) |
-| --accent-soft | rgba(124,92,252,0.12) | Tints, washes, tags |
-| --border | rgba(255,255,255,0.08) | Hairlines |
-| --border-strong | rgba(255,255,255,0.14) | Emphasized dividers |
+| `--bg` | `#F8FAFC` | Page background (near-white) |
+| `--text` | `#111827` | Headings, primary (~16:1 on bg) |
+| `--text-secondary` | `#374151` | Body (~10:1 on bg) |
+| `--text-muted` | `#4B5563` | Captions, metadata (~7:1 on bg) |
+| `--accent` | `#1E3A5F` | Buttons, borders, markers, links (navy) |
+| `--accent-soft` | `rgba(30,58,95,.08)` | Tints, washes, tags |
+| `--border` | `#E5E7EB` | Hairlines |
+| `--border-strong` | `#64748B` | Emphasized dividers (≥3:1 on white) |
 
-Contrast re-verified in Sprint 1; hexes nudged if any pair falls below AA. Grain <=3% opacity on --bg only. Gradients: violet radial washes <=10% opacity, max one per viewport height.
+No `--bg-elevated` / `--surface` tokens — this is a **flat light theme**; cards are white
+sitting on the near-white background, separated by 1px borders + subtle neutral shadows.
+No grain, no violet radial washes (both removed vs v1.1).
 
-## 4. Typography (official: Fraunces + Manrope)
-- **Headings:** Fraunces (serif, warm, academic, timeless)
-- **Body:** Manrope (readable, distinctive, not tech-startup default)
-- Never use Inter, Roboto, or Arial. Max 4 weights total, Google Fonts for v1.
-- Display 44–76px serif 600 · H2 32–48px serif · H3 20–24px sans 600 · Body 17–18px, line-height 1.7, max 68ch · Labels 13–14px uppercase letter-spaced muted
-- No weights below 400 for body; italics for quotations only; uppercase label style = pillar tags and section eyebrows
+**Shadows (neutral, not violet):**
+`--shadow-card: 0 4px 12px rgba(0,0,0,.03)` · `--shadow-card-hover: 0 12px 24px rgba(0,0,0,.06)` · `--shadow-subtle: 0 4px 6px -1px rgba(0,0,0,.05)`.
 
-## 5. Spacing
-8px base: 4/8/12/16/24/32/48/64/96/128/160. Sections 128px desktop / 80px mobile. Heading-to-content 48px. Card padding 32px. Whitespace is the primary hierarchy tool.
+---
+
+## 4. Typography (Fraunces + Manrope, self-hosted)
+- **Headings:** Fraunces (serif, warm, academic, timeless).
+- **Body:** Manrope (readable, distinctive).
+- **Self-hosted woff2** with `font-display: swap` — replaces Google Fonts (blocked in
+  mainland China, was render-blocking). No external font requests.
+- Max 4 weights (400/500/600/700). Never Inter, Roboto, or Arial.
+- Display `clamp(3rem,6vw,4.8rem)` serif · H2 `clamp(2.3rem,4vw,3.2rem)` serif · H3 `1.5rem` ·
+  Body `1rem–1.2rem`, line-height `1.65`, max `62ch` · Labels `.875rem` uppercase letter-spaced accent.
+- Italics for quotations only; uppercase label style = section eyebrows.
+
+---
+
+## 5. Spacing (tokenised, 8px base)
+```
+--space-1: 0.5rem;   /* 8px  */
+--space-2: 1rem;     /* 16px */
+--space-3: 1.5rem;   /* 24px */
+--space-4: 2rem;     /* 32px */
+--space-5: 3rem;     /* 48px */
+--space-6: 4rem;     /* 64px */
+--space-7: 6rem;     /* 96px */
+--space-8: 8rem;     /* 128px */
+--section-py:       112px;   /* desktop section padding */
+--section-py-mobile: 80px;   /* ≤900px section padding */
+```
+Whitespace is the primary hierarchy tool. Generous vertical rhythm between sections.
+
+---
 
 ## 6. Grid & Width Rhythm
-12-column, 24px gutters, max 1120px, side padding 24/48px. Breakpoints 480/768/1024/1280. **Rhythm:** Hero 1120 → reading sections 720 → evidence/gallery 1120 → contact 720. Asymmetric editorial splits permitted.
+Max `1120px` (`--container`), side padding `24px`. Breakpoints `480 / 900`.
+Hero `55fr / 45fr` split → reading sections single/two-column → evidence/gallery `1120` →
+contact two-column. Asymmetric editorial splits permitted.
+
+---
 
 ## 7. Radii
-Buttons/tags 8px · cards/images 12px · large panels 16px · pills only for pillar tags · no circular images except optional small footer avatar.
+Buttons/tags `8px` (`--radius-sm`) · cards/images `8px` · large panels/hero `16px` (`--radius-lg`).
+No circular images except the optional small footer avatar.
+
+---
 
 ## 8. Elevation
-Depth via surface lightness, not drop shadows. Flat (--bg) → Card (--surface + --border) → Raised (--surface-raised + --border-strong + single soft violet underglow 0 8px 32px rgba(124,92,252,0.10)). Glass only on sticky nav.
+Depth via **subtle neutral shadows + 1px borders**, not coloured glows.
+Flat (`--bg`) → Card (white + `--border`) → Hover (`--shadow-card-hover` + `--accent-soft` border).
+No violet underglow (removed vs v1.1).
+
+---
 
 ## 9. Borders
-1px hairlines. Violet borders reserved for: focus, active timeline node, primary CTA.
+1px hairlines, neutral. Navy accent borders reserved for: focus ring, active timeline node, primary CTA hover.
+
+---
 
 ## 10. Card Hierarchy
-- **Tier 1 Evidence** (Impact/Leadership): pillar tag, headline, detail, on-card source line; only tier with accent-tinted icons
-- **Tier 2 Timeline**: accent spine, violet nodes, otherwise quiet
-- **Tier 3 Lists** (Credentials): compact, metadata-styled
+- **Tier 1 Evidence** (Impact / Leadership): tag, headline, detail, source line.
+- **Tier 2 Timeline**: accent spine, navy nodes, otherwise quiet.
+- **Tier 3 Lists** (Credentials): compact, metadata-styled.
 Tier 1 must be distinguishable from Tier 3 at a squint.
 
+---
+
 ## 11. Buttons
-- **Primary** (Download CV): --accent fill, white 600/>=16px text, hover lighten 8% + lift 2px, 2px offset focus ring
-- **Secondary**: transparent, --border-strong, hover --accent-soft wash
-- **Tertiary**: --accent-text link, underline on hover
-**Rule: only one visually dominant action per viewport.**
+- **Primary** (Download CV): `--accent` fill, white `600`, hover lift `-2px` + shadow.
+- **Secondary**: transparent, `--border-strong`, hover `--accent-soft` wash.
+- **Rule:** only one visually dominant action per viewport.
+
+---
 
 ## 12. Iconography
-Font Awesome, one style (regular/light), **max 8 distinct icons site-wide**, 20–24px, --text-muted default, accent only in Tier 1 cards. Icons support labels, never replace them. Decorative icons aria-hidden.
+**Inline SVG** (20–24px, `currentColor`) or unicode glyphs. **No icon font** (Font Awesome
+dropped — avoids an external dependency, China-safe, smaller payload). Max ~6 distinct icons
+site-wide. Icons support labels, never replace them; `aria-hidden` when decorative.
+> Note: the current build uses 2–3 emoji (↓ ✔ 📍) in the hero/contact. These are to be
+> replaced with inline SVG in Stage 6 for a more premium, consistent treatment.
+
+---
 
 ## 13. Photography
-Authentic, warm natural color, no filters/duotone/violet tinting. 12px radius, subtle border frame. Caption + alt text on every image. **Portraits show approachability and confidence rather than authority – warmth over executive polish.** Safeguarding rules apply without exception.
+Authentic, warm natural colour, no filters/duotone/violet tinting. 8–16px radius, subtle
+border frame. Caption + alt text on every image. **Portraits show approachability and
+confidence rather than authority — warmth over executive polish.** Safeguarding rules apply.
+
+---
 
 ## 14. Graphics
-No decorative illustration. Functional only: simple country treatment for Global Professional, clean typographic stats.
+No decorative illustration. Functional only: clean typographic stats, simple country treatment.
 
-## 15. Motion
-Durations 150/300/500ms. Entrances: confident ease-out cubic-bezier(0.16,1,0.3,1); fade + **8–12px rise** (12 large panels, 8 small), 60ms stagger, fire once at ~20% intersection. prefers-reduced-motion: everything instant and fully visible. JS failure: content visible by default. No loops except <=3% background drift.
+---
+
+## 15. Motion (outside the Trust Equation — 2A §18/§19)
+Durations `300ms` UI · `650ms` reveals. Entrances: ease-out, **fade + ~20px rise**
+(target: tighten to 8–12px in Stage 6/7), `100–400ms` stagger, fire once at ~15% intersection.
+`prefers-reduced-motion`: everything instant and fully visible. JS failure: content visible by
+default. **No loops, no background drift, no scroll-jacking, no parallax.** Animation supports
+trust; it does not create it. The build uses only CSS reveals + a restrained hero entrance —
+no GSAP, no Three.js.
+
+---
 
 ## 16. Pillar Expression
-One consistent uppercase violet-soft pill for all five pillars (no per-pillar colors). Appears on Tier 1 cards, timeline milestones, section eyebrows.
+Pillars are expressed via section eyebrows + the navy accent (no per-pillar colours). An
+optional uppercase navy-soft pill may mark pillar tags on Tier 1 cards.
+
+---
 
 ## 17. Longevity Guardrails (avoided)
-Indiscriminate bento layouts (bento only where it improves hierarchy: Impact, Skills), neon meshes, glass beyond nav, cursor effects, scroll-jacking, marquee, AI-art imagery, rainbow pillar coding, cleverness-for-its-own-sake.
+Bento overuse, neon meshes, glass beyond the nav, cursor effects, scroll-jacking, marquee,
+AI-art imagery, rainbow pillar coding, cleverness-for-its-own-sake, **excessive 3D** (2A §19 —
+deliberately zero Three.js).
+
+---
 
 ## 18. Content Voice & Tone
-Reflective, precise, evidence-based, human, concise. First person, active voice, claims followed by evidence. Avoid: corporate jargon, inspirational cliches, AI-sounding prose, unsupported adjectives ("passionate", "dynamic", "results-driven"). Mixed short/medium sentences, paragraphs 2–4 sentences, headings clear over clever.
+Reflective, precise, evidence-based, human, concise. First person, active voice, claims
+followed by evidence. Avoid: corporate jargon, inspirational clichés, AI-sounding prose,
+unsupported adjectives ("passionate", "dynamic", "results-driven"). Mixed short/medium
+sentences, paragraphs 2–4 sentences, headings clear over clever.
+
+---
 
 ## 19. Component Behavior
-- **Nav:** sticky 72/64px; transparent over hero, blur + hairline after 40px scroll; scroll-spy accent underline; smooth anchors with header offset
-- **Timeline:** vertical spine, nodes fill violet on viewport entry, alternating desktop / left mobile, reveal once
-- **Gallery:** filter pills, lazy grid, minimal lightbox (Esc, arrows, focus return); no autoplay/carousel
-- **Accordion:** native details/summary, chevron 300ms
-- **Tooltips:** none in v1
-- **Section transitions:** no dividers; --bg/--bg-elevated alternation + spacing
+- **Nav:** sticky `72px`; blur + hairline; scroll-spy accent (`aria-current="page"`);
+  focus-trapped drawer (Esc, outside-click, focus return); smooth anchors with header offset
+  (`scroll-margin-top: 72px`).
+- **Timeline:** vertical spine, navy nodes, **left-aligned** (intentional — cleaner than
+  alternating); reveal once; **no JS required** (timeline.js stub removed).
+- **Gallery:** filter pills, lazy grid, minimal lightbox (Esc, arrows, focus return); no
+  autoplay/carousel. *(To be built — Stage 5/6.)*
+- **Accordion:** native `details/summary` if needed.
+- **Section transitions:** spacing + background only, no dividers.

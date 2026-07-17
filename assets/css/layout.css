@@ -41,6 +41,45 @@ section {
 footer {
     padding: 64px 0;
     border-top: 1px solid var(--border);
-    text-align: center;
     color: var(--text-muted);
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem 2rem;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.25rem;
+}
+
+.footer-nav a {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    transition: color var(--transition);
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus-visible {
+    color: var(--accent);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.footer-social a {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
 }
