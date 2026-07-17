@@ -1,3 +1,31 @@
+## Gitee Deployment + Font Self-Hosting (2026-07-17)
+
+Switched the deploy target from GitLab Pages to **Gitee Pages** so the site is reachable
+inside mainland China (GitLab is blocked by the Great Firewall).
+
+### Files Changed
+- `index.html` — removed the Google Fonts `<link>` + preconnects (render-blocking and
+  China-blocked); repointed canonical / Open Graph / Twitter / JSON-LD URLs to the Gitee
+  Pages pattern `<gitee-username>.gitee.io/mo-portfolio/` (replace the placeholder with your
+  real Gitee username before pushing).
+- `assets/css/style.css` — added 8 `@font-face` rules (Fraunces 500/600/700 + italic 400,
+  Manrope 400/500/600/700) serving woff2 from `assets/fonts/`.
+- `assets/fonts/*.woff2` — 8 self-hosted font files (latin subset).
+- `gitee-pages.yml` — added (branch: main, directory: ., https: true).
+- `.gitlab-ci.yml` — removed (no longer the deploy target).
+- `docs/PERFORMANCE.md`, `docs/PRD.md` — Google Fonts China risk marked resolved.
+
+### Why
+The stated goal is access from within China. Google Fonts is blocked there, so the previous
+build would have stalled first paint and fallen back to system fonts. Self-hosting the woff2
+files removes that dependency entirely.
+
+### Pre-launch action
+- Replace `<gitee-username>` in `index.html` with your actual Gitee username, then push to
+  Gitee and enable Gitee Pages in the repo's Services panel.
+
+---
+
 ## Stages 8–13 — Optimize · Accessibility · Performance · QA · Docs · Delivery (2026-07-17)
 
 ### Files Changed
