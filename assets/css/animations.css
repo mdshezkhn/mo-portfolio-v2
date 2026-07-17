@@ -1,0 +1,85 @@
+/* ==========================================================
+   animations.css
+   All motion is opt-in. When prefers-reduced-motion is set,
+   this entire block is skipped — no keyframes, no hidden
+   states. JS respects this flag before adding .reveal.
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+
+    /* ── Keyframes ──────────────────────────────────────── */
+
+    @keyframes hero-fade-up {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    @keyframes hero-fade-in {
+        from {
+            opacity: 0;
+            transform: scale(0.97);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /* ── Hero entrance — staggered, top-to-bottom ───────── */
+    /* animation-fill-mode: both holds the from-state before
+       the delay fires, preventing a flash. */
+
+    #hero .eyebrow {
+        animation: hero-fade-up 0.6s ease both;
+    }
+
+    #hero h1 {
+        animation: hero-fade-up 0.65s 0.1s ease both;
+    }
+
+    #hero .hero-description {
+        animation: hero-fade-up 0.65s 0.2s ease both;
+    }
+
+    #hero .button-group {
+        animation: hero-fade-up 0.65s 0.3s ease both;
+    }
+
+    #hero .hero-meta {
+        animation: hero-fade-up 0.65s 0.4s ease both;
+    }
+
+    #hero .hero-image {
+        animation: hero-fade-in 0.9s 0.15s ease both;
+    }
+
+    /* ── Scroll-reveal ──────────────────────────────────── */
+    /* JS adds .reveal to section containers then .is-visible
+       when they enter the viewport. Without JS, .reveal is
+       never added — content remains fully visible. */
+
+    .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* ── Header scroll shadow ───────────────────────────── */
+
+    .site-header.is-scrolled {
+        box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+    }
+
+}

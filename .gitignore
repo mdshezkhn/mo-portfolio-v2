@@ -1,0 +1,14 @@
+# Ignore OS and editor artefacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node (not used, but here for safety)
+node_modules/
+
+# Private documents — never commit
+private/
+
+# Build outputs
+dist/
