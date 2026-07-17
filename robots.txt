@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mdshezkhn.github.io/mo-portfolio/sitemap.xml

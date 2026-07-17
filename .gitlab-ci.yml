@@ -1,0 +1,23 @@
+# GitLab CI/CD Pipeline
+# Deploys this static portfolio to GitLab Pages automatically
+# on every push to the main branch.
+#
+# The public/ directory is GitLab Pages' required output folder.
+# We copy the entire project root into public/ during the build stage.
+
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  image: alpine:latest
+  script:
+    # Copy all site files into the public/ directory
+    # GitLab Pages serves from public/ only
+    - mkdir -p public
+    - cp -r index.html assets robots.txt sitemap.xml manifest.webmanifest favicon.ico public/ 2>/dev/null || true
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"

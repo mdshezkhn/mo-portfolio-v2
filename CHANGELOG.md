@@ -1,10 +1,3 @@
-# Changelog
-
-## Planning phase (pre-Sprint 1)
-
-### PRD v1.2
-- Single-page architecture confirmed; GitLab Pages URL for v1; rebuild from scratch
-- Added five Portfolio Pillars as narrative backbone
 - Added Section 22 Recruiter Journey (0–60s mapping)
 - Google Fonts + Font Awesome retained for v1; performance target >=90 launch / >=95 post-optimization
 - Page-weight budget replaced with lazy-loading + responsive images + FCP <1.5s
@@ -30,3 +23,33 @@
 - Purpose field added to every slot; Content Priority Matrix embedded per section
 - Evidence Source made a hard publish gate; Proof Folder (private, off-repo) adopted
 - Portfolio Asset Register adopted (ASSETS.md)
+
+## Sprint 3 - Hero complete
+
+### Files Changed
+- `index.html`
+- `assets/css/style.css`
+- `assets/js/main.js`
+
+### Why
+- To optimize loading performance, ensure strict WCAG AA accessibility compliance, and eliminate dead code, all without altering visual appearance.
+
+### New Features
+- None.
+
+### Fixes
+- **HTML:** Added `tabindex="-1"` to `<main>` to enable reliable skip-link keyboard navigation.
+- **HTML:** Connected all `<section>` elements to their headings via `aria-labelledby`, establishing valid ARIA landmarks.
+- **HTML:** Moved `main.js` to `<head>` and added `defer` for non-blocking parallel loading.
+- **HTML:** Removed deprecated `<meta name="author">` tag.
+- **CSS:** Darkened `--text-muted` and `--border-strong` colors to pass WCAG AA contrast ratios (4.5:1 and 3:1 respectively).
+- **CSS:** Removed unused CSS variables (`--bg-elevated`, `--surface-raised`, `--radius-md`, `--accent-text`).
+- **CSS:** Removed orphaned transition code and unused `.card` rules.
+- **CSS:** Removed unnecessary `transform` and `box-shadow` properties from nav link hover transitions.
+- **CSS:** Relocated `::selection` pseudo-element out of a mobile-only media query to apply globally.
+- **CSS:** Added a rule to prevent a focus outline on `<main>` when targeted by the skip link.
+
+### Known Issues
+- `assets/documents/Mohammed_Shehzad_Khan_CV.pdf` is missing; "Download CV" links throw a 404.
+- Mobile menu lacks a keyboard focus trap; users can tab out into hidden background content.
+- Deferring `main.js` introduced a regression: scroll-reveal elements briefly appear fully painted before the script hides them (Flash of Visible Content).
