@@ -53,3 +53,42 @@
 - `assets/documents/Mohammed_Shehzad_Khan_CV.pdf` is missing; "Download CV" links throw a 404.
 - Mobile menu lacks a keyboard focus trap; users can tab out into hidden background content.
 - Deferring `main.js` introduced a regression: scroll-reveal elements briefly appear fully painted before the script hides them (Flash of Visible Content).
+
+## V2 Remediation — Autonomous Pass (Project Meridian V2, Doc 1C)
+
+### Files Changed
+- `index.html`
+- `assets/css/fonts.css` (new)
+- `assets/css/{variables,reset,typography,layout,components,sections,animations,responsive}.css`
+- `assets/js/utilities.js` (new)
+- `assets/js/main.js`
+- `assets/fonts/Fraunces-normal.woff2`, `Fraunces-italic.woff2`, `Manrope-normal.woff2` (new)
+- Deleted: `assets/css/style.css` (obsolete `@import` wrapper)
+
+### Why
+- Execute the Document 1C Master Workflow autonomously: remove deploy-blockers and
+  Doc 1B §15 performance violations without changing the visual design.
+
+### Fixes
+- **P1-1 (perf):** Removed the serial `@import` chain in `style.css`; the 8 modules are now
+  linked directly in cascade order (parallel, non-blocking). Deleted the obsolete wrapper.
+- **P1-2 (perf + China):** Self-hosted Fraunces + Manrope as variable woff2 (latin subset),
+  preloaded with `font-display: swap`. Replaces Google Fonts, which is render-blocking and
+  unreachable for the China-based audience.
+- **P1-3 (perf):** Removed perpetual `will-change: transform` from `.hero-image img`.
+- **P0-2 (deploy-blocker):** Replaced the `VIDEO_ID` placeholder YouTube iframe with a styled
+  poster placeholder (no third-party request). Swap in a real embed when the ID is supplied.
+- **P0-1 (deploy-blocker):** Favicon links now point to the existing `icon-192.svg`. Added
+  `initImageFallbacks()` (progressive enhancement) that swaps any failed `<img>` for a styled
+  placeholder, so missing certificate/QR/portrait images no longer show broken icons.
+- **P2-1 (dead code):** Removed the unused `.badge-group` selector.
+- **P2-2 (duplicate):** Removed the duplicate `scroll-behavior` declaration from `reset.css`
+  (kept the `prefers-reduced-motion`-guarded one in `layout.css`).
+- **P2-4 (consistency):** Updated stale `v1.0` version banners to `v2.0` across all CSS/JS.
+
+### Known Issues (user-supplied assets required — Autonomous Protocol pause #2)
+- Certificate thumbnails, WeChat QR, contact portrait, and the CV PDF are not in the repo;
+  placeholders/fallbacks are shown until the real files are added at their referenced paths.
+- Content verification (Doc 1A "never invent"): confirm "Harris University" (MA) and the
+  2009–2014 date gap before deploy.
+- Lighthouse audit (Master Workflow step 18) needs Chrome; run locally before publish.

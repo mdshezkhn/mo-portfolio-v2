@@ -25,19 +25,25 @@
     <meta name="twitter:description" content="10+ years of international primary education. EAL, STEM, instructional leadership, PGCE.">
     <meta name="twitter:image"       content="https://mdshezkhn.github.io/mo-portfolio/assets/images/profile/profile.jpeg">
 
-    <!-- Favicons -->
-    <link rel="icon"             href="favicon.ico"                              sizes="any">
-    <link rel="icon"             href="assets/icons/favicon.svg"                 type="image/svg+xml">
-    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    <!-- Favicons — point to assets that exist; the SVG icon also satisfies the manifest -->
+    <link rel="icon"             href="assets/icons/icon-192.svg"                type="image/svg+xml" sizes="192x192">
     <link rel="manifest"         href="manifest.webmanifest">
 
-    <!-- Fonts (Google Fonts — note: blocked in mainland China, self-hosted fallback recommended) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts — self-hosted (Google Fonts is blocked in mainland China and was render-blocking) -->
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/Fraunces-normal.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/Manrope-normal.woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/fonts.css">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Stylesheets — modular source loaded in cascade order.
+         Replaces the previous serial @import chain, which was render-blocking (Doc 1B §15). -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -420,8 +426,13 @@
             <div class="container reveal">
                 <span class="eyebrow">Teaching in Practice</span>
                 <h2 id="moments-heading">A Look Inside the <em>Classroom</em></h2>
-                <div class="video-wrap">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Teaching demonstration" allowfullscreen></iframe>
+                <!-- Placeholder until a real video ID is supplied (Autonomous Protocol pause reason #2):
+                     swap .video-placeholder for:
+                     <iframe src="https://www.youtube.com/embed/REAL_ID"
+                             title="Teaching demonstration" allowfullscreen></iframe> -->
+                <div class="video-wrap video-placeholder" role="img" aria-label="Teaching demonstration video — coming soon">
+                    <span class="video-play" aria-hidden="true">&#9654;</span>
+                    <p class="video-note">Teaching demonstration video coming soon</p>
                 </div>
             </div>
         </section>

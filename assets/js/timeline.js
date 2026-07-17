@@ -2,7 +2,7 @@
    timeline.js
    Timeline interactions: expand/collapse, filtering.
    Currently a stub — ready for implementation in Sprint 4.
-   Part of: Mohammed Shehzad Khan Portfolio v1.0
+   Part of: Mohammed Shehzad Khan Portfolio v2.0
 ========================================================== */
 
 export function initTimeline() {

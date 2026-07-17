@@ -3,7 +3,7 @@
    Handles: header scroll shadow · scroll-reveal entrances
    Fully respects prefers-reduced-motion: .reveal is never
    added when the user has requested reduced motion.
-   Part of: Mohammed Shehzad Khan Portfolio v1.0
+   Part of: Mohammed Shehzad Khan Portfolio v2.0
 ========================================================== */
 
 export function initAnimations() {

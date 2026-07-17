@@ -2,7 +2,7 @@
    gallery.js
    Gallery interactions: lightbox, filtering, lazy loading.
    Currently a stub — ready for implementation in Sprint 5.
-   Part of: Mohammed Shehzad Khan Portfolio v1.0
+   Part of: Mohammed Shehzad Khan Portfolio v2.0
 ========================================================== */
 
 export function initGallery() {

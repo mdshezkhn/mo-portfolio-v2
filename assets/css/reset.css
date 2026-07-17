@@ -1,7 +1,7 @@
 /* ==========================================================
    reset.css
    Minimal, modern CSS reset. Normalises browser defaults.
-   Part of: Mohammed Shehzad Khan Portfolio v1.0
+   Part of: Mohammed Shehzad Khan Portfolio v2.0
 ========================================================== */
 
 *,
@@ -12,13 +12,8 @@
     box-sizing: border-box;
 }
 
-/* Enable smooth scroll only when the user has not
-   requested reduced motion */
-@media (prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
-    }
-}
+/* Smooth scroll is declared once in layout.css, guarded by
+   prefers-reduced-motion there — no duplicate here. */
 
 body {
     background: var(--bg);

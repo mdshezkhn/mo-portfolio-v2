@@ -3,7 +3,7 @@
    Handles: mobile menu toggle · outside-click close ·
             Escape key close · active-section highlighting
    Does not use any framework or build tool.
-   Part of: Mohammed Shehzad Khan Portfolio v1.0
+   Part of: Mohammed Shehzad Khan Portfolio v2.0
 ========================================================== */
 
 export function initNavigation() {
