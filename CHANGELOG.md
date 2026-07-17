@@ -1,3 +1,115 @@
+## Stages 4–6 — Design System, Component Library, Build (Master Plan)
+
+### Why
+- Execute Stages 4–6 of the 1C §16 Stage Gate per the approved Master Implementation Plan
+  (`docs/MASTER_IMPLEMENTATION_PLAN.md`). The prior build was code-complete but had diverged
+  from its own approved design spec and was missing spec-mandated content/sections.
+
+### Files Changed
+- `docs/VISUAL_IDENTITY.md` (rewritten to v2.0 — reconciled to the live light/navy build; 2A §12
+  implies light, so the spec now matches the build rather than the reverse).
+- `assets/css/variables.css` (added 8px-base spacing-scale + section-padding tokens).
+- `assets/css/sections.css` (Gallery + lightbox styles; Research/Credentials additions).
+- `assets/css/components.css` (inline-SVG `.ic` icon style).
+- `assets/css/layout.css` (footer nav + social styles).
+- `assets/css/animations.css` (reveal rise 20px → 10px; hero 20px → 12px, per spec §15).
+- `assets/js/gallery.js` (implemented: category filtering + accessible lightbox — Esc/←/→/backdrop,
+  focus return; graceful when images missing).
+- `assets/js/main.js` (removed inert `theme.js` + `timeline.js` imports/calls).
+- `assets/js/theme.js`, `assets/js/timeline.js` (deleted — dead stubs).
+- `index.html` (Classroom Moments gallery built; safeguarding & ethics statement; languages slot;
+  Research "how this changed my classroom" + publications slots; richer footer w/ nav repeat +
+  social; hero emoji → inline SVG).
+- `ASSET_INVENTORY.md` (reconciled to actual code-referenced drop-in paths).
+- `docs/specification/Document-2A-Creative-Brief-Recruiter-Psychology.md` (new — governing
+  psychology companion; added per user direction).
+- `docs/specification/Document-1C-AI-Decision-Framework.md` (added §16 Stage Gate Policy).
+
+### New (closes §9 Authenticity beat)
+- The `moments` section is now a real filterable Classroom Moments gallery with a lightbox. It
+  shows graceful fallback tiles until classroom photos are dropped into `assets/images/classroom/`.
+
+### Known Issues (user-supplied — pause reason #2)
+- CV PDF, certificate thumbnails, WeChat QR, contact portrait, and classroom photos still missing
+  (graceful fallbacks in place). Drop files at the paths in `ASSET_INVENTORY.md`.
+- `[NEEDS INPUT]` slots remain in Research (classroom-change reflection, publications) and
+  Credentials (languages proficiency) — user-authored content required before launch.
+- "Harris University" MA (2007–2009) + 2009–2014 gap unverified — confirm before deploy.
+- Philosophy/Leadership prose expansion pending user beliefs + examples.
+- Lighthouse not yet run (needs Chrome locally).
+
+---
+
+## Phase 3 — Build & Remediation (Creative Brief §10)
+
+### Why
+- Begin the specification → implementation → review cycle per the consolidated
+  plan (single Creative Brief `docs/specification/Document-2-Creative-Brief.md`;
+  the 10-doc roadmap was scrapped as over-engineered). Close the two confirmed
+  bugs carried from the V2 remediation pass.
+
+### Files Changed
+- `index.html` (added `no-js` on `<html>`; inline head script sets `.js`)
+- `assets/css/animations.css` (gated `.reveal` hidden state on `.js`)
+- `assets/js/navigation.js` (mobile-menu focus trap; focus first link on open)
+
+### Fixes
+- **FOUC / no-JS safety:** `.reveal { opacity:0 }` was not gated by a JS-availability
+  class, yet `class="container reveal"` is in the HTML — so without JS the content
+  was permanently invisible, and any flash risk existed. Hidden state is now
+  `.js .reveal`; an inline head script adds `.js` before first paint. With JS:
+  hidden from first paint, revealed by the observer (no flash). Without JS: content
+  fully visible. Satisfies "JS failure → content visible by default" and Doc 1C §9.
+- **Mobile-menu focus trap (a11y):** keyboard Tab / Shift+Tab now cycles within the
+  open menu instead of escaping into hidden background content; focus moves to the
+  first link on open; Escape still returns focus to the toggle.
+
+### Side Effects
+- None on visual design or performance. Reveal animation behaviour unchanged for
+  JS users. `.reveal.is-visible` (later in source order) still wins over `.js .reveal`.
+
+### Known Issues (unchanged — pause reason #2, user assets required)
+- CV PDF, certificate thumbnails, WeChat QR, contact portrait still placeholder.
+- "Harris University" MA + 2009–2014 gap still pending user confirmation.
+- Lighthouse audit needs Chrome locally (Master Workflow step 18).
+
+---
+
+## Six-Act Narrative Realignment (Doc 1C §15)
+
+### Why
+- Adopt the cinematic six-act framework as the governing site structure (Doc 1C
+  §15 + user direction). The previous linear order buried Professional Journey at
+  #6, placed Leadership at #5, and Credentials at #9 — fighting the
+  impression → journey → evidence → classroom → future → invitation arc.
+
+### Files Changed
+- `index.html` (reordered; nav realigned)
+- `docs/INFORMATION_ARCHITECTURE.md` (added §0 Six Acts; §2 regrouped by act)
+- `docs/PRD.md` (§9 rewritten as the six-act arc)
+
+### New Section Order (single page)
+Hero → Story → Journey → Impact → Credentials → Philosophy → Moments → Research →
+Leadership → Contact.
+
+### How
+- Reordered sibling `<section>` blocks only. All `id`, `aria-labelledby`,
+  skip-link target, and nav/hash deep-links preserved (verified: 10 open / 10 close,
+  every nav anchor resolves). No CSS/JS/asset change.
+
+### Side Effects
+- None on performance or accessibility (structure and semantics unchanged).
+- `Credentials` (with placeholder cert thumbnails) now appears in Act III earlier in
+  the scroll; once real certificate images are added this reads as evidence, not a gap.
+- Nav order now follows the narrative arc (Story → Journey → Impact → Credentials →
+  Philosophy → Gallery → Research → Leadership → Contact).
+
+### Known Issues (unchanged)
+- CV PDF, certificate thumbnails, WeChat QR, contact portrait still placeholder (pause
+  reason #2). "Harris University" MA + 2009–2014 gap still pending user confirmation.
+
+---
+
 - Added Section 22 Recruiter Journey (0–60s mapping)
 - Google Fonts + Font Awesome retained for v1; performance target >=90 launch / >=95 post-optimization
 - Page-weight budget replaced with lazy-loading + responsive images + FCP <1.5s

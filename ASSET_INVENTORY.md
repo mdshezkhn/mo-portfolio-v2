@@ -126,3 +126,27 @@
 - [ ] File format is WebP (images) or PDF (documents)
 - [ ] Size within budget (images ≤300KB, PDFs ≤5MB)
 - [ ] HTML `href` or `src` updated to match final filename
+
+---
+
+## Reconciliation — Actual Code Paths (2026-07-17, Stage 4)
+
+The tables above use a `YYYY-Category-Description.webp` naming convention. The **live
+`index.html` currently references shorter, fixed paths**. To avoid broken-path churn while
+assets are still missing (graceful fallbacks cover the gap), the authoritative drop-in
+locations are the **code-referenced paths below** — supply files at these exact locations:
+
+| Asset | Drop-in path (code expects this) | Status |
+|---|---|---|
+| Hero portrait | `assets/images/profile/profile.jpeg` | ✅ Present |
+| Certificate thumbnails (4) | `assets/images/certificates/pgce-cert.jpg`, `tesol-cert.jpg`, `tefl-cert.jpg`, `british-council-cert.jpg` | ⬜ Missing (fallback shown) |
+| WeChat QR | `assets/images/wechat-qr.jpg` | ⬜ Missing (fallback shown) |
+| Contact portrait | `assets/images/contact-portrait.jpg` | ⬜ Missing (fallback shown) |
+| Classroom gallery | `assets/images/classroom/*.webp` (any count; grid built in Stage 5/6) | ⬜ Missing (section empty — §9 beat) |
+| CV PDF | `assets/documents/Mohammed_Shehzad_Khan_CV.pdf` | ⬜ Missing (Download CV 404s) |
+
+> When real assets arrive, prefer the optimised `.webp`/dated convention for the *files*, but
+> keep the **paths** the code expects (or update the `src`/`href` in `index.html` to match the
+> new names in the same commit). Do not rename only one side.
+> OG/Twitter social preview currently reuses `profile.jpeg` — no separate 1200×630 asset required.
+
