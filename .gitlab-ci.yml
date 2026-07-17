@@ -15,7 +15,10 @@ pages:
     # Copy all site files into the public/ directory
     # GitLab Pages serves from public/ only
     - mkdir -p public
-    - cp -r index.html assets robots.txt sitemap.xml manifest.webmanifest favicon.ico public/ 2>/dev/null || true
+    # Copy the whole site. `assets/` carries the single bundled style.css, JS modules,
+    # the optimized hero image and the SVG favicon. (favicon.ico intentionally omitted —
+    # the site now uses assets/icons/favicon.svg.)
+    - cp -r index.html assets robots.txt sitemap.xml manifest.webmanifest public/ 2>/dev/null || true
   artifacts:
     paths:
       - public
