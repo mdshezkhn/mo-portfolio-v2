@@ -14,7 +14,7 @@
 
 | File (target name) | Category | Public? | Format | Optimized? | Added to Website? | Notes |
 |---|---|---|---|---|---|
-| `2026-Profile-Headshot.webp` | profile/ | Yes | WebP | ⬜ | ⬜ | Current profile.jpeg needs converting + compressing |
+| `2026-Profile-Headshot.webp` | profile/ | Yes | WebP | ✅ | ✅ | Uploaded via chat, saved locally |
 
 ### Classroom Photography
 
@@ -126,3 +126,28 @@
 - [ ] File format is WebP (images) or PDF (documents)
 - [ ] Size within budget (images ≤300KB, PDFs ≤5MB)
 - [ ] HTML `href` or `src` updated to match final filename
+
+---
+
+## Reconciliation — What `index.html` Actually References (2026-07-17)
+
+The site was built with concrete asset paths that differ from the date-first target names
+in the tables above. This maps every `src`/`href` in `index.html` to its current status so
+missing, user-supplied assets are obvious.
+
+| Referenced path | Type | Status | Notes |
+|---|---|---|---|
+| `assets/images/profile/profile.jpeg` | image | ✅ Present | Optimized 680 KB → 88 KB in Stage 8 |
+| `assets/images/certificates/pgce-cert.jpg` | image | ⬜ Missing | Supply at this path; placeholder shown |
+| `assets/images/certificates/tesol-cert.jpg` | image | ⬜ Missing | Supply at this path; placeholder shown |
+| `assets/images/certificates/tefl-cert.jpg` | image | ⬜ Missing | Supply at this path; placeholder shown |
+| `assets/images/certificates/british-council-cert.jpg` | image | ⬜ Missing | Supply at this path; placeholder shown |
+| `assets/images/contact-portrait.jpg` | image | ⬜ Missing | Supply at this path; placeholder shown |
+| `assets/images/wechat-qr.jpg` | image | ⬜ Missing | Supply at this path; placeholder shown |
+| `assets/documents/Mohammed_Shehzad_Khan_CV.pdf` | document | ⬜ Missing | "Download CV" 404s until supplied |
+| YouTube embed (video) | video | ⬜ Placeholder | `VIDEO_ID` replaced by a labelled placeholder |
+
+> **Note:** The date-first `YYYY-Category-Description.webp` names in the tables above are the
+> *target* convention. The shipped HTML uses the shorter paths listed here. Before launch, either
+> rename supplied files to the referenced paths, or update the HTML `src`/`href` to the
+> date-first names — keep them consistent.

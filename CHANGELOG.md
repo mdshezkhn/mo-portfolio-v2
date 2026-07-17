@@ -1,3 +1,45 @@
+## Stages 8–13 — Optimize · Accessibility · Performance · QA · Docs · Delivery (2026-07-17)
+
+### Files Changed
+- `index.html` — `.js` flag + delegated image-error handler in `<head>`; graceful video
+  placeholder (replaces the `VIDEO_ID` iframe); favicon links trimmed to the SVG monogram.
+- `assets/css/style.css` — 8 module stylesheets bundled into one file (no `@import`);
+  `.reveal` gated behind `.js`; added missing-asset + video-placeholder styles.
+- `assets/images/profile/profile.jpeg` — resized + recompressed (680 KB → 88 KB).
+- `assets/icons/favicon.svg` — new hand-authored monogram (was missing).
+- `docs/PERFORMANCE.md` — new performance budgets + Lighthouse prep.
+- `ASSET_INVENTORY.md`, `docs/INFORMATION_ARCHITECTURE.md`, `docs/PRD.md` — reconciled with the
+  built site (section order, real asset references, font/icon reality).
+- `assets/css/*.css` (8 modules) — removed (content folded into `style.css`).
+
+### Why
+Finalize the v1.0 build for GitLab Pages: remove render-blocking CSS imports, shrink the LCP
+image, fix a no-JS hidden-content bug, replace broken/placeholder assets with graceful
+treatments, and bring the spec docs in line with what was actually built.
+
+### Fixes / New
+- **CSS:** Single bundled `style.css` (8 → 1 request).
+- **CSS:** `.reveal` hidden state now requires `.js`, so no-JS / crawler views stay visible.
+- **Images:** Hero `profile.jpeg` 680 KB → 88 KB (87% smaller).
+- **Images:** Delegated `error` handler shows a calm placeholder for any missing image instead
+  of a broken-icon; dropping the real file at the referenced path fixes it automatically.
+- **Video:** `VIDEO_ID` placeholder embed replaced with a labelled placeholder block.
+- **A11y (WCAG AA):** Structure audit passed — 10/10 `aria-labelledby` targets resolve, 9/9
+  in-page anchors resolve, 7/7 images have alt, no unclosed tags, `lang` set, skip-link present,
+  reduced-motion handled in CSS + JS, Escape/outside-click/focus-return on the mobile menu.
+- **Favicon:** Added SVG monogram; removed two link references to files that do not exist
+  (`favicon.ico`, `apple-touch-icon.png`) to eliminate 404s.
+
+### Known Issues / Pre-launch actions
+- **Google Fonts blocked in China** — self-host Fraunces + Manrope woff2 (audience constraint).
+- **Missing assets** (user-supplied, not fabricated): 4 certificate thumbnails, contact portrait,
+  WeChat QR, CV PDF. Placeholders shown; supply files at the referenced paths.
+- **Canonical + OG image** use `github.io`; switch to the live GitLab Pages URL + add a
+  1200×630 social preview.
+- Mobile menu has no focus trap (AA does not require one; Escape + focus-return implemented).
+
+---
+
 - Added Section 22 Recruiter Journey (0–60s mapping)
 - Google Fonts + Font Awesome retained for v1; performance target >=90 launch / >=95 post-optimization
 - Page-weight budget replaced with lazy-loading + responsive images + FCP <1.5s

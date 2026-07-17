@@ -11,19 +11,26 @@
 | 30–45s | How does he think/grow? | Philosophy, Leadership, Journey | Depth confirmed |
 | 45–60s | How do I act? | Persistent nav CTA + Contact | CV downloaded or contact made |
 
-## 2. Page Order (approved)
-1. **Hero** (1120) – all pillars
-2. **Impact Highlights** (1120) – ships hidden unless >=3 verified stats
-3. **My Story** (720)
-4. **Teaching Impact** (1120)
-5. **Teaching Philosophy** (720)
-6. **Leadership & Teacher Development** (1120)
-7. **Professional Journey** (1120)
-8. **Research & Innovation** (720)
-9. **Classroom Moments** (1120)
-10. **Credentials** (1120)
-11. **Contact** (720)
+## 2. Page Order
+
+> **As built in v1.0 (2026-07-17)** — supersedes the earlier approved draft order shown below.
+> The shipped single page renders in this sequence (anchor nav matches it):
+
+1. **Hero** — name, role, value line, location + availability, Download CV / Get in touch, portrait
+2. **Story** (About Me)
+3. **Impact** (Skills & Proficiencies — stats grid + skill clusters; serves as "Impact Highlights")
+4. **Philosophy** (The Philosophy Behind the Teaching)
+5. **Leadership** (Leadership & Direction)
+6. **Journey** (Professional timeline, newest first)
+7. **Research** (PGCE practitioner research)
+8. **Moments** (Classroom — video placeholder until a clip is supplied)
+9. **Credentials** (Education & Certifications + PD roadmap)
+10. **Contact** (email / phone / LinkedIn + WeChat + portrait)
 Footer.
+
+**Earlier approved draft order (kept for reference):** Hero → Impact Highlights → My Story →
+Teaching Impact → Teaching Philosophy → Leadership & Teacher Development → Professional Journey →
+Research & Innovation → Classroom Moments → Credentials → Contact.
 
 ## 3. Section Specifications
 **Hero** (<=100vh, min 640px): eyebrow (INTERNATIONAL EDUCATOR · [LOCATION]) · name (serif display) · value proposition (<=14 words) · **location + availability line** · Download CV (primary) + Get in touch (secondary) · portrait (5-col, 12px radius) · one static-capable violet wash · subtle scroll cue. Desktop 7/5 split; mobile stacked, full-width CTAs.

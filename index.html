@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Set the .js flag before first paint. Scroll-reveal elements start hidden ONLY
+         when JS is active, so no-JS users (and bots/SEO) always see fully visible
+         content. Also removes the old flash-of-visible-then-hidden regression. -->
+    <script>
+        document.documentElement.classList.add('js');
+        /* Delegated, capture-phase handler: if any referenced image fails to load
+           (e.g. a user-supplied asset not yet added), mark its container so CSS
+           can show a calm placeholder instead of a broken-image icon. Once the
+           real file exists at the referenced path, this never fires. */
+        document.addEventListener('error', function (e) {
+            var t = e.target;
+            if (t && t.tagName === 'IMG') {
+                var wrap = t.closest('.cert-thumb, .wc-qr, .contact-image, .hero-image');
+                if (wrap) { wrap.classList.add('media-missing'); }
+            }
+        }, true);
+    </script>
+
     <!-- Primary Meta -->
     <title>Mohammed Shehzad Khan | International Primary Educator</title>
     <meta name="description" content="Professional portfolio of Mohammed Shehzad Khan — an international primary educator with 10+ years of experience across India and China, specialising in EAL, STEM integration, teacher development, and instructional leadership.">
@@ -25,10 +43,9 @@
     <meta name="twitter:description" content="10+ years of international primary education. EAL, STEM, instructional leadership, PGCE.">
     <meta name="twitter:image"       content="https://mdshezkhn.github.io/mo-portfolio/assets/images/profile/profile.jpeg">
 
-    <!-- Favicons -->
-    <link rel="icon"             href="favicon.ico"                              sizes="any">
+    <!-- Favicons: SVG monogram (covers all modern browsers).
+         Add favicon.ico + apple-touch-icon.png later for legacy/iOS. -->
     <link rel="icon"             href="assets/icons/favicon.svg"                 type="image/svg+xml">
-    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
     <link rel="manifest"         href="manifest.webmanifest">
 
     <!-- Fonts (Google Fonts — note: blocked in mainland China, self-hosted fallback recommended) -->
@@ -118,8 +135,6 @@
                         <a href="assets/documents/Mohammed_Shehzad_Khan_CV.pdf" class="btn btn-primary" download><span aria-hidden="true">↓</span> Download CV</a>
                         <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                     </div>
-                    <!-- Changed from bare <div> with <span> children to a semantic <ul> list.
-                         Location and availability status are a genuine collection of metadata items. -->
                     <ul class="hero-meta">
                         <li><span aria-hidden="true">📍</span> Zhengzhou, China</li>
                         <li><span aria-hidden="true">✔</span> Open to International Opportunities</li>
@@ -147,11 +162,7 @@
             <div class="container reveal">
                 <span class="eyebrow">Expertise</span>
                 <h2 id="impact-heading">Skills &amp; Proficiencies</h2>
-                
-                <!-- Stats: converted to <dl> (definition list) because each card is a term/value pair
-                     (e.g. "10+" = value, "Years" = label/term). <dl> is the correct semantic element for
-                     key-value or label-value metadata. Visual appearance is unchanged — CSS targets the
-                     existing .stats-grid, .stat-card, .stat-num, .stat-label classes which are preserved. -->
+
                 <dl class="stats-grid">
                     <div class="stat-card">
                         <dt class="stat-label">Years</dt>
@@ -175,9 +186,6 @@
                 <div class="skill-clusters">
                     <div class="skill-cluster">
                         <h3>Classroom &amp; Pedagogy</h3>
-                        <!-- Changed from <div class="chips"> + <span class="chip"> to <ul>/<li>.
-                             Skills are a genuine unordered collection; lists give screen readers item count
-                             and allow keyboard navigation through items. Class names unchanged for CSS. -->
                         <ul class="chips">
                             <li class="chip">EAL / ESL Instruction</li>
                             <li class="chip">Primary Literacy Development</li>
@@ -268,20 +276,16 @@
                 <span class="eyebrow">Career Journey</span>
                 <h2 id="journey-heading">A Decade of <em>Teaching Across Borders</em></h2>
                 <p class="journey-intro">From the classrooms of Mumbai to the international schools of Zhengzhou, each role has deepened my craft as an educator — shaping not just learners, but the teachers who teach them.</p>
-                
+
                 <div class="timeline">
                     <div class="tl-item">
-                        <!-- tl-year: <div> → <time datetime="YYYY"> — conveys machine-readable date context -->
                         <time class="tl-year" datetime="2024">2024</time>
                         <div class="tl-dot"></div>
                         <div class="tl-card">
                             <div class="tl-top">
-                                <!-- tl-title: <span> → <h3> — job title is the heading of this card -->
                                 <h3 class="tl-title">EAL / English Teacher</h3>
-                                <!-- tl-date: <span> → <time> — date range expressed as machine-readable text -->
                                 <time class="tl-date" datetime="2024">2024 — Present</time>
                             </div>
-                            <!-- tl-org / tl-loc: <div> → <p> — organisation and location are prose metadata -->
                             <p class="tl-org">Aoxin International School</p>
                             <p class="tl-loc">Zhengzhou, Henan, China</p>
                             <p class="tl-desc">Second stint at Aoxin following a period teaching in India. Delivering EAL and English instruction across primary levels in a bilingual international school.</p>
@@ -418,11 +422,9 @@
                 <h2 id="research-heading">PGCE <em>Research</em></h2>
                 <div class="research-card">
                     <h3 class="research-title">A Critical Reflection on How Questioning Strategies Can Be Used to Facilitate High-Quality Teaching and Learning in a Bilingual Primary School Setting</h3>
-                    <!-- Changed from <div> to <ul> — these are discrete metadata tags, semantically a list.
-                         aria-label provides context for screen readers. -->
                     <ul class="research-meta-tags" aria-label="Research metadata">
-                        <li class="badge">75/100 &middot; Master's Level</li>
-                        <li class="badge">University of Cumbria &middot; PGCE7002</li>
+                        <li class="badge">75/100 · Master's Level</li>
+                        <li class="badge">University of Cumbria · PGCE7002</li>
                         <li class="badge">Marked by Christelle Blach-Davies</li>
                     </ul>
                     <p class="research-body">Practitioner research examining how questioning strategies can be used to facilitate high-quality teaching and learning and support participation equity in a bilingual primary classroom. The marker noted particular strength in methodology and literature review. Grade is provisional pending university exam board ratification — standard process, not an incomplete qualification.</p>
@@ -435,8 +437,17 @@
             <div class="container reveal">
                 <span class="eyebrow">Teaching in Practice</span>
                 <h2 id="moments-heading">A Look Inside the <em>Classroom</em></h2>
-                <div class="video-wrap">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Teaching demonstration" allowfullscreen></iframe>
+                <!-- Teaching demonstration video.
+                     Replace the placeholder below with a real embed once the clip
+                     is ready, e.g.:
+                     <iframe src="https://www.youtube.com/embed/REAL_ID"
+                             title="Teaching demonstration" allowfullscreen></iframe> -->
+                <div class="video-wrap video-placeholder" role="img" aria-label="Teaching demonstration video — to be added">
+                    <div class="video-placeholder-inner">
+                        <span class="video-placeholder-icon" aria-hidden="true">&#9654;</span>
+                        <p class="video-placeholder-title">Teaching Demonstration</p>
+                        <p class="video-placeholder-text">A short classroom clip will appear here.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -446,17 +457,14 @@
             <div class="container reveal">
                 <span class="eyebrow">Academic Formation</span>
                 <h2 id="credentials-heading">Education &amp; Certifications</h2>
-                
+
                 <h3 class="subsection-title">Education</h3>
                 <div class="edu-grid">
                     <div class="edu-card">
-                        <!-- edu-deg: <div> → <h4> — degree title is a sub-heading within this card (h3 parent = subsection-title) -->
                         <h4 class="edu-deg">PGCE — Education</h4>
-                        <!-- edu-sch: <div> → <p> — institution name is prose content, not a heading -->
                         <p class="edu-sch">University of Cumbria, UK</p>
-                        <!-- edu-yr: <div> → <time> — a date range expressed as machine-readable content -->
                         <time class="edu-yr" datetime="2025/2026">2025 — 2026</time>
-                        <span class="badge">75/100 &middot; Provisional</span>
+                        <span class="badge">75/100 · Provisional</span>
                     </div>
                     <div class="edu-card">
                         <h4 class="edu-deg">Bachelor of Education (B.Ed)</h4>
@@ -482,9 +490,7 @@
                 <div class="certs-grid">
                     <div class="cert-card">
                         <div class="cert-thumb"><img src="assets/images/certificates/pgce-cert.jpg" alt="Certificate thumbnail: PGCE — Postgraduate Certificate in Education, University of Cumbria" loading="lazy" width="250" height="188"></div>
-                        <!-- cert-name: <div> → <h4> — cert title is a sub-heading within this card -->
                         <h4 class="cert-name">PGCE — Postgraduate Certificate in Education</h4>
-                        <!-- cert-issuer / cert-desc: <div> → <p> — prose content, not headings -->
                         <p class="cert-issuer">University of Cumbria, UK</p>
                         <p class="cert-desc">Completed — Master's level, 75/100, provisional pending exam board ratification.</p>
                     </div>
@@ -564,14 +570,12 @@
                             <div class="wc-qr"><img src="assets/images/wechat-qr.jpg" alt="WeChat QR code for Mohammed Shehzad Khan — scan to connect"></div>
                             <div class="wc-info">
                                 <span class="badge">WeChat</span>
-                                <!-- wc-name: <div> → <p> — a person's display name is prose, not a heading -->
                                 <p class="wc-name">Mo Khan</p>
                                 <p class="wc-hint">Scan with WeChat to connect directly. Based in China and available for opportunities.</p>
                             </div>
                         </div>
                     </div>
                     <div class="contact-image">
-                        <!-- Improved alt text: describes who is in the image and the context -->
                         <img src="assets/images/contact-portrait.jpg" alt="Mohammed Shehzad Khan — professional portrait photo">
                         <blockquote>"Currently based in China and open to international relocation"</blockquote>
                     </div>

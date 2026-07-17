@@ -22,7 +22,7 @@ Update the % and status after each work session.
 
 | Section | Completeness | Status | Blocking Asset | Target Release |
 |---|---|---|---|---|
-| **Hero** | 70% | 🔒 Gated | Professional headshot, CV PDF | 1.0 |
+| **Hero** | 85% | 🔒 Gated | CV PDF | 1.0 |
 | **About / Philosophy** | 60% | 🟡 In Progress | Teaching Philosophy PDF | 1.0 |
 | **Teaching Impact** | 90% | 🟡 In Progress | Verify stat accuracy | 1.0 |
 | **Journey / Timeline** | 80% | 🟡 In Progress | Optional: timeline photos | 1.0 |
@@ -42,14 +42,14 @@ Update the % and status after each work session.
 The following must be complete before the site goes live at a public URL.
 
 ### Assets
-- [ ] Professional headshot compressed and added (`assets/images/profile/`)
+- [x] Professional headshot compressed and added (`assets/images/profile/2026-Profile-Headshot.webp`)
 - [ ] CV finalised and added (`assets/downloads/2026-CV-Mohammed-Shehzad-Khan.pdf`)
 - [ ] Teaching Philosophy PDF added (`assets/downloads/2026-Teaching-Philosophy.pdf`)
 - [ ] Certificate thumbnails created and added (4 images, `assets/images/certificates/`)
 - [ ] WeChat QR code confirmed in correct path (`assets/images/wechat-qr.jpg`)
 
 ### HTML
-- [ ] Hero photo `src` updated to new headshot path
+- [x] Hero photo `src` updated to new headshot path
 - [ ] Hero "Download CV" button `href` updated to `assets/downloads/2026-CV-Mohammed-Shehzad-Khan.pdf`
 - [ ] Certificate `src` attributes updated to new thumbnail filenames
 - [ ] Canonical URL updated in `<head>` to actual GitHub Pages URL

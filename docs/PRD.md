@@ -51,8 +51,11 @@ Primary: international school principals, academic directors, heads of school, H
 ## 8. Navigation
 Sticky. Desktop: Logo | My Story | Impact | Philosophy | Leadership | Journey | Research | Moments | Credentials | Contact | [Download CV] (CTA). Mobile: drawer (focus trap, Esc close, scroll lock, aria-expanded). Skip-to-content link first.
 
-## 9. Information Architecture (approved order)
-Hero → Impact Highlights → My Story → Teaching Impact → Teaching Philosophy → Leadership & Teacher Development → Professional Journey → Research & Innovation → Classroom Moments → Credentials → Contact → Footer. Testimonials placeholder hidden until real content exists.
+## 9. Information Architecture (built order, v1.0)
+Hero → Story → Impact (Skills & Proficiencies) → Philosophy → Leadership → Journey → Research →
+Moments (Classroom, video placeholder) → Credentials → Contact → Footer. This supersedes the
+earlier approved draft order; the shipped nav follows this sequence. Testimonials placeholder
+hidden until real content exists.
 
 ## 10. Safeguarding Policy (mandatory)
 No identifiable students without documented consent. Prefer environments, materials, adult workshops, or wide shots without identifiable faces. Follow school policies. Every image: consent status logged in ASSETS.md before entering the repo. A safeguarding & ethics statement appears in Credentials.
@@ -64,7 +67,7 @@ WCAG 2.1 AA minimum, Lighthouse 100. Skip link, semantic landmarks, single h1, k
 Lazy-loaded gallery, responsive srcset images, explicit image dimensions (CLS ~0), single minified CSS + JS. JSON-LD Person schema, Open Graph + Twitter cards, canonical URL, sitemap.xml, robots.txt, OG image (1200x630).
 
 ## 13. Technology
-GitLab Pages, HTML5, CSS3 (custom properties), vanilla JS, Google Fonts (Fraunces + Manrope), Font Awesome (max 8 icons, one style). No frameworks, no build tools.
+GitLab Pages, HTML5, CSS3 (custom properties), vanilla JS, Google Fonts (Fraunces + Manrope) — linked, not yet self-hosted (China-block risk); Font Awesome was not used (emoji + inline SVG instead). No frameworks, no build tools.
 
 ## 14. Content Principles (hard gate)
 Every statement supported by experience, evidence, credentials, or measurable outcomes. Never: invented achievements, inflated numbers, guessed responsibilities, generic motivational phrases. AI must never fabricate: achievements, dates, outcomes, awards, findings, certifications, testimonials, biography, statistics. Placeholder format: `[NEEDS INPUT: description]` — never shippable.
