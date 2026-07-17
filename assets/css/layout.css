@@ -1,0 +1,28 @@
+/* ==========================================================
+   layout.css
+   Core layout primitives: container, section spacing,
+   and footer. Grid/flex patterns live in components.css.
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+/* ── Container ───────────────────────────────────────── */
+
+.container {
+    width: min(100% - 48px, var(--container));
+    margin-inline: auto;
+}
+
+/* ── Section spacing ─────────────────────────────────── */
+
+section {
+    padding: 112px 0;
+}
+
+/* ── Footer ──────────────────────────────────────────── */
+
+footer {
+    padding: 64px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+}

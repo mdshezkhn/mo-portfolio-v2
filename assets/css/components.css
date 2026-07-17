@@ -1,0 +1,386 @@
+/* ==========================================================
+   components.css
+   Reusable UI components: navigation (desktop + mobile),
+   buttons, shared card tokens (§2–§11), and all card
+   component unique properties.
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+/* ==========================================================
+   HEADER & NAVIGATION
+========================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(18px);
+    background: rgba(248,250,252,.97);
+    border-bottom: 1px solid var(--border);
+    transition: box-shadow var(--transition);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+}
+
+.logo {
+    font-family: "Fraunces", serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    transition: color var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: var(--text);
+}
+
+/* ── Mobile hamburger toggle ─────────────────────────── */
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    transition: background var(--transition);
+}
+
+.nav-toggle:hover {
+    background: var(--accent-soft);
+}
+
+.hamburger-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: transform var(--transition), opacity var(--transition);
+    transform-origin: center;
+}
+
+/* Animate bars → × when menu is open */
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Active section link */
+.nav-links a[aria-current="page"] {
+    color: var(--accent);
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 14px 28px;
+    border-radius: var(--radius-sm);
+    font-family: "Manrope", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(30,58,95,.28);
+}
+
+.btn-secondary {
+    color: var(--text-secondary);
+    border: 1.5px solid var(--border-strong);
+}
+
+.btn-secondary:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-soft);
+}
+
+/* ==========================================================
+   SHARED COMPONENT TOKENS (§2–§11)
+   Consolidated declarations extracted from individual
+   component rules. Rules below contain ONLY what is unique
+   to that component.
+========================================================== */
+
+/* §2: White card base */
+.stat-card,
+.edu-card,
+.cert-card,
+.wc-card,
+.contact-link,
+.tl-card,
+.research-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+/* §3 + §4: Shared card shadows */
+.tl-card,
+.research-card {
+    box-shadow: var(--shadow-card);
+}
+
+/* §3b: Shared hover state */
+.tl-card:hover,
+.cert-card:hover {
+    box-shadow: var(--shadow-card-hover);
+    border-color: var(--accent-soft);
+}
+
+/* §5: Shared card heading typography */
+.edu-deg,
+.cert-name,
+.pd-card h4 {
+    font-family: "Fraunces", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* §6: Shared organisation / issuer text */
+.edu-sch,
+.cert-issuer,
+.tl-org,
+.cval {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* §7: Shared muted small text */
+.tl-date,
+.tl-loc,
+.edu-yr,
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* §8: Shared uppercase label style */
+.stat-label,
+.skill-cluster h3,
+.clabel {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* §9: Shared auto-grid base */
+.edu-grid,
+.pd-grid,
+.stats-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.certs-grid,
+.skill-clusters {
+    display: grid;
+    gap: 2rem;
+}
+
+/* §11: Badge-group utility */
+.badge-group,
+.research-meta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================================
+   COMPONENTS — UNIQUE PROPERTIES ONLY
+========================================================== */
+
+/* ── Stats grid ───────────────────────────────────────── */
+
+.stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    margin-bottom: 4rem;
+}
+.stat-card {
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-subtle);
+    display: flex;
+    flex-direction: column;
+}
+.stat-num {
+    order: -1;
+    font-family: "Fraunces", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+}
+.stat-label {
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-left: 0;
+}
+
+/* ── Skills ───────────────────────────────────────────── */
+
+.skill-clusters {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.skill-cluster h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.chip {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-strong);
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+.chip:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+    transform: translateY(-2px);
+}
+
+/* ── Credentials: Education ───────────────────────────── */
+
+.edu-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.edu-card {
+    padding: 1.5rem;
+}
+.edu-yr {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* ── Credentials: Certifications ─────────────────────── */
+
+.certs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.cert-card {
+    padding: 1.5rem;
+    transition: transform var(--transition);
+}
+.cert-card:hover {
+    transform: translateY(-4px);
+}
+.cert-thumb {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: var(--bg);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border);
+}
+.cert-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cert-issuer {
+    margin-bottom: 0.75rem;
+}
+
+/* ── Credentials: Professional Development ────────────── */
+
+.pd-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.pd-card {
+    border: 1.5px dashed var(--border-strong);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+}
+.pd-card p {
+    font-size: 0.9rem;
+}
+
+/* ── WeChat card ──────────────────────────────────────── */
+
+.wc-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+.wc-qr {
+    width: 100px;
+    height: 100px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.wc-qr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wc-name {
+    font-family: "Fraunces", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.wc-hint {
+    font-size: 0.9rem;
+}
