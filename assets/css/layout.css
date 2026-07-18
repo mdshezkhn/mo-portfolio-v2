@@ -32,8 +32,8 @@ html {
    hidden behind it. */
 
 section {
-    padding: 112px 0;
-    scroll-margin-top: 72px;
+    padding: var(--section-py) 0;
+    scroll-margin-top: var(--header-height);
 }
 
 /* ── Footer ──────────────────────────────────────────── */
@@ -82,4 +82,11 @@ footer {
     color: var(--accent);
     font-size: 0.9rem;
     font-weight: 600;
+    transition: opacity var(--transition);
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible {
+    opacity: 0.75;
+    outline-offset: 4px;
 }

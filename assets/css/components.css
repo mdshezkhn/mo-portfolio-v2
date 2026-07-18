@@ -33,6 +33,13 @@
     font-weight: 600;
 }
 
+/* Logo is wrapped in an <a> for home navigation;
+   preserve visual appearance, suppress link underline */
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -175,11 +182,13 @@
 .tl-card,
 .research-card {
     box-shadow: var(--shadow-card);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
 /* §3b: Shared hover state */
 .tl-card:hover,
 .cert-card:hover {
+    transform: translateY(-4px);
     box-shadow: var(--shadow-card-hover);
     border-color: var(--accent-soft);
 }

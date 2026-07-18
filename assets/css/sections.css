@@ -256,7 +256,7 @@
     aspect-ratio: 16 / 9;
     border-radius: var(--radius-sm);
     overflow: hidden;
-    background: #000;
+    background: #1E2D45;
     margin: 0 auto;
 }
 
@@ -578,10 +578,3 @@
     box-shadow: 0 24px 60px rgba(15,23,42,.1);
 }
 
-.contact-image blockquote {
-    font-family: "Fraunces", serif;
-    font-size: 1.2rem;
-    font-style: italic;
-    text-align: center;
-    color: var(--text-secondary);
-}

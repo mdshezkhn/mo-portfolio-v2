@@ -22,6 +22,7 @@
 
     /* ── Layout ─────────────────────────────────────────── */
     --container:       1120px;
+    --header-height:   72px;
 
     /* ── Radii ───────────────────────────────────────────── */
     --radius-sm:       8px;
@@ -42,12 +43,12 @@
     --section-py-mobile: 80px;   /* ≤900px section padding */
 
     /* ── Animation ───────────────────────────────────────── */
-    --transition:      300ms ease;
+    --transition:      300ms cubic-bezier(0.2, 0.8, 0.2, 1);
 
     /* ── Shadows ─────────────────────────────────────────── */
     /* Extracted from inline rgba() values repeated across card
        components. Changing one token updates every card. */
-    --shadow-card:       0 4px 12px rgba(0,0,0,0.03);
-    --shadow-card-hover: 0 12px 24px rgba(0,0,0,0.06);
-    --shadow-subtle:     0 4px 6px -1px rgba(0,0,0,0.05);
+    --shadow-card:       0 4px 20px rgba(17,24,39,0.05);
+    --shadow-card-hover: 0 16px 32px rgba(17,24,39,0.1);
+    --shadow-subtle:     0 4px 12px -1px rgba(17,24,39,0.04);
 }
