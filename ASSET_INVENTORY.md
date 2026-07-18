@@ -64,7 +64,8 @@
 |---|---|---|---|
 | `2026-PGCE-University-of-Cumbria.pdf` | documents/pgce/ | Yes (to downloads/) | Master's level, 75/100 |
 | `2007-BSc-Physics-University-of-Mumbai.pdf` | documents/degrees/ | Yes | University of Mumbai |
-| `2009-BEd-Harris-University.pdf` | documents/degrees/ | Yes | Harris University |
+| `2024-BEd-University-of-Kashmir.pdf` | documents/degrees/ | Yes | University of Kashmir |
+| `2009-MA-Harris-University.pdf` | documents/degrees/ | Yes | Harris University |
 | `2026-TESOL-Global-TESOL-College.pdf` | documents/tesol/ | Yes | 240 hrs, Global TESOL College |
 | `2026-TEFL-Teacher-Record.pdf` | documents/tefl/ | Yes | 120 hrs, Teacher Record |
 | `2026-Certificate-British-Council-PD.pdf` | documents/certificates/ | Yes | Primary Education & Language Teaching |
