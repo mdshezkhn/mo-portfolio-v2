@@ -79,6 +79,11 @@
     .story-grid {
         grid-template-columns: 1fr;
     }
+    
+    .wc-card {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* ── ≤480px: Small phones ────────────────────────────── */

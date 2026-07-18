@@ -408,30 +408,35 @@
 .wc-card {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 1.5rem;
 }
 .wc-qr {
-    width: 100px;
-    height: 100px;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border);
-    overflow: hidden;
+    max-width: 220px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(15,23,42,0.1);
     flex-shrink: 0;
 }
 .wc-qr img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+.wc-info {
+    flex: 1;
 }
 .wc-name {
     font-family: "Fraunces", serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 .wc-hint {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
 }
 
 /* ── Image fallback ──────────────────────────────────── */
