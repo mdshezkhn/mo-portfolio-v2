@@ -158,6 +158,37 @@
     vertical-align: -0.15em;
 }
 
+/* ── Recruiter Action Bar ───────────────────────────────
+   Sits directly beneath the navigation (non-sticky) so it is
+   visible on load but scrolls away — never collides with
+   content on small screens. Flexbox + tokens only; no
+   absolute positioning or fixed-pixel sizing. */
+.recruiter-bar {
+    background: var(--accent-soft);
+    border-bottom: 1px solid var(--border);
+}
+
+.recruiter-bar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-2);
+    padding: 0.7rem 0;
+}
+
+/* Compact variant for the action bar */
+.btn-sm {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+}
+
+/* Keyboard focus visibility for the bar's actions */
+.recruiter-bar .btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
 /* ==========================================================
    SHARED COMPONENT TOKENS (§2–§11)
    Consolidated declarations extracted from individual

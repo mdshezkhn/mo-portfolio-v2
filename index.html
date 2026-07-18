@@ -118,10 +118,29 @@
                     <li><a href="#leadership">Leadership</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <a href="assets/documents/Mohammed_Shehzad_Khan_CV.pdf" class="btn btn-primary nav-cta">Download CV</a>
             </div>
         </nav>
     </header>
+
+    <!-- Recruiter Action Bar — sits directly beneath the navigation.
+         Non-sticky by design: visible on load, scrolls away, and never
+         collides with content on small screens. Uses existing tokens. -->
+    <nav class="recruiter-bar" aria-label="Recruiter quick actions">
+        <div class="container recruiter-bar__inner">
+            <a href="assets/documents/Mohammed_Shehzad_Khan_CV.pdf" class="btn btn-primary btn-sm" download>
+                <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v9m0 0l-4-4m4 4l4-4M5 19h14"/></svg>
+                Download Resume / CV
+            </a>
+            <a href="https://linkedin.com/in/mdshezkhn" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 5.5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.4 8.5h3.1V21H3.4zM9.5 8.5h3v1.7h.05c.42-.8 1.45-1.65 2.98-1.65 3.18 0 3.77 2.1 3.77 4.83V21h-3.1v-5.4c0-1.3 0-2.96-1.8-2.96-1.8 0-2.08 1.4-2.08 2.85V21H9.5z"/></svg>
+                LinkedIn
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-sm">
+                <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                Contact Me
+            </a>
+        </div>
+    </nav>
 
     <main id="main-content" tabindex="-1">
         <!-- ACT I — THE FIRST IMPRESSION (Hero & identity) -->
