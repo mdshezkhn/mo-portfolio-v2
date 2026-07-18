@@ -71,9 +71,13 @@
         justify-content: flex-start;
     }
 
-    /* Collapse Story Cards Grid on Tablets */
-    .story-cards-grid {
-        grid-template-columns: 1fr;
+}
+
+/* ── ≤768px: Tablets and large phones ──────────────────────── */
+
+@media (max-width: 768px) {
+    .story-content {
+        column-count: 1;
     }
 }
 

@@ -43,6 +43,7 @@
 .nav-links {
     display: flex;
     gap: 2rem;
+    list-style: none; /* Fixed bullets issue */
 }
 
 .nav-links a {
@@ -203,7 +204,6 @@
 .wc-card,
 .contact-link,
 .tl-card,
-.story-card,
 .research-card {
     background: white;
     border: 1px solid var(--border);
@@ -212,7 +212,6 @@
 
 /* A 3 + A 4: Shared card shadows */
 .tl-card,
-.story-card,
 .research-card {
     box-shadow: var(--shadow-card);
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
@@ -220,7 +219,6 @@
 
 /* A 3b: Shared hover state */
 .tl-card:hover,
-.story-card:hover,
 .cert-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-card-hover);

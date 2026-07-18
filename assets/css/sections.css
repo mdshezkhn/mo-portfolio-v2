@@ -580,51 +580,17 @@
 
 
 /* ==========================================================
-   STORY SECTION (Cards)
+   STORY SECTION
 ========================================================== */
 
-.story-intro {
-    font-size: 1.15rem;
-    line-height: 1.8;
-    color: var(--text-primary);
-    max-width: 800px;
-    margin-bottom: 3rem;
+.story-content {
+    column-count: 2;
+    column-gap: 4rem;
 }
 
-.story-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.story-cards-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-.story-card {
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.story-card-title {
-    font-family: var(--font-heading);
-    font-size: 1.25rem;
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-.story-card p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: var(--text-secondary);
-}
-
-.story-card strong {
-    color: var(--text-primary);
-    font-weight: 600;
+.story-content p {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+    max-width: none; /* override 62ch limit so it fills the column */
 }
 
