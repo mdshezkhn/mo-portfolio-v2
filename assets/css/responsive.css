@@ -76,8 +76,8 @@
 /* ── ≤768px: Tablets and large phones ──────────────────────── */
 
 @media (max-width: 768px) {
-    .story-content {
-        column-count: 1;
+    .story-grid {
+        grid-template-columns: 1fr;
     }
 }
 

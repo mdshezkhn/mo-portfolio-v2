@@ -583,14 +583,44 @@
    STORY SECTION
 ========================================================== */
 
-.story-content {
-    column-count: 2;
-    column-gap: 4rem;
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 4rem;
+    align-items: start;
 }
 
-.story-content p {
-    break-inside: avoid;
-    margin-bottom: 2rem;
-    max-width: none; /* override 62ch limit so it fills the column */
+.story-main {
+    max-width: 760px;
+}
+
+.story-main p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 2.5rem;
+    color: var(--text-secondary);
+}
+
+.story-intro {
+    font-size: 1.35rem !important;
+    line-height: 1.7 !important;
+    color: var(--text-primary) !important;
+    margin-bottom: 3.5rem !important;
+}
+
+.story-main h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-top: 4rem;
+    margin-bottom: 1.25rem;
+}
+
+.story-sidebar-sticky {
+    position: sticky;
+    top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
