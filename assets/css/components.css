@@ -203,21 +203,24 @@
 .wc-card,
 .contact-link,
 .tl-card,
+.story-card,
 .research-card {
     background: white;
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
 }
 
-/* §3 + §4: Shared card shadows */
+/* A 3 + A 4: Shared card shadows */
 .tl-card,
+.story-card,
 .research-card {
     box-shadow: var(--shadow-card);
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
-/* §3b: Shared hover state */
+/* A 3b: Shared hover state */
 .tl-card:hover,
+.story-card:hover,
 .cert-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-card-hover);

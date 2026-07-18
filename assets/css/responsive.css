@@ -71,42 +71,9 @@
         justify-content: flex-start;
     }
 
-    /* Story Editorial layout */
-    .story-grid {
-        grid-template-columns: 40fr 60fr;
-        gap: 3rem;
-    }
-}
-
-/* ── ≤768px: Tablets and large phones ──────────────────────── */
-
-@media (max-width: 768px) {
-    .story-grid {
+    /* Collapse Story Cards Grid on Tablets */
+    .story-cards-grid {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-    
-    .story-sidebar {
-        position: static;
-    }
-    
-    .story-title {
-        margin-bottom: 1.5rem;
-    }
-    
-    .story-pull-quote {
-        margin-bottom: 2rem;
-    }
-    
-    .story-stats {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 2rem;
-        row-gap: 1rem;
-    }
-    
-    .stat-divider {
-        display: none; /* Hide dividers in grid layout for cleaner look */
     }
 }
 
@@ -137,8 +104,4 @@
         justify-content: center;
     }
 
-    /* Story Stats on small phones */
-    .story-stats {
-        grid-template-columns: 1fr;
-    }
 }
