@@ -160,8 +160,28 @@
 }
 
 .tl-card {
-    padding: 2rem;
+    padding: 2.5rem;
     transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.tl-card-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .tl-card-layout {
+        grid-template-columns: 65fr 35fr;
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tl-card-layout {
+        grid-template-columns: 70fr 30fr;
+        gap: 4rem;
+    }
 }
 
 .tl-card:hover {
@@ -174,13 +194,13 @@
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--space-2);
 }
 
 .tl-title {
     font-family: "Fraunces", serif;
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .tl-date {
@@ -191,15 +211,51 @@
 }
 
 .tl-org {
-    margin-bottom: 0.25rem;
+    margin-bottom: var(--space-1);
+    font-weight: 600;
 }
 
 .tl-loc {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-3);
+    font-weight: 400;
 }
 
 .tl-desc {
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-3);
+    font-size: 1.1rem;
+    line-height: 1.75;
+    max-width: 72ch;
+}
+
+.tl-meta {
+    padding-top: 0.5rem;
+    align-self: start;
+    position: sticky;
+    top: 7rem;
+}
+
+.tl-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.tl-highlights li {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.tl-highlights svg {
+    flex-shrink: 0;
+    color: var(--accent);
+    margin-top: 0.125rem;
 }
 
 .tl-bullets {
@@ -237,12 +293,97 @@
 ========================================================== */
 
 .research-card {
-    padding: 2.5rem;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+@media (min-width: 768px) {
+    /* Removed for stacked layout */
+}
+
+@media (min-width: 1024px) {
+    /* Removed for stacked layout */
 }
 
 .research-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+.research-content p {
+    max-width: none;
+}
+
+.research-feedback {
+    background: var(--bg);
+    padding: 2rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    align-self: start;
+}
+
+.feedback-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+}
+
+.feedback-quote p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    max-width: none;
+}
+
+.feedback-quote h5 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.feedback-quote ul {
+    margin-bottom: 2rem;
+    padding-left: 1.25rem;
+}
+
+.feedback-quote li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    max-width: none;
+}
+
+.journey-progression {
+    text-align: center;
+    color: var(--accent);
+    opacity: 0.6;
+    margin: 1.5rem 0;
+    font-size: 1.25rem;
+}
+
+.feedback-quote blockquote {
+    border-left: 3px solid var(--accent-soft);
+    padding-left: 1rem;
+    font-style: italic;
+}
+
+.feedback-quote blockquote p {
+    margin-bottom: 0;
+}
+
+.feedback-quote p:last-child {
+    margin-bottom: 0;
 }
 
 /* ==========================================================
@@ -509,7 +650,7 @@
     border-left: 3px solid var(--accent);
     padding: 1.25rem 1.5rem;
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    max-width: 70ch;
+    max-width: none;
 }
 
 /* ==========================================================
@@ -587,7 +728,6 @@
     display: grid;
     grid-template-columns: 1fr 300px;
     gap: 4rem;
-    align-items: start;
 }
 
 .story-main {

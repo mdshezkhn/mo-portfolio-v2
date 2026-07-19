@@ -50,6 +50,10 @@ The project is considered Production Ready only when all of the following are tr
 > [!WARNING]
 > **Frozen Systems (HTML, CSS, Design, Copy, Metadata, Scope)**
 > - **Approved Narrative**: Do not rewrite approved narrative sections. Do not paraphrase. Do not shorten. Only modify wording when a factual error exists or explicitly requested. *If wording changes are proposed, quote: old text, new text, reason, supporting evidence.*
+> - **Copy Restraint Rule**: Every paragraph must justify its existence. If removing a sentence does not materially reduce recruiter understanding, that sentence should be removed.
+> - **Distinct Section Purpose Rule**: Every section must answer a distinct recruiter question. If two sections answer the same question, consolidate or remove one.
+> - **Outcome Rule**: A design change must solve an observed recruiter problem or improve a measurable recruitment outcome. Aesthetic preference alone is insufficient justification for modifying a released version.
+> - **Attribution Rule**: A portfolio change must not automatically receive credit for an improvement in recruitment outcomes unless alternative explanations have been reasonably considered.
 > - **Metadata Freeze**: Metadata may be updated only when correcting factual errors or improving technical compliance (canonical URLs, structured data validation, deployment fixes).
 > - **Repository Scope**: Only modify files necessary for the approved fix. Do not edit `archive/`, `docs/`, `scratch/`, or historical versions.
 > - **Project Meridian Design Language**: Section order, component architecture, design tokens, and interaction models are frozen. Refinement of implementation is allowed so long as it adheres to the established design language.
