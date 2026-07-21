@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mdshezkhn.github.io/portfolio/sitemap.xml
+Sitemap: https://mdshezkhn.github.io/mo-portfolio-v2/sitemap.xml

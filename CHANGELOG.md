@@ -1,41 +1,81 @@
 # Changelog
 
-This changelog documents the specific edits made during Phase 4 (Recruiter Trust & Conversion Optimization) to maximize recruiter trust while preserving complete factual accuracy. No structural code refactoring or visual redesigns were introduced during this phase.
+All notable changes to this portfolio are documented here.
 
-## [2026-07-18] - Phase 4 Conversion Edits
-
-### Modified Files
-
-#### `index.html`
-- **Change:** Audited and corrected all references to the teaching qualification. Changed instances of "PGCE" and "PGCE — Education" to the strict terminology: `"Postgraduate Certificate in Education (PGCE), University of Cumbria"`.
-- **Reason:** To prevent any ambiguity regarding the qualification, its origin, and its status. Prevents the qualification from being confused with unverified "iPGCE" or "QTS" claims.
-- **Expected Recruiter Impact:** Increases compliance trust. The recruiter knows exactly what the qualification is and where it is from, mitigating HR/visa risk.
-- **Risk Assessment:** Low. Purely a text replacement.
-
-- **Change:** Revised leadership claims in the "About Me", "Career Journey", and "Leadership Value" sections. Replaced phrases like "managed instructional quality" and "architecting quality-assurance frameworks" with strictly evidence-based alternatives like "contributed to quality assurance" and "demonstrated the ability to improve instructional quality beyond the classroom."
-- **Reason:** To align the copy strictly with the evidence presented in the CV, ensuring the candidate does not imply they held formal Head of Department or SLT titles when they did not.
-- **Expected Recruiter Impact:** Builds trust through verifiable honesty. Recruiters are highly sensitive to exaggerated claims; precise language proves reliability.
-- **Risk Assessment:** Low. Preserves the candidate's achievements without risking perceived inflation.
-
-### New Documentation Created
-
-#### `docs/RECRUITER_OBJECTION_MAP.md`
-- **Change:** Created a matrix mapping 15 common recruiter objections against the portfolio's existing evidence.
-- **Reason:** To identify where the candidate's claims are strong, and where the candidate needs to inject specific evidence (e.g., CV updates, video) to close trust gaps.
-- **Expected Recruiter Impact:** N/A (Internal document). Ensures the final asset uploads explicitly target recruiter objections.
-
-#### `docs/GALLERY_CURATION_GUIDE.md`
-- **Change:** Created a framework defining the pedagogical purpose of 8-10 recommended gallery images.
-- **Reason:** To prevent the gallery from becoming a useless "photo album." 
-- **Expected Recruiter Impact:** N/A (Internal document). Ensures the Principal sees active learning, STEM integration, and behavior management rather than posed smiles.
-
-#### `recruiter_journey.md` (Artifact Update)
-- **Change:** Inserted "Trust & Professional Credibility" and "Cultural & Community Fit" checkpoints into the recruiter journey map.
-- **Reason:** To formalize the psychological gates a Principal must pass through before feeling comfortable offering an interview.
+Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-### Final Validation
-- Verification confirmed no structural HTML changes were made.
-- `grep_search` confirmed `iPGCE` and `QTS` do not exist in the codebase.
-- Factually accurate qualifications consistently applied.
+## Versioning Policy
+
+- **v1.x** — Bug fixes, evidence additions, updated CV, new qualifications. No structural changes.
+- **v2.0** — Structural redesign or major repositioning. Requires justification.
+- **v3.0** — Significant career change (e.g., moving into leadership). Full rebuild warranted.
+
+**Feature freeze:** No structural redesigns or messaging changes unless driven by recruiter feedback or significant new evidence (new qualification, published research, recommendation, award, teaching video).
+
+**Allowed without justification:** Adding new evidence, updating dates, fixing bugs, correcting errors.
+
+---
+
+## [1.0.0] - 2026-07-22
+
+### Added
+- Production CV as ATS-optimised HTML (`assets/documents/Mohammed_Shehzad_Khan_CV.html`)
+- 6 role-specific cover letter variants (Primary English, EAL, Homeroom, Curriculum Coordinator, Head of English, Academic Coordinator)
+- LinkedIn ready-to-paste rewrites (headline, about, 7 experience sections, skills)
+- Evidence library structure with READMEs (`evidence/teaching/`, `evidence/research/`, `evidence/leadership/`, `evidence/professional/`, `evidence/qualifications/`)
+
+### Fixed
+- Portfolio canonical URL: `/portfolio/` → `/mo-portfolio-v2/`
+- Open Graph and Twitter Card image URLs
+- JSON-LD structured data (url, image, jobTitle, knowsAbout)
+- `robots.txt` sitemap URL
+- `sitemap.xml` canonical URL
+- Meta description and keywords (added EAL, PGCE, Curriculum, Differentiated Instruction, Safeguarding)
+
+### Changed
+- Hero description: trimmed from dense paragraph to 4 clear sentences
+- Stat card "15+ Years Professional Experience" → "7 Schools Across 2 Countries"
+- "high school, middle school, kindergarten, and primary" → "kindergarten through secondary"
+- "Contributed to quality assurance" → "Conducted quality assurance audits"
+- "supported international professional development" → "designed and facilitated"
+- "The science degree is not incidental" → "The physics degree directly supports"
+- "Grow into curriculum or instructional leadership roles" → "contribute to curriculum development and instructional leadership"
+- Cover letter: "contributed to instructional quality" → "drove instructional quality"
+
+### Verified
+- Employer names consistent across CV, LinkedIn rewrites, portfolio (Aoxin, GEDU, WhiteHat Jr, Eton House, Helen, Scholars Academy)
+- Dates consistent across all assets
+- Qualifications consistent (PGCE, B.Ed, M.A., B.Sc.)
+- Heading hierarchy correct (h1 → h2 → h3 → h4 → h5)
+- All images have alt text
+- ARIA labels present (25+ attributes)
+- Skip link present for accessibility
+
+### Known Limitations
+- CV PDF not yet generated from HTML (open HTML in browser, Print → Save as PDF)
+- Evidence library folders are empty — need real documents populated
+- Portfolio teaching demonstration video placeholder remains
+- Portfolio CV download button links to HTML version (not PDF)
+- Live site not yet validated against deployment
+- LinkedIn not yet updated with rewrites
+- No git tag created yet
+
+---
+
+## Pre-1.0 History
+
+### Planning Phase
+- Professional brand audit (CV, LinkedIn, portfolio)
+- ATS keyword analysis
+- Recruiter simulation
+- Consistency matrix
+- Improvement roadmap
+
+### Building Phase
+- Portfolio redesign and SEO optimisation
+- CV creation and iteration
+- LinkedIn rewrite drafts
+- Cover letter generation
+- Evidence library structure
