@@ -12,3 +12,28 @@ private/
 
 # Build outputs
 dist/
+
+# QA and audit artifacts
+_qa_shots/
+_before.html
+live_index.html
+lighthouse-report.json
+
+# Backup directories
+backups/
+
+# Planning docs (keep local only)
+docs/PRD.md
+docs/SPRINT0.md
+docs/VISUAL_IDENTITY.md
+docs/CONTENT_INVENTORY.md
+docs/CONTENT_BLUEPRINT.md
+docs/CONTENT_MAP.md
+docs/GALLERY_CURATION_GUIDE.md
+docs/INFORMATION_ARCHITECTURE.md
+docs/MASTER_IMPLEMENTATION_PLAN.md
+docs/RELEASE_PLAN.md
+docs/RECRUITER_OBJECTION_MAP.md
+docs/portfolio-constitution.md
+docs/governance/
+docs/specification/
