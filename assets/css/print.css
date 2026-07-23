@@ -1,0 +1,153 @@
+/* Print-specific styles for CV - improves recruiter print experience */
+/* File: assets/css/print.css */
+
+/* Hide navigation and interactive elements when printing */
+@media print {
+  /* Remove page margins - CV fits A4 standard */
+  @page {
+    margin: 2cm;
+  }
+
+  /* Hide all interactive elements */
+  .no-print, button, .print-btn, .skip-link, nav, header, footer {
+    display: none !important;
+  }
+
+  /* Optimize typography for print */
+  body {
+    font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+
+  /* Improve CV readability - ensure consistent spacing */
+  .section, .role, .edu-item, .cert-item {
+    margin-bottom: 12pt;
+    page-break-inside: avoid;
+  }
+
+  /* Header optimization for CV print */
+  header {
+    text-align: center;
+    margin-bottom: 20pt;
+    border-bottom: 2pt solid #1E3A5F;
+    padding-bottom: 10pt;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  /* Typography hierarchy for CV */
+  h1 {
+    font-size: 20pt;
+    color: #1E3A5F;
+    margin-bottom: 4pt;
+  }
+
+  h2 {
+    font-size: 14pt;
+    color: #1E3A5F;
+    border-bottom: 1pt solid #ccc;
+    padding-bottom: 3pt;
+    margin-top: 16pt;
+  }
+
+  h3 {
+    font-size: 12pt;
+    color: #1E3A5F;
+    margin-top: 12pt;
+  }
+
+  /* Link optimization for print */
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  a[href^="http"]::after {
+    content: " " attr(href);
+    font-size: 9pt;
+    color: #666;
+  }
+
+  /* Skills and list formatting */
+  .skills-grid {
+    display: block;
+    columns: 2;
+    column-gap: 20pt;
+  }
+
+  /* Remove background colors and complex layouts */
+  .skill-cluster, .stat-card, .timeline {
+    break-inside: avoid;
+  }
+
+  /* CV contact information optimization */
+  .contact {
+    font-size: 10pt;
+    margin-bottom: 16pt;
+    border-bottom: 1.5pt solid #1E3A5F;
+    padding-bottom: 8pt;
+    text-align: center;
+  }
+
+  .contact span {
+    display: inline-block;
+    margin: 0 8pt;
+  }
+
+  /* Ensure images don't break layout */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Page break control for CV sections */
+  .break-before {
+    page-break-before: always;
+  }
+
+  /* Hide decorative elements */
+  .eyebrow, .stat-label, .edu-year {
+    color: #666;
+    font-weight: normal;
+  }
+
+  /* CV-style formatting for lists */
+  ul, ol {
+    margin-left: 16pt;
+    margin-bottom: 8pt;
+  }
+
+  li {
+    margin-bottom: 4pt;
+  }
+
+  /* Remove shadows and complex effects */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Print-specific button style */
+  .print-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #1E3A5F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 1000;
+  }
+
+  .print-btn:hover {
+    background: #162d4a;
+  }
+}
