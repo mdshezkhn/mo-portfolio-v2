@@ -26,6 +26,15 @@
   .section, .role, .edu-item, .cert-item {
     margin-bottom: 12pt;
     page-break-inside: avoid;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Ensure section headings stay with their content */
+  h2, h3, h4 {
+    page-break-after: avoid;
+    orphans: 3;
+    widows: 3;
   }
 
   /* Header optimization for CV print */
