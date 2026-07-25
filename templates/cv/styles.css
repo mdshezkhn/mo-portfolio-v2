@@ -1,0 +1,153 @@
+/* 
+   styles.css 
+   Professional CV Stylesheet optimized for A4 PDF Print via Chrome 
+*/
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #2980b9;
+    --text-color: #333333;
+    --light-gray: #7f8c8d;
+    --border-color: #bdc3c7;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: 11pt;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 21cm; /* A4 width */
+}
+
+/* Print Specific Rules */
+@page {
+    size: A4;
+    margin: 1.5cm;
+}
+
+@media print {
+    body {
+        padding: 0;
+        max-width: none;
+    }
+    
+    .page-break-before {
+        page-break-before: always;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+    
+    /* Hide HTML comments and manifest from print */
+    .manifest, .no-print {
+        display: none !important;
+    }
+}
+
+/* Header Section */
+header {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 24pt;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 12pt;
+    font-weight: 500;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+}
+
+.contact-info {
+    font-size: 9.5pt;
+    color: var(--light-gray);
+    display: flex;
+    gap: 15px;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 14pt;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* Experience Entries */
+.entry {
+    margin-bottom: 15px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.entry-title {
+    font-size: 12pt;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.entry-date {
+    font-size: 10pt;
+    font-style: italic;
+    color: var(--light-gray);
+}
+
+.entry-subtitle {
+    font-size: 11pt;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 4px;
+    text-align: justify;
+}
+
+/* Manifest Block (Visible only in screen view for debugging, hidden in print) */
+.manifest {
+    background-color: #f8f9fa;
+    border: 1px dashed #ccc;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-family: monospace;
+    font-size: 9pt;
+    color: #666;
+}
