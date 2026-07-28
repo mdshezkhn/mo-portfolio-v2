@@ -47,6 +47,20 @@ export function initAnimations() {
         el.classList.add('reveal');
     });
 
+    /* ── Mobile-first reveal ──────────────────────────────── */
+    /* On mobile, ensure content becomes visible even if scroll
+       doesn't trigger IntersectionObserver (e.g., very tall
+       sections, slow connections, or browser quirks). */
+    const isMobile = window.matchMedia('(max-width: 899px)').matches;
+
+    if (isMobile) {
+        /* Show all sections immediately on mobile for reliability */
+        revealTargets.forEach(function (el) {
+            el.classList.add('is-visible');
+        });
+        return;
+    }
+
     const revealObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
             if (!entry.isIntersecting) { return; }
@@ -56,7 +70,8 @@ export function initAnimations() {
             revealObserver.unobserve(entry.target);
         });
     }, {
-        threshold: 0.15
+        threshold: 0.05,
+        rootMargin: '0px 0px -20% 0px'
     });
 
     revealTargets.forEach(function (el) {
