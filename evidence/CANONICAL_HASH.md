@@ -1,4 +1,4 @@
-# Canonical Hash - Integrity Snapshot v1.2.1
+# Canonical Hash - Integrity Snapshot v1.2.2
 
 This file records the dynamically generated counts of structural elements present in the canonical `research/*.md` directory.
 

@@ -1,7 +1,7 @@
 Repository Integrity Declaration
 
 Audit ID: AUDIT-STAGE3-REMEDIATION-20260728
-Repository Version: v1.2.1
+Repository Version: v1.2.2
 Audit Date: 2026-07-28
 
 Evidence Sources:
