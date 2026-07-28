@@ -1,5 +1,9 @@
 # PGCE Research Evidence System Changelog
 
+## v1.2.2 - Stage 3.1 Remediation (2026-07-28)
+* **Action**: Executed Stage 3.1 remediation based on Independent Forensic Audit Report `audit_report_v1.2.1.md`.
+* **Changes**: Corrected the BICS-CALP teacher count and removed Teacher G misattribution in `evidence/research/impact_register.md`. Fixed the broken relative hyperlink for `findings.md` in `evidence/snippets/portfolio_snippets.md`. Updated the validation report to version `v1.2.2`.
+
 ## v1.2.0 - Remediation after Stage 2 Integrity Audit (2026-07-28)
 * **Action**: Executed Stage 2 remediation based on independent audit report `AUDIT_STAGE2_INTEGRITY.md`.
 * **Changes**: Corrected Teacher G misattribution across all downstream files, removed unverified direct quotes from CV/LinkedIn/Portfolio canonical assets, created physical `evidence/snippets/` folder, added `differentiation` moderate competency to JSON, and recomputed hash snapshot.
