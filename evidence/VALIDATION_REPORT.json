@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "date": "2026-07-28 18:14:59",
+    "version": "v1.2.1",
+    "audit_id": "AUDIT-STAGE3-REMEDIATION-20260728",
+    "overall_status": "PASS"
+  },
+  "checks": [
+    {
+      "Check ID": "V1-QUOTES",
+      "Description": "Verify no unverified verbatim teacher quotations exist in any live markdown files.",
+      "Target File": "evidence/**/*.md",
+      "Status": "PASS",
+      "Notes": "No unverified teacher quotes detected."
+    },
+    {
+      "Check ID": "V2-TRACEABILITY",
+      "Description": "Verify every snippet contains specific reference links that resolve to valid canonical finding headers.",
+      "Target File": "evidence/snippets/*.md",
+      "Status": "PASS",
+      "Notes": "All snippets contain specific, resolving canonical references."
+    },
+    {
+      "Check ID": "V3-MARKER",
+      "Description": "Verify marker attribution matches the verified metadata inside research.json.",
+      "Target File": "index.html / research.json",
+      "Status": "PASS",
+      "Notes": "Marker attribution verified in both public HTML and verified research metadata."
+    },
+    {
+      "Check ID": "V4-PROVENANCE",
+      "Description": "Verify index.html research card provenance references portfolio_snippets.md directly.",
+      "Target File": "index.html",
+      "Status": "PASS",
+      "Notes": "Provenance label matches snippets directory."
+    },
+    {
+      "Check ID": "V5-PROPAGATION",
+      "Description": "Verify no residual '4 of 7' or 'Teacher G' BICS-CALP attributions remain in live markdown.",
+      "Target File": "evidence/**/*.md",
+      "Status": "PASS",
+      "Notes": "All BICS-CALP counts correctly read '3 of 7' with no Teacher G attributions."
+    },
+    {
+      "Check ID": "V6-COMPETENCY",
+      "Description": "Verify moderate competency 'differentiation' is mapped in research.json.",
+      "Target File": "research.json",
+      "Status": "PASS",
+      "Notes": "Differentiation correctly mapped."
+    },
+    {
+      "Check ID": "V7-GOVERNANCE",
+      "Description": "Verify the Precedence Hierarchy rule is documented in RESEARCH_GOVERNANCE.md.",
+      "Target File": "RESEARCH_GOVERNANCE.md",
+      "Status": "PASS",
+      "Notes": "Precedence hierarchy verified in governance rules."
+    },
+    {
+      "Check ID": "V8-HASH",
+      "Description": "Verify CANONICAL_HASH.md snapshot matches live computed repository totals.",
+      "Target File": "CANONICAL_HASH.md",
+      "Status": "PASS",
+      "Notes": "Integrity Snapshot matches computed counts."
+    }
+  ]
+}

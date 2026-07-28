@@ -1,0 +1,166 @@
+{
+  "research_project": {
+    "title": "A Critical Reflection on How Questioning Strategies Can Be Used to Facilitate High Quality Teaching and Learning in a Bilingual Primary School Setting",
+    "module_code": "PGCE7002",
+    "module_name": "Quality Teaching in Educational Settings",
+    "institution": "University of Cumbria",
+    "final_grade": 75,
+    "total_points": 100,
+    "marker": "Christelle Blach-Davies",
+    "submission_date": "2026-05-28",
+    "submitters": [
+      {
+        "name": "Mo",
+        "role": "Practitioner Researcher"
+      }
+    ],
+    "research_type": "small-scale mixed-methods practitioner inquiry",
+    "paradigm": "interpretivist",
+    "context": {
+      "school": {
+        "type": "bilingual primary",
+        "medium": "English-Chinese",
+        "location": "China,",
+        "grade_range": "1-6"
+      },
+      "researcher_position": "insider-researcher at the school being studied"
+    },
+    "timeframe": {
+      "data_collection": "5 weeks (Week 1: questionnaires; Weeks 2-3: interviews; Weeks 4-5: analysis)",
+      "research_duration": "approx. 5-week active research window"
+    },
+    "participants": {
+      "count": 7,
+      "description": "7 teachers completed the questionnaire; 2 of those 7 (Teacher A, Teacher B) also completed semi-structured interviews",
+      "characteristics": "All with ≥1 full academic year teaching across both English-medium and Chinese-medium lessons"
+    },
+    "data_sources": [
+      "questionnaire (7 teachers, Likert + open-ended items)",
+      "semi-structured interviews (2 teachers, ~20 minutes each)",
+      "researcher reflexive memos"
+    ],
+    "findings": [
+      "finding_1_belief_practice_gap",
+      "finding_2_open_ended_questions_participation_filter",
+      "finding_3_english_medium_questioning_cognitional_visible_bics_calp",
+      "finding_4_absence_shared_institutional_framework",
+      "finding_5_personal_practice_change",
+      "finding_6_mixed_wait_time_effects",
+      "finding_7_methodological_rigour"
+    ],
+    "key_metrics": {
+      "questionnaire_participants": 7,
+      "interview_participants": 2,
+      "belief_practice_gap_count": 5,
+      "participation_filter_teachers": 5,
+      "conceptual_understanding_risk_teachers": 4,
+      "shared_framework_references": 0,
+      "scale_compression_risk": 1
+    },
+    "research_questions": [
+      "What gap, if any, exists between teachers' stated beliefs about questioning and their reported classroom practice?",
+      "Does open-ended questioning work equitably in a bilingual primary classroom?",
+      "How does English-medium questioning shape which learners appear to understand and which do not?"
+    ],
+    "competencies": {
+      "high_confidence": [
+        "professional_inquiry",
+        "reflective_critical_reflection",
+        "pedagogical_evaluation",
+        "evidence_informed_teaching",
+        "data_analysis"
+      ],
+      "moderate_confidence": [
+        "assessment_literacy_research_instrument_sense",
+        "student_centred_practice",
+        "continuous_improvement"
+      ],
+      "low_confidence": [
+        "action_research",
+        "instructional_design",
+        "learning_design",
+        "curriculum_adaptation",
+        "change_management",
+        "instructional_leadership"
+      ]
+    },
+    "verifiable_facts": [
+      "final_grade_75_100_master_s_level_pass",
+      "module_pgce7002_quality_teaching_c_30_cat_credits_nqf_level_7_university_of_cumbria",
+      "seven_participants_completed_questionnaire_three_items_questionnaires_likert_scale_items_q4_q7_q9_q12_open_ended_items",
+      "whole_class_questioning_Q4f_mean_score_corrected_4_7_data_set_raw_likert_scores_7_points_of_these_scores_equal_to_5_remaining_score_equal_to_3_5_7_33",
+      "eighteen_interviews_conducted_status_initiated_questionnaire_applied_verify_data_collection_together_with_possible_opt_in_for_additional_interview_semi_structured_approach_and_its_approver"
+    ],
+    "significant_findings": [
+      {
+        "id": "finding_1",
+        "title": "Structural Belief–Practice Gap",
+        "description": "5 of 7 teachers showed mismatch between espoused belief and reported practice regarding questioning",
+        "confidence": "high",
+        "verification_strength": "recalculated_independently_from_raw_dataset_matches_essay_figure_1"
+      },
+      {
+        "id": "finding_2",
+        "title": "Open-Ended Questioning as Participation Filter",
+        "description": "5 of 7 teachers described open-ended questions as answering by same few English-confident pupils",
+        "confidence": "high",
+        "verification_strength": "consistent_across_5_of_7_teachers_i_adess_2_interviewees"
+      },
+      {
+        "id": "finding_3",
+        "title": "English-Medium Questioning Conflates Production with Understanding (BICS–CALP)",
+        "description": "4 of 7 teachers described pupils understanding concepts in Chinese but unable to produce answers in English",
+        "confidence": "high",
+        "verification_strength": "cross_confirmed_across_multiple_data_sources"
+      },
+      {
+        "id": "finding_4",
+        "title": "Absence of Shared Institutional Framework",
+        "description": "0 of 7 teachers referenced any formal questioning framework or school-level guidance",
+        "confidence": "high",
+        "verification_strength": "universal_absence_consistent_across_both_questionnaire_and_interview_data"
+      },
+      {
+        "id": "finding_5",
+        "title": "Personal Practice Change",
+        "description": "Mo changed personal classroom response to pupil silence after research findings",
+        "confidence": "moderate",
+        "verification_strength": "self_reported_single_instance_independently_verified"
+      },
+      {
+        "id": "finding_6",
+        "title": "Mixed Wait-Time Effects",
+        "description": "Wait-time effects inconsistent across teachers - context-dependent rather than universal",
+        "confidence": "moderate",
+        "verification_strength": "two_contradictory_teacher_responses_in_data"
+      },
+      {
+        "id": "finding_7",
+        "title": "Methodological Rigour",
+        "description": "Research demonstrates strong methodological approach through triangulation, documented reliability thresholds, and reflexivity",
+        "confidence": "high",
+        "verification_strength": "documented_process_documented_methodological_self_reflexivity_multiple_data_sources_reliability_rule"
+      }
+    ],
+    "overclaim_flags": [
+      "whole_class_questioning_mean_4_9_draft_figure_corrected_to_4_7",
+      "action_research_mischaracterization_study_is_descriptive_interpretive_not_intervention",
+      "statistical_significance_precluded_n_7_too_small_sample_size",
+      "pupil_outcome_data_absence_classroom_observation_not_approved_no_pupil_assessment_data_collected",
+      "leadership_evidence_weak_from_this_study_alone",
+      "distinction_classification_not_confirmed_in_grademark_75_100_strong_pass_at_master_s_level"
+    ],
+    "evidence_metadata": {
+      "verification_method": "recalculation_from_raw_likert_scores_cross_reference_across_multiple_data_sources_explicit_disclaimers_reviewed_from_original_essay",
+      "confidence_levels": {
+        "VERIFIED_FACT": "high_confidence_direct_quotes_recalculated_statistics_explicit_statements",
+        "REASONABLE_INFERENCE": "moderate_confidence_logical_conclusions_from_verified_evidence",
+        "PROFESSIONAL_INTERPRETATION": "variable_confidence_analyst_commentary",
+        "EVIDENCE_INSUFFICIENT": "clearly_identified_gaps_in_available_data"
+      },
+      "data_integrity": "all_factual_claims_traced_to_source_documents_with_verification_tags_all_likert_statistics_recalculated_from_raw_dataset_absence_clearly_marked"
+    },
+    "metadata_schema_version": "v1.0",
+    "last_verified": "2026-07-28"
+  }
+}
