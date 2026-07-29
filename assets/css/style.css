@@ -18,19 +18,19 @@
 ========================================================== */
 
 :root {
+    /* ── Colour Theme: Sleek Dark Mode (Default) ────────── */
+    --bg:              #121016;
+    --bg-surface:      #1A1822;
+    --text:            #F3F4F6;
+    --text-secondary:  #D1D5DB;
+    --text-muted:      #9CA3AF;
 
-    /* ── Colour ─────────────────────────────────────────── */
-    --bg:              #F8FAFC;
+    --accent:          #4C3A6B; /* Dark Violet */
+    --accent-secondary: #2C3E6B; /* Light Navy */
+    --accent-soft:     rgba(76, 58, 107, 0.15);
 
-    --text:            #111827;
-    --text-secondary:  #374151;
-    --text-muted:      #4B5563;
-
-    --accent:          #1E3A5F;
-    --accent-soft:     rgba(30,58,95,.08);
-
-    --border:          #E5E7EB;
-    --border-strong:   #64748B;
+    --border:          #2A2735;
+    --border-strong:   #4C3A6B;
 
     /* ── Layout ─────────────────────────────────────────── */
     --container:       1120px;
@@ -40,14 +40,35 @@
     --radius-lg:       16px;
 
     /* ── Animation ───────────────────────────────────────── */
-    --transition:      300ms ease;
+    --transition:      200ms ease;
 
     /* ── Shadows ─────────────────────────────────────────── */
-    /* Extracted from inline rgba() values repeated across card
-       components. Changing one token updates every card. */
-    --shadow-card:       0 4px 12px rgba(0,0,0,0.03);
-    --shadow-card-hover: 0 12px 24px rgba(0,0,0,0.06);
-    --shadow-subtle:     0 4px 6px -1px rgba(0,0,0,0.05);
+    --shadow-card:       0 4px 20px rgba(0,0,0,0.2);
+    --shadow-card-hover: 0 12px 30px rgba(0,0,0,0.4);
+    --shadow-subtle:     0 4px 6px -1px rgba(0,0,0,0.1);
+
+    /* ── Fonts ───────────────────────────────────────────── */
+    --font-system:     Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Light Theme Variables */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg:              #F9F9FB;
+        --bg-surface:      #FFFFFF;
+        --text:            #111827;
+        --text-secondary:  #374151;
+        --text-muted:      #6B7280;
+
+        --accent-soft:     rgba(76, 58, 107, 0.08);
+
+        --border:          #E5E7EB;
+        --border-strong:   #64748B;
+
+        --shadow-card:       0 4px 12px rgba(0,0,0,0.03);
+        --shadow-card-hover: 0 12px 24px rgba(0,0,0,0.06);
+        --shadow-subtle:     0 4px 6px -1px rgba(0,0,0,0.05);
+    }
 }
 /* ==========================================================
    reset.css
@@ -74,7 +95,7 @@
 body {
     background: var(--bg);
     color: var(--text);
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-system), sans-serif;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
 }
@@ -139,7 +160,7 @@ main[tabindex="-1"]:focus {
 /* ── Headings ─────────────────────────────────────────── */
 
 h1, h2, h3, h4 {
-    font-family: "Fraunces", serif;
+    font-family: var(--font-system), sans-serif;
     line-height: 1.15;
 }
 
@@ -167,7 +188,7 @@ p {
 .badge {
     display: inline-flex;
     align-items: center;
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -176,6 +197,84 @@ p {
     background: var(--accent-soft);
     color: var(--accent);
     text-transform: uppercase;
+}
+
+.badge-level-a {
+    background: rgba(16, 185, 129, 0.15) !important; /* Green */
+    color: #10B981 !important;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-level-b {
+    background: rgba(59, 130, 246, 0.15) !important; /* Blue */
+    color: #3B82F6 !important;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.badge-level-c {
+    background: rgba(245, 158, 11, 0.15) !important; /* Amber */
+    color: #F59E0B !important;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.hero-credentials-badges {
+    display: flex;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.tl-evidence-link {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    border-top: 1px dashed var(--border);
+    padding-top: 0.75rem;
+}
+
+.tl-evidence-link a {
+    color: #3B82F6;
+    font-weight: 600;
+}
+
+.tl-evidence-link a:hover {
+    text-decoration: underline;
+}
+
+.evidence-table-wrapper {
+    overflow-x: auto;
+    margin-top: 2rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+}
+
+.evidence-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.evidence-table th, 
+.evidence-table td {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.evidence-table th {
+    background: rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    color: var(--text);
+}
+
+.evidence-table tr:last-child td {
+    border-bottom: none;
+}
+
+.evidence-table td a {
+    color: #3B82F6;
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 /* ── Subsection title ────────────────────────────────── */
@@ -192,7 +291,7 @@ p {
 .eyebrow {
     display: inline-block;
     margin-bottom: 1.25rem;
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 0.875rem;
     font-weight: 700;
     color: var(--accent);
@@ -275,7 +374,7 @@ footer {
 }
 
 .logo {
-    font-family: "Fraunces", serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -361,7 +460,7 @@ footer {
     gap: 0.5rem;
     padding: 14px 28px;
     border-radius: var(--radius-sm);
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.015em;
@@ -426,7 +525,7 @@ footer {
 .edu-deg,
 .cert-name,
 .pd-card h4 {
-    font-family: "Fraunces", serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -500,7 +599,7 @@ footer {
 }
 .stat-num {
     order: -1;
-    font-family: "Fraunces", serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--accent);
@@ -623,7 +722,7 @@ footer {
     object-fit: cover;
 }
 .wc-name {
-    font-family: "Fraunces", serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 0.25rem;
@@ -730,7 +829,7 @@ footer {
 }
 
 .about-quote {
-    font-family: "Fraunces", serif;
+    font-family: var(--font-system), sans-serif;
     font-size: clamp(1.5rem, 3vw, 2rem);
     line-height: 1.4;
     color: var(--accent);
@@ -751,9 +850,76 @@ footer {
     margin-bottom: 0.75rem;
 }
 
+/* ── Snapshot & Highlights ─────────────────────────── */
+
+.snapshot-content p {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .highlights-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.highlight-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition), border-color var(--transition);
+}
+
+.highlight-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-card-hover);
+}
+
+.highlight-card .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.highlight-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+}
+
+.highlight-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.highlight-card .card-link {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #3B82F6;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.highlight-card .card-link:hover {
+    text-decoration: underline;
+}
+
 /* ==========================================================
    JOURNEY / TIMELINE
-========================================================== */
+ ========================================================== */
 
 .journey-intro {
     font-size: 1.2rem;
@@ -812,7 +978,7 @@ footer {
 }
 
 .tl-title {
-    font-family: "Fraunces", serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
 }
@@ -970,7 +1136,7 @@ footer {
 }
 
 .contact-image blockquote {
-    font-family: "Fraunces", serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 1.2rem;
     font-style: italic;
     text-align: center;
@@ -1186,7 +1352,7 @@ footer {
     background: var(--accent-soft);
     border: 1px dashed var(--border-strong);
     color: var(--accent);
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.03em;
@@ -1197,8 +1363,8 @@ footer {
     display: none;
 }
 
-.cert-thumb.media-missing::after { content: "Certificate preview"; }
-.wc-qr.media-missing::after       { content: "WeChat QR"; }
+.cert-thumb.media-missing::after { content: "Certificate available upon request"; }
+.wc-qr.media-missing::after       { content: "Scan QR code on WeChat"; }
 
 /* Larger standalone portraits: just hide the broken image so the
    surrounding content (caption / quote) stays intact. */
@@ -1233,79 +1399,14 @@ footer {
 }
 
 .video-placeholder-title {
-    font-family: "Fraunces", serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
 .video-placeholder-text {
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-system), sans-serif;
     font-size: 0.9rem;
     color: var(--text-secondary);
-}
-
-/* ==========================================================
-   SELF-HOSTED FONTS
-   Fraunces + Manrope served from assets/fonts/ so the site
-   renders correctly behind the Great Firewall — Google Fonts
-   is blocked in mainland China and its <link> would stall
-   first paint. font-display: swap keeps text visible.
-   ========================================================== */
-
-@font-face {
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url('../fonts/fraunces-normal-500.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url('../fonts/fraunces-normal-600.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url('../fonts/fraunces-normal-700.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'Fraunces';
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-    src: url('../fonts/fraunces-italic-400.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('../fonts/manrope-normal-400.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url('../fonts/manrope-normal-500.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url('../fonts/manrope-normal-600.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url('../fonts/manrope-normal-700.woff2') format('woff2');
 }

@@ -6,13 +6,11 @@
 
     <!-- Set the .js flag before first paint. Scroll-reveal elements start hidden ONLY
          when JS is active, so no-JS users (and bots/SEO) always see fully visible
-         content. Also removes the old flash-of-visible-then-hidden regression. -->
+         content. -->
     <script>
         document.documentElement.classList.add('js');
-        /* Delegated, capture-phase handler: if any referenced image fails to load
-           (e.g. a user-supplied asset not yet added), mark its container so CSS
-           can show a calm placeholder instead of a broken-image icon. Once the
-           real file exists at the referenced path, this never fires. */
+        /* Delegated, capture-phase handler: if any referenced image fails to load,
+           mark its container so CSS can show a calm placeholder instead of a broken-image icon. */
         document.addEventListener('error', function (e) {
             var t = e.target;
             if (t && t.tagName === 'IMG') {
@@ -22,35 +20,24 @@
         }, true);
     </script>
 
-    <!-- Primary Meta -->
-    <title>Mohammed Shehzad Khan | International Primary Educator</title>
-    <meta name="description" content="Professional portfolio of Mohammed Shehzad Khan — an international primary educator with 10+ years of experience across India and China, specialising in EAL, STEM integration, teacher development, and instructional leadership.">
+    <!-- Primary Meta Tags -->
+    <title>Mohammed Shehzad Khan | International Primary Educator & EAL Specialist</title>
+    <meta name="description" content="Professional portfolio of Mohammed Shehzad Khan — an international primary educator and EAL specialist with 11+ years of experience across India and China.">
     <meta name="author" content="Mohammed Shehzad Khan">
-    <meta name="keywords" content="International Educator, Primary Teacher, EAL, ESL, STEM, Teacher Training, Instructional Quality, PGCE, China, International Schools, Bilingual Education, Zhengzhou">
-    <link rel="canonical" href="https://<gitee-username>.gitee.io/mo-portfolio/">
+    <meta name="keywords" content="International Educator, Primary Teacher, EAL, ESL, STEM, Teacher Training, Instructional Quality, PGCE, China, International Schools, Bilingual Education">
+    <link rel="canonical" href="https://mdshezkhn.gitee.io/mo-portfolio/">
 
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type"        content="website">
-    <meta property="og:url"         content="https://<gitee-username>.gitee.io/mo-portfolio/">
-    <meta property="og:title"       content="Mohammed Shehzad Khan | International Primary Educator">
-    <meta property="og:description" content="10+ years of international primary education across India and China. Evidence-informed practice, STEM integration, instructional leadership.">
-    <meta property="og:image"       content="https://<gitee-username>.gitee.io/mo-portfolio/assets/images/profile/profile.jpeg">
+    <meta property="og:url"         content="https://mdshezkhn.gitee.io/mo-portfolio/">
+    <meta property="og:title"       content="Mohammed Shehzad Khan | International Primary Educator & EAL Specialist">
+    <meta property="og:description" content="11+ years of international primary education across India and China. PGCE (Cumbria) & B.Ed. Evidence-informed practice, STEM integration.">
+    <meta property="og:image"       content="https://mdshezkhn.gitee.io/mo-portfolio/assets/images/profile/profile.jpeg">
     <meta property="og:locale"      content="en_GB">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card"        content="summary_large_image">
-    <meta name="twitter:title"       content="Mohammed Shehzad Khan | International Primary Educator">
-    <meta name="twitter:description" content="10+ years of international primary education. EAL, STEM, instructional leadership, PGCE.">
-    <meta name="twitter:image"       content="https://<gitee-username>.gitee.io/mo-portfolio/assets/images/profile/profile.jpeg">
-
-    <!-- Favicons: SVG monogram (covers all modern browsers).
-         Add favicon.ico + apple-touch-icon.png later for legacy/iOS. -->
-    <link rel="icon"             href="assets/icons/favicon.svg"                 type="image/svg+xml">
-    <link rel="manifest"         href="manifest.webmanifest">
-
-    <!-- Fonts: Fraunces + Manrope are SELF-HOSTED in assets/fonts/ (see the @font-face
-         rules in style.css). Self-hosting is required — Google Fonts is blocked
-         behind the Great Firewall, so a Google <link> would stall first paint in China. -->
+    <!-- Favicons -->
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -61,10 +48,10 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Mohammed Shehzad Khan",
-        "jobTitle": "International Primary Educator",
-        "description": "International educator with 10+ years of experience in primary education, EAL instruction, teacher development, and instructional leadership across India and China.",
-        "url": "https://<gitee-username>.gitee.io/mo-portfolio/",
-        "image": "https://<gitee-username>.gitee.io/mo-portfolio/assets/images/profile/profile.jpeg",
+        "jobTitle": "International Primary Educator & EAL Specialist",
+        "description": "International educator with 11+ years of experience in primary education, EAL instruction, teacher development, and curriculum coordination across India and China.",
+        "url": "https://mdshezkhn.gitee.io/mo-portfolio/",
+        "image": "https://mdshezkhn.gitee.io/mo-portfolio/assets/images/profile/profile.jpeg",
         "email": "mdshezkhn@hotmail.com",
         "telephone": "+86-131 3771 9002",
         "address": {
@@ -109,12 +96,14 @@
                     <span class="hamburger-bar"></span>
                 </button>
                 <ul class="nav-links" id="nav-menu">
-                    <li><a href="#story">Story</a></li>
-                    <li><a href="#impact">Impact</a></li>
-                    <li><a href="#journey">Journey</a></li>
-                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#hero">Overview</a></li>
+                    <li><a href="#snapshot">Snapshot</a></li>
+                    <li><a href="#highlights">Highlights</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
                     <li><a href="#research">Research</a></li>
-                    <li><a href="#moments">Gallery</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#credentials">Credentials</a></li>
+                    <li><a href="#evidence">Evidence</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <a href="assets/documents/Mohammed_Shehzad_Khan_CV.pdf" class="btn btn-primary nav-cta">Download CV</a>
@@ -123,20 +112,27 @@
     </header>
 
     <main id="main-content" tabindex="-1">
-        <!-- HERO -->
+        <!-- 1. HERO SECTION -->
         <section id="hero" aria-labelledby="hero-heading">
             <div class="container hero-grid">
                 <div class="hero-content">
                     <span class="eyebrow">International Educator &middot; China</span>
                     <h1 id="hero-heading">Mohammed Shehzad Khan</h1>
-                    <p class="hero-description">International educator combining classroom excellence, teacher development and evidence-informed practice across multilingual learning environments.</p>
+                    <p class="hero-description">Primary Educator &amp; EAL Specialist. Evidence-informed practitioner specializing in language acquisition, curriculum coordination, and teacher mentoring.</p>
+                    
+                    <div class="hero-credentials-badges">
+                        <span class="badge badge-level-b">PGCE (U. of Cumbria)</span>
+                        <span class="badge badge-level-a">B.Ed. Verified</span>
+                        <span class="badge badge-level-a">B.Sc. Physics</span>
+                    </div>
+
                     <div class="button-group">
                         <a href="assets/documents/Mohammed_Shehzad_Khan_CV.pdf" class="btn btn-primary" download><span aria-hidden="true">↓</span> Download CV</a>
                         <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                     </div>
                     <ul class="hero-meta">
                         <li><span aria-hidden="true">📍</span> Zhengzhou, China</li>
-                        <li><span aria-hidden="true">✔</span> Open to International Opportunities</li>
+                        <li><span aria-hidden="true">📅</span> Available from August 2027</li>
                     </ul>
                 </div>
                 <div class="hero-image">
@@ -145,412 +141,428 @@
             </div>
         </section>
 
-        <!-- STORY -->
-        <section id="story" aria-labelledby="story-heading">
+        <!-- 2. PROFESSIONAL SNAPSHOT -->
+        <section id="snapshot" aria-labelledby="snapshot-heading">
             <div class="container reveal">
-                <h2 id="story-heading">About Me</h2>
-                <p>I am an international educator with more than a decade of experience across primary education, teacher development, instructional quality, and educational leadership. My teaching journey has taken me from India to China, where I have had the privilege of working with multilingual learners in bilingual school environments.</p>
-                <p>My classroom is built on the belief that every child can succeed when learning is engaging, purposeful, and supported through meaningful relationships. I strive to create an environment where students feel confident to communicate, think critically, make mistakes, and grow as independent learners.</p>
-                <p>Alongside classroom teaching, I have worked in teacher training, quality assurance, and instructional coaching. These experiences have strengthened my ability to design effective learning experiences, mentor colleagues, analyse student progress, and continuously improve teaching practice through reflection and research.</p>
-                <p>I believe that great teaching is a balance of compassion, professionalism, evidence-informed practice, and lifelong learning. Through this portfolio, I hope to share my journey, my classroom, and the values that continue to shape my work as an educator.</p>
+                <span class="eyebrow">Professional Snapshot</span>
+                <h2 id="snapshot-heading">Bridging Language &amp; Academic Content</h2>
+                <div class="snapshot-content">
+                    <p>Primary EAL educator with 11+ years of experience across India and China [C-001]. I combine classroom expertise with teacher development to ensure multilingual learners successfully access academic subjects.</p>
+                    <p>My work integrates evidence-informed teaching methods with practical classroom application. I design language-sensitive lessons, mentor teaching staff, and align school curricula with international standards.</p>
+                </div>
             </div>
         </section>
 
-        <!-- IMPACT -->
-        <section id="impact" aria-labelledby="impact-heading">
+        <!-- 3. EVIDENCE-BASED HIGHLIGHTS -->
+        <section id="highlights" aria-labelledby="highlights-heading">
             <div class="container reveal">
-                <span class="eyebrow">Expertise</span>
-                <h2 id="impact-heading">Skills &amp; Proficiencies</h2>
-
-                <dl class="stats-grid">
-                    <div class="stat-card">
-                        <dt class="stat-label">Years</dt>
-                        <dd class="stat-num">10+</dd>
+                <span class="eyebrow">Impact Pillars</span>
+                <h2 id="highlights-heading">Evidence-Based Highlights</h2>
+                <div class="highlights-grid">
+                    <!-- Student Impact -->
+                    <div class="highlight-card">
+                        <div class="card-icon" aria-hidden="true">🏫</div>
+                        <h3>Student Impact</h3>
+                        <p>Facilitated language acquisition and phonics progression for primary multilingual students [C-009]. Applied classroom strategies designed to transition learners from basic conversation to academic language mastery.</p>
+                        <a href="#evidence" class="card-link">View Evidence [E-3004] &rarr;</a>
                     </div>
-                    <div class="stat-card">
-                        <dt class="stat-label">Countries</dt>
-                        <dd class="stat-num">2</dd>
+                    <!-- Teacher Development -->
+                    <div class="highlight-card">
+                        <div class="card-icon" aria-hidden="true">👥</div>
+                        <h3>Teacher Development</h3>
+                        <p>Led educator mentoring and instructional quality processes [C-010]. Managed professional development plans, classroom coaching programs, and teacher feedback cycles to align pedagogical practices.</p>
+                        <a href="#evidence" class="card-link">View Evidence [E-3002] &rarr;</a>
                     </div>
-                    <div class="stat-card">
-                        <dt class="stat-label">Schools</dt>
-                        <dd class="stat-num">4</dd>
-                    </div>
-                    <div class="stat-card">
-                        <dt class="stat-label">Qualifications</dt>
-                        <dd class="stat-num">MA</dd>
-                        <dd class="stat-label">PGCE &middot; B.Ed &middot; B.Sc</dd>
-                    </div>
-                </dl>
-
-                <div class="skill-clusters">
-                    <div class="skill-cluster">
-                        <h3>Classroom &amp; Pedagogy</h3>
-                        <ul class="chips">
-                            <li class="chip">EAL / ESL Instruction</li>
-                            <li class="chip">Primary Literacy Development</li>
-                            <li class="chip">Differentiated Instruction</li>
-                            <li class="chip">Formative &amp; Summative Assessment</li>
-                            <li class="chip">Inclusive Practice</li>
-                            <li class="chip">IB PYP-Aligned Planning</li>
-                        </ul>
-                    </div>
-                    <div class="skill-cluster">
-                        <h3>STEM Integration</h3>
-                        <ul class="chips">
-                            <li class="chip">Cross-Curricular Science &amp; Maths</li>
-                            <li class="chip">Inquiry-Based Learning (5E Model)</li>
-                            <li class="chip">White Rose Maths</li>
-                            <li class="chip">PhET Simulations</li>
-                            <li class="chip">Explorify</li>
-                        </ul>
-                    </div>
-                    <div class="skill-cluster">
-                        <h3>Leadership &amp; Training</h3>
-                        <ul class="chips">
-                            <li class="chip">Teacher Mentoring</li>
-                            <li class="chip">Instructional Quality Assurance</li>
-                            <li class="chip">Curriculum Development</li>
-                            <li class="chip">Professional Development Design</li>
-                            <li class="chip">Performance Coaching</li>
-                        </ul>
-                    </div>
-                    <div class="skill-cluster">
-                        <h3>Research &amp; Frameworks</h3>
-                        <ul class="chips">
-                            <li class="chip">Dialogic Teaching (Alexander, 2020)</li>
-                            <li class="chip">Translanguaging</li>
-                            <li class="chip">Thematic Analysis (Braun &amp; Clarke)</li>
-                            <li class="chip">BERA Guidelines</li>
-                            <li class="chip">Questioning Strategies</li>
-                        </ul>
+                    <!-- Curriculum Coordination -->
+                    <div class="highlight-card">
+                        <div class="card-icon" aria-hidden="true">📋</div>
+                        <h3>Curriculum Coordination</h3>
+                        <p>Aligned and implemented primary curricula across school settings [C-011]. Integrated cross-curricular inquiry models and standardized assessment moderation practices to improve teaching consistency.</p>
+                        <a href="#evidence" class="card-link">View Evidence [E-3005] &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- PHILOSOPHY -->
-        <section id="philosophy" aria-labelledby="philosophy-heading">
+        <!-- 4. CAREER TIMELINE -->
+        <section id="timeline" aria-labelledby="timeline-heading">
             <div class="container reveal">
-                <span class="eyebrow">Professional Identity</span>
-                <h2 id="philosophy-heading">The Philosophy Behind the <em>Teaching</em></h2>
-                <div class="about-grid">
-                    <div>
-                        <blockquote class="about-quote">I believe every multilingual learner carries a <em>unique linguistic landscape</em> — my role is to map it, honour it, and build bridges toward confident academic expression.</blockquote>
-                    </div>
-                    <div class="about-body">
-                        <div class="about-pillar">
-                            <h3>Classroom Strengths</h3>
-                            <p>Language acquisition, literacy development, and inclusive practice for multilingual learners. Structured lessons using formative assessment and differentiation to build confidence in speaking, reading, and academic writing.</p>
-                        </div>
-                        <div class="about-pillar">
-                            <h3>STEM Foundations</h3>
-                            <p>A B.Sc. in Physics and inquiry-based teaching practice underpin a growing strength in cross-curricular science and maths integration — strengthening my primary/EAL profile rather than redefining it.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- LEADERSHIP -->
-        <section id="leadership" aria-labelledby="leadership-heading">
-            <div class="container reveal">
-                <span class="eyebrow">Future Focus</span>
-                <h2 id="leadership-heading">Leadership &amp; Direction</h2>
-                <div class="about-grid">
-                    <div class="about-pillar">
-                        <h3>Leadership Value</h3>
-                        <p>Curriculum development, teacher mentoring, and training design — supporting instructional quality across school and organisational contexts, from single classrooms to teams of 200+ educators.</p>
-                    </div>
-                    <div class="about-pillar">
-                        <h3>Career Direction</h3>
-                        <p>Targeting an August 2027 start at international or UK-aligned schools, with a strong geographic preference for China and Brunei, as well as key locations in the Gulf (Saudi Arabia, Bahrain, Oman, and Qatar).</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- JOURNEY -->
-        <section id="journey" aria-labelledby="journey-heading">
-            <div class="container reveal">
-                <span class="eyebrow">Career Journey</span>
-                <h2 id="journey-heading">A Decade of <em>Teaching Across Borders</em></h2>
-                <p class="journey-intro">From the classrooms of Mumbai to the international schools of Zhengzhou, each role has deepened my craft as an educator — shaping not just learners, but the teachers who teach them.</p>
+                <span class="eyebrow">Professional History</span>
+                <h2 id="timeline-heading">Career Timeline</h2>
+                <p class="section-intro">A chronological log of professional experience across international primary and teacher development settings [C-001].</p>
 
                 <div class="timeline">
+                    <!-- Aoxin II -->
                     <div class="tl-item">
                         <time class="tl-year" datetime="2024">2024</time>
                         <div class="tl-dot"></div>
                         <div class="tl-card">
                             <div class="tl-top">
-                                <h3 class="tl-title">EAL / English Teacher</h3>
-                                <time class="tl-date" datetime="2024">2024 — Present</time>
+                                <h3 class="tl-title">Primary Educator &amp; Curriculum Lead <span class="badge badge-level-a">Level A</span></h3>
+                                <time class="tl-date">Feb 2024 — Present</time>
                             </div>
                             <p class="tl-org">Aoxin International School</p>
-                            <p class="tl-loc">Zhengzhou, Henan, China</p>
-                            <p class="tl-desc">Second stint at Aoxin following a period teaching in India. Delivering EAL and English instruction across primary levels in a bilingual international school.</p>
+                            <p class="tl-loc">Zhengzhou, China</p>
                             <ul class="tl-bullets">
-                                <li>Delivered EAL and English instruction focused on speaking, listening, reading, writing, grammar, and vocabulary</li>
-                                <li>Planned curriculum-aligned lessons using differentiated instruction for multilingual learners</li>
-                                <li>Designed formative and summative assessments to track progress and set learning targets</li>
-                                <li>Collaborated with international staff to adapt curriculum and improve instructional consistency</li>
+                                <li>Delivered EAL and English instruction across primary levels focused on academic language [C-009]</li>
+                                <li>Planned lessons using differentiated instruction for multilingual learners [C-009]</li>
+                                <li>Designed formative and summative assessments to track and report language progress [C-009]</li>
+                                <li>Collaborated with school staff to adapt curricula and ensure alignment [C-011]</li>
                             </ul>
+                            <div class="tl-evidence-link">
+                                <a href="#evidence">Source Document: Aoxin Appointment [E-3005]</a>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- GEDU -->
                     <div class="tl-item">
                         <time class="tl-year" datetime="2022">2022</time>
                         <div class="tl-dot"></div>
                         <div class="tl-card">
                             <div class="tl-top">
-                                <h3 class="tl-title">Training &amp; Quality Lead</h3>
-                                <time class="tl-date" datetime="2022/2023">2022 — 2023</time>
+                                <h3 class="tl-title">Teacher Trainer &amp; Quality Assurance <span class="badge badge-level-a">Level A</span></h3>
+                                <time class="tl-date">Sep 2022 — Aug 2023</time>
                             </div>
                             <p class="tl-org">GEDU Global Education</p>
-                            <p class="tl-loc">Campuses across UK, Dubai &amp; Malta</p>
-                            <p class="tl-desc">Teacher training and professional development lead for a multi-campus training organisation, working with trainers across UK, Dubai, and Malta programmes.</p>
+                            <p class="tl-loc">India-based (International Scope: UK, UAE, Malta)</p>
                             <ul class="tl-bullets">
-                                <li>Led training and professional development programmes for a team of 15+ trainers</li>
-                                <li>Designed and delivered workshops focused on instructional quality and assessment</li>
-                                <li>Developed quality assurance frameworks to support consistent teaching standards</li>
+                                <li>Led professional development workshops and training courses for educator cohorts [C-017]</li>
+                                <li>Designed training materials focused on instructional quality and assessment delivery [C-017]</li>
+                                <li>Implemented quality assurance checks to support consistent educational standards [C-017]</li>
                             </ul>
+                            <div class="tl-evidence-link">
+                                <a href="#evidence">Source Document: GEDU Relieving Letter [E-3001]</a>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- WhiteHat Jr -->
                     <div class="tl-item">
                         <time class="tl-year" datetime="2020">2020</time>
                         <div class="tl-dot"></div>
                         <div class="tl-card">
                             <div class="tl-top">
-                                <h3 class="tl-title">Instructional Quality Lead</h3>
-                                <time class="tl-date" datetime="2020/2022">2020 — 2022</time>
+                                <h3 class="tl-title">Educator Development Lead <span class="badge badge-level-a">Level A</span></h3>
+                                <time class="tl-date">Aug 2020 — Jul 2022</time>
                             </div>
-                            <p class="tl-org">WhiteHat Jr / Byju's</p>
+                            <p class="tl-org">WhiteHat Jr / BYJU'S</p>
                             <p class="tl-loc">India (Remote)</p>
-                            <p class="tl-desc">Managed instructional quality across a large distributed teaching team during a period of online-education growth.</p>
                             <ul class="tl-bullets">
-                                <li>Managed instructional quality for a team of 200+ educators</li>
-                                <li>Used LMS analytics to monitor teaching effectiveness and consistency</li>
-                                <li>Contributed to coaching frameworks that improved instructional standards at scale</li>
+                                <li>Managed educator development programs and lesson quality evaluations [C-014]</li>
+                                <li>Analyzed learning management platform data to identify teaching support requirements [C-014]</li>
+                                <li>Coached instructional staff on online engagement and formative assessment delivery [C-014]</li>
                             </ul>
+                            <div class="tl-evidence-link">
+                                <a href="#evidence">Source Document: WhiteHat Jr Letter [E-3002]</a>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Aoxin I -->
                     <div class="tl-item">
                         <time class="tl-year" datetime="2018">2018</time>
                         <div class="tl-dot"></div>
                         <div class="tl-card">
                             <div class="tl-top">
-                                <h3 class="tl-title">EAL / English Teacher</h3>
-                                <time class="tl-date" datetime="2018/2020">2018 — 2020</time>
+                                <h3 class="tl-title">Primary Educator &amp; Curriculum Lead <span class="badge badge-level-a">Level A</span></h3>
+                                <time class="tl-date">Jul 2018 — Aug 2020</time>
                             </div>
                             <p class="tl-org">Aoxin International School</p>
-                            <p class="tl-loc">Zhengzhou, Henan, China</p>
-                            <p class="tl-desc">First stint at Aoxin, delivering EAL and English instruction across primary and lower secondary levels.</p>
+                            <p class="tl-loc">Zhengzhou, China</p>
                             <ul class="tl-bullets">
-                                <li>Delivered EAL and English instruction to primary and lower-secondary learners</li>
-                                <li>Led Grade 5 writing moderation across teaching teams</li>
-                                <li>Mentored newly appointed teachers joining the department</li>
+                                <li>Taught EAL classes using content-embedded language learning approaches [C-009]</li>
+                                <li>Coordinated Grade 5 writing assessment moderation across team members [C-013]</li>
+                                <li>Mentored incoming primary teachers joining the language department [C-010]</li>
                             </ul>
+                            <div class="tl-evidence-link">
+                                <a href="#evidence">Source Document: Aoxin Letter [E-3005]</a>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Eton House -->
                     <div class="tl-item">
                         <time class="tl-year" datetime="2017">2017</time>
                         <div class="tl-dot"></div>
                         <div class="tl-card">
                             <div class="tl-top">
-                                <h3 class="tl-title">ESL Teacher &amp; Teacher Trainer (Early Years)</h3>
-                                <time class="tl-date" datetime="2017/2018">2017 — 2018</time>
+                                <h3 class="tl-title">Early Years EAL Teacher <span class="badge badge-level-a">Level A</span></h3>
+                                <time class="tl-date">Aug 2017 — Jun 2018</time>
                             </div>
                             <p class="tl-org">Eton House Kindergarten</p>
-                            <p class="tl-loc">China</p>
-                            <p class="tl-desc">Early Years teaching and teacher training role, delivering ESL instruction and mentoring kindergarten educators.</p>
+                            <p class="tl-loc">Zhengzhou, China</p>
                             <ul class="tl-bullets">
-                                <li>Taught ESL to Early Years learners, building foundational language skills</li>
-                                <li>Delivered demonstration lessons modelling effective ESL pedagogy for teaching staff</li>
-                                <li>Mentored kindergarten educators on classroom practice</li>
+                                <li>Instructed early years groups using play-based language acquisition models [C-019]</li>
+                                <li>Conducted demonstration lessons modelling language instruction techniques [C-019]</li>
+                                <li>Coached teaching assistants on bilingual support strategies [C-010]</li>
                             </ul>
+                            <div class="tl-evidence-link">
+                                <a href="#evidence">Source Document: Eton House Letter [E-3004]</a>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Zhejiang / Helen China -->
                     <div class="tl-item">
                         <time class="tl-year" datetime="2016">2016</time>
                         <div class="tl-dot"></div>
                         <div class="tl-card">
                             <div class="tl-top">
-                                <h3 class="tl-title">ESL Teacher</h3>
-                                <time class="tl-date" datetime="2016/2017">2016 — 2017</time>
+                                <h3 class="tl-title">ESL Educator <span class="badge badge-level-a">Level A</span></h3>
+                                <time class="tl-date">Nov 2016 — Aug 2017</time>
                             </div>
-                            <p class="tl-org">Zhejiang University — Helen China TEFL Network</p>
-                            <p class="tl-loc">Songgang MS, Shenzhen &amp; HSD Foreign Language School, Huzhou</p>
-                            <p class="tl-desc">Middle and high school ESL teaching placement via agency partnership, focused on spoken confidence and academic communication.</p>
+                            <p class="tl-org">Zhejiang University / Helen China TEFL Network</p>
+                            <p class="tl-loc">Shenzhen &amp; Huzhou, China</p>
                             <ul class="tl-bullets">
-                                <li>Designed ESL curricula to improve conversational and academic communication</li>
-                                <li>Prepared students for public speaking competitions and presentations</li>
-                                <li>Applied formative assessment to adapt instruction and improve oral performance</li>
+                                <li>Designed language curriculum materials supporting student communication [C-009]</li>
+                                <li>Coached students in speaking performance and presentation confidence [C-009]</li>
+                                <li>Applied formative checks to target oral articulation improvements [C-009]</li>
                             </ul>
+                            <div class="tl-evidence-link">
+                                <a href="#evidence">Source Document: Helen China Letter [E-3005]</a>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Scholars Academy -->
                     <div class="tl-item">
                         <time class="tl-year" datetime="2014">2014</time>
                         <div class="tl-dot"></div>
                         <div class="tl-card">
                             <div class="tl-top">
-                                <h3 class="tl-title">English, Science &amp; Mathematics Teacher</h3>
-                                <time class="tl-date" datetime="2014/2016">2014 — 2016</time>
+                                <h3 class="tl-title">Primary Educator <span class="badge badge-level-a">Level A</span></h3>
+                                <time class="tl-date">Jan 2014 — Nov 2016</time>
                             </div>
                             <p class="tl-org">Scholars Academy</p>
-                            <p class="tl-loc">Mumbai, Maharashtra, India</p>
-                            <p class="tl-desc">Multi-subject classroom teaching across English, Science, and Mathematics — early foundation for cross-curricular range.</p>
+                            <p class="tl-loc">India</p>
                             <ul class="tl-bullets">
-                                <li>Taught English, Science, and Mathematics across upper primary and secondary levels</li>
-                                <li>Planned curriculum-aligned lessons to support exam readiness and progress</li>
-                                <li>Provided individualised feedback and intervention for diverse learning needs</li>
+                                <li>Taught English, Science, and Mathematics across primary classes [C-024]</li>
+                                <li>Structured learning activities aligned with regional curriculum standards [C-024]</li>
+                                <li>Conducted targeted intervention sessions to support individual learning needs [C-024]</li>
                             </ul>
+                            <div class="tl-evidence-link">
+                                <a href="#evidence">Source Document: Scholars Academy Letter [E-3003]</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- RESEARCH -->
+        <!-- 5. PGCE ACTION RESEARCH -->
         <section id="research" aria-labelledby="research-heading">
             <div class="container reveal">
                 <span class="eyebrow">Practitioner Research</span>
-                <h2 id="research-heading">PGCE <em>Research</em></h2>
+                <h2 id="research-heading">PGCE Action Research <span class="badge badge-level-b">Level B</span></h2>
                 <div class="research-card">
                     <h3 class="research-title">A Critical Reflection on How Questioning Strategies Can Be Used to Facilitate High-Quality Teaching and Learning in a Bilingual Primary School Setting</h3>
                     <ul class="research-meta-tags" aria-label="Research metadata">
-                        <li class="badge">75/100 · Master's Level</li>
-                        <li class="badge">University of Cumbria · PGCE7002</li>
-                        <li class="badge">Marked by Christelle Blach-Davies</li>
+                        <li class="badge badge-level-b">Grade: 75/100 (Master's Level)</li>
+                        <li class="badge badge-level-b">University of Cumbria &middot; PGCE7002</li>
+                        <li class="badge badge-level-b">Triangulated Study: 7 Teachers</li>
                     </ul>
-                    <p class="research-body">I noticed a pattern where open-ended questions were consistently answered by the same small group of English-confident pupils. This study sought to understand why, and revealed that without an institutional framework, questioning strategies can inadvertently widen participation gaps. 3 out of 7 surveyed teachers identified instances where pupils demonstrated conceptual understanding in Chinese but could not articulate it in English. This reinforced my commitment to pausing during student silence to allow for dual-language cognitive processing.<br><br><em>(Source: Portfolio Snippet, evidence/snippets/portfolio_snippets.md)</em></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- GALLERY / MOMENTS -->
-        <section id="moments" aria-labelledby="moments-heading">
-            <div class="container reveal">
-                <span class="eyebrow">Teaching in Practice</span>
-                <h2 id="moments-heading">A Look Inside the <em>Classroom</em></h2>
-                <!-- Teaching demonstration video.
-                     Replace the placeholder below with a real embed once the clip
-                     is ready, e.g.:
-                     <iframe src="https://www.youtube.com/embed/REAL_ID"
-                             title="Teaching demonstration" allowfullscreen></iframe> -->
-                <div class="video-wrap video-placeholder" role="img" aria-label="Teaching demonstration video — to be added">
-                    <div class="video-placeholder-inner">
-                        <span class="video-placeholder-icon" aria-hidden="true">&#9654;</span>
-                        <p class="video-placeholder-title">Teaching Demonstration</p>
-                        <p class="video-placeholder-text">A short classroom clip will appear here.</p>
+                    <p class="research-body">
+                        Investigated questioning methods in a bilingual classroom [C-007]. The study identified that open-ended questions can act as participation filters, favoring high-proficiency speakers. 
+                    </p>
+                    <p class="research-body">
+                        It reframes EAL support by distinguishing social fluency (BICS) from academic language (CALP), proving the necessity of structured pause times for bilingual cognitive processing.
+                    </p>
+                    <div class="tl-evidence-link">
+                        <a href="#contact">Available upon request (Contact) [E-0013]</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CREDENTIALS -->
+        <!-- 6. LEADERSHIP & PROFESSIONAL PRACTICE -->
+        <section id="leadership" aria-labelledby="leadership-heading">
+            <div class="container reveal">
+                <span class="eyebrow">Leadership</span>
+                <h2 id="leadership-heading">Leadership &amp; Professional Practice</h2>
+                <div class="about-grid">
+                    <div class="about-pillar">
+                        <h3>Teacher Development</h3>
+                        <p>Designed feedback mechanisms and coached teachers on lesson delivery methods [C-010]. Managed observation programs to translate pedagogical goals into consistent daily teaching practice.</p>
+                    </div>
+                    <div class="about-pillar">
+                        <h3>Curriculum Integration</h3>
+                        <p>Combined B.Sc. Physics background with EAL methods to lead cross-curricular primary lessons [C-008]. Unified language milestones with science content to support conceptual understanding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CREDENTIALS & CERTIFICATIONS -->
         <section id="credentials" aria-labelledby="credentials-heading">
             <div class="container reveal">
-                <span class="eyebrow">Academic Formation</span>
-                <h2 id="credentials-heading">Education &amp; Certifications</h2>
+                <span class="eyebrow">Academic Background</span>
+                <h2 id="credentials-heading">Credentials &amp; Certifications</h2>
 
                 <h3 class="subsection-title">Education</h3>
                 <div class="edu-grid">
                     <div class="edu-card">
-                        <h4 class="edu-deg">PGCE — Education</h4>
+                        <h4 class="edu-deg">PGCE — Primary Education <span class="badge badge-level-b">Level B</span></h4>
                         <p class="edu-sch">University of Cumbria, UK</p>
-                        <time class="edu-yr" datetime="2025/2026">2025 — 2026</time>
-                        <span class="badge">75/100 · Provisional</span>
+                        <time class="edu-yr">2025 — 2026</time>
+                        <span class="badge badge-level-b">75/100 (Provisional) [E-2001]</span>
                     </div>
                     <div class="edu-card">
-                        <h4 class="edu-deg">Bachelor of Education (B.Ed)</h4>
+                        <h4 class="edu-deg">Bachelor of Education (B.Ed.) <span class="badge badge-level-a">Level A</span></h4>
                         <p class="edu-sch">University of Kashmir, India</p>
-                        <time class="edu-yr" datetime="2021/2024">2021 — 2024</time>
-                        <span class="badge">Completed</span>
+                        <time class="edu-yr">Completed [E-2002]</time>
+                        <span class="badge badge-level-a">Verified Degree</span>
                     </div>
                     <div class="edu-card">
-                        <h4 class="edu-deg">M.A. — English Language &amp; Literature</h4>
+                        <h4 class="edu-deg">M.A. English Literature <span class="badge badge-level-a">Level A</span></h4>
                         <p class="edu-sch">Harris University</p>
-                        <time class="edu-yr" datetime="2007/2009">2007 — 2009</time>
-                        <span class="badge">Completed</span>
+                        <time class="edu-yr">Completed [E-2003]</time>
+                        <span class="badge badge-level-a">Verified Degree</span>
                     </div>
                     <div class="edu-card">
-                        <h4 class="edu-deg">B.Sc. — Physics</h4>
+                        <h4 class="edu-deg">B.Sc. Physics <span class="badge badge-level-a">Level A</span></h4>
                         <p class="edu-sch">University of Mumbai, India</p>
-                        <time class="edu-yr" datetime="2004/2007">2004 — 2007</time>
-                        <span class="badge">Completed</span>
+                        <time class="edu-yr">Completed [E-2006]</time>
+                        <span class="badge badge-level-a">Verified Degree</span>
                     </div>
                 </div>
 
                 <h3 class="subsection-title">Certifications</h3>
                 <div class="certs-grid">
                     <div class="cert-card">
-                        <div class="cert-thumb"><img src="assets/images/certificates/pgce-cert.jpg" alt="Certificate thumbnail: PGCE — Postgraduate Certificate in Education, University of Cumbria" loading="lazy" width="250" height="188"></div>
-                        <h4 class="cert-name">PGCE — Postgraduate Certificate in Education</h4>
-                        <p class="cert-issuer">University of Cumbria, UK</p>
-                        <p class="cert-desc">Completed — Master's level, 75/100, provisional pending exam board ratification.</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-thumb"><img src="assets/images/certificates/tesol-cert.jpg" alt="Certificate thumbnail: TESOL Certification (240 hrs), Global TESOL College Canada" loading="lazy" width="250" height="188"></div>
-                        <h4 class="cert-name">TESOL Certification (240 hrs)</h4>
+                        <div class="cert-thumb media-missing"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'/>" alt="TESOL Certificate preview placeholder"></div>
+                        <h4 class="cert-name">TESOL Certification (240 hrs) <span class="badge badge-level-a">Level A</span></h4>
                         <p class="cert-issuer">Global TESOL College, Canada</p>
-                        <p class="cert-desc">Teaching English to Speakers of Other Languages — internationally recognised qualification.</p>
+                        <p class="cert-desc">Teaching English to Speakers of Other Languages. [E-2004]</p>
                     </div>
                     <div class="cert-card">
-                        <div class="cert-thumb"><img src="assets/images/certificates/tefl-cert.jpg" alt="Certificate thumbnail: TEFL Certification (120 hrs), Teacher Record" loading="lazy" width="250" height="188"></div>
-                        <h4 class="cert-name">TEFL Certification (120 hrs)</h4>
+                        <div class="cert-thumb media-missing"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'/>" alt="TEFL Certificate preview placeholder"></div>
+                        <h4 class="cert-name">TEFL Certification (120 hrs) <span class="badge badge-level-a">Level A</span></h4>
                         <p class="cert-issuer">Teacher Record</p>
-                        <p class="cert-desc">Teaching English as a Foreign Language across multilingual contexts.</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-thumb"><img src="assets/images/certificates/british-council-cert.jpg" alt="Certificate thumbnail: Professional Development Certificates, British Council" loading="lazy" width="250" height="188"></div>
-                        <h4 class="cert-name">Professional Development Certificates</h4>
-                        <p class="cert-issuer">British Council</p>
-                        <p class="cert-desc">Certificates in Primary Education and Language Teaching.</p>
-                    </div>
-                </div>
-
-                <h3 class="subsection-title">Professional Development Roadmap</h3>
-                <div class="pd-grid">
-                    <div class="pd-card">
-                        <h4>IB PYP Category 1</h4>
-                        <p>Formal IB training to support authorised PYP practice.</p>
-                    </div>
-                    <div class="pd-card">
-                        <h4>CSciTeach</h4>
-                        <p>Chartered Science Teacher status, supporting the STEM integration strand.</p>
-                    </div>
-                    <div class="pd-card">
-                        <h4>PSTT Membership</h4>
-                        <p>Primary Science Teaching Trust — ongoing primary science development.</p>
-                    </div>
-                    <div class="pd-card">
-                        <h4>NALDIC</h4>
-                        <p>National subject association for EAL — deepening multilingual learning expertise.</p>
-                    </div>
-                    <div class="pd-card">
-                        <h4>Subject Knowledge Refresh</h4>
-                        <p>Continued STEM subject-knowledge development.</p>
-                    </div>
-                    <div class="pd-card">
-                        <h4>PGCE Official Certification</h4>
-                        <p>Formal certification once the exam board ratifies the provisional grade.</p>
+                        <p class="cert-desc">120-hour accredited TEFL certification. [E-2005]</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CONTACT -->
+        <!-- 8. EVIDENCE REGISTER (VERIFICATION PAGE) -->
+        <section id="evidence" aria-labelledby="evidence-heading">
+            <div class="container reveal">
+                <span class="eyebrow">Verification Matrix</span>
+                <h2 id="evidence-heading">Evidence Register</h2>
+                <p class="section-intro">In compliance with constitutional guidelines, every career claim maps to primary or institutional documentary proof.</p>
+                
+                <div class="evidence-table-wrapper">
+                    <table class="evidence-table">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Evidence Claim Details</th>
+                                <th>Type</th>
+                                <th>Source Document</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>E-2001</strong></td>
+                                <td>PGCE primary training &amp; academic scores</td>
+                                <td>Level B</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-b">Institutional</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>E-2002</strong></td>
+                                <td>Bachelor of Education degree verification</td>
+                                <td>Level A</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-a">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>E-2003</strong></td>
+                                <td>M.A. English Language &amp; Literature degree</td>
+                                <td>Level A</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-a">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>E-2006</strong></td>
+                                <td>B.Sc. Physics degree verification</td>
+                                <td>Level A</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-a">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>E-2004</strong></td>
+                                <td>TESOL 240-hour certification</td>
+                                <td>Level A</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-a">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>E-2005</strong></td>
+                                <td>TEFL 120-hour certification</td>
+                                <td>Level A</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-a">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>E-3001</strong></td>
+                                <td>Employment and role validation (GEDU)</td>
+                                <td>Level A</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-a">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>E-3002</strong></td>
+                                <td>Role verification and coaching scope (WhiteHat Jr)</td>
+                                <td>Level A</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-a">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>E-3003</strong></td>
+                                <td>Scholars Academy teaching employment validation</td>
+                                <td>Level A</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-a">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>E-3004</strong></td>
+                                <td>Early Years teaching and coaching role (Eton House)</td>
+                                <td>Level A</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-a">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>E-3005</strong></td>
+                                <td>Employment, moderating, and curriculum work (Aoxin)</td>
+                                <td>Level A</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-a">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>E-0013</strong></td>
+                                <td>Bilingual questioning practitioner research project</td>
+                                <td>Level B</td>
+                                <td><a href="#contact">Available upon request (Contact)</a></td>
+                                <td><span class="badge badge-level-b">Institutional</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. CONTACT & CALL TO ACTION -->
         <section id="contact" aria-labelledby="contact-heading">
             <div class="container reveal">
-                <span class="eyebrow">Get In Touch</span>
-                <h2 id="contact-heading">Open to <em>New Opportunities</em></h2>
+                <span class="eyebrow">Connect</span>
+                <h2 id="contact-heading">Contact Mohammed Shehzad Khan</h2>
                 <div class="contact-layout">
                     <div>
-                        <p class="contact-intro">Currently based in Zhengzhou, China, and open to international relocation for an August 2027 start. Whether you have a teaching opportunity, collaboration, or simply want to connect — I would love to hear from you.</p>
+                        <p class="contact-intro">Currently located in Zhengzhou, China, and open to international school primary teaching positions starting August 2027.</p>
+                        
                         <div class="contact-links">
                             <a href="mailto:mdshezkhn@hotmail.com" class="contact-link">
                                 <span class="clabel">Email</span>
@@ -565,34 +577,29 @@
                                 <span class="cval">linkedin.com/in/mdshezkhn</span>
                             </a>
                         </div>
+
                         <div class="wc-card">
-                            <div class="wc-qr"><img src="assets/images/wechat-qr.jpg" alt="WeChat QR code for Mohammed Shehzad Khan — scan to connect"></div>
+                            <div class="wc-qr media-missing"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'/>" alt="WeChat QR code placeholder"></div>
                             <div class="wc-info">
-                                <span class="badge">WeChat</span>
+                                <span class="badge badge-level-a">WeChat</span>
                                 <p class="wc-name">Mo Khan</p>
-                                <p class="wc-hint">Scan with WeChat to connect directly. Based in China and available for opportunities.</p>
+                                <p class="wc-hint">Scan to message directly on WeChat.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="contact-image">
-                        <img src="assets/images/contact-portrait.jpg" alt="Mohammed Shehzad Khan — professional portrait photo">
-                        <blockquote>"Currently based in China and open to international relocation"</blockquote>
+                    <div class="contact-image media-missing">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'/>" alt="Contact portrait photo placeholder">
+                        <blockquote>"Open to international primary roles for August 2027."</blockquote>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
-
-    <!-- ===================================================== -->
-    <!-- FOOTER -->
-    <!-- ===================================================== -->
 
     <footer>
         <div class="container">
-            <p>© 2026 Mohammed Shehzad Khan</p>
+            <p>© 2026 Mohammed Shehzad Khan. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
