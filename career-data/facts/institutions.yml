@@ -1,0 +1,23 @@
+schema_version: 1.0
+profile_version: 1.0.0
+last_reviewed: "2026-07-31"
+owner: Mohammed Shehzad Khan
+status: canonical
+
+institutions:
+  - id: INST-001
+    canonical_name: University of Cumbria
+    aliases:
+      - Cumbria University
+  - id: INST-002
+    canonical_name: University of Kashmir
+    aliases:
+      - Kashmir University
+  - id: INST-003
+    canonical_name: Harris University
+    aliases:
+      - Harris
+  - id: INST-004
+    canonical_name: University of Mumbai
+    aliases:
+      - Mumbai University

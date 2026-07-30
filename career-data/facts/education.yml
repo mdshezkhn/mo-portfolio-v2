@@ -1,0 +1,86 @@
+schema_version: 1.0
+profile_version: 1.0.0
+last_reviewed: "2026-07-31"
+owner: Mohammed Shehzad Khan
+status: canonical
+
+education_records:
+  - id: EDU-001
+    degree: Postgraduate Certificate in Education (PGCE, non-QTS)
+    institution_id: INST-001
+    institution: University of Cumbria
+    years: 15 Sep 2025 – 9 Jul 2026
+    confidence: verified
+    source:
+      authority: evidence
+      source_id: E-2001
+      extracted_from: Certificate
+      decision: N/A
+    evidence_id: E-2001
+    institution_recognition_status: RECOGNISED
+    publication:
+      public_cv: true
+      linkedin: true
+      recruiter_pack: included
+      premium_schools: true
+      notes: ""
+
+  - id: EDU-002
+    degree: Bachelor of Education (B.Ed.)
+    institution_id: INST-002
+    institution: University of Kashmir
+    years: UNKNOWN — evidence required
+    confidence: supported
+    source:
+      authority: human_assertion
+      source_id: N/A
+      extracted_from: Owner Confirmation
+      decision: D-012
+    evidence_id: E-0009
+    institution_recognition_status: RECOGNISED
+    publication:
+      public_cv: true
+      linkedin: true
+      recruiter_pack: included
+      premium_schools: true
+      notes: "Evidence collection required."
+
+  - id: EDU-003
+    degree: Master of Arts, English Language and Literature (M.A.)
+    institution_id: INST-003
+    institution: Harris University
+    years: 2007 – 2009
+    confidence: needs_review
+    source:
+      authority: human_assertion
+      source_id: N/A
+      extracted_from: Owner Confirmation
+      decision: D-003
+    evidence_id: N/A
+    institution_recognition_status: REQUIRES_EXTERNAL_VERIFICATION
+    publication:
+      public_cv: true
+      linkedin: true
+      recruiter_pack: optional
+      premium_schools: false
+      notes: "Pending external verification"
+
+  - id: EDU-004
+    degree: Bachelor of Science, Physics (B.Sc.)
+    institution_id: INST-004
+    institution: University of Mumbai
+    years: 2004 – 2007
+    confidence: plausible
+    source:
+      authority: evidence
+      source_id: E-0010
+      extracted_from: Certificate
+      decision: N/A
+    evidence_id: E-0010
+    institution_recognition_status: RECOGNISED
+    publication:
+      public_cv: true
+      linkedin: true
+      recruiter_pack: included
+      premium_schools: true
+      notes: "Evidence needs scanning/filing"
