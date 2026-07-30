@@ -1,0 +1,23 @@
+PERSON:
+  next: 2
+
+EMP:
+  next: 8
+
+EDU:
+  next: 5
+
+CERT:
+  next: 3
+
+INST:
+  next: 5
+
+ORG:
+  next: 8
+
+ROLE:
+  next: 7
+
+CLAIM:
+  next: 1
