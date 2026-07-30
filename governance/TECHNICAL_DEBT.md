@@ -60,9 +60,10 @@
 ### TD-004
 **Priority:** HIGH
 **Category:** Data Integrity
-**Issue:** B.Ed. study period unknown. No evidence document located. Credential is currently `BLOCKED_FROM_PUBLICATION`.
-**Impact:** Unexplained gap in education record. Cannot appear in any public asset.
-**Resolution Plan:** Owner to search personal records for certificate, transcript, or letter of completion. Update on evidence receipt.
+**Issue:** B.Ed. study period unknown. No physical evidence document has been added to `evidence/credentials/` yet.
+**Correction (Week 1 Amendment):** Previous status of `BLOCKED_FROM_PUBLICATION` was incorrect. The qualification exists and is owner-confirmed. The correct status is `EVIDENCE_COLLECTION_REQUIRED`. Publication is ALLOWED. There is a critical distinction between *evidence not yet collected into the repository* and *a qualification that should not appear publicly*.
+**Impact:** Credential cannot carry `confidence: verified` until document is added. Appears in public CV with `confidence: plausible` until resolved.
+**Resolution Plan:** Owner to locate physical B.Ed. certificate or transcript and add to `evidence/credentials/`. Update manifest entry E-0009 on receipt.
 **Target Milestone:** See G-007 in EVIDENCE_GAP_REGISTER.md (target: 2026-08-01)
 **Owner:** Mohammed Shehzad Khan
 
@@ -90,14 +91,13 @@
 
 ---
 
-### TD-007
-**Priority:** MEDIUM
+### TD-007 — RESOLVED (Week 1)
+**Priority:** ~~MEDIUM~~ RESOLVED
 **Category:** CI/CD
-**Issue:** GitHub Actions `deploy.yml` in `mo-portfolio-v2` listens on `master` branch; canonical working branch is `main`. CI/CD has never triggered due to this mismatch.
-**Impact:** No automated deployment has occurred. All live deployments were manual.
-**Resolution Plan:** Week 1 — update `deploy.yml` to listen on `main`. See Decision D-007.
-**Target Milestone:** Week 1
-**Owner:** Claude Code
+**Issue:** GitHub Actions `deploy.yml` in `mo-portfolio-v2` listened on `master` branch; canonical working branch is `main`.
+**Resolution:** Updated `deploy.yml` branch trigger to `main` in Week 1 commit (Decision D-007).
+**Resolved Date:** 2026-07-30
+**Resolved By:** Claude Code
 
 ---
 

@@ -134,6 +134,60 @@ Each entry records:
 
 ---
 
+## D-008
+**Date:** 2026-07-30
+**Topic:** Harris University — Publication Flags (Confirmed)
+**Decision:** `public_cv: true`, `linkedin: true`, `premium_schools: false (configurable)`, `verification_status: requires_external_review`.
+**Rationale:** Release manager confirmed: list the degree factually. No accreditation claims. No disclaimers. No editorial comments on public documents. Internal records carry `requires_external_review`. Premium school contexts excluded until G-006 is resolved, as that flag is configurable without touching the underlying fact.
+**Alternatives Rejected:**
+- Remove from public CV — premature; credential exists and is owner-confirmed
+- Add "verification pending" qualifier — rejected in D-003; reiterated here
+**Evidence Reference:** E-0008 (pending)
+**Recruiter Risk:** Medium (general); High (premium contexts — mitigated by `premium_schools: false` flag)
+**Owner:** Mohammed Shehzad Khan (release manager approval)
+**Supersedes:** Partial treatment in D-003
+
+---
+
+## D-009
+**Date:** 2026-07-30
+**Topic:** B.Ed. Publication Policy
+**Decision:** B.Ed. publication status is `EVIDENCE_COLLECTION_REQUIRED`, not `BLOCKED_FROM_PUBLICATION`. Publication is ALLOWED.
+**Rationale:** There is a material distinction between *evidence not yet collected into the repository* and *a qualification that should not appear publicly*. The B.Ed. exists and is owner-confirmed. The repository simply does not yet contain the physical document. The correct action is evidence collection, not publication suppression. `BLOCKED_FROM_PUBLICATION` is reserved for qualifications where existence itself is in doubt or where a positive decision has been made to exclude.
+**Alternatives Rejected:**
+- `BLOCKED_FROM_PUBLICATION` — incorrect status; implies the qualification is in question, which it is not
+**Evidence Reference:** E-0009 (Evidence Collection Required)
+**Recruiter Risk:** Low — qualification is real; evidence collection is an internal process
+**Owner:** Mohammed Shehzad Khan (release manager approval)
+
+---
+
+## D-010
+**Date:** 2026-07-30
+**Topic:** Career OS profile_version Starting Number
+**Decision:** Career OS `profile_version` initialises at **`1.0.0`**.
+**Rationale:** This is version 1 of the Career OS — a new product. Prior portfolio versions (v1, v2, v3) are separate products that have been archived. The Career OS does not inherit their version history. Starting at 1.0.0 correctly reflects that this is a new governed publishing system, not a continuation of an old portfolio project.
+**Alternatives Rejected:**
+- `2.0.0` — implies the Career OS continues from a prior version, which is architecturally incorrect
+**Evidence Reference:** N/A
+**Recruiter Risk:** N/A (internal versioning decision)
+**Owner:** Mohammed Shehzad Khan (release manager approval)
+
+---
+
+## D-011
+**Date:** 2026-07-30
+**Topic:** Repository Freeze Policy Scope
+**Decision:** The Repository Freeze Policy (active from end of Week 1) blocks **unapproved public-facing content changes**, not all changes.
+**Rationale:** During Week 2 (data population), factual corrections will be discovered — incorrect employment dates, inconsistent school names, missing evidence IDs, broken timelines. These are corrections, not branding changes. Freezing them would be counterproductive. The policy must distinguish between:
+- **Permitted during freeze:** Factual corrections to YAML data, evidence ID additions, confidence level adjustments, schema corrections, internal governance updates
+- **Requires approval during freeze:** New public-facing claims, branding changes, narrative rewording, metric changes, new credentials added to public outputs
+**Evidence Reference:** N/A
+**Recruiter Risk:** N/A (internal governance decision)
+**Owner:** Mohammed Shehzad Khan (release manager approval)
+
+---
+
 ## Version History
 
 | Version | Date | Change |
