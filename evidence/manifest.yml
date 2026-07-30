@@ -1,0 +1,192 @@
+schema_version: "1.0"
+manifest_status: "SKELETON — checksums deferred until repository structure is frozen (end of Week 2)"
+last_updated: "2026-07-30"
+owner: "Mohammed Shehzad Khan"
+
+# ═══════════════════════════════════════════════════════════════════════════
+# EVIDENCE MANIFEST
+# ═══════════════════════════════════════════════════════════════════════════
+#
+# GOVERNANCE RULES:
+# 1. Every evidence file referenced in career-data/facts/ or governance/
+#    MUST have an entry here before it can be used.
+# 2. SHA-256 checksums are BLANK until the repository structure is frozen
+#    (end of Week 2). Freeze date: TBD.
+# 3. Once checksums are computed, validate_evidence.py will verify them
+#    on every build. Do not rename or replace files after checksum is set
+#    without updating the checksum entry and recording a CHANGELOG entry.
+# 4. Evidence IDs follow the ranges defined in governance/SCHEMA.md.
+#
+# CONFIDENCE LEVELS (for reference):
+#   verified       = Primary document present; checksum will be computed at freeze
+#   supported      = Corroborated by two or more secondary sources
+#   plausible      = Owner-confirmed; single secondary source
+#   human_assertion= No documentary evidence possible (e.g., teaching philosophy)
+#   needs_review   = Conflicting information; resolution required
+#
+# ═══════════════════════════════════════════════════════════════════════════
+
+entries:
+
+  # ─── CREDENTIALS ─────────────────────────────────────────────────────────
+
+  E-2001:
+    file: "credentials/PGCE_Certificate.pdf"
+    description: "PGCE certificate — University of Cumbria (2025–2026, non-QTS)"
+    confidence: "verified"
+    verified: true
+    checksum_sha256: ""  # TO BE COMPUTED AT WEEK 2 FREEZE
+    date_added: "2026-07-30"
+    linked_claims: ["C-002"]
+    notes: "Primary document for PGCE credential. Non-QTS status confirmed on certificate."
+
+  E-2002:
+    file: "credentials/PGCE_Transcript.pdf"
+    description: "PGCE transcript — University of Cumbria"
+    confidence: "verified"
+    verified: true
+    checksum_sha256: ""  # TO BE COMPUTED AT WEEK 2 FREEZE
+    date_added: "2026-07-30"
+    linked_claims: ["C-002"]
+    notes: ""
+
+  E-2003:
+    file: "credentials/PGCE_Letter_of_Completion.pdf"
+    description: "PGCE letter of completion — University of Cumbria (if available)"
+    confidence: "plausible"
+    verified: false
+    checksum_sha256: ""
+    date_added: "2026-07-30"
+    linked_claims: ["C-002"]
+    notes: "To be added if document located. Not blocking — E-2001 is sufficient."
+
+  E-2004:
+    file: "credentials/TESOL_Certificate.pdf"
+    description: "TESOL Certificate — Global TESOL College (November 2017)"
+    confidence: "verified"
+    verified: true
+    checksum_sha256: ""  # TO BE COMPUTED AT WEEK 2 FREEZE
+    date_added: "2026-07-30"
+    linked_claims: []
+    notes: ""
+
+  E-2005:
+    file: "credentials/TEFL_Certificate.pdf"
+    description: "TEFL Certificate — TEFL Professional Institute (July 2025)"
+    confidence: "verified"
+    verified: true
+    checksum_sha256: ""  # TO BE COMPUTED AT WEEK 2 FREEZE
+    date_added: "2026-07-30"
+    linked_claims: []
+    notes: ""
+
+  E-0008:
+    file: "credentials/Harris_University_Degree.pdf"
+    description: "MA English Language and Literature — Harris University (2007–2009)"
+    confidence: "needs_review"
+    verified: false
+    checksum_sha256: ""
+    date_added: "2026-07-30"
+    linked_claims: ["EDU-003"]
+    notes: "Document not yet located. Institution recognition status: REQUIRES_EXTERNAL_VERIFICATION. See Gap G-006."
+
+  E-0009:
+    file: "credentials/BEd_Certificate.pdf"
+    description: "Bachelor of Education — University of Kashmir"
+    confidence: "needs_review"
+    verified: false
+    checksum_sha256: ""
+    date_added: "2026-07-30"
+    linked_claims: ["EDU-002"]
+    notes: "Document not located. Credential is BLOCKED_FROM_PUBLICATION until resolved. See Gap G-007."
+
+  E-0010:
+    file: "credentials/BSc_Certificate.pdf"
+    description: "Bachelor of Science, Physics — University of Mumbai (2004–2007)"
+    confidence: "plausible"
+    verified: false
+    checksum_sha256: ""
+    date_added: "2026-07-30"
+    linked_claims: ["EDU-004"]
+    notes: "Owner-confirmed. Document to be located."
+
+  # ─── EMPLOYMENT ──────────────────────────────────────────────────────────
+
+  E-3001:
+    file: "employment/GEDU_Employment_Verification.pdf"
+    description: "GEDU Global Education employment verification (Sep 2022 – Aug 2023)"
+    confidence: "verified"
+    verified: true
+    checksum_sha256: ""  # TO BE COMPUTED AT WEEK 2 FREEZE
+    date_added: "2026-07-30"
+    linked_claims: ["EMP-004"]
+    notes: ""
+
+  E-3002:
+    file: "employment/WhiteHatJr_Employment_Verification.pdf"
+    description: "WhiteHat Jr / BYJU'S employment verification (Aug 2020 – Jul 2022)"
+    confidence: "verified"
+    verified: true
+    checksum_sha256: ""  # TO BE COMPUTED AT WEEK 2 FREEZE
+    date_added: "2026-07-30"
+    linked_claims: ["EMP-005"]
+    notes: ""
+
+  E-3003:
+    file: "employment/Scholars_Academy_Employment_Verification.pdf"
+    description: "Scholars Academy employment verification (Jan 2014 – Nov 2016)"
+    confidence: "verified"
+    verified: true
+    checksum_sha256: ""  # TO BE COMPUTED AT WEEK 2 FREEZE
+    date_added: "2026-07-30"
+    linked_claims: ["EMP-001", "C-001"]
+    notes: "Primary evidence for career start date. Supports 11+ years claim."
+
+  E-3004:
+    file: "employment/EtonHouse_Employment_Verification.pdf"
+    description: "Eton House Kindergarten employment verification (Aug 2017 – Jun 2018)"
+    confidence: "verified"
+    verified: true
+    checksum_sha256: ""  # TO BE COMPUTED AT WEEK 2 FREEZE
+    date_added: "2026-07-30"
+    linked_claims: ["EMP-006"]
+    notes: ""
+
+  E-3005:
+    file: "employment/Zhejiang_Employment_Verification.pdf"
+    description: "Zhejiang University / Helen China TEFL employment verification (Nov 2016 – Aug 2017)"
+    confidence: "verified"
+    verified: true
+    checksum_sha256: ""  # TO BE COMPUTED AT WEEK 2 FREEZE
+    date_added: "2026-07-30"
+    linked_claims: ["EMP-007"]
+    notes: ""
+
+  E-0006A:
+    file: "employment/Aoxin_Employment_2018-2020.pdf"
+    description: "Aoxin International School employment verification — first appointment (Jul 2018 – Aug 2020)"
+    confidence: "plausible"
+    verified: false
+    checksum_sha256: ""
+    date_added: "2026-07-30"
+    linked_claims: ["EMP-003"]
+    notes: "Document pending. See Gap G-008. Second appointment (Feb 2024 – present) verified separately."
+
+  # ─── RESEARCH ────────────────────────────────────────────────────────────
+
+  # Research evidence entries to be added in Week 2 once research/ folder is populated.
+
+  # ─── REFERENCES ──────────────────────────────────────────────────────────
+
+  # Reference letters to be added as obtained. See EVIDENCE_GAP_REGISTER.md G-001, G-002.
+
+# ═══════════════════════════════════════════════════════════════════════════
+# FREEZE RECORD (to be completed at end of Week 2)
+# ═══════════════════════════════════════════════════════════════════════════
+
+freeze:
+  status: "NOT FROZEN"
+  freeze_date: ""
+  frozen_by: ""
+  checksum_method: "SHA-256"
+  notes: "All checksum_sha256 fields will be computed and recorded at freeze. validate_evidence.py will then enforce integrity on every build."

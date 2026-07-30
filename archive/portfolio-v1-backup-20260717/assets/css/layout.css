@@ -1,0 +1,46 @@
+/* ==========================================================
+   layout.css
+   Core layout primitives: container, section spacing,
+   and footer. Grid/flex patterns live in components.css.
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+/* ── Root scroll behaviour ─────────────────────────── */
+/* Smooth scrolling for in-page anchor navigation.
+   Disabled under prefers-reduced-motion for accessibility. */
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ── Container ───────────────────────────────────────── */
+
+.container {
+    width: min(100% - 48px, var(--container));
+    margin-inline: auto;
+}
+
+/* ── Section spacing ─────────────────────────────────── */
+/* scroll-margin-top accounts for the 72px sticky header so
+   anchored jumps land the heading below the header, not
+   hidden behind it. */
+
+section {
+    padding: 112px 0;
+    scroll-margin-top: 72px;
+}
+
+/* ── Footer ──────────────────────────────────────────── */
+
+footer {
+    padding: 64px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+}
