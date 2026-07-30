@@ -6,34 +6,32 @@
       "type": "number",
       "const": 1.0
     },
-    "organisations": {
+    "evidence_links": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "id": {
+          "fact_id": {
             "type": "string",
-            "pattern": "^ORG-[0-9]{3}$"
+            "pattern": "^(EMP|EDU|CERT|ORG|INST)-[0-9]{3}$"
           },
-          "canonical_name": {
-            "type": "string"
-          },
-          "aliases": {
+          "evidence_ids": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "pattern": "^E-[0-9]{4}$"
             }
           }
         },
         "required": [
-          "id",
-          "canonical_name"
+          "fact_id",
+          "evidence_ids"
         ]
       }
     }
   },
   "required": [
     "schema_version",
-    "organisations"
+    "evidence_links"
   ]
 }

@@ -3,37 +3,42 @@ import os
 from pathlib import Path
 
 # Base schema that all generated schemas must extend
-# Enforces the 6th Recommendation: Per-file metadata
 BASE_TEMPLATE = {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "properties": {
-        "schema_version": {"type": "number", "const": 1.0},
-        "profile_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
-        "last_reviewed": {"type": "string", "format": "date"},
-        "owner": {"type": "string", "const": "Mohammed Shehzad Khan"},
-        "status": {"type": "string", "const": "canonical"}
+        "schema_version": {"type": "number", "const": 1.0}
     },
     "required": [
-        "schema_version",
-        "profile_version",
-        "last_reviewed",
-        "owner",
-        "status"
+        "schema_version"
     ]
 }
 
-# Add a standard provenance block that most schemas will use for their items
-PROVENANCE_SCHEMA = {
+# ISO-8601 structured dates
+DATE_SCHEMA = {
     "type": "object",
     "properties": {
-        "authority": {"type": "string", "enum": ["evidence", "human_assertion"]},
-        "source_id": {"type": "string"},
-        "extracted_from": {"type": "string"},
-        "decision": {"type": "string"}
+        "start": {
+            "type": "object",
+            "properties": {
+                "date": {"type": "string", "pattern": "^([0-9]{4}(-[0-9]{2})?|UNKNOWN)$"}
+            },
+            "required": ["date"]
+        },
+        "end": {
+            "type": "object",
+            "properties": {
+                "date": {"type": ["string", "null"], "pattern": "^([0-9]{4}(-[0-9]{2})?|UNKNOWN)$"},
+                "present": {"type": "boolean"}
+            }
+        }
     },
-    "required": ["authority"]
+    "required": ["start"]
 }
+
+# Orthogonal confidence and review status
+CONFIDENCE_ENUM = ["verified", "supported", "asserted", "unknown"]
+REVIEW_STATUS_ENUM = ["active", "pending", "deprecated", "conflict"]
 
 # The definitions of specific schemas
 SCHEMA_DEFINITIONS = {
@@ -55,10 +60,10 @@ SCHEMA_DEFINITIONS = {
                         "degree": {"type": "string"},
                         "institution_id": {"type": "string", "pattern": "^INST-[0-9]{3}$"},
                         "institution": {"type": "string"},
-                        "years": {"type": "string"},
-                        "confidence": {"type": "string", "enum": ["verified", "supported", "plausible", "human_assertion", "needs_review"]},
-                        "source": PROVENANCE_SCHEMA,
-                        "evidence_id": {"type": "string", "pattern": "^(E-[0-9]{4}|N/A)$"},
+                        "dates": DATE_SCHEMA,
+                        "confidence": {"type": "string", "enum": CONFIDENCE_ENUM},
+                        "review_status": {"type": "string", "enum": REVIEW_STATUS_ENUM},
+                        "primary_evidence_id": {"type": "string", "pattern": "^(E-[0-9]{4}|N/A)$"},
                         "institution_recognition_status": {"type": "string"},
                         "publication": {
                             "type": "object",
@@ -72,7 +77,7 @@ SCHEMA_DEFINITIONS = {
                             "required": ["public_cv", "linkedin"]
                         }
                     },
-                    "required": ["id", "degree", "institution_id", "institution", "years", "confidence", "source", "evidence_id", "publication"]
+                    "required": ["id", "degree", "institution_id", "institution", "dates", "confidence", "review_status", "primary_evidence_id", "publication"]
                 }
             }
         },
@@ -87,19 +92,36 @@ SCHEMA_DEFINITIONS = {
                     "properties": {
                         "id": {"type": "string", "pattern": "^EMP-[0-9]{3}$"},
                         "employer_id": {"type": "string", "pattern": "^ORG-[0-9]{3}$"},
+                        "role_id": {"type": "string", "pattern": "^ROLE-[0-9]{3}$"},
                         "employer": {"type": "string"},
-                        "portfolio_display_title": {"type": "string"},
-                        "date": {"type": "string"},
+                        "dates": DATE_SCHEMA,
                         "location": {"type": "string"},
-                        "confidence": {"type": "string", "enum": ["verified", "supported", "plausible", "needs_review"]},
-                        "source": PROVENANCE_SCHEMA,
-                        "evidence_id": {"type": "string", "pattern": "^(E-[0-9]{4}|N/A)$"}
+                        "confidence": {"type": "string", "enum": CONFIDENCE_ENUM},
+                        "review_status": {"type": "string", "enum": REVIEW_STATUS_ENUM},
+                        "primary_evidence_id": {"type": "string", "pattern": "^(E-[0-9]{4}|N/A)$"}
                     },
-                    "required": ["id", "employer_id", "employer", "portfolio_display_title", "date", "location", "confidence", "source", "evidence_id"]
+                    "required": ["id", "employer_id", "role_id", "employer", "dates", "location", "confidence", "review_status", "primary_evidence_id"]
                 }
             }
         },
         "required": ["employment_records"]
+    },
+    "facts/roles": {
+        "properties": {
+            "roles": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {"type": "string", "pattern": "^ROLE-[0-9]{3}$"},
+                        "title": {"type": "string"},
+                        "description": {"type": "string"}
+                    },
+                    "required": ["id", "title"]
+                }
+            }
+        },
+        "required": ["roles"]
     },
     "facts/institutions": {
         "properties": {
@@ -135,20 +157,53 @@ SCHEMA_DEFINITIONS = {
         },
         "required": ["organisations"]
     },
+    "facts/evidence_links": {
+        "properties": {
+            "evidence_links": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "fact_id": {"type": "string", "pattern": "^(EMP|EDU|CERT|ORG|INST)-[0-9]{3}$"},
+                        "evidence_ids": {
+                            "type": "array",
+                            "items": {"type": "string", "pattern": "^E-[0-9]{4}$"}
+                        }
+                    },
+                    "required": ["fact_id", "evidence_ids"]
+                }
+            }
+        },
+        "required": ["evidence_links"]
+    },
     "narratives/teaching_philosophy": {
         "properties": {
             "teaching_philosophy": {
                 "type": "object",
                 "properties": {
-                    "confidence": {"type": "string", "const": "human_assertion"},
-                    "evidence_id": {"type": "string", "const": "N/A"},
+                    "confidence": {"type": "string", "enum": CONFIDENCE_ENUM},
+                    "review_status": {"type": "string", "enum": REVIEW_STATUS_ENUM},
                     "authored_by": {"type": "string", "const": "Mohammed Shehzad Khan"},
                     "content": {"type": "string"}
                 },
-                "required": ["confidence", "evidence_id", "authored_by", "content"]
+                "required": ["confidence", "review_status", "authored_by", "content"]
             }
         },
         "required": ["teaching_philosophy"]
+    },
+    "narratives/voice": {
+        "properties": {
+            "voice": {
+                "type": "object",
+                "properties": {
+                    "tone": {"type": "array", "items": {"type": "string"}},
+                    "vocabulary_preferences": {"type": "array", "items": {"type": "string"}},
+                    "prohibited_terms": {"type": "array", "items": {"type": "string"}}
+                },
+                "required": ["tone"]
+            }
+        },
+        "required": ["voice"]
     }
 }
 

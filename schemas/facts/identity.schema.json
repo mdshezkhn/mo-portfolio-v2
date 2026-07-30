@@ -6,22 +6,6 @@
       "type": "number",
       "const": 1.0
     },
-    "profile_version": {
-      "type": "string",
-      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
-    },
-    "last_reviewed": {
-      "type": "string",
-      "format": "date"
-    },
-    "owner": {
-      "type": "string",
-      "const": "Mohammed Shehzad Khan"
-    },
-    "status": {
-      "type": "string",
-      "const": "canonical"
-    },
     "name": {
       "type": "string"
     },
@@ -31,10 +15,6 @@
   },
   "required": [
     "schema_version",
-    "profile_version",
-    "last_reviewed",
-    "owner",
-    "status",
     "name"
   ]
 }

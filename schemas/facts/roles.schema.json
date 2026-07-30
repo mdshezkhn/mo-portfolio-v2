@@ -6,34 +6,31 @@
       "type": "number",
       "const": 1.0
     },
-    "organisations": {
+    "roles": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
           "id": {
             "type": "string",
-            "pattern": "^ORG-[0-9]{3}$"
+            "pattern": "^ROLE-[0-9]{3}$"
           },
-          "canonical_name": {
+          "title": {
             "type": "string"
           },
-          "aliases": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "description": {
+            "type": "string"
           }
         },
         "required": [
           "id",
-          "canonical_name"
+          "title"
         ]
       }
     }
   },
   "required": [
     "schema_version",
-    "organisations"
+    "roles"
   ]
 }
