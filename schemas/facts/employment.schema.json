@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "number",
+      "const": 1.0
+    },
+    "profile_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date"
+    },
+    "owner": {
+      "type": "string",
+      "const": "Mohammed Shehzad Khan"
+    },
+    "status": {
+      "type": "string",
+      "const": "canonical"
+    },
+    "employment_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^EMP-[0-9]{3}$"
+          },
+          "employer_id": {
+            "type": "string",
+            "pattern": "^ORG-[0-9]{3}$"
+          },
+          "employer": {
+            "type": "string"
+          },
+          "portfolio_display_title": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "supported",
+              "plausible",
+              "needs_review"
+            ]
+          },
+          "evidence_id": {
+            "type": "string",
+            "pattern": "^(E-[0-9]{4}|N/A)$"
+          }
+        },
+        "required": [
+          "id",
+          "employer_id",
+          "employer",
+          "portfolio_display_title",
+          "date",
+          "location",
+          "confidence",
+          "evidence_id"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "profile_version",
+    "last_reviewed",
+    "owner",
+    "status",
+    "employment_records"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "number",
+      "const": 1.0
+    },
+    "profile_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date"
+    },
+    "owner": {
+      "type": "string",
+      "const": "Mohammed Shehzad Khan"
+    },
+    "status": {
+      "type": "string",
+      "const": "canonical"
+    },
+    "education_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^EDU-[0-9]{3}$"
+          },
+          "degree": {
+            "type": "string"
+          },
+          "institution_id": {
+            "type": "string",
+            "pattern": "^INST-[0-9]{3}$"
+          },
+          "institution": {
+            "type": "string"
+          },
+          "years": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "supported",
+              "plausible",
+              "human_assertion",
+              "needs_review"
+            ]
+          },
+          "evidence_id": {
+            "type": "string",
+            "pattern": "^(E-[0-9]{4}|N/A)$"
+          },
+          "institution_recognition_status": {
+            "type": "string"
+          },
+          "publication": {
+            "type": "object",
+            "properties": {
+              "public_cv": {
+                "type": "boolean"
+              },
+              "linkedin": {
+                "type": "boolean"
+              },
+              "recruiter_pack": {
+                "type": "string"
+              },
+              "premium_schools": {
+                "type": "boolean"
+              },
+              "notes": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "public_cv",
+              "linkedin"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "degree",
+          "institution_id",
+          "institution",
+          "years",
+          "confidence",
+          "evidence_id",
+          "publication"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "profile_version",
+    "last_reviewed",
+    "owner",
+    "status",
+    "education_records"
+  ]
+}

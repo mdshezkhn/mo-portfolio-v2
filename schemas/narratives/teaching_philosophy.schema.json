@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "number",
+      "const": 1.0
+    },
+    "profile_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date"
+    },
+    "owner": {
+      "type": "string",
+      "const": "Mohammed Shehzad Khan"
+    },
+    "status": {
+      "type": "string",
+      "const": "canonical"
+    },
+    "teaching_philosophy": {
+      "type": "object",
+      "properties": {
+        "confidence": {
+          "type": "string",
+          "const": "human_assertion"
+        },
+        "evidence_id": {
+          "type": "string",
+          "const": "N/A"
+        },
+        "authored_by": {
+          "type": "string",
+          "const": "Mohammed Shehzad Khan"
+        },
+        "content": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "confidence",
+        "evidence_id",
+        "authored_by",
+        "content"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "profile_version",
+    "last_reviewed",
+    "owner",
+    "status",
+    "teaching_philosophy"
+  ]
+}
