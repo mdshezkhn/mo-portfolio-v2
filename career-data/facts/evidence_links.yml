@@ -1,0 +1,26 @@
+schema_version: 1.0
+evidence_links:
+- fact_id: EDU-001
+  evidence_ids:
+  - E-2001
+- fact_id: EDU-002
+  evidence_ids:
+  - E-0009
+- fact_id: EDU-004
+  evidence_ids:
+  - E-0010
+- fact_id: EMP-001
+  evidence_ids:
+  - E-3003
+- fact_id: EMP-004
+  evidence_ids:
+  - E-3001
+- fact_id: EMP-005
+  evidence_ids:
+  - E-3002
+- fact_id: EMP-006
+  evidence_ids:
+  - E-3004
+- fact_id: EMP-007
+  evidence_ids:
+  - E-3005

@@ -1,20 +1,11 @@
-schema_version: 1.0
-profile_version: 1.0.0
-last_reviewed: "2026-07-31"
-owner: Mohammed Shehzad Khan
-status: canonical
-
 teaching_philosophy:
-  confidence: human_assertion
-  source:
-    authority: human_assertion
-    source_id: N/A
-    extracted_from: Personal Draft
-    decision: N/A
-  evidence_id: N/A
+  confidence: asserted
   authored_by: Mohammed Shehzad Khan
-  content: |
-    My practice is grounded in the belief that language acquisition and conceptual learning are inseparable. 
-    I create inclusive, inquiry-led environments where EAL learners are supported through rigorous scaffolding 
-    while maintaining high cognitive expectations. Learning should be culturally responsive, collaborative, 
-    and connected to real-world contexts, ensuring every student has the tools to access the curriculum and thrive.
+  content: "My practice is grounded in the belief that language acquisition and conceptual\
+    \ learning are inseparable. \nI create inclusive, inquiry-led environments where\
+    \ EAL learners are supported through rigorous scaffolding \nwhile maintaining\
+    \ high cognitive expectations. Learning should be culturally responsive, collaborative,\
+    \ \nand connected to real-world contexts, ensuring every student has the tools\
+    \ to access the curriculum and thrive.\n"
+  review_status: active
+schema_version: 1.0
