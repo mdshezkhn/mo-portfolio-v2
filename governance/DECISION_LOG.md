@@ -188,9 +188,61 @@ Each entry records:
 
 ---
 
+## D-012
+**Date:** 2026-07-30
+**Topic:** B.Ed. Publication Flags — Explicit Confirmation
+**Decision:** B.Ed. (University of Kashmir) publication flags: `public_cv: true`, `linkedin: true`. Evidence manifest entry E-0009 set to `confidence: supported` and `publication_status: EVIDENCE_COLLECTION_REQUIRED`.
+**Rationale:** Final architecture review confirmed: the qualification is genuine and owner-confirmed. Adding explicit publication flags (`public_cv: true`, `linkedin: true`) removes any ambiguity about publication intent. The `confidence` level is raised from `plausible` to `supported` because the owner has confirmed the qualification exists. `EVIDENCE_COLLECTION_REQUIRED` remains the operational status until the physical document is added to `evidence/credentials/`.
+**Policy Trigger:** If at any point the owner cannot produce documentary evidence, this decision must be revisited and a new entry (D-012a) must record the changed policy.
+**Evidence Reference:** E-0009
+**Recruiter Risk:** Low — qualification is real; evidence collection is an internal process
+**Owner:** Mohammed Shehzad Khan (final architecture review)
+**Supersedes:** D-009 (strengthens rather than reverses)
+
+---
+
+## D-013
+**Date:** 2026-07-30
+**Topic:** Application Strategy Default
+**Decision:** **No default application strategy.** Every application requires an explicit strategy selection (`--strategy A|B|C`) at generation time.
+**Rationale:** An implicit default removes the deliberate thought required to match strategy to context. Each application to an international school should be a considered decision about which evidence to lead with, not an automated output. If a default must be set for testing purposes only, Strategy B (Mid-Tier) is acceptable, but this must never reach production as a silent default.
+**Alternatives Rejected:**
+- Strategy B as default — convenient but reduces intentionality; application quality depends on conscious strategy selection
+**Evidence Reference:** N/A
+**Recruiter Risk:** N/A (internal tooling decision)
+**Owner:** Mohammed Shehzad Khan (final architecture review)
+
+---
+
+## D-014
+**Date:** 2026-07-30
+**Topic:** First Recruiter Evidence Pack Context
+**Decision:** `BRITISH_CURRICULUM` is the first context pack to be built in Week 3.
+**Rationale:** British curriculum international schools represent the largest segment of the target market across China, the Middle East, Southeast Asia, and Brunei. A British-curriculum baseline provides the greatest reuse and can be adapted for other contexts more easily than the reverse. Assumption A-002 tracks whether this proves correct.
+**Evidence Reference:** N/A
+**Recruiter Risk:** N/A (internal build sequence decision)
+**Owner:** Mohammed Shehzad Khan (final architecture review)
+
+---
+
+## D-015
+**Date:** 2026-07-30
+**Topic:** Python Environment Verification Policy
+**Decision:** Python environment (version and required packages) must be verified before any script is executed. Never assume package availability.
+**Required packages:** `pyyaml`, `jsonschema`, `pytest`, `pathlib` (stdlib)
+**Verification command:** `python --version && pip show pyyaml jsonschema pytest`
+**Rationale:** Missing packages cause silent failures or misleading errors. A 30-second environment check prevents hours of debugging caused by missing dependencies.
+**Evidence Reference:** N/A
+**Recruiter Risk:** N/A (internal tooling decision)
+**Owner:** Claude Code
+
+---
+
 ## Version History
 
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | 2026-07-25 | Initial — D-001, D-002 |
-| 2.0 | 2026-07-30 | Career OS v4.0 — added D-003 through D-007; expanded format |
+| 2.0 | 2026-07-30 | Career OS v4.0 — D-003 through D-007; expanded format |
+| 3.0 | 2026-07-30 | Week 1 amendments — D-008 through D-011 |
+| 4.0 | 2026-07-30 | Final architecture review — D-012 through D-015; architecture APPROVED |

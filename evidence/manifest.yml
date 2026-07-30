@@ -98,13 +98,16 @@ entries:
   E-0009:
     file: "credentials/BEd_Certificate.pdf"
     description: "Bachelor of Education — University of Kashmir"
-    confidence: "plausible"
+    confidence: "supported"  # Owner-confirmed; qualification is genuine; evidence collection in progress
     verified: false
     checksum_sha256: ""
     date_added: "2026-07-30"
     linked_claims: ["EDU-002"]
     publication_status: "EVIDENCE_COLLECTION_REQUIRED"
-    notes: "Qualification exists (owner-confirmed). Repository evidence incomplete — physical document not yet added to evidence/credentials/. Publication ALLOWED. Evidence collection required before Week 2 freeze. See Gap G-007 and Decision D-009."
+    publication:
+      public_cv: true
+      linkedin: true
+    notes: "Qualification exists (owner-confirmed). Repository evidence incomplete — physical document not yet added to evidence/credentials/. Publication ALLOWED on all standard documents. Evidence collection is an internal repository task, not a publication block. If evidence cannot be produced, revisit this decision. See Gap G-007 and Decisions D-009, D-012."
 
   E-0010:
     file: "credentials/BSc_Certificate.pdf"
