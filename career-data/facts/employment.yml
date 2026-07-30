@@ -1,0 +1,104 @@
+schema_version: 1.0
+profile_version: 1.0.0
+last_reviewed: "2026-07-31"
+owner: Mohammed Shehzad Khan
+status: canonical
+
+employment_records:
+  - id: EMP-001
+    employer_id: ORG-001
+    employer: Scholars Academy
+    portfolio_display_title: Primary Educator
+    date: Jan 2014 – Nov 2016
+    location: India
+    confidence: verified
+    source:
+      authority: evidence
+      source_id: E-3003
+      extracted_from: V1 Evidence
+      decision: N/A
+    evidence_id: E-3003
+
+  - id: EMP-002
+    employer_id: ORG-002
+    employer: Aoxin International School
+    portfolio_display_title: Primary Educator & Curriculum Lead
+    date: Feb 2024 – Present
+    location: China
+    confidence: needs_review
+    source:
+      authority: evidence
+      source_id: N/A
+      extracted_from: Missing Appointment Letter
+      decision: N/A
+    evidence_id: N/A
+
+  - id: EMP-003
+    employer_id: ORG-002
+    employer: Aoxin International School
+    portfolio_display_title: Primary Educator & Curriculum Lead
+    date: Jul 2018 – Aug 2020
+    location: China
+    confidence: needs_review
+    source:
+      authority: evidence
+      source_id: E-0006A
+      extracted_from: Pending Evidence
+      decision: N/A
+    evidence_id: N/A
+
+  - id: EMP-004
+    employer_id: ORG-003
+    employer: GEDU Global Education
+    portfolio_display_title: Teacher Trainer & Quality Assurance
+    date: Sep 2022 – Aug 2023
+    location: UK/Dubai/Malta
+    confidence: verified
+    source:
+      authority: evidence
+      source_id: E-3001
+      extracted_from: V1 Evidence
+      decision: N/A
+    evidence_id: E-3001
+
+  - id: EMP-005
+    employer_id: ORG-004
+    employer: WhiteHat Jr / BYJU'S
+    portfolio_display_title: Educator Development Lead
+    date: Aug 2020 – Jul 2022
+    location: India (Remote)
+    confidence: verified
+    source:
+      authority: evidence
+      source_id: E-3002
+      extracted_from: V1 Evidence
+      decision: N/A
+    evidence_id: E-3002
+
+  - id: EMP-006
+    employer_id: ORG-005
+    employer: Eton House Kindergarten
+    portfolio_display_title: Early Years EAL Teacher
+    date: Aug 2017 – Jun 2018
+    location: China
+    confidence: verified
+    source:
+      authority: evidence
+      source_id: E-3004
+      extracted_from: V1 Evidence
+      decision: N/A
+    evidence_id: E-3004
+
+  - id: EMP-007
+    employer_id: ORG-006
+    employer: Zhejiang University / Helen China TEFL Network
+    portfolio_display_title: ESL Educator
+    date: Nov 2016 – Aug 2017
+    location: China
+    confidence: verified
+    source:
+      authority: evidence
+      source_id: E-3005
+      extracted_from: V1 Evidence
+      decision: N/A
+    evidence_id: E-3005
