@@ -45,6 +45,42 @@ def validate_employment(graph):
                     
     return errors
 
+def validate_education(graph):
+    errors = []
+    
+    for eid, entity in graph['entities'].items():
+        if entity.get('entity_type') == 'education':
+            
+            # 1. Relationship coverage
+            edges_out = graph['indexes']['by_source'].get(eid, [])
+            studied_at = [e for e in edges_out if e['type'] == 'STUDIED_AT']
+            
+            if len(studied_at) != 1:
+                errors.append(f"{eid} has {len(studied_at)} STUDIED_AT edges (must have exactly 1)")
+            else:
+                inst_id = studied_at[0]['to']
+                if inst_id not in graph['entities']:
+                    errors.append(f"{eid} references non-existent institution {inst_id}")
+                    
+            # 2. Date Constraints
+            dates = entity.get('dates', {})
+            start_date_str = dates.get('start', {}).get('date')
+            end_date_str = dates.get('end', {}).get('date')
+            is_present = dates.get('end', {}).get('present', False)
+            
+            # Degree is basically always assumed to be "completed" if it has an end date, but the user specifies:
+            # "Degrees or awards marked as completed cannot have an open-ended (present) end date."
+            # If present is true, that inherently means not completed yet, which is allowed for in-progress.
+            # So long as it's not present AND has an end_date.
+            if is_present and end_date_str:
+                errors.append(f"{eid} is marked as present but has an end date {end_date_str}")
+                
+            if start_date_str and end_date_str and start_date_str != 'UNKNOWN' and end_date_str != 'UNKNOWN':
+                if end_date_str < start_date_str:
+                    errors.append(f"{eid} has end date ({end_date_str}) before start date ({start_date_str})")
+                    
+    return errors
+
 def validate_semantics(intermediate_dir):
     graph_path = intermediate_dir / 'resolved_graph.json'
     if not graph_path.exists():
@@ -66,6 +102,10 @@ def validate_semantics(intermediate_dir):
     # 2. Check Employment
     emp_errors = validate_employment(graph)
     errors.extend(emp_errors)
+    
+    # 3. Check Education
+    edu_errors = validate_education(graph)
+    errors.extend(edu_errors)
         
     if errors:
         print("Semantic Validation FAILED:")
