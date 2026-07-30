@@ -57,7 +57,22 @@
 
 ---
 
-*(Previous entries will be added as weeks progress)*
+### 2026-07-30 — Week 1 Amendments (Release Manager Review)
+
+**Author:** Claude Code (Antigravity)
+**Type:** Patch — governance corrections following release manager review
+**Review Score:** 96/100 — Week 1 Approved with Required Amendments
+
+#### Corrected
+- **Repository Freeze Policy** — Scope narrowed from "no new content" to **"no unapproved public-facing content changes"**. Factual corrections (date errors, inconsistent names, missing evidence IDs) remain permitted during freeze. Only marketing changes, new claims, branding updates, and narrative rewording require approval. (Decision D-011)
+- **B.Ed. publication status** — Changed from `BLOCKED_FROM_PUBLICATION` to `EVIDENCE_COLLECTION_REQUIRED`. Qualification exists and is owner-confirmed. Publication is ALLOWED. Evidence collection is an internal process, not a publication block. (Decision D-009; TD-004 corrected)
+- **Harris University publication flags** — Confirmed: `public_cv: true`, `linkedin: true`, `premium_schools: false (configurable)`, `verification_status: requires_external_review`. (Decision D-008)
+- **profile_version** — Initialised at `1.0.0`. Career OS is a new product; prior portfolio versions are a separate lineage. (Decision D-010)
+- **TECHNICAL_DEBT.md** — TD-004 corrected; TD-007 marked RESOLVED
+
+#### Added
+- `governance/RISK_REGISTER.md` — v1.0, risks R-001 through R-006 pre-populated
+- `governance/DECISION_LOG.md` — D-008 through D-011 added
 
 ---
 

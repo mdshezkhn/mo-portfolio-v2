@@ -88,17 +88,23 @@ entries:
     checksum_sha256: ""
     date_added: "2026-07-30"
     linked_claims: ["EDU-003"]
-    notes: "Document not yet located. Institution recognition status: REQUIRES_EXTERNAL_VERIFICATION. See Gap G-006."
+    publication:
+      public_cv: true
+      linkedin: true
+      premium_schools: false   # Configurable — excluded until G-006 resolved
+      verification_status: "requires_external_review"
+    notes: "Document not yet located. Institution recognition status: requires_external_review. Listed factually in public CV — no disclaimers. See Gap G-006 and Decision D-008."
 
   E-0009:
     file: "credentials/BEd_Certificate.pdf"
     description: "Bachelor of Education — University of Kashmir"
-    confidence: "needs_review"
+    confidence: "plausible"
     verified: false
     checksum_sha256: ""
     date_added: "2026-07-30"
     linked_claims: ["EDU-002"]
-    notes: "Document not located. Credential is BLOCKED_FROM_PUBLICATION until resolved. See Gap G-007."
+    publication_status: "EVIDENCE_COLLECTION_REQUIRED"
+    notes: "Qualification exists (owner-confirmed). Repository evidence incomplete — physical document not yet added to evidence/credentials/. Publication ALLOWED. Evidence collection required before Week 2 freeze. See Gap G-007 and Decision D-009."
 
   E-0010:
     file: "credentials/BSc_Certificate.pdf"
