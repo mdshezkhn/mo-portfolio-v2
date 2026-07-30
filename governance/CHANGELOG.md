@@ -76,6 +76,30 @@
 
 ---
 
+### 2026-07-30 — Final Architecture Review Amendments (99/100 — ARCHITECTURE APPROVED)
+
+**Author:** Claude Code (Antigravity)
+**Type:** Patch — four final amendments required for architecture approval
+**Review Score:** 99/100 — Architecture formally approved for execution
+
+#### Corrected
+- **B.Ed. manifest entry (E-0009)** — Added explicit `publication: public_cv: true, linkedin: true` block; upgraded `confidence: plausible` → `supported`. The qualification is owner-confirmed; evidence collection is an internal task, not a publication block. (Decision D-012)
+- **career-data/ lifecycle label** — Removed contradictory "GENERATED DATA LAYER (never edit directly)" label. Replaced with two-phase clarification: human-authored and validated during Weeks 2–3; generator input only after v1.0.0 (Amendment 4)
+- **Strategy B geographic wording** — Verified clean: "Four schools across two countries (India and China)" was already correct. No change required.
+- **RISK_REGISTER.md** — Verified already created in previous commit (R-001 through R-006). No action required.
+
+#### Added
+- `governance/ASSUMPTION_REGISTER.md` — v1.0, assumptions A-001 through A-006 pre-populated
+- `governance/DECISION_LOG.md` — D-012 through D-015 (B.Ed. explicit flags, no default strategy, BRITISH_CURRICULUM first pack, Python verification policy)
+
+#### Architecture Status
+**APPROVED FOR EXECUTION — Career OS v4.0**
+> Repository architecture, governance model, evidence strategy, release workflow, and phased implementation plan approved. Design is now frozen. All effort shifts to disciplined execution, validation, and iterative releases.
+
+
+
+---
+
 ## Release History
 
 | Release | Date | profile_version | Notes |
