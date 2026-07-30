@@ -2,10 +2,6 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
-    "schema_version": {
-      "type": "number",
-      "const": 1.0
-    },
     "employment_records": {
       "type": "array",
       "items": {
@@ -13,18 +9,11 @@
         "properties": {
           "id": {
             "type": "string",
-            "pattern": "^EMP-[0-9]{3}$"
+            "pattern": "^EMP-[0-9]{4}$"
           },
-          "employer_id": {
+          "entity_type": {
             "type": "string",
-            "pattern": "^ORG-[0-9]{3}$"
-          },
-          "role_id": {
-            "type": "string",
-            "pattern": "^ROLE-[0-9]{3}$"
-          },
-          "employer": {
-            "type": "string"
+            "const": "employment"
           },
           "dates": {
             "type": "object",
@@ -69,40 +58,32 @@
             "enum": [
               "verified",
               "supported",
-              "asserted",
-              "unknown"
+              "plausible",
+              "asserted"
             ]
           },
           "review_status": {
             "type": "string",
             "enum": [
-              "active",
+              "approved",
               "pending",
-              "deprecated",
-              "conflict"
+              "conflict",
+              "obsolete"
             ]
-          },
-          "primary_evidence_id": {
-            "type": "string",
-            "pattern": "^(E-[0-9]{4}|N/A)$"
           }
         },
         "required": [
           "id",
-          "employer_id",
-          "role_id",
-          "employer",
+          "entity_type",
           "dates",
           "location",
           "confidence",
-          "review_status",
-          "primary_evidence_id"
+          "review_status"
         ]
       }
     }
   },
   "required": [
-    "schema_version",
     "employment_records"
   ]
 }

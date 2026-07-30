@@ -1,93 +1,71 @@
 employment_records:
-- id: EMP-001
-  employer_id: ORG-001
-  employer: Scholars Academy
-  location: India
-  confidence: verified
-  review_status: active
+- id: EMP-0001
+  entity_type: employment
   dates:
     start:
       date: 2014-01
     end:
       date: 2016-11
-  primary_evidence_id: E-3003
-  role_id: ROLE-001
-- id: EMP-002
-  employer_id: ORG-002
-  employer: Aoxin International School
-  location: China
-  confidence: unknown
-  review_status: pending
-  dates:
-    start:
-      date: 2024-02
-    end:
-      present: true
-  primary_evidence_id: N/A
-  role_id: ROLE-002
-- id: EMP-003
-  employer_id: ORG-002
-  employer: Aoxin International School
-  location: China
-  confidence: unknown
-  review_status: pending
-  dates:
-    start:
-      date: 2018-07
-    end:
-      date: 2020-08
-  primary_evidence_id: N/A
-  role_id: ROLE-002
-- id: EMP-004
-  employer_id: ORG-003
-  employer: GEDU Global Education
-  location: UK/Dubai/Malta
+  location: India
   confidence: verified
-  review_status: active
-  dates:
-    start:
-      date: 2022-09
-    end:
-      date: 2023-08
-  primary_evidence_id: E-3001
-  role_id: ROLE-003
-- id: EMP-005
-  employer_id: ORG-004
-  employer: WhiteHat Jr / BYJU'S
-  location: India (Remote)
-  confidence: verified
-  review_status: active
-  dates:
-    start:
-      date: 2020-08
-    end:
-      date: 2022-07
-  primary_evidence_id: E-3002
-  role_id: ROLE-004
-- id: EMP-006
-  employer_id: ORG-005
-  employer: Eton House Kindergarten
-  location: China
-  confidence: verified
-  review_status: active
-  dates:
-    start:
-      date: 2017-08
-    end:
-      date: 2018-06
-  primary_evidence_id: E-3004
-  role_id: ROLE-005
-- id: EMP-007
-  employer_id: ORG-006
-  employer: Zhejiang University / Helen China TEFL Network
-  location: China
-  confidence: verified
-  review_status: active
+  review_status: approved
+- id: EMP-0007
+  entity_type: employment
   dates:
     start:
       date: 2016-11
     end:
       date: 2017-08
-  primary_evidence_id: E-3005
-  role_id: ROLE-006
-schema_version: 1.0
+  location: China
+  confidence: verified
+  review_status: approved
+- id: EMP-0006
+  entity_type: employment
+  dates:
+    start:
+      date: 2017-08
+    end:
+      date: 2018-06
+  location: China
+  confidence: verified
+  review_status: approved
+- id: EMP-0003
+  entity_type: employment
+  dates:
+    start:
+      date: 2018-07
+    end:
+      date: 2020-08
+  location: China
+  confidence: asserted
+  review_status: pending
+- id: EMP-0005
+  entity_type: employment
+  dates:
+    start:
+      date: 2020-08
+    end:
+      date: 2022-07
+  location: India (Remote)
+  confidence: verified
+  review_status: approved
+- id: EMP-0004
+  entity_type: employment
+  dates:
+    start:
+      date: 2022-09
+    end:
+      date: 2023-08
+  location: UK/Dubai/Malta
+  confidence: verified
+  review_status: approved
+- id: EMP-0002
+  entity_type: employment
+  dates:
+    start:
+      date: 2024-02
+    end:
+      present: true
+  location: China
+  confidence: asserted
+  review_status: pending
