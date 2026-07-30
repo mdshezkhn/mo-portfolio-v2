@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "number",
+      "const": 1.0
+    },
+    "profile_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date"
+    },
+    "owner": {
+      "type": "string",
+      "const": "Mohammed Shehzad Khan"
+    },
+    "status": {
+      "type": "string",
+      "const": "canonical"
+    },
+    "institutions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^INST-[0-9]{3}$"
+          },
+          "canonical_name": {
+            "type": "string"
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "canonical_name"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "profile_version",
+    "last_reviewed",
+    "owner",
+    "status",
+    "institutions"
+  ]
+}
