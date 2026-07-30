@@ -1,18 +1,21 @@
 institutions:
-- id: INST-001
+- id: INST-0001
   canonical_name: University of Cumbria
   aliases:
   - Cumbria University
-- id: INST-002
+  entity_type: institution
+- id: INST-0002
   canonical_name: University of Kashmir
   aliases:
   - Kashmir University
-- id: INST-003
+  entity_type: institution
+- id: INST-0003
   canonical_name: Harris University
   aliases:
   - Harris
-- id: INST-004
+  entity_type: institution
+- id: INST-0004
   canonical_name: University of Mumbai
   aliases:
   - Mumbai University
-schema_version: 1.0
+  entity_type: institution
