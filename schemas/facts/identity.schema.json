@@ -2,9 +2,9 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
-    "schema_version": {
-      "type": "number",
-      "const": 1.0
+    "id": {
+      "type": "string",
+      "pattern": "^ID-[0-9]{4}$"
     },
     "name": {
       "type": "string"
@@ -14,7 +14,7 @@
     }
   },
   "required": [
-    "schema_version",
+    "id",
     "name"
   ]
 }

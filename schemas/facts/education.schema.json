@@ -2,10 +2,6 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
-    "schema_version": {
-      "type": "number",
-      "const": 1.0
-    },
     "education_records": {
       "type": "array",
       "items": {
@@ -13,16 +9,13 @@
         "properties": {
           "id": {
             "type": "string",
-            "pattern": "^EDU-[0-9]{3}$"
+            "pattern": "^EDU-[0-9]{4}$"
+          },
+          "entity_type": {
+            "type": "string",
+            "const": "education"
           },
           "degree": {
-            "type": "string"
-          },
-          "institution_id": {
-            "type": "string",
-            "pattern": "^INST-[0-9]{3}$"
-          },
-          "institution": {
             "type": "string"
           },
           "dates": {
@@ -65,22 +58,18 @@
             "enum": [
               "verified",
               "supported",
-              "asserted",
-              "unknown"
+              "plausible",
+              "asserted"
             ]
           },
           "review_status": {
             "type": "string",
             "enum": [
-              "active",
+              "approved",
               "pending",
-              "deprecated",
-              "conflict"
+              "conflict",
+              "obsolete"
             ]
-          },
-          "primary_evidence_id": {
-            "type": "string",
-            "pattern": "^(E-[0-9]{4}|N/A)$"
           },
           "institution_recognition_status": {
             "type": "string"
@@ -112,20 +101,17 @@
         },
         "required": [
           "id",
+          "entity_type",
           "degree",
-          "institution_id",
-          "institution",
           "dates",
           "confidence",
           "review_status",
-          "primary_evidence_id",
           "publication"
         ]
       }
     }
   },
   "required": [
-    "schema_version",
     "education_records"
   ]
 }

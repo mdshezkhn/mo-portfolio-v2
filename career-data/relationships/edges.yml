@@ -56,3 +56,24 @@ edges:
 - from: EMP-0007
   to: E-3005
   type: SUPPORTED_BY
+- from: EDU-0001
+  to: INST-0001
+  type: STUDIED_AT
+- from: EDU-0001
+  to: E-2001
+  type: SUPPORTED_BY
+- from: EDU-0002
+  to: INST-0002
+  type: STUDIED_AT
+- from: EDU-0002
+  to: E-0009
+  type: SUPPORTED_BY
+- from: EDU-0003
+  to: INST-0003
+  type: STUDIED_AT
+- from: EDU-0004
+  to: INST-0004
+  type: STUDIED_AT
+- from: EDU-0004
+  to: E-0010
+  type: SUPPORTED_BY
