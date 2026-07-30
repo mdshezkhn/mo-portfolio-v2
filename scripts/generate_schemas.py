@@ -23,6 +23,18 @@ BASE_TEMPLATE = {
     ]
 }
 
+# Add a standard provenance block that most schemas will use for their items
+PROVENANCE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "authority": {"type": "string", "enum": ["evidence", "human_assertion"]},
+        "source_id": {"type": "string"},
+        "extracted_from": {"type": "string"},
+        "decision": {"type": "string"}
+    },
+    "required": ["authority"]
+}
+
 # The definitions of specific schemas
 SCHEMA_DEFINITIONS = {
     "facts/identity": {
@@ -45,6 +57,7 @@ SCHEMA_DEFINITIONS = {
                         "institution": {"type": "string"},
                         "years": {"type": "string"},
                         "confidence": {"type": "string", "enum": ["verified", "supported", "plausible", "human_assertion", "needs_review"]},
+                        "source": PROVENANCE_SCHEMA,
                         "evidence_id": {"type": "string", "pattern": "^(E-[0-9]{4}|N/A)$"},
                         "institution_recognition_status": {"type": "string"},
                         "publication": {
@@ -59,7 +72,7 @@ SCHEMA_DEFINITIONS = {
                             "required": ["public_cv", "linkedin"]
                         }
                     },
-                    "required": ["id", "degree", "institution_id", "institution", "years", "confidence", "evidence_id", "publication"]
+                    "required": ["id", "degree", "institution_id", "institution", "years", "confidence", "source", "evidence_id", "publication"]
                 }
             }
         },
@@ -79,9 +92,10 @@ SCHEMA_DEFINITIONS = {
                         "date": {"type": "string"},
                         "location": {"type": "string"},
                         "confidence": {"type": "string", "enum": ["verified", "supported", "plausible", "needs_review"]},
+                        "source": PROVENANCE_SCHEMA,
                         "evidence_id": {"type": "string", "pattern": "^(E-[0-9]{4}|N/A)$"}
                     },
-                    "required": ["id", "employer_id", "employer", "portfolio_display_title", "date", "location", "confidence", "evidence_id"]
+                    "required": ["id", "employer_id", "employer", "portfolio_display_title", "date", "location", "confidence", "source", "evidence_id"]
                 }
             }
         },
