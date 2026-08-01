@@ -13,10 +13,12 @@ import { initNavigation } from './navigation.js';
 import { initAnimations } from './animations.js';
 import { initGallery }    from './gallery.js';
 import { initImageFallbacks } from './utilities.js';
+import { initCredentialsModal } from './credentials-modal.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     initNavigation();
     initAnimations();
     initGallery();
     initImageFallbacks();
+    initCredentialsModal();
 });
