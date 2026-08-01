@@ -32,7 +32,7 @@
   <text x="400" y="270" font-family="'Georgia', serif" font-size="14" font-style="italic" fill="#475569" text-anchor="middle">has successfully completed the advanced professional program for</text>
 
   <text x="400" y="308" font-family="'Fraunces', serif" font-size="22" font-weight="bold" fill="#0F2942" text-anchor="middle">TESOL CERTIFICATION (240 HOURS)</text>
-  <text x="400" y="332" font-family="'Manrope', sans-serif" font-size="13" font-weight="600" fill="#C5A059" text-anchor="middle">Specialization: Advanced Primary & Adult EAL Pedagogy</text>
+  <text x="400" y="332" font-family="'Manrope', sans-serif" font-size="13" font-weight="600" fill="#C5A059" text-anchor="middle">Specialization: Advanced Primary &amp; Adult EAL Pedagogy</text>
 
   <!-- Redactions -->
   <g transform="translate(140, 395)">

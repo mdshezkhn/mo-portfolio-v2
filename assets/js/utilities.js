@@ -17,6 +17,10 @@ export function initImageFallbacks() {
     const images = document.querySelectorAll('img');
 
     images.forEach(function (img) {
+        if (img.closest('.credential-modal') || img.hasAttribute('data-no-fallback') || !img.getAttribute('src')) {
+            return;
+        }
+
         function showFallback() {
             if (!img.parentNode || img.dataset.fallbackApplied) { return; }
             img.dataset.fallbackApplied = 'true';
