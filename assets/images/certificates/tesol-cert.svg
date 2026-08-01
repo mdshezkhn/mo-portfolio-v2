@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 375" width="500" height="375">
+  <rect width="500" height="375" fill="#0F2942" rx="12"/>
+  <rect x="15" y="15" width="470" height="345" fill="none" stroke="#C5A059" stroke-width="4" rx="8"/>
+  <rect x="25" y="25" width="450" height="325" fill="none" stroke="#C5A059" stroke-width="1" stroke-dasharray="6,4" rx="6"/>
+  <circle cx="250" cy="110" r="45" fill="#C5A059" opacity="0.2"/>
+  <!-- Globe / Teaching Icon -->
+  <circle cx="250" cy="105" r="25" fill="none" stroke="#C5A059" stroke-width="3"/>
+  <ellipse cx="250" cy="105" rx="25" ry="10" fill="none" stroke="#C5A059" stroke-width="2"/>
+  <line x1="250" y1="80" x2="250" y2="130" stroke="#C5A059" stroke-width="2"/>
+  <!-- Certificate Text -->
+  <text x="250" y="185" font-family="'Fraunces', 'Georgia', serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">GLOBAL TESOL COLLEGE</text>
+  <text x="250" y="215" font-family="'Manrope', 'Helvetica', sans-serif" font-size="15" font-weight="600" fill="#C5A059" text-anchor="middle" letter-spacing="1.5">TESOL CERTIFICATION (240 HOURS)</text>
+  <text x="250" y="240" font-family="'Manrope', 'Helvetica', sans-serif" font-size="13" fill="#E2E8F0" text-anchor="middle">Canada • Specialisation in Advanced EAL Instruction</text>
+  <!-- Seal Ribbon -->
+  <circle cx="250" cy="290" r="24" fill="#C5A059"/>
+  <path d="M240 308 L232 335 L250 325 L268 335 L260 308" fill="#C5A059"/>
+  <text x="250" y="295" font-family="'Manrope', sans-serif" font-size="10" font-weight="bold" fill="#0F2942" text-anchor="middle">VERIFIED</text>
+</svg>
