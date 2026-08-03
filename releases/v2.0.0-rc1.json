@@ -1,0 +1,14 @@
+{
+    "release": "v2.0.0-rc1",
+    "status": "candidate",
+    "git_commit": "d934836309da0bb4450ff2ef5da90714054e9b05",
+    "baseline": "v1.3.0",
+    "schema_version": "1.0",
+    "pipeline_version": "2.0",
+    "ci_workflow": "ci.yml",
+    "contracts": [
+        "Domain",
+        "CV",
+        "Renderer"
+    ]
+}
