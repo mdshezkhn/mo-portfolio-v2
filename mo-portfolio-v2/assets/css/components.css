@@ -1,0 +1,1022 @@
+/* ==========================================================
+   components.css
+   Reusable UI components: navigation (desktop + mobile),
+   buttons, shared card tokens (§2–§11), and all card
+   component unique properties.
+   Part of: Mohammed Shehzad Khan Portfolio v2.0
+========================================================== */
+
+/* ==========================================================
+   HEADER & NAVIGATION
+========================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(18px);
+    background: rgba(248,250,252,.97);
+    border-bottom: 1px solid var(--border);
+    transition: box-shadow var(--transition);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+}
+
+.logo {
+    font-family: "Fraunces", serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Logo is wrapped in an <a> for home navigation;
+   preserve visual appearance, suppress link underline */
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none; /* Fixed bullets issue */
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    transition: color var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: var(--text);
+}
+
+/* ── Mobile hamburger toggle ─────────────────────────── */
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    transition: background var(--transition);
+}
+
+.nav-toggle:hover {
+    background: var(--accent-soft);
+}
+
+.hamburger-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: transform var(--transition), opacity var(--transition);
+    transform-origin: center;
+}
+
+/* Animate bars → × when menu is open */
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Active section link */
+.nav-links a[aria-current="page"] {
+    color: var(--accent);
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 14px 28px;
+    border-radius: var(--radius-sm);
+    font-family: "Manrope", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(30,58,95,.28);
+}
+
+.btn-secondary {
+    color: var(--text-secondary);
+    border: 1.5px solid var(--border-strong);
+}
+
+.btn-secondary:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-soft);
+}
+
+/* Inline SVG icons (replaces emoji — premium, consistent,
+   no icon font). Sits inline with button / meta text. */
+.ic {
+    width: 1.1em;
+    height: 1.1em;
+    flex-shrink: 0;
+    vertical-align: -0.15em;
+}
+
+/* ── Recruiter Action Bar ───────────────────────────────
+   Sits directly beneath the navigation (non-sticky) so it is
+   visible on load but scrolls away — never collides with
+   content on small screens. Flexbox + tokens only; no
+   absolute positioning or fixed-pixel sizing. */
+.recruiter-bar {
+    background: var(--accent-soft);
+    border-bottom: 1px solid var(--border);
+}
+
+.recruiter-bar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-2);
+    padding: 0.7rem 0;
+}
+
+/* Compact variant for the action bar */
+.btn-sm {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+}
+
+/* Keyboard focus visibility for the bar's actions */
+.recruiter-bar .btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* ==========================================================
+   SHARED COMPONENT TOKENS (§2–§11)
+   Consolidated declarations extracted from individual
+   component rules. Rules below contain ONLY what is unique
+   to that component.
+========================================================== */
+
+/* §2: White card base */
+.stat-card,
+.edu-card,
+.cert-card,
+.wc-card,
+.contact-link,
+.tl-card,
+.research-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+/* A 3 + A 4: Shared card shadows */
+.tl-card,
+.research-card {
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+/* A 3b: Shared hover state */
+.tl-card:hover,
+.cert-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: var(--accent-soft);
+}
+
+/* §5: Shared card heading typography */
+.edu-deg,
+.cert-name,
+.pd-card h4 {
+    font-family: "Fraunces", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* §6: Shared organisation / issuer text */
+.edu-sch,
+.cert-issuer,
+.tl-org,
+.cval {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* §7: Shared muted small text */
+.tl-date,
+.tl-loc,
+.edu-yr,
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* §8: Shared uppercase label style */
+.stat-label,
+.skill-cluster h3,
+.clabel {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* §9: Shared auto-grid base */
+.edu-grid,
+.pd-grid,
+.stats-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.certs-grid,
+.skill-clusters {
+    display: grid;
+    gap: 2rem;
+}
+
+/* §11: Badge-group utility */
+.research-meta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================================
+   COMPONENTS — UNIQUE PROPERTIES ONLY
+========================================================== */
+
+/* ── Stats grid ───────────────────────────────────────── */
+
+.stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    margin-bottom: 4rem;
+}
+.stat-card {
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-subtle);
+    display: flex;
+    flex-direction: column;
+}
+.stat-num {
+    order: -1;
+    font-family: "Fraunces", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+}
+.stat-label {
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-left: 0;
+}
+
+/* ── Skills ───────────────────────────────────────────── */
+
+.skill-clusters {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.skill-cluster h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.chip {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-strong);
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+.chip:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+    transform: translateY(-2px);
+}
+
+/* ── Credentials: Education ───────────────────────────── */
+
+.edu-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.edu-card {
+    padding: 1.5rem;
+}
+.edu-yr {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* ── Credentials: Certifications ─────────────────────── */
+
+.certs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.cert-card {
+    padding: 1.5rem;
+    transition: transform var(--transition);
+}
+.cert-card:hover {
+    transform: translateY(-4px);
+}
+.cert-thumb {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: var(--bg);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border);
+}
+.cert-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cert-issuer {
+    margin-bottom: 0.75rem;
+}
+
+/* ── Credentials: Professional Development ────────────── */
+
+.pd-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.pd-card {
+    border: 1.5px dashed var(--border-strong);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+}
+.pd-card p {
+    font-size: 0.9rem;
+}
+
+/* ── WeChat card ──────────────────────────────────────── */
+
+.wc-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+.wc-qr {
+    max-width: 220px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(15,23,42,0.1);
+    flex-shrink: 0;
+}
+.wc-qr img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+.wc-info {
+    flex: 1;
+}
+.wc-name {
+    font-family: "Fraunces", serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.wc-hint {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+/* ── Image fallback ──────────────────────────────────── */
+/* Shown by initImageFallbacks() when an <img> fails to load
+   (e.g. a certificate / portrait asset not yet supplied).
+   Keeps the layout intact — no broken-image icon. */
+.img-fallback {
+   /* ── Credentials: Education & Certifications (Unified IA) ──── */
+
+.certs-grid, .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.cert-card, .edu-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.cert-card[data-cert-src], .edu-card[data-cert-src] {
+    cursor: pointer;
+}
+
+.cert-card[data-cert-src]:hover, .edu-card[data-cert-src]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.12);
+    border-color: var(--accent);
+}
+
+.cert-thumb {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: #F8FAFC;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border);
+    position: relative;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.cert-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cert-card[data-cert-src]:hover .cert-thumb img,
+.edu-card[data-cert-src]:hover .cert-thumb img {
+    transform: scale(1.03);
+}
+
+.cert-thumb-overlay {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(15, 23, 42, 0.75);
+    color: #FFFFFF;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.collection-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #002B49;
+    color: #FFFFFF;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.modal-tab-btn {
+    padding: 4px 12px;
+    border-radius: 6px;
+    border: 1px solid #CBD5E1;
+    background: #FFFFFF;
+    color: #475569;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.modal-tab-btn:hover {
+    background: #F1F5F9;
+    color: #0F172A;
+}
+
+.modal-tab-btn.is-active {
+    background: #1E3A5F;
+    color: #FFFFFF;
+    border-color: #1E3A5F;
+}
+
+.cert-card[data-cert-src]:hover .cert-thumb-overlay,
+.edu-card[data-cert-src]:hover .cert-thumb-overlay {
+    opacity: 1;
+}
+
+.cert-title, .edu-deg {
+    font-family: "Fraunces", serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.35;
+    margin-bottom: 0.35rem;
+}
+
+.cert-issuer, .edu-sch {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+}
+
+.cert-period, .edu-yr {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    display: inline-block;
+}
+
+.cert-desc {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.verification-panel {
+    margin-top: auto;
+    padding: 0.85rem 1rem;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.v-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 9px;
+    background: #ECFDF5;
+    color: #059669;
+    border: 1px solid #A7F3D0;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.v-badge--documented {
+    background: #EFF6FF;
+    color: #2563EB;
+    border-color: #BFDBFE;
+}
+
+.v-details {
+    color: #334155;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.v-privacy {
+    color: #64748B;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+/* ── Credentials Lightbox Modal & Zoom Controls ───────── */
+
+.credential-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.credential-modal.is-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-box {
+    background: #FFFFFF;
+    max-width: 960px;
+    width: 94%;
+    max-height: 92vh;
+    border-radius: 16px;
+    overflow-y: auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: modalSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalSlideUp {
+    from { transform: translateY(16px) scale(0.98); opacity: 0; }
+    to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.25rem 1.75rem;
+    border-bottom: 1px solid #E2E8F0;
+    background: #F8FAFC;
+}
+
+.modal-title-group h3 {
+    font-family: "Fraunces", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 2px;
+}
+
+.modal-title-group p {
+    font-size: 0.85rem;
+    color: #64748B;
+}
+
+.modal-close {
+    background: #E2E8F0;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    transition: background 0.2s, color 0.2s;
+}
+
+.modal-close:hover {
+    background: #0F172A;
+    color: #FFFFFF;
+}
+
+.modal-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.modal-viewport {
+    position: relative;
+    width: 100%;
+    max-height: 520px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F1F5F9;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+}
+
+.modal-img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    transition: transform 0.25s ease, cursor 0.25s ease;
+    cursor: zoom-in;
+}
+
+.modal-img.is-zoomed {
+    max-width: none;
+    max-height: none;
+    transform: scale(1.4);
+    cursor: zoom-out;
+}
+
+.modal-zoom-controls {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    display: flex;
+    gap: 4px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(4px);
+    padding: 4px;
+    border-radius: 6px;
+    z-index: 10;
+}
+
+.modal-zoom-btn {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.modal-zoom-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.cert-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.85rem;
+}
+
+.cert-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    background: #F1F5F9;
+    color: #334155;
+    border-radius: 4px;
+    border: 1px solid #E2E8F0;
+}
+
+.modal-info-panel {
+    width: 100%;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.museum-exhibit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #E2E8F0;
+}
+
+.exhibit-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.exhibit-label {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #64748B;
+}
+
+.exhibit-value {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #0F172A;
+}
+
+.modal-supporting-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.8rem;
+    color: #334155;
+}
+
+.modal-supporting-list li.avail-tag {
+    font-style: italic;
+    color: #059669;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.modal-privacy-box {
+    background: #F1F5F9;
+    border-left: 3px solid #64748B;
+    padding: 0.75rem 1rem;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.78rem;
+    color: #475569;
+    line-height: 1.45;
+}
+
+/* ── Evidence Standards Modal ────────────────────────────── */
+
+.evidence-standards-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.evidence-standards-modal.is-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.standards-box {
+    background: #FFFFFF;
+    max-width: 640px;
+    width: 90%;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+    position: relative;
+    animation: modalSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.standards-box h3 {
+    font-family: "Fraunces", serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #C5A059;
+    padding-bottom: 0.5rem;
+}
+
+.standards-box p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #334155;
+    margin-bottom: 1rem;
+}
+
+.standards-box ul {
+    margin: 1rem 0;
+    padding-left: 1.25rem;
+    font-size: 0.88rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.standards-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: #E2E8F0;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #FFFFFF;
+    border-top: 1px solid #E2E8F0;
+}
+
+.modal-nav-btns {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.modal-nav-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background: #F1F5F9;
+    color: #1E293B;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 1px solid #CBD5E1;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.modal-nav-btn:hover {
+    background: #1E3A5F;
+    color: #FFFFFF;
+    border-color: #1E3A5F;
+}0.8rem;
+    color: #64748B;
+    font-style: italic;
+    width: 100%;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #FFFFFF;
+    border-top: 1px solid #E2E8F0;
+}
+
+.modal-nav-btns {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.modal-nav-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background: #F1F5F9;
+    color: #1E293B;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 1px solid #CBD5E1;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.modal-nav-btn:hover {
+    background: #1E3A5F;
+    color: #FFFFFF;
+    border-color: #1E3A5F;
+}
+
