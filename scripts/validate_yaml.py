@@ -3,6 +3,7 @@ import jsonschema
 import json
 from pathlib import Path
 import sys
+import argparse
 
 def load_yaml(path):
     with open(path, 'r', encoding='utf-8') as f:
@@ -93,6 +94,10 @@ def check_referential_integrity(yaml_data, file_type, registry):
     return len(errors) == 0, errors
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--file", default=None, help="Specific file to validate")
+    args = parser.parse_args()
+
     root_dir = Path(__file__).parent.parent
     data_dir = root_dir / "career-data"
     schema_dir = root_dir / "schemas"
@@ -104,8 +109,18 @@ def main():
     registry = build_registries(data_dir)
     has_errors = False
     
-    for yaml_path in data_dir.rglob("*.yml"):
-        rel_path = yaml_path.relative_to(data_dir)
+    if args.file:
+        yaml_files = [Path(args.file).resolve()]
+    else:
+        yaml_files = [p.resolve() for p in data_dir.rglob("*.yml")]
+    
+    for yaml_path in yaml_files:
+        try:
+            rel_path = yaml_path.relative_to(data_dir.resolve())
+        except ValueError:
+            print(f"Skipping {yaml_path}: file not in {data_dir.resolve()}")
+            continue
+            
         file_type = str(rel_path.with_suffix('')).replace('\\', '/')
         schema_path = schema_dir / f"{file_type}.schema.json"
         

@@ -1,0 +1,42 @@
+registry_version: '1.0'
+entities:
+  CERT-4000:
+    slug: crt_001
+    state: PUBLISHED
+    type: Certification
+  COMP-5000:
+    slug: cmp_001
+    state: PUBLISHED
+    type: Competency
+  QUAL-3000:
+    slug: edu_001
+    state: PUBLISHED
+    type: Qualification
+  EMP-2000:
+    slug: emp_001
+    state: PUBLISHED
+    type: Employment
+  EVID-7000:
+    slug: evd_001
+    state: PUBLISHED
+    type: Evidence
+  PERSON-1000:
+    slug: id_001
+    state: PUBLISHED
+    type: Identity
+  INST-9000:
+    slug: ins_001
+    state: PUBLISHED
+    type: Institution
+  NARR-6000:
+    slug: nar_001
+    state: PUBLISHED
+    type: Narrative
+  ORG-1000:
+    slug: org_001
+    state: PUBLISHED
+    type: Organisation
+  ROLE-8000:
+    slug: rol_001
+    state: PUBLISHED
+    type: Role

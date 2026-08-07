@@ -111,11 +111,11 @@ Previous draft used: `10+`
 |-------|---------------|
 | Did your first professional teaching role genuinely begin in 2014 (Scholars Academy)? | Yes / No |
 | Were there any significant breaks in professional employment between 2014 and today? | If yes, describe gap length |
-| Does the 2014–2016 period count as professional teaching by your professional standards? | Yes / Partial / No |
+| Does the Jan 2014 – Nov 2016 period count as professional teaching by your professional standards? | Yes / Partial / No |
 
 **Decision rule:**
 - If 2014–present is continuous professional teaching with no significant gaps → use **11+**
-- If there were gaps of 6+ months, or 2014–2016 was not professional teaching → use **10+**
+- If there were gaps of 6+ months, or Jan 2014 – Nov 2016 was not professional teaching → use **10+**
 - If uncertain → use the **more conservative figure** until employment letters confirm dates
 
 **Resolution field:** `[x] RESOLVED — Owner decision: 11+ years. Date: 2026-07-25 (See D-001)`
@@ -134,7 +134,7 @@ However, the nature of the GEDU role is not yet confirmed by primary evidence. I
 
 | Check | Answer needed |
 |-------|---------------|
-| Were you physically employed and based in the UK, Dubai, and Malta during GEDU (2022–2023)? | Yes / No / Partially |
+| Were you physically employed and based in the UK, Dubai, and Malta during GEDU (Sep 2022 – Aug 2023)? | Yes / No / Partially |
 | Or was the GEDU role India-based with international scope? | Clarify |
 
 **Approved claim options depending on answer:**
@@ -216,7 +216,7 @@ However, the nature of the GEDU role is not yet confirmed by primary evidence. I
 | C-021 | Languages — Hindi native | C | Medium | Yes | Personal statement | Personal statement only; acceptable for language claims of this type. |
 | C-022 | Languages — Urdu working | C | Medium | Yes | Personal statement | Same as above. |
 | C-023 | Availability August 2027 | B | High | Yes | E-0017 (Current contract to confirm end date) | Defensible in interview. |
-| C-024 | Scholars Academy role (2014–2016) | C | Low | Yes | E-0001 (to upgrade to B then A) | Not yet corroborated by third-party document; confirm to unlock the 11+ years figure. |
+| C-024 | Scholars Academy role (Jan 2014 – Nov 2016) | C | Low | Yes | E-0001 (to upgrade to B then A) | Not yet corroborated by third-party document; confirm to unlock the 11+ years figure. |
 
 > **Removed from matrix:** Geographic career preferences (China, Gulf, SEA). Career strategy is not evidence. Belongs in Career Direction section only.
 
@@ -234,7 +234,7 @@ However, the nature of the GEDU role is not yet confirmed by primary evidence. I
 | Countries employed in | **[OWNER DECISION REQUIRED — see Decision 2]** | B | Medium | **Pending owner decision — do not publish** |
 | Teacher / trainer mentoring | Documented experience across career | B | High | Approved — general claim only; no specific number |
 | Trainer cohort size | **Not approved** — 200 vs 1,000 unresolved | C | Low | Do not publish until manager confirmation |
-| PGCE action research completed | Yes (University of Cumbria, 2026) | B | High | Approved for use |
+| PGCE action research completed | Yes (University of Cumbria, Sep 2025 – Sep 2026) | B | High | Approved for use |
 | PGCE completed | Yes (University of Cumbria) | B | High | Approved for use |
 
 > **Removed — Employers / institutions (7):** This figure does not serve recruiter evaluation and has been removed from the Approved Metrics Register. The employer count is tracked internally in the Canonical Timeline only.
@@ -265,7 +265,7 @@ However, the nature of the GEDU role is not yet confirmed by primary evidence. I
 | Evidence Needed | Purpose | Unblocks | Priority | Target |
 |----------------|---------|----------|----------|--------|
 | GEDU employment letter | Confirm physical location; resolve Decision 2 (Countries) | Countries claim, Traceability Matrix GEDU rows | P0 | ASAP |
-| Scholars Academy employment letter | Confirm 2014–2016 role; resolve Decision 1 (Years) | Years figure, canonical timeline | P0 | ASAP |
+| Scholars Academy employment letter | Confirm Jan 2014 – Nov 2016 role; resolve Decision 1 (Years) | Years figure, canonical timeline | P0 | ASAP |
 | Remaining 5 employment letters | Upgrade employment claims from B to A | Traceability Matrix promotion | P0 | ASAP |
 | PGCE certificate / Cumbria transcript | Upgrade PGCE claim from B to A | PGCE row, CV | P0 | ASAP |
 | Manager confirmation — WhiteHat Jr scope | Resolve 200 vs 1,000 open question | Trainer scope metric | P0 | ASAP |
@@ -288,12 +288,12 @@ However, the nature of the GEDU role is not yet confirmed by primary evidence. I
 
 | Period | Role | Organisation | Location | Evidence Quality | Verification Status |
 |--------|------|--------------|----------|-----------------|---------------------|
-| 2014–2016 | English / Science / Mathematics Teacher | Scholars Academy | India | C — CV only; employment letter needed | [PENDING] |
+| Jan 2014 – Nov 2016 | English / Science / Mathematics Teacher | Scholars Academy | India | C — CV only; employment letter needed | [PENDING] |
 | 2016–2017 | ESL Teacher | Zhejiang University / Helen China TEFL Network | China | B — CV-documented | [PENDING — employment letter to upgrade] |
 | 2017–2018 | ESL Teacher & Teacher Trainer (Early Years) | Eton House Kindergarten | China | B — CV-documented | [PENDING — employment letter to upgrade] |
-| 2018–2020 | EAL / English Teacher | Aoxin International School | Zhengzhou, China | B — CV-documented | [PENDING — employment letter to upgrade] |
-| 2020–2022 | Assistant Manager – Teacher Quality & Development | WhiteHat Jr (A BYJU'S Company) | India (Remote) | B — CV-documented | [PENDING — employment letter to upgrade; scope unconfirmed] |
-| 2022–2023 | Training and Quality Lead | GEDU Global Education | UK, Dubai, Malta | B — CV-documented | [PENDING — employment letter to upgrade; physical location to confirm] |
+| Jul 2018 – Aug 2020 | EAL / English Teacher | Aoxin International School | Zhengzhou, China | B — CV-documented | [PENDING — employment letter to upgrade] |
+| Aug 2020 – Jul 2022 | Assistant Manager – Teacher Quality & Development | WhiteHat Jr (A BYJU'S Company) | India (Remote) | B — CV-documented | [PENDING — employment letter to upgrade; scope unconfirmed] |
+| Sep 2022 – Aug 2023 | Training and Quality Lead | GEDU Global Education | UK, Dubai, Malta | B — CV-documented | [PENDING — employment letter to upgrade; physical location to confirm] |
 | 2024–Present | EAL / English Teacher | Aoxin International School | Zhengzhou, Henan, China | B — CV-documented | [PENDING — employment letter to upgrade] |
 
 ---

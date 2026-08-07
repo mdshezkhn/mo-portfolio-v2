@@ -1,0 +1,318 @@
+registry_version: '1.0'
+entities:
+  QUAL-3000:
+    slug: edu_0004
+    state: PUBLISHED
+    type: education
+  QUAL-3001:
+    slug: edu_0003
+    state: PUBLISHED
+    type: education
+  QUAL-3002:
+    slug: edu_0001
+    state: PUBLISHED
+    type: education
+  QUAL-3003:
+    slug: edu_0002
+    state: PUBLISHED
+    type: education
+  EMP-2000:
+    slug: emp_0001
+    state: PUBLISHED
+    type: employment
+  EMP-2001:
+    slug: emp_0007
+    state: PUBLISHED
+    type: employment
+  EMP-2002:
+    slug: emp_0006
+    state: PUBLISHED
+    type: employment
+  EMP-2003:
+    slug: emp_0003
+    state: PUBLISHED
+    type: employment
+  EMP-2004:
+    slug: emp_0005
+    state: PUBLISHED
+    type: employment
+  EMP-2005:
+    slug: emp_0004
+    state: PUBLISHED
+    type: employment
+  EMP-2006:
+    slug: emp_0002
+    state: PUBLISHED
+    type: employment
+  PERSON-1000:
+    slug: id_0001
+    state: PUBLISHED
+    type: identity
+  INST-9000:
+    slug: inst_0001
+    state: PUBLISHED
+    type: institution
+  INST-9001:
+    slug: inst_0002
+    state: PUBLISHED
+    type: institution
+  INST-9002:
+    slug: inst_0003
+    state: PUBLISHED
+    type: institution
+  INST-9003:
+    slug: inst_0004
+    state: PUBLISHED
+    type: institution
+  ORG-1000:
+    slug: org_0001
+    state: PUBLISHED
+    type: organisation
+  ORG-1001:
+    slug: org_0002
+    state: PUBLISHED
+    type: organisation
+  ORG-1002:
+    slug: org_0003
+    state: PUBLISHED
+    type: organisation
+  ORG-1003:
+    slug: org_0004
+    state: PUBLISHED
+    type: organisation
+  ORG-1004:
+    slug: org_0005
+    state: PUBLISHED
+    type: organisation
+  ORG-1005:
+    slug: org_0006
+    state: PUBLISHED
+    type: organisation
+  ORG-1006:
+    slug: org_0007
+    state: PUBLISHED
+    type: organisation
+  ROLE-8000:
+    slug: role_0001
+    state: PUBLISHED
+    type: role
+  ROLE-8001:
+    slug: role_0002
+    state: PUBLISHED
+    type: role
+  ROLE-8002:
+    slug: role_0003
+    state: PUBLISHED
+    type: role
+  ROLE-8003:
+    slug: role_0004
+    state: PUBLISHED
+    type: role
+  ROLE-8004:
+    slug: role_0005
+    state: PUBLISHED
+    type: role
+  ROLE-8005:
+    slug: role_0006
+    state: PUBLISHED
+    type: role
+  CLAIM-1000:
+    slug: test_claim
+    state: ALLOCATED
+    type: claim
+  C-001:
+    slug: c-001
+    state: PUBLISHED
+    type: claim
+  C-002:
+    slug: c-002
+    state: PUBLISHED
+    type: claim
+  C-003:
+    slug: c-003
+    state: PUBLISHED
+    type: claim
+  C-004:
+    slug: c-004
+    state: PUBLISHED
+    type: claim
+  C-005:
+    slug: c-005
+    state: PUBLISHED
+    type: claim
+  C-006:
+    slug: c-006
+    state: PUBLISHED
+    type: claim
+  C-007:
+    slug: c-007
+    state: PUBLISHED
+    type: claim
+  C-008:
+    slug: c-008
+    state: PUBLISHED
+    type: claim
+  C-009:
+    slug: c-009
+    state: PUBLISHED
+    type: claim
+  C-010:
+    slug: c-010
+    state: PUBLISHED
+    type: claim
+  C-011:
+    slug: c-011
+    state: PUBLISHED
+    type: claim
+  C-012:
+    slug: c-012
+    state: PUBLISHED
+    type: claim
+  C-013:
+    slug: c-013
+    state: PUBLISHED
+    type: claim
+  C-014:
+    slug: c-014
+    state: PUBLISHED
+    type: claim
+  C-015:
+    slug: c-015
+    state: PUBLISHED
+    type: claim
+  C-016:
+    slug: c-016
+    state: PUBLISHED
+    type: claim
+  C-017:
+    slug: c-017
+    state: PUBLISHED
+    type: claim
+  C-018:
+    slug: c-018
+    state: PUBLISHED
+    type: claim
+  C-019:
+    slug: c-019
+    state: PUBLISHED
+    type: claim
+  C-020:
+    slug: c-020
+    state: PUBLISHED
+    type: claim
+  C-021:
+    slug: c-021
+    state: PUBLISHED
+    type: claim
+  C-022:
+    slug: c-022
+    state: PUBLISHED
+    type: claim
+  C-023:
+    slug: c-023
+    state: PUBLISHED
+    type: claim
+  C-024:
+    slug: c-024
+    state: PUBLISHED
+    type: claim
+  C-025:
+    slug: c-025
+    state: PUBLISHED
+    type: claim
+  E-0004:
+    slug: e-0004
+    state: PUBLISHED
+    type: evidence
+  E-0005:
+    slug: e-0005
+    state: PUBLISHED
+    type: evidence
+  E-0007:
+    slug: e-0007
+    state: PUBLISHED
+    type: evidence
+  E-0009:
+    slug: e-0009
+    state: PUBLISHED
+    type: evidence
+  E-0010:
+    slug: e-0010
+    state: PUBLISHED
+    type: evidence
+  E-0013:
+    slug: e-0013
+    state: PUBLISHED
+    type: evidence
+  E-0014:
+    slug: e-0014
+    state: PUBLISHED
+    type: evidence
+  E-0015:
+    slug: e-0015
+    state: PUBLISHED
+    type: evidence
+  E-0016:
+    slug: e-0016
+    state: PUBLISHED
+    type: evidence
+  E-0017:
+    slug: e-0017
+    state: PUBLISHED
+    type: evidence
+  E-2001:
+    slug: e-2001
+    state: PUBLISHED
+    type: evidence
+  E-2002:
+    slug: e-2002
+    state: PUBLISHED
+    type: evidence
+  E-2003:
+    slug: e-2003
+    state: PUBLISHED
+    type: evidence
+  E-2004:
+    slug: e-2004
+    state: PUBLISHED
+    type: evidence
+  E-2005:
+    slug: e-2005
+    state: PUBLISHED
+    type: evidence
+  E-2006:
+    slug: e-2006
+    state: PUBLISHED
+    type: evidence
+  E-3001:
+    slug: e-3001
+    state: PUBLISHED
+    type: evidence
+  E-3002:
+    slug: e-3002
+    state: PUBLISHED
+    type: evidence
+  E-3003:
+    slug: e-3003
+    state: PUBLISHED
+    type: evidence
+  E-3004:
+    slug: e-3004
+    state: PUBLISHED
+    type: evidence
+  E-3005:
+    slug: e-3005
+    state: PUBLISHED
+    type: evidence
+  E-3006:
+    slug: e-3006
+    state: PUBLISHED
+    type: evidence
+  COMP-001:
+    slug: comp_001
+    state: PUBLISHED
+    type: competencie
+  COMP-002:
+    slug: comp_002
+    state: PUBLISHED
+    type: competencie

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Claims Schema v1.0",
+  "type": "object",
+  "required": ["id", "schemaVersion", "title", "status", "evidence", "verification_date"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^C-\\d+$"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "enum": ["1.0"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": ["verified", "pending", "archived"]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^E-\\d+$"
+      }
+    },
+    "verification_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "additionalProperties": true
+}

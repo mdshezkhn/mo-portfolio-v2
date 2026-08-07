@@ -1,6 +1,9 @@
 import os
 import yaml
 import json
+import uuid
+import subprocess
+from datetime import datetime
 from pathlib import Path
 from collections import defaultdict
 
@@ -35,7 +38,8 @@ def load_yaml_files(data_dir):
                             for item in value:
                                 if isinstance(item, dict) and 'id' in item:
                                     item['_source_file'] = str(file_path.relative_to(data_dir.parent))
-                                    item['entity_type'] = key.rstrip('s') if key != 'root' else 'entity'
+                                    if 'entity_type' not in item:
+                                        item['entity_type'] = key.rstrip('s') if key != 'root' else 'entity'
                                     all_entities[item['id']] = item
     
     # Also load metrics
@@ -58,14 +62,70 @@ def load_edges(data_dir):
             return data.get('edges', [])
     return []
 
-def resolve_graph(data_dir, output_dir):
-    print("Loading entities...")
+def build_graph_dict(data_dir):
     entities = load_yaml_files(data_dir)
-    print(f"Loaded {len(entities)} entities.")
-    
-    print("Loading edges...")
     edges = load_edges(data_dir)
-    print(f"Loaded {len(edges)} edges.")
+    
+    # Compute Claim Confidence Dynamically
+    for eid, entity in entities.items():
+        if entity.get('entity_type') == 'claim':
+            support_count = 0
+            for edge in edges:
+                if edge.get('from') == eid and edge.get('type') == 'SUPPORTED_BY':
+                    support_count += 1
+            
+            if support_count == 0:
+                entity['confidence'] = 'unverified'
+            elif support_count == 1:
+                entity['confidence'] = 'supported'
+            elif support_count >= 2:
+                entity['confidence'] = 'verified'
+                
+    def get_git_commit():
+        try:
+            return subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+        except Exception:
+            return "unknown"
+            
+    graph = {
+        'metadata': {
+            'artifact_version': '1.0.0',
+            'graph_version': '1.0.0',
+            'resolver_version': '1.0.0',
+            'schema_version': '1.0.0',
+            'build_id': str(uuid.uuid4()),
+            'generated_at': datetime.now().isoformat() + "Z",
+            'source_commit': get_git_commit()
+        },
+        'entities': entities,
+        'edges': edges,
+        'indexes': {
+            'by_source': {},
+            'by_target': {}
+        }
+    }
+    
+    for edge in edges:
+        source = edge['from']
+        target = edge['to']
+        
+        if source not in graph['indexes']['by_source']:
+            graph['indexes']['by_source'][source] = []
+        graph['indexes']['by_source'][source].append(edge)
+        
+        if target not in graph['indexes']['by_target']:
+            graph['indexes']['by_target'][target] = []
+        graph['indexes']['by_target'][target].append(edge)
+        
+    return graph
+
+def resolve_graph(data_dir, output_dir):
+    print("Loading and building graph...")
+    graph = build_graph_dict(data_dir)
+    entities = graph['entities']
+    edges = graph['edges']
+    
+    print(f"Loaded {len(entities)} entities and {len(edges)} edges.")
     
     # Very basic validation during resolution
     structural_broken = 0
@@ -102,33 +162,12 @@ def resolve_graph(data_dir, output_dir):
             orphans.discard(target)
             
     # Remove identity and metrics from orphans since they don't necessarily have edges pointing to them
-    orphans = {o for o in orphans if entities[o].get('entity_type') not in ('identity', 'entity', 'metric')}
-    
-    graph = {
-        'entities': entities,
-        'edges': edges,
-        'indexes': {
-            'by_source': {},
-            'by_target': {}
-        }
-    }
-    
-    for edge in edges:
-        source = edge['from']
-        target = edge['to']
-        
-        if source not in graph['indexes']['by_source']:
-            graph['indexes']['by_source'][source] = []
-        graph['indexes']['by_source'][source].append(edge)
-        
-        if target not in graph['indexes']['by_target']:
-            graph['indexes']['by_target'][target] = []
-        graph['indexes']['by_target'][target].append(edge)
+    orphans = {o for o in orphans if entities[o].get('entity_type') not in ('identity', 'entity', 'metric', 'claim')}
         
     output_dir.mkdir(parents=True, exist_ok=True)
     
     with open(output_dir / 'resolved_graph.json', 'w', encoding='utf-8') as f:
-        json.dump(graph, f, indent=2)
+        json.dump(graph, f, indent=2, default=str)
         
     print("\nGraph Summary")
     print("-------------")

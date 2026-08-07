@@ -1,0 +1,36 @@
+{
+  "entities": {
+    "EMP-0001": {
+      "id": "EMP-0001",
+      "name": "Mohammed Shehzad Khan",
+      "title": "International Primary Educator & EAL Specialist",
+      "confidence": "asserted",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\identity.yml",
+      "entity_type": "entity"
+    },
+    "METRIC-0001": {
+      "id": "METRIC-0001",
+      "operation": "EXPERIENCE_DURATION",
+      "source": "employment",
+      "filters": {
+        "role_type": "teaching"
+      },
+      "entity_type": "metric"
+    },
+    "METRIC-0002": {
+      "id": "METRIC-0002",
+      "operation": "COUNT",
+      "source": "education",
+      "filters": {
+        "level": "postgraduate"
+      },
+      "entity_type": "metric"
+    }
+  },
+  "edges": [],
+  "indexes": {
+    "by_source": {},
+    "by_target": {}
+  }
+}

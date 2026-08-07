@@ -1,0 +1,22 @@
+# CLAIM REGISTRY SCHEMA
+---
+id: !string
+status: !string ("active", "deprecated", "superseded_by")
+version: !string
+introduced: !date
+owner: !string
+risk: !number (1-5)
+type: !string (e.g., leadership, identity, metrics)
+canonical: !boolean
+subject: !string
+modifier: !string
+
+evidence:
+  - !string
+  - !string
+
+allowed_variants: # Approved phrase variations
+  - !string
+  - !string
+presentation_assets: # Where this claim appears
+  - !string

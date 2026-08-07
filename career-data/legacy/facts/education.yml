@@ -1,0 +1,78 @@
+education_records:
+- id: EDU-001
+  degree: Postgraduate Certificate in Education (PGCE, non-QTS)
+  institution_id: INST-001
+  institution: University of Cumbria
+  confidence: verified
+  institution_recognition_status: RECOGNISED
+  publication:
+    public_cv: true
+    linkedin: true
+    recruiter_pack: included
+    premium_schools: true
+    notes: ''
+  review_status: active
+  dates:
+    start:
+      date: 2025-09
+    end:
+      date: 2026-07
+  primary_evidence_id: E-2001
+- id: EDU-002
+  degree: Bachelor of Education (B.Ed.)
+  institution_id: INST-002
+  institution: University of Kashmir
+  confidence: supported
+  institution_recognition_status: RECOGNISED
+  publication:
+    public_cv: true
+    linkedin: true
+    recruiter_pack: included
+    premium_schools: true
+    notes: Evidence collection required.
+  review_status: active
+  dates:
+    start:
+      date: UNKNOWN
+    end:
+      present: false
+  primary_evidence_id: E-0009
+- id: EDU-003
+  degree: Master of Arts, English Language and Literature (M.A.)
+  institution_id: INST-003
+  institution: Harris University
+  confidence: unknown
+  institution_recognition_status: REQUIRES_EXTERNAL_VERIFICATION
+  publication:
+    public_cv: true
+    linkedin: true
+    recruiter_pack: optional
+    premium_schools: false
+    notes: Pending external verification
+  review_status: pending
+  dates:
+    start:
+      date: '2007'
+    end:
+      date: '2009'
+  primary_evidence_id: N/A
+- id: EDU-004
+  degree: Bachelor of Science, Physics (B.Sc.)
+  institution_id: INST-004
+  institution: University of Mumbai
+  confidence: asserted
+  institution_recognition_status: RECOGNISED
+  publication:
+    public_cv: true
+    linkedin: true
+    recruiter_pack: included
+    premium_schools: true
+    notes: Evidence needs scanning/filing
+  review_status: active
+  dates:
+    start:
+      date: '2004'
+    end:
+      date: '2007'
+  primary_evidence_id: E-0010
+schema_version: 1.0

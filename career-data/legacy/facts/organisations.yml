@@ -1,0 +1,38 @@
+organisations:
+- id: ORG-001
+  canonical_name: Scholars Academy
+  aliases:
+  - Scholars' Academy
+  - Scholar Academy
+- id: ORG-002
+  canonical_name: Aoxin International School
+  aliases:
+  - Aoxin
+  - Aoxin School
+- id: ORG-003
+  canonical_name: GEDU Global Education
+  aliases:
+  - GEDU
+  - Global Education
+- id: ORG-004
+  canonical_name: WhiteHat Jr
+  aliases:
+  - WhiteHat Jr.
+  - White Hat Junior
+  - BYJU'S Future School
+  - BYJU'S
+- id: ORG-005
+  canonical_name: Eton House Kindergarten
+  aliases:
+  - EtonHouse
+  - Eton House
+- id: ORG-006
+  canonical_name: Zhejiang University
+  aliases:
+  - ZJU
+- id: ORG-007
+  canonical_name: Helen China TEFL Network
+  aliases:
+  - Helen China
+  - Helen TEFL
+schema_version: 1.0

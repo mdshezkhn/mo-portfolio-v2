@@ -1,0 +1,57 @@
+claims:
+  - id: CLAIM-1000
+    statement: >
+      Experienced international primary educator with a proven track record
+      of delivering high-quality education in diverse, multicultural environments.
+    claim_type: professional_identity
+    status: approved
+    claim_strength: 3
+    evidence_strength: 3
+    approval_reason: "Foundational profile claim."
+    markets:
+      - british
+      - international
+    priority: high
+    owner: canonical
+
+  # WhiteHat Jr
+  - id: CLAIM-1001
+    statement: "Coached and mentored 100+ educators to improve instructional quality and engagement metrics."
+    claim_type: leadership
+    status: approved
+    claim_strength: 5
+    evidence_strength: 4
+    approval_reason: "Strong leadership metric verified by official dashboards."
+    markets:
+      - british
+      - international
+    priority: high
+    owner: canonical
+
+  # GEDU Global Education
+  - id: CLAIM-1002
+    statement: "Led quality assurance initiatives across distributed teaching teams, ensuring consistent curriculum delivery."
+    claim_type: quality_assurance
+    status: approved
+    claim_strength: 4
+    evidence_strength: 5
+    approval_reason: "Supported by direct contract and performance review detailing QA scope."
+    markets:
+      - british
+      - international
+    priority: high
+    owner: canonical
+
+  # Aoxin (2018-2020)
+  - id: CLAIM-1003
+    statement: "Spearheaded primary curriculum design and EAL integration for international classrooms."
+    claim_type: curriculum_design
+    status: approved
+    claim_strength: 5
+    evidence_strength: 4
+    approval_reason: "Matches verified role of Curriculum Lead during 2018-2020."
+    markets:
+      - british
+      - international
+    priority: high
+    owner: canonical

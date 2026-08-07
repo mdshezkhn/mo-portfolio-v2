@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Intermediate Compiler Schema",
+  "description": "Version 1.0.0",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "facts": {
+      "type": "object"
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "statement_id": {
+            "type": "string"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "relationship_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "metric_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "policy_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "statement_id"
+        ]
+      }
+    },
+    "build_manifest": {
+      "type": "object",
+      "properties": {
+        "resolver_version": {
+          "type": "string"
+        },
+        "schema_version": {
+          "type": "string"
+        },
+        "policy_version": {
+          "type": "string"
+        },
+        "generator_versions": {
+          "type": "object"
+        },
+        "input_hashes": {
+          "type": "object"
+        },
+        "output_hashes": {
+          "type": "object"
+        },
+        "warnings": {
+          "type": "array"
+        },
+        "performance": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "resolver_version",
+        "schema_version",
+        "policy_version",
+        "generator_versions",
+        "input_hashes",
+        "output_hashes"
+      ]
+    }
+  },
+  "required": [
+    "version",
+    "facts",
+    "metrics",
+    "provenance",
+    "build_manifest"
+  ],
+  "additionalProperties": false
+}

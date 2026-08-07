@@ -1,0 +1,12 @@
+{
+  "_metadata": {
+    "schema_version": "4.0",
+    "resolver_version": "1.0",
+    "metrics_version": "1.0",
+    "generated_at": "2026-07-30T17:50:56.019436Z",
+    "build_id": "BUILD-V1-001",
+    "source_commit": "HEAD",
+    "input_hash": "382ea5c0610b9b908e74c5630b6f2c571b3b23205e70516f00d6c34263976225"
+  },
+  "metrics": {}
+}

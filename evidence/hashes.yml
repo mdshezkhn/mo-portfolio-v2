@@ -1,0 +1,72 @@
+schema_version: 1.0
+hashes:
+  - evidence_id: E-2001
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-2002
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-2003
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-2004
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-2005
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-0008
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-0009
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-0010
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-3001
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-3002
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-3003
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-3004
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-3005
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""
+  - evidence_id: E-0006A
+    algorithm: SHA-256
+    checksum: ""
+    size_bytes: 0
+    last_verified: ""

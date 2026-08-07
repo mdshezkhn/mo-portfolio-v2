@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "title": { "type": "string" },
+        "subtitle": { "type": ["string", "null"] }
+      },
+      "required": ["name", "title"]
+    },
+    "summary": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "competencies": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "experience": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "role_title": { "type": "string" },
+          "employer_name": { "type": "string" },
+          "date_range": { "type": "string" },
+          "highlights": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["id", "role_title", "employer_name", "date_range", "highlights"]
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "degree_name": { "type": "string" },
+          "institution_name": { "type": "string" },
+          "date_range": { "type": "string" },
+          "details": { "type": "string" }
+        },
+        "required": ["id", "degree_name", "institution_name"]
+      }
+    },
+    "_meta": {
+      "type": "object"
+    }
+  },
+  "required": ["header", "summary", "competencies", "experience", "education", "_meta"]
+}

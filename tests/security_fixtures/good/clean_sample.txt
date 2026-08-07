@@ -1,0 +1,5 @@
+# Clean Sample File
+This is a standard public portfolio markdown file.
+Primary Owner: Mohammed Shehzad Khan
+Email: mshehzadkhan@hotmail.com
+Domain: mohammedshehzad.com

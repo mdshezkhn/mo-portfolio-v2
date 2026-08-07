@@ -1,0 +1,5 @@
+- id: CERT-4000
+  entity_type: Certification
+  name: Cloud Expert
+  issuer_id: ORG-1000
+  issue_date: '2021-06-01'

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "View Models Schema",
+  "description": "Version 1.0.0",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "portfolio",
+        "cv",
+        "linkedin",
+        "recruiter_pack"
+      ]
+    },
+    "market": {
+      "type": "string"
+    },
+    "content": {
+      "type": "object"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "build_id": {
+          "type": "string"
+        },
+        "provenance": {
+          "type": "array"
+        }
+      },
+      "required": [
+        "build_id",
+        "provenance"
+      ]
+    }
+  },
+  "required": [
+    "version",
+    "type",
+    "content",
+    "metadata"
+  ],
+  "additionalProperties": false
+}

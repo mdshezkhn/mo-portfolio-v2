@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-08-01T21:29:10.966903",
+  "repository_version": 2.0,
+  "governance_version": 1.0,
+  "stage": "Bootstrap",
+  "files_scanned": 180,
+  "claims_analysed": 229,
+  "critical": 110,
+  "high": 60,
+  "orphan_claims": 170,
+  "governance_debt": 340,
+  "canonical_coverage_pct": 40.0,
+  "v5_evidence_count": 9,
+  "decision_status": "FAIL",
+  "status": "Publication blocked"
+}

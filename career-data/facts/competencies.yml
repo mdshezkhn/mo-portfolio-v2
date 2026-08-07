@@ -1,0 +1,14 @@
+competencies:
+  - id: COMP-001
+    category: "Instructional Leadership"
+    skills:
+      - "Teacher mentoring"
+      - "Instructional quality assurance"
+      - "Grade 5 writing moderation"
+  - id: COMP-002
+    category: "Pedagogy"
+    skills:
+      - "Academic language acquisition & Phonics"
+      - "Early-years immersion"
+      - "Inquiry-based learning & Cross-curricular STEM"
+      - "Cross-cultural training"

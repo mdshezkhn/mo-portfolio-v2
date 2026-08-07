@@ -1,0 +1,25 @@
+schema_version: 1.0
+domains:
+  - id: DOM-001
+    name: Instruction
+    subdomains:
+      - id: SUB-001
+        name: Assessment
+      - id: SUB-002
+        name: Pedagogy
+      - id: SUB-003
+        name: Differentiation
+  - id: DOM-002
+    name: Leadership
+    subdomains:
+      - id: SUB-004
+        name: Teacher Training
+      - id: SUB-005
+        name: Curriculum Design
+  - id: DOM-003
+    name: Specialisation
+    subdomains:
+      - id: SUB-006
+        name: EAL / ESL
+      - id: SUB-007
+        name: EdTech

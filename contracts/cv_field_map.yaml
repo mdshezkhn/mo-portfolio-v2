@@ -1,0 +1,68 @@
+# Declarative Lineage Mapping for CV VM
+
+header.name:
+  source: candidate.name
+  operation: copy
+
+header.title:
+  source: candidate.primary_title
+  operation: copy
+
+header.subtitle:
+  source: candidate.subtitle
+  operation: copy
+
+summary:
+  source: candidate.summary
+  operation: copy
+
+competencies:
+  source: competencies
+  operation: flat_map
+  field: skills
+
+experience.id:
+  source: employment.id
+  operation: copy
+
+experience.role_title:
+  source: employment.role_title
+  operation: copy
+
+experience.employer_name:
+  source: employment.employer_name
+  operation: copy
+
+experience.date_range:
+  source:
+    start: employment.dates.start_date
+    end: employment.dates.end_date
+  operation: format_date_range
+
+experience.highlights:
+  source: employment.supported_claims
+  operation: extract_claims
+  field: statement
+
+education.id:
+  source: education.id
+  operation: copy
+
+education.degree_name:
+  source: education.degree_name
+  operation: copy
+
+education.institution_name:
+  source: education.institution_name
+  operation: copy
+
+education.date_range:
+  source:
+    start: education.dates.start_date
+    end: education.dates.end_date
+  operation: format_date_range
+
+education.details:
+  source: education
+  operation: constant
+  value: ""

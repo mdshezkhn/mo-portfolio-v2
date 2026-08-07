@@ -1,0 +1,7 @@
+repository: 2.0
+governance: 1.0
+claim_schema: 1.0
+evidence_schema: 1.2
+audit_engine: 1.0
+compiler: 1.0
+stage: "Bootstrap"

@@ -1,11 +1,11 @@
-# SOURCE_AUTHORITY.md
+# SOURCE_AUTHORITY.md (v2.0)
 
-**Version:** 1.0 (Career OS v4.0)
+**Version:** 2.0 (Career OS v4.0)
 **Status:** FROZEN
 **Owner:** Mohammed Shehzad Khan
 **Created:** 2026-07-31
 
-**Purpose:** Defines the authority boundaries for all data entering the Canonical Career Model (`career-data/`). This prevents derived insights or subjective commentary in governance documents from "leaking" back into fact records.
+**Purpose:** Defines the authority boundaries for all data entering the Canonical Career Model and provides an explicit **Source Authority Matrix** to resolve any conflicts between documents deterministically.
 
 ## Source Authority Hierarchy
 
@@ -28,8 +28,6 @@ These documents track governance, provenance, and risk. They may add *metadata* 
 5. Technical Debt
 6. Assumption Register
 
-*Example violation to avoid:* The Decision Log states "Candidate has extensive leadership experience." This must NOT be copied into `facts/skills.yml`. 
-
 ### Level 3 — Narrative Sources (Populate Narratives Only)
 These documents represent subjective professional statements. They may only populate `career-data/narratives/`. They must never create facts.
 
@@ -40,4 +38,25 @@ These documents represent subjective professional statements. They may only popu
 5. LinkedIn About section
 6. Recruiter Summary
 
-*Rule:* Narrative statements hold a confidence level of `human_assertion`. They are valuable, but they are not facts.
+---
+
+## Source Authority Matrix
+
+This matrix answers: *"Which source wins in the event of a contradiction?"* The validation engine must always defer to the higher-ranking document.
+
+### Fact Precedence
+`evidence/manifest.yml` → `career-data/facts/*.yml` → `CANONICAL_PROFILE.md` → Compiled Artifacts
+
+### Governance Precedence
+`MASTER_BRAND_SPECIFICATION.md` → `CONSISTENCY_POLICY.md` → `DECISION_LOG.md` → Output Assets
+
+### Dispute Resolution Scenarios
+
+| Dispute | Winning Source | Loser | Action |
+|---|---|---|---|
+| **Employment Dates** vary | `employment.yml` | `CV_Master.md` | Overwrite CV with YAML data |
+| **Role Title** varies | `roles.yml` | `LinkedIn_Profile.md`| Overwrite LinkedIn with YAML data |
+| **Qualification Name** varies | `education.yml` | `Portfolio_Copy.md` | Overwrite Portfolio with YAML data |
+| **Claim Text** differs | `CLAIM_REGISTER.md` | `Achievement_Library.md`| Overwrite Achievement with Claim Register |
+| **Publishing Pending Claim**| `CLAIM_REGISTER.md` | ANY Artifact | Block Build (CRITICAL) |
+| **Headlines** differ | Allowed to vary | N/A | Pass (SEO/Recruiter variants allowed) |

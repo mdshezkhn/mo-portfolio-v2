@@ -1,0 +1,69 @@
+education_records:
+- id: QUAL-3000
+  entity_type: education
+  degree: Bachelor of Science, Physics (B.Sc.)
+  dates:
+    start:
+      date: '2004'
+    end:
+      date: '2007'
+  confidence: asserted
+  review_status: approved
+  publication:
+    public_cv: true
+    linkedin: true
+    recruiter_pack: included
+    premium_schools: true
+    notes: Evidence needs scanning/filing
+  institution_recognition_status: recognised
+- id: QUAL-3001
+  entity_type: education
+  degree: Master of Arts, English Language and Literature (M.A.)
+  dates:
+    start:
+      date: '2007'
+    end:
+      date: '2009'
+  confidence: asserted
+  review_status: pending
+  publication:
+    public_cv: true
+    linkedin: true
+    recruiter_pack: optional
+    premium_schools: false
+    notes: Pending external verification
+  institution_recognition_status: requires_external_verification
+- id: QUAL-3002
+  entity_type: education
+  degree: Postgraduate Certificate in Education (PGCE, non-QTS)
+  dates:
+    start:
+      date: 2025-09
+    end:
+      date: 2026-07
+  confidence: verified
+  review_status: approved
+  publication:
+    public_cv: true
+    linkedin: true
+    recruiter_pack: included
+    premium_schools: true
+    notes: ''
+  institution_recognition_status: recognised
+- id: QUAL-3003
+  entity_type: education
+  degree: Bachelor of Education (B.Ed.)
+  dates:
+    start:
+      date: UNKNOWN
+    end:
+      present: false
+  confidence: supported
+  review_status: approved
+  publication:
+    public_cv: true
+    linkedin: true
+    recruiter_pack: included
+    premium_schools: true
+    notes: Evidence collection required.
+  institution_recognition_status: recognised

@@ -1,0 +1,71 @@
+employment_records:
+- id: EMP-2000
+  entity_type: employment
+  dates:
+    start:
+      date: 2014-01
+    end:
+      date: 2016-11
+  location: India
+  confidence: verified
+  review_status: approved
+- id: EMP-2001
+  entity_type: employment
+  dates:
+    start:
+      date: 2016-11
+    end:
+      date: 2017-08
+  location: China
+  confidence: verified
+  review_status: approved
+- id: EMP-2002
+  entity_type: employment
+  dates:
+    start:
+      date: 2017-08
+    end:
+      date: 2018-06
+  location: China
+  confidence: verified
+  review_status: approved
+- id: EMP-2003
+  entity_type: employment
+  dates:
+    start:
+      date: 2018-07
+    end:
+      date: 2020-08
+  location: China
+  confidence: asserted
+  review_status: pending
+- id: EMP-2004
+  entity_type: employment
+  dates:
+    start:
+      date: 2020-08
+    end:
+      date: 2022-07
+  location: India (Remote)
+  confidence: verified
+  review_status: approved
+- id: EMP-2005
+  entity_type: employment
+  dates:
+    start:
+      date: 2022-09
+    end:
+      date: 2023-08
+  location: UK/Dubai/Malta
+  confidence: verified
+  review_status: approved
+- id: EMP-2006
+  entity_type: employment
+  dates:
+    start:
+      date: 2024-02
+    end:
+      present: true
+  location: China
+  confidence: asserted
+  review_status: pending

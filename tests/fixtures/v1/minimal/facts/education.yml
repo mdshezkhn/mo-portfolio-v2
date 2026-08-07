@@ -1,0 +1,6 @@
+- id: QUAL-3000
+  entity_type: Qualification
+  institution_id: INST-9000
+  degree: BSc Computer Science
+  start_year: 2015
+  end_year: 2019

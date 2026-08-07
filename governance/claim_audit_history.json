@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2026-08-01T20:00:06.556519",
+    "files_scanned": 120,
+    "claims_analysed": 173,
+    "critical": 81,
+    "high": 45,
+    "orphan_claims": 126,
+    "used_canonical": 4,
+    "status": "FAIL"
+  }
+]

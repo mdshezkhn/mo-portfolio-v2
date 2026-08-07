@@ -1,0 +1,42 @@
+change_policy:
+  baseline_version: "2.0"
+  designated_status: "PRODUCTION BASELINE"
+  
+  production_guarantees:
+    - deterministic_builds: true
+    - reproducible_assets: true
+    - traceable_evidence: true
+    - policy_enforcement: true
+    - backward_compatible_v2x: true
+
+  minor_version_policy:
+    trigger: "Bug fixes, performance, documentation, new evidence types, non-breaking schema additions"
+    approval_required: false
+    backward_compatible: true
+
+  major_version_policy:
+    trigger: "Breaking schema changes, entity relation refactoring, new dependency models"
+    approval_required: true
+    requires_justification: true
+    backward_compatible: false
+
+  phase2_success_metrics:
+    - metric: "Canonical Coverage"
+      definition: "Percentage of factual recruiter-facing assertions governed by canonical entities, claims, or computed metrics"
+      target: "100% of factual assertions governed"
+
+    - metric: "Recruiter Readiness"
+      definition: "All factual recruiter-facing assertions are generated from or validated against the canonical data model"
+      target: "Pass decision status on all public release assets"
+
+    - metric: "Evidence Coverage (V5 Primary)"
+      definition: "Published factual assertions backed by primary V5 documentation"
+      target: "90%+"
+
+    - metric: "Evidence Coverage (V4+ Total)"
+      definition: "Published factual assertions backed by V4+ corroborated evidence"
+      target: "100%"
+
+    - metric: "Governance Debt Reduction"
+      definition: "Continuous decrease in orphan and unsupported claims over time"
+      target: "Monotonically decreasing debt trend"

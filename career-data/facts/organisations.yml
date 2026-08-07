@@ -1,23 +1,23 @@
 organisations:
-- id: ORG-0001
+- id: ORG-1000
   canonical_name: Scholars Academy
   aliases:
   - Scholars' Academy
   - Scholar Academy
   entity_type: organisation
-- id: ORG-0002
+- id: ORG-1001
   canonical_name: Aoxin International School
   aliases:
   - Aoxin
   - Aoxin School
   entity_type: organisation
-- id: ORG-0003
+- id: ORG-1002
   canonical_name: GEDU Global Education
   aliases:
   - GEDU
   - Global Education
   entity_type: organisation
-- id: ORG-0004
+- id: ORG-1003
   canonical_name: WhiteHat Jr
   aliases:
   - WhiteHat Jr.
@@ -25,18 +25,18 @@ organisations:
   - BYJU'S Future School
   - BYJU'S
   entity_type: organisation
-- id: ORG-0005
+- id: ORG-1004
   canonical_name: Eton House Kindergarten
   aliases:
   - EtonHouse
   - Eton House
   entity_type: organisation
-- id: ORG-0006
+- id: ORG-1005
   canonical_name: Zhejiang University
   aliases:
   - ZJU
   entity_type: organisation
-- id: ORG-0007
+- id: ORG-1006
   canonical_name: Helen China TEFL Network
   aliases:
   - Helen China

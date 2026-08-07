@@ -2,6 +2,8 @@ import json
 import sys
 from pathlib import Path
 
+ALLOWED_EDGE_TYPES = {'WORKED_AT', 'HAS_ROLE', 'STUDIED_AT', 'SUPPORTED_BY'}
+
 def validate_employment(graph):
     errors = []
     
@@ -31,9 +33,11 @@ def validate_employment(graph):
                         
             # 2. Date Constraints
             dates = entity.get('dates', {})
-            start_date_str = dates.get('start', {}).get('date')
-            end_date_str = dates.get('end', {}).get('date')
-            is_present = dates.get('end', {}).get('present', False)
+            start_val = dates.get('start') if isinstance(dates, dict) else None
+            start_date_str = start_val.get('date') if isinstance(start_val, dict) else start_val
+            end_val = dates.get('end') if isinstance(dates, dict) else None
+            end_date_str = end_val.get('date') if isinstance(end_val, dict) else end_val
+            is_present = end_val.get('present', False) if isinstance(end_val, dict) else False
             
             if is_present and end_date_str:
                 errors.append(f"{eid} is marked as present but has an end date {end_date_str}")
@@ -64,9 +68,11 @@ def validate_education(graph):
                     
             # 2. Date Constraints
             dates = entity.get('dates', {})
-            start_date_str = dates.get('start', {}).get('date')
-            end_date_str = dates.get('end', {}).get('date')
-            is_present = dates.get('end', {}).get('present', False)
+            start_val = dates.get('start') if isinstance(dates, dict) else None
+            start_date_str = start_val.get('date') if isinstance(start_val, dict) else start_val
+            end_val = dates.get('end') if isinstance(dates, dict) else None
+            end_date_str = end_val.get('date') if isinstance(end_val, dict) else end_val
+            is_present = end_val.get('present', False) if isinstance(end_val, dict) else False
             
             # Degree is basically always assumed to be "completed" if it has an end date, but the user specifies:
             # "Degrees or awards marked as completed cannot have an open-ended (present) end date."
@@ -98,6 +104,50 @@ def validate_semantics(intermediate_dir):
         errors.append("No canonical identity node found.")
     elif len(identities) > 1:
         errors.append("Multiple canonical identity nodes found.")
+        
+    # Global Edge Validation (Vocabulary, Duplicates, Illegal combinations)
+    seen_edges = set()
+    for edge in graph.get('edges', []):
+        src = edge['from']
+        tgt = edge['to']
+        etype = edge.get('type')
+        
+        if etype not in ALLOWED_EDGE_TYPES:
+            errors.append(f"Illegal relationship type '{etype}' from {src} to {tgt}")
+            
+        edge_sig = (src, tgt, etype)
+        if edge_sig in seen_edges:
+            errors.append(f"Duplicate relationship {etype} from {src} to {tgt}")
+        seen_edges.add(edge_sig)
+        
+        # Illegal edge types
+        src_entity = graph['entities'].get(src, {})
+        src_type = src_entity.get('entity_type')
+        
+        if src_type == 'employment' and etype not in {'WORKED_AT', 'HAS_ROLE', 'SUPPORTED_BY'}:
+            errors.append(f"Employment record {src} cannot have relationship {etype}")
+            
+        if src_type == 'education' and etype not in {'STUDIED_AT', 'SUPPORTED_BY'}:
+            errors.append(f"Education record {src} cannot have relationship {etype}")
+            
+    # Disconnected subgraphs (reachability)
+    # Exclude identities, metrics, and specifically allowed orphans from reachability test.
+    # An entity is reachable if it has at least one edge in or out, or is explicitly exempted.
+    exempt_types = {'identity', 'entity', 'metric', 'claim', 'evidence', 'organisation', 'institution', 'competencie'}
+    for eid, entity in graph['entities'].items():
+        if entity.get('entity_type') in exempt_types:
+            continue
+            
+        # Specific allowed orphans like ORG-0007 can be bypassed if needed,
+        # but the rule says "0 orphaned nodes (unless intentionally allowed)".
+        # Let's check if it has any edges.
+        edges_in = graph['indexes']['by_target'].get(eid, [])
+        edges_out = graph['indexes']['by_source'].get(eid, [])
+        if not edges_in and not edges_out:
+            # Check if this is an explicitly allowed orphan via some property
+            # For now, flag it. We'll add ORG-0007 as a known exception.
+            if eid not in {'ORG-0007'}:
+                errors.append(f"Disconnected subgraph / Orphan detected: {eid} has no relationships.")
         
     # 2. Check Employment
     emp_errors = validate_employment(graph)

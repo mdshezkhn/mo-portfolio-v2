@@ -2,49 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
-    "schema_version": {
-      "type": "number",
-      "const": 1.0
+    "title": {
+      "type": "string"
     },
-    "teaching_philosophy": {
-      "type": "object",
-      "properties": {
-        "confidence": {
-          "type": "string",
-          "enum": [
-            "verified",
-            "supported",
-            "asserted",
-            "unknown"
-          ]
-        },
-        "review_status": {
-          "type": "string",
-          "enum": [
-            "active",
-            "pending",
-            "deprecated",
-            "conflict"
-          ]
-        },
-        "authored_by": {
-          "type": "string",
-          "const": "Mohammed Shehzad Khan"
-        },
-        "content": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "confidence",
-        "review_status",
-        "authored_by",
-        "content"
-      ]
+    "sections": {
+      "type": "array"
     }
   },
   "required": [
-    "schema_version",
-    "teaching_philosophy"
+    "title",
+    "sections"
   ]
 }

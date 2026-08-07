@@ -1,0 +1,57 @@
+# Mohammed Shehzad Khan
+**Primary Educator & EAL Specialist**
+Available from August 2027
+
+## Professional Summary
+Primary Educator & EAL Specialist with 11+ years in international settings (China, India). I specialize in rapidly improving academic English outcomes for multilingual cohorts by integrating explicit language instruction into inquiry-based science and mathematics. Proven track record in mentoring teaching teams to elevate instructional quality school-wide.
+
+## Core Competencies
+* Academic language acquisition & Phonics
+* Early-years immersion
+* Grade 5 writing moderation
+* Inquiry-based learning & Cross-curricular STEM
+* Teacher mentoring
+* Instructional quality assurance
+* Cross-cultural training
+
+## Professional Experience
+
+### Aoxin International School (Feb 2024 – Present)
+**Primary Educator & Curriculum Lead**
+* Restructured the primary EAL framework to ensure non-native speakers could access core academic subjects without falling behind in science or mathematics.
+
+### GEDU Global Education (Sep 2022 – Aug 2023)
+**International Teacher Trainer & Quality Assurance**
+* Conducted rigorous instructional audits across international markets, identifying pedagogical gaps and designing targeted interventions.
+* Delivered evidence-informed training modules to diverse teaching teams, standardizing best practices for EAL instruction across multiple regions.
+
+### WhiteHat Jr / BYJU'S (Aug 2020 – Jul 2022)
+**Educator Development Lead**
+* Managed and coached a large cohort of educators, analyzing lesson observations to provide actionable, concrete feedback on instructional delivery.
+* Developed specialized support plans for struggling teachers, resulting in measurable improvements in their classroom management and student retention.
+
+### Aoxin International School (Jul 2018 – Aug 2020)
+**Primary Educator & EAL Specialist**
+* Led the school-wide moderation of Grade 5 writing assessments, establishing clear, data-driven benchmarks that improved grading consistency across the primary phase.
+* Mentored early-career teachers in adapting their instructional delivery for multilingual classrooms, directly improving student engagement metrics.
+
+### Eton House Kindergarten (Aug 2017 – Jun 2018)
+**Early Years Educator (EAL)**
+* Designed high-immersion English environments for early-years learners, focusing on phonics and foundational vocabulary.
+* Acted as a model practitioner, demonstrating effective early-years pedagogy and classroom management techniques to junior staff.
+
+### Zhejiang University / Helen China TEFL Network (Nov 2016 – Aug 2017)
+**English Language Teacher**
+* Delivered communicative English instruction to middle and high school learners across Zhejiang province.
+* Supported student participation in spoken English competitions and cross-cultural exchange programmes.
+
+### Scholars Academy (Jan 2014 – Nov 2016)
+**Primary Educator**
+* Foundational teaching experience that established career in education.
+* Delivered cross-curricular instruction in English, Science, and Mathematics to primary learners.
+
+## Education & Qualifications
+* PGCE (Postgraduate Certificate in Education) — University of Cumbria (Sep 2025 – Jul 2026). Currently executing action research focused on evidence-informed strategies to improve primary pupil outcomes.
+* B.Ed. (Bachelor of Education)
+* B.Sc. Physics — Leveraged to design rigorous, inquiry-based STEM lessons for primary cohorts.
+* TESOL / TEFL Certifications

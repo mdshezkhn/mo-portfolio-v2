@@ -1,0 +1,20 @@
+schema_version: 1.0
+roles:
+- id: ROLE-001
+  title: Primary Educator
+  description: ''
+- id: ROLE-002
+  title: Primary Educator & Curriculum Lead
+  description: ''
+- id: ROLE-003
+  title: Teacher Trainer & Quality Assurance
+  description: ''
+- id: ROLE-004
+  title: Educator Development Lead
+  description: ''
+- id: ROLE-005
+  title: Early Years EAL Teacher
+  description: ''
+- id: ROLE-006
+  title: ESL Educator
+  description: ''

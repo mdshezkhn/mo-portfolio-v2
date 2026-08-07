@@ -1,0 +1,16 @@
+schema_version: 1.0
+voice:
+  tone:
+    - reflective practitioner
+    - systems-thinking
+    - collaborative
+  reading_level: professional
+  avoid:
+    - buzzwords
+    - clichés
+    - passive voice
+    - overly academic jargon (unless in research context)
+  prefer:
+    - measurable claims
+    - active verbs
+    - student-centered phrasing

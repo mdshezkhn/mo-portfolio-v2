@@ -35,7 +35,7 @@ portfolio. No primary evidence document has been processed yet, so every entry i
 - **Evidence Strength:** Single Source *(canonical timeline; primary employment letter pending)*
 - **Verification Status:** Pending
 - **Core Fact:** Led instructional quality and educator-development initiatives for a distributed teaching team.
-- **Context:** Remote, high-scale EdTech environment (WhiteHat Jr / BYJU'S), 2020–2022.
+- **Context:** Remote, high-scale EdTech environment (WhiteHat Jr / BYJU'S), Aug 2020 – Jul 2022.
 - **Impact:** Improved instructional consistency and coaching standards across the team. *(Cohort size is PENDING VERIFICATION — 200 vs 1,000 educators. Do not publish a specific figure until the employment letter is processed; the canonical timeline holds `SCOPE PENDING (200 vs 1,000)`.)*
 - **Evidence:** Employment letter (Pending).
 - **Interview Topic:** Instructional Leadership
@@ -46,7 +46,7 @@ portfolio. No primary evidence document has been processed yet, so every entry i
 - **Evidence Strength:** Single Source
 - **Verification Status:** Pending
 - **Core Fact:** Led training and quality-assurance programmes for a team of 15+ trainers.
-- **Context:** Multi-campus organisation across UK, Dubai and Malta, 2022–2023.
+- **Context:** Multi-campus organisation across UK, Dubai and Malta, Sep 2022 – Aug 2023.
 - **Impact:** Standardised training and QA across three markets; raised trainer capability and consistency.
 - **Evidence:** Employment letter (Pending).
 - **Interview Topic:** Training & Quality
@@ -57,7 +57,7 @@ portfolio. No primary evidence document has been processed yet, so every entry i
 - **Evidence Strength:** Single Source
 - **Verification Status:** Pending
 - **Core Fact:** Mentored newly appointed teachers and led Grade 5 writing moderation.
-- **Context:** Aoxin International School, primary team, 2018–2020.
+- **Context:** Aoxin International School, primary team, Jul 2018 – Aug 2020.
 - **Impact:** Built instructional consistency across the primary team; accelerated new-teacher ramp-up.
 - **Evidence:** Employment letter (Pending).
 - **Interview Topic:** Mentoring & Assessment
@@ -68,7 +68,8 @@ portfolio. No primary evidence document has been processed yet, so every entry i
 - **Evidence Strength:** Single Source
 - **Verification Status:** Pending
 - **Core Fact:** Delivered early-years ESL instruction and modelled practice while training kindergarten educators.
-- **Context:** Eton House Kindergarten, China, 2017–2018.
+- **Context:** Eton House Kindergarten
+- **Context:** Eton House Kindergarten, China, Aug 2017 – Jun 2018.
 - **Impact:** Strengthened kindergarten teaching practice through modelling and demonstration lessons.
 - **Evidence:** Employment letter (Pending).
 - **Interview Topic:** Early-Years Practice
@@ -79,7 +80,7 @@ portfolio. No primary evidence document has been processed yet, so every entry i
 - **Evidence Strength:** Single Source
 - **Verification Status:** Pending
 - **Core Fact:** Built spoken-confidence and communicative ESL programmes for secondary learners.
-- **Context:** Zhejiang University / Helen China TEFL Network, middle & high school, 2016–2017.
+- **Context:** Zhejiang University / Helen China TEFL Network, middle & high school, Nov 2016 – Aug 2017.
 - **Impact:** Raised oral participation and fluency among secondary ESL learners.
 - **Evidence:** Employment letter (Pending).
 - **Interview Topic:** EAL / ESL Practice

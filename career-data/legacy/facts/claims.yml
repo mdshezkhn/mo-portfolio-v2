@@ -1,0 +1,40 @@
+schema_version: 1.0
+claims:
+  - id: CLAIM-012
+    type: achievement
+    risk: medium
+    visibility:
+      - recruiter
+    audiences:
+      - recruiter
+      - portfolio
+      - linkedin
+    dependencies:
+      - EDU-001
+      - CERT-003
+      - METRIC-005
+    status: approved
+  - id: CLAIM-014
+    type: experience
+    risk: low
+    visibility:
+      - portfolio
+      - cv
+      - linkedin
+    audiences:
+      - recruiter
+    dependencies:
+      - METRIC-001
+    status: approved
+  - id: CLAIM-004
+    type: competency
+    risk: medium
+    visibility:
+      - portfolio
+      - cv
+    audiences:
+      - curriculum_lead
+      - recruiter
+    dependencies:
+      - COMP-001
+    status: approved
