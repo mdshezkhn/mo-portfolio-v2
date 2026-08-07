@@ -1,69 +1,65 @@
 education_records:
-- id: EDU-0004
-  entity_type: education
+- id: QUAL-3000
+  entity_type: qualification
+  institution_id: INST-9003
   degree: Bachelor of Science, Physics (B.Sc.)
   dates:
-    start:
-      date: '2004'
-    end:
-      date: '2007'
-  confidence: asserted
+    start: '2004'
+    end: '2007'
+  confidence: V3
   review_status: approved
   publication:
     public_cv: true
     linkedin: true
     recruiter_pack: included
     premium_schools: true
-    notes: Evidence needs scanning/filing
-  institution_recognition_status: recognised
-- id: EDU-0003
-  entity_type: education
+    verified_only_gate: false
+
+- id: QUAL-3001
+  entity_type: qualification
+  institution_id: INST-9002
   degree: Master of Arts, English Language and Literature (M.A.)
   dates:
-    start:
-      date: '2007'
-    end:
-      date: '2009'
-  confidence: asserted
+    start: '2007'
+    end: '2009'
+  confidence: V1
   review_status: pending
   publication:
     public_cv: true
     linkedin: true
     recruiter_pack: optional
     premium_schools: false
-    notes: Pending external verification
+    verified_only_gate: true
   institution_recognition_status: requires_external_verification
-- id: EDU-0001
-  entity_type: education
+
+- id: QUAL-3002
+  entity_type: qualification
+  institution_id: INST-9000
   degree: Postgraduate Certificate in Education (PGCE, non-QTS)
   dates:
-    start:
-      date: 2025-09
-    end:
-      date: 2026-07
-  confidence: verified
+    start: '2025-09'
+    end: '2026-07'
+  confidence: V5
   review_status: approved
   publication:
     public_cv: true
     linkedin: true
     recruiter_pack: included
     premium_schools: true
-    notes: ''
-  institution_recognition_status: recognised
-- id: EDU-0002
-  entity_type: education
+    verified_only_gate: false
+
+- id: QUAL-3003
+  entity_type: qualification
+  institution_id: INST-9001
   degree: Bachelor of Education (B.Ed.)
   dates:
-    start:
-      date: UNKNOWN
-    end:
-      present: false
-  confidence: supported
+    start: '2021-10'
+    end: '2024-03'
+  confidence: V4
   review_status: approved
   publication:
     public_cv: true
     linkedin: true
     recruiter_pack: included
     premium_schools: true
-    notes: Evidence collection required.
-  institution_recognition_status: recognised
+    verified_only_gate: false

@@ -1,0 +1,39 @@
+schema_version: '1.0'
+scope: restricted
+generated: '2026-08-01'
+claims:
+- id: C-015
+  status: restricted
+  type: scale
+  canonical: Led instructional quality for a team of 200+ educators
+  evidence: [E-0014, E-0005]
+  restriction_reason: Awaiting manager confirmation (E-0014)
+  allowed_variants: [Led instructional quality for a team of 200+ educators]
+  presentation_assets: []
+
+- id: C-016
+  status: restricted
+  type: scale
+  canonical: Led instructional quality for a team of 1,000+ educators
+  evidence: [E-0014, E-0005]
+  restriction_reason: Conflicts with C-015; awaiting manager resolution
+  allowed_variants: [Led instructional quality for a team of 1,000+ educators]
+  presentation_assets: []
+
+- id: C-018
+  status: restricted
+  type: scale
+  canonical: Managed a team of 15+ trainers
+  evidence: [E-3001, E-0015]
+  restriction_reason: Internal use only until manager letter confirmed
+  allowed_variants: [Managed a team of 15+ trainers]
+  presentation_assets: []
+
+- id: C-024
+  status: restricted
+  type: experience
+  canonical: English, Science and Mathematics Teacher — Scholars Academy, India (Jan 2014 – Nov 2016)
+  evidence: [E-3003]
+  restriction_reason: Internal use only until physical employment letter filed
+  allowed_variants: [English, Science and Mathematics Teacher — Scholars Academy, India (Jan 2014 – Nov 2016)]
+  presentation_assets: []

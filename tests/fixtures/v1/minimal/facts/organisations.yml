@@ -1,0 +1,4 @@
+- id: ORG-1000
+  entity_type: Organisation
+  name: Tech Corp
+  industry: Technology

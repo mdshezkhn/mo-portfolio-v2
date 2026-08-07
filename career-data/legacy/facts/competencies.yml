@@ -1,0 +1,27 @@
+schema_version: 1.0
+competencies:
+  - id: COMP-001
+    domain_id: DOM-001
+    subdomain_id: SUB-001
+    name: Formative Assessment
+    proficiency: expert
+    evidence_ids:
+      - E-3004
+      - E-3012
+    claim_ids:
+      - CLAIM-008
+    contexts:
+      - BRITISH_CURRICULUM
+      - IB_PYP
+  - id: COMP-002
+    domain_id: DOM-003
+    subdomain_id: SUB-006
+    name: Inquiry-Based Learning
+    proficiency: advanced
+    evidence_ids:
+      - E-2004
+    claim_ids:
+      - CLAIM-004
+    contexts:
+      - IB_PYP
+      - AMERICAN_CURRICULUM

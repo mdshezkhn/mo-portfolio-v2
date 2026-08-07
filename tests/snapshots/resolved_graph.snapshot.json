@@ -1,0 +1,862 @@
+{
+  "metadata": {
+    "artifact_version": "1.0.0",
+    "graph_version": "1.0.0",
+    "resolver_version": "1.0.0",
+    "schema_version": "1.0.0"
+  },
+  "entities": {
+    "EDU-0004": {
+      "id": "EDU-0004",
+      "entity_type": "education_record",
+      "degree": "Bachelor of Science, Physics (B.Sc.)",
+      "dates": {
+        "start": {
+          "date": "2004"
+        },
+        "end": {
+          "date": "2007"
+        }
+      },
+      "confidence": "asserted",
+      "review_status": "approved",
+      "publication": {
+        "public_cv": true,
+        "linkedin": true,
+        "recruiter_pack": "included",
+        "premium_schools": true,
+        "notes": "Evidence needs scanning/filing"
+      },
+      "institution_recognition_status": "recognised",
+      "_source_file": "career-data\\facts\\education.yml"
+    },
+    "EDU-0003": {
+      "id": "EDU-0003",
+      "entity_type": "education_record",
+      "degree": "Master of Arts, English Language and Literature (M.A.)",
+      "dates": {
+        "start": {
+          "date": "2007"
+        },
+        "end": {
+          "date": "2009"
+        }
+      },
+      "confidence": "asserted",
+      "review_status": "pending",
+      "publication": {
+        "public_cv": true,
+        "linkedin": true,
+        "recruiter_pack": "optional",
+        "premium_schools": false,
+        "notes": "Pending external verification"
+      },
+      "institution_recognition_status": "requires_external_verification",
+      "_source_file": "career-data\\facts\\education.yml"
+    },
+    "EDU-0001": {
+      "id": "EDU-0001",
+      "entity_type": "education_record",
+      "degree": "Postgraduate Certificate in Education (PGCE, non-QTS)",
+      "dates": {
+        "start": {
+          "date": "2025-09"
+        },
+        "end": {
+          "date": "2026-07"
+        }
+      },
+      "confidence": "verified",
+      "review_status": "approved",
+      "publication": {
+        "public_cv": true,
+        "linkedin": true,
+        "recruiter_pack": "included",
+        "premium_schools": true,
+        "notes": ""
+      },
+      "institution_recognition_status": "recognised",
+      "_source_file": "career-data\\facts\\education.yml"
+    },
+    "EDU-0002": {
+      "id": "EDU-0002",
+      "entity_type": "education_record",
+      "degree": "Bachelor of Education (B.Ed.)",
+      "dates": {
+        "start": {
+          "date": "UNKNOWN"
+        },
+        "end": {
+          "present": false
+        }
+      },
+      "confidence": "supported",
+      "review_status": "approved",
+      "publication": {
+        "public_cv": true,
+        "linkedin": true,
+        "recruiter_pack": "included",
+        "premium_schools": true,
+        "notes": "Evidence collection required."
+      },
+      "institution_recognition_status": "recognised",
+      "_source_file": "career-data\\facts\\education.yml"
+    },
+    "EMP-0001": {
+      "id": "EMP-0001",
+      "entity_type": "employment_record",
+      "dates": {
+        "start": {
+          "date": "2014-01"
+        },
+        "end": {
+          "date": "2016-11"
+        }
+      },
+      "location": "India",
+      "confidence": "verified",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-0007": {
+      "id": "EMP-0007",
+      "entity_type": "employment_record",
+      "dates": {
+        "start": {
+          "date": "2016-11"
+        },
+        "end": {
+          "date": "2017-08"
+        }
+      },
+      "location": "China",
+      "confidence": "verified",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-0006": {
+      "id": "EMP-0006",
+      "entity_type": "employment_record",
+      "dates": {
+        "start": {
+          "date": "2017-08"
+        },
+        "end": {
+          "date": "2018-06"
+        }
+      },
+      "location": "China",
+      "confidence": "verified",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-0003": {
+      "id": "EMP-0003",
+      "entity_type": "employment_record",
+      "dates": {
+        "start": {
+          "date": "2018-07"
+        },
+        "end": {
+          "date": "2020-08"
+        }
+      },
+      "location": "China",
+      "confidence": "asserted",
+      "review_status": "pending",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-0005": {
+      "id": "EMP-0005",
+      "entity_type": "employment_record",
+      "dates": {
+        "start": {
+          "date": "2020-08"
+        },
+        "end": {
+          "date": "2022-07"
+        }
+      },
+      "location": "India (Remote)",
+      "confidence": "verified",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-0004": {
+      "id": "EMP-0004",
+      "entity_type": "employment_record",
+      "dates": {
+        "start": {
+          "date": "2022-09"
+        },
+        "end": {
+          "date": "2023-08"
+        }
+      },
+      "location": "UK/Dubai/Malta",
+      "confidence": "verified",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-0002": {
+      "id": "EMP-0002",
+      "entity_type": "employment_record",
+      "dates": {
+        "start": {
+          "date": "2024-02"
+        },
+        "end": {
+          "present": true
+        }
+      },
+      "location": "China",
+      "confidence": "asserted",
+      "review_status": "pending",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "ID-0001": {
+      "id": "ID-0001",
+      "name": "Mohammed Shehzad Khan",
+      "title": "International Primary Educator & EAL Specialist",
+      "confidence": "asserted",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\identity.yml",
+      "entity_type": "entity"
+    },
+    "INST-0001": {
+      "id": "INST-0001",
+      "canonical_name": "University of Cumbria",
+      "aliases": [
+        "Cumbria University"
+      ],
+      "entity_type": "institution",
+      "_source_file": "career-data\\facts\\institutions.yml"
+    },
+    "INST-0002": {
+      "id": "INST-0002",
+      "canonical_name": "University of Kashmir",
+      "aliases": [
+        "Kashmir University"
+      ],
+      "entity_type": "institution",
+      "_source_file": "career-data\\facts\\institutions.yml"
+    },
+    "INST-0003": {
+      "id": "INST-0003",
+      "canonical_name": "Harris University",
+      "aliases": [
+        "Harris"
+      ],
+      "entity_type": "institution",
+      "_source_file": "career-data\\facts\\institutions.yml"
+    },
+    "INST-0004": {
+      "id": "INST-0004",
+      "canonical_name": "University of Mumbai",
+      "aliases": [
+        "Mumbai University"
+      ],
+      "entity_type": "institution",
+      "_source_file": "career-data\\facts\\institutions.yml"
+    },
+    "ORG-0001": {
+      "id": "ORG-0001",
+      "canonical_name": "Scholars Academy",
+      "aliases": [
+        "Scholars' Academy",
+        "Scholar Academy"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-0002": {
+      "id": "ORG-0002",
+      "canonical_name": "Aoxin International School",
+      "aliases": [
+        "Aoxin",
+        "Aoxin School"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-0003": {
+      "id": "ORG-0003",
+      "canonical_name": "GEDU Global Education",
+      "aliases": [
+        "GEDU",
+        "Global Education"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-0004": {
+      "id": "ORG-0004",
+      "canonical_name": "WhiteHat Jr",
+      "aliases": [
+        "WhiteHat Jr.",
+        "White Hat Junior",
+        "BYJU'S Future School",
+        "BYJU'S"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-0005": {
+      "id": "ORG-0005",
+      "canonical_name": "Eton House Kindergarten",
+      "aliases": [
+        "EtonHouse",
+        "Eton House"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-0006": {
+      "id": "ORG-0006",
+      "canonical_name": "Zhejiang University",
+      "aliases": [
+        "ZJU"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-0007": {
+      "id": "ORG-0007",
+      "canonical_name": "Helen China TEFL Network",
+      "aliases": [
+        "Helen China",
+        "Helen TEFL"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ROLE-0001": {
+      "id": "ROLE-0001",
+      "title": "Primary Educator",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "ROLE-0002": {
+      "id": "ROLE-0002",
+      "title": "Primary Educator & Curriculum Lead",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "ROLE-0003": {
+      "id": "ROLE-0003",
+      "title": "Teacher Trainer & Quality Assurance",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "ROLE-0004": {
+      "id": "ROLE-0004",
+      "title": "Educator Development Lead",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "ROLE-0005": {
+      "id": "ROLE-0005",
+      "title": "Early Years EAL Teacher",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "ROLE-0006": {
+      "id": "ROLE-0006",
+      "title": "ESL Educator",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "METRIC-0001": {
+      "id": "METRIC-0001",
+      "operation": "EXPERIENCE_DURATION",
+      "source": "employment",
+      "filters": {
+        "role_type": "teaching"
+      },
+      "entity_type": "metric"
+    },
+    "METRIC-0002": {
+      "id": "METRIC-0002",
+      "operation": "COUNT",
+      "source": "education",
+      "filters": {
+        "level": "postgraduate"
+      },
+      "entity_type": "metric"
+    }
+  },
+  "edges": [
+    {
+      "from": "EMP-0001",
+      "to": "ORG-0001",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-0001",
+      "to": "ROLE-0001",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-0001",
+      "to": "E-3003",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-0002",
+      "to": "ORG-0002",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-0002",
+      "to": "ROLE-0002",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-0003",
+      "to": "ORG-0002",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-0003",
+      "to": "ROLE-0002",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-0004",
+      "to": "ORG-0003",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-0004",
+      "to": "ROLE-0003",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-0004",
+      "to": "E-3001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-0005",
+      "to": "ORG-0004",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-0005",
+      "to": "ROLE-0004",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-0005",
+      "to": "E-3002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-0006",
+      "to": "ORG-0005",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-0006",
+      "to": "ROLE-0005",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-0006",
+      "to": "E-3004",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-0007",
+      "to": "ORG-0006",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-0007",
+      "to": "ROLE-0006",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-0007",
+      "to": "E-3005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EDU-0001",
+      "to": "INST-0001",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "EDU-0001",
+      "to": "E-2001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EDU-0002",
+      "to": "INST-0002",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "EDU-0002",
+      "to": "E-0009",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EDU-0003",
+      "to": "INST-0003",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "EDU-0004",
+      "to": "INST-0004",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "EDU-0004",
+      "to": "E-0010",
+      "type": "SUPPORTED_BY"
+    }
+  ],
+  "indexes": {
+    "by_source": {
+      "EMP-0001": [
+        {
+          "from": "EMP-0001",
+          "to": "ORG-0001",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-0001",
+          "to": "ROLE-0001",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-0001",
+          "to": "E-3003",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-0002": [
+        {
+          "from": "EMP-0002",
+          "to": "ORG-0002",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-0002",
+          "to": "ROLE-0002",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "EMP-0003": [
+        {
+          "from": "EMP-0003",
+          "to": "ORG-0002",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-0003",
+          "to": "ROLE-0002",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "EMP-0004": [
+        {
+          "from": "EMP-0004",
+          "to": "ORG-0003",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-0004",
+          "to": "ROLE-0003",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-0004",
+          "to": "E-3001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-0005": [
+        {
+          "from": "EMP-0005",
+          "to": "ORG-0004",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-0005",
+          "to": "ROLE-0004",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-0005",
+          "to": "E-3002",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-0006": [
+        {
+          "from": "EMP-0006",
+          "to": "ORG-0005",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-0006",
+          "to": "ROLE-0005",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-0006",
+          "to": "E-3004",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-0007": [
+        {
+          "from": "EMP-0007",
+          "to": "ORG-0006",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-0007",
+          "to": "ROLE-0006",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-0007",
+          "to": "E-3005",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EDU-0001": [
+        {
+          "from": "EDU-0001",
+          "to": "INST-0001",
+          "type": "STUDIED_AT"
+        },
+        {
+          "from": "EDU-0001",
+          "to": "E-2001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EDU-0002": [
+        {
+          "from": "EDU-0002",
+          "to": "INST-0002",
+          "type": "STUDIED_AT"
+        },
+        {
+          "from": "EDU-0002",
+          "to": "E-0009",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EDU-0003": [
+        {
+          "from": "EDU-0003",
+          "to": "INST-0003",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "EDU-0004": [
+        {
+          "from": "EDU-0004",
+          "to": "INST-0004",
+          "type": "STUDIED_AT"
+        },
+        {
+          "from": "EDU-0004",
+          "to": "E-0010",
+          "type": "SUPPORTED_BY"
+        }
+      ]
+    },
+    "by_target": {
+      "ORG-0001": [
+        {
+          "from": "EMP-0001",
+          "to": "ORG-0001",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-0001": [
+        {
+          "from": "EMP-0001",
+          "to": "ROLE-0001",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "E-3003": [
+        {
+          "from": "EMP-0001",
+          "to": "E-3003",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "ORG-0002": [
+        {
+          "from": "EMP-0002",
+          "to": "ORG-0002",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-0003",
+          "to": "ORG-0002",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-0002": [
+        {
+          "from": "EMP-0002",
+          "to": "ROLE-0002",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-0003",
+          "to": "ROLE-0002",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "ORG-0003": [
+        {
+          "from": "EMP-0004",
+          "to": "ORG-0003",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-0003": [
+        {
+          "from": "EMP-0004",
+          "to": "ROLE-0003",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "E-3001": [
+        {
+          "from": "EMP-0004",
+          "to": "E-3001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "ORG-0004": [
+        {
+          "from": "EMP-0005",
+          "to": "ORG-0004",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-0004": [
+        {
+          "from": "EMP-0005",
+          "to": "ROLE-0004",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "E-3002": [
+        {
+          "from": "EMP-0005",
+          "to": "E-3002",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "ORG-0005": [
+        {
+          "from": "EMP-0006",
+          "to": "ORG-0005",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-0005": [
+        {
+          "from": "EMP-0006",
+          "to": "ROLE-0005",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "E-3004": [
+        {
+          "from": "EMP-0006",
+          "to": "E-3004",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "ORG-0006": [
+        {
+          "from": "EMP-0007",
+          "to": "ORG-0006",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-0006": [
+        {
+          "from": "EMP-0007",
+          "to": "ROLE-0006",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "E-3005": [
+        {
+          "from": "EMP-0007",
+          "to": "E-3005",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "INST-0001": [
+        {
+          "from": "EDU-0001",
+          "to": "INST-0001",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "E-2001": [
+        {
+          "from": "EDU-0001",
+          "to": "E-2001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "INST-0002": [
+        {
+          "from": "EDU-0002",
+          "to": "INST-0002",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "E-0009": [
+        {
+          "from": "EDU-0002",
+          "to": "E-0009",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "INST-0003": [
+        {
+          "from": "EDU-0003",
+          "to": "INST-0003",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "INST-0004": [
+        {
+          "from": "EDU-0004",
+          "to": "INST-0004",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "E-0010": [
+        {
+          "from": "EDU-0004",
+          "to": "E-0010",
+          "type": "SUPPORTED_BY"
+        }
+      ]
+    }
+  }
+}

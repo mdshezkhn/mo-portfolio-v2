@@ -1,0 +1,10 @@
+- id: METRIC-0001
+  operation: EXPERIENCE_DURATION
+  source: employment
+  filters:
+    role_type: teaching
+- id: METRIC-0002
+  operation: COUNT
+  source: education
+  filters:
+    level: postgraduate

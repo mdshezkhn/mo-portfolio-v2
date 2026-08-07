@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Resolver Output Contract",
+  "description": "Version 1.0.0",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "entity_type": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "entity_type",
+          "data"
+        ]
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "relationship": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "source",
+          "target",
+          "relationship"
+        ]
+      }
+    },
+    "indexes": {
+      "type": "object"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "canonical_schema_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "canonical_schema_version"
+      ]
+    },
+    "statistics": {
+      "type": "object",
+      "description": "Optional"
+    },
+    "diagnostics": {
+      "type": "object",
+      "description": "Optional"
+    },
+    "orphan_nodes": {
+      "type": "array",
+      "deprecated": true,
+      "description": "remove in v2"
+    }
+  },
+  "required": [
+    "version",
+    "entities",
+    "edges",
+    "indexes",
+    "metadata"
+  ],
+  "additionalProperties": false,
+  "patternProperties": {
+    "^raw_yaml$": {
+      "not": {}
+    }
+  }
+}

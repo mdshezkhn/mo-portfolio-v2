@@ -1,0 +1,21 @@
+schema_version: '1.0'
+scope: deprecated
+generated: '2026-08-01'
+claims:
+- id: C-OLD-001
+  status: deprecated
+  type: experience
+  canonical: I specialize in rapidly improving academic English outcomes...
+  deprecation_reason: Exaggerated outcome claim; replaced by C-009 canonical framing.
+  superseded_by: C-009
+  allowed_variants: []
+  presentation_assets: []
+
+- id: C-OLD-002
+  status: deprecated
+  type: title
+  canonical: Primary Educator & Curriculum Lead
+  deprecation_reason: Title inflation; replaced by canonical positioning.
+  superseded_by: C-001
+  allowed_variants: []
+  presentation_assets: []

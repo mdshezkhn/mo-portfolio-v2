@@ -1,0 +1,15 @@
+# Privacy Allowlist Baseline (v1.0.0)
+# List of approved intentional public occurrences and false-positive exceptions
+
+version: "1.0.0"
+
+approved_exceptions:
+  - id: "name_primary"
+    entity: "Mohammed Shehzad Khan"
+    reason: "Public portfolio owner name"
+  - id: "email_primary"
+    entity: "mshehzadkhan@hotmail.com"
+    reason: "Public primary contact email"
+  - id: "domain_primary"
+    entity: "mohammedshehzad.com"
+    reason: "Public web domain"

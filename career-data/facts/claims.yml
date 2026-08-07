@@ -1,0 +1,482 @@
+schema_version: '1.0'
+generated: '2026-08-01'
+claims:
+- id: C-001
+  status: verified
+  version: '1.0'
+  risk: high
+  owner: canonical
+  type: experience
+  subject: general
+  modifier: general
+  evidence:
+  - E-3001
+  - E-3002
+  - E-3003
+  - E-3004
+  - E-3005
+  - E-3006
+  - E-0009
+  - E-0010
+  allowed_variants:
+  - 11+ years of international teaching experience
+  - 11+ years of experience
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: 11+ years of international teaching experience
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-002
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-3001
+  allowed_variants:
+  - International experience across India and China
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: International experience across India and China
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-003
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-2002
+  allowed_variants:
+  - B.Ed. (Bachelor of Education)
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: B.Ed. (Bachelor of Education)
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-004
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-2001
+  allowed_variants:
+  - PGCE (University of Cumbria)
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: PGCE (University of Cumbria)
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-005
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-2004
+  allowed_variants:
+  - TESOL Certified
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: TESOL Certified
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-006
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-2005
+  allowed_variants:
+  - TEFL Certified
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: TEFL Certified
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-007
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-0013
+  - E-2001
+  allowed_variants:
+  - "PGCE action research (University of Cumbria, Sep 2025 \u2013 Jul 2026)"
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: "PGCE action research (University of Cumbria, Sep 2025 \u2013 Jul 2026)"
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-008
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-2006
+  allowed_variants:
+  - B.Sc. Physics
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: B.Sc. Physics
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-009
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-3004
+  - E-3005
+  - E-0004
+  - E-0007
+  allowed_variants:
+  - International EAL teaching experience
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: International EAL teaching experience
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-010
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: leadership
+  subject: general
+  modifier: general
+  evidence:
+  - E-3002
+  - E-3004
+  - E-3005
+  allowed_variants:
+  - Teacher development and mentoring experience
+  - mentoring
+  - teacher mentoring
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: Teacher development and mentoring experience
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-011
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-3004
+  - E-3005
+  allowed_variants:
+  - Curriculum implementation across primary settings
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: Curriculum implementation across primary settings
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-012
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-0016
+  allowed_variants:
+  - Curriculum development experience
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: Curriculum development experience
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-013
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-3005
+  allowed_variants:
+  - Assessment moderation (Grade 5 writing, Aoxin International School)
+  presentation_assets:
+  - CV_Master.md
+  - Portfolio_Copy.md
+  title: Assessment moderation (Grade 5 writing, Aoxin International School)
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-014
+  status: verified
+  version: '1.0'
+  risk: high
+  owner: canonical
+  type: quality
+  subject: general
+  modifier: general
+  evidence:
+  - E-3002
+  allowed_variants:
+  - Instructional quality and educator development (WhiteHat Jr / BYJU'S)
+  - instructional quality
+  - educator development
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: Instructional quality and educator development (WhiteHat Jr / BYJU'S)
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-015
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-0014
+  - E-0005
+  allowed_variants:
+  - Led instructional quality for a team of 200+ educators
+  presentation_assets: []
+  title: Led instructional quality for a team of 200+ educators
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-016
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-0014
+  - E-0005
+  allowed_variants:
+  - Led instructional quality for a team of 1,000+ educators
+  presentation_assets: []
+  title: Led instructional quality for a team of 1,000+ educators
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-017
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-3001
+  allowed_variants:
+  - Training and quality assurance across international markets (GEDU Global Education)
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: Training and quality assurance across international markets (GEDU Global
+    Education)
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-018
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-3001
+  - E-0015
+  allowed_variants:
+  - Managed a team of 15+ trainers
+  presentation_assets: []
+  title: Managed a team of 15+ trainers
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-019
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-3004
+  allowed_variants:
+  - Early-years EAL teaching and teacher modelling (Eton House Kindergarten)
+  presentation_assets:
+  - CV_Master.md
+  - Portfolio_Copy.md
+  title: Early-years EAL teaching and teacher modelling (Eton House Kindergarten)
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-020
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence: []
+  allowed_variants:
+  - "English \u2014 Fluent (professional working language)"
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: "English \u2014 Fluent (professional working language)"
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-021
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence: []
+  allowed_variants:
+  - "Hindi \u2014 Native"
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  title: "Hindi \u2014 Native"
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-022
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence: []
+  allowed_variants:
+  - "Urdu \u2014 Working proficiency"
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  title: "Urdu \u2014 Working proficiency"
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-023
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-0017
+  allowed_variants:
+  - Available from August 2027
+  presentation_assets:
+  - CV_Master.md
+  title: Available from August 2027
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-024
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-3003
+  allowed_variants:
+  - "English, Science and Mathematics Teacher \u2014 Scholars Academy, India (Jan\
+    \ 2014 \u2013 Nov 2016)"
+  presentation_assets: []
+  title: "English, Science and Mathematics Teacher \u2014 Scholars Academy, India\
+    \ (Jan 2014 \u2013 Nov 2016)"
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'
+- id: C-025
+  status: verified
+  version: '1.0'
+  risk: medium
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-2003
+  allowed_variants:
+  - M.A. English
+  presentation_assets:
+  - CV_Master.md
+  - LinkedIn_Ready_To_Paste.md
+  - Portfolio_Copy.md
+  title: M.A. English
+  schemaVersion: '1.0'
+  verification_date: '2026-08-02'

@@ -1,0 +1,9 @@
+migration_id: '0002'
+timestamp: '2026-07-31T17:23:59.732205Z'
+description: Allocate ID for test_claim
+operations:
+- allocate:
+    id: CLAIM-1000
+    slug: test_claim
+    state: ALLOCATED
+    type: claim

@@ -1,0 +1,159 @@
+evidence:
+- id: E-3001
+  description: GEDU Global Education Teacher Trainer contract and performance review
+    detailing quality assurance responsibilities.
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-3001.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-3002
+  description: WhiteHat Jr Educator Development Lead official metrics dashboard showing
+    coaching and mentoring impact.
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-3002.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-3003
+  description: Scholars Academy reference letter validating primary educator responsibilities.
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-3003.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-3004
+  description: Eton House Kindergarten official certificate of employment and Early
+    Years EAL Teacher role confirmation.
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-3004.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-3005
+  description: Zhejiang University ESL Educator employment record and evaluation.
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-3005.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-2001
+  description: PGCE enrollment and transcript documents.
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-2001.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-0009
+  description: Bachelor of Education degree certificate.
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-0009.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-0010
+  description: Bachelor of Science degree certificate.
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-0010.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-3006
+  description: Aoxin International School Curriculum Director commendation letter
+    for primary curriculum design.
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-3006.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-2002
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-2002.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-2004
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-2004.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-2005
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-2005.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-0013
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-0013.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-2006
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-2006.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-0004
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-0004.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-0007
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-0007.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-0016
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-0016.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-0014
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-0014.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-0005
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-0005.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-0015
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-0015.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-0017
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-0017.pdf
+  type: certificate
+  date_issued: '2020-01-01'
+- id: E-2003
+  description: Migration placeholder
+  entity_type: evidence
+  schemaVersion: '1.0'
+  filename: e-2003.pdf
+  type: certificate
+  date_issued: '2020-01-01'

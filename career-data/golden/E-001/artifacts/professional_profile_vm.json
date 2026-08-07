@@ -1,0 +1,108 @@
+{
+  "candidate": {
+    "name": "Candidate Name",
+    "title": "Educational Leader"
+  },
+  "executive_summary": [
+    "Experienced international primary educator with a proven track record of delivering high-quality education in diverse, multicultural environments.\n",
+    "Coached and mentored 100+ educators to improve instructional quality and engagement metrics.",
+    "Led quality assurance initiatives across distributed teaching teams, ensuring consistent curriculum delivery.",
+    "Spearheaded primary curriculum design and EAL integration for international classrooms."
+  ],
+  "key_claims": [
+    "Experienced international primary educator with a proven track record of delivering high-quality education in diverse, multicultural environments.\n",
+    "Coached and mentored 100+ educators to improve instructional quality and engagement metrics.",
+    "Led quality assurance initiatives across distributed teaching teams, ensuring consistent curriculum delivery.",
+    "Spearheaded primary curriculum design and EAL integration for international classrooms."
+  ],
+  "experience": [
+    {
+      "id": "EMP-2000",
+      "title": "Primary Educator",
+      "organization": "Scholars Academy",
+      "start_date": "2014-01",
+      "end_date": "2016-11",
+      "highlights": []
+    },
+    {
+      "id": "EMP-2001",
+      "title": "ESL Educator",
+      "organization": "Zhejiang University",
+      "start_date": "2016-11",
+      "end_date": "2017-08",
+      "highlights": []
+    },
+    {
+      "id": "EMP-2002",
+      "title": "Early Years EAL Teacher",
+      "organization": "Eton House Kindergarten",
+      "start_date": "2017-08",
+      "end_date": "2018-06",
+      "highlights": []
+    },
+    {
+      "id": "EMP-2003",
+      "title": "Primary Educator & Curriculum Lead",
+      "organization": "Aoxin International School",
+      "start_date": "2018-07",
+      "end_date": "2020-08",
+      "highlights": [
+        "Spearheaded primary curriculum design and EAL integration for international classrooms."
+      ]
+    },
+    {
+      "id": "EMP-2004",
+      "title": "Educator Development Lead",
+      "organization": "WhiteHat Jr",
+      "start_date": "2020-08",
+      "end_date": "2022-07",
+      "highlights": [
+        "Coached and mentored 100+ educators to improve instructional quality and engagement metrics."
+      ]
+    },
+    {
+      "id": "EMP-2005",
+      "title": "Teacher Trainer & Quality Assurance",
+      "organization": "GEDU Global Education",
+      "start_date": "2022-09",
+      "end_date": "2023-08",
+      "highlights": [
+        "Led quality assurance initiatives across distributed teaching teams, ensuring consistent curriculum delivery."
+      ]
+    },
+    {
+      "id": "EMP-2006",
+      "title": "Primary Educator & Curriculum Lead",
+      "organization": "Aoxin International School",
+      "start_date": "2024-02",
+      "end_date": "Present",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "id": "QUAL-3000",
+      "name": "Bachelor of Science, Physics (B.Sc.)",
+      "institution": "University of Mumbai",
+      "year": "2007"
+    },
+    {
+      "id": "QUAL-3001",
+      "name": "Master of Arts, English Language and Literature (M.A.)",
+      "institution": "Harris University",
+      "year": "2009"
+    },
+    {
+      "id": "QUAL-3002",
+      "name": "Postgraduate Certificate in Education (PGCE, non-QTS)",
+      "institution": "University of Cumbria",
+      "year": "2026-07"
+    },
+    {
+      "id": "QUAL-3003",
+      "name": "Bachelor of Education (B.Ed.)",
+      "institution": "University of Kashmir",
+      "year": null
+    }
+  ]
+}

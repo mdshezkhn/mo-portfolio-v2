@@ -1,0 +1,28 @@
+evidence:
+- id: E-3001
+  description: GEDU Global Education Teacher Trainer contract and performance review detailing quality assurance responsibilities.
+  entity_type: evidence
+- id: E-3002
+  description: WhiteHat Jr Educator Development Lead official metrics dashboard showing coaching and mentoring impact.
+  entity_type: evidence
+- id: E-3003
+  description: Scholars Academy reference letter validating primary educator responsibilities.
+  entity_type: evidence
+- id: E-3004
+  description: Eton House Kindergarten official certificate of employment and Early Years EAL Teacher role confirmation.
+  entity_type: evidence
+- id: E-3005
+  description: Zhejiang University ESL Educator employment record and evaluation.
+  entity_type: evidence
+- id: E-2001
+  description: PGCE enrollment and transcript documents.
+  entity_type: evidence
+- id: E-0009
+  description: Bachelor of Education degree certificate.
+  entity_type: evidence
+- id: E-0010
+  description: Bachelor of Science degree certificate.
+  entity_type: evidence
+- id: E-3006
+  description: Aoxin International School Curriculum Director commendation letter for primary curriculum design.
+  entity_type: evidence

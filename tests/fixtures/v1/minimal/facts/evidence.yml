@@ -1,0 +1,5 @@
+- id: EVID-7000
+  entity_type: Evidence
+  target_id: EMP-2000
+  type: Reference Letter
+  status: Verified

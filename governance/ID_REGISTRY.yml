@@ -1,23 +1,219 @@
-PERSON:
-  next: 2
-
-EMP:
-  next: 8
-
-EDU:
-  next: 5
-
-CERT:
-  next: 3
-
-INST:
-  next: 5
-
-ORG:
-  next: 8
-
-ROLE:
-  next: 7
-
-CLAIM:
-  next: 1
+CLAIM-004:
+  source: career-data\legacy\facts\claims.yml
+  type: claim
+CLAIM-012:
+  source: career-data\legacy\facts\claims.yml
+  type: claim
+CLAIM-014:
+  source: career-data\legacy\facts\claims.yml
+  type: claim
+COMP-001:
+  source: career-data\legacy\facts\competencies.yml
+  type: competencie
+COMP-002:
+  source: career-data\legacy\facts\competencies.yml
+  type: competencie
+DOM-001:
+  source: career-data\reference\competency_taxonomy.yml
+  type: domain
+DOM-002:
+  source: career-data\reference\competency_taxonomy.yml
+  type: domain
+DOM-003:
+  source: career-data\reference\competency_taxonomy.yml
+  type: domain
+EDU-0001:
+  source: career-data\facts\education.yml
+  type: education_record
+EDU-0002:
+  source: career-data\facts\education.yml
+  type: education_record
+EDU-0003:
+  source: career-data\facts\education.yml
+  type: education_record
+EDU-0004:
+  source: career-data\facts\education.yml
+  type: education_record
+EDU-001:
+  source: career-data\legacy\facts\education.yml
+  type: education_record
+EDU-002:
+  source: career-data\legacy\facts\education.yml
+  type: education_record
+EDU-003:
+  source: career-data\legacy\facts\education.yml
+  type: education_record
+EDU-004:
+  source: career-data\legacy\facts\education.yml
+  type: education_record
+EMP-0001:
+  source: career-data\facts\employment.yml
+  type: employment_record
+EMP-0002:
+  source: career-data\facts\employment.yml
+  type: employment_record
+EMP-0003:
+  source: career-data\facts\employment.yml
+  type: employment_record
+EMP-0004:
+  source: career-data\facts\employment.yml
+  type: employment_record
+EMP-0005:
+  source: career-data\facts\employment.yml
+  type: employment_record
+EMP-0006:
+  source: career-data\facts\employment.yml
+  type: employment_record
+EMP-0007:
+  source: career-data\facts\employment.yml
+  type: employment_record
+EMP-001:
+  source: career-data\legacy\facts\employment.yml
+  type: employment_record
+EMP-002:
+  source: career-data\legacy\facts\employment.yml
+  type: employment_record
+EMP-003:
+  source: career-data\legacy\facts\employment.yml
+  type: employment_record
+EMP-004:
+  source: career-data\legacy\facts\employment.yml
+  type: employment_record
+EMP-005:
+  source: career-data\legacy\facts\employment.yml
+  type: employment_record
+EMP-006:
+  source: career-data\legacy\facts\employment.yml
+  type: employment_record
+EMP-007:
+  source: career-data\legacy\facts\employment.yml
+  type: employment_record
+INST-0001:
+  source: career-data\facts\institutions.yml
+  type: institution
+INST-0002:
+  source: career-data\facts\institutions.yml
+  type: institution
+INST-0003:
+  source: career-data\facts\institutions.yml
+  type: institution
+INST-0004:
+  source: career-data\facts\institutions.yml
+  type: institution
+INST-001:
+  source: career-data\legacy\facts\institutions.yml
+  type: institution
+INST-002:
+  source: career-data\legacy\facts\institutions.yml
+  type: institution
+INST-003:
+  source: career-data\legacy\facts\institutions.yml
+  type: institution
+INST-004:
+  source: career-data\legacy\facts\institutions.yml
+  type: institution
+METRIC-0001:
+  source: career-data\facts\metrics\definitions.yml
+  type: metric
+METRIC-0002:
+  source: career-data\facts\metrics\definitions.yml
+  type: metric
+METRIC-001:
+  source: career-data\legacy\facts\metrics.yml
+  type: metric
+METRIC-002:
+  source: career-data\legacy\facts\metrics.yml
+  type: metric
+METRIC-003:
+  source: career-data\legacy\facts\metrics.yml
+  type: metric
+METRIC-004:
+  source: career-data\legacy\facts\metrics.yml
+  type: metric
+METRIC-005:
+  source: career-data\legacy\facts\metrics.yml
+  type: metric
+ORG-0001:
+  source: career-data\facts\organisations.yml
+  type: organisation
+ORG-0002:
+  source: career-data\facts\organisations.yml
+  type: organisation
+ORG-0003:
+  source: career-data\facts\organisations.yml
+  type: organisation
+ORG-0004:
+  source: career-data\facts\organisations.yml
+  type: organisation
+ORG-0005:
+  source: career-data\facts\organisations.yml
+  type: organisation
+ORG-0006:
+  source: career-data\facts\organisations.yml
+  type: organisation
+ORG-0007:
+  source: career-data\facts\organisations.yml
+  type: organisation
+ORG-001:
+  source: career-data\legacy\facts\organisations.yml
+  type: organisation
+ORG-002:
+  source: career-data\legacy\facts\organisations.yml
+  type: organisation
+ORG-003:
+  source: career-data\legacy\facts\organisations.yml
+  type: organisation
+ORG-004:
+  source: career-data\legacy\facts\organisations.yml
+  type: organisation
+ORG-005:
+  source: career-data\legacy\facts\organisations.yml
+  type: organisation
+ORG-006:
+  source: career-data\legacy\facts\organisations.yml
+  type: organisation
+ORG-007:
+  source: career-data\legacy\facts\organisations.yml
+  type: organisation
+REL-001:
+  source: career-data\legacy\facts\relationships.yml
+  type: relationship
+REL-002:
+  source: career-data\legacy\facts\relationships.yml
+  type: relationship
+ROLE-0001:
+  source: career-data\facts\roles.yml
+  type: role
+ROLE-0002:
+  source: career-data\facts\roles.yml
+  type: role
+ROLE-0003:
+  source: career-data\facts\roles.yml
+  type: role
+ROLE-0004:
+  source: career-data\facts\roles.yml
+  type: role
+ROLE-0005:
+  source: career-data\facts\roles.yml
+  type: role
+ROLE-0006:
+  source: career-data\facts\roles.yml
+  type: role
+ROLE-001:
+  source: career-data\legacy\facts\roles.yml
+  type: role
+ROLE-002:
+  source: career-data\legacy\facts\roles.yml
+  type: role
+ROLE-003:
+  source: career-data\legacy\facts\roles.yml
+  type: role
+ROLE-004:
+  source: career-data\legacy\facts\roles.yml
+  type: role
+ROLE-005:
+  source: career-data\legacy\facts\roles.yml
+  type: role
+ROLE-006:
+  source: career-data\legacy\facts\roles.yml
+  type: role

@@ -1,0 +1,4 @@
+- id: COMP-5000
+  entity_type: Competency
+  name: System Architecture
+  level: Expert

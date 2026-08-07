@@ -3,8 +3,7 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string",
-      "pattern": "^ID-[0-9]{4}$"
+      "type": "string"
     },
     "name": {
       "type": "string"
@@ -14,7 +13,6 @@
     }
   },
   "required": [
-    "id",
-    "name"
+    "id"
   ]
 }

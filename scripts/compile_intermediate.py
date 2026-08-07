@@ -17,13 +17,17 @@ def compile_intermediate(intermediate_dir):
     with open(graph_path, 'r', encoding='utf-8') as f:
         graph = json.load(f)
         
+    graph_meta = graph.get('metadata', {})
+    
     metadata = {
-        "schema_version": "4.0",
-        "resolver_version": "1.0",
-        "metrics_version": "1.0",
-        "generated_at": datetime.utcnow().isoformat() + "Z",
-        "build_id": "BUILD-V1-001",
-        "source_commit": "HEAD",
+        "artifact_version": graph_meta.get("artifact_version", "1.0.0"),
+        "schema_version": graph_meta.get("schema_version", "1.0.0"),
+        "graph_version": graph_meta.get("graph_version", "1.0.0"),
+        "resolver_version": graph_meta.get("resolver_version", "1.0.0"),
+        "metrics_version": "1.0.0",
+        "build_id": graph_meta.get("build_id", "BUILD-V1-001"),
+        "generated_at": graph_meta.get("generated_at", datetime.now().isoformat() + "Z"),
+        "source_commit": graph_meta.get("source_commit", "HEAD"),
         "input_hash": compute_hash(graph)
     }
     

@@ -1,0 +1,43 @@
+# Governance Privacy Policy (v1.0.0)
+# Controls classification of data entities for privacy and security auditing
+
+version: "1.0.0"
+
+rules:
+  public:
+    description: "Approved public portfolio attributes"
+    patterns:
+      - "Mohammed Shehzad Khan"
+      - "Mohammed Shehzad"
+      - "hotmail.com"
+      - "mohammedshehzad.com"
+
+  internal:
+    description: "Internal evidence or recruiter validation materials"
+    path_prefixes:
+      - "EVIDENCE_LIBRARY/"
+      - "evidence/"
+      - "private/"
+
+  forbidden:
+    description: "Strict zero-leak sensitive data"
+    categories:
+      - name: "passport_number"
+        pattern: "[A-Z][0-9]{8}"
+      - name: "private_key"
+        pattern: "-----BEGIN (RSA|EC|OPENSSH|DSA|PRIVATE) KEY-----"
+      - name: "browser_session"
+        filenames:
+          - "Login Data"
+          - "Cookies"
+          - "History"
+          - "Web Data"
+          - "cookies.sqlite"
+          - "places.sqlite"
+          - "logins.json"
+          - "key4.db"
+      - name: "environment_file"
+        filenames:
+          - ".env"
+          - ".env.local"
+          - ".env.production"

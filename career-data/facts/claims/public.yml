@@ -1,0 +1,146 @@
+schema_version: '1.0'
+scope: public
+generated: '2026-08-01'
+claims:
+- id: C-001
+  status: active
+  type: experience
+  canonical: Dynamic experience calculated from career_start date (2014-01)
+  computable_metric_id: MET-005
+  evidence: [E-3001, E-3002, E-3003, E-3004, E-3005]
+  allowed_variants:
+  - 11+ years of international teaching experience
+  - 11+ years of experience
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md]
+
+- id: C-002
+  status: active
+  type: geography
+  canonical: International experience across India and China
+  computable_metric_id: MET-003
+  evidence: [E-3001, E-3003, E-3004, E-3005]
+  allowed_variants:
+  - International experience across India and China
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md]
+
+- id: C-007
+  status: active
+  type: research
+  canonical: PGCE action research (University of Cumbria, Sep 2025 – Jul 2026)
+  evidence: [E-0013, E-2001]
+  allowed_variants:
+  - PGCE action research (University of Cumbria, Sep 2025 – Jul 2026)
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md]
+
+- id: C-009
+  status: active
+  type: experience
+  canonical: International EAL teaching experience
+  evidence: [E-3004, E-3005]
+  allowed_variants:
+  - International EAL teaching experience
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md]
+
+- id: C-010
+  status: active
+  type: leadership
+  canonical: Teacher development and mentoring experience
+  evidence: [E-3002, E-3004, E-3005]
+  allowed_variants:
+  - Teacher development and mentoring experience
+  - mentoring
+  - teacher mentoring
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md]
+
+- id: C-011
+  status: active
+  type: curriculum
+  canonical: Curriculum implementation across primary settings
+  evidence: [E-3004, E-3005]
+  allowed_variants:
+  - Curriculum implementation across primary settings
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md]
+
+- id: C-012
+  status: active
+  type: curriculum
+  canonical: Curriculum development experience
+  evidence: [E-0016]
+  allowed_variants:
+  - Curriculum development experience
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md]
+
+- id: C-013
+  status: active
+  type: assessment
+  canonical: Assessment moderation (Grade 5 writing, Aoxin International School)
+  evidence: [E-3005]
+  allowed_variants:
+  - Assessment moderation (Grade 5 writing, Aoxin International School)
+  presentation_assets: [CV_Master.md, Portfolio_Copy.md]
+
+- id: C-014
+  status: active
+  type: quality
+  canonical: Instructional quality and educator development (WhiteHat Jr / BYJU'S)
+  evidence: [E-3002]
+  allowed_variants:
+  - Instructional quality and educator development (WhiteHat Jr / BYJU'S)
+  - instructional quality
+  - educator development
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md]
+
+- id: C-017
+  status: active
+  type: quality
+  canonical: Training and quality assurance across international markets (GEDU Global Education)
+  computable_metric_id: MET-004
+  evidence: [E-3001]
+  allowed_variants:
+  - Training and quality assurance across international markets (GEDU Global Education)
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md]
+
+- id: C-019
+  status: active
+  type: experience
+  canonical: Early-years EAL teaching and teacher modelling (Eton House Kindergarten)
+  evidence: [E-3004]
+  allowed_variants:
+  - Early-years EAL teaching and teacher modelling (Eton House Kindergarten)
+  presentation_assets: [CV_Master.md, Portfolio_Copy.md]
+
+- id: C-020
+  status: active
+  type: language
+  canonical: "English — Fluent (professional working language)"
+  evidence: []
+  allowed_variants:
+  - "English — Fluent (professional working language)"
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md]
+
+- id: C-021
+  status: active
+  type: language
+  canonical: "Hindi — Native"
+  evidence: []
+  allowed_variants:
+  - "Hindi — Native"
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md]
+
+- id: C-022
+  status: active
+  type: language
+  canonical: "Urdu — Working proficiency"
+  evidence: []
+  allowed_variants:
+  - "Urdu — Working proficiency"
+  presentation_assets: [CV_Master.md, LinkedIn_Ready_To_Paste.md]
+
+- id: C-023
+  status: active
+  type: availability
+  canonical: Available from August 2027
+  evidence: [E-0017]
+  allowed_variants:
+  - Available from August 2027
+  presentation_assets: [CV_Master.md]

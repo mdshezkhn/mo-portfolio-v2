@@ -1,71 +1,104 @@
 employment_records:
-- id: EMP-0001
+- id: EMP-2000
   entity_type: employment
+  employer_id: ORG-1000
+  role_id: ROLE-8000
   dates:
-    start:
-      date: 2014-01
-    end:
-      date: 2016-11
-  location: India
-  confidence: verified
+    start: 2014-01
+    end: 2016-11
+  physical_country: India
+  employment_country: India
+  operational_regions: []
+  confidence: V5
   review_status: approved
-- id: EMP-0007
+
+- id: EMP-2001
   entity_type: employment
+  employer_id: ORG-1006
+  role_id: ROLE-8001
   dates:
-    start:
-      date: 2016-11
-    end:
-      date: 2017-08
-  location: China
-  confidence: verified
+    start: 2016-11
+    end: 2017-08
+  physical_country: China
+  employment_country: China
+  operational_regions: []
+  confidence: V5
   review_status: approved
-- id: EMP-0006
+
+- id: EMP-2002
   entity_type: employment
+  employer_id: ORG-1004
+  role_id: ROLE-8002
   dates:
-    start:
-      date: 2017-08
-    end:
-      date: 2018-06
-  location: China
-  confidence: verified
+    start: 2017-08
+    end: 2018-06
+  physical_country: China
+  employment_country: China
+  operational_regions: []
+  confidence: V5
   review_status: approved
-- id: EMP-0003
+
+- id: EMP-2003
   entity_type: employment
+  employer_id: ORG-1001
+  role_id: ROLE-8003
   dates:
-    start:
-      date: 2018-07
-    end:
-      date: 2020-08
-  location: China
-  confidence: asserted
+    start: 2018-07
+    end: 2020-08
+  physical_country: China
+  employment_country: China
+  operational_regions: []
+  confidence: V3
   review_status: pending
-- id: EMP-0005
+
+- id: EMP-2004
   entity_type: employment
+  employer_id: ORG-1003
+  role_id: ROLE-8004
   dates:
-    start:
-      date: 2020-08
-    end:
-      date: 2022-07
-  location: India (Remote)
-  confidence: verified
+    start: 2020-08
+    end: 2022-07
+  physical_country: India
+  employment_country: India
+  operational_regions: [Global]
+  confidence: V5
   review_status: approved
-- id: EMP-0004
+
+- id: EMP-2005
   entity_type: employment
+  employer_id: ORG-1002
+  role_id: ROLE-8005
   dates:
-    start:
-      date: 2022-09
-    end:
-      date: 2023-08
-  location: UK/Dubai/Malta
-  confidence: verified
+    start: 2022-09
+    end: 2023-08
+  physical_country: UK
+  employment_country: UK
+  operational_regions: [UK, Dubai, Malta]
+  confidence: V5
   review_status: approved
-- id: EMP-0002
+
+- id: EMP-2006
   entity_type: employment
+  employer_id: ORG-1001
+  role_id: ROLE-8003
   dates:
-    start:
-      date: 2024-02
-    end:
-      present: true
-  location: China
-  confidence: asserted
-  review_status: pending
+    start: 2024-02
+    end: 2026-07
+  contract_end: 2026-07-31
+  physical_country: China
+  employment_country: China
+  operational_regions: []
+  contract_document: career-data/evidence/employment/Aoxin_Contract_Feb2024.pdf
+  confidence: V5
+  review_status: approved
+  contract_details:
+    type: Fixed-term employment contract
+    signed: 2023-12-27
+    probation_end: 2024-04-14
+    monthly_fee_cny: 17000
+    working_hours: "8 hours/day, 5 days/week, max 20 periods/week"
+    benefits:
+      - "One round-trip air ticket (economy class)"
+      - "Shared apartment with individual room"
+      - "Accommodation subsidy CNY 2000/month if living alone"
+    termination_notice: "60 days advance notice required"

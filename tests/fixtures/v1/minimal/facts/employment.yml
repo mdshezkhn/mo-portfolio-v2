@@ -1,0 +1,7 @@
+- id: EMP-2000
+  entity_type: Employment
+  employer_id: ORG-1000
+  role_id: ROLE-8000
+  start_date: '2020-01-01'
+  end_date: '2023-01-01'
+  status: Completed

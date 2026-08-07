@@ -1,0 +1,150 @@
+migration_id: '0001'
+timestamp: '2026-07-31T15:55:16.735316Z'
+description: Initial ID allocation mapping old string IDs to block-reserved opaque
+  IDs.
+operations:
+- allocate:
+    id: QUAL-3000
+    slug: edu_0004
+    state: PUBLISHED
+    type: education
+- allocate:
+    id: QUAL-3001
+    slug: edu_0003
+    state: PUBLISHED
+    type: education
+- allocate:
+    id: QUAL-3002
+    slug: edu_0001
+    state: PUBLISHED
+    type: education
+- allocate:
+    id: QUAL-3003
+    slug: edu_0002
+    state: PUBLISHED
+    type: education
+- allocate:
+    id: EMP-2000
+    slug: emp_0001
+    state: PUBLISHED
+    type: employment
+- allocate:
+    id: EMP-2001
+    slug: emp_0007
+    state: PUBLISHED
+    type: employment
+- allocate:
+    id: EMP-2002
+    slug: emp_0006
+    state: PUBLISHED
+    type: employment
+- allocate:
+    id: EMP-2003
+    slug: emp_0003
+    state: PUBLISHED
+    type: employment
+- allocate:
+    id: EMP-2004
+    slug: emp_0005
+    state: PUBLISHED
+    type: employment
+- allocate:
+    id: EMP-2005
+    slug: emp_0004
+    state: PUBLISHED
+    type: employment
+- allocate:
+    id: EMP-2006
+    slug: emp_0002
+    state: PUBLISHED
+    type: employment
+- allocate:
+    id: PERSON-1000
+    slug: id_0001
+    state: PUBLISHED
+    type: identity
+- allocate:
+    id: INST-9000
+    slug: inst_0001
+    state: PUBLISHED
+    type: institution
+- allocate:
+    id: INST-9001
+    slug: inst_0002
+    state: PUBLISHED
+    type: institution
+- allocate:
+    id: INST-9002
+    slug: inst_0003
+    state: PUBLISHED
+    type: institution
+- allocate:
+    id: INST-9003
+    slug: inst_0004
+    state: PUBLISHED
+    type: institution
+- allocate:
+    id: ORG-1000
+    slug: org_0001
+    state: PUBLISHED
+    type: organisation
+- allocate:
+    id: ORG-1001
+    slug: org_0002
+    state: PUBLISHED
+    type: organisation
+- allocate:
+    id: ORG-1002
+    slug: org_0003
+    state: PUBLISHED
+    type: organisation
+- allocate:
+    id: ORG-1003
+    slug: org_0004
+    state: PUBLISHED
+    type: organisation
+- allocate:
+    id: ORG-1004
+    slug: org_0005
+    state: PUBLISHED
+    type: organisation
+- allocate:
+    id: ORG-1005
+    slug: org_0006
+    state: PUBLISHED
+    type: organisation
+- allocate:
+    id: ORG-1006
+    slug: org_0007
+    state: PUBLISHED
+    type: organisation
+- allocate:
+    id: ROLE-8000
+    slug: role_0001
+    state: PUBLISHED
+    type: role
+- allocate:
+    id: ROLE-8001
+    slug: role_0002
+    state: PUBLISHED
+    type: role
+- allocate:
+    id: ROLE-8002
+    slug: role_0003
+    state: PUBLISHED
+    type: role
+- allocate:
+    id: ROLE-8003
+    slug: role_0004
+    state: PUBLISHED
+    type: role
+- allocate:
+    id: ROLE-8004
+    slug: role_0005
+    state: PUBLISHED
+    type: role
+- allocate:
+    id: ROLE-8005
+    slug: role_0006
+    state: PUBLISHED
+    type: role

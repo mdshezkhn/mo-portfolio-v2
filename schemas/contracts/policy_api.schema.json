@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Policy API Schema",
+  "description": "Version 1.0.0",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "input": {
+      "type": "object",
+      "properties": {
+        "intermediate_representation": {
+          "$ref": "intermediate.schema.json"
+        },
+        "rules": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "intermediate_representation",
+        "rules"
+      ]
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "filtered_intermediate": {
+          "type": "object"
+        },
+        "applied_policies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "filtered_intermediate",
+        "applied_policies"
+      ]
+    }
+  },
+  "required": [
+    "version",
+    "input",
+    "output"
+  ],
+  "additionalProperties": false
+}

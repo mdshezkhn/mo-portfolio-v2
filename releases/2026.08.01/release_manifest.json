@@ -1,0 +1,9 @@
+{
+  "release": "2026.08.01",
+  "canonical": "v1.4",
+  "brand": "v1.0",
+  "policy": "v1.0",
+  "compiler": "v4.0",
+  "git": "HEAD",
+  "certification": "PASS"
+}

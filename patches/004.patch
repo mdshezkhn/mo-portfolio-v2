@@ -1,0 +1,16 @@
+--- a/evidence/manifest.yml
++++ b/evidence/manifest.yml
+@@ E-2001 claim link fix
+-    linked_claims: ["C-002"]
++    linked_claims: ["C-004"]
+     notes: "Primary document for PGCE credential. Non-QTS status confirmed on certificate."
+
+@@ E-2002 claim link fix
+-    linked_claims: ["C-002"]
++    linked_claims: ["C-004"]
+     notes: ""
+
+@@ E-2003 claim link fix
+-    linked_claims: ["C-002"]
++    linked_claims: ["C-004"]
+     notes: "To be added if document located. Not blocking — E-2001 is sufficient."

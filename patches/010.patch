@@ -1,0 +1,8 @@
+--- a/career-data/facts/employment.yml
++++ b/career-data/facts/employment.yml
+@@ Fix Scholars Academy confidence level
+ EMP-2000:
+   employer: Scholars Academy
+-  confidence: verified
++  confidence: asserted
+   review_status: approved

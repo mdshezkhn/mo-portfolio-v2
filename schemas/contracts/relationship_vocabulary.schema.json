@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Relationship Vocabulary Contract",
+  "description": "Version 1.0.0",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "enum": [
+              "WORKED_AT",
+              "HAS_ROLE",
+              "SUPPORTED_BY",
+              "STUDIED_AT"
+            ]
+          },
+          "source_type": {
+            "type": "string"
+          },
+          "target_type": {
+            "type": "string"
+          },
+          "cardinality": {
+            "type": "string",
+            "enum": [
+              "1:1",
+              "1:N",
+              "N:1",
+              "N:M"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "source_type",
+          "target_type",
+          "cardinality"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "relationships"
+  ],
+  "additionalProperties": false
+}

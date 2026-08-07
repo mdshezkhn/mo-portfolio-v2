@@ -1,0 +1,22 @@
+schema_version: 1.0
+metrics:
+  - id: METRIC-001
+    name: experience_years
+    type: calculated
+    source: employment_dates
+  - id: METRIC-002
+    name: countries_worked
+    type: calculated
+    source: location_count
+  - id: METRIC-003
+    name: schools_taught
+    type: calculated
+    source: unique_employer_count
+  - id: METRIC-004
+    name: teacher_training_hours
+    type: static
+    value: 500
+  - id: METRIC-005
+    name: educators_trained
+    type: static
+    value: 1000

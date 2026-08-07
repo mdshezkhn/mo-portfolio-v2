@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "artifact_version": "1.0.0",
+    "graph_version": "1.0.0",
+    "resolver_version": "1.0.0",
+    "schema_version": "1.0.0"
+  },
+  "entities": {
+    "CERT-4000": {
+      "id": "CERT-4000",
+      "entity_type": "Certification",
+      "name": "Cloud Expert",
+      "issuer_id": "ORG-1000",
+      "issue_date": "2021-06-01",
+      "_source_file": "minimal\\facts\\certifications.yml"
+    },
+    "COMP-5000": {
+      "id": "COMP-5000",
+      "entity_type": "Competency",
+      "name": "System Architecture",
+      "level": "Expert",
+      "_source_file": "minimal\\facts\\competencies.yml"
+    },
+    "QUAL-3000": {
+      "id": "QUAL-3000",
+      "entity_type": "Qualification",
+      "institution_id": "INST-9000",
+      "degree": "BSc Computer Science",
+      "start_year": 2015,
+      "end_year": 2019,
+      "_source_file": "minimal\\facts\\education.yml"
+    },
+    "EMP-2000": {
+      "id": "EMP-2000",
+      "entity_type": "Employment",
+      "employer_id": "ORG-1000",
+      "role_id": "ROLE-8000",
+      "start_date": "2020-01-01",
+      "end_date": "2023-01-01",
+      "status": "Completed",
+      "_source_file": "minimal\\facts\\employment.yml"
+    },
+    "EVID-7000": {
+      "id": "EVID-7000",
+      "entity_type": "Evidence",
+      "target_id": "EMP-2000",
+      "type": "Reference Letter",
+      "status": "Verified",
+      "_source_file": "minimal\\facts\\evidence.yml"
+    },
+    "PERSON-1000": {
+      "id": "PERSON-1000",
+      "entity_type": "Identity",
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "_source_file": "minimal\\facts\\identity.yml"
+    },
+    "INST-9000": {
+      "id": "INST-9000",
+      "entity_type": "Institution",
+      "name": "Tech University",
+      "_source_file": "minimal\\facts\\institutions.yml"
+    },
+    "NARR-6000": {
+      "id": "NARR-6000",
+      "entity_type": "Narrative",
+      "target_id": "EMP-2000",
+      "content": "Led the migration to microservices.",
+      "_source_file": "minimal\\facts\\narratives.yml"
+    },
+    "ORG-1000": {
+      "id": "ORG-1000",
+      "entity_type": "Organisation",
+      "name": "Tech Corp",
+      "industry": "Technology",
+      "_source_file": "minimal\\facts\\organisations.yml"
+    },
+    "ROLE-8000": {
+      "id": "ROLE-8000",
+      "entity_type": "Role",
+      "title": "Senior Engineer",
+      "_source_file": "minimal\\facts\\roles.yml"
+    }
+  },
+  "edges": [],
+  "indexes": {
+    "by_source": {},
+    "by_target": {}
+  }
+}

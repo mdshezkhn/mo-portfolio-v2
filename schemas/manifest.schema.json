@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Manifest Schema v1.0",
+  "type": "object",
+  "required": ["manifestVersion", "generatedAt", "generatorVersion", "entries"],
+  "properties": {
+    "manifestVersion": {
+      "type": "string",
+      "enum": ["1.0"]
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "generatorVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["filename", "relative_path", "sha256", "size", "mime_type", "modified_date", "classification", "traceability"],
+        "properties": {
+          "filename": { "type": "string" },
+          "relative_path": { "type": "string" },
+          "sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
+          "size": { "type": "integer", "minimum": 0 },
+          "mime_type": { "type": "string" },
+          "modified_date": { "type": "string", "format": "date-time" },
+          "classification": {
+            "type": "string",
+            "enum": ["normative", "derived", "source", "generated"]
+          },
+          "traceability": {
+            "type": "string",
+            "enum": ["required", "optional", "prohibited"]
+          },
+          "claim_references": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^C-\\d+$" }
+          },
+          "evidence_id": { "type": "string", "pattern": "^E-\\d+$" },
+          "build_id": { "type": "string" }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": { "traceability": { "const": "required" } }
+            },
+            "then": {
+              "required": ["evidence_id"]
+            }
+          },
+          {
+            "if": {
+              "properties": { "traceability": { "const": "prohibited" } }
+            },
+            "then": {
+              "not": { "required": ["evidence_id"] }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

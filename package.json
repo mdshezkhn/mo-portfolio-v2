@@ -1,0 +1,30 @@
+{
+  "name": "mo-digital-portfolio",
+  "version": "1.0.0",
+  "description": "Evidence-governed digital portfolio",
+  "private": true,
+  "engines": {
+    "node": ">=22.17.0"
+  },
+  "scripts": {
+    "build": "node -e \"console.log('Static site, no build step required.'); const fs = require('fs'); if (!fs.existsSync('compiled_assets')) fs.mkdirSync('compiled_assets');\"",
+    "test": "playwright test",
+    "lint:html": "html-validate \"compiled_assets/**/*.html\"",
+    "lint:css": "stylelint \"compiled_assets/**/*.css\"",
+    "lint:js": "eslint \"compiled_assets/**/*.js\"",
+    "format": "prettier --write \"**/*.{html,css,js,json,md,yml}\"",
+    "audit:deps": "npm audit",
+    "lighthouse": "lhci autorun"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.9.0",
+    "@lhci/cli": "0.13.0",
+    "@playwright/test": "1.43.1",
+    "eslint": "8.57.0",
+    "html-validate": "8.14.0",
+    "prettier": "3.2.5",
+    "stylelint": "16.5.0",
+    "ajv": "8.14.0",
+    "ajv-formats": "3.0.0"
+  }
+}

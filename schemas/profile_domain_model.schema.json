@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mo-portfolio.local/schemas/profile_domain_model.schema.json",
+  "title": "Profile Domain Model",
+  "description": "The normalized, canonical intermediate graph representation of all professional facts. This schema acts as the source of truth for all downstream, renderer-specific view models.",
+  "type": "object",
+  "required": ["candidate", "claims", "employment", "education", "competencies"],
+  "properties": {
+    "candidate": {
+      "type": "object",
+      "required": ["name", "primary_title"],
+      "properties": {
+        "name": { "type": "string" },
+        "primary_title": { "type": "string" },
+        "contact_info": { "type": "object" }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "statement", "priority"],
+        "properties": {
+          "id": { "type": "string" },
+          "statement": { "type": "string" },
+          "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+          "tags": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "employment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "employer_name", "role_title", "dates"],
+        "properties": {
+          "id": { "type": "string" },
+          "employer_name": { "type": "string" },
+          "role_title": { "type": "string" },
+          "dates": {
+            "type": "object",
+            "required": ["start_date"],
+            "properties": {
+              "start_date": { "type": "string", "format": "date" },
+              "end_date": { "type": "string", "format": "date" },
+              "is_present": { "type": "boolean" }
+            }
+          },
+          "location": {
+            "type": "object",
+            "properties": {
+              "physical_country": { "type": "string" },
+              "operational_regions": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "supported_claims": {
+            "type": "array",
+            "description": "Array of claim IDs supported by this employment.",
+            "items": { "type": "string" }
+          },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "confidence": { "type": "string", "enum": ["V1", "V2", "V3", "V4", "V5", "unverified", "supported", "verified"] },
+              "evidence_id": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "degree_name", "institution_name"],
+        "properties": {
+          "id": { "type": "string" },
+          "degree_name": { "type": "string" },
+          "institution_name": { "type": "string" },
+          "dates": {
+            "type": "object",
+            "properties": {
+              "start_date": { "type": "string", "format": "date" },
+              "end_date": { "type": "string", "format": "date" }
+            }
+          },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "confidence": { "type": "string" },
+              "evidence_id": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "competencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "skills"],
+        "properties": {
+          "category": { "type": "string" },
+          "skills": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

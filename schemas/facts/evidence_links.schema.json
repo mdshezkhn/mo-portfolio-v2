@@ -2,36 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
-    "schema_version": {
-      "type": "number",
-      "const": 1.0
-    },
     "evidence_links": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "fact_id": {
-            "type": "string",
-            "pattern": "^(EMP|EDU|CERT|ORG|INST)-[0-9]{3}$"
-          },
-          "evidence_ids": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "pattern": "^E-[0-9]{4}$"
-            }
-          }
-        },
-        "required": [
-          "fact_id",
-          "evidence_ids"
-        ]
-      }
+      "type": "array"
     }
   },
   "required": [
-    "schema_version",
     "evidence_links"
   ]
 }
