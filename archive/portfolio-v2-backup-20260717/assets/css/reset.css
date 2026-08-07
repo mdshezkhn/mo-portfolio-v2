@@ -1,0 +1,75 @@
+/* ==========================================================
+   reset.css
+   Minimal, modern CSS reset. Normalises browser defaults.
+   Part of: Mohammed Shehzad Khan Portfolio v2.0
+========================================================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scroll is declared once in layout.css, guarded by
+   prefers-reduced-motion there — no duplicate here. */
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Manrope", sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+    background: var(--accent);
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+em {
+    font-style: italic;
+    color: var(--accent);
+}
+
+/* ── Accessibility ────────────────────────────────────── */
+
+:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* Prevent outline on main content area when skip link is used */
+main[tabindex="-1"]:focus {
+    outline: none;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 1rem;
+}
+
+.skip-link:focus-visible {
+    left: 1rem;
+    background: var(--accent);
+    color: white;
+    padding: .75rem 1rem;
+    border-radius: var(--radius-sm);
+    z-index: 9999;
+}

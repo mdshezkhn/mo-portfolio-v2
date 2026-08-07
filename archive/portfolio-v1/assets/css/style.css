@@ -1,0 +1,1412 @@
+/* ==========================================================
+   style.css
+   BUNDLED master stylesheet — Project Meridian V2 (Portfolio v1.0)
+   Concatenated from the v1.0 modules in strict cascade order:
+     variables -> reset -> typography -> layout -> components
+     -> sections -> animations -> responsive
+   One file = a single render-blocking request (no @import chain).
+   Edit this file directly. Source modules were removed in Stage 8
+   (CSS bundling) — recoverable via git history if modular editing
+   is ever preferred.
+   ========================================================== */
+
+/* ==========================================================
+   variables.css
+   All design tokens in one place. Change here to update
+   every component that references these variables.
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+:root {
+    /* ── Colour Theme: Sleek Dark Mode (Default) ────────── */
+    --bg:              #121016;
+    --bg-surface:      #1A1822;
+    --text:            #F3F4F6;
+    --text-secondary:  #D1D5DB;
+    --text-muted:      #9CA3AF;
+
+    --accent:          #4C3A6B; /* Dark Violet */
+    --accent-secondary: #2C3E6B; /* Light Navy */
+    --accent-soft:     rgba(76, 58, 107, 0.15);
+
+    --border:          #2A2735;
+    --border-strong:   #4C3A6B;
+
+    /* ── Layout ─────────────────────────────────────────── */
+    --container:       1120px;
+
+    /* ── Radii ───────────────────────────────────────────── */
+    --radius-sm:       8px;
+    --radius-lg:       16px;
+
+    /* ── Animation ───────────────────────────────────────── */
+    --transition:      200ms ease;
+
+    /* ── Shadows ─────────────────────────────────────────── */
+    --shadow-card:       0 4px 20px rgba(0,0,0,0.2);
+    --shadow-card-hover: 0 12px 30px rgba(0,0,0,0.4);
+    --shadow-subtle:     0 4px 6px -1px rgba(0,0,0,0.1);
+
+    /* ── Fonts ───────────────────────────────────────────── */
+    --font-system:     Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Light Theme Variables */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg:              #F9F9FB;
+        --bg-surface:      #FFFFFF;
+        --text:            #111827;
+        --text-secondary:  #374151;
+        --text-muted:      #6B7280;
+
+        --accent-soft:     rgba(76, 58, 107, 0.08);
+
+        --border:          #E5E7EB;
+        --border-strong:   #64748B;
+
+        --shadow-card:       0 4px 12px rgba(0,0,0,0.03);
+        --shadow-card-hover: 0 12px 24px rgba(0,0,0,0.06);
+        --shadow-subtle:     0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+}
+/* ==========================================================
+   reset.css
+   Minimal, modern CSS reset. Normalises browser defaults.
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Enable smooth scroll only when the user has not
+   requested reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-system), sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+    background: var(--accent);
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+em {
+    font-style: italic;
+    color: var(--accent);
+}
+
+/* ── Accessibility ────────────────────────────────────── */
+
+:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* Prevent outline on main content area when skip link is used */
+main[tabindex="-1"]:focus {
+    outline: none;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 1rem;
+}
+
+.skip-link:focus-visible {
+    left: 1rem;
+    background: var(--accent);
+    color: white;
+    padding: .75rem 1rem;
+    border-radius: var(--radius-sm);
+    z-index: 9999;
+}
+/* ==========================================================
+   typography.css
+   Heading scales, body text, links, badges, and editorial
+   modifiers. Uses Fraunces (headings) + Manrope (body).
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+/* ── Headings ─────────────────────────────────────────── */
+
+h1, h2, h3, h4 {
+    font-family: var(--font-system), sans-serif;
+    line-height: 1.15;
+}
+
+h1 {
+    font-size: clamp(3rem, 6vw, 4.8rem);
+}
+
+h2 {
+    font-size: clamp(2.3rem, 4vw, 3.2rem);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* ── Body text ───────────────────────────────────────── */
+
+p {
+    color: var(--text-secondary);
+    max-width: 62ch;
+}
+
+/* ── Badges ──────────────────────────────────────────── */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-system), sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    background: var(--accent-soft);
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+.badge-level-a {
+    background: rgba(16, 185, 129, 0.15) !important; /* Green */
+    color: #10B981 !important;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-level-b {
+    background: rgba(59, 130, 246, 0.15) !important; /* Blue */
+    color: #3B82F6 !important;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.badge-level-c {
+    background: rgba(245, 158, 11, 0.15) !important; /* Amber */
+    color: #F59E0B !important;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.hero-credentials-badges {
+    display: flex;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.tl-evidence-link {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    border-top: 1px dashed var(--border);
+    padding-top: 0.75rem;
+}
+
+.tl-evidence-link a {
+    color: #3B82F6;
+    font-weight: 600;
+}
+
+.tl-evidence-link a:hover {
+    text-decoration: underline;
+}
+
+.evidence-table-wrapper {
+    overflow-x: auto;
+    margin-top: 2rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+}
+
+.evidence-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.evidence-table th, 
+.evidence-table td {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.evidence-table th {
+    background: rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    color: var(--text);
+}
+
+.evidence-table tr:last-child td {
+    border-bottom: none;
+}
+
+.evidence-table td a {
+    color: #3B82F6;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* ── Subsection title ────────────────────────────────── */
+
+.subsection-title {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* ── Eyebrow label ───────────────────────────────────── */
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    font-family: var(--font-system), sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+/* ==========================================================
+   layout.css
+   Core layout primitives: container, section spacing,
+   and footer. Grid/flex patterns live in components.css.
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+/* ── Root scroll behaviour ─────────────────────────── */
+/* Smooth scrolling for in-page anchor navigation.
+   Disabled under prefers-reduced-motion for accessibility. */
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ── Container ───────────────────────────────────────── */
+
+.container {
+    width: min(100% - 48px, var(--container));
+    margin-inline: auto;
+}
+
+/* ── Section spacing ─────────────────────────────────── */
+/* scroll-margin-top accounts for the 72px sticky header so
+   anchored jumps land the heading below the header, not
+   hidden behind it. */
+
+section {
+    padding: 112px 0;
+    scroll-margin-top: 72px;
+}
+
+/* ── Footer ──────────────────────────────────────────── */
+
+footer {
+    padding: 64px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+}
+/* ==========================================================
+   components.css
+   Reusable UI components: navigation (desktop + mobile),
+   buttons, shared card tokens (§2–§11), and all card
+   component unique properties.
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+/* ==========================================================
+   HEADER & NAVIGATION
+========================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(18px);
+    background: rgba(248,250,252,.97);
+    border-bottom: 1px solid var(--border);
+    transition: box-shadow var(--transition);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+}
+
+.logo {
+    font-family: var(--font-system), sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    transition: color var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: var(--text);
+}
+
+/* ── Mobile hamburger toggle ─────────────────────────── */
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    transition: background var(--transition);
+}
+
+.nav-toggle:hover {
+    background: var(--accent-soft);
+}
+
+.hamburger-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: transform var(--transition), opacity var(--transition);
+    transform-origin: center;
+}
+
+/* Animate bars → × when menu is open */
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Active section link */
+.nav-links a[aria-current="page"] {
+    color: var(--accent);
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 14px 28px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-system), sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(30,58,95,.28);
+}
+
+.btn-secondary {
+    color: var(--text-secondary);
+    border: 1.5px solid var(--border-strong);
+}
+
+.btn-secondary:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-soft);
+}
+
+/* ==========================================================
+   SHARED COMPONENT TOKENS (§2–§11)
+   Consolidated declarations extracted from individual
+   component rules. Rules below contain ONLY what is unique
+   to that component.
+========================================================== */
+
+/* §2: White card base */
+.stat-card,
+.edu-card,
+.cert-card,
+.wc-card,
+.contact-link,
+.tl-card,
+.research-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+/* §3 + §4: Shared card shadows */
+.tl-card,
+.research-card {
+    box-shadow: var(--shadow-card);
+}
+
+/* §3b: Shared hover state */
+.tl-card:hover,
+.cert-card:hover {
+    box-shadow: var(--shadow-card-hover);
+    border-color: var(--accent-soft);
+}
+
+/* §5: Shared card heading typography */
+.edu-deg,
+.cert-name,
+.pd-card h4 {
+    font-family: var(--font-system), sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* §6: Shared organisation / issuer text */
+.edu-sch,
+.cert-issuer,
+.tl-org,
+.cval {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* §7: Shared muted small text */
+.tl-date,
+.tl-loc,
+.edu-yr,
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* §8: Shared uppercase label style */
+.stat-label,
+.skill-cluster h3,
+.clabel {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* §9: Shared auto-grid base */
+.edu-grid,
+.pd-grid,
+.stats-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.certs-grid,
+.skill-clusters {
+    display: grid;
+    gap: 2rem;
+}
+
+/* §11: Badge-group utility */
+.badge-group,
+.research-meta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================================
+   COMPONENTS — UNIQUE PROPERTIES ONLY
+========================================================== */
+
+/* ── Stats grid ───────────────────────────────────────── */
+
+.stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    margin-bottom: 4rem;
+}
+.stat-card {
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-subtle);
+    display: flex;
+    flex-direction: column;
+}
+.stat-num {
+    order: -1;
+    font-family: var(--font-system), sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+}
+.stat-label {
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-left: 0;
+}
+
+/* ── Skills ───────────────────────────────────────────── */
+
+.skill-clusters {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.skill-cluster h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.chip {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-strong);
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+.chip:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+    transform: translateY(-2px);
+}
+
+/* ── Credentials: Education ───────────────────────────── */
+
+.edu-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.edu-card {
+    padding: 1.5rem;
+}
+.edu-yr {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* ── Credentials: Certifications ─────────────────────── */
+
+.certs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.cert-card {
+    padding: 1.5rem;
+    transition: transform var(--transition);
+}
+.cert-card:hover {
+    transform: translateY(-4px);
+}
+.cert-thumb {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: var(--bg);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border);
+}
+.cert-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cert-issuer {
+    margin-bottom: 0.75rem;
+}
+
+/* ── Credentials: Professional Development ────────────── */
+
+.pd-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.pd-card {
+    border: 1.5px dashed var(--border-strong);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+}
+.pd-card p {
+    font-size: 0.9rem;
+}
+
+/* ── WeChat card ──────────────────────────────────────── */
+
+.wc-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+.wc-qr {
+    width: 100px;
+    height: 100px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.wc-qr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wc-name {
+    font-family: var(--font-system), sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.wc-hint {
+    font-size: 0.9rem;
+}
+/* ==========================================================
+   sections.css
+   Page-section-specific styles: hero, story, philosophy,
+   leadership, journey (timeline), research, gallery,
+   credentials, and contact.
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+#hero {
+    min-height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.hero-content h1 {
+    margin-bottom: 1.25rem;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    max-width: none;
+    margin-bottom: 2.5rem;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 460px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    box-shadow: 0 24px 60px rgba(15,23,42,.14);
+    will-change: transform;
+    transition: transform 0.4s ease;
+}
+
+/* Scale portrait on hover (pointer devices only) */
+@media (hover: hover) {
+    .hero-image img:hover {
+        transform: scale(1.02);
+    }
+}
+
+.hero-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.hero-meta li,
+.hero-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+/* ==========================================================
+   ABOUT / PHILOSOPHY
+========================================================== */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.about-quote {
+    font-family: var(--font-system), sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.4;
+    color: var(--accent);
+    position: relative;
+    padding-left: 2rem;
+    border-left: 4px solid var(--accent);
+}
+
+.about-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-pillar h3 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+/* ── Snapshot & Highlights ─────────────────────────── */
+
+.snapshot-content p {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .highlights-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.highlight-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition), border-color var(--transition);
+}
+
+.highlight-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-card-hover);
+}
+
+.highlight-card .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.highlight-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+}
+
+.highlight-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.highlight-card .card-link {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #3B82F6;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.highlight-card .card-link:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================
+   JOURNEY / TIMELINE
+ ========================================================== */
+
+.journey-intro {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin-bottom: 4rem;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 24px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+}
+
+.tl-item {
+    position: relative;
+    padding-left: 64px;
+    margin-bottom: 3rem;
+}
+
+.tl-dot {
+    position: absolute;
+    left: 17px;
+    top: 1.25rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    border: 4px solid var(--accent);
+    z-index: 2;
+}
+
+.tl-card {
+    padding: 2rem;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.tl-card:hover {
+    transform: translateX(8px);
+}
+
+.tl-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.tl-title {
+    font-family: var(--font-system), sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.tl-date {
+    font-weight: 700;
+    background: var(--bg);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+}
+
+.tl-org {
+    margin-bottom: 0.25rem;
+}
+
+.tl-loc {
+    margin-bottom: 1.5rem;
+}
+
+.tl-desc {
+    margin-bottom: 1rem;
+}
+
+.tl-bullets {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.tl-bullets li {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 900px) {
+    .timeline::before { left: 120px; }
+    .tl-item { padding-left: 160px; }
+    .tl-dot { left: 113px; }
+    .tl-year {
+        position: absolute;
+        left: 0;
+        top: 1.25rem;
+        width: 90px;
+        text-align: right;
+        font-weight: 700;
+        color: var(--accent);
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 899px) {
+    .tl-year { display: none; }
+}
+
+/* ==========================================================
+   RESEARCH
+========================================================== */
+
+.research-card {
+    padding: 2.5rem;
+}
+
+.research-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================================
+   VIDEO
+========================================================== */
+
+.video-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    background: #000;
+    margin: 0 auto;
+}
+
+.video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ==========================================================
+   CONTACT
+========================================================== */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+@media (min-width: 900px) {
+    .contact-layout {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+}
+
+.contact-intro {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.contact-link:hover {
+    transform: translateX(8px);
+    border-color: var(--accent-soft);
+    box-shadow: var(--shadow-card);
+}
+
+.clabel {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    min-width: 80px;
+}
+
+.contact-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 24px 60px rgba(15,23,42,.1);
+}
+
+.contact-image blockquote {
+    font-family: var(--font-system), sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    color: var(--text-secondary);
+}
+/* ==========================================================
+   animations.css
+   All motion is opt-in. When prefers-reduced-motion is set,
+   this entire block is skipped — no keyframes, no hidden
+   states. JS respects this flag before adding .reveal.
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+
+    /* ── Keyframes ──────────────────────────────────────── */
+
+    @keyframes hero-fade-up {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    @keyframes hero-fade-in {
+        from {
+            opacity: 0;
+            transform: scale(0.97);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /* ── Hero entrance — staggered, top-to-bottom ───────── */
+    /* animation-fill-mode: both holds the from-state before
+       the delay fires, preventing a flash. */
+
+    #hero .eyebrow {
+        animation: hero-fade-up 0.6s ease both;
+    }
+
+    #hero h1 {
+        animation: hero-fade-up 0.65s 0.1s ease both;
+    }
+
+    #hero .hero-description {
+        animation: hero-fade-up 0.65s 0.2s ease both;
+    }
+
+    #hero .button-group {
+        animation: hero-fade-up 0.65s 0.3s ease both;
+    }
+
+    #hero .hero-meta {
+        animation: hero-fade-up 0.65s 0.4s ease both;
+    }
+
+    #hero .hero-image {
+        animation: hero-fade-in 0.9s 0.15s ease both;
+    }
+
+    /* ── Scroll-reveal ──────────────────────────────────── */
+    /* JS adds .reveal to section containers then .is-visible
+       when they enter the viewport. Without JS, .reveal is
+       never added — content remains fully visible. */
+
+    /* Gated behind .js so content is hidden-then-revealed only with JS active.
+       No-JS users keep full visibility (progressive enhancement). */
+    .js .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+    .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* Mobile fallback for scroll-reveal */
+    @media (max-width: 899px) {
+        .timeline::before {
+            height: 100%;
+        }
+        .timeline .tl-item {
+            position: static; /* Reset positioning that might cause issues */
+        }
+    }
+
+    /* ── Header scroll shadow ───────────────────────────── */
+
+    .site-header.is-scrolled {
+        box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+    }
+
+}
+/* ==========================================================
+   responsive.css
+   All breakpoint overrides. Mobile-first where practical,
+   max-width used only for additive desktop patterns.
+   Part of: Mohammed Shehzad Khan Portfolio v1.0
+========================================================== */
+
+/* ── ≤900px: Tablet and mobile ───────────────────────── */
+
+@media (max-width: 900px) {
+
+    /* Show hamburger; hide desktop-only nav items */
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    /* Mobile dropdown menu */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(248, 250, 252, 0.98);
+        backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--border);
+        padding: 0.5rem 0 1rem;
+        z-index: 999;
+    }
+
+    .nav-links.is-open {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Section spacing */
+    section {
+        padding: 80px 0;
+    }
+
+    /* Hero layout */
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+
+    .button-group {
+        justify-content: flex-start;
+    }
+
+    .hero-meta {
+        justify-content: flex-start;
+    }
+}
+
+/* ── ≤480px: Small phones ────────────────────────────── */
+
+@media (max-width: 480px) {
+
+    .hero-grid {
+        gap: 2rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        justify-content: center;
+    }
+}
+
+/* ==========================================================
+   GRACEFUL ASSET FALLBACKS
+   Shown when a referenced image is missing (user-supplied
+   assets not yet added). Keeps the layout calm instead of a
+   broken-image icon. Drop the real file at the referenced
+   path and the placeholder disappears automatically.
+   ========================================================== */
+
+.cert-thumb.media-missing,
+.wc-qr.media-missing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    background: var(--accent-soft);
+    border: 1px dashed var(--border-strong);
+    color: var(--accent);
+    font-family: var(--font-system), sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.cert-thumb.media-missing img,
+.wc-qr.media-missing img {
+    display: none;
+}
+
+.cert-thumb.media-missing::after { content: "Certificate available upon request"; }
+.wc-qr.media-missing::after       { content: "Scan QR code on WeChat"; }
+
+/* Larger standalone portraits: just hide the broken image so the
+   surrounding content (caption / quote) stays intact. */
+.contact-image.media-missing img,
+.hero-image.media-missing img {
+    visibility: hidden;
+}
+
+/* ==========================================================
+   VIDEO PLACEHOLDER
+   Replaces the YouTube embed until a real clip is supplied.
+   ========================================================== */
+
+.video-placeholder {
+    background: var(--accent-soft);
+    border: 1px dashed var(--border-strong);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--accent);
+}
+
+.video-placeholder-inner {
+    padding: 2rem;
+}
+
+.video-placeholder-icon {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.video-placeholder-title {
+    font-family: var(--font-system), sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.video-placeholder-text {
+    font-family: var(--font-system), sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}

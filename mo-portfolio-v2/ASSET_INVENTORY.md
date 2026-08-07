@@ -1,0 +1,153 @@
+# Asset Inventory — Mohammed Shehzad Khan Portfolio
+
+**Purpose:** Track every asset intended for the portfolio. Complete this before adding any file to the website. Update the "Added to Website?" column after each sprint.
+
+**Naming Convention:** `YYYY-Category-Description.ext` — e.g. `2026-Profile-Headshot.webp`
+
+> Date-first naming makes files easier to sort, version, and locate. Use four-digit year, Title-Case category, hyphenated description.
+
+---
+
+## 📸 Images
+
+### Profile & Portrait
+
+| File (target name) | Category | Public? | Format | Optimized? | Added to Website? | Notes |
+|---|---|---|---|---|---|
+| `2026-Profile-Headshot.webp` | profile/ | Yes | WebP | ✅ | ✅ | Uploaded via chat, saved locally |
+
+### Classroom Photography
+
+| File (target name) | Category | Public? | Format | Optimized? | Added to Website? | Notes |
+|---|---|---|---|---|---|---|
+| `2025-Classroom-EAL-Lesson.webp` | classroom/ | Yes | WebP | ⬜ | ⬜ | Check for student identifiability |
+| `2025-Classroom-STEM-Activity.webp` | classroom/ | Yes | WebP | ⬜ | ⬜ | Check for student identifiability |
+| `2023-Classroom-Guided-Reading.webp` | classroom/ | Yes | WebP | ⬜ | ⬜ | Check for student identifiability |
+
+> ⚠️ **Safeguarding:** Any photo showing identifiable students requires documented parental consent before publishing.
+
+### Leadership & Professional Development
+
+| File (target name) | Category | Public? | Format | Optimized? | Added to Website? | Notes |
+|---|---|---|---|---|---|---|
+| `2023-Leadership-PD-Workshop-GEDU.webp` | leadership/ | Yes | WebP | ⬜ | ⬜ | Training session |
+| `2022-Leadership-QM-Session.webp` | leadership/ | Yes | WebP | ⬜ | ⬜ | Quality management |
+
+### Certificate Thumbnails (Preview Only)
+
+| File (target name) | Category | Public? | Format | Optimized? | Added to Website? | Notes |
+|---|---|---|---|---|---|---|
+| `2026-Certificate-PGCE-University-of-Cumbria.webp` | certificates/ | Yes | WebP | ⬜ | ⬜ | Thumbnail preview only |
+| `2026-Certificate-TESOL-Global-College.webp` | certificates/ | Yes | WebP | ⬜ | ⬜ | Thumbnail preview only |
+| `2026-Certificate-TEFL-Teacher-Record.webp` | certificates/ | Yes | WebP | ⬜ | ⬜ | Thumbnail preview only |
+| `2026-Certificate-British-Council-PD.webp` | certificates/ | Yes | WebP | ⬜ | ⬜ | Thumbnail preview only |
+
+### Social Media Preview
+
+| File (target name) | Category | Public? | Format | Optimized? | Added to Website? | Notes |
+|---|---|---|---|---|---|---|
+| `2026-Social-Preview-1200x630.webp` | social/ | Yes | WebP | ⬜ | ⬜ | Used in OG and Twitter Card meta tags |
+
+---
+
+## 📄 Documents
+
+### CV (Public Downloads)
+
+| File (target name) | Destination | Public? | Format | Recruiter-Ready? | Added to Website? | Notes |
+|---|---|---|---|---|---|---|
+| `2026-CV-Mohammed-Shehzad-Khan.pdf` | downloads/ | Yes | PDF | ⬜ | ⬜ | Link in hero button and nav |
+
+### Academic Certificates
+
+| File (target name) | Destination | Public? | Notes |
+|---|---|---|---|
+| `2026-PGCE-University-of-Cumbria.pdf` | documents/pgce/ | Yes (to downloads/) | Master's level, 75/100 |
+| `2007-BSc-Physics-University-of-Mumbai.pdf` | documents/degrees/ | Yes | University of Mumbai |
+| `2024-BEd-University-of-Kashmir.pdf` | documents/degrees/ | Yes | University of Kashmir |
+| `2009-MA-Harris-University.pdf` | documents/degrees/ | Yes | Harris University |
+| `2026-TESOL-Global-TESOL-College.pdf` | documents/tesol/ | Yes | 240 hrs, Global TESOL College |
+| `2026-TEFL-Teacher-Record.pdf` | documents/tefl/ | Yes | 120 hrs, Teacher Record |
+| `2026-Certificate-British-Council-PD.pdf` | documents/certificates/ | Yes | Primary Education & Language Teaching |
+
+### References & Employment
+
+| File (target name) | Destination | Public? | Notes |
+|---|---|---|---|
+| `2026-Reference-Aoxin-International-School.pdf` | documents/references/ | Upon request only | Get permission from referee |
+| `2023-Reference-GEDU.pdf` | documents/references/ | Upon request only | Get permission from referee |
+| `2024-Employment-Letter-Aoxin.pdf` | documents/employment/ | No | Internal use only |
+
+### Research & Publications
+
+| File (target name) | Destination | Public? | Notes |
+|---|---|---|---|
+| `2026-Research-Questioning-Strategies-PGCE.pdf` | documents/publications/ | Yes | PGCE practitioner research paper |
+| `2026-Teaching-Philosophy.pdf` | downloads/ | Yes | 1–2 page statement for recruiters |
+
+---
+
+## 🔒 Private (stored in `Mo Digital Portfolio/private/` — NEVER deploy)
+
+| File | Private Folder | Notes |
+|---|---|---|
+| Passport scan | Passport/ | Government ID — never publish |
+| Visa documents | Visa/ | Work permit records |
+| PCC documents | PCC/ | Police clearance certificates |
+| Employment contracts | Contracts/ | Contains third-party employer info |
+| Original certificate scans (high-res) | Original Certificates/ | Use thumbnails in portfolio instead |
+| Medical certificates | Medical/ | Sensitive — employer use only |
+
+---
+
+## 🎬 Videos
+
+| File (target name) | Destination | Public? | Format | Notes |
+|---|---|---|---|---|
+| `2025-Demo-Lesson-EAL-Grade5.mp4` | videos/ OR YouTube (unlisted) | Yes | MP4/YouTube | Target: 5–10 min EAL or STEM lesson |
+
+---
+
+## Status Key
+
+| Symbol | Meaning |
+|---|---|
+| ✅ | Complete |
+| ⬜ | Not yet done |
+| ⚠️ | Needs attention before publishing |
+| ❌ | Do not publish |
+
+---
+
+## Before Publishing Any Asset
+
+- [ ] Photo contains no identifiable students (or consent documented)
+- [ ] PDF contains no personal ID numbers, signatures, or sensitive data
+- [ ] File compressed and renamed to convention
+- [ ] File format is WebP (images) or PDF (documents)
+- [ ] Size within budget (images ≤300KB, PDFs ≤5MB)
+- [ ] HTML `href` or `src` updated to match final filename
+
+---
+
+## Reconciliation — Actual Code Paths (2026-07-17, Stage 4)
+
+The tables above use a `YYYY-Category-Description.webp` naming convention. The **live
+`index.html` currently references shorter, fixed paths**. To avoid broken-path churn while
+assets are still missing (graceful fallbacks cover the gap), the authoritative drop-in
+locations are the **code-referenced paths below** — supply files at these exact locations:
+
+| Asset | Drop-in path (code expects this) | Status |
+|---|---|---|
+| Hero portrait | `assets/images/profile/profile.jpeg` | ✅ Present |
+| Certificate thumbnails (4) | `assets/images/certificates/pgce-cert.jpg`, `tesol-cert.jpg`, `tefl-cert.jpg`, `british-council-cert.jpg` | ⬜ Missing (fallback shown) |
+| WeChat QR | `assets/images/wechat-qr.jpg` | ⬜ Missing (fallback shown) |
+| Contact portrait | `assets/images/contact-portrait.jpg` | ⬜ Missing (fallback shown) |
+| Classroom gallery | `assets/images/classroom/*.webp` (any count; grid built in Stage 5/6) | ⬜ Missing (section empty — §9 beat) |
+| CV PDF | `assets/documents/Mohammed_Shehzad_Khan_CV.pdf` | ⬜ Missing (Download CV 404s) |
+
+> When real assets arrive, prefer the optimised `.webp`/dated convention for the *files*, but
+> keep the **paths** the code expects (or update the `src`/`href` in `index.html` to match the
+> new names in the same commit). Do not rename only one side.
+> OG/Twitter social preview currently reuses `profile.jpeg` — no separate 1200×630 asset required.
+
