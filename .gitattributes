@@ -1,0 +1,5 @@
+# Enforce canonical LF line endings for governed policy files across all operating systems
+governance/*.yaml text eol=lf
+governance/*.json text eol=lf
+career-data/**/*.yml text eol=lf
+schemas/**/*.json text eol=lf
