@@ -1,7 +1,21 @@
 id: PERSON-1000
 name: Mohammed Shehzad Khan
-title: International Primary Educator & EAL Specialist
+title: International Primary Educator | Primary EAL & Multilingual Learning | Curriculum, Assessment & Teacher Development
 confidence: asserted
 review_status: approved
+availability: August 2027
+location: Zhengzhou, China
+contact_channels:
+  email:
+    value: mdshezkhn@gmail.com
+    source_type: user-approved-public-contact
+    status: VERIFIED_FOR_PUBLICATION
+  phone:
+    value: "+86-131 3771 9002"
+    source_type: user-approved-public-contact
+    status: VERIFIED_FOR_PUBLICATION
+  wechat:
+    public: true
+    purpose: recruiter_contact
 summary: >
-  Primary Educator & EAL Specialist with 11+ years in international settings (China, India). I specialize in rapidly improving academic English outcomes for multilingual cohorts by integrating explicit language instruction into inquiry-based science and mathematics. Proven track record in mentoring teaching teams to elevate instructional quality school-wide.
+  Primary Educator & EAL Specialist with 11+ years in international settings (China, India). I specialize in rapidly improving academic English outcomes for multilingual cohorts by integrating explicit language instruction into inquiry-based science and mathematics through cross-curricular STEM facilitation. Proven track record in mentoring teaching teams to elevate instructional quality school-wide.

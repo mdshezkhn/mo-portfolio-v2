@@ -55,7 +55,7 @@ Seed → Verified → Approved → Released → Archived
 | Fact | Evidence | Status |
 |------|----------|--------|
 | Name: Mohammed Shehzad Khan | Government ID / passport | ◐ Pending |
-| Email: mdshezkhn@hotmail.com | Self-provided | ✔ |
+| Email: mdshezkhn@gmail.com | Self-provided | ✔ |
 | Phone: +86-131 3771 9002 | Self-provided | ✔ |
 | LinkedIn: linkedin.com/in/mdshezkhn | Self-provided | ✔ |
 | Location: Zhengzhou, China | Self-provided | ✔ |
@@ -101,7 +101,7 @@ Seed → Verified → Approved → Released → Archived
 |------|----------|--------|
 | 200+ trainers mentored | GEDU employment letter / manager reference | ◐ Pending ⚠ (D-03) |
 | 1,000+ educators supported | WhiteHat Jr employment letter | ◐ Pending |
-| 10+ years in education | Employment history (sum) | ◐ Pending |
+| 11+ years in education | Employment history (sum) | ◐ Pending |
 | 15+ years professional experience | Employment history (sum, incl. pre-teaching) | ◐ Pending |
 | 2 countries | Employment history | ✔ |
 | 4 schools | Employment history | ◐ Pending ⚠ (D-06) |
@@ -145,7 +145,7 @@ IB PYP Category 1 · CSciTeach · PSTT · NALDIC · Subject Knowledge Refresh ·
 ## Open Discrepancies (portfolio-internal, found during seeding)
 | # | Item | Status |
 |---|------|--------|
-| D-01 | 10+ yrs education vs 15+ yrs professional — **clarify terminology** (different measures, not a contradiction) | ⚠ Clarify |
+| D-01 | 11+ yrs education vs 15+ yrs professional — **clarify terminology** (different measures, not a contradiction) | ⚠ Clarify |
 | D-02 | Headline: "International Primary Educator" vs "International Primary EAL educator" | ⚠ Reconcile in POSITIONING |
 | D-03 | "200+ trainers" attributed to GEDU in timeline but to WhiteHat Jr in story prose | ⚠ Verify attribution |
 | D-04 | M.A. (2007–09) predates B.Ed (2021–24) | ⚠ Confirm chronology |
