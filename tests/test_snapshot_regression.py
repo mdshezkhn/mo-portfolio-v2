@@ -9,7 +9,7 @@ FIXTURE_ROOT = Path(os.path.abspath("tests/fixtures/v1"))
 PROJECT_ROOT = Path(os.path.abspath("."))
 
 def normalize_json(data):
-    """Recursively remove dynamic metadata like build_id, generated_at, source_commit to allow deterministic comparison."""
+    """Recursively remove dynamic metadata like build_id, generated_at, source_commit and normalize path separators to allow deterministic comparison."""
     if isinstance(data, dict):
         normalized = {}
         for k, v in data.items():
@@ -22,6 +22,8 @@ def normalize_json(data):
         return normalized
     elif isinstance(data, list):
         return [normalize_json(i) for i in data]
+    elif isinstance(data, str):
+        return data.replace('\\', '/')
     return data
 
 def run_pipeline(fixture_name, output_dir):
@@ -74,7 +76,7 @@ def assert_snapshot_match(request, artifact_path, snapshot_filename, fixture_nam
         return
         
     with open(snapshot_path, 'r', encoding='utf-8') as f:
-        snapshot_data = json.load(f)
+        snapshot_data = normalize_json(json.load(f))
         
     assert normalized_current == snapshot_data, f"Snapshot mismatch for {snapshot_filename}. Run with --snapshot-update to overwrite."
 
