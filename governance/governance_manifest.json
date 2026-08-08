@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "policy_hashes": {
-    "privacy_policy.yaml": "1614b76d2945c5f7dca17651290fb2aa4863a26c172aa03e4e5ac544720c86b7",
-    "privacy_allowlist.yaml": "81cad6f37fe57ff97e916ee42f265ce38651ea32ec0e1fff7e6679285d64cb1f",
-    "security_baseline.json": "aea458bb077093eafb732bf3aab16680e2186a125acbd9d4215b07a745e307ba"
+    "privacy_policy.yaml": "859e9e5f19b0e9ef7e1f650e6536e2d57e2948392cc6e4d6ec61051ac0fce783",
+    "privacy_allowlist.yaml": "27f895b9a62ae03289b31a3a3065f9db51d2bb9f737c164042ef3cdb0894ee06",
+    "security_baseline.json": "934f66ef45317656b18860de3db58b3288d2d733a5b098c377d2bb89721f1e1f"
   }
 }
