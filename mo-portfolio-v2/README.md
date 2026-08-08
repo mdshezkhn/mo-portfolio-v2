@@ -1,6 +1,6 @@
 # Mohammed Shehzad Khan — Digital Portfolio
 
-Professional portfolio website for Mohammed Shehzad Khan, an international primary educator with 10+ years of experience across India and China.
+Professional portfolio website for Mohammed Shehzad Khan, an international primary educator with 11+ years of experience across India and China.
 
 **Live URL (GitHub Pages):** `https://mdshezkhn.github.io/mo-portfolio/`
 

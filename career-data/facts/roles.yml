@@ -20,6 +20,6 @@ roles:
   description: ''
   entity_type: role
 - id: ROLE-8005
-  title: ESL Educator
+  title: Training & Quality Lead
   description: ''
   entity_type: role
