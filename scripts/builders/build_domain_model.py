@@ -104,7 +104,7 @@ def build():
             
         out_filename = f"{policy_name}.json"
         out_filepath = ARTIFACTS_DIR / out_filename
-        with open(out_filepath, "w", encoding="utf-8") as f:
+        with open(out_filepath, "w", encoding="utf-8", newline='\n') as f:
             json.dump(view_model, f, indent=2)
             
     print("Done building view models.")
