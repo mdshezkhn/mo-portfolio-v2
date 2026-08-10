@@ -100,8 +100,10 @@ def main():
         lambda: append_to_file('career-data/relationships/edges.yml', '\n  - {from: EMP-2003, to: E-9999, type: SUPPORTED_BY}\n'))
         
     # 4. Altered assertion
-    suite.execute_test('Altered assertion date',
-        lambda: mutate_file('career-data/facts/evidence_assertions.yml', 'date: "2018-09-01"', 'date: "2018-09-02"'))
+    suite.execute_test('Altered assertion',
+        lambda: mutate_file('career-data/facts/evidence_assertions.yml', 
+            'document_sha256: f05c37c6418a7fad29c9caa49c46e177417345197e56d9519e40e668260d5baf', 
+            'document_sha256: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'))
         
     # 5. Unauthorized VM claim (Policy bypass)
     # The builder checks `if ch['claim_id'] in approved_claims:`
