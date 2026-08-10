@@ -3,7 +3,7 @@ evidence_assertions:
   source:
     document: EVIDENCE_LIBRARY/private/employment/E-3001.md
     location: Employment dates and employer identification
-    document_sha256: f05c37c6418a7fad29c9caa49c46e177417345197e56d9519e40e668260d5baf
+    document_sha256: 3f5b7016c2beaef401827d34a47a875f3e85f0b134d3e8f9a9c32ba7b797a43e
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
@@ -23,7 +23,7 @@ evidence_assertions:
   source:
     document: EVIDENCE_LIBRARY/private/employment/E-3002.md
     location: Employment dates and employer identification
-    document_sha256: e360df1c474b7b479fc47727dbacb3a166a0e41154eb8caac031d1d106aeb460
+    document_sha256: 6172bd9767147a9f6b9c4a64afce5d8fe99d6070e3435ba334dbfe8be34fc897
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
@@ -43,7 +43,7 @@ evidence_assertions:
   source:
     document: EVIDENCE_LIBRARY/private/employment/E-3003.md
     location: Employment dates and employer identification
-    document_sha256: 49d44fdd5075a4979873734fb5f6ca4c87a38835caff2bfd3e9d6e89cc72ceba
+    document_sha256: 3b7035c654608d688c991dd572c049d406455085975fa96eaba3dea0ff2bb6fd
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
@@ -62,7 +62,7 @@ evidence_assertions:
   source:
     document: EVIDENCE_LIBRARY/private/employment/E-3004.md
     location: Employment dates and employer identification
-    document_sha256: cfb8342f237951197780ed6263ae7bbee033eee532b642c34ce87cab588b3e2b
+    document_sha256: abf08d4e81b17f6364af4d0f63e490dd30322d2df8b669cffc39fd8508a5cfb2
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
@@ -82,7 +82,7 @@ evidence_assertions:
   source:
     document: EVIDENCE_LIBRARY/private/employment/E-3005.md
     location: Employment dates and employer identification
-    document_sha256: 024ed35651fc2cabba262a08a46b212b1e2d8436bc35f66dbbd22db666b8a032
+    document_sha256: f2431ca5861e39056a73bd5b8fada89ab136293b475c2d305c2c22e93997cb1b
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
