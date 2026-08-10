@@ -3,9 +3,9 @@
     "artifact": "CV_Master.html"
   },
   "git": {
-    "source_commit": "c93782ed46035036eae6ed3d7ee2c923897a3e0d",
+    "source_commit": "8939ff4105ddbfd83f83045546a9cf1d49efb00f",
     "metadata_commit": "pending_commit",
-    "worktree_clean": false
+    "worktree_clean": true
   },
   "source_manifest": {
     "canonical_data": [
@@ -72,6 +72,6 @@
   "environment": {
     "viewport": "1920x1080",
     "browser": "Chromium",
-    "created_at": "2026-08-10T15:41:44.964750+00:00"
+    "created_at": "2026-08-10T15:42:01.092194+00:00"
   }
 }
