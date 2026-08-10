@@ -80,6 +80,10 @@ def render_html(cv_vm):
     final_html = final_html.replace("{EXPERIENCE}", exp_html)
     final_html = final_html.replace("{EDUCATION}", edu_html)
     
+    # Resolve remaining placeholders that don't have dynamic content yet
+    final_html = final_html.replace("{CONTACT_PRESENTATION}", "")
+    final_html = final_html.replace("{LANGUAGES}", "")
+    
     return final_html
 
 if __name__ == "__main__":
