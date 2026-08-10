@@ -3,7 +3,7 @@
     "artifact": "CV_Master.html"
   },
   "git": {
-    "source_commit": "cb570c27451975ca21d2ffb4d14489ad992838c4",
+    "source_commit": "e900f1812c3812508acd7f4ab6e1f4a9fad7436a",
     "metadata_commit": "pending_commit",
     "worktree_clean": true
   },
@@ -27,7 +27,7 @@
     "provenance_engine": [
       {
         "path": "career-data/relationships/edges.yml",
-        "sha256": "89b4ef7dcc5e71aa6e4189088fc34563d0cd9dbefa1b2f7999268cd27622cd71"
+        "sha256": "a637166c1cc1a602731168f2966c0048154a81473afbcfe2881da0ccec0129db"
       },
       {
         "path": "career-data/facts/evidence_assertions.yml",
@@ -72,6 +72,6 @@
   "environment": {
     "viewport": "1920x1080",
     "browser": "Chromium",
-    "created_at": "2026-08-10T12:09:28.563009+00:00"
+    "created_at": "2026-08-10T12:10:48.775920+00:00"
   }
 }
