@@ -2,33 +2,63 @@
   "title": "Master",
   "experience": [
     {
-      "company": "ORG-1002",
+      "id": "EMP-2005",
+      "company": "GEDU Global Education",
+      "role": "Training & Quality Lead",
       "date": "2022-09 - 2023-08",
       "bullets": [
         "Led quality assurance initiatives across distributed teaching teams, ensuring consistent curriculum delivery."
       ]
     },
     {
-      "company": "ORG-1003",
+      "id": "EMP-2004",
+      "company": "WhiteHat Jr",
+      "role": "Early Years EAL Teacher",
       "date": "2020-08 - 2022-07",
       "bullets": [
         "Coached and mentored 100+ educators to improve instructional quality and engagement metrics."
       ]
     },
     {
-      "company": "ORG-1001",
+      "id": "EMP-2003",
+      "company": "Aoxin International School",
+      "role": "Educator Development Lead",
       "date": "2018-07 - 2020-08",
       "bullets": []
     },
     {
-      "company": "ORG-1004",
+      "id": "EMP-2002",
+      "company": "Eton House Kindergarten",
+      "role": "Teacher Trainer & Quality Assurance",
       "date": "2017-08 - 2018-06",
       "bullets": []
     },
     {
-      "company": "ORG-1000",
+      "id": "EMP-2000",
+      "company": "Scholars Academy",
+      "role": "Primary Educator",
       "date": "2014-01 - 2016-11",
       "bullets": []
+    }
+  ],
+  "qualifications": [
+    {
+      "id": "QUAL-3000",
+      "degree": "Bachelor of Science, Physics (B.Sc.)",
+      "institution": "University of Mumbai",
+      "date": "2004 - 2007"
+    },
+    {
+      "id": "QUAL-3002",
+      "degree": "Postgraduate Certificate in Education (PGCE, non-QTS)",
+      "institution": "University of Cumbria",
+      "date": "2025-09 - 2026-07"
+    },
+    {
+      "id": "QUAL-3003",
+      "degree": "Bachelor of Education (B.Ed.)",
+      "institution": "University of Kashmir",
+      "date": "2021-10 - 2024-03"
     }
   ]
 }

@@ -85,6 +85,32 @@ def resolve_verification_state():
             
         resolved[claim_id] = {'status': 'VERIFIED', 'reason': 'Valid lineage'}
         
+    # 3. Resolve QUALIFICATIONS
+    # A qualification is VERIFIED iff its evidence edge exists, the evidence exists, 
+    # the assertion explicitly supports that qualification (by ID), and the assertion validates.
+    all_quals = {e['id']: e for e in load_yaml(CAREER_DATA / "facts" / "education.yml").get("education_records", [])}
+    for qual_id in all_quals.keys():
+        ev_edges = [e for e in edges_data if e['from'] == qual_id and e['type'] == 'SUPPORTED_BY' and e['to'].startswith('E-')]
+        if not ev_edges:
+            resolved[qual_id] = {'status': 'UNVERIFIED', 'reason': 'Missing evidence edge'}
+            continue
+            
+        ev_id = ev_edges[0]['to']
+        if ev_id not in all_ev:
+            resolved[qual_id] = {'status': 'UNVERIFIED', 'reason': f'Evidence {ev_id} does not exist'}
+            continue
+            
+        assertions = all_ev[ev_id].get('assertions', {})
+        if assertions.get('qualification_id') != qual_id:
+            resolved[qual_id] = {'status': 'UNVERIFIED', 'reason': f'Evidence {ev_id} asserts support for {assertions.get("qualification_id", "nothing")}, not {qual_id}'}
+            continue
+            
+        if all_ev[ev_id].get('verification', {}).get('status') != 'verified':
+            resolved[qual_id] = {'status': 'UNVERIFIED', 'reason': f'Evidence {ev_id} is not verified'}
+            continue
+
+        resolved[qual_id] = {'status': 'VERIFIED', 'reason': 'Valid lineage and assertion match'}
+        
     return resolved
 
 if __name__ == "__main__":

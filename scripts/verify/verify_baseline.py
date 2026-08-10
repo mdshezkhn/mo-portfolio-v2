@@ -110,14 +110,22 @@ def verify():
     arts = metadata.get('artifact_hashes', {})
     new_vm_hash = hash_file('artifacts/cv_view_models/master.json')
     new_html_hash = hash_file('compiled_assets/CV_Master.html')
+    new_portfolio_vm_hash = hash_file('artifacts/cv_view_models/portfolio.json')
+    new_portfolio_html_hash = hash_file('mo-portfolio-v2/index.html')
     
     vm_match = (new_vm_hash == arts.get('master_json'))
     html_match = (new_html_hash == arts.get('cv_master_html'))
+    portfolio_vm_match = (new_portfolio_vm_hash == arts.get('portfolio_json'))
+    portfolio_html_match = (new_portfolio_html_hash == arts.get('portfolio_html'))
     
     if not vm_match:
          errors.append(f"Rebuilt View Model mismatch: expected {arts.get('master_json')}, got {new_vm_hash}")
     if not html_match:
          errors.append(f"Rebuilt HTML mismatch: expected {arts.get('cv_master_html')}, got {new_html_hash}")
+    if not portfolio_vm_match:
+         errors.append(f"Rebuilt Portfolio VM mismatch: expected {arts.get('portfolio_json')}, got {new_portfolio_vm_hash}")
+    if not portfolio_html_match:
+         errors.append(f"Rebuilt Portfolio HTML mismatch: expected {arts.get('portfolio_html')}, got {new_portfolio_html_hash}")
 
     # Compute provenance metrics using the real engine logic
     print("Computing provenance metrics...")
@@ -201,7 +209,7 @@ def verify():
         'release_gate': 'PASS' if (is_clean and len(errors)==0 and orphan_edges==0 and contradictory_edges==0 
                                    and unverified_employments_published==0 and unverified_claims_published==0
                                    and historical_highlights_published==0 and unresolved_published_claims==0
-                                   and vm_match and html_match) else 'FAIL',
+                                   and vm_match and html_match and portfolio_vm_match and portfolio_html_match) else 'FAIL',
         'git': {
             'source_commit': source_commit,
             'metadata_commit': commit_sha,
@@ -222,7 +230,9 @@ def verify():
             'evidence_hash_mismatches': ev_mismatches,
             'view_model_hash_match': vm_match,
             'html_hash_match': html_match,
-            'clean_rebuild_byte_identical': vm_match and html_match
+            'portfolio_view_model_hash_match': portfolio_vm_match,
+            'portfolio_html_hash_match': portfolio_html_match,
+            'clean_rebuild_byte_identical': vm_match and html_match and portfolio_vm_match and portfolio_html_match
         }
     }
 
@@ -234,6 +244,8 @@ def verify():
     shutil.copy(meta_path, out_dir / 'baseline_metadata.json')
     shutil.copy(vm_out_path, out_dir / 'master.json')
     shutil.copy(html_out_path, out_dir / 'CV_Master.html')
+    shutil.copy(BASE_DIR / 'artifacts/cv_view_models/portfolio.json', out_dir / 'portfolio.json')
+    shutil.copy(BASE_DIR / 'mo-portfolio-v2/index.html', out_dir / 'index.html')
     
     # write verification report WITHOUT the manifest hash first
     with open(out_dir / 'verification_report.json', 'w', encoding='utf-8') as f:
@@ -241,7 +253,7 @@ def verify():
         
     # generate manifest of the package
     package_manifest = {}
-    for pkg_file in ['baseline_metadata.json', 'master.json', 'CV_Master.html', 'verification_report.json']:
+    for pkg_file in ['baseline_metadata.json', 'master.json', 'CV_Master.html', 'portfolio.json', 'index.html', 'verification_report.json']:
         package_manifest[pkg_file] = hash_file(f'artifacts/baselines/final_audit_package/{pkg_file}')
         
     with open(out_dir / 'manifest.json', 'w', encoding='utf-8') as f:

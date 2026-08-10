@@ -17,6 +17,16 @@ policies:
     sorting: "CHRONOLOGICAL_DESCENDING"
     group_by: "ORGANIZATION"
     
+  portfolio:
+    description: "The Public Portfolio marketing presentation scope."
+    presentation_scope:
+      employers: "ALL_VERIFIED"
+      education: "ALL_VERIFIED"
+      claims: "ALL_VERIFIED"
+    sorting: "CHRONOLOGICAL_DESCENDING"
+    group_by: "ORGANIZATION"
+    
+
   eal:
     active: false
     status: "DEFERRED"

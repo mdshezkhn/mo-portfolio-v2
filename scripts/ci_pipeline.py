@@ -28,6 +28,8 @@ STAGES = [
     {"name": "Phase 3C2: Render MD CV", "cmd": [PYTHON, "scripts/renderers/render_md_cv.py"], "max_ms": 1500},
     {"name": "Phase 3C2: Markdown Reference Regression", "cmd": [PYTHON, "-m", "pytest", "tests/reference/test_markdown_regression.py", "-q"], "max_ms": 3000},
     {"name": "Cross-Artifact Verification", "cmd": [PYTHON, "scripts/verify_cross_artifact.py"], "max_ms": 500},
+    {"name": "Phase 3D: Build Portfolio HTML", "cmd": [PYTHON, "scripts/builders/build_portfolio_html.py"], "max_ms": 1500},
+    {"name": "Phase 3D: Audit DOM Boundary", "cmd": [PYTHON, "scripts/verify/audit_dom_boundary.py"], "max_ms": 1500},
     {"name": "Compiler Report", "cmd": [PYTHON, "scripts/build_compiler_report.py"], "max_ms": 500},
     {"name": "RC-7 Privacy Gate", "cmd": [PYTHON, "scripts/verify/privacy_gate.py"], "max_ms": 1500},
     {"name": "RC-8 Security Gate", "cmd": [PYTHON, "scripts/verify/security_gate.py"], "max_ms": 1500},

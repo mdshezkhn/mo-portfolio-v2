@@ -316,3 +316,45 @@ entities:
     slug: comp_002
     state: PUBLISHED
     type: competencie
+
+  COMP-003:
+    slug: comp_003
+    state: PUBLISHED
+    type: competency
+  COMP-004:
+    slug: comp_004
+    state: PUBLISHED
+    type: competency
+  QUAL-6004:
+    slug: qual_6004
+    state: PUBLISHED
+    type: education
+  QUAL-6005:
+    slug: qual_6005
+    state: PUBLISHED
+    type: education
+  QUAL-6006:
+    slug: qual_6006
+    state: PUBLISHED
+    type: education
+  ORG-1007:
+    slug: org_1007
+    state: PUBLISHED
+    type: organisation
+  ORG-1008:
+    slug: org_1008
+    state: PUBLISHED
+    type: organisation
+  ORG-1009:
+    slug: org_1009
+    state: PUBLISHED
+    type: organisation
+  LANG-0:
+    slug: lang_0
+    state: PUBLISHED
+    type: language
+  LANG-1:
+    slug: lang_1
+    state: PUBLISHED
+    type: language
+
