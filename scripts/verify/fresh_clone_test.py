@@ -23,10 +23,9 @@ def main():
     
     # 1. Clone the repository
     if CLONE_DIR.exists():
-        shutil.rmtree(CLONE_DIR)
+        run_cmd(['powershell', '-c', f'Remove-Item -Recurse -Force "{CLONE_DIR}"'])
         
-    print(f"Cloning to {CLONE_DIR}...")
-    run_cmd(['git', 'clone', str(BASE_DIR), str(CLONE_DIR)])
+    run_cmd(['git', 'clone', '-c', 'core.autocrlf=false', str(BASE_DIR), str(CLONE_DIR)])
     
     # 2. Resolve the exact metadata_commit
     print("Checking out metadata_commit...")
@@ -79,7 +78,7 @@ def main():
     
     # Cleanup
     print("Cleaning up clone...")
-    shutil.rmtree(CLONE_DIR, ignore_errors=True)
+    run_cmd(['powershell', '-c', f'Remove-Item -Recurse -Force "{CLONE_DIR}"'])
     
     print("✅ FRESH CLONE VERIFICATION PASSED.")
 
