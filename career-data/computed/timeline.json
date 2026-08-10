@@ -1,0 +1,92 @@
+{
+  "events": [
+    {
+      "type": "education",
+      "id": "EDU-001",
+      "degree": "Postgraduate Certificate in Education (PGCE, non-QTS)",
+      "institution_id": "INST-001",
+      "start_date": "2025-09",
+      "end_date": "2026-07"
+    },
+    {
+      "type": "education",
+      "id": "EDU-002",
+      "degree": "Bachelor of Education (B.Ed.)",
+      "institution_id": "INST-002",
+      "start_date": "UNKNOWN",
+      "end_date": null
+    },
+    {
+      "type": "education",
+      "id": "EDU-003",
+      "degree": "Master of Arts, English Language and Literature (M.A.)",
+      "institution_id": "INST-003",
+      "start_date": "2007",
+      "end_date": "2009"
+    },
+    {
+      "type": "education",
+      "id": "EDU-004",
+      "degree": "Bachelor of Science, Physics (B.Sc.)",
+      "institution_id": "INST-004",
+      "start_date": "2004",
+      "end_date": "2007"
+    },
+    {
+      "type": "employment",
+      "id": "EMP-001",
+      "employer_id": "ORG-001",
+      "role_id": "ROLE-001",
+      "start_date": "2014-01",
+      "end_date": "2016-11"
+    },
+    {
+      "type": "employment",
+      "id": "EMP-002",
+      "employer_id": "ORG-002",
+      "role_id": "ROLE-002",
+      "start_date": "2024-02",
+      "end_date": "present"
+    },
+    {
+      "type": "employment",
+      "id": "EMP-003",
+      "employer_id": "ORG-002",
+      "role_id": "ROLE-002",
+      "start_date": "2018-07",
+      "end_date": "2020-08"
+    },
+    {
+      "type": "employment",
+      "id": "EMP-004",
+      "employer_id": "ORG-003",
+      "role_id": "ROLE-003",
+      "start_date": "2022-09",
+      "end_date": "2023-08"
+    },
+    {
+      "type": "employment",
+      "id": "EMP-005",
+      "employer_id": "ORG-004",
+      "role_id": "ROLE-004",
+      "start_date": "2020-08",
+      "end_date": "2022-07"
+    },
+    {
+      "type": "employment",
+      "id": "EMP-006",
+      "employer_id": "ORG-005",
+      "role_id": "ROLE-005",
+      "start_date": "2017-08",
+      "end_date": "2018-06"
+    },
+    {
+      "type": "employment",
+      "id": "EMP-007",
+      "employer_id": "ORG-006",
+      "role_id": "ROLE-006",
+      "start_date": "2016-11",
+      "end_date": "2017-08"
+    }
+  ]
+}

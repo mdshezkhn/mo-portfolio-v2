@@ -1,0 +1,1806 @@
+{
+  "metadata": {
+    "artifact_version": "1.0.0",
+    "graph_version": "1.0.0",
+    "resolver_version": "1.0.0",
+    "schema_version": "1.0.0",
+    "build_id": "0492aa92-f078-4279-8014-4bbe8932faec",
+    "generated_at": "2026-08-08T19:20:37.263393Z",
+    "source_commit": "aa843036261808a53f912dfccdc6f02e96369836"
+  },
+  "entities": {
+    "C-001": {
+      "id": "C-001",
+      "status": "active",
+      "type": "experience",
+      "canonical": "Dynamic experience calculated from career_start date (2014-01)",
+      "computable_metric_id": "MET-005",
+      "evidence": [
+        "E-3001",
+        "E-3002",
+        "E-3003",
+        "E-3004",
+        "E-3005"
+      ],
+      "allowed_variants": [
+        "11+ years of international teaching experience",
+        "11+ years of experience"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-002": {
+      "id": "C-002",
+      "status": "active",
+      "type": "geography",
+      "canonical": "International experience across India and China",
+      "computable_metric_id": "MET-003",
+      "evidence": [
+        "E-3001",
+        "E-3003",
+        "E-3004",
+        "E-3005"
+      ],
+      "allowed_variants": [
+        "International experience across India and China"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-003": {
+      "id": "C-003",
+      "status": "verified",
+      "version": "1.0",
+      "risk": "medium",
+      "owner": "canonical",
+      "type": "general",
+      "subject": "general",
+      "modifier": "general",
+      "evidence": [
+        "E-2002"
+      ],
+      "allowed_variants": [
+        "B.Ed. (Bachelor of Education)"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "title": "B.Ed. (Bachelor of Education)",
+      "schemaVersion": "1.0",
+      "verification_date": "2026-08-02",
+      "_source_file": "career-data\\facts\\claims.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-004": {
+      "id": "C-004",
+      "status": "verified",
+      "version": "1.0",
+      "risk": "medium",
+      "owner": "canonical",
+      "type": "general",
+      "subject": "general",
+      "modifier": "general",
+      "evidence": [
+        "E-2001"
+      ],
+      "allowed_variants": [
+        "PGCE (University of Cumbria)"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "title": "PGCE (University of Cumbria)",
+      "schemaVersion": "1.0",
+      "verification_date": "2026-08-02",
+      "_source_file": "career-data\\facts\\claims.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-005": {
+      "id": "C-005",
+      "status": "verified",
+      "version": "1.0",
+      "risk": "medium",
+      "owner": "canonical",
+      "type": "general",
+      "subject": "general",
+      "modifier": "general",
+      "evidence": [
+        "E-2004"
+      ],
+      "allowed_variants": [
+        "TESOL Certified"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "title": "TESOL Certified",
+      "schemaVersion": "1.0",
+      "verification_date": "2026-08-02",
+      "_source_file": "career-data\\facts\\claims.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-006": {
+      "id": "C-006",
+      "status": "verified",
+      "version": "1.0",
+      "risk": "medium",
+      "owner": "canonical",
+      "type": "general",
+      "subject": "general",
+      "modifier": "general",
+      "evidence": [
+        "E-2005"
+      ],
+      "allowed_variants": [
+        "TEFL Certified"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "title": "TEFL Certified",
+      "schemaVersion": "1.0",
+      "verification_date": "2026-08-02",
+      "_source_file": "career-data\\facts\\claims.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-007": {
+      "id": "C-007",
+      "status": "active",
+      "type": "research",
+      "canonical": "PGCE action research (University of Cumbria, Sep 2025 \u2013 Jul 2026)",
+      "evidence": [
+        "E-0013",
+        "E-2001"
+      ],
+      "allowed_variants": [
+        "PGCE action research (University of Cumbria, Sep 2025 \u2013 Jul 2026)"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-008": {
+      "id": "C-008",
+      "status": "verified",
+      "version": "1.0",
+      "risk": "medium",
+      "owner": "canonical",
+      "type": "general",
+      "subject": "general",
+      "modifier": "general",
+      "evidence": [
+        "E-2006"
+      ],
+      "allowed_variants": [
+        "B.Sc. Physics"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "title": "B.Sc. Physics",
+      "schemaVersion": "1.0",
+      "verification_date": "2026-08-02",
+      "_source_file": "career-data\\facts\\claims.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-009": {
+      "id": "C-009",
+      "status": "active",
+      "type": "experience",
+      "canonical": "International EAL teaching experience",
+      "evidence": [
+        "E-3004",
+        "E-3005"
+      ],
+      "allowed_variants": [
+        "International EAL teaching experience"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-010": {
+      "id": "C-010",
+      "status": "active",
+      "type": "leadership",
+      "canonical": "Teacher development and mentoring experience",
+      "evidence": [
+        "E-3002",
+        "E-3004",
+        "E-3005"
+      ],
+      "allowed_variants": [
+        "Teacher development and mentoring experience",
+        "mentoring",
+        "teacher mentoring"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-011": {
+      "id": "C-011",
+      "status": "active",
+      "type": "curriculum",
+      "canonical": "Curriculum implementation across primary settings",
+      "evidence": [
+        "E-3004",
+        "E-3005"
+      ],
+      "allowed_variants": [
+        "Curriculum implementation across primary settings"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-012": {
+      "id": "C-012",
+      "status": "active",
+      "type": "curriculum",
+      "canonical": "Curriculum development experience",
+      "evidence": [
+        "E-0016"
+      ],
+      "allowed_variants": [
+        "Curriculum development experience"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-013": {
+      "id": "C-013",
+      "status": "active",
+      "type": "assessment",
+      "canonical": "Assessment moderation (Grade 5 writing, Aoxin International School)",
+      "evidence": [
+        "E-3005"
+      ],
+      "allowed_variants": [
+        "Assessment moderation (Grade 5 writing, Aoxin International School)"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-014": {
+      "id": "C-014",
+      "status": "active",
+      "type": "quality",
+      "canonical": "Instructional quality and educator development (WhiteHat Jr / BYJU'S)",
+      "evidence": [
+        "E-3002"
+      ],
+      "allowed_variants": [
+        "Instructional quality and educator development (WhiteHat Jr / BYJU'S)",
+        "instructional quality",
+        "educator development"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-015": {
+      "id": "C-015",
+      "status": "restricted",
+      "type": "scale",
+      "canonical": "Led instructional quality for a team of 200+ educators",
+      "evidence": [
+        "E-0014",
+        "E-0005"
+      ],
+      "restriction_reason": "Awaiting manager confirmation (E-0014)",
+      "allowed_variants": [
+        "Led instructional quality for a team of 200+ educators"
+      ],
+      "presentation_assets": [],
+      "_source_file": "career-data\\facts\\claims\\restricted.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-016": {
+      "id": "C-016",
+      "status": "restricted",
+      "type": "scale",
+      "canonical": "Led instructional quality for a team of 1,000+ educators",
+      "evidence": [
+        "E-0014",
+        "E-0005"
+      ],
+      "restriction_reason": "Conflicts with C-015; awaiting manager resolution",
+      "allowed_variants": [
+        "Led instructional quality for a team of 1",
+        "000+ educators"
+      ],
+      "presentation_assets": [],
+      "_source_file": "career-data\\facts\\claims\\restricted.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-017": {
+      "id": "C-017",
+      "status": "active",
+      "type": "quality",
+      "canonical": "Training and quality assurance across international markets (GEDU Global Education)",
+      "computable_metric_id": "MET-004",
+      "evidence": [
+        "E-3001"
+      ],
+      "allowed_variants": [
+        "Training and quality assurance across international markets (GEDU Global Education)"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-018": {
+      "id": "C-018",
+      "status": "restricted",
+      "type": "scale",
+      "canonical": "Managed a team of 15+ trainers",
+      "evidence": [
+        "E-3001",
+        "E-0015"
+      ],
+      "restriction_reason": "Internal use only until manager letter confirmed",
+      "allowed_variants": [
+        "Managed a team of 15+ trainers"
+      ],
+      "presentation_assets": [],
+      "_source_file": "career-data\\facts\\claims\\restricted.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-019": {
+      "id": "C-019",
+      "status": "active",
+      "type": "experience",
+      "canonical": "Early-years EAL teaching and teacher modelling (Eton House Kindergarten)",
+      "evidence": [
+        "E-3004"
+      ],
+      "allowed_variants": [
+        "Early-years EAL teaching and teacher modelling (Eton House Kindergarten)"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-020": {
+      "id": "C-020",
+      "status": "active",
+      "type": "language",
+      "canonical": "English \u2014 Fluent (professional working language)",
+      "evidence": [],
+      "allowed_variants": [
+        "English \u2014 Fluent (professional working language)"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-021": {
+      "id": "C-021",
+      "status": "active",
+      "type": "language",
+      "canonical": "Hindi \u2014 Native",
+      "evidence": [],
+      "allowed_variants": [
+        "Hindi \u2014 Native"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-022": {
+      "id": "C-022",
+      "status": "active",
+      "type": "language",
+      "canonical": "Urdu \u2014 Working proficiency",
+      "evidence": [],
+      "allowed_variants": [
+        "Urdu \u2014 Working proficiency"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-023": {
+      "id": "C-023",
+      "status": "active",
+      "type": "availability",
+      "canonical": "Available from August 2027",
+      "evidence": [
+        "E-0017"
+      ],
+      "allowed_variants": [
+        "Available from August 2027"
+      ],
+      "presentation_assets": [
+        "CV_Master.md"
+      ],
+      "_source_file": "career-data\\facts\\claims\\public.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-024": {
+      "id": "C-024",
+      "status": "restricted",
+      "type": "experience",
+      "canonical": "English, Science and Mathematics Teacher \u2014 Scholars Academy, India (Jan 2014 \u2013 Nov 2016)",
+      "evidence": [
+        "E-3003"
+      ],
+      "restriction_reason": "Internal use only until physical employment letter filed",
+      "allowed_variants": [
+        "English",
+        "Science and Mathematics Teacher \u2014 Scholars Academy",
+        "India (Jan 2014 \u2013 Nov 2016)"
+      ],
+      "presentation_assets": [],
+      "_source_file": "career-data\\facts\\claims\\restricted.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-025": {
+      "id": "C-025",
+      "status": "verified",
+      "version": "1.0",
+      "risk": "medium",
+      "owner": "canonical",
+      "type": "general",
+      "subject": "general",
+      "modifier": "general",
+      "evidence": [
+        "E-2003"
+      ],
+      "allowed_variants": [
+        "M.A. English"
+      ],
+      "presentation_assets": [
+        "CV_Master.md",
+        "LinkedIn_Ready_To_Paste.md",
+        "Portfolio_Copy.md"
+      ],
+      "title": "M.A. English",
+      "schemaVersion": "1.0",
+      "verification_date": "2026-08-02",
+      "_source_file": "career-data\\facts\\claims.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "COMP-001": {
+      "id": "COMP-001",
+      "category": "Instructional Leadership",
+      "skills": [
+        "Teacher mentoring",
+        "Instructional quality assurance",
+        "Grade 5 writing moderation"
+      ],
+      "_source_file": "career-data\\facts\\competencies.yml",
+      "entity_type": "competencie"
+    },
+    "COMP-002": {
+      "id": "COMP-002",
+      "category": "Pedagogy",
+      "skills": [
+        "Academic language acquisition & Phonics",
+        "Early-years immersion",
+        "Inquiry-based learning & Cross-curricular STEM",
+        "Cross-cultural training"
+      ],
+      "_source_file": "career-data\\facts\\competencies.yml",
+      "entity_type": "competencie"
+    },
+    "QUAL-3000": {
+      "id": "QUAL-3000",
+      "entity_type": "qualification",
+      "institution_id": "INST-9003",
+      "degree": "Bachelor of Science, Physics (B.Sc.)",
+      "dates": {
+        "start": "2004",
+        "end": "2007"
+      },
+      "confidence": "V3",
+      "review_status": "approved",
+      "publication": {
+        "public_cv": true,
+        "linkedin": true,
+        "recruiter_pack": "included",
+        "premium_schools": true,
+        "verified_only_gate": false
+      },
+      "_source_file": "career-data\\facts\\education.yml"
+    },
+    "QUAL-3001": {
+      "id": "QUAL-3001",
+      "entity_type": "qualification",
+      "institution_id": "INST-9002",
+      "degree": "Master of Arts, English Language and Literature (M.A.)",
+      "dates": {
+        "start": "2007",
+        "end": "2009"
+      },
+      "confidence": "V1",
+      "review_status": "pending",
+      "publication": {
+        "public_cv": true,
+        "linkedin": true,
+        "recruiter_pack": "optional",
+        "premium_schools": false,
+        "verified_only_gate": true
+      },
+      "institution_recognition_status": "requires_external_verification",
+      "_source_file": "career-data\\facts\\education.yml"
+    },
+    "QUAL-3002": {
+      "id": "QUAL-3002",
+      "entity_type": "qualification",
+      "institution_id": "INST-9000",
+      "degree": "Postgraduate Certificate in Education (PGCE, non-QTS)",
+      "dates": {
+        "start": "2025-09",
+        "end": "2026-07"
+      },
+      "confidence": "V5",
+      "review_status": "approved",
+      "publication": {
+        "public_cv": true,
+        "linkedin": true,
+        "recruiter_pack": "included",
+        "premium_schools": true,
+        "verified_only_gate": false
+      },
+      "_source_file": "career-data\\facts\\education.yml"
+    },
+    "QUAL-3003": {
+      "id": "QUAL-3003",
+      "entity_type": "qualification",
+      "institution_id": "INST-9001",
+      "degree": "Bachelor of Education (B.Ed.)",
+      "dates": {
+        "start": "2021-10",
+        "end": "2024-03"
+      },
+      "confidence": "V4",
+      "review_status": "approved",
+      "publication": {
+        "public_cv": true,
+        "linkedin": true,
+        "recruiter_pack": "included",
+        "premium_schools": true,
+        "verified_only_gate": false
+      },
+      "_source_file": "career-data\\facts\\education.yml"
+    },
+    "EMP-2000": {
+      "id": "EMP-2000",
+      "entity_type": "employment",
+      "employer_id": "ORG-1000",
+      "role_id": "ROLE-8000",
+      "dates": {
+        "start": "2014-01",
+        "end": "2016-11"
+      },
+      "physical_country": "India",
+      "employment_country": "India",
+      "operational_regions": [],
+      "confidence": "V5",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-2001": {
+      "id": "EMP-2001",
+      "entity_type": "employment",
+      "employer_id": "ORG-1006",
+      "role_id": "ROLE-8001",
+      "dates": {
+        "start": "2016-11",
+        "end": "2017-08"
+      },
+      "physical_country": "China",
+      "employment_country": "China",
+      "operational_regions": [],
+      "confidence": "V5",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-2002": {
+      "id": "EMP-2002",
+      "entity_type": "employment",
+      "employer_id": "ORG-1004",
+      "role_id": "ROLE-8002",
+      "dates": {
+        "start": "2017-08",
+        "end": "2018-06"
+      },
+      "physical_country": "China",
+      "employment_country": "China",
+      "operational_regions": [],
+      "confidence": "V5",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-2003": {
+      "id": "EMP-2003",
+      "entity_type": "employment",
+      "employer_id": "ORG-1001",
+      "role_id": "ROLE-8003",
+      "dates": {
+        "start": "2018-07",
+        "end": "2020-08"
+      },
+      "physical_country": "China",
+      "employment_country": "China",
+      "operational_regions": [],
+      "confidence": "V3",
+      "review_status": "pending",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-2004": {
+      "id": "EMP-2004",
+      "entity_type": "employment",
+      "employer_id": "ORG-1003",
+      "role_id": "ROLE-8004",
+      "dates": {
+        "start": "2020-08",
+        "end": "2022-07"
+      },
+      "physical_country": "India",
+      "employment_country": "India",
+      "operational_regions": [
+        "Global"
+      ],
+      "confidence": "V5",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-2005": {
+      "id": "EMP-2005",
+      "entity_type": "employment",
+      "employer_id": "ORG-1002",
+      "role_id": "ROLE-8005",
+      "dates": {
+        "start": "2022-09",
+        "end": "2023-08"
+      },
+      "physical_country": "UK",
+      "employment_country": "UK",
+      "operational_regions": [
+        "UK",
+        "Dubai",
+        "Malta"
+      ],
+      "confidence": "V5",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "EMP-2006": {
+      "id": "EMP-2006",
+      "entity_type": "employment",
+      "employer_id": "ORG-1001",
+      "role_id": "ROLE-8003",
+      "dates": {
+        "start": "2024-02",
+        "end": "2026-07"
+      },
+      "contract_end": "2026-07-31",
+      "physical_country": "China",
+      "employment_country": "China",
+      "operational_regions": [],
+      "contract_document": "career-data/evidence/employment/Aoxin_Contract_Feb2024.pdf",
+      "confidence": "V5",
+      "review_status": "approved",
+      "contract_details": {
+        "type": "Fixed-term employment contract",
+        "signed": "2023-12-27",
+        "probation_end": "2024-04-14",
+        "monthly_fee_cny": 17000,
+        "working_hours": "8 hours/day, 5 days/week, max 20 periods/week",
+        "benefits": [
+          "One round-trip air ticket (economy class)",
+          "Shared apartment with individual room",
+          "Accommodation subsidy CNY 2000/month if living alone"
+        ],
+        "termination_notice": "60 days advance notice required"
+      },
+      "_source_file": "career-data\\facts\\employment.yml"
+    },
+    "E-3001": {
+      "id": "E-3001",
+      "description": "GEDU Global Education Teacher Trainer contract and performance review detailing quality assurance responsibilities.",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-3001.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-3002": {
+      "id": "E-3002",
+      "description": "WhiteHat Jr Educator Development Lead official metrics dashboard showing coaching and mentoring impact.",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-3002.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-3003": {
+      "id": "E-3003",
+      "description": "Scholars Academy reference letter validating primary educator responsibilities.",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-3003.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-3004": {
+      "id": "E-3004",
+      "description": "Eton House Kindergarten official certificate of employment and Early Years EAL Teacher role confirmation.",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-3004.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-3005": {
+      "id": "E-3005",
+      "description": "Zhejiang University ESL Educator employment record and evaluation.",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-3005.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-2001": {
+      "id": "E-2001",
+      "description": "PGCE enrollment and transcript documents.",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-2001.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-0009": {
+      "id": "E-0009",
+      "description": "Bachelor of Education degree certificate.",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-0009.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-0010": {
+      "id": "E-0010",
+      "description": "Bachelor of Science degree certificate.",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-0010.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-3006": {
+      "id": "E-3006",
+      "description": "Aoxin International School Curriculum Director commendation letter for primary curriculum design.",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-3006.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-2002": {
+      "id": "E-2002",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-2002.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-2004": {
+      "id": "E-2004",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-2004.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-2005": {
+      "id": "E-2005",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-2005.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-0013": {
+      "id": "E-0013",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-0013.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-2006": {
+      "id": "E-2006",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-2006.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-0004": {
+      "id": "E-0004",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-0004.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-0007": {
+      "id": "E-0007",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-0007.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-0016": {
+      "id": "E-0016",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-0016.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-0014": {
+      "id": "E-0014",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-0014.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-0005": {
+      "id": "E-0005",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-0005.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-0015": {
+      "id": "E-0015",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-0015.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-0017": {
+      "id": "E-0017",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-0017.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "E-2003": {
+      "id": "E-2003",
+      "description": "Migration placeholder",
+      "entity_type": "evidence",
+      "schemaVersion": "1.0",
+      "filename": "e-2003.pdf",
+      "type": "certificate",
+      "date_issued": "2020-01-01",
+      "_source_file": "career-data\\facts\\evidence.yml"
+    },
+    "PERSON-1000": {
+      "id": "PERSON-1000",
+      "name": "Mohammed Shehzad Khan",
+      "title": "International Primary Educator & EAL Specialist",
+      "confidence": "asserted",
+      "review_status": "approved",
+      "summary": "Primary Educator & EAL Specialist with 11+ years in international settings (China, India). I specialize in rapidly improving academic English outcomes for multilingual cohorts by integrating explicit language instruction into inquiry-based science and mathematics. Proven track record in mentoring teaching teams to elevate instructional quality school-wide.\n",
+      "_source_file": "career-data\\facts\\identity.yml",
+      "entity_type": "entity"
+    },
+    "INST-9000": {
+      "id": "INST-9000",
+      "canonical_name": "University of Cumbria",
+      "aliases": [
+        "Cumbria University"
+      ],
+      "entity_type": "institution",
+      "_source_file": "career-data\\facts\\institutions.yml"
+    },
+    "INST-9001": {
+      "id": "INST-9001",
+      "canonical_name": "University of Kashmir",
+      "aliases": [
+        "Kashmir University"
+      ],
+      "entity_type": "institution",
+      "_source_file": "career-data\\facts\\institutions.yml"
+    },
+    "INST-9002": {
+      "id": "INST-9002",
+      "canonical_name": "Harris University",
+      "aliases": [
+        "Harris"
+      ],
+      "entity_type": "institution",
+      "_source_file": "career-data\\facts\\institutions.yml"
+    },
+    "INST-9003": {
+      "id": "INST-9003",
+      "canonical_name": "University of Mumbai",
+      "aliases": [
+        "Mumbai University"
+      ],
+      "entity_type": "institution",
+      "_source_file": "career-data\\facts\\institutions.yml"
+    },
+    "ORG-1000": {
+      "id": "ORG-1000",
+      "canonical_name": "Scholars Academy",
+      "aliases": [
+        "Scholars' Academy",
+        "Scholar Academy"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-1001": {
+      "id": "ORG-1001",
+      "canonical_name": "Aoxin International School",
+      "aliases": [
+        "Aoxin",
+        "Aoxin School"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-1002": {
+      "id": "ORG-1002",
+      "canonical_name": "GEDU Global Education",
+      "aliases": [
+        "GEDU",
+        "Global Education"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-1003": {
+      "id": "ORG-1003",
+      "canonical_name": "WhiteHat Jr",
+      "aliases": [
+        "WhiteHat Jr.",
+        "White Hat Junior",
+        "BYJU'S Future School",
+        "BYJU'S"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-1004": {
+      "id": "ORG-1004",
+      "canonical_name": "Eton House Kindergarten",
+      "aliases": [
+        "EtonHouse",
+        "Eton House"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-1005": {
+      "id": "ORG-1005",
+      "canonical_name": "Zhejiang University",
+      "aliases": [
+        "ZJU"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ORG-1006": {
+      "id": "ORG-1006",
+      "canonical_name": "Helen China TEFL Network",
+      "aliases": [
+        "Helen China",
+        "Helen TEFL"
+      ],
+      "entity_type": "organisation",
+      "_source_file": "career-data\\facts\\organisations.yml"
+    },
+    "ROLE-8000": {
+      "id": "ROLE-8000",
+      "title": "Primary Educator",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "ROLE-8001": {
+      "id": "ROLE-8001",
+      "title": "Primary Educator & Curriculum Lead",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "ROLE-8002": {
+      "id": "ROLE-8002",
+      "title": "Teacher Trainer & Quality Assurance",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "ROLE-8003": {
+      "id": "ROLE-8003",
+      "title": "Educator Development Lead",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "ROLE-8004": {
+      "id": "ROLE-8004",
+      "title": "Early Years EAL Teacher",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "ROLE-8005": {
+      "id": "ROLE-8005",
+      "title": "ESL Educator",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "C-OLD-001": {
+      "id": "C-OLD-001",
+      "status": "deprecated",
+      "type": "experience",
+      "canonical": "I specialize in rapidly improving academic English outcomes...",
+      "deprecation_reason": "Exaggerated outcome claim; replaced by C-009 canonical framing.",
+      "superseded_by": "C-009",
+      "allowed_variants": [],
+      "presentation_assets": [],
+      "_source_file": "career-data\\facts\\claims\\deprecated.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "C-OLD-002": {
+      "id": "C-OLD-002",
+      "status": "deprecated",
+      "type": "title",
+      "canonical": "Primary Educator & Curriculum Lead",
+      "deprecation_reason": "Title inflation; replaced by canonical positioning.",
+      "superseded_by": "C-001",
+      "allowed_variants": [],
+      "presentation_assets": [],
+      "_source_file": "career-data\\facts\\claims\\deprecated.yml",
+      "entity_type": "claim",
+      "confidence": "unverified"
+    },
+    "METRIC-0001": {
+      "id": "METRIC-0001",
+      "operation": "EXPERIENCE_DURATION",
+      "source": "employment",
+      "filters": {
+        "role_type": "teaching"
+      },
+      "entity_type": "metric"
+    },
+    "METRIC-0002": {
+      "id": "METRIC-0002",
+      "operation": "COUNT",
+      "source": "education",
+      "filters": {
+        "level": "postgraduate"
+      },
+      "entity_type": "metric"
+    }
+  },
+  "edges": [
+    {
+      "from": "EMP-2000",
+      "to": "ORG-1000",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2000",
+      "to": "ROLE-8000",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2000",
+      "to": "E-3003",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-2006",
+      "to": "ORG-1001",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2006",
+      "to": "ROLE-8001",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2003",
+      "to": "ORG-1001",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2003",
+      "to": "ROLE-8001",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2005",
+      "to": "ORG-1002",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2005",
+      "to": "ROLE-8002",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2005",
+      "to": "E-3001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-2004",
+      "to": "ORG-1003",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2004",
+      "to": "ROLE-8003",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2004",
+      "to": "E-3002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-2002",
+      "to": "ORG-1004",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2002",
+      "to": "ROLE-8004",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2002",
+      "to": "E-3004",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-2001",
+      "to": "ORG-1005",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2001",
+      "to": "ROLE-8005",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2001",
+      "to": "E-3005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "QUAL-3002",
+      "to": "INST-9000",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-3002",
+      "to": "E-2001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "QUAL-3003",
+      "to": "INST-9001",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-3003",
+      "to": "E-0009",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "QUAL-3001",
+      "to": "INST-9002",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-3000",
+      "to": "INST-9003",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-3000",
+      "to": "E-0010",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1000",
+      "to": "E-3005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1001",
+      "to": "EMP-2004",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1001",
+      "to": "E-3002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1002",
+      "to": "EMP-2005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1002",
+      "to": "E-3001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1003",
+      "to": "EMP-2003",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1003",
+      "to": "E-3006",
+      "type": "SUPPORTED_BY"
+    }
+  ],
+  "indexes": {
+    "by_source": {
+      "EMP-2000": [
+        {
+          "from": "EMP-2000",
+          "to": "ORG-1000",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-2000",
+          "to": "ROLE-8000",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-2000",
+          "to": "E-3003",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-2006": [
+        {
+          "from": "EMP-2006",
+          "to": "ORG-1001",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-2006",
+          "to": "ROLE-8001",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "EMP-2003": [
+        {
+          "from": "EMP-2003",
+          "to": "ORG-1001",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-2003",
+          "to": "ROLE-8001",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "EMP-2005": [
+        {
+          "from": "EMP-2005",
+          "to": "ORG-1002",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-2005",
+          "to": "ROLE-8002",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-2005",
+          "to": "E-3001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-2004": [
+        {
+          "from": "EMP-2004",
+          "to": "ORG-1003",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-2004",
+          "to": "ROLE-8003",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-2004",
+          "to": "E-3002",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-2002": [
+        {
+          "from": "EMP-2002",
+          "to": "ORG-1004",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-2002",
+          "to": "ROLE-8004",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-2002",
+          "to": "E-3004",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-2001": [
+        {
+          "from": "EMP-2001",
+          "to": "ORG-1005",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-2001",
+          "to": "ROLE-8005",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-2001",
+          "to": "E-3005",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "QUAL-3002": [
+        {
+          "from": "QUAL-3002",
+          "to": "INST-9000",
+          "type": "STUDIED_AT"
+        },
+        {
+          "from": "QUAL-3002",
+          "to": "E-2001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "QUAL-3003": [
+        {
+          "from": "QUAL-3003",
+          "to": "INST-9001",
+          "type": "STUDIED_AT"
+        },
+        {
+          "from": "QUAL-3003",
+          "to": "E-0009",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "QUAL-3001": [
+        {
+          "from": "QUAL-3001",
+          "to": "INST-9002",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "QUAL-3000": [
+        {
+          "from": "QUAL-3000",
+          "to": "INST-9003",
+          "type": "STUDIED_AT"
+        },
+        {
+          "from": "QUAL-3000",
+          "to": "E-0010",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "CLAIM-1000": [
+        {
+          "from": "CLAIM-1000",
+          "to": "E-3005",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "CLAIM-1001": [
+        {
+          "from": "CLAIM-1001",
+          "to": "EMP-2004",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "CLAIM-1001",
+          "to": "E-3002",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "CLAIM-1002": [
+        {
+          "from": "CLAIM-1002",
+          "to": "EMP-2005",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "CLAIM-1002",
+          "to": "E-3001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "CLAIM-1003": [
+        {
+          "from": "CLAIM-1003",
+          "to": "EMP-2003",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "CLAIM-1003",
+          "to": "E-3006",
+          "type": "SUPPORTED_BY"
+        }
+      ]
+    },
+    "by_target": {
+      "ORG-1000": [
+        {
+          "from": "EMP-2000",
+          "to": "ORG-1000",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-8000": [
+        {
+          "from": "EMP-2000",
+          "to": "ROLE-8000",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "E-3003": [
+        {
+          "from": "EMP-2000",
+          "to": "E-3003",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "ORG-1001": [
+        {
+          "from": "EMP-2006",
+          "to": "ORG-1001",
+          "type": "WORKED_AT"
+        },
+        {
+          "from": "EMP-2003",
+          "to": "ORG-1001",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-8001": [
+        {
+          "from": "EMP-2006",
+          "to": "ROLE-8001",
+          "type": "HAS_ROLE"
+        },
+        {
+          "from": "EMP-2003",
+          "to": "ROLE-8001",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "ORG-1002": [
+        {
+          "from": "EMP-2005",
+          "to": "ORG-1002",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-8002": [
+        {
+          "from": "EMP-2005",
+          "to": "ROLE-8002",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "E-3001": [
+        {
+          "from": "EMP-2005",
+          "to": "E-3001",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "CLAIM-1002",
+          "to": "E-3001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "ORG-1003": [
+        {
+          "from": "EMP-2004",
+          "to": "ORG-1003",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-8003": [
+        {
+          "from": "EMP-2004",
+          "to": "ROLE-8003",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "E-3002": [
+        {
+          "from": "EMP-2004",
+          "to": "E-3002",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "CLAIM-1001",
+          "to": "E-3002",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "ORG-1004": [
+        {
+          "from": "EMP-2002",
+          "to": "ORG-1004",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-8004": [
+        {
+          "from": "EMP-2002",
+          "to": "ROLE-8004",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "E-3004": [
+        {
+          "from": "EMP-2002",
+          "to": "E-3004",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "ORG-1005": [
+        {
+          "from": "EMP-2001",
+          "to": "ORG-1005",
+          "type": "WORKED_AT"
+        }
+      ],
+      "ROLE-8005": [
+        {
+          "from": "EMP-2001",
+          "to": "ROLE-8005",
+          "type": "HAS_ROLE"
+        }
+      ],
+      "E-3005": [
+        {
+          "from": "EMP-2001",
+          "to": "E-3005",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "CLAIM-1000",
+          "to": "E-3005",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "INST-9000": [
+        {
+          "from": "QUAL-3002",
+          "to": "INST-9000",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "E-2001": [
+        {
+          "from": "QUAL-3002",
+          "to": "E-2001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "INST-9001": [
+        {
+          "from": "QUAL-3003",
+          "to": "INST-9001",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "E-0009": [
+        {
+          "from": "QUAL-3003",
+          "to": "E-0009",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "INST-9002": [
+        {
+          "from": "QUAL-3001",
+          "to": "INST-9002",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "INST-9003": [
+        {
+          "from": "QUAL-3000",
+          "to": "INST-9003",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "E-0010": [
+        {
+          "from": "QUAL-3000",
+          "to": "E-0010",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-2004": [
+        {
+          "from": "CLAIM-1001",
+          "to": "EMP-2004",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-2005": [
+        {
+          "from": "CLAIM-1002",
+          "to": "EMP-2005",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-2003": [
+        {
+          "from": "CLAIM-1003",
+          "to": "EMP-2003",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "E-3006": [
+        {
+          "from": "CLAIM-1003",
+          "to": "E-3006",
+          "type": "SUPPORTED_BY"
+        }
+      ]
+    }
+  }
+}

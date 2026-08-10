@@ -1,0 +1,14 @@
+{
+  "_metadata": {
+    "artifact_version": "1.0.0",
+    "schema_version": "1.0.0",
+    "graph_version": "1.0.0",
+    "resolver_version": "1.0.0",
+    "metrics_version": "1.0.0",
+    "build_id": "0492aa92-f078-4279-8014-4bbe8932faec",
+    "generated_at": "2026-08-08T19:20:37.263393Z",
+    "source_commit": "aa843036261808a53f912dfccdc6f02e96369836",
+    "input_hash": "9b929d6ead457972ccc13edba1be94d018d345b7e887a15f28e2aede33aeec95"
+  },
+  "metrics": {}
+}

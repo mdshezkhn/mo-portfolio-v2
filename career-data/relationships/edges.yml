@@ -53,9 +53,6 @@ edges:
 - from: EMP-2001
   to: ROLE-8005
   type: HAS_ROLE
-- from: EMP-2001
-  to: E-3005
-  type: SUPPORTED_BY
 - from: QUAL-3002
   to: INST-9000
   type: STUDIED_AT
@@ -95,6 +92,6 @@ edges:
 - from: CLAIM-1003
   to: EMP-2003
   type: SUPPORTED_BY
-- from: CLAIM-1003
-  to: E-3006
+- from: EMP-2003
+  to: E-3005
   type: SUPPORTED_BY

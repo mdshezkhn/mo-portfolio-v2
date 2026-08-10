@@ -1,0 +1,199 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e4]:
+    - paragraph [ref=f1e5]: Agree & Join LinkedIn
+    - paragraph [ref=f1e6]:
+      - text: By clicking Continue to join or sign in, you agree to LinkedIn’s
+      - link "User Agreement" [ref=f1e7] [cursor=pointer]:
+        - /url: /legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement
+      - text: ","
+      - link "Privacy Policy" [ref=f1e8] [cursor=pointer]:
+        - /url: /legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy
+      - text: ", and"
+      - link "Cookie Policy" [ref=f1e9] [cursor=pointer]:
+        - /url: /legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy
+      - text: .
+  - generic [ref=f1e10]:
+    - link "Skip to main content" [ref=f1e11] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=f1e12]:
+      - navigation "Primary" [ref=f1e13]:
+        - link "LinkedIn" [ref=f1e14] [cursor=pointer]:
+          - /url: /?trk=seo-authwall-base_nav-header-logo
+    - main [ref=f1e15]:
+      - generic [ref=f1e16]:
+        - generic [ref=f1e17]:
+          - heading "Join LinkedIn" [level=1] [ref=f1e18]
+          - generic [ref=f1e19]:
+            - generic [ref=f1e20]:
+              - img "Profile photo" [ref=f1e21]
+              - button "Edit profile photo" [ref=f1e22]
+              - generic:
+                - heading [level=3]
+                - paragraph
+              - button "Not you?" [ref=f1e23]
+            - generic [ref=f1e25]:
+              - button "Remove photo" [ref=f1e27]
+              - button "Cancel" [ref=f1e29]
+          - alert:
+            - generic:
+              - paragraph
+          - generic [ref=f1e30]:
+            - generic [ref=f1e31]:
+              - generic [ref=f1e32]:
+                - textbox "Email" [ref=f1e33]:
+                  - /placeholder: " "
+                - text: Email
+              - generic [ref=f1e34]:
+                - textbox "Password (6+ characters)" [ref=f1e35]:
+                  - /placeholder: " "
+                - text: Password (6+ characters)
+            - generic [ref=f1e36]:
+              - generic [ref=f1e37]:
+                - textbox "First name" [ref=f1e38]:
+                  - /placeholder: " "
+                - text: First name
+              - generic [ref=f1e39]:
+                - textbox "Last name" [ref=f1e40]:
+                  - /placeholder: " "
+                - text: Last name
+            - paragraph [ref=f1e41]:
+              - text: By clicking Agree & Join, you agree to the LinkedIn
+              - link "User Agreement" [ref=f1e42] [cursor=pointer]:
+                - /url: https://www.linkedin.com/legal/user-agreement?trk=seo-authwall-base_join-form-user-agreement
+              - text: ","
+              - link "Privacy Policy" [ref=f1e43] [cursor=pointer]:
+                - /url: https://www.linkedin.com/legal/privacy-policy?trk=seo-authwall-base_join-form-privacy-policy
+              - text: ", and"
+              - link "Cookie Policy" [ref=f1e44] [cursor=pointer]:
+                - /url: https://www.linkedin.com/legal/cookie-policy?trk=seo-authwall-base_join-form-cookie-policy
+              - text: .
+            - button "Agree & Join" [ref=f1e45]
+            - generic [ref=f1e46]:
+              - generic [ref=f1e47]: or
+              - button "Continue with google"
+          - paragraph [ref=f1e49]:
+            - text: Already on Linkedin?
+            - button "Sign in" [ref=f1e50]
+        - generic [ref=f1e51]:
+          - button [ref=f1e52]
+          - dialog [ref=f1e55]:
+            - generic [ref=f1e56]:
+              - heading [level=2] [ref=f1e57]: Security verification
+              - button [ref=f1e58]
+            - iframe [ref=f1e61]:
+              
+        - generic [ref=f1e62]:
+          - heading "Sign in" [level=2] [ref=f1e63]
+          - generic [ref=f1e64]:
+            - generic [ref=f1e65]:
+              - generic [ref=f1e66]:
+                - generic [ref=f1e67]:
+                  - text: Email or phone
+                  - textbox "Email or phone" [ref=f1e69]
+                - alert
+              - generic [ref=f1e70]:
+                - generic [ref=f1e71]:
+                  - text: Password
+                  - generic [ref=f1e72]:
+                    - textbox "Password" [ref=f1e73]
+                    - button "Show your LinkedIn password" [ref=f1e74]: Show
+                - alert
+            - generic [ref=f1e75]:
+              - link "Forgot password?" [ref=f1e76] [cursor=pointer]:
+                - /url: https://www.linkedin.com/uas/request-password-reset?trk=seo-authwall-base_forgot_password
+              - button "Sign in" [ref=f1e77]
+            - paragraph [ref=f1e79]: or
+          - generic [ref=f1e81]:
+            - paragraph [ref=f1e82]:
+              - text: By clicking Continue to join or sign in, you agree to LinkedIn’s
+              - link "User Agreement" [ref=f1e83] [cursor=pointer]:
+                - /url: /legal/user-agreement?trk=seo-authwall-base_auth-button_user-agreement
+              - text: ","
+              - link "Privacy Policy" [ref=f1e84] [cursor=pointer]:
+                - /url: /legal/privacy-policy?trk=seo-authwall-base_auth-button_privacy-policy
+              - text: ", and"
+              - link "Cookie Policy" [ref=f1e85] [cursor=pointer]:
+                - /url: /legal/cookie-policy?trk=seo-authwall-base_auth-button_cookie-policy
+              - text: .
+            - button "Continue with google"
+          - paragraph [ref=f1e86]:
+            - text: New to Linkedin?
+            - button "Join now" [ref=f1e87]
+      - dialog [ref=f1e88]:
+        - paragraph [ref=f1e90]: LinkedIn
+        - paragraph [ref=f1e91]: LinkedIn is better on the app
+        - paragraph [ref=f1e92]: Don’t have the app? Get it in the Microsoft Store.
+        - link "Open the app" [ref=f1e93] [cursor=pointer]:
+          - /url: ms-windows-store://pdp/?ProductId=9WZDNCRFJ4Q7&mode=mini&cid=guest_desktop_upsell_authwall2
+        - button "Dismiss" [ref=f1e94]
+    - contentinfo [ref=f1e95]:
+      - list [ref=f1e96]:
+        - listitem [ref=f1e97]: LinkedIn © 2026
+        - listitem [ref=f1e98]:
+          - link "About" [ref=f1e99] [cursor=pointer]:
+            - /url: https://about.linkedin.com?trk=seo-authwall-base_footer-about
+        - listitem [ref=f1e100]:
+          - link "Accessibility" [ref=f1e101] [cursor=pointer]:
+            - /url: https://www.linkedin.com/accessibility?trk=seo-authwall-base_footer-accessibility
+        - listitem [ref=f1e102]:
+          - link "User Agreement" [ref=f1e103] [cursor=pointer]:
+            - /url: https://www.linkedin.com/legal/user-agreement?trk=seo-authwall-base_footer-user-agreement
+        - listitem [ref=f1e104]:
+          - link "Privacy Policy" [ref=f1e105] [cursor=pointer]:
+            - /url: https://www.linkedin.com/legal/privacy-policy?trk=seo-authwall-base_footer-privacy-policy
+        - listitem [ref=f1e106]:
+          - link "Cookie Policy" [ref=f1e107] [cursor=pointer]:
+            - /url: https://www.linkedin.com/legal/cookie-policy?trk=seo-authwall-base_footer-cookie-policy
+        - listitem [ref=f1e108]:
+          - link "Copyright Policy" [ref=f1e109] [cursor=pointer]:
+            - /url: https://www.linkedin.com/legal/copyright-policy?trk=seo-authwall-base_footer-copyright-policy
+        - listitem [ref=f1e110]:
+          - link "Brand Policy" [ref=f1e111] [cursor=pointer]:
+            - /url: https://brand.linkedin.com/policies?trk=seo-authwall-base_footer-brand-policy
+        - listitem [ref=f1e112]:
+          - link "Guest Controls" [ref=f1e113] [cursor=pointer]:
+            - /url: https://www.linkedin.com/psettings/guest-controls?trk=seo-authwall-base_footer-guest-controls
+        - listitem [ref=f1e114]:
+          - link "Community Guidelines" [ref=f1e115] [cursor=pointer]:
+            - /url: https://www.linkedin.com/legal/professional-community-policies?trk=seo-authwall-base_footer-community-guide
+        - listitem [ref=f1e116]:
+          - generic [ref=f1e117]:
+            - menu [ref=f1e118]:
+              - menuitem "العربية (Arabic)" [ref=f1e119]
+              - menuitem "বাংলা (Bangla)" [ref=f1e120]
+              - menuitem "Čeština (Czech)" [ref=f1e121]
+              - menuitem "Dansk (Danish)" [ref=f1e122]
+              - menuitem "Deutsch (German)" [ref=f1e123]
+              - menuitem "Ελληνικά (Greek)" [ref=f1e124]
+              - menuitem "English (English) selected" [ref=f1e125]:
+                - strong [ref=f1e126]: English (English)
+              - menuitem "Español (Spanish)" [ref=f1e127]
+              - menuitem "فارسی (Persian)" [ref=f1e128]
+              - menuitem "Suomi (Finnish)" [ref=f1e129]
+              - menuitem "Français (French)" [ref=f1e130]
+              - menuitem "हिंदी (Hindi)" [ref=f1e131]
+              - menuitem "Magyar (Hungarian)" [ref=f1e132]
+              - menuitem "Bahasa Indonesia (Indonesian)" [ref=f1e133]
+              - menuitem "Italiano (Italian)" [ref=f1e134]
+              - menuitem "עברית (Hebrew)" [ref=f1e135]
+              - menuitem "日本語 (Japanese)" [ref=f1e136]
+              - menuitem "한국어 (Korean)" [ref=f1e137]
+              - menuitem "मराठी (Marathi)" [ref=f1e138]
+              - menuitem "Bahasa Malaysia (Malay)" [ref=f1e139]
+              - menuitem "Nederlands (Dutch)" [ref=f1e140]
+              - menuitem "Norsk (Norwegian)" [ref=f1e141]
+              - menuitem "ਪੰਜਾਬੀ (Punjabi)" [ref=f1e142]
+              - menuitem "Polski (Polish)" [ref=f1e143]
+              - menuitem "Português (Portuguese)" [ref=f1e144]
+              - menuitem "Română (Romanian)" [ref=f1e145]
+              - menuitem "Русский (Russian)" [ref=f1e146]
+              - menuitem "Svenska (Swedish)" [ref=f1e147]
+              - menuitem "తెలుగు (Telugu)" [ref=f1e148]
+              - menuitem "ภาษาไทย (Thai)" [ref=f1e149]
+              - menuitem "Tagalog (Tagalog)" [ref=f1e150]
+              - menuitem "Türkçe (Turkish)" [ref=f1e151]
+              - menuitem "Українська (Ukrainian)" [ref=f1e152]
+              - menuitem "Tiếng Việt (Vietnamese)" [ref=f1e153]
+              - menuitem "简体中文 (Chinese (Simplified))" [ref=f1e154]
+              - menuitem "正體中文 (Chinese (Traditional))" [ref=f1e155]
+            - button "Language" [ref=f1e156]

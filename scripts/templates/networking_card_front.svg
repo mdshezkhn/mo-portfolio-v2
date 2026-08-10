@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3.5in" height="2in" viewBox="0 0 1050 600">
+    <!-- Background -->
+    <rect width="1050" height="600" fill="#1E3A5F" />
+
+    <!-- Accent Bar -->
+    <rect width="1050" height="20" fill="#0091FF" />
+
+    <!-- Name and Title -->
+    <text x="80" y="160" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#FFFFFF">{{ NAME }}</text>
+    <text x="80" y="240" font-family="Arial, sans-serif" font-size="45" fill="#94A3B8">{{ TITLE }}</text>
+
+    <!-- Contact Details -->
+    <text x="80" y="340" font-family="Arial, sans-serif" font-size="35" fill="#E2E8F0">Email: {{ EMAIL }}</text>
+    <text x="80" y="400" font-family="Arial, sans-serif" font-size="35" fill="#E2E8F0">Phone: {{ PHONE }}</text>
+    <text x="80" y="460" font-family="Arial, sans-serif" font-size="35" fill="#E2E8F0">LinkedIn: {{ LINKEDIN }}</text>
+
+    <!-- Footer URL -->
+    <text x="80" y="540" font-family="Arial, sans-serif" font-size="35" font-weight="bold" fill="#0091FF">{{ PORTFOLIO_URL }}</text>
+</svg>

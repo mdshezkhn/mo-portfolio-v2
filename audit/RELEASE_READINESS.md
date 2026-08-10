@@ -1,0 +1,34 @@
+# Release Readiness & Supply Chain Audit Report
+
+> **Audit Provenance**: Timestamp: `2026-08-02T23:21:39.354832` | Git SHA: `d934836309da0bb4450ff2ef5da90714054e9b05` | Branch: `release/2027.1` | Tool: `v2.0.0`
+
+| Severity | Category | File | Finding Detail | Remediation |
+| :--- | :--- | :--- | :--- | :--- |
+| **Medium** | local_path_leak | `fix_dates.py` | Hardcoded absolute local path detected: c:\Users\Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | large_binary | `release-artifact.zip` | Large binary asset (7.83 MB) detected in repository | Store large binaries in external release asset hosting or Git LFS. |
+| **Medium** | local_path_leak | `.claude/settings.local.json` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `.claude/worktrees/agent-a415229218a57a1e8/.claude/settings.local.json` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `archive/portfolio-v1/evidence/AUDIT_REPORT.md` | Hardcoded absolute local path detected: C:\Users\Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `archive/portfolio-v1/evidence/CANONICAL_RESEARCH_SPECIFICATION.md` | Hardcoded absolute local path detected: C:\Users\Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `archive/portfolio-v1/evidence/snippets/cv_snippets.md` | Hardcoded absolute local path detected: /Users/Mohammed | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `archive/portfolio-v1/evidence/snippets/interview_snippets.md` | Hardcoded absolute local path detected: /Users/Mohammed | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `archive/portfolio-v1/evidence/snippets/linkedin_snippets.md` | Hardcoded absolute local path detected: /Users/Mohammed | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `archive/portfolio-v1/evidence/snippets/portfolio_snippets.md` | Hardcoded absolute local path detected: /Users/Mohammed | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `archive/portfolio-v1/evidence/snippets/recruiter_snippets.md` | Hardcoded absolute local path detected: /Users/Mohammed | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `archive/portfolio-v1/evidence/Stage1_PreAudit_Baseline/AUDIT_REPORT.md` | Hardcoded absolute local path detected: C:\Users\Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `archive/portfolio-v1/evidence/Stage1_PreAudit_Baseline/CANONICAL_RESEARCH_SPECIFICATION.md` | Hardcoded absolute local path detected: C:\Users\Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `archive/portfolio-v1/evidence/Stage2_PreRemediation_Baseline/AUDIT_REPORT.md` | Hardcoded absolute local path detected: C:\Users\Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `archive/portfolio-v1/evidence/Stage2_PreRemediation_Baseline/CANONICAL_RESEARCH_SPECIFICATION.md` | Hardcoded absolute local path detected: C:\Users\Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `audit/RELEASE_READINESS.md` | Hardcoded absolute local path detected: /Users/Mohammed , /Users/Mohammed Shehzad , C:\Users\Mohammed Shehzad  | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `Candidate_Execution/00_INDEX.md` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad, /Users/Mohammed | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `Candidate_Execution/01_LinkedIn_Master_Profile.md` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `Candidate_Execution/02_Teaching_Philosophy.md` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `Candidate_Execution/03_Interview_Story_Bank.md` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `Candidate_Execution/04_Recruiter_Objection_Playbook.md` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `Candidate_Execution/05_Teaching_Evidence_Portfolio.md` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `Candidate_Execution/06_Mock_Interview_Questions.md` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `Candidate_Execution/07_Recruitment_Command_Center.md` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `Candidate_Execution/09_Interview_Debrief_Template.md` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `Candidate_Execution/10_Teaching_Demonstration_Prep.md` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `Candidate_Execution/11_Demonstration_Lesson_Library.md` | Hardcoded absolute local path detected: /Users/Mohammed Shehzad | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |
+| **Medium** | local_path_leak | `mo-portfolio-v2/lighthouse-report.json` | Hardcoded absolute local path detected: /Users/Mohammed | Use relative paths or environment variables (e.g. os.path.abspath(__file__)). |

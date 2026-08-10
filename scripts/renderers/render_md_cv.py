@@ -21,7 +21,7 @@ def render_md(cv_vm):
     md.append(summary)
     md.append("")
     
-    md.append("## Core Competencies")
+    md.append("## Core Expertise")
     for comp in cv_vm.get("competencies", []):
         md.append(f"* {comp}")
     md.append("")

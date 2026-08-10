@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "provenance": {
+    "timestamp": "2026-08-02T23:21:39.354832",
+    "git_commit_sha": "d934836309da0bb4450ff2ef5da90714054e9b05",
+    "git_branch": "release/2027.1",
+    "policy_version": "1.0.0",
+    "inventory_sha256": "d726eb2843c1f37c8247cbaf74cff044f0d9d750d22179b09cb7c1e09431e345",
+    "tool_version": "v2.0.0"
+  },
+  "execution_summary": {
+    "duration_seconds": 7.7,
+    "executed_phases": [
+      "Phase 0",
+      "Phase 1",
+      "Phase 2",
+      "Phase 3",
+      "Phase 4",
+      "Phase 5",
+      "Phase 6"
+    ],
+    "skipped_phases": [],
+    "exit_code": 0
+  },
+  "findings_summary": {
+    "total_findings": 11370,
+    "severity_counts": {
+      "Critical": 0,
+      "High": 953,
+      "Medium": 10417,
+      "Low": 0,
+      "Informational": 0
+    }
+  }
+}

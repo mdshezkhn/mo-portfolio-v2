@@ -1,0 +1,12 @@
+{
+  "generatorVersion": "v1.0.0",
+  "manifestHash": "75cca0fa8cb03e59722caf1098539cc424848437e1e6464bb2b196acafc8c541",
+  "gitSha": "d934836309da0bb4450ff2ef5da90714054e9b05",
+  "repositoryVersion": "1.0.0",
+  "workflowRunId": "local",
+  "pythonVersion": "3.14.4",
+  "nodeVersion": "v24.14.1",
+  "os": "Windows-10-10.0.21996-SP0",
+  "utc": "2026-08-02T10:58:07.256652+00:00",
+  "schemaVersion": "1.0"
+}

@@ -19,3 +19,15 @@ institutions:
   aliases:
   - Mumbai University
   entity_type: institution
+- id: ORG-1007
+  type: training_provider
+  canonical_name: Global TESOL College, Canada
+  accreditation: TESOL
+- id: ORG-1008
+  type: training_provider
+  canonical_name: Teacher Record
+  accreditation: TEFL
+- id: ORG-1009
+  type: professional_body
+  canonical_name: British Council
+  accreditation: CPD

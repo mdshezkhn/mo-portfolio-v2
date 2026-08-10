@@ -1,0 +1,180 @@
+{
+  "_metadata": {
+    "artifact_version": "1.0.0",
+    "schema_version": "1.0.0",
+    "graph_version": "1.0.0",
+    "resolver_version": "1.0.0",
+    "metrics_version": "1.0.0",
+    "build_id": "0492aa92-f078-4279-8014-4bbe8932faec",
+    "generated_at": "2026-08-08T19:20:37.263393Z",
+    "source_commit": "aa843036261808a53f912dfccdc6f02e96369836",
+    "input_hash": "9b929d6ead457972ccc13edba1be94d018d345b7e887a15f28e2aede33aeec95"
+  },
+  "relationships": [
+    {
+      "from": "EMP-2000",
+      "to": "ORG-1000",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2000",
+      "to": "ROLE-8000",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2000",
+      "to": "E-3003",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-2006",
+      "to": "ORG-1001",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2006",
+      "to": "ROLE-8001",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2003",
+      "to": "ORG-1001",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2003",
+      "to": "ROLE-8001",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2005",
+      "to": "ORG-1002",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2005",
+      "to": "ROLE-8002",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2005",
+      "to": "E-3001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-2004",
+      "to": "ORG-1003",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2004",
+      "to": "ROLE-8003",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2004",
+      "to": "E-3002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-2002",
+      "to": "ORG-1004",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2002",
+      "to": "ROLE-8004",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2002",
+      "to": "E-3004",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "EMP-2001",
+      "to": "ORG-1005",
+      "type": "WORKED_AT"
+    },
+    {
+      "from": "EMP-2001",
+      "to": "ROLE-8005",
+      "type": "HAS_ROLE"
+    },
+    {
+      "from": "EMP-2001",
+      "to": "E-3005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "QUAL-3002",
+      "to": "INST-9000",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-3002",
+      "to": "E-2001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "QUAL-3003",
+      "to": "INST-9001",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-3003",
+      "to": "E-0009",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "QUAL-3001",
+      "to": "INST-9002",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-3000",
+      "to": "INST-9003",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-3000",
+      "to": "E-0010",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1000",
+      "to": "E-3005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1001",
+      "to": "EMP-2004",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1001",
+      "to": "E-3002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1002",
+      "to": "EMP-2005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1002",
+      "to": "E-3001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1003",
+      "to": "EMP-2003",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CLAIM-1003",
+      "to": "E-3006",
+      "type": "SUPPORTED_BY"
+    }
+  ]
+}

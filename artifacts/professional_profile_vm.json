@@ -1,0 +1,67 @@
+{
+  "candidate": {
+    "name": "Candidate Name",
+    "title": "Educational Leader"
+  },
+  "executive_summary": [],
+  "key_claims": [],
+  "experience": [
+    {
+      "id": "EMP-2000",
+      "title": "Primary Educator",
+      "organization": "Scholars Academy",
+      "start_date": "2014-01",
+      "end_date": "2016-11",
+      "highlights": []
+    },
+    {
+      "id": "EMP-2001",
+      "title": "ESL Educator",
+      "organization": "Zhejiang University",
+      "start_date": "2016-11",
+      "end_date": "2017-08",
+      "highlights": []
+    },
+    {
+      "id": "EMP-2002",
+      "title": "Early Years EAL Teacher",
+      "organization": "Eton House Kindergarten",
+      "start_date": "2017-08",
+      "end_date": "2018-06",
+      "highlights": []
+    },
+    {
+      "id": "EMP-2003",
+      "title": "Primary Educator & Curriculum Lead",
+      "organization": "Aoxin International School",
+      "start_date": "2018-07",
+      "end_date": "2020-08",
+      "highlights": []
+    },
+    {
+      "id": "EMP-2004",
+      "title": "Educator Development Lead",
+      "organization": "WhiteHat Jr",
+      "start_date": "2020-08",
+      "end_date": "2022-07",
+      "highlights": []
+    },
+    {
+      "id": "EMP-2005",
+      "title": "Teacher Trainer & Quality Assurance",
+      "organization": "GEDU Global Education",
+      "start_date": "2022-09",
+      "end_date": "2023-08",
+      "highlights": []
+    },
+    {
+      "id": "EMP-2006",
+      "title": "Primary Educator & Curriculum Lead",
+      "organization": "Aoxin International School",
+      "start_date": "2024-02",
+      "end_date": "2026-07",
+      "highlights": []
+    }
+  ],
+  "education": []
+}

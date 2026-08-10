@@ -1,6 +1,13 @@
 id: PERSON-1000
 name: Mohammed Shehzad Khan
+name_structured:
+  family: Khan
+  given: Mohammed
+  additional: Shehzad
 title: International Primary Educator | Primary EAL & Multilingual Learning | Curriculum, Assessment & Teacher Development
+networking_title:
+  value: Primary Educator & Multilingual Learning Specialist
+  approved_for: recruiter_distribution
 confidence: asserted
 review_status: approved
 availability: August 2027
@@ -14,6 +21,12 @@ contact_channels:
     value: "+86-131 3771 9002"
     source_type: user-approved-public-contact
     status: VERIFIED_FOR_PUBLICATION
+  linkedin:
+    value: https://www.linkedin.com/in/mdshezkhn
+    public: true
+  portfolio:
+    value: https://mdshezkhn.github.io/mo-portfolio-v2/
+    public: true
   wechat:
     public: true
     purpose: recruiter_contact

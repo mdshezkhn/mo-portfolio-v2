@@ -1,0 +1,57 @@
+{
+  "claims": [
+    {
+      "id": "CLAIM-014",
+      "text": "Experienced international primary educator.",
+      "derived_from": {
+        "type": "experience_years",
+        "start_date_source": "career_start_date"
+      },
+      "visibility": [
+        "portfolio",
+        "cv",
+        "linkedin"
+      ],
+      "audience": [
+        "recruiter"
+      ],
+      "risk": "low",
+      "priority": "high"
+    },
+    {
+      "id": "CLAIM-004",
+      "text": "Expert in Formative Assessment to drive student outcomes.",
+      "derived_from": {
+        "type": "competency",
+        "competency_id": "COMP-001"
+      },
+      "visibility": [
+        "portfolio",
+        "cv"
+      ],
+      "audience": [
+        "curriculum_lead",
+        "recruiter"
+      ],
+      "risk": "medium",
+      "priority": "medium"
+    },
+    {
+      "id": "CLAIM-008",
+      "text": "Successfully led teacher training sessions for 1,000+ educators.",
+      "derived_from": {
+        "type": "static_metric",
+        "metric": "educators_trained"
+      },
+      "visibility": [
+        "portfolio",
+        "linkedin"
+      ],
+      "audience": [
+        "leadership"
+      ],
+      "risk": "high",
+      "priority": "high"
+    }
+  ]
+}
