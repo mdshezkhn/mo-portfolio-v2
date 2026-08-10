@@ -46,6 +46,11 @@ def build():
     # Here I'll mock the identity/summary just to keep the build working
     identity = {"name": "Mohammed Shehzad Khan"}
     
+    # Load canonical dictionaries for name resolution
+    orgs = {o['id']: o['canonical_name'] for o in load_yaml(CAREER_DATA / "facts" / "organisations.yml").get('organisations', [])}
+    roles = {r['id']: r['title'] for r in load_yaml(CAREER_DATA / "facts" / "roles.yml").get('roles', [])}
+    insts = {i['id']: i['canonical_name'] for i in load_yaml(CAREER_DATA / "facts" / "institutions.yml").get('institutions', [])}
+    
     # 4. Policy Engine & View Model Generation
     for policy_name, policy_conf in policies.items():
         if policy_conf.get('active', True) is False:
@@ -80,11 +85,16 @@ def build():
                 
             # Build presentation entry
             org_id = emp.get('employer_id', 'Unknown')
+            role_id = emp.get('role_id', 'Unknown')
+            org_name = orgs.get(org_id, org_id)
+            role_name = roles.get(role_id, role_id)
             start = emp.get('dates', {}).get('start', '')
             end = emp.get('dates', {}).get('end', 'Present')
             
             exp_entry = {
-                "company": org_id,
+                "id": emp_id,
+                "company": org_name,
+                "role": role_name,
                 "date": f"{start} - {end}",
                 "bullets": []
             }
@@ -101,6 +111,23 @@ def build():
                         exp_entry["bullets"].append(claim_text)
                         
             view_model['experience'].append(exp_entry)
+            
+        # Education / Qualifications
+        view_model['qualifications'] = []
+        all_quals = load_yaml(CAREER_DATA / "facts" / "education.yml").get('education_records', [])
+        for qual in all_quals:
+            qual_id = qual['id']
+            if resolved_states.get(qual_id, {}).get('status') == 'VERIFIED':
+                inst_id = qual.get("institution_id")
+                inst_name = insts.get(inst_id, inst_id)
+                start = qual.get("dates", {}).get("start", "")
+                end = qual.get("dates", {}).get("end", "")
+                view_model['qualifications'].append({
+                    "id": qual_id,
+                    "degree": qual.get("degree"),
+                    "institution": inst_name,
+                    "date": f"{start} - {end}" if start and end else (end or start)
+                })
             
         out_filename = f"{policy_name}.json"
         out_filepath = ARTIFACTS_DIR / out_filename

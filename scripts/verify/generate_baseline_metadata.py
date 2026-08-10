@@ -27,6 +27,7 @@ def generate():
     manifest_categories = {
         'canonical_data': [
             'career-data/facts/employment.yml',
+            'career-data/facts/education.yml',
             'career-data/facts/claims.yml'
         ],
         'governance': [
@@ -38,10 +39,12 @@ def generate():
         ],
         'verification_logic': [
             'scripts/verify/graph_validator.py',
-            'scripts/verify/verification_resolver.py'
+            'scripts/verify/verification_resolver.py',
+            'scripts/verify/audit_dom_boundary.py'
         ],
         'build_orchestration': [
             'scripts/builders/build_domain_model.py',
+            'scripts/builders/build_portfolio_html.py',
             'build.py'
         ],
         'templates': [
@@ -73,7 +76,9 @@ def generate():
         'source_manifest': source_manifest,
         'artifact_hashes': {
             'master_json': hash_file('artifacts/cv_view_models/master.json'),
-            'cv_master_html': hash_file('compiled_assets/CV_Master.html')
+            'cv_master_html': hash_file('compiled_assets/CV_Master.html'),
+            'portfolio_json': hash_file('artifacts/cv_view_models/portfolio.json'),
+            'portfolio_html': hash_file('mo-portfolio-v2/index.html')
         },
         'environment': {
             'viewport': '1920x1080',
