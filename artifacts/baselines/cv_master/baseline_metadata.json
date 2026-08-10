@@ -3,9 +3,9 @@
     "artifact": "CV_Master.html"
   },
   "git": {
-    "source_commit": "22b0fb16251299e6422957a71b8dedd88c442f24",
+    "source_commit": "6e021a6cc2371b8f6dc2ebe791bd86c546f1a32c",
     "metadata_commit": "pending_commit",
-    "worktree_clean": true
+    "worktree_clean": false
   },
   "source_manifest": {
     "canonical_data": [
@@ -15,7 +15,7 @@
       },
       {
         "path": "career-data/facts/claims.yml",
-        "sha256": "0441d980e755cfed0c182aa9c74ac62ad1c14e2889083ac3d763c033449cd7f6"
+        "sha256": "fa05fc104b973cac8f803a4810218a7381fe27bcaf9d4e21567b13ad3c1bed9a"
       }
     ],
     "governance": [
@@ -47,21 +47,21 @@
     "build_orchestration": [
       {
         "path": "scripts/builders/build_domain_model.py",
-        "sha256": "43fa7f923c28dd4868497c934691da82fd25e7ebecaa5a352865b86a0d77848c"
+        "sha256": "ab9d90df58fca3c448428de9a4d40debc0e6a17d54a8838a468a2c0e5845aa76"
       },
       {
         "path": "build.py",
-        "sha256": "1c654d0c58a8518d89b41e60a9be873c3ffb08e1ec2756fa2bd40f9bd4cb0214"
+        "sha256": "587503430904cbf8e37a9ec6243cd7ff29c16d3a6f62d79e22db43b449c55b10"
       }
     ],
     "templates": [
       {
         "path": "templates/cv/base.html",
-        "sha256": "92a245b4b207f9b6ec5db2f71e7c28dd855ec3733484df02809f0119bc12b524"
+        "sha256": "b18f356458d26a5355a0a103cc68d8999605da2b873c89a633a34181ab23f0c6"
       },
       {
         "path": "templates/cv/partials/experience.html",
-        "sha256": "397267bf89743d34f68cfe7e372e2c9be770809a11dcbd29110149a52ce222ff"
+        "sha256": "a00abdd7fc1ec7cc95d935546ff8e638e6e75b4052402d7f6815c524344fe3c6"
       }
     ]
   },
@@ -72,6 +72,6 @@
   "environment": {
     "viewport": "1920x1080",
     "browser": "Chromium",
-    "created_at": "2026-08-10T12:21:20.259794+00:00"
+    "created_at": "2026-08-10T12:28:58.670829+00:00"
   }
 }
