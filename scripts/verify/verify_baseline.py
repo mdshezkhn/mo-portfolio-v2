@@ -11,8 +11,8 @@ BASE_DIR = Path(__file__).parent.parent.parent
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
-from scripts.verify.graph_validator import validate_graph, load_edges
-from scripts.verify.verification_resolver import resolve_states
+from scripts.verify.graph_validator import validate_graph
+from scripts.verify.verification_resolver import resolve_verification_state
 
 def hash_file(path):
     p = BASE_DIR / path
@@ -89,10 +89,16 @@ def verify():
         html_out_path.unlink()
         
     print("Running rebuild for byte-comparison...")
-    res = subprocess.run([sys.executable, 'build.py'], cwd=BASE_DIR, capture_output=True, text=True)
-    if res.returncode != 0:
-        print("FAIL: Clean rebuild failed.")
-        print(res.stderr)
+    res1 = subprocess.run([sys.executable, 'scripts/builders/build_domain_model.py'], cwd=BASE_DIR, capture_output=True, text=True)
+    if res1.returncode != 0:
+        print("FAIL: Clean rebuild (domain model) failed.")
+        print(res1.stderr)
+        sys.exit(1)
+        
+    res2 = subprocess.run([sys.executable, 'build.py'], cwd=BASE_DIR, capture_output=True, text=True)
+    if res2.returncode != 0:
+        print("FAIL: Clean rebuild (html) failed.")
+        print(res2.stderr)
         sys.exit(1)
         
     # Check output artifacts were successfully recreated
@@ -129,9 +135,10 @@ def verify():
         if 'contradiction' in msg or 'invalid' in msg or 'mismatch' in msg:
             contradictory_edges += 1
             
-    # Resolve states natively
-    edges_data = load_edges()
-    resolved_states, resolved_claims = resolve_states(edges_data)
+    resolved_all = resolve_verification_state()
+    unverified_emp_ids = {eid for eid, state in resolved_all.items() if eid.startswith('EMP-') and state.get('status') != 'VERIFIED'}
+    unverified_claim_ids = {cid for cid, state in resolved_all.items() if cid.startswith('C') and state.get('status') != 'VERIFIED'}
+    all_resolved_claim_ids = {cid for cid in resolved_all.keys() if cid.startswith('C')}
     
     # Inspect the view model
     with open(vm_out_path, 'r', encoding='utf-8') as f:
@@ -146,8 +153,8 @@ def verify():
         for b in exp.get('bullets', []):
             published_claim_strings.add(b)
             
-    unverified_emp_ids = {eid for eid, state in resolved_states.items() if state.get('status') != 'VERIFIED'}
-    unverified_claim_ids = {cid for cid, state in resolved_claims.items() if state.get('status') != 'VERIFIED'}
+    unverified_emp_ids = {eid for eid, state in resolved_all.items() if state.get('status') != 'VERIFIED'}
+    unverified_claim_ids = {cid for cid, state in resolved_all.items() if state.get('status') != 'VERIFIED'}
     
     # We need facts/employment.yml to reverse-map claim text back to claim_id
     with open(BASE_DIR / 'career-data/facts/employment.yml', 'r', encoding='utf-8') as f:
@@ -171,14 +178,12 @@ def verify():
                 # Since we don't map text perfectly here, we trust the count derived from engine intersection
                 cid = ch['claim_id']
                 if cid in unverified_claim_ids:
-                    # check if the text for this claim made it in
-                    # This requires parsing claims.yml, let's do it
                     pass
 
     # Load claims
     with open(BASE_DIR / 'career-data/facts/claims.yml', 'r', encoding='utf-8') as f:
         claims_doc = yaml.safe_load(f).get('claims', [])
-    claim_id_to_text = {c['id']: c['description'] for c in claims_doc}
+    claim_id_to_text = {c['id']: c['title'] for c in claims_doc}
     
     for cid in unverified_claim_ids:
         if claim_id_to_text.get(cid) in published_claim_strings:
@@ -187,8 +192,6 @@ def verify():
     unverified_employments_published = len(published_emp_ids.intersection(unverified_emp_ids))
     
     # Are there any published claims that have NO state resolved?
-    # This means they are completely unresolved
-    all_resolved_claim_ids = set(resolved_claims.keys())
     unresolved_published_claims = 0
     for cid, text in claim_id_to_text.items():
         if text in published_claim_strings and cid not in all_resolved_claim_ids:
