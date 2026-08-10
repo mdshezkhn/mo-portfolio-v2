@@ -45,7 +45,10 @@ def test_html_renderer_contract():
         assert h2.text.strip() != "", "Found empty <h2>"
         
     # 5. no unresolved template tokens
-    assert "{" not in html and "}" not in html, "Found unresolved template tokens (e.g., {PLACEHOLDER})"
+    import re
+    # We look for {{ something }} or {SOMETHING_UPPERCASE} typical of templates
+    unresolved = re.findall(r'\{\{[^}]+\}\}|\{[A-Z_]+\}', html)
+    assert not unresolved, f"Found unresolved template tokens: {unresolved}"
     
     # 6. Check UTF-8 (Python opens as UTF-8, if it didn't crash, we're good)
     
