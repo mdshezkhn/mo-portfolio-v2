@@ -3,7 +3,7 @@
     "artifact": "CV_Master.html"
   },
   "git": {
-    "source_commit": "7843b86f29a94928747cdd33fb1be637d1100e98",
+    "source_commit": "7007a7ff492e0a2e3c06e3e425ed233fb9b694ce",
     "metadata_commit": "pending_commit",
     "worktree_clean": true
   },
@@ -31,7 +31,7 @@
       },
       {
         "path": "career-data/facts/evidence_assertions.yml",
-        "sha256": "5f7cf9ecdb23edd4e0b162480202b3c1319d76bbb6985eb2ae78241ae16d2bd8"
+        "sha256": "6b631ab0fccc827333a01f6407f95c179e9e505a8fe97751146b365c84745428"
       }
     ],
     "verification_logic": [
@@ -72,6 +72,6 @@
   "environment": {
     "viewport": "1920x1080",
     "browser": "Chromium",
-    "created_at": "2026-08-10T15:34:10.249378+00:00"
+    "created_at": "2026-08-10T15:36:58.615899+00:00"
   }
 }
