@@ -137,6 +137,25 @@ def main():
         lambda: mutate_file('artifacts/baselines/cv_master/baseline_metadata.json', 
             '"cv_master_html":', '"cv_master_html": "invalid_hash", "old":'))
 
+    # 11. Portfolio HTML static tampering
+    suite.execute_test('Portfolio HTML static tampering',
+        lambda: append_to_file('mo-portfolio-v2/index.html', '<!-- static tamper -->'))
+        
+    # 12. Portfolio JSON tampering
+    suite.execute_test('Portfolio JSON tampering',
+        lambda: mutate_file('artifacts/cv_view_models/portfolio.json', 
+            '"title":', '"title": "tampered", "old_title":'))
+            
+    # 13. Renderer substitution
+    suite.execute_test('Renderer substitution',
+        lambda: mutate_file('scripts/builders/build_portfolio_html.py', 
+            'def build_portfolio_html():', 'def build_portfolio_html(): return\n    pass\n'))
+
+    # 14. DOM boundary bypass
+    suite.execute_test('DOM boundary bypass',
+        lambda: mutate_file('scripts/verify/audit_dom_boundary.py',
+            'if dom_id not in vm_quals:', 'if False:'))
+
     print("\n=== ADVERSARIAL SUITE RESULTS ===")
     all_passed = True
     for r in suite.results:
