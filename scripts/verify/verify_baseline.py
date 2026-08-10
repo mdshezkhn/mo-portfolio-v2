@@ -17,7 +17,7 @@ def hash_file(path):
 def get_git_info():
     try:
         commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=BASE_DIR).decode('utf-8').strip()
-        status = subprocess.check_output(['git', 'status', '--porcelain'], cwd=BASE_DIR).decode('utf-8').strip()
+        status = subprocess.check_output(['git', 'status', '--porcelain', '--ignore-submodules'], cwd=BASE_DIR).decode('utf-8').strip()
         return commit, (len(status) == 0)
     except Exception as e:
         return "unknown", False
