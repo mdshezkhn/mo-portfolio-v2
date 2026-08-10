@@ -3,9 +3,9 @@
     "artifact": "CV_Master.html"
   },
   "git": {
-    "source_commit": "c1ccdedbb88df62fc77dc6db958cccc453763ad7",
+    "source_commit": "691d6bca337ab1695194d5216c3d40932c144bc4",
     "metadata_commit": "pending_commit",
-    "worktree_clean": false
+    "worktree_clean": true
   },
   "source_manifest": {
     "canonical_data": [
@@ -66,12 +66,12 @@
     ]
   },
   "artifact_hashes": {
-    "master_json": "cf537556e40dc3143f3559be42e037e33e711bbbdcb4db7ea80a8e15b73ee660",
-    "cv_master_html": "ceb1aca29a1f0a4944caf2ef0df7f2db9dd00d499ad87f22b9c99f15d81385ad"
+    "master_json": "c587ca703735d8cbfc488c2ccb39eb38ef6cf6666019db4dbe64251d96fad004",
+    "cv_master_html": "4496be2ed6792626f598b0919e5970c3127ee8872d4fdeac8f1ce157627b5d5d"
   },
   "environment": {
     "viewport": "1920x1080",
     "browser": "Chromium",
-    "created_at": "2026-08-10T12:33:35.753043+00:00"
+    "created_at": "2026-08-10T15:32:29.091422+00:00"
   }
 }
