@@ -123,11 +123,16 @@ def main():
     suite.execute_test('HTML tampering (template)',
         lambda: append_to_file('templates/cv/base.html', '<!-- tampered -->'))
         
-    # 8. Source drift (dependency file)
+    # 8. JSON tampering (master.json)
+    suite.execute_test('JSON tampering (master.json)',
+        lambda: mutate_file('artifacts/cv_view_models/master.json', 
+            '"title":', '"title": "tampered", "old_title":'))
+
+    # 9. Source drift (dependency file)
     suite.execute_test('Source drift (employment.yml)',
         lambda: append_to_file('career-data/facts/employment.yml', '\n# drifted\n'))
         
-    # 9. Metadata tampering
+    # 10. Metadata tampering
     suite.execute_test('Metadata tampering',
         lambda: mutate_file('artifacts/baselines/cv_master/baseline_metadata.json', 
             '"cv_master_html":', '"cv_master_html": "invalid_hash", "old":'))
