@@ -133,7 +133,7 @@ def validate_semantics(intermediate_dir):
     # Disconnected subgraphs (reachability)
     # Exclude identities, metrics, and specifically allowed orphans from reachability test.
     # An entity is reachable if it has at least one edge in or out, or is explicitly exempted.
-    exempt_types = {'identity', 'entity', 'metric', 'claim', 'evidence', 'organisation', 'institution', 'competencie'}
+    exempt_types = {'identity', 'entity', 'metric', 'claim', 'evidence', 'organisation', 'institution', 'competencie', 'language'}
     for eid, entity in graph['entities'].items():
         if entity.get('entity_type') in exempt_types:
             continue

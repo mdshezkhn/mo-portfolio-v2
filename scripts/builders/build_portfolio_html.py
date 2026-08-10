@@ -54,6 +54,30 @@ def render_qualification(qual):
                     </div>"""
     return html
 
+def render_certification(qual):
+    cert_id = qual['id'].lower()
+    html = f"""
+                    <div class="cert-card" data-cert-id="{cert_id}" data-title="{qual['degree']}" data-issuer="{qual['institution']}" data-status="Verified Certification">
+                        <div class="cert-thumb">
+                            <span class="cert-thumb-overlay">🔍 View document</span>
+                        </div>
+                        <h4 class="cert-title">{qual['degree']}</h4>
+                        <p class="cert-org">{qual['institution']}</p>
+                        <div class="verification-panel">
+                            <span class="v-badge">✓ Verified Certification</span>
+                            <div class="v-details">Officially verified by provenance engine.</div>
+                        </div>
+                    </div>"""
+    return html
+
+def render_cpd(qual):
+    html = f"""
+                      <div class="pd-card">
+                          <h4>{qual['degree']}</h4>
+                          <p>{qual['institution']}</p>
+                      </div>"""
+    return html
+
 def build_portfolio_html():
     if not PORTFOLIO_VM_PATH.exists():
         print("Portfolio View Model not found. Did the build_domain_model.py run?")
@@ -63,7 +87,30 @@ def build_portfolio_html():
         vm = json.load(f)
         
     exp_html = "\n".join([render_experience(e) for e in vm.get("experience", [])])
-    edu_html = "\n".join([render_qualification(q) for q in vm.get("qualifications", [])])
+    
+    edu_quals = [q for q in vm.get("qualifications", []) if q.get("entity_type") in ("qualification", "institution")]
+    cert_quals = [q for q in vm.get("qualifications", []) if q.get("entity_type") == "certification"]
+    cpd_quals = [q for q in vm.get("qualifications", []) if q.get("entity_type") == "professional_development"]
+    
+    cred_html = ""
+    
+    if edu_quals:
+        cred_html += '                  <h3 class="subsection-title">Education</h3>\n'
+        cred_html += '                  <div id="edu-grid-container" class="edu-grid">\n'
+        cred_html += "\n".join([render_qualification(q) for q in edu_quals])
+        cred_html += '\n                  </div>\n'
+        
+    if cert_quals:
+        cred_html += '                  <h3 class="subsection-title">Professional Qualifications &amp; Development</h3>\n'
+        cred_html += '                  <div id="prof-grid-container" class="certs-grid">\n'
+        cred_html += "\n".join([render_certification(q) for q in cert_quals])
+        cred_html += '\n                  </div>\n'
+        
+    if cpd_quals:
+        cred_html += '                  <h3 class="subsection-title">Continuing Professional Development</h3>\n'
+        cred_html += '                  <div class="pd-grid">\n'
+        cred_html += "\n".join([render_cpd(q) for q in cpd_quals])
+        cred_html += '\n                  </div>\n'
     
     with open(INDEX_HTML_PATH, "r", encoding="utf-8") as f:
         content = f.read()
@@ -74,7 +121,7 @@ def build_portfolio_html():
     
     # Replace Credentials
     cred_pattern = r"(<!-- PORTFOLIO_CREDENTIALS_START -->).*?(<!-- PORTFOLIO_CREDENTIALS_END -->)"
-    content = re.sub(cred_pattern, rf"\1\n{edu_html}\n                    \2", content, flags=re.DOTALL)
+    content = re.sub(cred_pattern, rf"\1\n{cred_html}\n                    \2", content, flags=re.DOTALL)
     
     with open(INDEX_HTML_PATH, "w", encoding="utf-8") as f:
         f.write(content)

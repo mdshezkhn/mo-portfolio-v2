@@ -31,3 +31,6 @@ institutions:
   type: professional_body
   canonical_name: British Council
   accreditation: CPD
+- id: ORG-1010
+  canonical_name: UNICEF
+  entity_type: institution

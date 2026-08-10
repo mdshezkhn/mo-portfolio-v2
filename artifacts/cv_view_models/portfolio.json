@@ -46,19 +46,29 @@
       "id": "QUAL-3000",
       "degree": "Bachelor of Science, Physics (B.Sc.)",
       "institution": "University of Mumbai",
-      "date": "2004 - 2007"
+      "date": "2004 - 2007",
+      "entity_type": "qualification"
     },
     {
       "id": "QUAL-3002",
       "degree": "Postgraduate Certificate in Education (PGCE, non-QTS)",
       "institution": "University of Cumbria",
-      "date": "2025-09 - 2026-07"
+      "date": "2025-09 - 2026-07",
+      "entity_type": "qualification"
     },
     {
-      "id": "QUAL-3003",
-      "degree": "Bachelor of Education (B.Ed.)",
-      "institution": "University of Kashmir",
-      "date": "2021-10 - 2024-03"
+      "id": "QUAL-6004",
+      "degree": "TESOL Certification (240 hours)",
+      "institution": "Global TESOL College, Canada",
+      "date": "",
+      "entity_type": "certification"
+    },
+    {
+      "id": "QUAL-6005",
+      "degree": "TEFL Certification (120 hours)",
+      "institution": "Teacher Record",
+      "date": "",
+      "entity_type": "certification"
     }
   ]
 }

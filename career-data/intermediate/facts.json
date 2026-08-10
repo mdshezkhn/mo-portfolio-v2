@@ -5,10 +5,10 @@
     "graph_version": "1.0.0",
     "resolver_version": "1.0.0",
     "metrics_version": "1.0.0",
-    "build_id": "0492aa92-f078-4279-8014-4bbe8932faec",
-    "generated_at": "2026-08-08T19:20:37.263393Z",
-    "source_commit": "aa843036261808a53f912dfccdc6f02e96369836",
-    "input_hash": "9b929d6ead457972ccc13edba1be94d018d345b7e887a15f28e2aede33aeec95"
+    "build_id": "3f02edb4-ef44-4a41-879c-45648be4ca81",
+    "generated_at": "2026-08-11T02:04:12.301553Z",
+    "source_commit": "54b725a0cda2763e6026244e024ef3c86eb27007",
+    "input_hash": "a02d654c2fe2be3f9a0d95871527abce1a1cc3224155fa0c26bf0e4d4c880fe4"
   },
   "facts": {
     "C-001": {
@@ -578,6 +578,43 @@
       "_source_file": "career-data\\facts\\competencies.yml",
       "entity_type": "competencie"
     },
+    "COMP-003": {
+      "id": "COMP-003",
+      "category": "Digital Skills",
+      "skills": [
+        "Google Workspace",
+        "Microsoft 365",
+        "Moodle",
+        "Canvas",
+        "Zoom",
+        "OBS Studio"
+      ],
+      "_source_file": "career-data\\facts\\competencies.yml",
+      "entity_type": "competencie"
+    },
+    "COMP-004": {
+      "id": "COMP-004",
+      "category": "Core Expertise",
+      "skills": [
+        "Primary EAL",
+        "Multilingual Education",
+        "Curriculum Design",
+        "Differentiated Instruction",
+        "Formative Assessment",
+        "Literacy Development",
+        "Classroom Management",
+        "Assessment Moderation",
+        "Teacher Mentoring",
+        "Professional Development",
+        "Instructional Quality Assurance",
+        "Cross-Curricular STEM",
+        "Dialogic Teaching",
+        "Questioning Strategies",
+        "Translanguaging"
+      ],
+      "_source_file": "career-data\\facts\\competencies.yml",
+      "entity_type": "competencie"
+    },
     "QUAL-3000": {
       "id": "QUAL-3000",
       "entity_type": "qualification",
@@ -617,6 +654,7 @@
         "verified_only_gate": true
       },
       "institution_recognition_status": "requires_external_verification",
+      "recognition_note": "*External recognition status available on request.",
       "_source_file": "career-data\\facts\\education.yml"
     },
     "QUAL-3002": {
@@ -637,6 +675,7 @@
         "premium_schools": true,
         "verified_only_gate": false
       },
+      "research_context": "Practitioner research: Questioning Strategies and Participation Equity in Bilingual Primary Classrooms",
       "_source_file": "career-data\\facts\\education.yml"
     },
     "QUAL-3003": {
@@ -659,6 +698,38 @@
       },
       "_source_file": "career-data\\facts\\education.yml"
     },
+    "QUAL-6004": {
+      "id": "QUAL-6004",
+      "entity_type": "certification",
+      "degree": "TESOL Certification (240 hours)",
+      "institution_id": "ORG-1007",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\education.yml"
+    },
+    "QUAL-6005": {
+      "id": "QUAL-6005",
+      "entity_type": "certification",
+      "degree": "TEFL Certification (120 hours)",
+      "institution_id": "ORG-1008",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\education.yml"
+    },
+    "QUAL-6006": {
+      "id": "QUAL-6006",
+      "entity_type": "certification",
+      "degree": "British Council \u2014 Primary Education & Language Teaching",
+      "institution_id": "ORG-1009",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\education.yml"
+    },
+    "QUAL-6007": {
+      "id": "QUAL-6007",
+      "entity_type": "professional_development",
+      "degree": "UNICEF Child Protection",
+      "institution_id": "ORG-1010",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\education.yml"
+    },
     "EMP-2000": {
       "id": "EMP-2000",
       "entity_type": "employment",
@@ -673,6 +744,18 @@
       "operational_regions": [],
       "confidence": "V5",
       "review_status": "approved",
+      "historical_highlights": [
+        {
+          "text": "Taught English, Science and Mathematics across upper-primary and secondary classes, adapting instruction for varied learner needs and curriculum requirements",
+          "status": "unverified",
+          "provenance": "legacy"
+        },
+        {
+          "text": "Supported diverse learners through targeted feedback and intervention strategies",
+          "status": "unverified",
+          "provenance": "legacy"
+        }
+      ],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2001": {
@@ -689,6 +772,28 @@
       "operational_regions": [],
       "confidence": "V5",
       "review_status": "approved",
+      "historical_highlights": [
+        {
+          "text": "Taught across multiple school contexts through the Helen China TEFL Network (Zhejiang University)",
+          "status": "unverified",
+          "provenance": "legacy"
+        },
+        {
+          "text": "Adapted teaching strategies for diverse age groups from early years to secondary",
+          "status": "unverified",
+          "provenance": "legacy"
+        },
+        {
+          "text": "Developed students' spoken confidence through structured communicative activities",
+          "status": "unverified",
+          "provenance": "legacy"
+        },
+        {
+          "text": "Applied continuous formative assessment to monitor and support language development",
+          "status": "unverified",
+          "provenance": "legacy"
+        }
+      ],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2002": {
@@ -705,6 +810,23 @@
       "operational_regions": [],
       "confidence": "V5",
       "review_status": "approved",
+      "historical_highlights": [
+        {
+          "text": "Built foundational language skills for kindergarten learners through immersive ESL instruction",
+          "status": "unverified",
+          "provenance": "legacy"
+        },
+        {
+          "text": "Delivered demonstration lessons and mentored colleagues to strengthen early years ESL practice",
+          "status": "unverified",
+          "provenance": "legacy"
+        },
+        {
+          "text": "Created age-appropriate communicative activities for young multilingual learners",
+          "status": "unverified",
+          "provenance": "legacy"
+        }
+      ],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2003": {
@@ -719,8 +841,10 @@
       "physical_country": "China",
       "employment_country": "China",
       "operational_regions": [],
-      "confidence": "V3",
-      "review_status": "pending",
+      "confidence": "V1",
+      "review_status": "approved",
+      "historical_highlights": [],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2004": {
@@ -739,6 +863,11 @@
       ],
       "confidence": "V5",
       "review_status": "approved",
+      "cv_highlights": [
+        {
+          "claim_id": "CLAIM-1001"
+        }
+      ],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2005": {
@@ -759,6 +888,11 @@
       ],
       "confidence": "V5",
       "review_status": "approved",
+      "cv_highlights": [
+        {
+          "claim_id": "CLAIM-1002"
+        }
+      ],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2006": {
@@ -790,6 +924,28 @@
         ],
         "termination_notice": "60 days advance notice required"
       },
+      "historical_highlights": [
+        {
+          "text": "Delivered foundational EAL and English instruction to primary and lower-secondary learners in a bilingual international school",
+          "status": "unverified",
+          "provenance": "legacy"
+        },
+        {
+          "text": "Directed Grade 5 writing moderation across multiple teaching teams, ensuring consistent assessment standards",
+          "status": "unverified",
+          "provenance": "legacy"
+        },
+        {
+          "text": "Created differentiated learning experiences enabling multilingual learners at varying proficiency levels to progress in their language development",
+          "status": "unverified",
+          "provenance": "legacy"
+        },
+        {
+          "text": "Mentored newly appointed teachers, supporting their successful integration and maintaining instructional quality",
+          "status": "unverified",
+          "provenance": "legacy"
+        }
+      ],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "E-3001": {
@@ -1015,10 +1171,45 @@
     "PERSON-1000": {
       "id": "PERSON-1000",
       "name": "Mohammed Shehzad Khan",
-      "title": "International Primary Educator & EAL Specialist",
+      "name_structured": {
+        "family": "Khan",
+        "given": "Mohammed",
+        "additional": "Shehzad"
+      },
+      "title": "International Primary Educator | Primary EAL & Multilingual Learning | Curriculum, Assessment & Teacher Development",
+      "networking_title": {
+        "value": "Primary Educator & Multilingual Learning Specialist",
+        "approved_for": "recruiter_distribution"
+      },
       "confidence": "asserted",
       "review_status": "approved",
-      "summary": "Primary Educator & EAL Specialist with 11+ years in international settings (China, India). I specialize in rapidly improving academic English outcomes for multilingual cohorts by integrating explicit language instruction into inquiry-based science and mathematics. Proven track record in mentoring teaching teams to elevate instructional quality school-wide.\n",
+      "availability": "August 2027",
+      "location": "Zhengzhou, China",
+      "contact_channels": {
+        "email": {
+          "value": "mdshezkhn@gmail.com",
+          "source_type": "user-approved-public-contact",
+          "status": "VERIFIED_FOR_PUBLICATION"
+        },
+        "phone": {
+          "value": "+86-131 3771 9002",
+          "source_type": "user-approved-public-contact",
+          "status": "VERIFIED_FOR_PUBLICATION"
+        },
+        "linkedin": {
+          "value": "https://www.linkedin.com/in/mdshezkhn",
+          "public": true
+        },
+        "portfolio": {
+          "value": "https://mdshezkhn.github.io/mo-portfolio-v2/",
+          "public": true
+        },
+        "wechat": {
+          "public": true,
+          "purpose": "recruiter_contact"
+        }
+      },
+      "summary": "Primary Educator & EAL Specialist with 11+ years in international settings (China, India). I specialize in rapidly improving academic English outcomes for multilingual cohorts by integrating explicit language instruction into inquiry-based science and mathematics through cross-curricular STEM facilitation. Proven track record in mentoring teaching teams to elevate instructional quality school-wide.\n",
       "_source_file": "career-data\\facts\\identity.yml",
       "entity_type": "entity"
     },
@@ -1058,75 +1249,119 @@
       "entity_type": "institution",
       "_source_file": "career-data\\facts\\institutions.yml"
     },
+    "ORG-1007": {
+      "id": "ORG-1007",
+      "type": "training_provider",
+      "canonical_name": "Global TESOL College, Canada",
+      "accreditation": "TESOL",
+      "_source_file": "career-data\\facts\\institutions.yml",
+      "entity_type": "institution"
+    },
+    "ORG-1008": {
+      "id": "ORG-1008",
+      "type": "training_provider",
+      "canonical_name": "Teacher Record",
+      "accreditation": "TEFL",
+      "_source_file": "career-data\\facts\\institutions.yml",
+      "entity_type": "institution"
+    },
+    "ORG-1009": {
+      "id": "ORG-1009",
+      "type": "professional_body",
+      "canonical_name": "British Council",
+      "accreditation": "CPD",
+      "_source_file": "career-data\\facts\\institutions.yml",
+      "entity_type": "institution"
+    },
+    "ORG-1010": {
+      "id": "ORG-1010",
+      "canonical_name": "UNICEF",
+      "entity_type": "institution",
+      "_source_file": "career-data\\facts\\institutions.yml"
+    },
+    "LANG-0": {
+      "language": "English",
+      "proficiency": "Fluent",
+      "id": "LANG-0",
+      "_source_file": "career-data\\facts\\languages.yml",
+      "entity_type": "language"
+    },
+    "LANG-1": {
+      "language": "Hindi",
+      "proficiency": "Native",
+      "id": "LANG-1",
+      "_source_file": "career-data\\facts\\languages.yml",
+      "entity_type": "language"
+    },
     "ORG-1000": {
-      "id": "ORG-1000",
-      "canonical_name": "Scholars Academy",
       "aliases": [
         "Scholars' Academy",
         "Scholar Academy"
       ],
+      "canonical_name": "Scholars Academy",
       "entity_type": "organisation",
+      "id": "ORG-1000",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1001": {
-      "id": "ORG-1001",
-      "canonical_name": "Aoxin International School",
       "aliases": [
         "Aoxin",
         "Aoxin School"
       ],
+      "canonical_name": "Aoxin International School",
       "entity_type": "organisation",
+      "id": "ORG-1001",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1002": {
-      "id": "ORG-1002",
-      "canonical_name": "GEDU Global Education",
       "aliases": [
         "GEDU",
         "Global Education"
       ],
+      "canonical_name": "GEDU Global Education",
       "entity_type": "organisation",
+      "id": "ORG-1002",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1003": {
-      "id": "ORG-1003",
-      "canonical_name": "WhiteHat Jr",
       "aliases": [
         "WhiteHat Jr.",
         "White Hat Junior",
         "BYJU'S Future School",
         "BYJU'S"
       ],
+      "canonical_name": "WhiteHat Jr",
       "entity_type": "organisation",
+      "id": "ORG-1003",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1004": {
-      "id": "ORG-1004",
-      "canonical_name": "Eton House Kindergarten",
       "aliases": [
         "EtonHouse",
         "Eton House"
       ],
+      "canonical_name": "Eton House Kindergarten",
       "entity_type": "organisation",
+      "id": "ORG-1004",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1005": {
-      "id": "ORG-1005",
-      "canonical_name": "Zhejiang University",
       "aliases": [
         "ZJU"
       ],
+      "canonical_name": "Zhejiang University",
       "entity_type": "organisation",
+      "id": "ORG-1005",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1006": {
-      "id": "ORG-1006",
-      "canonical_name": "Helen China TEFL Network",
       "aliases": [
         "Helen China",
         "Helen TEFL"
       ],
+      "canonical_name": "Helen China TEFL Network",
       "entity_type": "organisation",
+      "id": "ORG-1006",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ROLE-8000": {
@@ -1166,7 +1401,7 @@
     },
     "ROLE-8005": {
       "id": "ROLE-8005",
-      "title": "ESL Educator",
+      "title": "Training & Quality Lead",
       "description": "",
       "entity_type": "role",
       "_source_file": "career-data\\facts\\roles.yml"

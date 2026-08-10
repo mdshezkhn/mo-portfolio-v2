@@ -358,3 +358,11 @@ entities:
     state: PUBLISHED
     type: language
 
+  QUAL-6007:
+    slug: qual_6007
+    state: PUBLISHED
+    type: education
+  ORG-1010:
+    slug: org_1010
+    state: PUBLISHED
+    type: organisation

@@ -4,9 +4,9 @@
     "graph_version": "1.0.0",
     "resolver_version": "1.0.0",
     "schema_version": "1.0.0",
-    "build_id": "c9d9ffcf-7c4e-443b-b59b-7b98e4686450",
-    "generated_at": "2026-08-11T00:56:08.665817Z",
-    "source_commit": "942422166ac130639e1bc523e8fae2cfb6365c62"
+    "build_id": "3f02edb4-ef44-4a41-879c-45648be4ca81",
+    "generated_at": "2026-08-11T02:04:12.301553Z",
+    "source_commit": "54b725a0cda2763e6026244e024ef3c86eb27007"
   },
   "entities": {
     "C-001": {
@@ -720,6 +720,14 @@
       "review_status": "approved",
       "_source_file": "career-data\\facts\\education.yml"
     },
+    "QUAL-6007": {
+      "id": "QUAL-6007",
+      "entity_type": "professional_development",
+      "degree": "UNICEF Child Protection",
+      "institution_id": "ORG-1010",
+      "review_status": "approved",
+      "_source_file": "career-data\\facts\\education.yml"
+    },
     "EMP-2000": {
       "id": "EMP-2000",
       "entity_type": "employment",
@@ -1263,6 +1271,12 @@
       "_source_file": "career-data\\facts\\institutions.yml",
       "entity_type": "institution"
     },
+    "ORG-1010": {
+      "id": "ORG-1010",
+      "canonical_name": "UNICEF",
+      "entity_type": "institution",
+      "_source_file": "career-data\\facts\\institutions.yml"
+    },
     "LANG-0": {
       "language": "English",
       "proficiency": "Fluent",
@@ -1278,74 +1292,74 @@
       "entity_type": "language"
     },
     "ORG-1000": {
-      "id": "ORG-1000",
-      "canonical_name": "Scholars Academy",
       "aliases": [
         "Scholars' Academy",
         "Scholar Academy"
       ],
+      "canonical_name": "Scholars Academy",
       "entity_type": "organisation",
+      "id": "ORG-1000",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1001": {
-      "id": "ORG-1001",
-      "canonical_name": "Aoxin International School",
       "aliases": [
         "Aoxin",
         "Aoxin School"
       ],
+      "canonical_name": "Aoxin International School",
       "entity_type": "organisation",
+      "id": "ORG-1001",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1002": {
-      "id": "ORG-1002",
-      "canonical_name": "GEDU Global Education",
       "aliases": [
         "GEDU",
         "Global Education"
       ],
+      "canonical_name": "GEDU Global Education",
       "entity_type": "organisation",
+      "id": "ORG-1002",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1003": {
-      "id": "ORG-1003",
-      "canonical_name": "WhiteHat Jr",
       "aliases": [
         "WhiteHat Jr.",
         "White Hat Junior",
         "BYJU'S Future School",
         "BYJU'S"
       ],
+      "canonical_name": "WhiteHat Jr",
       "entity_type": "organisation",
+      "id": "ORG-1003",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1004": {
-      "id": "ORG-1004",
-      "canonical_name": "Eton House Kindergarten",
       "aliases": [
         "EtonHouse",
         "Eton House"
       ],
+      "canonical_name": "Eton House Kindergarten",
       "entity_type": "organisation",
+      "id": "ORG-1004",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1005": {
-      "id": "ORG-1005",
-      "canonical_name": "Zhejiang University",
       "aliases": [
         "ZJU"
       ],
+      "canonical_name": "Zhejiang University",
       "entity_type": "organisation",
+      "id": "ORG-1005",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ORG-1006": {
-      "id": "ORG-1006",
-      "canonical_name": "Helen China TEFL Network",
       "aliases": [
         "Helen China",
         "Helen TEFL"
       ],
+      "canonical_name": "Helen China TEFL Network",
       "entity_type": "organisation",
+      "id": "ORG-1006",
       "_source_file": "career-data\\facts\\organisations.yml"
     },
     "ROLE-8000": {
@@ -1595,6 +1609,41 @@
       "from": "EMP-2003",
       "to": "E-3005",
       "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "QUAL-6004",
+      "to": "ORG-1007",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-6004",
+      "to": "E-4001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "QUAL-6005",
+      "to": "ORG-1008",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-6005",
+      "to": "E-4002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "QUAL-6006",
+      "to": "ORG-1009",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-6007",
+      "to": "ORG-1010",
+      "type": "STUDIED_AT"
+    },
+    {
+      "from": "QUAL-6007",
+      "to": "E-4003",
+      "type": "SUPPORTED_BY"
     }
   ],
   "indexes": {
@@ -1786,6 +1835,49 @@
         {
           "from": "CLAIM-1003",
           "to": "EMP-2003",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "QUAL-6004": [
+        {
+          "from": "QUAL-6004",
+          "to": "ORG-1007",
+          "type": "STUDIED_AT"
+        },
+        {
+          "from": "QUAL-6004",
+          "to": "E-4001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "QUAL-6005": [
+        {
+          "from": "QUAL-6005",
+          "to": "ORG-1008",
+          "type": "STUDIED_AT"
+        },
+        {
+          "from": "QUAL-6005",
+          "to": "E-4002",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "QUAL-6006": [
+        {
+          "from": "QUAL-6006",
+          "to": "ORG-1009",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "QUAL-6007": [
+        {
+          "from": "QUAL-6007",
+          "to": "ORG-1010",
+          "type": "STUDIED_AT"
+        },
+        {
+          "from": "QUAL-6007",
+          "to": "E-4003",
           "type": "SUPPORTED_BY"
         }
       ]
@@ -2002,6 +2094,55 @@
         {
           "from": "CLAIM-1003",
           "to": "EMP-2003",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "ORG-1007": [
+        {
+          "from": "QUAL-6004",
+          "to": "ORG-1007",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "E-4001": [
+        {
+          "from": "QUAL-6004",
+          "to": "E-4001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "ORG-1008": [
+        {
+          "from": "QUAL-6005",
+          "to": "ORG-1008",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "E-4002": [
+        {
+          "from": "QUAL-6005",
+          "to": "E-4002",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "ORG-1009": [
+        {
+          "from": "QUAL-6006",
+          "to": "ORG-1009",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "ORG-1010": [
+        {
+          "from": "QUAL-6007",
+          "to": "ORG-1010",
+          "type": "STUDIED_AT"
+        }
+      ],
+      "E-4003": [
+        {
+          "from": "QUAL-6007",
+          "to": "E-4003",
           "type": "SUPPORTED_BY"
         }
       ]
