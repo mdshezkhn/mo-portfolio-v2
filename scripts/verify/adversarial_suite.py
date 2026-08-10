@@ -109,15 +109,15 @@ def main():
     # The builder checks `if ch['claim_id'] in approved_claims:`
     # We mutate it to bypass verification check
     suite.execute_test('Policy bypass (Unauthorized VM claim)',
-        lambda: mutate_file('scripts/builders/build_domain_model.py', 
-            "if ch['claim_id'] in approved_claims:",
+        lambda: mutate_file('scripts/builders/build_domain_model.py',
+            "if claim_resolved.get('status') == 'VERIFIED':",
             "if True: # Bypass!"))
             
     # 6. Historical highlight in VM
     suite.execute_test('Historical highlight in VM',
         lambda: mutate_file('scripts/builders/build_domain_model.py',
-            "if isinstance(ch, str):\n                continue",
-            "if isinstance(ch, str):\n                bullets.append(ch)\n                continue"))
+            "if isinstance(highlight, dict) and 'claim_id' in highlight:",
+            "if isinstance(highlight, str): exp_entry['bullets'].append(highlight); continue\n                if isinstance(highlight, dict) and 'claim_id' in highlight:"))
             
     # 7. HTML tampering (baseline source template)
     suite.execute_test('HTML tampering (template)',
