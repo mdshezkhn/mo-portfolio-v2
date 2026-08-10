@@ -27,8 +27,7 @@ def generate():
     manifest_categories = {
         'canonical_data': [
             'career-data/facts/employment.yml',
-            'career-data/facts/claims.yml',
-            'career-data/facts/entities.yml'
+            'career-data/facts/claims.yml'
         ],
         'governance': [
             'governance/cv_policies.yml'
@@ -42,7 +41,7 @@ def generate():
             'scripts/verify/verification_resolver.py'
         ],
         'build_orchestration': [
-            'build_domain_model.py',
+            'scripts/builders/build_domain_model.py',
             'build.py'
         ],
         'templates': [
