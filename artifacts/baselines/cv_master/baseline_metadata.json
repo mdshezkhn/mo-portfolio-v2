@@ -3,7 +3,7 @@
     "artifact": "CV_Master.html"
   },
   "git": {
-    "source_commit": "29836c90c77b163986bae65de4b4ca939892fa4f",
+    "source_commit": "69fdefec5c27680b75894b1a1004ab5d7ad77f11",
     "metadata_commit": "pending_commit",
     "worktree_clean": false
   },
@@ -16,10 +16,6 @@
       {
         "path": "career-data/facts/claims.yml",
         "sha256": "0441d980e755cfed0c182aa9c74ac62ad1c14e2889083ac3d763c033449cd7f6"
-      },
-      {
-        "path": "career-data/facts/entities.yml",
-        "sha256": "MISSING"
       }
     ],
     "governance": [
@@ -50,8 +46,8 @@
     ],
     "build_orchestration": [
       {
-        "path": "build_domain_model.py",
-        "sha256": "MISSING"
+        "path": "scripts/builders/build_domain_model.py",
+        "sha256": "ab9d90df58fca3c448428de9a4d40debc0e6a17d54a8838a468a2c0e5845aa76"
       },
       {
         "path": "build.py",
@@ -76,6 +72,6 @@
   "environment": {
     "viewport": "1920x1080",
     "browser": "Chromium",
-    "created_at": "2026-08-10T11:55:28.886862+00:00"
+    "created_at": "2026-08-10T12:00:20.949565+00:00"
   }
 }
