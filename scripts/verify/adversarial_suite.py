@@ -62,9 +62,9 @@ class AdversarialSuite:
         })
         
         if passed:
-            print("✅ TEST PASSED (Attack correctly caught & repo restored).")
+            print("[PASS] TEST PASSED (Attack correctly caught & repo restored).")
         else:
-            print("❌ TEST FAILED.")
+            print("[FAIL] TEST FAILED.")
             print(res.stdout)
             print(res.stderr)
 
@@ -133,7 +133,7 @@ def main():
     print("\n=== ADVERSARIAL SUITE RESULTS ===")
     all_passed = True
     for r in suite.results:
-        status = "✅" if r['passed'] else "❌"
+        status = "[PASS]" if r['passed'] else "[FAIL]"
         print(f"{status} {r['attack']}")
         if not r['passed']:
             all_passed = False
