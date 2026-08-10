@@ -1,0 +1,81 @@
+{
+  "baseline": {
+    "artifact": "CV_Master.html"
+  },
+  "git": {
+    "source_commit": "29836c90c77b163986bae65de4b4ca939892fa4f",
+    "metadata_commit": "pending_commit",
+    "worktree_clean": false
+  },
+  "source_manifest": {
+    "canonical_data": [
+      {
+        "path": "career-data/facts/employment.yml",
+        "sha256": "bd6a280120adb5a02f497db42dc0f777f05ec2e10a6849b77f93acfdcbbd913d"
+      },
+      {
+        "path": "career-data/facts/claims.yml",
+        "sha256": "0441d980e755cfed0c182aa9c74ac62ad1c14e2889083ac3d763c033449cd7f6"
+      },
+      {
+        "path": "career-data/facts/entities.yml",
+        "sha256": "MISSING"
+      }
+    ],
+    "governance": [
+      {
+        "path": "governance/cv_policies.yml",
+        "sha256": "8c56bea91f3c1ecfa08078a693690a9bead1209f468b663b8153db193d3cc1a1"
+      }
+    ],
+    "provenance_engine": [
+      {
+        "path": "career-data/relationships/edges.yml",
+        "sha256": "89b4ef7dcc5e71aa6e4189088fc34563d0cd9dbefa1b2f7999268cd27622cd71"
+      },
+      {
+        "path": "career-data/facts/evidence_assertions.yml",
+        "sha256": "1fe3f0f92b6d389009c82421191b09345a64120de87893b44864be003bb7f1a1"
+      }
+    ],
+    "verification_logic": [
+      {
+        "path": "scripts/verify/graph_validator.py",
+        "sha256": "96388cef1add9bb8db1bf183524ff47720bcf1306ed811733d9dc0d181923921"
+      },
+      {
+        "path": "scripts/verify/verification_resolver.py",
+        "sha256": "4325c7341301e3f4a648a2b969f3f7d189f9fce50152700876d85ac88bf2d231"
+      }
+    ],
+    "build_orchestration": [
+      {
+        "path": "build_domain_model.py",
+        "sha256": "MISSING"
+      },
+      {
+        "path": "build.py",
+        "sha256": "1c654d0c58a8518d89b41e60a9be873c3ffb08e1ec2756fa2bd40f9bd4cb0214"
+      }
+    ],
+    "templates": [
+      {
+        "path": "templates/cv/base.html",
+        "sha256": "92a245b4b207f9b6ec5db2f71e7c28dd855ec3733484df02809f0119bc12b524"
+      },
+      {
+        "path": "templates/cv/partials/experience.html",
+        "sha256": "397267bf89743d34f68cfe7e372e2c9be770809a11dcbd29110149a52ce222ff"
+      }
+    ]
+  },
+  "artifact_hashes": {
+    "master_json": "cf537556e40dc3143f3559be42e037e33e711bbbdcb4db7ea80a8e15b73ee660",
+    "cv_master_html": "ceb1aca29a1f0a4944caf2ef0df7f2db9dd00d499ad87f22b9c99f15d81385ad"
+  },
+  "environment": {
+    "viewport": "1920x1080",
+    "browser": "Chromium",
+    "created_at": "2026-08-10T11:55:28.886862+00:00"
+  }
+}
