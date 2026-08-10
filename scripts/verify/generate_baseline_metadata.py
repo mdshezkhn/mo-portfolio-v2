@@ -24,40 +24,57 @@ def hash_file(path):
     return h.hexdigest()
 
 def generate():
-    source_manifest_paths = [
-        'career-data/facts/employment.yml',
-        'career-data/facts/claims.yml',
-        'career-data/facts/evidence_assertions.yml',
-        'career-data/relationships/edges.yml',
-        'governance/cv_policies.yml',
-        'scripts/verify/graph_validator.py',
-        'scripts/verify/verification_resolver.py',
-        'scripts/builders/build_domain_model.py',
-        'build.py'
-    ]
+    manifest_categories = {
+        'canonical_data': [
+            'career-data/facts/employment.yml',
+            'career-data/facts/claims.yml',
+            'career-data/facts/entities.yml'
+        ],
+        'governance': [
+            'governance/cv_policies.yml'
+        ],
+        'provenance_engine': [
+            'career-data/relationships/edges.yml',
+            'career-data/facts/evidence_assertions.yml'
+        ],
+        'verification_logic': [
+            'scripts/verify/graph_validator.py',
+            'scripts/verify/verification_resolver.py'
+        ],
+        'build_orchestration': [
+            'build_domain_model.py',
+            'build.py'
+        ],
+        'templates': [
+            'templates/cv/base.html',
+            'templates/cv/partials/experience.html'
+        ]
+    }
     
     commit_sha, is_clean = get_git_info()
     
-    source_manifest = []
-    for path in source_manifest_paths:
-        source_manifest.append({
-            'path': path,
-            'sha256': hash_file(path)
-        })
-        
+    source_manifest = {}
+    for category, files in manifest_categories.items():
+        source_manifest[category] = []
+        for path in files:
+            source_manifest[category].append({
+                'path': path,
+                'sha256': hash_file(path)
+            })
+            
     metadata = {
         'baseline': {
             'artifact': 'CV_Master.html'
         },
         'git': {
             'source_commit': commit_sha,
-            'baseline_commit': 'pending_commit',
+            'metadata_commit': 'pending_commit',
             'worktree_clean': is_clean
         },
         'source_manifest': source_manifest,
         'artifact_hashes': {
             'master_json': hash_file('artifacts/cv_view_models/master.json'),
-            'cv_master_html': hash_file('artifacts/baselines/cv_master/CV_Master.html')
+            'cv_master_html': hash_file('compiled_assets/CV_Master.html')
         },
         'environment': {
             'viewport': '1920x1080',
