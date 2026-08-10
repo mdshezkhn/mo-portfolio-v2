@@ -3,7 +3,7 @@
     "artifact": "CV_Master.html"
   },
   "git": {
-    "source_commit": "91774bb0174f0cea69c3a114c920472a54b5f132",
+    "source_commit": "a4b2c08dac68caba57869c2adcf797b5e5ed4839",
     "metadata_commit": "pending_commit",
     "worktree_clean": true
   },
@@ -35,7 +35,7 @@
       },
       {
         "path": "career-data/facts/evidence_assertions.yml",
-        "sha256": "87eb2c26e3a5fa3f53d6253586196c6af454cf6bf7ba89d3c23e7c3e7c82ed7b"
+        "sha256": "23b88c409bc666565e92c5add04478edf803c55a6ccf4945df98e5007ab30c3a"
       }
     ],
     "verification_logic": [
@@ -79,13 +79,13 @@
   },
   "artifact_hashes": {
     "master_json": "073487f7a34308bd2a53782ea43457aae3773e6ba65b4efd422a672f26d4583a",
-    "cv_master_html": "ad993f3a61131f3e1a2acc899c3b6228f322343f6b278c3adbb0bfced6207bd5",
+    "cv_master_html": "449e927a3fe49db3ae4cc8a816ae6e7485f174ca54b5fe5aee16f2ef3de435cc",
     "portfolio_json": "47766a682b27cfd55d5f1aa664c3df05c1e537877d4d0f9a6d2e16f2ccf97017",
     "portfolio_html": "452d2ed8417c3fa2cf36522f8c6c833697204e954986d4d6fceca0a03175a5c8"
   },
   "environment": {
     "viewport": "1920x1080",
     "browser": "Chromium",
-    "created_at": "2026-08-10T17:10:51.679971+00:00"
+    "created_at": "2026-08-10T17:13:23.436500+00:00"
   }
 }
