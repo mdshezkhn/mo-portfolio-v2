@@ -19,7 +19,7 @@ def hash_file(path):
     if not p.exists():
         return "MISSING"
     h = hashlib.sha256()
-    h.update(p.read_bytes())
+    h.update(p.read_bytes().replace(b'\r\n', b'\n'))
     return h.hexdigest()
 
 def get_git_info():
