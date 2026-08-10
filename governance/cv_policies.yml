@@ -23,6 +23,8 @@ policies:
       employers: "ALL_VERIFIED"
       education: "ALL_VERIFIED"
       claims: "ALL_VERIFIED"
+    employment:
+      require_verified_claim: true   # Employment appears only if ≥1 presentation claim is VERIFIED
     sorting: "CHRONOLOGICAL_DESCENDING"
     group_by: "ORGANIZATION"
     

@@ -4,9 +4,9 @@
     "graph_version": "1.0.0",
     "resolver_version": "1.0.0",
     "schema_version": "1.0.0",
-    "build_id": "3f02edb4-ef44-4a41-879c-45648be4ca81",
-    "generated_at": "2026-08-11T02:04:12.301553Z",
-    "source_commit": "54b725a0cda2763e6026244e024ef3c86eb27007"
+    "build_id": "db46d9bb-c261-4af1-9844-8ea27b039276",
+    "generated_at": "2026-08-11T02:19:10.875617Z",
+    "source_commit": "0bea27256be536597eb05c63fd98b42ee1f7849d"
   },
   "entities": {
     "C-001": {
