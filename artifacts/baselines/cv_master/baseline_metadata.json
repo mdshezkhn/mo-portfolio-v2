@@ -3,9 +3,9 @@
     "artifact": "CV_Master.html"
   },
   "git": {
-    "source_commit": "7007a7ff492e0a2e3c06e3e425ed233fb9b694ce",
+    "source_commit": "5d1fc9335605d40e6a0f7f22e12a5aadf4c60b2e",
     "metadata_commit": "pending_commit",
-    "worktree_clean": true
+    "worktree_clean": false
   },
   "source_manifest": {
     "canonical_data": [
@@ -47,11 +47,11 @@
     "build_orchestration": [
       {
         "path": "scripts/builders/build_domain_model.py",
-        "sha256": "ab9d90df58fca3c448428de9a4d40debc0e6a17d54a8838a468a2c0e5845aa76"
+        "sha256": "cbe56d25ada8f58ce43fdf44bf899128b8c9289cf825abc10be8474f838a32af"
       },
       {
         "path": "build.py",
-        "sha256": "587503430904cbf8e37a9ec6243cd7ff29c16d3a6f62d79e22db43b449c55b10"
+        "sha256": "c1b0ba78c30e6219843dafdd5cc046637caa07ec44b7bbdf4e2c49a567cfb26d"
       }
     ],
     "templates": [
@@ -72,6 +72,6 @@
   "environment": {
     "viewport": "1920x1080",
     "browser": "Chromium",
-    "created_at": "2026-08-10T15:36:58.615899+00:00"
+    "created_at": "2026-08-10T15:39:50.367272+00:00"
   }
 }
