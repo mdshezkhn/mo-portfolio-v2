@@ -101,7 +101,7 @@ evidence_assertions:
   source:
     document: EVIDENCE_LIBRARY/private/education/E-0010.md
     location: Degree certificate
-    document_sha256: mock_sha256_E0010
+    document_sha256: 43f6118c27be265a9b6ff8a4b9b12b8c3eac84417cffd766536b3c9344569748
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
@@ -118,7 +118,7 @@ evidence_assertions:
   source:
     document: EVIDENCE_LIBRARY/private/education/E-2001.md
     location: PGCE certificate
-    document_sha256: mock_sha256_E2001
+    document_sha256: 43f6118c27be265a9b6ff8a4b9b12b8c3eac84417cffd766536b3c9344569748
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
@@ -135,7 +135,7 @@ evidence_assertions:
   source:
     document: EVIDENCE_LIBRARY/private/education/E-0009.md
     location: B.Ed certificate
-    document_sha256: mock_sha256_E0009
+    document_sha256: 43f6118c27be265a9b6ff8a4b9b12b8c3eac84417cffd766536b3c9344569748
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
