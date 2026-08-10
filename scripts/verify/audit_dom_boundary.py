@@ -74,13 +74,20 @@ def audit_dom():
             sys.exit(1)
             
     dom_quals = re.findall(r'<div class="edu-card" data-cert-id="([^"]+)".*?<h4 class="edu-title">([^<]+)</h4>.*?<p class="edu-sch">([^<]+)</p>', governed_cred_html, flags=re.DOTALL)
-    vm_quals = {q['id'].lower(): q for q in vm.get('qualifications', [])}
+    dom_certs = re.findall(r'<div class="cert-card" data-cert-id="([^"]+)".*?<h4 class="cert-title">([^<]+)</h4>.*?<p class="cert-org">([^<]+)</p>', governed_cred_html, flags=re.DOTALL)
     
-    if len(dom_quals) != len(vm_quals):
-        print(f"FAIL: DOM qualification count ({len(dom_quals)}) != VM count ({len(vm_quals)})")
+    # Map them into a single list
+    all_dom_quals = []
+    for d, title, inst in dom_quals + dom_certs:
+        all_dom_quals.append((d.lower(), title, inst))
+        
+    vm_quals = {q['id'].lower(): q for q in vm.get('qualifications', []) if q.get('entity_type') != 'professional_development'}
+    
+    if len(all_dom_quals) != len(vm_quals):
+        print(f"FAIL: DOM qualification count ({len(all_dom_quals)}) != VM count ({len(vm_quals)})")
         sys.exit(1)
         
-    for dom_id, degree, institution in dom_quals:
+    for dom_id, degree, institution in all_dom_quals:
         if dom_id not in vm_quals:
             print(f"FAIL: DOM contains unmanaged qualification ID: {dom_id}")
             sys.exit(1)

@@ -78,3 +78,8 @@ education_records:
   degree: British Council — Primary Education & Language Teaching
   institution_id: ORG-1009
   review_status: approved
+- id: QUAL-6007
+  entity_type: professional_development
+  degree: UNICEF Child Protection
+  institution_id: ORG-1010
+  review_status: approved

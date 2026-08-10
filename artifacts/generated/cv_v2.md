@@ -1,9 +1,9 @@
 # Mohammed Shehzad Khan
-**Master**
+**International Primary Educator | Primary EAL & Multilingual Learning | Curriculum, Assessment & Teacher Development**
 Available from August 2027
 
 ## Professional Summary
-Primary Educator & EAL Specialist with 11+ years in international settings (China, India). I specialize in rapidly improving academic English outcomes for multilingual cohorts by integrating explicit language instruction into inquiry-based science and mathematics. Proven track record in mentoring teaching teams to elevate instructional quality school-wide.
+Primary Educator & EAL Specialist with 11+ years in international settings (China, India). I specialize in rapidly improving academic English outcomes for multilingual cohorts by integrating explicit language instruction into inquiry-based science and mathematics through cross-curricular STEM facilitation. Proven track record in mentoring teaching teams to elevate instructional quality school-wide.
 
 ## Core Competencies
 * Teacher mentoring
@@ -13,6 +13,27 @@ Primary Educator & EAL Specialist with 11+ years in international settings (Chin
 * Early-years immersion
 * Inquiry-based learning & Cross-curricular STEM
 * Cross-cultural training
+* Google Workspace
+* Microsoft 365
+* Moodle
+* Canvas
+* Zoom
+* OBS Studio
+* Primary EAL
+* Multilingual Education
+* Curriculum Design
+* Differentiated Instruction
+* Formative Assessment
+* Literacy Development
+* Classroom Management
+* Assessment Moderation
+* Teacher Mentoring
+* Professional Development
+* Instructional Quality Assurance
+* Cross-Curricular STEM
+* Dialogic Teaching
+* Questioning Strategies
+* Translanguaging
 
 ## Professional Experience
 
@@ -21,21 +42,18 @@ Primary Educator & EAL Specialist with 11+ years in international settings (Chin
 
 ### GEDU Global Education (Sep 2022 - Aug 2023)
 **Teacher Trainer & Quality Assurance**
-* CLAIM-1002
 
 ### WhiteHat Jr (Aug 2020 - Jul 2022)
 **Educator Development Lead**
-* CLAIM-1001
 
 ### Aoxin International School (Jul 2018 - Aug 2020)
 **Primary Educator & Curriculum Lead**
-* CLAIM-1003
 
 ### Eton House Kindergarten (Aug 2017 - Jun 2018)
 **Early Years EAL Teacher**
 
 ### Zhejiang University (Nov 2016 - Aug 2017)
-**ESL Educator**
+**Training & Quality Lead**
 
 ### Scholars Academy (Jan 2014 - Nov 2016)
 **Primary Educator**

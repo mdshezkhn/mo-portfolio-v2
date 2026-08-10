@@ -99,9 +99,9 @@ evidence_assertions:
     supported_claims: []
 - evidence_id: E-0010
   source:
-    document: EVIDENCE_LIBRARY/private/education/E-0010.md
+    document: mo-portfolio-v2/assets/images/certificates/bsc-doc-full.webp
     location: Degree certificate
-    document_sha256: 43f6118c27be265a9b6ff8a4b9b12b8c3eac84417cffd766536b3c9344569748
+    document_sha256: 6ff2424e2eab52a40a59fbf469be045a5608ee352543bfd2b169632fafacd8c2
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
@@ -116,9 +116,9 @@ evidence_assertions:
     status: completed
 - evidence_id: E-2001
   source:
-    document: EVIDENCE_LIBRARY/private/education/E-2001.md
+    document: mo-portfolio-v2/assets/images/certificates/pgce-doc-full.webp
     location: PGCE certificate
-    document_sha256: 43f6118c27be265a9b6ff8a4b9b12b8c3eac84417cffd766536b3c9344569748
+    document_sha256: 398fd75ab9d838eb87496115a73aef960466804a1abdef69e1bd5701e31cd1a4
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
@@ -133,13 +133,57 @@ evidence_assertions:
     status: completed
 - evidence_id: E-0009
   source:
-    document: EVIDENCE_LIBRARY/private/education/E-0009.md
+    document: mo-portfolio-v2/assets/images/certificates/bed-doc-full.webp
     location: B.Ed certificate
-    document_sha256: 43f6118c27be265a9b6ff8a4b9b12b8c3eac84417cffd766536b3c9344569748
+    document_sha256: 8fef3650c95ca6826673c4ab6adb1e288fa47e57f7084914b6015cf4ffbaef49
+  transcription:
+    method: manual_structured_extraction
+    extracted_by: system_agent
+- evidence_id: E-4001
+  source:
+    document: mo-portfolio-v2/assets/images/certificates/tesol-found-doc-full.webp
+    location: TESOL certificate
+    document_sha256: 6d43a1b341acfc98f0061deddf117b05aef0d02c5ff9c2ffcb4707dc5f998dbd
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
     extracted_at: '2026-08-11'
+  verification:
+    status: verified
+    basis: source_document_review
+  assertions:
+    qualification_id: QUAL-6004
+    institution_id: ORG-1007
+- evidence_id: E-4002
+  source:
+    document: mo-portfolio-v2/assets/images/certificates/tefl-doc-full.webp
+    location: TEFL certificate
+    document_sha256: 885b38a06b96e2da503b065d9f0ef2a2de2f313c9054a29b32500aa482d77c1c
+  transcription:
+    method: manual_structured_extraction
+    extracted_by: system_agent
+    extracted_at: '2026-08-11'
+  verification:
+    status: verified
+    basis: source_document_review
+  assertions:
+    qualification_id: QUAL-6005
+    institution_id: ORG-1008
+- evidence_id: E-4003
+  source:
+    document: mo-portfolio-v2/assets/images/certificates/unicef-doc-full.webp
+    location: UNICEF certificate
+    document_sha256: 3056b50491d9e4dc2481d43d82640a5618bdd21084d7bf5459f9cd39022f9b05
+  transcription:
+    method: manual_structured_extraction
+    extracted_by: system_agent
+    extracted_at: '2026-08-11'
+  verification:
+    status: verified
+    basis: source_document_review
+  assertions:
+    qualification_id: QUAL-6007
+    institution_id: ORG-1010
   verification:
     status: verified
     basis: source_document_review

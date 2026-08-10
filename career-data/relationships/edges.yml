@@ -95,3 +95,24 @@ edges:
 - from: EMP-2003
   to: E-3005
   type: SUPPORTED_BY
+- from: QUAL-6004
+  to: ORG-1007
+  type: STUDIED_AT
+- from: QUAL-6004
+  to: E-4001
+  type: SUPPORTED_BY
+- from: QUAL-6005
+  to: ORG-1008
+  type: STUDIED_AT
+- from: QUAL-6005
+  to: E-4002
+  type: SUPPORTED_BY
+- from: QUAL-6006
+  to: ORG-1009
+  type: STUDIED_AT
+- from: QUAL-6007
+  to: ORG-1010
+  type: STUDIED_AT
+- from: QUAL-6007
+  to: E-4003
+  type: SUPPORTED_BY

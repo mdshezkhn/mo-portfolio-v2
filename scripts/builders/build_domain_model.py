@@ -126,7 +126,8 @@ def build():
                     "id": qual_id,
                     "degree": qual.get("degree"),
                     "institution": inst_name,
-                    "date": f"{start} - {end}" if start and end else (end or start)
+                    "date": f"{start} - {end}" if start and end else (end or start),
+                    "entity_type": qual.get("entity_type", "qualification")
                 })
             
         out_filename = f"{policy_name}.json"
