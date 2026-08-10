@@ -1,0 +1,546 @@
+--- CV_Master.html
++++ Mohammed_Shehzad_Khan_CV.html
+@@ -2 +2 @@
+-<html lang="en">
++<html lang="en-GB">
+@@ -4,4 +4,199 @@
+-    <meta charset="UTF-8">
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Mohammed Shehzad Khan - Master CV</title>
+-    <link rel="stylesheet" href="../../templates/cv/styles.css">
++<meta charset="UTF-8">
++<meta name="viewport" content="width=device-width, initial-scale=1.0">
++<title>Mohammed Shehzad Khan — CV</title>
++<meta name="robots" content="noindex, nofollow">
++<style>
++  @page { size: A4; margin: 1cm 1.2cm; }
++  @media print {
++    body { margin: 0; padding: 0; }
++    .no-print { display: none; }
++  }
++  * { margin: 0; padding: 0; box-sizing: border-box; }
++  body {
++    font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
++    font-size: 10pt;
++    line-height: 1.35;
++    color: #1a1a1a;
++    max-width: 210mm;
++    margin: 0 auto;
++    padding: 10mm 12mm;
++    background: #fff;
++  }
++  h1 {
++    font-size: 18pt;
++    font-weight: 700;
++    color: #1E3A5F;
++    margin-bottom: 1pt;
++    letter-spacing: 0.5pt;
++  }
++  .subtitle {
++    font-size: 11pt;
++    color: #4a4a4a;
++    margin-bottom: 6pt;
++    font-weight: 400;
++  }
++  .contact {
++    font-size: 9.5pt;
++    color: #555;
++    margin-bottom: 14pt;
++    border-bottom: 1.5pt solid #1E3A5F;
++    padding-bottom: 10pt;
++  }
++  .contact span { margin-right: 12pt; }
++  h2 {
++    font-size: 11pt;
++    font-weight: 700;
++    color: #1E3A5F;
++    text-transform: uppercase;
++    letter-spacing: 1pt;
++    margin-top: 10pt;
++    margin-bottom: 4pt;
++    border-bottom: 0.5pt solid #ccc;
++    padding-bottom: 2pt;
++  }
++  .summary {
++    margin-bottom: 4pt;
++    text-align: justify;
++  }
++  .competencies {
++    display: flex;
++    flex-wrap: wrap;
++    gap: 4pt 8pt;
++    margin-bottom: 10pt;
++    padding: 6pt 8pt;
++    background: #f5f7fa;
++    border-radius: 3pt;
++  }
++  .competencies span {
++    font-size: 9pt;
++    color: #1E3A5F;
++    background: #e8ecf1;
++    padding: 2pt 7pt;
++    border-radius: 2pt;
++  }
++  .role { margin-bottom: 7pt; page-break-inside: avoid; }
++  .role-header {
++    display: flex;
++    justify-content: space-between;
++    align-items: baseline;
++    margin-bottom: 2pt;
++  }
++  .role-title {
++    font-size: 11pt;
++    font-weight: 700;
++    color: #1a1a1a;
++  }
++  .role-dates {
++    font-size: 9.5pt;
++    color: #666;
++    white-space: nowrap;
++  }
++  .role-org {
++    font-size: 10pt;
++    color: #444;
++    font-style: italic;
++    margin-bottom: 3pt;
++  }
++  .role-loc {
++    font-size: 9.5pt;
++    color: #777;
++    margin-bottom: 4pt;
++  }
++  ul {
++    margin-left: 14pt;
++    margin-bottom: 2pt;
++  }
++  li {
++    margin-bottom: 2pt;
++    text-align: justify;
++  }
++  .edu-item {
++    margin-bottom: 6pt;
++  }
++  .edu-degree {
++    font-weight: 700;
++    font-size: 10.5pt;
++  }
++  .edu-school {
++    font-size: 10pt;
++    color: #444;
++  }
++  .edu-date {
++    font-size: 9.5pt;
++    color: #666;
++  }
++  .cert-item {
++    margin-bottom: 4pt;
++  }
++  .cert-name {
++    font-weight: 700;
++    font-size: 10pt;
++  }
++  .cert-issuer {
++    font-size: 9.5pt;
++    color: #555;
++  }
++  .skills-grid {
++    display: grid;
++    grid-template-columns: 1fr 1fr;
++    gap: 6pt 20pt;
++    margin-bottom: 4pt;
++  }
++  .skill-cat h3 {
++    font-size: 10pt;
++    font-weight: 700;
++    color: #1E3A5F;
++    margin-bottom: 2pt;
++  }
++  .skill-cat p {
++    font-size: 9.5pt;
++    color: #333;
++  }
++  .lang-list {
++    list-style: none;
++    margin-left: 0;
++    columns: 2;
++    column-gap: 20pt;
++  }
++  .lang-list li {
++    margin-bottom: 2pt;
++    font-size: 9.5pt;
++  }
++  .research-title {
++    font-weight: 700;
++    font-size: 10.5pt;
++    margin-bottom: 2pt;
++  }
++  .research-body {
++    font-size: 9.5pt;
++    color: #333;
++    text-align: justify;
++  }
++  .research-sub {
++    font-size: 10pt;
++    font-style: italic;
++    color: #444;
++    margin-bottom: 3pt;
++  }
++  .footer-note {
++    margin-top: 14pt;
++    font-size: 9pt;
++    color: #888;
++    border-top: 0.5pt solid #ccc;
++    padding-top: 6pt;
++  }
++  .print-btn {
++    position: fixed;
++    top: 20px;
++    right: 20px;
++    background: #1E3A5F;
++    color: #fff;
++    border: none;
++    padding: 10px 20px;
++    font-size: 14px;
++    cursor: pointer;
++    border-radius: 4px;
++    z-index: 1000;
++  }
++  .print-btn:hover { background: #162d4a; }
++</style>
+@@ -11,141 +206,195 @@
+-    <div class="manifest no-print">
+-        <strong>ASSET MANIFEST</strong><br>
+-        Asset: CV_Master_v2.0<br>
+-        Built From: BS-1.0, CR-1.0, ER-1.0<br>
+-        Claims Used: C-001, C-002, C-003, C-004, C-005, C-006, C-007, C-008, C-009, C-010, C-011, C-012, C-013, C-014, C-017, C-019, C-020, C-021, C-022, C-023<br>
+-        Generated: 2026-08-09<br>
+-        Compliance: PASS
+-    </div>
+-
+-    <header>
+-        <h1>Mohammed Shehzad Khan</h1>
+-        <div class="subtitle">International Primary Educator | EAL & English | Curriculum & Assessment</div>
+-        <div class="contact-info">
+-            <span>Available from August 2027</span>
+-            <span>•</span>
+-            <span>Fluent English Speaker</span>
+-        </div>
+-    </header>
+-
+-        <section>
+-        <h2>Professional Summary</h2>
+-        <p>International Primary EAL educator with 11+ years of experience across China and India, including primary classroom teaching, multilingual learner support, curriculum development, formative assessment, and teacher development. Experienced in helping EAL learners access the wider curriculum through English and in strengthening instructional quality through mentoring, assessment moderation, and professional learning. Holds a PGCE from the University of Cumbria and is available for August 2027 opportunities.</p>
+-    </section>
+-
+-    
+-        <section>
+-        <h2>Core Expertise</h2>
+-        <ul>
+-            <li>Primary EAL | Multilingual Education | Curriculum Design | Differentiated Instruction | Formative Assessment | Literacy Development | Classroom Management | Assessment Moderation | Teacher Mentoring | Professional Development | Instructional Quality Assurance | Cross-Curricular STEM | Dialogic Teaching | Questioning Strategies | Translanguaging</li>
+-        </ul>
+-    </section>
+-
+-    
+-        <section>
+-        <h2>Relevant Experience</h2>
+-        <div class="entry">
+-            <div class="entry-header">
+-                <span class="entry-title">Aoxin International School</span>
+-                <span class="entry-date">February 2024 — Present</span>
+-            </div>
+-            <div class="entry-role"><strong>EAL / English Teacher</strong></div>
+-            <ul>
+-                <li>Teach primary learners across Years 1–6, supporting access to English-medium Science and Mathematics through language scaffolding and differentiated instruction</li>
+-                <li>Deliver engaging EAL instruction enabling multilingual learners to access the curriculum through English</li>
+-                <li>Plan differentiated curriculum-aligned lessons enabling learners at varied proficiency levels to progress</li>
+-                <li>Use formative assessment to track individual progress, adjust instruction, and ensure each learner works toward appropriate language and content targets</li>
+-                <li>Apply evidence-informed questioning strategies that increase participation and language output among multilingual learners</li>
+-                <li>Collaborate with Chinese co-teachers to strengthen instructional consistency and adapt the school-based curriculum for EAL learners</li>
+-                <li>Report regularly to families with detailed written feedback on each child's language development and next steps</li>
+-            </ul>
+-        </div>
+-        <div class="entry">
+-            <div class="entry-header">
+-                <span class="entry-title">GEDU Global Education</span>
+-                <span class="entry-date">2022 — 2023</span>
+-            </div>
+-            <div class="entry-role"><strong>Training and Quality Lead</strong></div>
+-            <ul>
+-                <li>Led a 15-person trainer team and delivered professional-development programmes reaching 200+ educators across international campuses in the UK, Dubai and Malta</li>
+-                <li>Created and delivered bespoke pedagogical workshops focused on rigorous assessment practices</li>
+-                <li>Developed quality assurance frameworks that strengthened instructional consistency across international campuses</li>
+-            </ul>
+-        </div>
+-        <div class="entry">
+-            <div class="entry-header">
+-                <span class="entry-title">WhiteHat Jr (A BYJU'S Company)</span>
+-                <span class="entry-date">2020 — 2022</span>
+-            </div>
+-            <div class="entry-role"><strong>Assistant Manager — Teacher Quality and Development</strong></div>
+-            <ul>
+-                <li>Led teacher-quality and professional-development initiatives across a distributed teaching workforce, using coaching, quality assurance, and LMS data to identify instructional gaps and improve consistency</li>
+-                <li>Created teacher training programmes and curriculum resources for distributed teaching teams</li>
+-                <li>Used classroom observations and LMS analytics to identify teaching trends and improve instructional consistency</li>
+-                <li>Delivered targeted professional development sessions on assessment practices and instructional strategies</li>
+-            </ul>
+-        </div>
+-        <div class="entry">
+-            <div class="entry-header">
+-                <span class="entry-title">Aoxin International School</span>
+-                <span class="entry-date">July 2018 — August 2020</span>
+-            </div>
+-            <div class="entry-role"><strong>EAL / English Teacher</strong></div>
+-            <ul>
+-                <li>Delivered foundational EAL and English instruction to primary and lower-secondary learners in a bilingual international school</li>
+-                <li>Directed Grade 5 writing moderation across multiple teaching teams, ensuring consistent assessment standards</li>
+-                <li>Created differentiated learning experiences enabling multilingual learners at varying proficiency levels to progress in their language development</li>
+-                <li>Mentored newly appointed teachers, supporting their successful integration and maintaining instructional quality</li>
+-            </ul>
+-        </div>
+-        <div class="entry">
+-            <div class="entry-header">
+-                <span class="entry-title">Eton House Kindergarten</span>
+-                <span class="entry-date">2017 — 2018</span>
+-            </div>
+-            <div class="entry-role"><strong>ESL Teacher and Teacher Trainer</strong></div>
+-            <ul>
+-                <li>Built foundational language skills for kindergarten learners through immersive ESL instruction</li>
+-                <li>Delivered demonstration lessons and mentored colleagues to strengthen early years ESL practice</li>
+-                <li>Created age-appropriate communicative activities for young multilingual learners</li>
+-            </ul>
+-        </div>
+-        <div class="entry">
+-            <div class="entry-header">
+-                <span class="entry-title">Zhejiang University — Helen China TEFL Network</span>
+-                <span class="entry-date">2016 — 2017</span>
+-            </div>
+-            <div class="entry-role"><strong>ESL Teacher</strong></div>
+-            <ul>
+-                <li>Taught across multiple school contexts through the Helen China TEFL Network (Zhejiang University)</li>
+-                <li>Adapted teaching strategies for diverse age groups from early years to secondary</li>
+-                <li>Developed students' spoken confidence through structured communicative activities</li>
+-                <li>Applied continuous formative assessment to monitor and support language development</li>
+-            </ul>
+-        </div>
+-        <div class="entry">
+-            <div class="entry-header">
+-                <span class="entry-title">Scholars Academy</span>
+-                <span class="entry-date">2014 — 2016</span>
+-            </div>
+-            <div class="entry-role"><strong>English, Science and Mathematics Teacher</strong></div>
+-            <ul>
+-                <li>Taught English, Science and Mathematics across upper-primary and secondary classes, adapting instruction for varied learner needs and curriculum requirements</li>
+-                <li>Supported diverse learners through targeted feedback and intervention strategies</li>
+-            </ul>
+-        </div>
+-
+-    </section>
+-
+-    
+-        <section>
+-        <h2>Education & Qualifications</h2>
+-        <ul>
+-            <li>Postgraduate Certificate in Education (PGCE) — Primary Education, University of Cumbria, UK (2025 — 2026). Postgraduate professional qualification (PGCE7002)</li>
+-            <li>Bachelor of Education (B.Ed.), University of Kashmir (2021 — 2024)</li>
+-            <li>M.A. English Language and Literature, Harris University, USA (2007 — 2009)</li>
+-            <li>B.Sc. Physics, Mumbai University (2004 — 2007)</li>
+-            <li>TESOL Certification (240 hours), Global TESOL College, Canada</li>
+-            <li>TEFL Certification (120 hours), Teacher Record</li>
+-        </ul>
+-    </section>
+-
++<button class="print-btn no-print" onclick="window.print()">Print / Save as PDF</button>
++
++<h1>Mohammed Shehzad Khan</h1>
++<p class="subtitle">International Primary Educator | EAL & English | Curriculum & Assessment</p>
++
++<div class="contact">
++  <div style="margin-bottom: 3pt;">
++    <span><strong>Location:</strong> Zhengzhou, China</span>
++    <span><strong>Email:</strong> mdshezkhn@gmail.com</span>
++    <span><strong>Phone:</strong> Provided on PDF download</span>
++  </div>
++  <div>
++    <span><strong>LinkedIn:</strong> /mdshezkhn</span>
++    <span><strong>Portfolio:</strong> mdshezkhn.github.io/mo-portfolio-v2</span>
++  </div>
++</div>
++
++<h2>Professional Summary</h2>
++<p class="summary">International Primary EAL educator with 11+ years of experience across China and India, including primary classroom teaching, multilingual learner support, curriculum development, formative assessment, and teacher development. Experienced in helping EAL learners access the wider curriculum through English and in strengthening instructional quality through mentoring, assessment moderation, and professional learning. Holds a PGCE from the University of Cumbria and is available for August 2027 opportunities.</p>
++
++
++<h2>Employment History</h2>
++
++<div class="role">
++  <div class="role-header">
++    <span class="role-title">EAL / English Teacher</span>
++    <span class="role-dates">February 2024 — Present</span>
++  </div>
++  <p class="role-org">Aoxin International School</p>
++  <p class="role-loc">Zhengzhou, Henan, China</p>
++  <ul>
++    <li>Teach primary learners across Years 1–6, supporting access to English-medium Science and Mathematics through language scaffolding and differentiated instruction</li>
++    <li>Deliver engaging EAL instruction enabling multilingual learners to access the curriculum through English</li>
++    <li>Plan differentiated curriculum-aligned lessons enabling learners at varied proficiency levels to progress</li>
++    <li>Use formative assessment to track individual progress, adjust instruction, and ensure each learner works toward appropriate language and content targets</li>
++    <li>Apply evidence-informed questioning strategies that increase participation and language output among multilingual learners</li>
++    <li>Collaborate with Chinese co-teachers to strengthen instructional consistency and adapt the school-based curriculum for EAL learners</li>
++    <li>Report regularly to families with detailed written feedback on each child's language development and next steps</li>
++  </ul>
++</div>
++
++<div class="role">
++  <div class="role-header">
++    <span class="role-title">Training and Quality Lead</span>
++    <span class="role-dates">2022 — 2023</span>
++  </div>
++  <p class="role-org">GEDU Global Education</p>
++  <p class="role-loc">International (UK, Dubai, Malta)</p>
++  <ul>
++    <li>Led a 15-person trainer team and delivered professional-development programmes reaching 200+ educators across international campuses in the UK, Dubai and Malta</li>
++    <li>Created and delivered bespoke pedagogical workshops focused on rigorous assessment practices</li>
++    <li>Developed quality assurance frameworks that strengthened instructional consistency across international campuses</li>
++  </ul>
++</div>
++
++<div class="role">
++  <div class="role-header">
++    <span class="role-title">Assistant Manager — Teacher Quality and Development</span>
++    <span class="role-dates">2020 — 2022</span>
++  </div>
++  <p class="role-org">WhiteHat Jr (A BYJU'S Company)</p>
++  <p class="role-loc">India (Remote)</p>
++  <ul>
++    <li>Led teacher-quality and professional-development initiatives across a distributed teaching workforce, using coaching, quality assurance, and LMS data to identify instructional gaps and improve consistency</li>
++    <li>Created teacher training programmes and curriculum resources for distributed teaching teams</li>
++    <li>Used classroom observations and LMS analytics to identify teaching trends and improve instructional consistency</li>
++    <li>Delivered targeted professional development sessions on assessment practices and instructional strategies</li>
++  </ul>
++</div>
++
++<div class="role">
++  <div class="role-header">
++    <span class="role-title">EAL / English Teacher</span>
++    <span class="role-dates">July 2018 — August 2020</span>
++  </div>
++  <p class="role-org">Aoxin International School</p>
++  <p class="role-loc">Zhengzhou, Henan, China</p>
++  <ul>
++    <li>Delivered foundational EAL and English instruction to primary and lower-secondary learners in a bilingual international school</li>
++    <li>Directed Grade 5 writing moderation across multiple teaching teams, ensuring consistent assessment standards</li>
++    <li>Created differentiated learning experiences enabling multilingual learners at varying proficiency levels to progress in their language development</li>
++    <li>Mentored newly appointed teachers, supporting their successful integration and maintaining instructional quality</li>
++  </ul>
++</div>
++
++<div class="role">
++  <div class="role-header">
++    <span class="role-title">ESL Teacher and Teacher Trainer</span>
++    <span class="role-dates">2017 — 2018</span>
++  </div>
++  <p class="role-org">Eton House Kindergarten</p>
++  <p class="role-loc">China</p>
++  <ul>
++    <li>Built foundational language skills for kindergarten learners through immersive ESL instruction</li>
++    <li>Delivered demonstration lessons and mentored colleagues to strengthen early years ESL practice</li>
++    <li>Created age-appropriate communicative activities for young multilingual learners</li>
++  </ul>
++</div>
++
++<div class="role">
++  <div class="role-header">
++    <span class="role-title">ESL Teacher</span>
++    <span class="role-dates">2016 — 2017</span>
++  </div>
++  <p class="role-org">Zhejiang University — Helen China TEFL Network</p>
++  <p class="role-loc">Shenzhen and Huzhou, China</p>
++  <ul>
++    <li>Taught across multiple school contexts through the Helen China TEFL Network (Zhejiang University)</li>
++    <li>Adapted teaching strategies for diverse age groups from early years to secondary</li>
++    <li>Developed students' spoken confidence through structured communicative activities</li>
++    <li>Applied continuous formative assessment to monitor and support language development</li>
++  </ul>
++</div>
++
++<div class="role">
++  <div class="role-header">
++    <span class="role-title">English, Science and Mathematics Teacher</span>
++    <span class="role-dates">2014 — 2016</span>
++  </div>
++  <p class="role-org">Scholars Academy</p>
++  <p class="role-loc">Mumbai, Maharashtra, India</p>
++  <ul>
++    <li>Taught English, Science and Mathematics across upper-primary and secondary classes, adapting instruction for varied learner needs and curriculum requirements</li>
++    <li>Supported diverse learners through targeted feedback and intervention strategies</li>
++  </ul>
++</div>
++
++<h2>Education</h2>
++
++<div class="edu-item">
++  <p class="edu-degree">Postgraduate Certificate in Education (PGCE) — Primary Education</p>
++  <p class="edu-school">University of Cumbria, UK | 2025 — 2026</p>
++  <p class="edu-date">Postgraduate professional qualification (PGCE7002)</p>
++  <p class="edu-date" style="margin-top:2pt;"><em>Practitioner research:</em> Questioning Strategies and Participation Equity in Bilingual Primary Classrooms</p>
++</div>
++
++<div class="edu-item">
++  <p class="edu-degree">Bachelor of Education (B.Ed.)</p>
++  <p class="edu-school">University of Kashmir</p>
++  <p class="edu-date">2021 — 2024</p>
++</div>
++
++<div class="edu-item">
++  <p class="edu-degree">M.A. English Language and Literature</p>
++  <p class="edu-school">Harris University, USA | 2007 — 2009</p>
++  <p class="edu-date" style="font-style:italic;">*External recognition status available on request.</p>
++</div>
++
++<div class="edu-item">
++  <p class="edu-degree">B.Sc. Physics</p>
++  <p class="edu-school">Mumbai University</p>
++  <p class="edu-date">2004 — 2007</p>
++</div>
++
++<h2>Professional Development & Certifications</h2>
++
++<div class="cert-item" style="margin-bottom:8pt;">
++  <p class="cert-name" style="margin-bottom:2pt;">British Council — Primary Education & Language Teaching</p>
++</div>
++
++<div class="cert-item">
++  <p class="cert-name">TESOL Certification (240 hours)</p>
++  <p class="cert-issuer">Global TESOL College, Canada</p>
++</div>
++
++<div class="cert-item">
++  <p class="cert-name">TEFL Certification (120 hours)</p>
++  <p class="cert-issuer">Teacher Record</p>
++</div>
++
++<h2>Core Expertise</h2>
++
++<div class="competencies" style="margin-bottom:4pt; line-height: 1.6;">
++  <p>Primary EAL | Multilingual Education | Curriculum Design | Differentiated Instruction | Formative Assessment | Literacy Development | Classroom Management | Assessment Moderation | Teacher Mentoring | Professional Development | Instructional Quality Assurance | Cross-Curricular STEM | Dialogic Teaching | Questioning Strategies | Translanguaging</p>
++</div>
++<p style="font-size:9.5pt; color:#444; margin-bottom:12pt; margin-left:2pt;"><strong>Digital:</strong> Google Workspace | Microsoft 365 | Moodle | Canvas | Zoom | OBS Studio</p>
++
++<h2>Languages</h2>
++
++<ul class="lang-list">
++  <li><strong>English</strong> — Fluent</li>
++  <li><strong>Hindi</strong> — Native</li>
++  <li><strong>Urdu</strong> — Professional Working</li>
++  <li><strong>Marathi</strong> — Limited Working</li>
++  <li><strong>Arabic</strong> — Elementary Reading</li>
++  <li><strong>Mandarin Chinese</strong> — Basic Conversation</li>
++</ul>
++
++
++<h2>Research</h2>
++
++<p class="research-title">Practitioner Research</p>
++<p class="research-sub">Questioning Strategies and Participation Equity in Bilingual Primary Classrooms</p>
++<p class="research-body">University of Cumbria (2026)</p>
++<p class="research-body">Investigated how structured questioning, extended wait time and purposeful follow-up prompts influenced participation equity in bilingual primary classrooms, drawing on dialogic teaching and translanguaging frameworks.</p>

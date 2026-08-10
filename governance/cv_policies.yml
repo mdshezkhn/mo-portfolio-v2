@@ -1,0 +1,66 @@
+verification_rules:
+  master:
+    employment:
+      approved_statuses: [approved]
+    claims:
+      required:
+        - valid_edge_to_employment
+        - valid_edge_to_evidence
+
+policies:
+  master:
+    description: "The exhaustive Master CV presentation scope."
+    presentation_scope:
+      employers: "ALL_VERIFIED"
+      education: "ALL_VERIFIED"
+      claims: "ALL_VERIFIED"
+    sorting: "CHRONOLOGICAL_DESCENDING"
+    group_by: "ORGANIZATION"
+    
+  eal:
+    active: false
+    status: "DEFERRED"
+    reason: "Claim filtering not implemented"
+    description: "Targeted EAL Coordinator presentation scope."
+    presentation_scope:
+      employers: "ALL_VERIFIED"
+      education: "ALL_VERIFIED"
+      claims: "ALL_VERIFIED"  # For now, until claim filtering is implemented
+    sorting: "CHRONOLOGICAL_DESCENDING"
+    group_by: "ORGANIZATION"
+    
+  stem:
+    active: false
+    status: "DEFERRED"
+    reason: "Claim filtering not implemented"
+    description: "Targeted STEM presentation scope."
+    presentation_scope:
+      employers: "ALL_VERIFIED"
+      education: "ALL_VERIFIED"
+      claims: "ALL_VERIFIED"  # For now
+    sorting: "CHRONOLOGICAL_DESCENDING"
+    group_by: "ORGANIZATION"
+
+  coordinator:
+    active: false
+    status: "DEFERRED"
+    reason: "Claim filtering not implemented"
+    description: "Targeted Coordinator presentation scope."
+    presentation_scope:
+      employers: "ALL_VERIFIED"
+      education: "ALL_VERIFIED"
+      claims: "ALL_VERIFIED"  # For now
+    sorting: "CHRONOLOGICAL_DESCENDING"
+    group_by: "ORGANIZATION"
+
+  td:
+    active: false
+    status: "DEFERRED"
+    reason: "Claim filtering not implemented"
+    description: "Targeted Teacher Development presentation scope."
+    presentation_scope:
+      employers: "ALL_VERIFIED"
+      education: "ALL_VERIFIED"
+      claims: "ALL_VERIFIED"  # For now
+    sorting: "CHRONOLOGICAL_DESCENDING"
+    group_by: "ORGANIZATION"

@@ -1,0 +1,8 @@
+{
+  "run1_manifest_hash": "79d472e064979e2897b342437b335fdb9a6b4cef0089dcec7bcf5a2fa9b08859",
+  "run2_manifest_hash": "79d472e064979e2897b342437b335fdb9a6b4cef0089dcec7bcf5a2fa9b08859",
+  "html_identical": true,
+  "assets_identical": true,
+  "overall": "PASS",
+  "differences": []
+}

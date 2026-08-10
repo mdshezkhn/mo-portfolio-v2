@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="The complete guide to building a top 1% GitHub profile README."/>
+<title>GitHub Profile Masterclass — @hey__jay93</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{
+--bg:#0A0F08;--bg2:#0F1A0B;--bg3:#111E0E;--card:#0D1509;
+--border:rgba(202,255,60,0.12);--border2:rgba(202,255,60,0.06);
+--neon:#CAFF3C;--neon2:#8AFF57;--neon3:#39FF14;--neon-dim:rgba(202,255,60,0.15);
+--text:#E8F5E1;--text2:#A8C49A;--text3:#6B8A63;
+--code-bg:#060D04;--mono:'JetBrains Mono',monospace;--sans:'Inter',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);overflow-x:hidden;line-height:1.7}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:rgba(202,255,60,0.3);border-radius:4px}
+::selection{background:rgba(202,255,60,0.2);color:var(--neon)}
+.layout{min-height:100vh}
+.sidebar{position:fixed;top:0;left:0;width:240px;height:100vh;background:var(--card);border-right:1px solid var(--border);padding:32px 0;display:flex;flex-direction:column;overflow-y:auto;z-index:100}
+.sidebar-brand{padding:0 24px 28px;border-bottom:1px solid var(--border);margin-bottom:20px}
+.sidebar-brand .logo{font-family:var(--mono);font-size:12px;color:var(--neon);letter-spacing:.05em;margin-bottom:4px}
+.sidebar-brand .sub{font-size:11px;color:var(--text3)}
+.nav-section-label{font-family:var(--mono);font-size:9px;color:var(--text3);letter-spacing:.2em;text-transform:uppercase;padding:0 24px 8px;margin-top:12px}
+.nav-link{display:flex;align-items:center;gap:10px;padding:9px 24px;font-size:12.5px;color:var(--text2);text-decoration:none;transition:all .15s;border-left:2px solid transparent;font-family:var(--mono)}
+.nav-link:hover,.nav-link.active{color:var(--neon);background:var(--neon-dim);border-left-color:var(--neon)}
+.nav-link .n-icon{font-size:13px;width:16px;text-align:center}
+.sidebar-footer{margin-top:auto;padding:20px 24px 0;border-top:1px solid var(--border)}
+.sidebar-footer a{display:block;font-family:var(--mono);font-size:11px;color:var(--text3);text-decoration:none;transition:color .15s;padding:3px 0}
+.sidebar-footer a:hover{color:var(--neon)}
+.main{margin-left:240px;width:calc(100% - 240px);padding:0}
+.hero{position:relative;padding:100px 80px 80px;overflow:hidden;border-bottom:1px solid var(--border)}
+.hero::before{content:'';position:absolute;top:-80px;right:-80px;width:500px;height:500px;background:radial-gradient(circle,rgba(202,255,60,.07) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-100px;left:200px;width:300px;height:300px;background:radial-gradient(circle,rgba(138,255,87,.05) 0%,transparent 70%);pointer-events:none}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;color:var(--neon);background:var(--neon-dim);border:1px solid var(--border);padding:6px 14px;border-radius:30px;margin-bottom:32px;letter-spacing:.05em}
+.hero-eyebrow .pulse{width:6px;height:6px;background:var(--neon);border-radius:50%;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+.hero h1{font-size:clamp(36px,5vw,60px);font-weight:900;line-height:1.05;letter-spacing:-.03em;margin-bottom:24px;max-width:680px}
+.hero h1 .accent{color:var(--neon)}
+.hero-sub{font-size:18px;color:var(--text2);max-width:540px;line-height:1.65;margin-bottom:48px;font-weight:400}
+.hero-stats{display:flex;gap:0;border:1px solid var(--border);border-radius:16px;overflow:hidden;width:fit-content;margin-bottom:56px}
+.hero-stat{padding:20px 32px;border-right:1px solid var(--border);text-align:center}
+.hero-stat:last-child{border-right:none}
+.hero-stat .val{font-family:var(--mono);font-size:28px;font-weight:700;color:var(--neon);display:block;line-height:1;margin-bottom:4px}
+.hero-stat .lbl{font-size:11px;color:var(--text3);white-space:nowrap}
+.hero-terminal{background:var(--code-bg);border:1px solid var(--border);border-radius:14px;overflow:hidden;max-width:640px}
+.term-bar{background:var(--bg3);padding:10px 16px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--border)}
+.dot{width:10px;height:10px;border-radius:50%}
+.dr{background:#FF5F57}.dy{background:#FFBD2E}.dg{background:#28C840}
+.term-title{font-family:var(--mono);font-size:11px;color:var(--text3);margin-left:8px}
+.term-body{padding:20px 24px;font-family:var(--mono);font-size:13px;line-height:2.1}
+.tc{color:var(--neon)}.ts{color:#A6E3A1}.tv{color:#89B4FA}.to{color:var(--text2)}.tg{color:var(--text3)}
+.section{padding:80px 80px;border-bottom:1px solid var(--border)}
+.section-eyebrow{font-family:var(--mono);font-size:10px;color:var(--neon);letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.section-eyebrow::after{content:'';flex:0 0 32px;height:1px;background:var(--border)}
+.section-title{font-size:clamp(24px,3vw,36px);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:16px}
+.section-desc{font-size:16px;color:var(--text2);max-width:600px;line-height:1.7;margin-bottom:48px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;transition:border-color .2s,box-shadow .2s}
+.card:hover{border-color:rgba(202,255,60,.3);box-shadow:0 0 24px rgba(202,255,60,.05)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tool-card{display:flex;flex-direction:column;gap:14px}
+.tool-head{display:flex;align-items:flex-start;gap:14px}
+.tool-icon-wrap{width:44px;height:44px;background:var(--neon-dim);border:1px solid var(--border);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.tool-meta .t-name{font-family:var(--mono);font-size:13px;color:var(--neon);margin-bottom:2px;font-weight:600}
+.tool-meta .t-url{font-family:var(--mono);font-size:10px;color:var(--text3)}
+.tool-desc{font-size:13px;color:var(--text2);line-height:1.6}
+.tool-usage{background:var(--code-bg);border:1px solid var(--border2);border-radius:8px;padding:10px 14px;font-family:var(--mono);font-size:11px;color:var(--neon2);line-height:1.6}
+.palette-showcase{background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden;margin-bottom:24px}
+.palette-header{padding:20px 28px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.palette-name{font-family:var(--mono);font-size:13px;color:var(--text2)}
+.palette-tag{font-family:var(--mono);font-size:10px;color:var(--neon);background:var(--neon-dim);border:1px solid var(--border);padding:3px 10px;border-radius:20px}
+.swatch-row{display:flex;height:80px}
+.swatch{flex:1;display:flex;align-items:flex-end;padding:8px 10px;cursor:pointer;transition:flex .2s}
+.swatch:hover{flex:1.5}
+.sw-hex{font-family:var(--mono);font-size:9px;padding:2px 5px;border-radius:3px;background:rgba(0,0,0,.3);color:rgba(255,255,255,.7)}
+.palette-rules{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.rule-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+.rule-num{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--neon);line-height:1;flex-shrink:0;opacity:.4}
+.rule-content .r-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px}
+.rule-content .r-desc{font-size:12px;color:var(--text2);line-height:1.5}
+.structure-list{display:flex;flex-direction:column;gap:2px}
+.struct-item{display:flex;align-items:flex-start;gap:20px;padding:16px 20px;background:var(--card);border:1px solid var(--border2);border-radius:12px;transition:all .15s}
+.struct-item:hover{border-color:var(--border);background:var(--bg3)}
+.struct-num{font-family:var(--mono);font-size:11px;color:var(--text3);width:24px;flex-shrink:0;padding-top:2px}
+.struct-content{flex:1}
+.struct-name{font-size:14px;font-weight:600;color:var(--text);margin-bottom:3px}
+.struct-desc{font-size:12.5px;color:var(--text2);line-height:1.5}
+.struct-badge{font-family:var(--mono);font-size:10px;padding:3px 9px;border-radius:20px;flex-shrink:0;align-self:flex-start}
+.badge-must{background:rgba(202,255,60,.1);color:var(--neon);border:1px solid rgba(202,255,60,.2)}
+.badge-rec{background:rgba(138,255,87,.08);color:var(--neon2);border:1px solid rgba(138,255,87,.2)}
+.snippet-block{background:var(--code-bg);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:24px}
+.snippet-header{background:var(--bg3);padding:11px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
+.snippet-title{font-family:var(--mono);font-size:11.5px;color:var(--text2);display:flex;align-items:center;gap:8px}
+.snippet-title::before{content:'//';color:var(--text3)}
+.copy-btn{font-family:var(--mono);font-size:10px;color:var(--text3);background:transparent;border:1px solid var(--border);border-radius:6px;padding:4px 10px;cursor:pointer;transition:all .15s}
+.copy-btn:hover{color:var(--neon);border-color:var(--border);background:var(--neon-dim)}
+.copy-btn.copied{color:var(--neon2);border-color:rgba(138,255,87,.3)}
+pre{padding:20px 24px;overflow-x:auto;font-family:var(--mono);font-size:12.5px;line-height:1.8;white-space:pre}
+.k{color:#CBA6F7}.s{color:#A6E3A1}.a{color:#89DCEB}.v{color:#FAB387}.c{color:#6C7086}.n{color:var(--neon)}.b{color:#89B4FA}
+.widget-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px}
+.widget-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;transition:all .2s}
+.widget-card:hover{border-color:rgba(202,255,60,.25);transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.3)}
+.w-emoji{font-size:28px;margin-bottom:12px;display:block}
+.w-name{font-family:var(--mono);font-size:12px;color:var(--neon);margin-bottom:6px;font-weight:600}
+.w-desc{font-size:13px;color:var(--text2);line-height:1.55;margin-bottom:12px}
+.w-url{font-family:var(--mono);font-size:10px;color:var(--text3);background:var(--code-bg);padding:5px 10px;border-radius:6px;display:inline-block;border:1px solid var(--border2)}
+.tips-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tip-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;display:flex;gap:16px;align-items:flex-start;transition:all .15s}
+.tip-card:hover{border-color:rgba(202,255,60,.2);background:var(--bg3)}
+.tip-num{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--neon);opacity:.25;line-height:1;flex-shrink:0;min-width:28px}
+.tip-body .t-title{font-size:13.5px;font-weight:700;color:var(--text);margin-bottom:5px}
+.tip-body .t-desc{font-size:12.5px;color:var(--text2);line-height:1.55}
+.steps-track{position:relative;padding-left:52px}
+.steps-track::before{content:'';position:absolute;left:15px;top:24px;bottom:24px;width:1px;background:linear-gradient(to bottom,var(--neon) 0%,rgba(202,255,60,.1) 100%)}
+.step{position:relative;margin-bottom:36px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px 28px;transition:all .2s}
+.step:last-child{margin-bottom:0}
+.step:hover{border-color:rgba(202,255,60,.25);background:var(--bg3)}
+.step-badge{position:absolute;left:-52px;top:50%;transform:translateY(-50%);width:30px;height:30px;background:var(--neon);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--bg);box-shadow:0 0 16px rgba(202,255,60,.4)}
+.step-title{font-size:16px;font-weight:700;color:var(--text);margin-bottom:6px}
+.step-desc{font-size:13.5px;color:var(--text2);line-height:1.6;margin-bottom:12px}
+.step-code{font-family:var(--mono);font-size:11px;color:var(--neon);background:var(--code-bg);border:1px solid var(--border2);border-radius:8px;padding:8px 14px;display:inline-block}
+.dos-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dos-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.dos-header{padding:14px 20px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.dos-header.bad{color:#F38BA8;background:rgba(243,139,168,.05)}
+.dos-header.good{color:var(--neon2);background:rgba(166,227,161,.05)}
+.dos-list{padding:16px 20px;display:flex;flex-direction:column;gap:8px}
+.dos-item{display:flex;align-items:baseline;gap:10px;font-size:13px;color:var(--text2);line-height:1.4}
+.bad-list .dos-item::before{content:'\u2717';color:#F38BA8;font-size:11px;flex-shrink:0}
+.good-list .dos-item::before{content:'\u2713';color:var(--neon2);font-size:11px;flex-shrink:0}
+.footer{padding:60px 80px;text-align:center;position:relative;overflow:hidden}
+.footer::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(202,255,60,.06) 0%,transparent 70%);pointer-events:none}
+.footer-icon{font-size:48px;margin-bottom:20px;display:block;filter:drop-shadow(0 0 20px rgba(202,255,60,.4))}
+.footer h3{font-size:28px;font-weight:800;color:var(--neon);margin-bottom:8px;font-family:var(--mono)}
+.footer p{font-size:15px;color:var(--text2);margin-bottom:32px}
+.footer-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.footer-link{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:12px;color:var(--neon);text-decoration:none;background:var(--neon-dim);border:1px solid var(--border);padding:10px 20px;border-radius:30px;transition:all .2s}
+.footer-link:hover{background:rgba(202,255,60,.25);border-color:rgba(202,255,60,.4);box-shadow:0 0 20px rgba(202,255,60,.15)}
+.footer-copy{margin-top:48px;font-family:var(--mono);font-size:11px;color:var(--text3)}
+@media(max-width:1024px){.sidebar{display:none}.main{margin-left:0;width:100%}.hero,.section,.footer{padding:60px 32px}.grid-2,.widget-grid,.tips-grid,.dos-grid,.palette-rules{grid-template-columns:1fr}}
+@media(max-width:600px){.hero,.section,.footer{padding:40px 20px}.hero h1{font-size:30px}.steps-track{padding-left:40px}.steps-track::before{left:11px}.step-badge{left:-40px;width:24px;height:24px;font-size:11px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav class="sidebar">
+<div class="sidebar-brand">
+<div class="logo">> @hey__jay93</div>
+<div class="sub">github profile masterclass</div>
+</div>
+<div class="nav-section-label">guide</div>
+<a href="#what" class="nav-link"><span class="n-icon">&#128194;</span> What &amp; Why</a>
+<a href="#tools" class="nav-link"><span class="n-icon">&#128295;</span> Tools</a>
+<a href="#palette" class="nav-link"><span class="n-icon">&#127912;</span> Color Palette</a>
+<a href="#structure" class="nav-link"><span class="n-icon">&#128450;</span> Structure</a>
+<a href="#snippets" class="nav-link"><span class="n-icon">&lt;/&gt;</span> Code Snippets</a>
+<a href="#widgets" class="nav-link"><span class="n-icon">&#128202;</span> Live Widgets</a>
+<a href="#prompt" class="nav-link"><span class="n-icon">&#128196;</span> Master Prompt</a>
+<div class="nav-section-label">tips</div>
+<a href="#tips" class="nav-link"><span class="n-icon">&#9889;</span> Pro Tips</a>
+<a href="#steps" class="nav-link"><span class="n-icon">&#128640;</span> Step by Step</a>
+<a href="#dos" class="nav-link"><span class="n-icon">&#10003;</span> Dos &amp; Don&apos;ts</a>
+<div class="sidebar-footer">
+<a href="https://instagram.com/hey__jay93" target="_blank">&uarr; instagram</a>
+<a href="https://github.com/Ajkolaganti" target="_blank">&uarr; github example</a>
+</div>
+</nav>
+<main class="main">
+<section class="hero" id="top">
+<div class="hero-eyebrow"><div class="pulse"></div> free guide &bull; 6 steps &bull; 2 hours</div>
+<h1>Build a GitHub Profile<br/>That Gets You <span class="accent">Hired.</span></h1>
+<p class="hero-sub">Most developer GitHub profiles are invisible. This guide shows you the exact system&mdash;tools, structure, color palette, and real code&mdash;to build one that makes recruiters stop scrolling.</p>
+<div class="hero-stats">
+<div class="hero-stat"><span class="val">$0</span><span class="lbl">total cost</span></div>
+<div class="hero-stat"><span class="val">2h</span><span class="lbl">to build it</span></div>
+<div class="hero-stat"><span class="val">6</span><span class="lbl">clear steps</span></div>
+<div class="hero-stat"><span class="val">&infin;</span><span class="lbl">auto-updating widgets</span></div>
+</div>
+<div class="hero-terminal">
+<div class="term-bar"><div class="dot dr"></div><div class="dot dy"></div><div class="dot dg"></div><span class="term-title">README.md &mdash; your future profile</span></div>
+<div class="term-body">
+<div><span class="tc">$</span> <span class="to">whoami</span></div>
+<div><span class="ts">&rarr; Senior Engineer &middot; 7+ yrs &middot; Finance / Cloud / AI</span></div>
+<div>&nbsp;</div>
+<div><span class="tc">$</span> <span class="to">ls /projects</span></div>
+<div><span class="ts">&rarr; ProjectA &middot; ProjectB &middot; ProjectC</span></div>
+<div>&nbsp;</div>
+<div><span class="tc">$</span> <span class="to">cat open-to.txt</span></div>
+<div><span class="ts">&rarr; Senior/Staff Engineering + AI Product roles</span></div>
+<div><span class="tg"># this is what a top 1% profile bio looks like</span></div>
+</div>
+</div>
+</section>
+<section class="section" id="what">
+<div class="section-eyebrow">01 &mdash; background</div>
+<h2 class="section-title">What Is a GitHub Profile README<br/>and Why Does It Matter?</h2>
+<p class="section-desc">A GitHub profile README is a secret feature&mdash;create a repo named exactly your GitHub username, add a README.md, and GitHub displays it at the very top of your profile. It becomes your live, auto-updating developer portfolio.</p>
+<div class="grid-2">
+<div class="card">
+<div style="font-family:var(--mono);font-size:11px;color:var(--neon);margin-bottom:12px;letter-spacing:.1em">// THE TRICK</div>
+<div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:10px">The special repo name</div>
+<div style="font-size:13.5px;color:var(--text2);line-height:1.65;margin-bottom:16px">Create a public repo with <strong style="color:var(--text)">the same name as your GitHub username</strong>. GitHub treats this as your profile README and pins it to the top of your page.</div>
+<div style="background:var(--code-bg);border:1px solid var(--border2);border-radius:8px;padding:12px 16px;font-family:var(--mono);font-size:12px">
+<span style="color:var(--text3)">github.com/</span><span style="color:var(--neon)">YourHandle</span><span style="color:var(--text3)">/</span><span style="color:var(--neon)">YourHandle</span><br/>
+<span style="color:var(--text3)">&nbsp;&nbsp;&nbsp;&nbsp;&swarr;&nbsp;</span><span style="color:#A6E3A1">README.md</span><span style="color:var(--text3)"> &larr; auto-displayed on profile</span>
+</div>
+</div>
+<div class="card">
+<div style="font-family:var(--mono);font-size:11px;color:var(--neon);margin-bottom:12px;letter-spacing:.1em">// WHY IT WORKS</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:14px;align-items:flex-start"><div style="font-size:22px">&#127919;</div><div><div style="font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:3px">Recruiters skim GitHub</div><div style="font-size:12.5px;color:var(--text2)">73% check GitHub before reaching out. Your profile is page 1.</div></div></div>
+<div style="display:flex;gap:14px;align-items:flex-start"><div style="font-size:22px">&#128260;</div><div><div style="font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:3px">Widgets auto-update</div><div style="font-size:12.5px;color:var(--text2)">Stats, streaks, contribution graphs&mdash;all live. Build once, stays fresh.</div></div></div>
+<div style="display:flex;gap:14px;align-items:flex-start"><div style="font-size:22px">&#9889;</div><div><div style="font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:3px">Pure Markdown</div><div style="font-size:12.5px;color:var(--text2)">No frameworks, no build tools. Just a text file with image links.</div></div></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="tools">
+<div class="section-eyebrow">02 &mdash; tools</div>
+<h2 class="section-title">5 Free Tools That Do<br/>All the Heavy Lifting</h2>
+<p class="section-desc">Every widget, badge, and animation is generated by one of these five services. No account needed for most&mdash;just URL parameters.</p>
+<div class="grid-2" style="gap:16px">
+<div class="card tool-card"><div class="tool-head"><div class="tool-icon-wrap">&#127754;</div><div class="tool-meta"><div class="t-name">capsule-render</div><div class="t-url">capsule-render.vercel.app</div></div></div><div class="tool-desc">Animated SVG banners for your profile header and footer. Types: wave, shark, venom. Change colors, text, font via URL params.</div><div class="tool-usage">?type=shark&amp;color=0a0f08&amp;fontColor=CAFF3C<br/>&amp;text=Your+Name&amp;fontSize=38</div></div>
+<div class="card tool-card"><div class="tool-head"><div class="tool-icon-wrap">&#9000;</div><div class="tool-meta"><div class="t-name">readme-typing-svg</div><div class="t-url">readme-typing-svg.demolab.com</div></div></div><div class="tool-desc">Typewriter text animation. Pass your lines as URL params&mdash;it cycles through them with typing and deleting effect.</div><div class="tool-usage">?font=Fira+Code&amp;color=CAFF3C<br/>&amp;lines=Line+1;Line+2;Line+3</div></div>
+<div class="card tool-card"><div class="tool-head"><div class="tool-icon-wrap">&#128737;</div><div class="tool-meta"><div class="t-name">shields.io</div><div class="t-url">shields.io</div></div></div><div class="tool-desc">Custom badges for any skill, tool, or link. 1000+ logos. Three styles: flat-square, for-the-badge, flat.</div><div class="tool-usage">img.shields.io/badge/LABEL-TEXT-COLOR<br/>?style=for-the-badge&amp;logo=github&amp;labelColor=060D08</div></div>
+<div class="card tool-card"><div class="tool-head"><div class="tool-icon-wrap">&#128142;</div><div class="tool-meta"><div class="t-name">skillicons.dev</div><div class="t-url">skillicons.dev</div></div></div><div class="tool-desc">Beautiful dark-mode skill icons in a single URL. Pass a comma-separated list of tech names and get polished SVG icons.</div><div class="tool-usage">skillicons.dev/icons?i=java,spring,aws&amp;theme=dark</div></div>
+<div class="card tool-card" style="grid-column:1/-1"><div class="tool-head"><div class="tool-icon-wrap">&#128202;</div><div class="tool-meta"><div class="t-name">github-readme-stats + streak-stats + profile-summary-cards</div><div class="t-url">Multiple services&mdash;all free, all auto-updating</div></div></div><div class="tool-desc">Three widget services pulling your live GitHub data: stats (commits, PRs, stars), streak (consistency), and profile summary cards (contribution breakdown by language and time).</div><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px"><div class="tool-usage" style="flex:1;min-width:200px">github-readme-stats.vercel.app/api<br/>?username=YOUR_HANDLE</div><div class="tool-usage" style="flex:1;min-width:200px">github-readme-streak-stats.herokuapp.com<br/>/?user=YOUR_HANDLE</div><div class="tool-usage" style="flex:1;min-width:200px">github-profile-summary-cards.vercel.app<br/>/api/cards/profile-details?username=...</div></div></div>
+</div>
+</section>
+<section class="section" id="palette">
+<div class="section-eyebrow">03 &mdash; visual identity</div>
+<h2 class="section-title">Pick a Color Palette<br/>That Screams <span style="color:var(--neon)">You</span></h2>
+<p class="section-desc">The biggest mistake: using a template's random purple scheme. Your palette should come from YOUR brand. Here's the palette from the example profile&mdash;built from the Sidhiratech brand colors.</p>
+<div class="palette-showcase">
+<div class="palette-header"><div class="palette-name">Terminal Hacker &mdash; Sidhiratech Brand</div><div class="palette-tag">// used in the live example profile</div></div>
+<div class="swatch-row">
+<div class="swatch" style="background:#0A0F08"><div class="sw-hex">#0A0F08</div></div>
+<div class="swatch" style="background:#0F1A0B"><div class="sw-hex">#0F1A0B</div></div>
+<div class="swatch" style="background:#1A2B1A"><div class="sw-hex" style="color:rgba(255,255,255,.5)">#1A2B1A</div></div>
+<div class="swatch" style="background:#CAFF3C"><div class="sw-hex" style="background:rgba(0,0,0,.2);color:rgba(0,0,0,.8)">#CAFF3C</div></div>
+<div class="swatch" style="background:#8AFF57"><div class="sw-hex" style="background:rgba(0,0,0,.2);color:rgba(0,0,0,.8)">#8AFF57</div></div>
+<div class="swatch" style="background:#E8F5E1"><div class="sw-hex" style="color:rgba(0,0,0,.5)">#E8F5E1</div></div>
+</div>
+</div>
+<div class="palette-showcase">
+<div class="palette-header"><div class="palette-name">Catppuccin Mocha &mdash; IDE Dark Alternative</div><div class="palette-tag">// popular with developers</div></div>
+<div class="swatch-row">
+<div class="swatch" style="background:#1E1E2E"><div class="sw-hex">#1E1E2E</div></div>
+<div class="swatch" style="background:#313244"><div class="sw-hex">#313244</div></div>
+<div class="swatch" style="background:#CBA6F7"><div class="sw-hex" style="color:rgba(0,0,0,.5)">#CBA6F7</div></div>
+<div class="swatch" style="background:#A6E3A1"><div class="sw-hex" style="color:rgba(0,0,0,.5)">#A6E3A1</div></div>
+<div class="swatch" style="background:#89B4FA"><div class="sw-hex" style="color:rgba(0,0,0,.5)">#89B4FA</div></div>
+<div class="swatch" style="background:#F38BA8"><div class="sw-hex" style="color:rgba(0,0,0,.5)">#F38BA8</div></div>
+</div>
+</div>
+<div class="palette-rules">
+<div class="rule-card"><div class="rule-num">01</div><div class="rule-content"><div class="r-title">One dominant accent, max</div><div class="r-desc">Pick a single accent color. Use it for badges, section headings, stats widget titles, and graph lines. Consistency creates identity.</div></div></div>
+<div class="rule-card"><div class="rule-num">02</div><div class="rule-content"><div class="r-title">Dark background always</div><div class="r-desc">GitHub's interface is dark-mode by default for many users. A dark background reads as intentional, not broken.</div></div></div>
+<div class="rule-card"><div class="rule-num">03</div><div class="rule-content"><div class="r-title">Your brand comes first</div><div class="r-desc">If you have a personal brand&mdash;a product, YouTube, Instagram&mdash;pull the colors from there. Alignment matters.</div></div></div>
+<div class="rule-card"><div class="rule-num">04</div><div class="rule-content"><div class="r-title">Apply to every widget</div><div class="r-desc">Stats, streak, graphs, trophies&mdash;all accept custom color parameters. Set all of them to your palette. Inconsistent colors signal template.</div></div></div>
+</div>
+</section>
+<section class="section" id="structure">
+<div class="section-eyebrow">04 &mdash; architecture</div>
+<h2 class="section-title">The 12-Section Structure<br/>That Converts</h2>
+<p class="section-desc">Recruiters read top-down and stop when they lose interest. Put your strongest signal first. Every section has a purpose&mdash;don't just copy the order, understand why it's ordered this way.</p>
+<div class="structure-list">
+<div class="struct-item"><div class="struct-num">01</div><div class="struct-content"><div class="struct-name">Animated Banner</div><div class="struct-desc">capsule-render SVG. First visual impression. Sets the tone and color palette in the first 3 seconds.</div></div><div class="struct-badge badge-must">must</div></div>
+<div class="struct-item"><div class="struct-num">02</div><div class="struct-content"><div class="struct-name">Typing SVG + Badge Row</div><div class="struct-desc">Who you are in 4 rotating lines. Portfolio, LinkedIn, email, GitHub buttons below. Immediate exits to your best content.</div></div><div class="struct-badge badge-must">must</div></div>
+<div class="struct-item"><div class="struct-num">03</div><div class="struct-content"><div class="struct-name">About / Bio Block</div><div class="struct-desc">1 paragraph + a bash/yaml code block. Keep it scannable. Terminal command style reads as technical confidence.</div></div><div class="struct-badge badge-must">must</div></div>
+<div class="struct-item"><div class="struct-num">04</div><div class="struct-content"><div class="struct-name">Tech Stack Icons</div><div class="struct-desc">skillicons.dev rows grouped by category. Max 6-7 per row. Below the fold is fine&mdash;show depth, not just breadth.</div></div><div class="struct-badge badge-must">must</div></div>
+<div class="struct-item"><div class="struct-num">05</div><div class="struct-content"><div class="struct-name">Domain Expertise Table</div><div class="struct-desc">Markdown table showing your specialization area. Security? AI/ML? Data? This signals depth beyond breadth.</div></div><div class="struct-badge badge-rec">recommended</div></div>
+<div class="struct-item"><div class="struct-num">06</div><div class="struct-content"><div class="struct-name">Featured Projects (collapsible)</div><div class="struct-desc">Use &lt;details&gt;&lt;summary&gt; for each. Include stack, scale, impact. First one open, rest collapsed. Keeps the page clean.</div></div><div class="struct-badge badge-must">must</div></div>
+<div class="struct-item"><div class="struct-num">07</div><div class="struct-content"><div class="struct-name">Experience Log</div><div class="struct-desc">Reverse-chronological. Date range + company + 3-5 bullets + skill tags only. Dense with impact, no paragraphs.</div></div><div class="struct-badge badge-must">must</div></div>
+<div class="struct-item"><div class="struct-num">08</div><div class="struct-content"><div class="struct-name">GitHub Analytics (3 widgets)</div><div class="struct-desc">Stats card, streak card, top-langs side by side. Color-match all three to your accent palette.</div></div><div class="struct-badge badge-must">must</div></div>
+<div class="struct-item"><div class="struct-num">09</div><div class="struct-content"><div class="struct-name">GitHub Trophies</div><div class="struct-desc">github-profile-trophy.vercel.app. Pick a theme that matches your palette: matrix (green), algolia (blue), dracula (purple).</div></div><div class="struct-badge badge-rec">recommended</div></div>
+<div class="struct-item"><div class="struct-num">10</div><div class="struct-content"><div class="struct-name">Activity Graph</div><div class="struct-desc">github-readme-activity-graph. Full year contribution timeline. With area=true it fills below the line for a dramatic look.</div></div><div class="struct-badge badge-rec">recommended</div></div>
+<div class="struct-item"><div class="struct-num">11</div><div class="struct-content"><div class="struct-name">Contribution Summary Cards</div><div class="struct-desc">github-profile-summary-cards: profile-details timeline, repos-per-language, most-commit-language, stats, productive-time. Looks like GitHub's contribution activity feed but embeddable.</div></div><div class="struct-badge badge-rec">recommended</div></div>
+<div class="struct-item"><div class="struct-num">12</div><div class="struct-content"><div class="struct-name">Current Focus YAML + Connect + Footer</div><div class="struct-desc">YAML block showing what you're learning and building. Contact links. Footer capsule-render wave. Shows growth mindset and gives recruiters a final contact action.</div></div><div class="struct-badge badge-must">must</div></div>
+</div>
+</section>
+<section class="section" id="snippets">
+<div class="section-eyebrow">05 &mdash; real code</div>
+<h2 class="section-title">Copy-Paste Snippets<br/>for Every Key Block</h2>
+<p class="section-desc">Replace YOUR_HANDLE with your GitHub username and YOUR_COLOR / YOUR_BG with your palette hex values (without #).</p>
+<div class="snippet-block"><div class="snippet-header"><span class="snippet-title">Animated Banner (shark type, neon green)</span><button class="copy-btn" onclick="copyCode(this,'s1')">copy</button></div><pre id="s1"><span class="k">&lt;div</span> <span class="a">align</span>=<span class="s">"center"</span><span class="k">&gt;</span>
+<span class="k">&lt;img</span> <span class="a">width</span>=<span class="s">"100%"</span> <span class="a">src</span>=<span class="s">"https://capsule-render.vercel.app/api
+  ?type=shark&amp;color=0A0F08&amp;fontColor=CAFF3C
+  &amp;text=%3E_%20YOUR%20NAME&amp;fontSize=38
+  &amp;desc=Your+Title+Here&amp;descColor=8AFF57
+  &amp;animation=fadeIn"</span> <span class="k">/&gt;
+&lt;/div&gt;</span></pre></div>
+<div class="snippet-block"><div class="snippet-header"><span class="snippet-title">Typing SVG &mdash; terminal command style</span><button class="copy-btn" onclick="copyCode(this,'s2')">copy</button></div><pre id="s2"><span class="k">&lt;img</span> <span class="a">src</span>=<span class="s">"https://readme-typing-svg.demolab.com
+  ?font=Fira+Code&amp;size=18&amp;color=CAFF3C
+  &amp;center=true&amp;vCenter=true&amp;width=820
+  &amp;lines=$ whoami+%E2%86%92+Your+role;
+  $ skills+%E2%86%92+Tech1+%7C+Tech2;
+  $ cat+open-to.txt+%E2%86%92+Role+here"</span> <span class="k">/&gt;</span></pre></div>
+<div class="snippet-block"><div class="snippet-header"><span class="snippet-title">Terminal-style bio block</span><button class="copy-btn" onclick="copyCode(this,'s3')">copy</button></div><pre id="s3"><span class="c">## `&gt; whoami`</span>
+
+Your 1-2 sentence intro here.
+
+<span class="s">```bash</span>
+<span class="n">$ cat .profile</span>
+
+<span class="b">ROLE</span>     <span class="v">=  Your Role Title</span>
+<span class="b">EXP</span>      <span class="v">=  X+ years</span>
+<span class="b">DOMAIN</span>   <span class="v">=  Area1  |  Area2  |  Area3</span>
+<span class="b">STACK</span>    <span class="v">=  Tech1  |  Tech2  |  Tech3</span>
+<span class="b">OPEN_TO</span>  <span class="v">=  Senior / Staff Engineering roles</span>
+<span class="s">```</span></pre></div>
+<div class="snippet-block"><div class="snippet-header"><span class="snippet-title">Collapsible project card</span><button class="copy-btn" onclick="copyCode(this,'s4')">copy</button></div><pre id="s4"><span class="k">&lt;details</span> <span class="a">open</span><span class="k">&gt;</span>
+<span class="k">&lt;summary&gt;&lt;b&gt;</span>&amp;#9654; Project Name &amp;mdash; Tagline<span class="k">&lt;/b&gt;&lt;/summary&gt;</span>
+
+One sentence description.
+
+| Aspect | Detail |
+| :-- | :-- |
+| **Stack** | Tech1 &amp;middot; Tech2 &amp;middot; Tech3 |
+| **Scale** | Who uses it / how many users |
+| **Impact** | Key outcome or metric |
+| **Repo** | [View](https://github.com/HANDLE/repo) |
+
+What YOU personally designed or built.
+
+<span class="k">&lt;/details&gt;</span></pre></div>
+<div class="snippet-block"><div class="snippet-header"><span class="snippet-title">GitHub analytics widgets (color-matched)</span><button class="copy-btn" onclick="copyCode(this,'s5')">copy</button></div><pre id="s5"><span class="k">&lt;div</span> <span class="a">align</span>=<span class="s">"center"</span><span class="k">&gt;</span>
+
+<span class="k">&lt;img</span> <span class="a">height</span>=<span class="s">"165"</span> <span class="a">src</span>=<span class="s">"https://github-readme-stats.vercel.app/api
+  ?username=YOUR_HANDLE&amp;show_icons=true
+  &amp;hide_border=true&amp;title_color=CAFF3C
+  &amp;icon_color=8AFF57&amp;text_color=E8F5E1
+  &amp;bg_color=0A0F08"</span> <span class="k">/&gt;</span>
+
+<span class="k">&lt;img</span> <span class="a">height</span>=<span class="s">"165"</span> <span class="a">src</span>=<span class="s">"https://github-readme-streak-stats.herokuapp.com/
+  ?user=YOUR_HANDLE&amp;hide_border=true
+  &amp;background=0A0F08&amp;stroke=CAFF3C
+  &amp;ring=8AFF57&amp;fire=CAFF3C
+  &amp;currStreakLabel=CAFF3C"</span> <span class="k">/&gt;</span>
+
+<span class="c">&lt;!-- contribution timeline card --&gt;</span>
+<span class="k">&lt;img</span> <span class="a">src</span>=<span class="s">"https://github-profile-summary-cards.vercel.app
+  /api/cards/profile-details
+  ?username=YOUR_HANDLE&amp;theme=2077"</span> <span class="a">width</span>=<span class="s">"100%"</span> <span class="k">/&gt;</span>
+
+<span class="k">&lt;/div&gt;</span></pre></div>
+<div class="snippet-block"><div class="snippet-header"><span class="snippet-title">Current focus YAML block</span><button class="copy-btn" onclick="copyCode(this,'s6')">copy</button></div><pre id="s6"><span class="c">## `&gt; cat current-focus.yaml`</span>
+
+<span class="s">```yaml</span>
+<span class="b">learning:</span>
+  <span class="v">- What you're currently studying</span>
+  <span class="v">- New tech or concept you're exploring</span>
+
+<span class="b">building:</span>
+  <span class="v">- Project 1  # short description</span>
+  <span class="v">- Project 2  # short description</span>
+
+<span class="b">open_to:</span>
+  <span class="v">- Type of role you want</span>
+  <span class="v">- Industry or environment preference</span>
+<span class="s">```</span></pre></div>
+</section>
+<section class="section" id="widgets">
+<div class="section-eyebrow">06 &mdash; live widgets</div>
+<h2 class="section-title">4 Widgets That Auto-Update<br/>Every Single Day</h2>
+<p class="section-desc">Set these up once. They pull live data from GitHub's API and regenerate every time someone loads your profile. You never need to manually update them.</p>
+<div class="widget-grid">
+<div class="widget-card"><span class="w-emoji">&#128200;</span><div class="w-name">GitHub Stats Card</div><div class="w-desc">Shows total stars, commits, pull requests, issues, and repos contributed to. Use count_private=true to include private work.</div><div class="w-url">github-readme-stats.vercel.app/api</div></div>
+<div class="widget-card"><span class="w-emoji">&#128293;</span><div class="w-name">Streak Stats</div><div class="w-desc">Longest streak, current streak, total contributions. Recruiters love seeing consistency&mdash;it signals professionalism and discipline.</div><div class="w-url">github-readme-streak-stats.herokuapp.com</div></div>
+<div class="widget-card"><span class="w-emoji">&#128202;</span><div class="w-name">Activity Graph</div><div class="w-desc">Full year timeline of contributions. With area=true it fills under the line for a dramatic heatmap effect that showcases active periods.</div><div class="w-url">github-readme-activity-graph.vercel.app</div></div>
+<div class="widget-card"><span class="w-emoji">&#127183;</span><div class="w-name">Profile Summary Cards</div><div class="w-desc">5 cards showing contribution timeline, repos per language, most commit language, stats, and productive hours. Closest to GitHub's native contribution feed.</div><div class="w-url">github-profile-summary-cards.vercel.app</div></div>
+</div>
+<div class="card" style="display:flex;gap:20px;align-items:flex-start">
+<div style="font-size:32px;flex-shrink:0">&#127942;</div>
+<div><div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:6px">Bonus: GitHub Trophies</div><div style="font-size:13.5px;color:var(--text2);line-height:1.6;margin-bottom:12px">github-profile-trophy.vercel.app ranks you on commits, PRs, stars, followers, repos, and issues. Match theme to your palette: <code style="color:var(--neon);background:var(--code-bg);padding:1px 5px;border-radius:3px;font-family:var(--mono);font-size:11px">matrix</code> for green, <code style="color:var(--neon);background:var(--code-bg);padding:1px 5px;border-radius:3px;font-family:var(--mono);font-size:11px">algolia</code> for blue, <code style="color:var(--neon);background:var(--code-bg);padding:1px 5px;border-radius:3px;font-family:var(--mono);font-size:11px">dracula</code> for purple.</div><div style="background:var(--code-bg);border:1px solid var(--border2);border-radius:8px;padding:10px 14px;font-family:var(--mono);font-size:11.5px;color:var(--neon2)">https://github-profile-trophy.vercel.app/?username=YOUR_HANDLE&amp;theme=matrix&amp;no-frame=true&amp;column=7</div></div>
+</div>
+</section>
+<section class="section" id="tips">
+<div class="section-eyebrow">07 &mdash; pro tips</div>
+<h2 class="section-title">9 Details That Separate<br/>Top 1% From the Rest</h2>
+<p class="section-desc">Most guides stop at the basics. These are the small decisions that make the difference between a profile that looks like a template and one that looks like a brand.</p>
+<div class="tips-grid">
+<div class="tip-card"><div class="tip-num">1</div><div class="tip-body"><div class="t-title">Collapsible project cards</div><div class="t-desc">The &lt;details&gt;&lt;summary&gt; tag keeps your profile clean. Open the first one by default, collapse the rest. Recruiters expand what interests them.</div></div></div>
+<div class="tip-card"><div class="tip-num">2</div><div class="tip-body"><div class="t-title">Add the snake animation</div><div class="t-desc">GitHub Action generates a snake eating your contribution graph daily. Takes 5 min to set up. Memorable, and shows GitHub Actions experience.</div></div></div>
+<div class="tip-card"><div class="tip-num">3</div><div class="tip-body"><div class="t-title">Color-match every widget</div><div class="t-desc">Stats, streak, graphs, trophies&mdash;all accept hex color params. Use your exact palette everywhere. Inconsistent colors signal template.</div></div></div>
+<div class="tip-card"><div class="tip-num">4</div><div class="tip-body"><div class="t-title">Terminal-style section headers</div><div class="t-desc">Headings like <code style="color:var(--neon);font-family:var(--mono);font-size:11px">`&gt; whoami`</code> or <code style="color:var(--neon);font-family:var(--mono);font-size:11px">`$ ls /projects`</code> read faster and signal technical personality.</div></div></div>
+<div class="tip-card"><div class="tip-num">5</div><div class="tip-body"><div class="t-title">Profile views counter</div><div class="t-desc">komarev.com/ghpvc adds a live view counter badge. Social proof. Shows your profile gets real traffic, not just sitting empty.</div></div></div>
+<div class="tip-card"><div class="tip-num">6</div><div class="tip-body"><div class="t-title">YAML current-focus block</div><div class="t-desc">A code block showing what you're learning signals growth mindset. Recruiters love someone actively building&mdash;not just listing past work.</div></div></div>
+<div class="tip-card"><div class="tip-num">7</div><div class="tip-body"><div class="t-title">Only what's accurate</div><div class="t-desc">No fake certifications. No inflated years. No placeholder projects. A lean honest profile outperforms a padded one. Recruiters fact-check.</div></div></div>
+<div class="tip-card"><div class="tip-num">8</div><div class="tip-body"><div class="t-title">Fira Code or JetBrains Mono</div><div class="t-desc">These fonts in the typing SVG read as &quot;developer who knows their tools&quot;&mdash;not someone who googled a template. Small signal, big impression.</div></div></div>
+<div class="tip-card"><div class="tip-num">9</div><div class="tip-body"><div class="t-title">Shark banner, not wave</div><div class="t-desc">Everyone uses wave. Shark (jagged bottom edge) looks aggressive and distinct. Same URL, just change <code style="color:var(--neon);font-family:var(--mono);font-size:11px">type=shark</code>. Small change, big visual differentiation.</div></div></div>
+</div>
+</section>
+<section class="section" id="steps">
+<div class="section-eyebrow">08 &mdash; process</div>
+<h2 class="section-title">Build It in 6 Steps</h2>
+<p class="section-desc">In order. Don't skip ahead. The structure matters as much as the content.</p>
+<div class="steps-track">
+<div class="step"><div class="step-badge">1</div><div class="step-title">Create the special profile repository</div><div class="step-desc">Go to github.com/new. Name the repo exactly your GitHub username (case-sensitive). Make it Public. Check &quot;Add a README file&quot;. GitHub auto-displays this README at the top of your profile.</div><div class="step-code">github.com/new &rarr; name: YOUR_GITHUB_USERNAME</div></div>
+<div class="step"><div class="step-badge">2</div><div class="step-title">Pick your palette and write it down</div><div class="step-desc">Choose your background hex, primary accent hex, and secondary accent hex before writing a single line. Having them decided saves you from inconsistency. Every badge, widget, and graph gets these exact values.</div><div class="step-code">BG=#0A0F08 | PRIMARY=#CAFF3C | SECONDARY=#8AFF57</div></div>
+<div class="step"><div class="step-badge">3</div><div class="step-title">Build your header section</div><div class="step-desc">Start with the capsule-render banner, then typing SVG, then academic/location badges, then CTA buttons (portfolio, LinkedIn, email, GitHub). Wrap everything in a centered div. This first screenful is your 3-second pitch to any recruiter.</div><div class="step-code">capsule-render &rarr; readme-typing-svg &rarr; shields.io buttons</div></div>
+<div class="step"><div class="step-badge">4</div><div class="step-title">Write your content sections</div><div class="step-desc">About block &rarr; Tech Stack &rarr; Expertise Table &rarr; Projects (collapsible) &rarr; Experience &rarr; Education. Keep each section tight. For projects: one collapsible card per project, first one open. For experience: date + bullets + skill tags&mdash;no paragraphs.</div><div class="step-code">whoami &rarr; tech-stack &rarr; projects &rarr; experience</div></div>
+<div class="step"><div class="step-badge">5</div><div class="step-title">Add and color-match all live widgets</div><div class="step-desc">Stats card, streak card, top-langs, activity graph, profile summary cards, trophies. For every single one, set bg_color, title_color, icon_color, text_color to your palette. Test each URL in your browser before pasting into the README.</div><div class="step-code">?bg_color=YOUR_BG&amp;title_color=YOUR_PRIMARY</div></div>
+<div class="step"><div class="step-badge">6</div><div class="step-title">Set up the snake animation</div><div class="step-desc">Create .github/workflows/snake.yml in your profile repo. The GitHub Action runs on a schedule, generates a snake SVG from your contribution graph, commits it to an output branch. Then reference it in your README with a raw GitHub URL. 5 minutes, runs forever.</div><div class="step-code">github.com/marketplace/actions/generate-snake-game</div></div>
+</div>
+</section>
+<section class="section" id="dos">
+<div class="section-eyebrow">09 &mdash; quality bar</div>
+<h2 class="section-title">Dos &amp; Don&apos;ts</h2>
+<p class="section-desc">The gap between a profile that gets ignored and one that gets inbound DMs is almost entirely in these details.</p>
+<div class="dos-grid">
+<div class="dos-card"><div class="dos-header bad">&cross; what kills a profile</div><div class="dos-list bad-list"><div class="dos-item">Generic purple/violet template from a random prompt</div><div class="dos-item">Placeholder certifications or skills you don't have</div><div class="dos-item">5+ different accent colors with no visual coherence</div><div class="dos-item">Wall-of-text bio with no structure or code blocks</div><div class="dos-item">Empty or one-commit repos in your pinned section</div><div class="dos-item">Widgets in different themes that visually clash</div><div class="dos-item">No email, no LinkedIn, no portfolio links visible</div><div class="dos-item">Projects listed without stack, scale, or impact metrics</div></div></div>
+<div class="dos-card"><div class="dos-header good">&check; what makes it pop</div><div class="dos-list good-list"><div class="dos-item">Your actual brand colors&mdash;not a template's defaults</div><div class="dos-item">Only what you've genuinely done&mdash;no padding</div><div class="dos-item">One accent color used consistently everywhere</div><div class="dos-item">Terminal-style bio in a code block that scans in 5 seconds</div><div class="dos-item">Pinned repos with real READMEs and live demos</div><div class="dos-item">All widgets color-matched to your exact palette</div><div class="dos-item">Email + LinkedIn + Portfolio buttons above the fold</div><div class="dos-item">Project cards with stack, scale, performance, impact</div></div></div>
+</div>
+</section>
+
+<section class="section" id="prompt" style="background:linear-gradient(135deg,rgba(202,255,60,0.04) 0%,transparent 60%);border-top:2px solid var(--neon);position:relative;overflow:visible;">
+<div style="position:absolute;top:-1px;left:80px;right:80px;height:1px;background:linear-gradient(90deg,transparent,var(--neon),transparent);pointer-events:none"></div>
+<div class="section-eyebrow">10 &mdash; the takeaway</div>
+<h2 class="section-title" style="font-size:clamp(28px,4vw,48px)">Give This Prompt to Claude.<br/>Get Your Profile Live in<br/><span style="color:var(--neon);text-shadow:0 0 40px rgba(202,255,60,0.3)">15 Minutes.</span></h2>
+<p class="section-desc">Copy the master prompt below, paste it into Claude (claude.ai) with the Composio connector enabled, answer its questions, and Claude will build and push your entire personalized README to GitHub automatically.</p>
+
+<div class="snippet-block">
+<div class="snippet-header">
+<span class="snippet-title">Master Prompt &mdash; paste directly into Claude</span>
+<button class="copy-btn" onclick="copyCode(this,'master-prompt')" style="color:var(--neon);border-color:var(--border);background:var(--neon-dim);font-size:11px;padding:6px 14px">&#128203; copy prompt</button>
+</div>
+<pre id="master-prompt" style="white-space:pre-wrap;font-size:12px;line-height:1.75"><span class="c">You are a world-class GitHub Profile README designer.
+Task: build me a COMPLETE personalized GitHub Profile README
+and push it live to my GitHub using Composio.</span>
+
+<span class="n">STEP 1 &mdash; GATHER MY INFO (ask in one message)</span>
+<span class="v">- Full name + GitHub username
+- Job title + years of experience
+- Domain / industries worked in
+- Core tech stack (languages, frameworks, cloud, databases, tools)
+- Your specialization / differentiator (security, AI, data, etc.)
+- Work experience: company, title, date range, 2-3 bullets each
+- Education: degree + school
+- Personal projects: name, stack, what it does, your contribution
+- Personal brand: Instagram, YouTube, portfolio URL, email, location
+- Certifications (say NONE if you have none -- do NOT invent any)
+- Coding platform handles (LeetCode, HackerRank, GFG) or say SKIP
+- What you are currently building or learning right now
+- What roles you are open to</span>
+
+<span class="n">STEP 2 &mdash; DESIGN CUSTOM PALETTE (before writing any code)</span>
+<span class="v">- Choose colors rooted in MY personal brand, NOT a generic template
+- Must be completely different from the purple/indigo/violet default look
+- Pick ONE dominant accent color, apply it everywhere consistently
+- Choose a banner type that fits the aesthetic (NOT the default wave)
+- Choose a terminal-style font for the typing SVG (Fira Code or JetBrains Mono)
+- Name the design direction (e.g. Terminal Hacker, Cyber Neon, Minimal Glass)
+- State exact hex values before writing a single line of README</span>
+
+<span class="n">STEP 3 &mdash; BUILD ALL 20 SECTIONS</span>
+
+<span class="b">1.  Animated Banner</span>     capsule-render NOT wave, MY colors, name + subtitle
+<span class="b">2.  Typing SVG</span>          terminal $ command style, 4-5 lines about MY role/stack/projects
+<span class="b">3.  Info Badges Row</span>     degree, university, location &mdash; flat-square, MY palette
+<span class="b">4.  CTA Buttons</span>         Portfolio, LinkedIn, Email, GitHub &mdash; for-the-badge, MY palette
+<span class="b">5.  Profile Stats</span>       komarev views, followers, stars badges
+<span class="b">6.  About / Bio</span>         2-3 sentence bio + bash code block ROLE/EXP/DOMAIN/STACK/OPEN_TO
+<span class="b">7.  Tech Stack Icons</span>    skillicons.dev rows by category (max 7 per row)
+<span class="b">8.  Specialty Badges</span>    security/AI/tooling as shields.io badges, MY palette
+<span class="b">9.  Expertise Table</span>     Markdown table: Domain | Proficiency | Details (5-6 rows)
+<span class="b">10. Featured Projects</span>   &lt;details&gt;&lt;summary&gt; per project, first open, Stack/Scale/Impact table
+<span class="b">11. Experience Log</span>      Date + company + 4-5 bullets + skill tags, reverse chronological
+<span class="b">12. Achievements Table</span>  Centered markdown table of REAL verifiable wins only
+<span class="b">13. Education Badge</span>     for-the-badge, MY palette
+<span class="b">14. Coding Profiles</span>     LeetCode/HackerRank/GFG if provided, MY palette
+<span class="b">15. GitHub Analytics</span>    stats card + streak card + top-langs, ALL MY palette colors
+<span class="b">16. Trophies</span>            github-profile-trophy, theme matching MY palette, 7 columns
+<span class="b">17. Activity Graph</span>      github-readme-activity-graph, bg/color/line/point = MY palette
+<span class="b">18. Summary Cards</span>       profile-details full width + repos-per-language, most-commit-language, stats, productive-time
+<span class="b">19. Snake Animation</span>     raw.githubusercontent.com snake SVG ref, dark version
+<span class="b">20. Current Focus YAML</span>  learning / building / exploring / open_to keys &mdash; MY actual projects
+<span class="b">21. Connect + Footer</span>    all links for-the-badge MY palette + 1-line quote + capsule-render wave footer
+
+<span class="n">STEP 4 &mdash; PUSH VIA COMPOSIO</span>
+<span class="v">- Use the Composio GitHub integration connected to Claude
+- Target: USERNAME/USERNAME (special profile repo, create if missing)
+- Push README.md to default branch
+- Reply with the commit URL when done
+- List any values you guessed so I can verify them</span>
+
+<span class="n">HARD RULES</span>
+<span class="v">- Every badge + widget URL uses MY exact palette hex values
+- No certifications I did not explicitly mention
+- No placeholder or fabricated projects/skills
+- All links must be real and clickable
+- Section headings in backtick-wrapped terminal command style
+- Output ONLY valid README.md -- no comments, no explanations inside</span></pre>
+</div>
+
+<div class="grid-2" style="margin-top:24px;gap:16px">
+<div class="card">
+<div style="font-family:var(--mono);font-size:11px;color:var(--neon);margin-bottom:12px;letter-spacing:.1em">// BEFORE YOU RUN IT</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><div style="width:20px;height:20px;background:var(--neon-dim);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:var(--neon);flex-shrink:0">1</div><div style="font-size:13px;color:var(--text2);line-height:1.5">Go to <a href="https://claude.ai" target="_blank" style="color:var(--neon);text-decoration:none">claude.ai</a> &mdash; make sure the <strong style="color:var(--text)">Composio connector</strong> is enabled in your tools sidebar</div></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><div style="width:20px;height:20px;background:var(--neon-dim);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:var(--neon);flex-shrink:0">2</div><div style="font-size:13px;color:var(--text2);line-height:1.5">Connect GitHub to Composio at <a href="https://composio.dev" target="_blank" style="color:var(--neon);text-decoration:none">composio.dev</a> &mdash; one-time, takes 2 min</div></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><div style="width:20px;height:20px;background:var(--neon-dim);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:var(--neon);flex-shrink:0">3</div><div style="font-size:13px;color:var(--text2);line-height:1.5">Copy the master prompt above, paste into Claude, and answer its questions</div></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><div style="width:20px;height:20px;background:var(--neon-dim);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:var(--neon);flex-shrink:0">4</div><div style="font-size:13px;color:var(--text2);line-height:1.5">Claude builds your personalized README and pushes it live automatically</div></div>
+</div>
+</div>
+<div class="card">
+<div style="font-family:var(--mono);font-size:11px;color:var(--neon);margin-bottom:12px;letter-spacing:.1em">// WHAT TO EXPECT</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:10px;align-items:flex-start"><div style="color:var(--neon2);font-size:14px;flex-shrink:0">&#10003;</div><div style="font-size:13px;color:var(--text2);line-height:1.5">Claude asks for your info first &mdash; no guessing, no fabricating</div></div>
+<div style="display:flex;gap:10px;align-items:flex-start"><div style="color:var(--neon2);font-size:14px;flex-shrink:0">&#10003;</div><div style="font-size:13px;color:var(--text2);line-height:1.5">Custom palette designed for YOU before any code is written</div></div>
+<div style="display:flex;gap:10px;align-items:flex-start"><div style="color:var(--neon2);font-size:14px;flex-shrink:0">&#10003;</div><div style="font-size:13px;color:var(--text2);line-height:1.5">All 21 sections generated, color-matched, production-ready</div></div>
+<div style="display:flex;gap:10px;align-items:flex-start"><div style="color:var(--neon2);font-size:14px;flex-shrink:0">&#10003;</div><div style="font-size:13px;color:var(--text2);line-height:1.5">Pushed to GitHub automatically &mdash; no Git commands needed</div></div>
+<div style="display:flex;gap:10px;align-items:flex-start"><div style="color:var(--neon2);font-size:14px;flex-shrink:0">&#10003;</div><div style="font-size:13px;color:var(--text2);line-height:1.5">Claude flags anything it guessed so you can verify first</div></div>
+<div style="display:flex;gap:10px;align-items:flex-start"><div style="color:var(--neon2);font-size:14px;flex-shrink:0">&#10003;</div><div style="font-size:13px;color:var(--text2);line-height:1.5"><strong style="color:var(--text)">15&ndash;30 min</strong> from paste to live GitHub profile</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer" id="footer">
+<span class="footer-icon">&#9889;</span>
+<h3>@hey__jay93</h3>
+<p>AI tools, dev tips, and build-in-public content every week.<br/>Follow to stay ahead of the curve.</p>
+<div class="footer-links">
+<a class="footer-link" href="https://instagram.com/hey__jay93" target="_blank">&nearr; Instagram</a>
+<a class="footer-link" href="https://github.com/Ajkolaganti" target="_blank">&nearr; Profile Example</a>
+</div>
+<div class="footer-copy">// built with Claude &bull; guide by @hey__jay93 &bull; 2026<br/>// github profile masterclass &mdash; free forever</div>
+</footer>
+</main>
+</div>
+<script>
+function copyCode(btn,id){
+const pre=document.getElementById(id);
+const text=pre.innerText;
+navigator.clipboard.writeText(text).then(()=>{
+btn.textContent='copied!';
+btn.classList.add('copied');
+setTimeout(()=>{btn.textContent='copy';btn.classList.remove('copied');},2000);
+});}
+const sections=document.querySelectorAll('section[id],footer[id]');
+const navLinks=document.querySelectorAll('.nav-link');
+const observer=new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+navLinks.forEach(link=>link.classList.remove('active'));
+const active=document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+if(active)active.classList.add('active');
+}});
+},{threshold:0.3});
+sections.forEach(s=>observer.observe(s));
+</script>
+</body>
+</html>

@@ -1,0 +1,1762 @@
+[
+  {
+    "tag": "body",
+    "className": "",
+    "id": "",
+    "text": "ASSET MANIFEST\nAsset: CV_Master\nBuilt From: BS-1.0...",
+    "rect": {
+      "top": 8,
+      "left": 8,
+      "width": 1264,
+      "height": 1288.125
+    },
+    "style": {
+      "marginTop": "8px",
+      "marginBottom": "8px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "manifest no-print",
+    "id": "",
+    "text": "ASSET MANIFEST\nAsset: CV_Master\nBuilt From: BS-1.0...",
+    "rect": {
+      "top": 8,
+      "left": 8,
+      "width": 1264,
+      "height": 108
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "h1",
+    "className": "",
+    "id": "",
+    "text": "Mohammed Shehzad Khan",
+    "rect": {
+      "top": 137.4375,
+      "left": 8,
+      "width": 1264,
+      "height": 37
+    },
+    "style": {
+      "marginTop": "21.44px",
+      "marginBottom": "21.44px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "32px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "subtitle",
+    "id": "",
+    "text": "",
+    "rect": {
+      "top": 195.875,
+      "left": 8,
+      "width": 1264,
+      "height": 0
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "contact-info",
+    "id": "",
+    "text": "Available from \u2022 Phone provided on PDF download",
+    "rect": {
+      "top": 195.875,
+      "left": 8,
+      "width": 1264,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "",
+    "id": "",
+    "text": "Available from \u2022 Phone provided on PDF download",
+    "rect": {
+      "top": 195.875,
+      "left": 8,
+      "width": 331.046875,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "",
+    "id": "",
+    "text": "Available from",
+    "rect": {
+      "top": 195.875,
+      "left": 8,
+      "width": 100.109375,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "",
+    "id": "",
+    "text": "\u2022",
+    "rect": {
+      "top": 195.875,
+      "left": 108.109375,
+      "width": 5.609375,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "",
+    "id": "",
+    "text": "Phone provided on PDF download",
+    "rect": {
+      "top": 195.875,
+      "left": 117.71875,
+      "width": 221.328125,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "section",
+    "className": "",
+    "id": "",
+    "text": "Professional Summary",
+    "rect": {
+      "top": 233.78125,
+      "left": 8,
+      "width": 1264,
+      "height": 27
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "h2",
+    "className": "",
+    "id": "",
+    "text": "Professional Summary",
+    "rect": {
+      "top": 233.78125,
+      "left": 8,
+      "width": 1264,
+      "height": 27
+    },
+    "style": {
+      "marginTop": "19.92px",
+      "marginBottom": "19.92px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "24px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "p",
+    "className": "",
+    "id": "",
+    "text": "",
+    "rect": {
+      "top": 280.6875,
+      "left": 8,
+      "width": 1264,
+      "height": 0
+    },
+    "style": {
+      "marginTop": "16px",
+      "marginBottom": "16px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "section",
+    "className": "",
+    "id": "",
+    "text": "Core Expertise",
+    "rect": {
+      "top": 280.6875,
+      "left": 8,
+      "width": 1264,
+      "height": 27
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "h2",
+    "className": "",
+    "id": "",
+    "text": "Core Expertise",
+    "rect": {
+      "top": 280.6875,
+      "left": 8,
+      "width": 1264,
+      "height": 27
+    },
+    "style": {
+      "marginTop": "19.92px",
+      "marginBottom": "19.92px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "24px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "ul",
+    "className": "",
+    "id": "",
+    "text": "",
+    "rect": {
+      "top": 327.59375,
+      "left": 8,
+      "width": 1264,
+      "height": 0
+    },
+    "style": {
+      "marginTop": "16px",
+      "marginBottom": "16px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "section",
+    "className": "",
+    "id": "",
+    "text": "Relevant Experience\nAoxin International School 202...",
+    "rect": {
+      "top": 327.59375,
+      "left": 8,
+      "width": 1264,
+      "height": 708.90625
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "h2",
+    "className": "",
+    "id": "",
+    "text": "Relevant Experience",
+    "rect": {
+      "top": 327.59375,
+      "left": 8,
+      "width": 1264,
+      "height": 27
+    },
+    "style": {
+      "marginTop": "19.92px",
+      "marginBottom": "19.92px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "24px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry",
+    "id": "",
+    "text": "Aoxin International School 2024\u20132026\nDelivered fou...",
+    "rect": {
+      "top": 374.5,
+      "left": 8,
+      "width": 1264,
+      "height": 106
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry-header",
+    "id": "",
+    "text": "Aoxin International School 2024\u20132026",
+    "rect": {
+      "top": 374.5,
+      "left": 8,
+      "width": 1264,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-title",
+    "id": "",
+    "text": "Aoxin International School",
+    "rect": {
+      "top": 374.5,
+      "left": 8,
+      "width": 174.1875,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-date",
+    "id": "",
+    "text": "2024\u20132026",
+    "rect": {
+      "top": 374.5,
+      "left": 186.1875,
+      "width": 72,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "ul",
+    "className": "",
+    "id": "",
+    "text": "Delivered foundational EAL and English instruction...",
+    "rect": {
+      "top": 408.5,
+      "left": 8,
+      "width": 1264,
+      "height": 72
+    },
+    "style": {
+      "marginTop": "16px",
+      "marginBottom": "16px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Delivered foundational EAL and English instruction...",
+    "rect": {
+      "top": 408.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Directed Grade 5 writing moderation across multipl...",
+    "rect": {
+      "top": 426.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Created differentiated learning experiences enabli...",
+    "rect": {
+      "top": 444.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Mentored newly appointed teachers, supporting thei...",
+    "rect": {
+      "top": 462.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry",
+    "id": "",
+    "text": "GEDU Global Education 2022\u20132023\nLed a 15-person tr...",
+    "rect": {
+      "top": 496.5,
+      "left": 8,
+      "width": 1264,
+      "height": 88
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry-header",
+    "id": "",
+    "text": "GEDU Global Education 2022\u20132023",
+    "rect": {
+      "top": 496.5,
+      "left": 8,
+      "width": 1264,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-title",
+    "id": "",
+    "text": "GEDU Global Education",
+    "rect": {
+      "top": 496.5,
+      "left": 8,
+      "width": 160.859375,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-date",
+    "id": "",
+    "text": "2022\u20132023",
+    "rect": {
+      "top": 496.5,
+      "left": 172.859375,
+      "width": 72,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "ul",
+    "className": "",
+    "id": "",
+    "text": "Led a 15-person trainer team and delivered profess...",
+    "rect": {
+      "top": 530.5,
+      "left": 8,
+      "width": 1264,
+      "height": 54
+    },
+    "style": {
+      "marginTop": "16px",
+      "marginBottom": "16px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Led a 15-person trainer team and delivered profess...",
+    "rect": {
+      "top": 530.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Created and delivered bespoke pedagogical workshop...",
+    "rect": {
+      "top": 548.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Developed quality assurance frameworks that streng...",
+    "rect": {
+      "top": 566.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry",
+    "id": "",
+    "text": "WhiteHat Jr 2020\u20132022\nLed teacher-quality and prof...",
+    "rect": {
+      "top": 600.5,
+      "left": 8,
+      "width": 1264,
+      "height": 124
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry-header",
+    "id": "",
+    "text": "WhiteHat Jr 2020\u20132022",
+    "rect": {
+      "top": 600.5,
+      "left": 8,
+      "width": 1264,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-title",
+    "id": "",
+    "text": "WhiteHat Jr",
+    "rect": {
+      "top": 600.5,
+      "left": 8,
+      "width": 77.75,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-date",
+    "id": "",
+    "text": "2020\u20132022",
+    "rect": {
+      "top": 600.5,
+      "left": 89.75,
+      "width": 72,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "ul",
+    "className": "",
+    "id": "",
+    "text": "Led teacher-quality and professional-development i...",
+    "rect": {
+      "top": 634.5,
+      "left": 8,
+      "width": 1264,
+      "height": 90
+    },
+    "style": {
+      "marginTop": "16px",
+      "marginBottom": "16px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Led teacher-quality and professional-development i...",
+    "rect": {
+      "top": 634.5,
+      "left": 48,
+      "width": 1224,
+      "height": 36
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Created teacher training programmes and curriculum...",
+    "rect": {
+      "top": 670.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Used classroom observations and LMS analytics to i...",
+    "rect": {
+      "top": 688.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Delivered targeted professional development sessio...",
+    "rect": {
+      "top": 706.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry",
+    "id": "",
+    "text": "Eton House Kindergarten 2017\u20132018\nBuilt foundation...",
+    "rect": {
+      "top": 740.5,
+      "left": 8,
+      "width": 1264,
+      "height": 88
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry-header",
+    "id": "",
+    "text": "Eton House Kindergarten 2017\u20132018",
+    "rect": {
+      "top": 740.5,
+      "left": 8,
+      "width": 1264,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-title",
+    "id": "",
+    "text": "Eton House Kindergarten",
+    "rect": {
+      "top": 740.5,
+      "left": 8,
+      "width": 163.21875,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-date",
+    "id": "",
+    "text": "2017\u20132018",
+    "rect": {
+      "top": 740.5,
+      "left": 175.21875,
+      "width": 72,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "ul",
+    "className": "",
+    "id": "",
+    "text": "Built foundational language skills for kindergarte...",
+    "rect": {
+      "top": 774.5,
+      "left": 8,
+      "width": 1264,
+      "height": 54
+    },
+    "style": {
+      "marginTop": "16px",
+      "marginBottom": "16px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Built foundational language skills for kindergarte...",
+    "rect": {
+      "top": 774.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Delivered demonstration lessons and mentored colle...",
+    "rect": {
+      "top": 792.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Created age-appropriate communicative activities f...",
+    "rect": {
+      "top": 810.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry",
+    "id": "",
+    "text": "Zhejiang University 2016\u20132017\nTaught across multip...",
+    "rect": {
+      "top": 844.5,
+      "left": 8,
+      "width": 1264,
+      "height": 106
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry-header",
+    "id": "",
+    "text": "Zhejiang University 2016\u20132017",
+    "rect": {
+      "top": 844.5,
+      "left": 8,
+      "width": 1264,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-title",
+    "id": "",
+    "text": "Zhejiang University",
+    "rect": {
+      "top": 844.5,
+      "left": 8,
+      "width": 128.421875,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-date",
+    "id": "",
+    "text": "2016\u20132017",
+    "rect": {
+      "top": 844.5,
+      "left": 140.421875,
+      "width": 72,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "ul",
+    "className": "",
+    "id": "",
+    "text": "Taught across multiple school contexts through the...",
+    "rect": {
+      "top": 878.5,
+      "left": 8,
+      "width": 1264,
+      "height": 72
+    },
+    "style": {
+      "marginTop": "16px",
+      "marginBottom": "16px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Taught across multiple school contexts through the...",
+    "rect": {
+      "top": 878.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Adapted teaching strategies for diverse age groups...",
+    "rect": {
+      "top": 896.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Developed students' spoken confidence through stru...",
+    "rect": {
+      "top": 914.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Applied continuous formative assessment to monitor...",
+    "rect": {
+      "top": 932.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry",
+    "id": "",
+    "text": "Scholars Academy 2014\u20132016\nTaught English, Science...",
+    "rect": {
+      "top": 966.5,
+      "left": 8,
+      "width": 1264,
+      "height": 70
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "div",
+    "className": "entry-header",
+    "id": "",
+    "text": "Scholars Academy 2014\u20132016",
+    "rect": {
+      "top": 966.5,
+      "left": 8,
+      "width": 1264,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-title",
+    "id": "",
+    "text": "Scholars Academy",
+    "rect": {
+      "top": 966.5,
+      "left": 8,
+      "width": 119.53125,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "span",
+    "className": "entry-date",
+    "id": "",
+    "text": "2014\u20132016",
+    "rect": {
+      "top": 966.5,
+      "left": 131.53125,
+      "width": 72,
+      "height": 17
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "inline",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "ul",
+    "className": "",
+    "id": "",
+    "text": "Taught English, Science and Mathematics across upp...",
+    "rect": {
+      "top": 1000.5,
+      "left": 8,
+      "width": 1264,
+      "height": 36
+    },
+    "style": {
+      "marginTop": "16px",
+      "marginBottom": "16px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Taught English, Science and Mathematics across upp...",
+    "rect": {
+      "top": 1000.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Supported diverse learners through targeted feedba...",
+    "rect": {
+      "top": 1018.5,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "section",
+    "className": "",
+    "id": "",
+    "text": "Education & Qualifications\nPostgraduate Certificat...",
+    "rect": {
+      "top": 1056.40625,
+      "left": 8,
+      "width": 1264,
+      "height": 136.90625
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "h2",
+    "className": "",
+    "id": "",
+    "text": "Education & Qualifications",
+    "rect": {
+      "top": 1056.40625,
+      "left": 8,
+      "width": 1264,
+      "height": 27
+    },
+    "style": {
+      "marginTop": "19.92px",
+      "marginBottom": "19.92px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "24px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "ul",
+    "className": "",
+    "id": "",
+    "text": "Postgraduate Certificate in Education (PGCE, non-Q...",
+    "rect": {
+      "top": 1103.3125,
+      "left": 8,
+      "width": 1264,
+      "height": 90
+    },
+    "style": {
+      "marginTop": "16px",
+      "marginBottom": "16px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Postgraduate Certificate in Education (PGCE, non-Q...",
+    "rect": {
+      "top": 1103.3125,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Bachelor of Education (B.Ed.) (University of Kashm...",
+    "rect": {
+      "top": 1121.3125,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Bachelor of Science, Physics (B.Sc.) (University o...",
+    "rect": {
+      "top": 1139.3125,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "120-hour TESOL (Global TESOL College, Canada)",
+    "rect": {
+      "top": 1157.3125,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "120-hour TEFL (Teacher Record)",
+    "rect": {
+      "top": 1175.3125,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "section",
+    "className": "",
+    "id": "",
+    "text": "Languages\nEnglish (Fluent)\nHindi (Native)",
+    "rect": {
+      "top": 1213.21875,
+      "left": 8,
+      "width": 1264,
+      "height": 82.90625
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "h2",
+    "className": "",
+    "id": "",
+    "text": "Languages",
+    "rect": {
+      "top": 1213.21875,
+      "left": 8,
+      "width": 1264,
+      "height": 27
+    },
+    "style": {
+      "marginTop": "19.92px",
+      "marginBottom": "19.92px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "24px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "ul",
+    "className": "",
+    "id": "",
+    "text": "English (Fluent)\nHindi (Native)",
+    "rect": {
+      "top": 1260.125,
+      "left": 8,
+      "width": 1264,
+      "height": 36
+    },
+    "style": {
+      "marginTop": "16px",
+      "marginBottom": "16px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "block",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "English (Fluent)",
+    "rect": {
+      "top": 1260.125,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  },
+  {
+    "tag": "li",
+    "className": "",
+    "id": "",
+    "text": "Hindi (Native)",
+    "rect": {
+      "top": 1278.125,
+      "left": 48,
+      "width": 1224,
+      "height": 18
+    },
+    "style": {
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "lineHeight": "normal",
+      "fontSize": "16px",
+      "display": "list-item",
+      "position": "static"
+    }
+  }
+]

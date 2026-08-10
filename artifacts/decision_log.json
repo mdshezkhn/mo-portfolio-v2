@@ -1,0 +1,218 @@
+[
+  {
+    "claim_id": "C-001",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-002",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-003",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-004",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-005",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-006",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-007",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-008",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-009",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-010",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-011",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-012",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-013",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-014",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-015",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-016",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-017",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-018",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-019",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-020",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-021",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-022",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-023",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-024",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-025",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-OLD-001",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  },
+  {
+    "claim_id": "C-OLD-002",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "unverified",
+    "evidence_count": 0
+  }
+]

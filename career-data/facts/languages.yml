@@ -1,1 +1,7 @@
-languages: []
+languages:
+- language: English
+  proficiency: Fluent
+  id: LANG-0
+- language: Hindi
+  proficiency: Native
+  id: LANG-1

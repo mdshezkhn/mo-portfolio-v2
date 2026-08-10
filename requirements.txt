@@ -3,3 +3,8 @@ pytest==8.2.2
 beautifulsoup4==4.12.3
 requests==2.32.3
 jsonschema==4.22.0
+qrcode[pil]==8.2
+vobject==0.9.9
+svglib==2.1.0
+reportlab==5.0.0
+PyPDF2==3.0.1

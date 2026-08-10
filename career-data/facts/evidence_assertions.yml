@@ -1,0 +1,99 @@
+evidence_assertions:
+- evidence_id: E-3001
+  source:
+    document: EVIDENCE_LIBRARY/private/employment/E-3001.md
+    location: Employment dates and employer identification
+    document_sha256: f05c37c6418a7fad29c9caa49c46e177417345197e56d9519e40e668260d5baf
+  transcription:
+    method: manual_structured_extraction
+    extracted_by: system_agent
+    extracted_at: '2026-08-10'
+  verification:
+    status: verified
+    basis: source_document_review
+  assertions:
+    employment:
+      employer_id: ORG-1002
+      dates:
+        start: 2022-09
+        end: 2023-08
+    supported_claims:
+    - CLAIM-1002
+- evidence_id: E-3002
+  source:
+    document: EVIDENCE_LIBRARY/private/employment/E-3002.md
+    location: Employment dates and employer identification
+    document_sha256: e360df1c474b7b479fc47727dbacb3a166a0e41154eb8caac031d1d106aeb460
+  transcription:
+    method: manual_structured_extraction
+    extracted_by: system_agent
+    extracted_at: '2026-08-10'
+  verification:
+    status: verified
+    basis: source_document_review
+  assertions:
+    employment:
+      employer_id: ORG-1003
+      dates:
+        start: 2020-08
+        end: 2022-07
+    supported_claims:
+    - CLAIM-1001
+- evidence_id: E-3003
+  source:
+    document: EVIDENCE_LIBRARY/private/employment/E-3003.md
+    location: Employment dates and employer identification
+    document_sha256: 49d44fdd5075a4979873734fb5f6ca4c87a38835caff2bfd3e9d6e89cc72ceba
+  transcription:
+    method: manual_structured_extraction
+    extracted_by: system_agent
+    extracted_at: '2026-08-10'
+  verification:
+    status: verified
+    basis: source_document_review
+  assertions:
+    employment:
+      employer_id: ORG-1000
+      dates:
+        start: 2014-01
+        end: 2016-11
+    supported_claims: []
+- evidence_id: E-3004
+  source:
+    document: EVIDENCE_LIBRARY/private/employment/E-3004.md
+    location: Employment dates and employer identification
+    document_sha256: cfb8342f237951197780ed6263ae7bbee033eee532b642c34ce87cab588b3e2b
+  transcription:
+    method: manual_structured_extraction
+    extracted_by: system_agent
+    extracted_at: '2026-08-10'
+  verification:
+    status: verified
+    basis: source_document_review
+  assertions:
+    employment:
+      employer_id: ORG-1004
+      dates:
+        start: 2017-08
+        end: 2018-06
+    supported_claims:
+    - C-019
+- evidence_id: E-3005
+  source:
+    document: EVIDENCE_LIBRARY/private/employment/E-3005.md
+    location: Employment dates and employer identification
+    document_sha256: 024ed35651fc2cabba262a08a46b212b1e2d8436bc35f66dbbd22db666b8a032
+  transcription:
+    method: manual_structured_extraction
+    extracted_by: system_agent
+    extracted_at: '2026-08-10'
+  verification:
+    status: verified
+    basis: source_document_review
+  assertions:
+    employment:
+      employer_id: ORG-1001
+      dates:
+        start: 2018-07
+        end: 2020-08
+    supported_claims: []

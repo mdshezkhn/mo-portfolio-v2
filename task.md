@@ -1,0 +1,13 @@
+- `[x]` Phase 1: Repository Asset Discovery (`REPOSITORY_ASSET_INDEX.md`)
+- `[x]` Phase 2: Canonical Fact Extraction (`CANONICAL_FACT_TABLE.md`)
+- `[x]` Phase 3: Asset Fact Parsing (`ASSET_FACT_TABLE.md`)
+- `[x]` Phase 4: Cross-Match & Assertion Classification
+- `[x]` Phase 5: Metric Verification (`METRIC_AUDIT.md`)
+- `[x]` Phase 6: Qualification & Safeguard Audit
+- `[x]` Phase 7: Employment Record Audit
+- `[x]` Phase 8: Presentation Asset Line-by-Line Alignment
+- `[x]` Phase 9: Evidence Manifest Audit
+- `[x]` Phase 10: Dependency & Graph Impact Verification
+- `[x]` Phase 11: Legacy Content Detection (`LEGACY_CONTENT_REPORT.md`)
+- `[x]` Phase 12: Automatic Remediation of Active Assets
+- `[x]` Phase 13: Final Reports & Release Decision (`CONSISTENCY_REPORT.md`, `REMEDIATION_REPORT.md`, `UNIFORMITY_SCORE.md`, `PUBLICATION_READINESS.md`)

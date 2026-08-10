@@ -14,7 +14,6 @@ education_records:
     recruiter_pack: included
     premium_schools: true
     verified_only_gate: false
-
 - id: QUAL-3001
   entity_type: qualification
   institution_id: INST-9002
@@ -31,14 +30,14 @@ education_records:
     premium_schools: false
     verified_only_gate: true
   institution_recognition_status: requires_external_verification
-
+  recognition_note: '*External recognition status available on request.'
 - id: QUAL-3002
   entity_type: qualification
   institution_id: INST-9000
   degree: Postgraduate Certificate in Education (PGCE, non-QTS)
   dates:
-    start: '2025-09'
-    end: '2026-07'
+    start: 2025-09
+    end: 2026-07
   confidence: V5
   review_status: approved
   publication:
@@ -47,14 +46,15 @@ education_records:
     recruiter_pack: included
     premium_schools: true
     verified_only_gate: false
-
+  research_context: 'Practitioner research: Questioning Strategies and Participation
+    Equity in Bilingual Primary Classrooms'
 - id: QUAL-3003
   entity_type: qualification
   institution_id: INST-9001
   degree: Bachelor of Education (B.Ed.)
   dates:
-    start: '2021-10'
-    end: '2024-03'
+    start: 2021-10
+    end: 2024-03
   confidence: V4
   review_status: approved
   publication:
@@ -63,3 +63,18 @@ education_records:
     recruiter_pack: included
     premium_schools: true
     verified_only_gate: false
+- id: QUAL-6004
+  entity_type: certification
+  degree: TESOL Certification (240 hours)
+  institution_id: ORG-1007
+  review_status: approved
+- id: QUAL-6005
+  entity_type: certification
+  degree: TEFL Certification (120 hours)
+  institution_id: ORG-1008
+  review_status: approved
+- id: QUAL-6006
+  entity_type: certification
+  degree: British Council — Primary Education & Language Teaching
+  institution_id: ORG-1009
+  review_status: approved

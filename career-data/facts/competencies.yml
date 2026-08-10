@@ -1,14 +1,41 @@
 competencies:
-  - id: COMP-001
-    category: "Instructional Leadership"
-    skills:
-      - "Teacher mentoring"
-      - "Instructional quality assurance"
-      - "Grade 5 writing moderation"
-  - id: COMP-002
-    category: "Pedagogy"
-    skills:
-      - "Academic language acquisition & Phonics"
-      - "Early-years immersion"
-      - "Inquiry-based learning & Cross-curricular STEM"
-      - "Cross-cultural training"
+- id: COMP-001
+  category: Instructional Leadership
+  skills:
+  - Teacher mentoring
+  - Instructional quality assurance
+  - Grade 5 writing moderation
+- id: COMP-002
+  category: Pedagogy
+  skills:
+  - Academic language acquisition & Phonics
+  - Early-years immersion
+  - Inquiry-based learning & Cross-curricular STEM
+  - Cross-cultural training
+- id: COMP-003
+  category: Digital Skills
+  skills:
+  - Google Workspace
+  - Microsoft 365
+  - Moodle
+  - Canvas
+  - Zoom
+  - OBS Studio
+- id: COMP-004
+  category: Core Expertise
+  skills:
+  - Primary EAL
+  - Multilingual Education
+  - Curriculum Design
+  - Differentiated Instruction
+  - Formative Assessment
+  - Literacy Development
+  - Classroom Management
+  - Assessment Moderation
+  - Teacher Mentoring
+  - Professional Development
+  - Instructional Quality Assurance
+  - Cross-Curricular STEM
+  - Dialogic Teaching
+  - Questioning Strategies
+  - Translanguaging
