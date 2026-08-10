@@ -80,7 +80,7 @@ def main():
     print("Cleaning up clone...")
     run_cmd(['powershell', '-c', f'Remove-Item -Recurse -Force "{CLONE_DIR}"'])
     
-    print("✅ FRESH CLONE VERIFICATION PASSED.")
+    print("FRESH CLONE VERIFICATION PASSED.")
 
 if __name__ == "__main__":
     main()
