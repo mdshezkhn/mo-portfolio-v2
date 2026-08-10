@@ -109,6 +109,11 @@ def build():
                     if claim_resolved.get('status') == 'VERIFIED':
                         claim_text = all_claims.get(claim_id, {}).get('statement', '')
                         exp_entry["bullets"].append(claim_text)
+            
+            # Policy Rule 4: If policy requires verified claims, exclude empty entries
+            require_claim = policy_conf.get('employment', {}).get('require_verified_claim', False)
+            if require_claim and len(exp_entry["bullets"]) == 0:
+                continue
                         
             view_model['experience'].append(exp_entry)
             
