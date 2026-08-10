@@ -3,15 +3,19 @@
     "artifact": "CV_Master.html"
   },
   "git": {
-    "source_commit": "4aed3beff4d495f9a78886e2ba9e1821ea41f89f",
+    "source_commit": "91774bb0174f0cea69c3a114c920472a54b5f132",
     "metadata_commit": "pending_commit",
-    "worktree_clean": false
+    "worktree_clean": true
   },
   "source_manifest": {
     "canonical_data": [
       {
         "path": "career-data/facts/employment.yml",
         "sha256": "ce03c38a42660e697dc76c237a9e855c93702369ae3a5aaff39f7aa23d17f74e"
+      },
+      {
+        "path": "career-data/facts/education.yml",
+        "sha256": "1f743b60b47eba497a744e5ae3ed95a27cb40411af1dc9cc709e0f365fb3cd88"
       },
       {
         "path": "career-data/facts/claims.yml",
@@ -21,7 +25,7 @@
     "governance": [
       {
         "path": "governance/cv_policies.yml",
-        "sha256": "8c56bea91f3c1ecfa08078a693690a9bead1209f468b663b8153db193d3cc1a1"
+        "sha256": "26d79351ce3b2df7f5a345cc3e53711d82c963aa4e5e310813f721932cf7e2b9"
       }
     ],
     "provenance_engine": [
@@ -31,7 +35,7 @@
       },
       {
         "path": "career-data/facts/evidence_assertions.yml",
-        "sha256": "6b631ab0fccc827333a01f6407f95c179e9e505a8fe97751146b365c84745428"
+        "sha256": "87eb2c26e3a5fa3f53d6253586196c6af454cf6bf7ba89d3c23e7c3e7c82ed7b"
       }
     ],
     "verification_logic": [
@@ -41,13 +45,21 @@
       },
       {
         "path": "scripts/verify/verification_resolver.py",
-        "sha256": "4325c7341301e3f4a648a2b969f3f7d189f9fce50152700876d85ac88bf2d231"
+        "sha256": "b759789f0d49a3fb67837065e5b8f198694664b96413af7b1fd89a37c42e578c"
+      },
+      {
+        "path": "scripts/verify/audit_dom_boundary.py",
+        "sha256": "ad67919594706173dfa5c8103c2398011e3c38045631754125e6d500c6731197"
       }
     ],
     "build_orchestration": [
       {
         "path": "scripts/builders/build_domain_model.py",
-        "sha256": "cbe56d25ada8f58ce43fdf44bf899128b8c9289cf825abc10be8474f838a32af"
+        "sha256": "3d9d6efcb69a77e0411ad0c65750a9626054ad59d82fc059f3bc24834a8295f8"
+      },
+      {
+        "path": "scripts/builders/build_portfolio_html.py",
+        "sha256": "d4017066454783f50064d5468038b7cba5b23a7008ab6d2a233636e68b8ac9b7"
       },
       {
         "path": "build.py",
@@ -66,12 +78,14 @@
     ]
   },
   "artifact_hashes": {
-    "master_json": "c587ca703735d8cbfc488c2ccb39eb38ef6cf6666019db4dbe64251d96fad004",
-    "cv_master_html": "ad993f3a61131f3e1a2acc899c3b6228f322343f6b278c3adbb0bfced6207bd5"
+    "master_json": "073487f7a34308bd2a53782ea43457aae3773e6ba65b4efd422a672f26d4583a",
+    "cv_master_html": "ad993f3a61131f3e1a2acc899c3b6228f322343f6b278c3adbb0bfced6207bd5",
+    "portfolio_json": "47766a682b27cfd55d5f1aa664c3df05c1e537877d4d0f9a6d2e16f2ccf97017",
+    "portfolio_html": "452d2ed8417c3fa2cf36522f8c6c833697204e954986d4d6fceca0a03175a5c8"
   },
   "environment": {
     "viewport": "1920x1080",
     "browser": "Chromium",
-    "created_at": "2026-08-10T16:15:57.686189+00:00"
+    "created_at": "2026-08-10T17:10:51.679971+00:00"
   }
 }
