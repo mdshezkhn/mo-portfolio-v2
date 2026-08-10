@@ -92,7 +92,7 @@ def main():
         out_filename = f"CV_{profile.get('title', 'Doc').replace(' ', '_').replace('/', '_')}.html"
         out_filepath = os.path.join(OUTPUT_DIR, out_filename)
         
-        with open(out_filepath, "w", encoding="utf-8") as f:
+        with open(out_filepath, "w", encoding="utf-8", newline='\n') as f:
             f.write(final_html)
             
         print(f"-> Generated {out_filename}")
