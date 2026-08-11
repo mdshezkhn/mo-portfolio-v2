@@ -5,10 +5,10 @@
     "graph_version": "1.0.0",
     "resolver_version": "1.0.0",
     "metrics_version": "1.0.0",
-    "build_id": "4eb37e91-df5a-4d52-b0ab-4eebc77b9c6e",
-    "generated_at": "2026-08-11T14:02:04.837489Z",
-    "source_commit": "cde4a49930cb460e158d41084848ab5ea2a74b49",
-    "input_hash": "e859466a2538427a8728b3f1937d551dde0835ab410918c2cf9aa0ad63b5ca6c"
+    "build_id": "b77fcf5d-f7f3-4606-be42-a9bc4ecb959e",
+    "generated_at": "2026-08-11T18:04:14.785007Z",
+    "source_commit": "6ca88be4a96364afe8eddd5cb240f4bc517ce84f",
+    "input_hash": "6e1256b899fc30a8eb6d755e0f3af94cc442c9ab4c8779d6d4d838a0465affb3"
   },
   "facts": {
     "C-001": {
@@ -756,6 +756,7 @@
           "provenance": "legacy"
         }
       ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2001": {
@@ -794,6 +795,7 @@
           "provenance": "legacy"
         }
       ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2002": {
@@ -827,6 +829,7 @@
           "provenance": "legacy"
         }
       ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2003": {
@@ -863,11 +866,7 @@
       ],
       "confidence": "V1",
       "review_status": "approved",
-      "cv_highlights": [
-        {
-          "claim_id": "CLAIM-1001"
-        }
-      ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2005": {
@@ -888,11 +887,7 @@
       ],
       "confidence": "V1",
       "review_status": "approved",
-      "cv_highlights": [
-        {
-          "claim_id": "CLAIM-1002"
-        }
-      ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2006": {
@@ -946,6 +941,7 @@
           "provenance": "legacy"
         }
       ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "E-3001": {
@@ -1024,16 +1020,6 @@
       "entity_type": "evidence",
       "schemaVersion": "1.0",
       "filename": "e-0010.pdf",
-      "type": "certificate",
-      "date_issued": "2020-01-01",
-      "_source_file": "career-data\\facts\\evidence.yml"
-    },
-    "E-3006": {
-      "id": "E-3006",
-      "description": "Aoxin International School Curriculum Director commendation letter for primary curriculum design.",
-      "entity_type": "evidence",
-      "schemaVersion": "1.0",
-      "filename": "e-3006.pdf",
       "type": "certificate",
       "date_issued": "2020-01-01",
       "_source_file": "career-data\\facts\\evidence.yml"

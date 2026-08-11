@@ -19,6 +19,7 @@ employment_records:
   - text: Supported diverse learners through targeted feedback and intervention strategies
     status: unverified
     provenance: legacy
+  cv_highlights: []
 - id: EMP-2001
   entity_type: employment
   employer_id: ORG-1006
@@ -46,6 +47,7 @@ employment_records:
       development
     status: unverified
     provenance: legacy
+  cv_highlights: []
 - id: EMP-2002
   entity_type: employment
   employer_id: ORG-1004
@@ -71,6 +73,7 @@ employment_records:
       learners
     status: unverified
     provenance: legacy
+  cv_highlights: []
 - id: EMP-2003
   entity_type: employment
   employer_id: ORG-1001
@@ -98,8 +101,7 @@ employment_records:
   - Global
   confidence: V1
   review_status: approved
-  cv_highlights:
-  - claim_id: CLAIM-1001
+  cv_highlights: []
 - id: EMP-2005
   entity_type: employment
   employer_id: ORG-1002
@@ -115,8 +117,7 @@ employment_records:
   - Malta
   confidence: V1
   review_status: approved
-  cv_highlights:
-  - claim_id: CLAIM-1002
+  cv_highlights: []
 - id: EMP-2006
   entity_type: employment
   employer_id: ORG-1001
@@ -159,3 +160,4 @@ employment_records:
       and maintaining instructional quality
     status: unverified
     provenance: legacy
+  cv_highlights: []

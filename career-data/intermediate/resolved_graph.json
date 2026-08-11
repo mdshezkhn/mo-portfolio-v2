@@ -4,9 +4,9 @@
     "graph_version": "1.0.0",
     "resolver_version": "1.0.0",
     "schema_version": "1.0.0",
-    "build_id": "4eb37e91-df5a-4d52-b0ab-4eebc77b9c6e",
-    "generated_at": "2026-08-11T14:02:04.837489Z",
-    "source_commit": "cde4a49930cb460e158d41084848ab5ea2a74b49"
+    "build_id": "b77fcf5d-f7f3-4606-be42-a9bc4ecb959e",
+    "generated_at": "2026-08-11T18:04:14.785007Z",
+    "source_commit": "6ca88be4a96364afe8eddd5cb240f4bc517ce84f"
   },
   "entities": {
     "C-001": {
@@ -754,6 +754,7 @@
           "provenance": "legacy"
         }
       ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2001": {
@@ -792,6 +793,7 @@
           "provenance": "legacy"
         }
       ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2002": {
@@ -825,6 +827,7 @@
           "provenance": "legacy"
         }
       ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2003": {
@@ -861,11 +864,7 @@
       ],
       "confidence": "V1",
       "review_status": "approved",
-      "cv_highlights": [
-        {
-          "claim_id": "CLAIM-1001"
-        }
-      ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2005": {
@@ -886,11 +885,7 @@
       ],
       "confidence": "V1",
       "review_status": "approved",
-      "cv_highlights": [
-        {
-          "claim_id": "CLAIM-1002"
-        }
-      ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2006": {
@@ -944,6 +939,7 @@
           "provenance": "legacy"
         }
       ],
+      "cv_highlights": [],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "E-3001": {
@@ -1022,16 +1018,6 @@
       "entity_type": "evidence",
       "schemaVersion": "1.0",
       "filename": "e-0010.pdf",
-      "type": "certificate",
-      "date_issued": "2020-01-01",
-      "_source_file": "career-data\\facts\\evidence.yml"
-    },
-    "E-3006": {
-      "id": "E-3006",
-      "description": "Aoxin International School Curriculum Director commendation letter for primary curriculum design.",
-      "entity_type": "evidence",
-      "schemaVersion": "1.0",
-      "filename": "e-3006.pdf",
       "type": "certificate",
       "date_issued": "2020-01-01",
       "_source_file": "career-data\\facts\\evidence.yml"
@@ -1588,26 +1574,6 @@
       "type": "SUPPORTED_BY"
     },
     {
-      "from": "CLAIM-1001",
-      "to": "EMP-2004",
-      "type": "SUPPORTED_BY"
-    },
-    {
-      "from": "CLAIM-1001",
-      "to": "E-3002",
-      "type": "SUPPORTED_BY"
-    },
-    {
-      "from": "CLAIM-1002",
-      "to": "EMP-2005",
-      "type": "SUPPORTED_BY"
-    },
-    {
-      "from": "CLAIM-1002",
-      "to": "E-3001",
-      "type": "SUPPORTED_BY"
-    },
-    {
       "from": "CLAIM-1003",
       "to": "EMP-2003",
       "type": "SUPPORTED_BY"
@@ -1814,30 +1780,6 @@
           "type": "SUPPORTED_BY"
         }
       ],
-      "CLAIM-1001": [
-        {
-          "from": "CLAIM-1001",
-          "to": "EMP-2004",
-          "type": "SUPPORTED_BY"
-        },
-        {
-          "from": "CLAIM-1001",
-          "to": "E-3002",
-          "type": "SUPPORTED_BY"
-        }
-      ],
-      "CLAIM-1002": [
-        {
-          "from": "CLAIM-1002",
-          "to": "EMP-2005",
-          "type": "SUPPORTED_BY"
-        },
-        {
-          "from": "CLAIM-1002",
-          "to": "E-3001",
-          "type": "SUPPORTED_BY"
-        }
-      ],
       "CLAIM-1003": [
         {
           "from": "CLAIM-1003",
@@ -1956,11 +1898,6 @@
           "from": "EMP-2005",
           "to": "E-3001",
           "type": "SUPPORTED_BY"
-        },
-        {
-          "from": "CLAIM-1002",
-          "to": "E-3001",
-          "type": "SUPPORTED_BY"
         }
       ],
       "ORG-1003": [
@@ -1980,11 +1917,6 @@
       "E-3002": [
         {
           "from": "EMP-2004",
-          "to": "E-3002",
-          "type": "SUPPORTED_BY"
-        },
-        {
-          "from": "CLAIM-1001",
           "to": "E-3002",
           "type": "SUPPORTED_BY"
         }
@@ -2082,20 +2014,6 @@
         {
           "from": "EMP-2003",
           "to": "E-3005",
-          "type": "SUPPORTED_BY"
-        }
-      ],
-      "EMP-2004": [
-        {
-          "from": "CLAIM-1001",
-          "to": "EMP-2004",
-          "type": "SUPPORTED_BY"
-        }
-      ],
-      "EMP-2005": [
-        {
-          "from": "CLAIM-1002",
-          "to": "EMP-2005",
           "type": "SUPPORTED_BY"
         }
       ],

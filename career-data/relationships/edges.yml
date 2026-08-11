@@ -77,18 +77,6 @@ edges:
 - from: CLAIM-1000
   to: E-3005
   type: SUPPORTED_BY
-- from: CLAIM-1001
-  to: EMP-2004
-  type: SUPPORTED_BY
-- from: CLAIM-1001
-  to: E-3002
-  type: SUPPORTED_BY
-- from: CLAIM-1002
-  to: EMP-2005
-  type: SUPPORTED_BY
-- from: CLAIM-1002
-  to: E-3001
-  type: SUPPORTED_BY
 - from: CLAIM-1003
   to: EMP-2003
   type: SUPPORTED_BY

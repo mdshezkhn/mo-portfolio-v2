@@ -15,7 +15,6 @@ claims:
   - E-3003
   - E-3004
   - E-3005
-  - E-3006
   - E-0009
   - E-0010
   allowed_variants:
@@ -29,7 +28,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-002
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
@@ -228,7 +227,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-012
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
@@ -247,7 +246,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-013
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
@@ -286,7 +285,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-015
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
@@ -303,7 +302,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-016
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
@@ -320,7 +319,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-017
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
@@ -340,7 +339,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-018
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
@@ -357,7 +356,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-019
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
@@ -375,7 +374,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-020
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
@@ -393,7 +392,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-021
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
@@ -410,7 +409,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-022
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
@@ -427,7 +426,7 @@ claims:
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-023
-  status: verified
+  status: unverified
   version: '1.0'
   risk: medium
   owner: canonical
