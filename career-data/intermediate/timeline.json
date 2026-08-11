@@ -5,10 +5,10 @@
     "graph_version": "1.0.0",
     "resolver_version": "1.0.0",
     "metrics_version": "1.0.0",
-    "build_id": "b77fcf5d-f7f3-4606-be42-a9bc4ecb959e",
-    "generated_at": "2026-08-11T18:04:14.785007Z",
-    "source_commit": "6ca88be4a96364afe8eddd5cb240f4bc517ce84f",
-    "input_hash": "6e1256b899fc30a8eb6d755e0f3af94cc442c9ab4c8779d6d4d838a0465affb3"
+    "build_id": "ac9b8711-5783-465c-a808-39abd3038cea",
+    "generated_at": "2026-08-11T18:58:39.701520Z",
+    "source_commit": "f05fad25a08929efbcbcbc22a7a58d0009c5f047",
+    "input_hash": "eda50778a52464f439b70d75b631bb0176bb8fb4b3f84127ee62bf2adbec8dc6"
   },
   "timeline": []
 }
