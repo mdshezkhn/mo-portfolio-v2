@@ -69,20 +69,6 @@
       "institution": "University of Cumbria",
       "date": "2025-09 - 2026-07",
       "entity_type": "qualification"
-    },
-    {
-      "id": "QUAL-6004",
-      "degree": "TESOL Certification (240 hours)",
-      "institution": "Global TESOL College, Canada",
-      "date": "",
-      "entity_type": "certification"
-    },
-    {
-      "id": "QUAL-6005",
-      "degree": "TEFL Certification (120 hours)",
-      "institution": "Teacher Record",
-      "date": "",
-      "entity_type": "certification"
     }
   ]
 }

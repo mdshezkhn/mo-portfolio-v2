@@ -2,7 +2,7 @@
   "header": {
     "name": "Mohammed Shehzad Khan",
     "title": "International Primary Educator | Primary EAL & Multilingual Learning | Curriculum, Assessment & Teacher Development",
-    "subtitle": "International Primary Educator | EAL & English | Curriculum & Assessment"
+    "subtitle": "International Primary Educator | Primary EAL & Multilingual Learning | Curriculum, Assessment & Teacher Development"
   },
   "summary": [
     "Primary Educator & EAL Specialist with 11+ years in international settings (China, India). I specialize in rapidly improving academic English outcomes for multilingual cohorts by integrating explicit language instruction into inquiry-based science and mathematics through cross-curricular STEM facilitation. Proven track record in mentoring teaching teams to elevate instructional quality school-wide."
@@ -40,49 +40,55 @@
   "experience": [
     {
       "id": "EMP-2006",
-      "role_title": "Primary Educator & Curriculum Lead",
+      "role_title": "EAL / English Teacher",
       "employer_name": "Aoxin International School",
       "date_range": "Feb 2024 - Jul 2026",
       "highlights": []
     },
     {
       "id": "EMP-2005",
-      "role_title": "Teacher Trainer & Quality Assurance",
+      "role_title": "Training and Quality Lead",
       "employer_name": "GEDU Global Education",
       "date_range": "Sep 2022 - Aug 2023",
-      "highlights": []
+      "highlights": [
+        "CLAIM-1002"
+      ]
     },
     {
       "id": "EMP-2004",
-      "role_title": "Educator Development Lead",
+      "role_title": "Assistant Manager \u2014 Teacher Quality & Development",
       "employer_name": "WhiteHat Jr",
       "date_range": "Aug 2020 - Jul 2022",
-      "highlights": []
+      "highlights": [
+        "CLAIM-1001"
+      ]
     },
     {
       "id": "EMP-2003",
-      "role_title": "Primary Educator & Curriculum Lead",
+      "role_title": "EAL / English Teacher",
       "employer_name": "Aoxin International School",
       "date_range": "Jul 2018 - Aug 2020",
-      "highlights": []
+      "highlights": [
+        "CLAIM-1003"
+      ]
     },
     {
       "id": "EMP-2002",
-      "role_title": "Early Years EAL Teacher",
+      "role_title": "ESL Teacher and Teacher Trainer",
       "employer_name": "Eton House Kindergarten",
       "date_range": "Aug 2017 - Jun 2018",
       "highlights": []
     },
     {
       "id": "EMP-2001",
-      "role_title": "Training & Quality Lead",
-      "employer_name": "Zhejiang University",
+      "role_title": "ESL Teacher",
+      "employer_name": "Helen China TEFL Network",
       "date_range": "Nov 2016 - Aug 2017",
       "highlights": []
     },
     {
       "id": "EMP-2000",
-      "role_title": "Primary Educator",
+      "role_title": "English, Science and Mathematics Teacher",
       "employer_name": "Scholars Academy",
       "date_range": "Jan 2014 - Nov 2016",
       "highlights": []

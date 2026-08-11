@@ -116,6 +116,10 @@ entities:
     slug: role_0006
     state: PUBLISHED
     type: role
+  ROLE-8006:
+    slug: role_0007
+    state: PUBLISHED
+    type: role
   CLAIM-1000:
     slug: test_claim
     state: ALLOCATED

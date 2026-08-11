@@ -5,10 +5,10 @@
     "graph_version": "1.0.0",
     "resolver_version": "1.0.0",
     "metrics_version": "1.0.0",
-    "build_id": "db46d9bb-c261-4af1-9844-8ea27b039276",
-    "generated_at": "2026-08-11T02:19:10.875617Z",
-    "source_commit": "0bea27256be536597eb05c63fd98b42ee1f7849d",
-    "input_hash": "6d0be555a65547e2508b68d41fefb887d5dc8083f4bf5b09324239dcb4be0266"
+    "build_id": "4eb37e91-df5a-4d52-b0ab-4eebc77b9c6e",
+    "generated_at": "2026-08-11T14:02:04.837489Z",
+    "source_commit": "cde4a49930cb460e158d41084848ab5ea2a74b49",
+    "input_hash": "e859466a2538427a8728b3f1937d551dde0835ab410918c2cf9aa0ad63b5ca6c"
   },
   "facts": {
     "C-001": {
@@ -742,7 +742,7 @@
       "physical_country": "India",
       "employment_country": "India",
       "operational_regions": [],
-      "confidence": "V5",
+      "confidence": "V1",
       "review_status": "approved",
       "historical_highlights": [
         {
@@ -808,7 +808,7 @@
       "physical_country": "China",
       "employment_country": "China",
       "operational_regions": [],
-      "confidence": "V5",
+      "confidence": "V1",
       "review_status": "approved",
       "historical_highlights": [
         {
@@ -861,7 +861,7 @@
       "operational_regions": [
         "Global"
       ],
-      "confidence": "V5",
+      "confidence": "V1",
       "review_status": "approved",
       "cv_highlights": [
         {
@@ -886,7 +886,7 @@
         "Dubai",
         "Malta"
       ],
-      "confidence": "V5",
+      "confidence": "V1",
       "review_status": "approved",
       "cv_highlights": [
         {
@@ -899,7 +899,7 @@
       "id": "EMP-2006",
       "entity_type": "employment",
       "employer_id": "ORG-1001",
-      "role_id": "ROLE-8003",
+      "role_id": "ROLE-8006",
       "dates": {
         "start": "2024-02",
         "end": "2026-07"
@@ -1366,42 +1366,49 @@
     },
     "ROLE-8000": {
       "id": "ROLE-8000",
-      "title": "Primary Educator",
+      "title": "English, Science and Mathematics Teacher",
       "description": "",
       "entity_type": "role",
       "_source_file": "career-data\\facts\\roles.yml"
     },
     "ROLE-8001": {
       "id": "ROLE-8001",
-      "title": "Primary Educator & Curriculum Lead",
+      "title": "ESL Teacher",
       "description": "",
       "entity_type": "role",
       "_source_file": "career-data\\facts\\roles.yml"
     },
     "ROLE-8002": {
       "id": "ROLE-8002",
-      "title": "Teacher Trainer & Quality Assurance",
+      "title": "ESL Teacher and Teacher Trainer",
       "description": "",
       "entity_type": "role",
       "_source_file": "career-data\\facts\\roles.yml"
     },
     "ROLE-8003": {
       "id": "ROLE-8003",
-      "title": "Educator Development Lead",
+      "title": "EAL / English Teacher",
       "description": "",
       "entity_type": "role",
       "_source_file": "career-data\\facts\\roles.yml"
     },
     "ROLE-8004": {
       "id": "ROLE-8004",
-      "title": "Early Years EAL Teacher",
+      "title": "Assistant Manager \u2014 Teacher Quality & Development",
       "description": "",
       "entity_type": "role",
       "_source_file": "career-data\\facts\\roles.yml"
     },
     "ROLE-8005": {
       "id": "ROLE-8005",
-      "title": "Training & Quality Lead",
+      "title": "Training and Quality Lead",
+      "description": "",
+      "entity_type": "role",
+      "_source_file": "career-data\\facts\\roles.yml"
+    },
+    "ROLE-8006": {
+      "id": "ROLE-8006",
+      "title": "EAL / English Teacher",
       "description": "",
       "entity_type": "role",
       "_source_file": "career-data\\facts\\roles.yml"

@@ -38,25 +38,28 @@ Primary Educator & EAL Specialist with 11+ years in international settings (Chin
 ## Professional Experience
 
 ### Aoxin International School (Feb 2024 - Jul 2026)
-**Primary Educator & Curriculum Lead**
+**EAL / English Teacher**
 
 ### GEDU Global Education (Sep 2022 - Aug 2023)
-**Teacher Trainer & Quality Assurance**
+**Training and Quality Lead**
+* CLAIM-1002
 
 ### WhiteHat Jr (Aug 2020 - Jul 2022)
-**Educator Development Lead**
+**Assistant Manager — Teacher Quality & Development**
+* CLAIM-1001
 
 ### Aoxin International School (Jul 2018 - Aug 2020)
-**Primary Educator & Curriculum Lead**
+**EAL / English Teacher**
+* CLAIM-1003
 
 ### Eton House Kindergarten (Aug 2017 - Jun 2018)
-**Early Years EAL Teacher**
+**ESL Teacher and Teacher Trainer**
 
-### Zhejiang University (Nov 2016 - Aug 2017)
-**Training & Quality Lead**
+### Helen China TEFL Network (Nov 2016 - Aug 2017)
+**ESL Teacher**
 
 ### Scholars Academy (Jan 2014 - Nov 2016)
-**Primary Educator**
+**English, Science and Mathematics Teacher**
 
 ## Education & Qualifications
 * Bachelor of Science, Physics (B.Sc.), University of Mumbai (2004 - 2007)
