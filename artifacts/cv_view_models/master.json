@@ -2,9 +2,16 @@
   "title": "Master",
   "experience": [
     {
+      "id": "EMP-2006",
+      "company": "Aoxin International School",
+      "role": "EAL / English Teacher",
+      "date": "2024-02 - 2026-07",
+      "bullets": []
+    },
+    {
       "id": "EMP-2005",
       "company": "GEDU Global Education",
-      "role": "Training & Quality Lead",
+      "role": "Training and Quality Lead",
       "date": "2022-09 - 2023-08",
       "bullets": [
         "Led quality assurance initiatives across distributed teaching teams, ensuring consistent curriculum delivery."
@@ -13,7 +20,7 @@
     {
       "id": "EMP-2004",
       "company": "WhiteHat Jr",
-      "role": "Early Years EAL Teacher",
+      "role": "Assistant Manager \u2014 Teacher Quality & Development",
       "date": "2020-08 - 2022-07",
       "bullets": [
         "Coached and mentored 100+ educators to improve instructional quality and engagement metrics."
@@ -22,21 +29,28 @@
     {
       "id": "EMP-2003",
       "company": "Aoxin International School",
-      "role": "Educator Development Lead",
+      "role": "EAL / English Teacher",
       "date": "2018-07 - 2020-08",
       "bullets": []
     },
     {
       "id": "EMP-2002",
       "company": "Eton House Kindergarten",
-      "role": "Teacher Trainer & Quality Assurance",
+      "role": "ESL Teacher and Teacher Trainer",
       "date": "2017-08 - 2018-06",
+      "bullets": []
+    },
+    {
+      "id": "EMP-2001",
+      "company": "Helen China TEFL Network",
+      "role": "ESL Teacher",
+      "date": "2016-11 - 2017-08",
       "bullets": []
     },
     {
       "id": "EMP-2000",
       "company": "Scholars Academy",
-      "role": "Primary Educator",
+      "role": "English, Science and Mathematics Teacher",
       "date": "2014-01 - 2016-11",
       "bullets": []
     }
