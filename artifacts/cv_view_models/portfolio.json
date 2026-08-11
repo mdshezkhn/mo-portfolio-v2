@@ -20,7 +20,9 @@
       "company": "WhiteHat Jr",
       "role": "Assistant Manager \u2014 Teacher Quality & Development",
       "date": "2020-08 - 2022-07",
-      "bullets": []
+      "bullets": [
+        "Educator coaching and mentoring."
+      ]
     },
     {
       "id": "EMP-2003",
@@ -41,14 +43,18 @@
       "company": "Helen China TEFL Network",
       "role": "ESL Teacher",
       "date": "2016-11 - 2017-08",
-      "bullets": []
+      "bullets": [
+        "ESL Educator."
+      ]
     },
     {
       "id": "EMP-2000",
       "company": "Scholars Academy",
       "role": "English, Science and Mathematics Teacher",
       "date": "2014-01 - 2016-11",
-      "bullets": []
+      "bullets": [
+        "Primary educator responsibilities."
+      ]
     }
   ],
   "qualifications": [
