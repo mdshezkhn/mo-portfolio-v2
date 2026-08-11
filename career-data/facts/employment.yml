@@ -9,7 +9,7 @@ employment_records:
   physical_country: India
   employment_country: India
   operational_regions: []
-  confidence: V5
+  confidence: V1
   review_status: approved
   historical_highlights:
   - text: Taught English, Science and Mathematics across upper-primary and secondary
@@ -56,7 +56,7 @@ employment_records:
   physical_country: China
   employment_country: China
   operational_regions: []
-  confidence: V5
+  confidence: V1
   review_status: approved
   historical_highlights:
   - text: Built foundational language skills for kindergarten learners through immersive
@@ -96,7 +96,7 @@ employment_records:
   employment_country: India
   operational_regions:
   - Global
-  confidence: V5
+  confidence: V1
   review_status: approved
   cv_highlights:
   - claim_id: CLAIM-1001
@@ -113,14 +113,14 @@ employment_records:
   - UK
   - Dubai
   - Malta
-  confidence: V5
+  confidence: V1
   review_status: approved
   cv_highlights:
   - claim_id: CLAIM-1002
 - id: EMP-2006
   entity_type: employment
   employer_id: ORG-1001
-  role_id: ROLE-8003
+  role_id: ROLE-8006
   dates:
     start: 2024-02
     end: 2026-07

@@ -39,8 +39,9 @@ def render_experience(exp):
 
 def render_qualification(qual):
     cert_id = qual['id'].lower()
+    status_str = qual.get('status', 'Verified Qualification')
     html = f"""
-                    <div class="edu-card" data-cert-id="{cert_id}" data-title="{qual['degree']}" data-issuer="{qual['institution']}" data-status="Verified Qualification">
+                    <div class="edu-card" data-cert-id="{cert_id}" data-title="{qual['degree']}" data-issuer="{qual['institution']}" data-status="{status_str}">
                         <div class="cert-thumb">
                             <span class="cert-thumb-overlay">🔍 View document</span>
                         </div>
@@ -48,7 +49,7 @@ def render_qualification(qual):
                         <p class="edu-sch">{qual['institution']}</p>
                         <time class="edu-yr">{qual['date']}</time>
                         <div class="verification-panel">
-                            <span class="v-badge">✓ Verified Qualification</span>
+                            <span class="v-badge">✓ {status_str}</span>
                             <div class="v-details">Officially verified by provenance engine.</div>
                         </div>
                     </div>"""
@@ -56,15 +57,16 @@ def render_qualification(qual):
 
 def render_certification(qual):
     cert_id = qual['id'].lower()
+    status_str = qual.get('status', 'Verified Certification')
     html = f"""
-                    <div class="cert-card" data-cert-id="{cert_id}" data-title="{qual['degree']}" data-issuer="{qual['institution']}" data-status="Verified Certification">
+                    <div class="cert-card" data-cert-id="{cert_id}" data-title="{qual['degree']}" data-issuer="{qual['institution']}" data-status="{status_str}">
                         <div class="cert-thumb">
                             <span class="cert-thumb-overlay">🔍 View document</span>
                         </div>
                         <h4 class="cert-title">{qual['degree']}</h4>
                         <p class="cert-org">{qual['institution']}</p>
                         <div class="verification-panel">
-                            <span class="v-badge">✓ Verified Certification</span>
+                            <span class="v-badge">✓ {status_str}</span>
                             <div class="v-details">Officially verified by provenance engine.</div>
                         </div>
                     </div>"""

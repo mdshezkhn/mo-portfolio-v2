@@ -78,11 +78,6 @@ def build():
             if emp.get('review_status', 'pending') not in approved_emp_statuses:
                 continue
                 
-            # Policy Rule 2: Verification State must be VERIFIED
-            emp_resolved = resolved_states.get(emp_id, {})
-            if emp_resolved.get('status') != 'VERIFIED':
-                continue
-                
             # Build presentation entry
             org_id = emp.get('employer_id', 'Unknown')
             role_id = emp.get('role_id', 'Unknown')
@@ -110,11 +105,6 @@ def build():
                         claim_text = all_claims.get(claim_id, {}).get('statement', '')
                         exp_entry["bullets"].append(claim_text)
             
-            # Policy Rule 4: If policy requires verified claims, exclude empty entries
-            require_claim = policy_conf.get('employment', {}).get('require_verified_claim', False)
-            if require_claim and len(exp_entry["bullets"]) == 0:
-                continue
-                        
             view_model['experience'].append(exp_entry)
             
         # Education / Qualifications

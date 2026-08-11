@@ -1,25 +1,29 @@
-roles:
+﻿roles:
 - id: ROLE-8000
-  title: Primary Educator
+  title: English, Science and Mathematics Teacher
   description: ''
   entity_type: role
 - id: ROLE-8001
-  title: Primary Educator & Curriculum Lead
+  title: ESL Teacher
   description: ''
   entity_type: role
 - id: ROLE-8002
-  title: Teacher Trainer & Quality Assurance
+  title: ESL Teacher and Teacher Trainer
   description: ''
   entity_type: role
 - id: ROLE-8003
-  title: Educator Development Lead
+  title: EAL / English Teacher
   description: ''
   entity_type: role
 - id: ROLE-8004
-  title: Early Years EAL Teacher
+  title: Assistant Manager — Teacher Quality & Development
   description: ''
   entity_type: role
 - id: ROLE-8005
-  title: Training & Quality Lead
+  title: Training and Quality Lead
+  description: ''
+  entity_type: role
+- id: ROLE-8006
+  title: EAL / English Teacher
   description: ''
   entity_type: role

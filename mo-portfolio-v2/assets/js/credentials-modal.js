@@ -136,6 +136,7 @@ export function initCredentialsModal() {
 
         modal.classList.add('is-active');
         modal.setAttribute('aria-hidden', 'false');
+        modal.hidden = false;
         document.body.style.overflow = 'hidden';
 
         if (closeBtn) closeBtn.focus();
@@ -144,6 +145,7 @@ export function initCredentialsModal() {
     function closeModal() {
         modal.classList.remove('is-active');
         modal.setAttribute('aria-hidden', 'true');
+        modal.hidden = true;
         document.body.style.overflow = '';
         resetZoom();
 
@@ -170,6 +172,7 @@ export function initCredentialsModal() {
         previousActiveElement = document.activeElement;
         standardsModal.classList.add('is-active');
         standardsModal.setAttribute('aria-hidden', 'false');
+        standardsModal.hidden = false;
         document.body.style.overflow = 'hidden';
         if (standardsCloseBtn) standardsCloseBtn.focus();
     }
@@ -178,6 +181,7 @@ export function initCredentialsModal() {
         if (!standardsModal) return;
         standardsModal.classList.remove('is-active');
         standardsModal.setAttribute('aria-hidden', 'true');
+        standardsModal.hidden = true;
         document.body.style.overflow = '';
         if (previousActiveElement && typeof previousActiveElement.focus === 'function') {
             previousActiveElement.focus();

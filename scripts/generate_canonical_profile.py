@@ -11,6 +11,13 @@ def generate_markdown(data_dir, out_path):
     name = identity.get('name', 'Unknown')
     title = identity.get('title', 'Unknown')
     
+    orgs = {}
+    orgs_path = data_dir / 'facts' / 'organisations.yml'
+    if orgs_path.exists():
+        orgs_data = load_yaml(orgs_path)
+        for org in orgs_data.get('organisations', []):
+            orgs[org['id']] = org.get('canonical_name', 'Unknown')
+    
     # Load metadata
     metadata = load_yaml(data_dir / 'metadata.yml')
     last_reviewed = metadata.get('last_reviewed', 'Unknown')
@@ -47,14 +54,23 @@ def generate_markdown(data_dir, out_path):
             
             # Format dates
             dates = emp.get('dates', {})
-            start_date = dates.get('start', {}).get('date', 'Unknown')
-            end_date = 'Present' if dates.get('end', {}).get('present') else dates.get('end', {}).get('date', 'Unknown')
+            start_val = dates.get('start', 'Unknown')
+            start_date = start_val.get('date', 'Unknown') if isinstance(start_val, dict) else start_val
+            
+            end_val = dates.get('end', 'Unknown')
+            if isinstance(end_val, dict):
+                end_date = 'Present' if end_val.get('present') else end_val.get('date', 'Unknown')
+            else:
+                end_date = end_val
+            
+            employer_name = orgs.get(emp.get('employer_id'), emp.get('employer_id'))
+            location = emp.get('employment_country', emp.get('location', 'Unknown'))
             
             md_content += f"### Employment #{idx + 1}\n"
-            md_content += f"**Employer:** {emp.get('employer')} ({emp.get('employer_id')})\n"
+            md_content += f"**Employer:** {employer_name} ({emp.get('employer_id')})\n"
             md_content += f"- **Role:** {role_title}\n"
             md_content += f"- **Date:** {start_date} – {end_date}\n"
-            md_content += f"**Location:** {emp.get('location')}\n"
+            md_content += f"**Location:** {location}\n"
             md_content += f"**Confidence:** {emp.get('confidence')} | **Review Status:** {emp.get('review_status')}\n\n"
             
     md_content += "---\n\n## 3. Education Records\n\n"
@@ -64,8 +80,14 @@ def generate_markdown(data_dir, out_path):
         edu_data = load_yaml(edu_path)
         for idx, edu in enumerate(edu_data.get('education_records', [])):
             dates = edu.get('dates', {})
-            start_date = dates.get('start', {}).get('date', 'Unknown')
-            end_date = 'Present' if dates.get('end', {}).get('present') else dates.get('end', {}).get('date', 'Unknown')
+            start_val = dates.get('start', 'Unknown')
+            start_date = start_val.get('date', 'Unknown') if isinstance(start_val, dict) else start_val
+            
+            end_val = dates.get('end', 'Unknown')
+            if isinstance(end_val, dict):
+                end_date = 'Present' if end_val.get('present') else end_val.get('date', 'Unknown')
+            else:
+                end_date = end_val
             
             md_content += f"### {edu.get('degree')}\n"
             md_content += f"**Institution:** {edu.get('institution')} ({edu.get('institution_id')})\n"
