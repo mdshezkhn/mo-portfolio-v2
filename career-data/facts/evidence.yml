@@ -58,14 +58,6 @@ evidence:
   filename: e-0010.pdf
   type: certificate
   date_issued: '2020-01-01'
-- id: E-3006
-  description: Aoxin International School Curriculum Director commendation letter
-    for primary curriculum design.
-  entity_type: evidence
-  schemaVersion: '1.0'
-  filename: e-3006.pdf
-  type: certificate
-  date_issued: '2020-01-01'
 - id: E-2002
   description: Migration placeholder
   entity_type: evidence

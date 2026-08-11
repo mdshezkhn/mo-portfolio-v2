@@ -211,19 +211,13 @@
           "Malta"
         ]
       },
-      "supported_claims": [
-        "CLAIM-1002"
-      ],
+      "supported_claims": [],
       "metadata": {
         "confidence": "V1",
         "evidence_id": null,
         "review_status": "approved"
       },
-      "cv_highlights": [
-        {
-          "claim_id": "CLAIM-1002"
-        }
-      ]
+      "cv_highlights": []
     },
     {
       "id": "EMP-2004",
@@ -241,19 +235,13 @@
           "Global"
         ]
       },
-      "supported_claims": [
-        "CLAIM-1001"
-      ],
+      "supported_claims": [],
       "metadata": {
         "confidence": "V1",
         "evidence_id": null,
         "review_status": "approved"
       },
-      "cv_highlights": [
-        {
-          "claim_id": "CLAIM-1001"
-        }
-      ]
+      "cv_highlights": []
     },
     {
       "id": "EMP-2003",

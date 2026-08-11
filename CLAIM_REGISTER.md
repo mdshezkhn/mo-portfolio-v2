@@ -12,7 +12,7 @@
 | **Canonical Wording** | `` |
 | **Status** | verified |
 | **Risk Level** | HIGH |
-| **Supported by Evidence IDs** | E-3001, E-3002, E-3003, E-3004, E-3005, E-3006, E-0009, E-0010 |
+| **Supported by Evidence IDs** | E-3001, E-3002, E-3003, E-3004, E-3005, E-0009, E-0010 |
 | **Used In** | CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md |
 
 ---
@@ -22,7 +22,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** | E-3001 |
 | **Used In** | CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md |
@@ -142,7 +142,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** | E-0016 |
 | **Used In** | CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md |
@@ -154,7 +154,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** | E-3005 |
 | **Used In** | CV_Master.md, Portfolio_Copy.md |
@@ -178,7 +178,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** | E-0014, E-0005 |
 | **Used In** |  |
@@ -190,7 +190,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** | E-0014, E-0005 |
 | **Used In** |  |
@@ -202,7 +202,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** | E-3001 |
 | **Used In** | CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md |
@@ -214,7 +214,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** | E-3001, E-0015 |
 | **Used In** |  |
@@ -226,7 +226,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** | E-3004 |
 | **Used In** | CV_Master.md, Portfolio_Copy.md |
@@ -238,7 +238,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** |  |
 | **Used In** | CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md |
@@ -250,7 +250,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** |  |
 | **Used In** | CV_Master.md, LinkedIn_Ready_To_Paste.md |
@@ -262,7 +262,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** |  |
 | **Used In** | CV_Master.md, LinkedIn_Ready_To_Paste.md |
@@ -274,7 +274,7 @@
 | Field | Value |
 |-------|-------|
 | **Canonical Wording** | `` |
-| **Status** | verified |
+| **Status** | unverified |
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** | E-0017 |
 | **Used In** | CV_Master.md |

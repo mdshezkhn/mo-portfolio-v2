@@ -1,15 +1,15 @@
 # Compiler Build Report
-Generated at: 2026-08-11T14:02:18.565546
+Generated at: 2026-08-11T18:04:29.276506
 
 ## Content Quality
-- **Overall Score**: 33/100
+- **Overall Score**: 34/100
   - Evidence Coverage: 0
   - Quantification: 0
   - Market Alignment: 0
   - Leadership Signals: 0
   - Readability: 100
   - Redundancy: 100
-  - Evidence Utilization: 36
+  - Evidence Utilization: 38
 
 ## Claim Utilization
 | Metric | Value |

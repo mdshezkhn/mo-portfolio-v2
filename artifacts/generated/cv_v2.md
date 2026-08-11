@@ -42,11 +42,9 @@ Primary Educator & EAL Specialist with 11+ years in international settings (Chin
 
 ### GEDU Global Education (Sep 2022 - Aug 2023)
 **Training and Quality Lead**
-* CLAIM-1002
 
 ### WhiteHat Jr (Aug 2020 - Jul 2022)
 **Assistant Manager — Teacher Quality & Development**
-* CLAIM-1001
 
 ### Aoxin International School (Jul 2018 - Aug 2020)
 **EAL / English Teacher**
