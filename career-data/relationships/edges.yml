@@ -12,19 +12,19 @@ edges:
   to: ORG-1001
   type: WORKED_AT
 - from: EMP-2006
-  to: ROLE-8001
+  to: ROLE-8006
   type: HAS_ROLE
 - from: EMP-2003
   to: ORG-1001
   type: WORKED_AT
 - from: EMP-2003
-  to: ROLE-8001
+  to: ROLE-8003
   type: HAS_ROLE
 - from: EMP-2005
   to: ORG-1002
   type: WORKED_AT
 - from: EMP-2005
-  to: ROLE-8002
+  to: ROLE-8005
   type: HAS_ROLE
 - from: EMP-2005
   to: E-3001
@@ -33,7 +33,7 @@ edges:
   to: ORG-1003
   type: WORKED_AT
 - from: EMP-2004
-  to: ROLE-8003
+  to: ROLE-8004
   type: HAS_ROLE
 - from: EMP-2004
   to: E-3002
@@ -42,16 +42,16 @@ edges:
   to: ORG-1004
   type: WORKED_AT
 - from: EMP-2002
-  to: ROLE-8004
+  to: ROLE-8002
   type: HAS_ROLE
 - from: EMP-2002
   to: E-3004
   type: SUPPORTED_BY
 - from: EMP-2001
-  to: ORG-1005
+  to: ORG-1006
   type: WORKED_AT
 - from: EMP-2001
-  to: ROLE-8005
+  to: ROLE-8001
   type: HAS_ROLE
 - from: QUAL-3002
   to: INST-9000
