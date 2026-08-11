@@ -5,10 +5,10 @@
     "graph_version": "1.0.0",
     "resolver_version": "1.0.0",
     "metrics_version": "1.0.0",
-    "build_id": "ac9b8711-5783-465c-a808-39abd3038cea",
-    "generated_at": "2026-08-11T18:58:39.701520Z",
-    "source_commit": "f05fad25a08929efbcbcbc22a7a58d0009c5f047",
-    "input_hash": "eda50778a52464f439b70d75b631bb0176bb8fb4b3f84127ee62bf2adbec8dc6"
+    "build_id": "40fc11e1-64e5-45e3-9b80-21fec0f6e67b",
+    "generated_at": "2026-08-11T19:27:47.154046Z",
+    "source_commit": "91ca0bf1466507e41491ede7ffa9960367ef18a6",
+    "input_hash": "c9d18a6981f15eedebb44cfb5a24bcbf5fd896a1fc41fdef0c3cb90d0e50dce4"
   },
   "relationships": [
     {
@@ -23,6 +23,16 @@
     },
     {
       "from": "EMP-2000",
+      "to": "E-3003",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "C-024",
+      "to": "EMP-2000",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "C-024",
       "to": "E-3003",
       "type": "SUPPORTED_BY"
     },
@@ -77,6 +87,16 @@
       "type": "SUPPORTED_BY"
     },
     {
+      "from": "C-014",
+      "to": "EMP-2004",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "C-014",
+      "to": "E-3002",
+      "type": "SUPPORTED_BY"
+    },
+    {
       "from": "EMP-2002",
       "to": "ORG-1004",
       "type": "WORKED_AT"
@@ -100,6 +120,16 @@
       "from": "EMP-2001",
       "to": "ROLE-8001",
       "type": "HAS_ROLE"
+    },
+    {
+      "from": "C-009",
+      "to": "EMP-2001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "C-009",
+      "to": "E-3005",
+      "type": "SUPPORTED_BY"
     },
     {
       "from": "QUAL-3002",

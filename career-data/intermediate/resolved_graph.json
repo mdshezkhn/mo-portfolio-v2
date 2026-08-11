@@ -4,9 +4,9 @@
     "graph_version": "1.0.0",
     "resolver_version": "1.0.0",
     "schema_version": "1.0.0",
-    "build_id": "f299c78e-59d2-4aef-ad79-1aabe0f2b8a8",
-    "generated_at": "2026-08-11T18:59:17.806829Z",
-    "source_commit": "f05fad25a08929efbcbcbc22a7a58d0009c5f047"
+    "build_id": "40fc11e1-64e5-45e3-9b80-21fec0f6e67b",
+    "generated_at": "2026-08-11T19:27:47.154046Z",
+    "source_commit": "91ca0bf1466507e41491ede7ffa9960367ef18a6"
   },
   "entities": {
     "C-001": {
@@ -234,7 +234,7 @@
       ],
       "_source_file": "career-data\\facts\\claims\\public.yml",
       "entity_type": "claim",
-      "confidence": "unverified"
+      "confidence": "verified"
     },
     "C-010": {
       "id": "C-010",
@@ -340,7 +340,7 @@
       ],
       "_source_file": "career-data\\facts\\claims\\public.yml",
       "entity_type": "claim",
-      "confidence": "unverified"
+      "confidence": "verified"
     },
     "C-015": {
       "id": "C-015",
@@ -524,7 +524,7 @@
       "presentation_assets": [],
       "_source_file": "career-data\\facts\\claims\\restricted.yml",
       "entity_type": "claim",
-      "confidence": "unverified"
+      "confidence": "verified"
     },
     "C-025": {
       "id": "C-025",
@@ -754,7 +754,12 @@
           "provenance": "legacy"
         }
       ],
-      "cv_highlights": [],
+      "cv_highlights": [
+        {
+          "text": "Primary educator responsibilities.",
+          "claim_id": "C-024"
+        }
+      ],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2001": {
@@ -793,7 +798,12 @@
           "provenance": "legacy"
         }
       ],
-      "cv_highlights": [],
+      "cv_highlights": [
+        {
+          "text": "ESL Educator.",
+          "claim_id": "C-009"
+        }
+      ],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2002": {
@@ -827,7 +837,12 @@
           "provenance": "legacy"
         }
       ],
-      "cv_highlights": [],
+      "cv_highlights": [
+        {
+          "text": "Early Years EAL teaching.",
+          "claim_id": "C-019"
+        }
+      ],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2003": {
@@ -864,7 +879,12 @@
       ],
       "confidence": "V1",
       "review_status": "approved",
-      "cv_highlights": [],
+      "cv_highlights": [
+        {
+          "text": "Educator coaching and mentoring.",
+          "claim_id": "C-014"
+        }
+      ],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2005": {
@@ -1459,6 +1479,16 @@
       "type": "SUPPORTED_BY"
     },
     {
+      "from": "C-024",
+      "to": "EMP-2000",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "C-024",
+      "to": "E-3003",
+      "type": "SUPPORTED_BY"
+    },
+    {
       "from": "EMP-2006",
       "to": "ORG-1001",
       "type": "WORKED_AT"
@@ -1509,6 +1539,16 @@
       "type": "SUPPORTED_BY"
     },
     {
+      "from": "C-014",
+      "to": "EMP-2004",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "C-014",
+      "to": "E-3002",
+      "type": "SUPPORTED_BY"
+    },
+    {
       "from": "EMP-2002",
       "to": "ORG-1004",
       "type": "WORKED_AT"
@@ -1532,6 +1572,16 @@
       "from": "EMP-2001",
       "to": "ROLE-8001",
       "type": "HAS_ROLE"
+    },
+    {
+      "from": "C-009",
+      "to": "EMP-2001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "C-009",
+      "to": "E-3005",
+      "type": "SUPPORTED_BY"
     },
     {
       "from": "QUAL-3002",
@@ -1638,6 +1688,18 @@
           "type": "SUPPORTED_BY"
         }
       ],
+      "C-024": [
+        {
+          "from": "C-024",
+          "to": "EMP-2000",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "C-024",
+          "to": "E-3003",
+          "type": "SUPPORTED_BY"
+        }
+      ],
       "EMP-2006": [
         {
           "from": "EMP-2006",
@@ -1696,6 +1758,18 @@
           "type": "SUPPORTED_BY"
         }
       ],
+      "C-014": [
+        {
+          "from": "C-014",
+          "to": "EMP-2004",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "C-014",
+          "to": "E-3002",
+          "type": "SUPPORTED_BY"
+        }
+      ],
       "EMP-2002": [
         {
           "from": "EMP-2002",
@@ -1726,6 +1800,18 @@
         },
         {
           "from": "EMP-2001",
+          "to": "E-3005",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "C-009": [
+        {
+          "from": "C-009",
+          "to": "EMP-2001",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "C-009",
           "to": "E-3005",
           "type": "SUPPORTED_BY"
         }
@@ -1851,6 +1937,18 @@
           "from": "EMP-2000",
           "to": "E-3003",
           "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "C-024",
+          "to": "E-3003",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-2000": [
+        {
+          "from": "C-024",
+          "to": "EMP-2000",
+          "type": "SUPPORTED_BY"
         }
       ],
       "ORG-1001": [
@@ -1919,6 +2017,18 @@
           "from": "EMP-2004",
           "to": "E-3002",
           "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "C-014",
+          "to": "E-3002",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-2004": [
+        {
+          "from": "C-014",
+          "to": "EMP-2004",
+          "type": "SUPPORTED_BY"
         }
       ],
       "ORG-1004": [
@@ -1954,6 +2064,30 @@
           "from": "EMP-2001",
           "to": "ROLE-8001",
           "type": "HAS_ROLE"
+        }
+      ],
+      "EMP-2001": [
+        {
+          "from": "C-009",
+          "to": "EMP-2001",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "E-3005": [
+        {
+          "from": "C-009",
+          "to": "E-3005",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "CLAIM-1000",
+          "to": "E-3005",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "EMP-2001",
+          "to": "E-3005",
+          "type": "SUPPORTED_BY"
         }
       ],
       "INST-9000": [
@@ -2002,18 +2136,6 @@
         {
           "from": "QUAL-3000",
           "to": "E-0010",
-          "type": "SUPPORTED_BY"
-        }
-      ],
-      "E-3005": [
-        {
-          "from": "CLAIM-1000",
-          "to": "E-3005",
-          "type": "SUPPORTED_BY"
-        },
-        {
-          "from": "EMP-2001",
-          "to": "E-3005",
           "type": "SUPPORTED_BY"
         }
       ],

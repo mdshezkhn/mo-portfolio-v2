@@ -36,7 +36,8 @@ evidence_assertions:
       dates:
         start: 2020-08
         end: 2022-07
-    supported_claims: []
+    supported_claims:
+    - C-014
 - evidence_id: E-3003
   source:
     document: EVIDENCE_LIBRARY/private/employment/E-3003.md
@@ -55,7 +56,8 @@ evidence_assertions:
       dates:
         start: 2014-01
         end: 2016-11
-    supported_claims: []
+    supported_claims:
+    - C-024
 - evidence_id: E-3004
   source:
     document: EVIDENCE_LIBRARY/private/employment/E-3004.md
@@ -94,7 +96,8 @@ evidence_assertions:
       dates:
         start: 2016-11
         end: 2017-08
-    supported_claims: []
+    supported_claims:
+    - C-009
 - evidence_id: E-0010
   source:
     document: mo-portfolio-v2/assets/images/certificates/bsc-doc-full.webp

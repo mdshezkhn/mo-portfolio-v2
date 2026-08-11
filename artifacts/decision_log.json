@@ -68,8 +68,8 @@
     "status": "Rejected",
     "reason": "Not applicable to british market",
     "policy": "market_rules",
-    "confidence": "unverified",
-    "evidence_count": 0
+    "confidence": "verified",
+    "evidence_count": 2
   },
   {
     "claim_id": "C-010",
@@ -108,8 +108,8 @@
     "status": "Rejected",
     "reason": "Not applicable to british market",
     "policy": "market_rules",
-    "confidence": "unverified",
-    "evidence_count": 0
+    "confidence": "verified",
+    "evidence_count": 2
   },
   {
     "claim_id": "C-015",
@@ -188,8 +188,8 @@
     "status": "Rejected",
     "reason": "Not applicable to british market",
     "policy": "market_rules",
-    "confidence": "unverified",
-    "evidence_count": 0
+    "confidence": "verified",
+    "evidence_count": 2
   },
   {
     "claim_id": "C-025",

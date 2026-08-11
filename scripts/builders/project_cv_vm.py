@@ -80,7 +80,7 @@ def apply_mapping(domain_model, mapping):
         }
         for cid in emp.get("supported_claims", []):
             if cid in claims_by_id:
-                stmt = claims_by_id[cid].get("statement")
+                stmt = claims_by_id[cid].get("title")
                 if stmt: exp["highlights"].append(stmt)
             else:
                 exp["highlights"].append(cid)

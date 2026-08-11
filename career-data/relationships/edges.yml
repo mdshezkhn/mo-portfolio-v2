@@ -8,6 +8,12 @@ edges:
 - from: EMP-2000
   to: E-3003
   type: SUPPORTED_BY
+- from: C-024
+  to: EMP-2000
+  type: SUPPORTED_BY
+- from: C-024
+  to: E-3003
+  type: SUPPORTED_BY
 - from: EMP-2006
   to: ORG-1001
   type: WORKED_AT
@@ -38,6 +44,12 @@ edges:
 - from: EMP-2004
   to: E-3002
   type: SUPPORTED_BY
+- from: C-014
+  to: EMP-2004
+  type: SUPPORTED_BY
+- from: C-014
+  to: E-3002
+  type: SUPPORTED_BY
 - from: EMP-2002
   to: ORG-1004
   type: WORKED_AT
@@ -53,6 +65,12 @@ edges:
 - from: EMP-2001
   to: ROLE-8001
   type: HAS_ROLE
+- from: C-009
+  to: EMP-2001
+  type: SUPPORTED_BY
+- from: C-009
+  to: E-3005
+  type: SUPPORTED_BY
 - from: QUAL-3002
   to: INST-9000
   type: STUDIED_AT

@@ -235,13 +235,20 @@
           "Global"
         ]
       },
-      "supported_claims": [],
+      "supported_claims": [
+        "C-014"
+      ],
       "metadata": {
         "confidence": "V1",
         "evidence_id": null,
         "review_status": "approved"
       },
-      "cv_highlights": []
+      "cv_highlights": [
+        {
+          "text": "Educator coaching and mentoring.",
+          "claim_id": "C-014"
+        }
+      ]
     },
     {
       "id": "EMP-2003",
@@ -287,7 +294,12 @@
         "evidence_id": null,
         "review_status": "approved"
       },
-      "cv_highlights": []
+      "cv_highlights": [
+        {
+          "text": "Early Years EAL teaching.",
+          "claim_id": "C-019"
+        }
+      ]
     },
     {
       "id": "EMP-2001",
@@ -303,13 +315,20 @@
         "physical_country": "China",
         "operational_regions": []
       },
-      "supported_claims": [],
+      "supported_claims": [
+        "C-009"
+      ],
       "metadata": {
         "confidence": "V5",
         "evidence_id": null,
         "review_status": "approved"
       },
-      "cv_highlights": []
+      "cv_highlights": [
+        {
+          "text": "ESL Educator.",
+          "claim_id": "C-009"
+        }
+      ]
     },
     {
       "id": "EMP-2000",
@@ -325,13 +344,20 @@
         "physical_country": "India",
         "operational_regions": []
       },
-      "supported_claims": [],
+      "supported_claims": [
+        "C-024"
+      ],
       "metadata": {
         "confidence": "V1",
         "evidence_id": null,
         "review_status": "approved"
       },
-      "cv_highlights": []
+      "cv_highlights": [
+        {
+          "text": "Primary educator responsibilities.",
+          "claim_id": "C-024"
+        }
+      ]
     }
   ],
   "education": [

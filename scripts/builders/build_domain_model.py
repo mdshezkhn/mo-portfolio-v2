@@ -248,8 +248,9 @@ def build():
                     claim_resolved = resolved_states.get(claim_id, {})
                     
                     if claim_resolved.get('status') == 'VERIFIED':
-                        claim_text = all_claims.get(claim_id, {}).get('statement', '')
-                        exp_entry["bullets"].append(claim_text)
+                        claim_text = highlight.get('text') or all_claims.get(claim_id, {}).get('title', '')
+                        if claim_text:
+                            exp_entry["bullets"].append(claim_text)
             
             view_model['experience'].append(exp_entry)
             
