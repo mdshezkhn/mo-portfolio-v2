@@ -14,11 +14,17 @@ availability: August 2027
 location: Zhengzhou, China
 contact_channels:
   email:
-    value: mdshezkhn@gmail.com
+    value: mdshezkhn@hotmail.com
     source_type: user-approved-public-contact
     status: VERIFIED_FOR_PUBLICATION
-  phone:
+  phone_china:
     value: "+86-131 3771 9002"
+    label: "China (WeChat)"
+    source_type: user-approved-public-contact
+    status: VERIFIED_FOR_PUBLICATION
+  phone_india:
+    value: "+91 98695 06845"
+    label: "India (WhatsApp)"
     source_type: user-approved-public-contact
     status: VERIFIED_FOR_PUBLICATION
   linkedin:
