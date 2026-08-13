@@ -427,6 +427,31 @@
 .wc-info {
     flex: 1;
 }
+.direct-contact-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+.contact-link--qr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.contact-link-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+}
+.direct-contact-qr-thumb {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px -2px rgba(15,23,42,0.15);
+    flex-shrink: 0;
+}
 .wc-name {
     font-family: "Fraunces", serif;
     font-size: 1.3rem;
@@ -982,6 +1007,10 @@
     background: #1E3A5F;
     color: #FFFFFF;
     border-color: #1E3A5F;
+}0.8rem;
+    color: #64748B;
+    font-style: italic;
+    width: 100%;
 }
 
 .modal-footer {

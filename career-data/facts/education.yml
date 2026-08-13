@@ -22,13 +22,18 @@ education_records:
     start: '2007'
     end: '2009'
   confidence: V1
-  review_status: pending
+  review_status: approved
   publication:
     public_cv: true
     linkedin: true
-    recruiter_pack: optional
+    recruiter_pack: excluded
     premium_schools: false
     verified_only_gate: true
+    narration: minimal_only
+  narration_note: 'Do NOT narrate in bio prose, headlines, or About sections. List
+    only in compact education tables/credential lists. Retained for China work-visa
+    higher-education-years eligibility at lower-tier schools; not to be marketed
+    as a qualification strength.'
   institution_recognition_status: requires_external_verification
   recognition_note: '*External recognition status available on request.'
 - id: QUAL-3002
@@ -37,15 +42,33 @@ education_records:
   degree: Postgraduate Certificate in Education (PGCE, non-QTS)
   dates:
     start: 2025-09
-    end: 2026-07
+    end: 2026-07-09
   confidence: V5
   review_status: approved
+  result: Pass
+  award_date: 2026-07-09
+  certificate_reference: 2514551/1
+  modules:
+  - code: PGCE7000
+    title: Raising the Achievement of Learners
+    mark: 53
+    grade: P
+    fheq_level: 7
+  - code: PGCE7002
+    title: Quality Teaching in Educational Settings
+    mark: 75
+    grade: P
+    fheq_level: 7
+    note: Practitioner research module
   publication:
     public_cv: true
     linkedin: true
     recruiter_pack: included
     premium_schools: true
     verified_only_gate: false
+  display_wording: 'PGCE (non-QTS), University of Cumbria — Completed and awarded
+    9 July 2026 (Pass). Practitioner research module (PGCE7002): 75/100, Master''s
+    level.'
   research_context: 'Practitioner research: Questioning Strategies and Participation
     Equity in Bilingual Primary Classrooms'
 - id: QUAL-3003
@@ -54,8 +77,10 @@ education_records:
   degree: Bachelor of Education (B.Ed.)
   dates:
     start: 2021-10
-    end: 2024-03
-  confidence: V4
+    end: 2024-01
+  result: 7.33 CGPA (73.30%)
+  registration_no: 3054-SMI-2021
+  confidence: V5
   review_status: approved
   publication:
     public_cv: true
