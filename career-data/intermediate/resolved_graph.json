@@ -4,9 +4,9 @@
     "graph_version": "1.0.0",
     "resolver_version": "1.0.0",
     "schema_version": "1.0.0",
-    "build_id": "40fc11e1-64e5-45e3-9b80-21fec0f6e67b",
-    "generated_at": "2026-08-11T19:27:47.154046Z",
-    "source_commit": "91ca0bf1466507e41491ede7ffa9960367ef18a6"
+    "build_id": "0355fa33-a85a-45f8-9014-46a30dda940b",
+    "generated_at": "2026-08-13T23:10:33.328149Z",
+    "source_commit": "bc787363ab85de87181587673de6acc629eeaeb5"
   },
   "entities": {
     "C-001": {
@@ -643,14 +643,16 @@
         "end": "2009"
       },
       "confidence": "V1",
-      "review_status": "pending",
+      "review_status": "approved",
       "publication": {
         "public_cv": true,
         "linkedin": true,
-        "recruiter_pack": "optional",
+        "recruiter_pack": "excluded",
         "premium_schools": false,
-        "verified_only_gate": true
+        "verified_only_gate": true,
+        "narration": "minimal_only"
       },
+      "narration_note": "Do NOT narrate in bio prose, headlines, or About sections. List only in compact education tables/credential lists. Retained for China work-visa higher-education-years eligibility at lower-tier schools; not to be marketed as a qualification strength.",
       "institution_recognition_status": "requires_external_verification",
       "recognition_note": "*External recognition status available on request.",
       "_source_file": "career-data\\facts\\education.yml"
@@ -662,10 +664,30 @@
       "degree": "Postgraduate Certificate in Education (PGCE, non-QTS)",
       "dates": {
         "start": "2025-09",
-        "end": "2026-07"
+        "end": "2026-07-09"
       },
       "confidence": "V5",
       "review_status": "approved",
+      "result": "Pass",
+      "award_date": "2026-07-09",
+      "certificate_reference": "2514551/1",
+      "modules": [
+        {
+          "code": "PGCE7000",
+          "title": "Raising the Achievement of Learners",
+          "mark": 53,
+          "grade": "P",
+          "fheq_level": 7
+        },
+        {
+          "code": "PGCE7002",
+          "title": "Quality Teaching in Educational Settings",
+          "mark": 75,
+          "grade": "P",
+          "fheq_level": 7,
+          "note": "Practitioner research module"
+        }
+      ],
       "publication": {
         "public_cv": true,
         "linkedin": true,
@@ -673,6 +695,7 @@
         "premium_schools": true,
         "verified_only_gate": false
       },
+      "display_wording": "PGCE (non-QTS), University of Cumbria \u2014 Completed and awarded 9 July 2026 (Pass). Practitioner research module (PGCE7002): 75/100, Master's level.",
       "research_context": "Practitioner research: Questioning Strategies and Participation Equity in Bilingual Primary Classrooms",
       "_source_file": "career-data\\facts\\education.yml"
     },
@@ -683,9 +706,11 @@
       "degree": "Bachelor of Education (B.Ed.)",
       "dates": {
         "start": "2021-10",
-        "end": "2024-03"
+        "end": "2024-01"
       },
-      "confidence": "V4",
+      "result": "7.33 CGPA (73.30%)",
+      "registration_no": "3054-SMI-2021",
+      "confidence": "V5",
       "review_status": "approved",
       "publication": {
         "public_cv": true,
@@ -1191,12 +1216,19 @@
       "location": "Zhengzhou, China",
       "contact_channels": {
         "email": {
-          "value": "mdshezkhn@gmail.com",
+          "value": "mdshezkhn@hotmail.com",
           "source_type": "user-approved-public-contact",
           "status": "VERIFIED_FOR_PUBLICATION"
         },
-        "phone": {
+        "phone_china": {
           "value": "+86-131 3771 9002",
+          "label": "China (WeChat)",
+          "source_type": "user-approved-public-contact",
+          "status": "VERIFIED_FOR_PUBLICATION"
+        },
+        "phone_india": {
+          "value": "+91 98695 06845",
+          "label": "India (WhatsApp)",
           "source_type": "user-approved-public-contact",
           "status": "VERIFIED_FOR_PUBLICATION"
         },

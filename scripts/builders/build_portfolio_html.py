@@ -24,7 +24,7 @@ def render_experience(exp):
 """
     if exp.get("bullets"):
         html += f"""
-                                    <ul style="padding-left: 20px; font-size: 0.95rem; color: var(--text-secondary); margin-top: 1rem;">
+                                    <ul class="tl-bullets">
 """
         for b in exp["bullets"]:
             html += f"                                        <li>{b}</li>\n"
