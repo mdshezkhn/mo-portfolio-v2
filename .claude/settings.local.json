@@ -50,7 +50,10 @@
       "Bash(\"/c/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe\" assets/documents/Mohammed_Shehzad_Khan_CV.html assets/documents/Mohammed_Shehzad_Khan_CV.pdf)",
       "Read(//c/Users/Mohammed Shehzad/Downloads/PGCE Research/**)",
       "Bash(ls -la \"/Users/Mohammed Shehzad/Documents\")",
-      "Read(//c/Users/Mohammed Shehzad/Documents/**)"
+      "Read(//c/Users/Mohammed Shehzad/Documents/**)",
+      "Bash(find \"c:\\\\\\\\Users\\\\\\\\Mohammed Shehzad\\\\\\\\Documents\\\\\\\\Mo Digital Portfolio\\\\\\\\mo-portfolio-v2\" -type f -name \"*.jpg\" -o -name \"*.png\" -o -name \"*.webp\")",
+      "Bash(curl -s -w \"\\\\n%{size_download}\" -o /dev/null -O \"{}\")",
+      "Bash(xargs -I {} echo \"{}: $\\(curl -s -w \"\\\\n%{size_download}\" -o /dev/null -O \"{}\"\\)\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\Mohammed Shehzad\\.claude\\plans",

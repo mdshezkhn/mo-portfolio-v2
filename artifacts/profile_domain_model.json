@@ -395,7 +395,7 @@
       "institution_name": "University of Cumbria",
       "dates": {
         "start_date": "2025-09",
-        "end_date": "2026-07"
+        "end_date": "2026-07-09"
       },
       "metadata": {
         "confidence": "V5",
@@ -409,10 +409,10 @@
       "institution_name": "University of Kashmir",
       "dates": {
         "start_date": "2021-10",
-        "end_date": "2024-03"
+        "end_date": "2024-01"
       },
       "metadata": {
-        "confidence": "V4",
+        "confidence": "V5",
         "evidence_id": null
       },
       "entity_type": "qualification"

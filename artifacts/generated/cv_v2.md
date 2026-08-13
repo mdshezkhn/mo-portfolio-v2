@@ -63,4 +63,4 @@ Primary Educator & EAL Specialist with 11+ years in international settings (Chin
 * Bachelor of Science, Physics (B.Sc.), University of Mumbai (2004 - 2007)
 * Master of Arts, English Language and Literature (M.A.), Harris University (2007 - 2009)
 * Postgraduate Certificate in Education (PGCE, non-QTS), University of Cumbria (Sep 2025 - Jul 2026)
-* Bachelor of Education (B.Ed.), University of Kashmir (Oct 2021 - Mar 2024)
+* Bachelor of Education (B.Ed.), University of Kashmir (Oct 2021 - Jan 2024)

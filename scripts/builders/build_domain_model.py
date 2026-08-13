@@ -143,6 +143,9 @@ def build_profile_domain_model(graph):
         end_val = dates_block.get('end', '')
         if isinstance(start_val, dict): start_val = start_val.get('date', '')
         if isinstance(end_val, dict): end_val = end_val.get('date', '')
+        # YAML may parse unquoted dates (e.g. 2026-07-09) as datetime.date objects
+        start_val = str(start_val) if start_val else ''
+        end_val = str(end_val) if end_val else ''
         
         domain["education"].append({
             "id": qual_id,
