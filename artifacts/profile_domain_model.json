@@ -158,6 +158,12 @@
       "tags": []
     },
     {
+      "id": "C-101",
+      "statement": "Teacher Trainer with quality assurance responsibilities.",
+      "priority": "low",
+      "tags": []
+    },
+    {
       "id": "C-OLD-001",
       "statement": "Unknown Claim",
       "priority": "low",
@@ -211,13 +217,20 @@
           "Malta"
         ]
       },
-      "supported_claims": [],
+      "supported_claims": [
+        "C-101"
+      ],
       "metadata": {
         "confidence": "V1",
         "evidence_id": null,
         "review_status": "approved"
       },
-      "cv_highlights": []
+      "cv_highlights": [
+        {
+          "text": "Teacher Trainer with quality assurance responsibilities.",
+          "claim_id": "C-101"
+        }
+      ]
     },
     {
       "id": "EMP-2004",
@@ -288,7 +301,9 @@
         "physical_country": "China",
         "operational_regions": []
       },
-      "supported_claims": [],
+      "supported_claims": [
+        "C-009"
+      ],
       "metadata": {
         "confidence": "V1",
         "evidence_id": null,
@@ -297,7 +312,7 @@
       "cv_highlights": [
         {
           "text": "Early Years EAL teaching.",
-          "claim_id": "C-019"
+          "claim_id": "C-009"
         }
       ]
     },
