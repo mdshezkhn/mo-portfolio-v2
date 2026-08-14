@@ -122,3 +122,15 @@ edges:
 - from: QUAL-6007
   to: E-4003
   type: SUPPORTED_BY
+- from: C-101
+  to: EMP-2005
+  type: SUPPORTED_BY
+- from: C-101
+  to: E-3001
+  type: SUPPORTED_BY
+- from: C-009
+  to: EMP-2002
+  type: SUPPORTED_BY
+- from: C-009
+  to: E-3004
+  type: SUPPORTED_BY

@@ -194,7 +194,6 @@ claims:
   evidence:
   - E-3002
   - E-3004
-  - E-3005
   allowed_variants:
   - Teacher development and mentoring experience
   - mentoring
@@ -216,7 +215,6 @@ claims:
   modifier: general
   evidence:
   - E-3004
-  - E-3005
   allowed_variants:
   - Curriculum implementation across primary settings
   presentation_assets:
@@ -253,8 +251,7 @@ claims:
   type: general
   subject: general
   modifier: general
-  evidence:
-  - E-3005
+  evidence: []
   allowed_variants:
   - Assessment moderation (Grade 5 writing, Aoxin International School)
   presentation_assets:
@@ -479,3 +476,19 @@ claims:
   title: M.A. English
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
+- id: C-101
+  status: verified
+  version: '1.0'
+  risk: low
+  owner: canonical
+  type: general
+  subject: general
+  modifier: general
+  evidence:
+  - E-3001
+  allowed_variants:
+  - Teacher Trainer with quality assurance responsibilities.
+  presentation_assets: []
+  title: Teacher Trainer with quality assurance responsibilities.
+  schemaVersion: '1.0'
+  verification_date: '2026-08-14'

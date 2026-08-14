@@ -370,3 +370,7 @@ entities:
     slug: org_1010
     state: PUBLISHED
     type: organisation
+  C-101:
+    slug: c-101
+    state: PUBLISHED
+    type: claim

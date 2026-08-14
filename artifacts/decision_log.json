@@ -69,7 +69,7 @@
     "reason": "Not applicable to british market",
     "policy": "market_rules",
     "confidence": "verified",
-    "evidence_count": 2
+    "evidence_count": 4
   },
   {
     "claim_id": "C-010",
@@ -198,6 +198,14 @@
     "policy": "market_rules",
     "confidence": "unverified",
     "evidence_count": 0
+  },
+  {
+    "claim_id": "C-101",
+    "status": "Rejected",
+    "reason": "Not applicable to british market",
+    "policy": "market_rules",
+    "confidence": "verified",
+    "evidence_count": 2
   },
   {
     "claim_id": "C-OLD-001",

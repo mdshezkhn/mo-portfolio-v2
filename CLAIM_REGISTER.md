@@ -120,7 +120,7 @@
 | **Canonical Wording** | `` |
 | **Status** | verified |
 | **Risk Level** | MEDIUM |
-| **Supported by Evidence IDs** | E-3002, E-3004, E-3005 |
+| **Supported by Evidence IDs** | E-3002, E-3004 |
 | **Used In** | CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md |
 
 ---
@@ -132,7 +132,7 @@
 | **Canonical Wording** | `` |
 | **Status** | verified |
 | **Risk Level** | MEDIUM |
-| **Supported by Evidence IDs** | E-3004, E-3005 |
+| **Supported by Evidence IDs** | E-3004 |
 | **Used In** | CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md |
 
 ---
@@ -156,7 +156,7 @@
 | **Canonical Wording** | `` |
 | **Status** | unverified |
 | **Risk Level** | MEDIUM |
-| **Supported by Evidence IDs** | E-3005 |
+| **Supported by Evidence IDs** |  |
 | **Used In** | CV_Master.md, Portfolio_Copy.md |
 
 ---
@@ -302,5 +302,17 @@
 | **Risk Level** | MEDIUM |
 | **Supported by Evidence IDs** | E-2003 |
 | **Used In** | CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md |
+
+---
+
+### C-101 — General Claim
+
+| Field | Value |
+|-------|-------|
+| **Canonical Wording** | `` |
+| **Status** | verified |
+| **Risk Level** | LOW |
+| **Supported by Evidence IDs** | E-3001 |
+| **Used In** |  |
 
 ---

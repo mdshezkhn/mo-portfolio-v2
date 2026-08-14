@@ -4,9 +4,9 @@
     "graph_version": "1.0.0",
     "resolver_version": "1.0.0",
     "schema_version": "1.0.0",
-    "build_id": "0355fa33-a85a-45f8-9014-46a30dda940b",
-    "generated_at": "2026-08-13T23:10:33.328149Z",
-    "source_commit": "bc787363ab85de87181587673de6acc629eeaeb5"
+    "build_id": "130147d1-e134-4395-8c9a-caa755f096df",
+    "generated_at": "2026-08-14T13:41:12.516521Z",
+    "source_commit": "6ca96f75f7edd1690763765ae858f518abe297ef"
   },
   "entities": {
     "C-001": {
@@ -553,6 +553,29 @@
       "entity_type": "claim",
       "confidence": "unverified"
     },
+    "C-101": {
+      "id": "C-101",
+      "status": "verified",
+      "version": "1.0",
+      "risk": "low",
+      "owner": "canonical",
+      "type": "general",
+      "subject": "general",
+      "modifier": "general",
+      "evidence": [
+        "E-3001"
+      ],
+      "allowed_variants": [
+        "Teacher Trainer with quality assurance responsibilities."
+      ],
+      "presentation_assets": [],
+      "title": "Teacher Trainer with quality assurance responsibilities.",
+      "schemaVersion": "1.0",
+      "verification_date": "2026-08-14",
+      "_source_file": "career-data\\facts\\claims.yml",
+      "entity_type": "claim",
+      "confidence": "verified"
+    },
     "COMP-001": {
       "id": "COMP-001",
       "category": "Instructional Leadership",
@@ -865,7 +888,7 @@
       "cv_highlights": [
         {
           "text": "Early Years EAL teaching.",
-          "claim_id": "C-019"
+          "claim_id": "C-009"
         }
       ],
       "_source_file": "career-data\\facts\\employment.yml"
@@ -930,7 +953,12 @@
       ],
       "confidence": "V1",
       "review_status": "approved",
-      "cv_highlights": [],
+      "cv_highlights": [
+        {
+          "text": "Teacher Trainer with quality assurance responsibilities.",
+          "claim_id": "C-101"
+        }
+      ],
       "_source_file": "career-data\\facts\\employment.yml"
     },
     "EMP-2006": {
@@ -1699,6 +1727,26 @@
       "from": "QUAL-6007",
       "to": "E-4003",
       "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "C-101",
+      "to": "EMP-2005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "C-101",
+      "to": "E-3001",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "C-009",
+      "to": "EMP-2002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "C-009",
+      "to": "E-3004",
+      "type": "SUPPORTED_BY"
     }
   ],
   "indexes": {
@@ -1846,6 +1894,16 @@
           "from": "C-009",
           "to": "E-3005",
           "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "C-009",
+          "to": "EMP-2002",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "C-009",
+          "to": "E-3004",
+          "type": "SUPPORTED_BY"
         }
       ],
       "QUAL-3002": [
@@ -1947,6 +2005,18 @@
           "to": "E-4003",
           "type": "SUPPORTED_BY"
         }
+      ],
+      "C-101": [
+        {
+          "from": "C-101",
+          "to": "EMP-2005",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "C-101",
+          "to": "E-3001",
+          "type": "SUPPORTED_BY"
+        }
       ]
     },
     "by_target": {
@@ -2028,6 +2098,11 @@
           "from": "EMP-2005",
           "to": "E-3001",
           "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "C-101",
+          "to": "E-3001",
+          "type": "SUPPORTED_BY"
         }
       ],
       "ORG-1003": [
@@ -2080,6 +2155,11 @@
       "E-3004": [
         {
           "from": "EMP-2002",
+          "to": "E-3004",
+          "type": "SUPPORTED_BY"
+        },
+        {
+          "from": "C-009",
           "to": "E-3004",
           "type": "SUPPORTED_BY"
         }
@@ -2224,6 +2304,20 @@
         {
           "from": "QUAL-6007",
           "to": "E-4003",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-2005": [
+        {
+          "from": "C-101",
+          "to": "EMP-2005",
+          "type": "SUPPORTED_BY"
+        }
+      ],
+      "EMP-2002": [
+        {
+          "from": "C-009",
+          "to": "EMP-2002",
           "type": "SUPPORTED_BY"
         }
       ]

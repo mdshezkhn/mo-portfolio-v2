@@ -1,9 +1,9 @@
 # Compiler Build Report
-Generated at: 2026-08-13T23:10:43.087029
+Generated at: 2026-08-14T13:41:26.181449
 
 ## Content Quality
-- **Overall Score**: 35/100
-  - Evidence Coverage: 11
+- **Overall Score**: 36/100
+  - Evidence Coverage: 14
   - Quantification: 0
   - Market Alignment: 0
   - Leadership Signals: 0
@@ -20,7 +20,7 @@ Generated at: 2026-08-13T23:10:43.087029
 
 ## Selection Engine Decisions
 - Claims Selected: 0
-- Claims Rejected: 27
+- Claims Rejected: 28
 
 ### Rejections Summary
 - **C-001**: Not applicable to british market (Policy: market_rules)
@@ -48,5 +48,6 @@ Generated at: 2026-08-13T23:10:43.087029
 - **C-023**: Not applicable to british market (Policy: market_rules)
 - **C-024**: Not applicable to british market (Policy: market_rules)
 - **C-025**: Not applicable to british market (Policy: market_rules)
+- **C-101**: Not applicable to british market (Policy: market_rules)
 - **C-OLD-001**: Not applicable to british market (Policy: market_rules)
 - **C-OLD-002**: Not applicable to british market (Policy: market_rules)

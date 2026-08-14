@@ -79,7 +79,7 @@ employment_records:
     provenance: legacy
   cv_highlights:
   - text: Early Years EAL teaching.
-    claim_id: C-019
+    claim_id: C-009
 - id: EMP-2003
   entity_type: employment
   employer_id: ORG-1001
@@ -125,7 +125,9 @@ employment_records:
   - Malta
   confidence: V1
   review_status: approved
-  cv_highlights: []
+  cv_highlights:
+  - text: Teacher Trainer with quality assurance responsibilities.
+    claim_id: C-101
 - id: EMP-2006
   entity_type: employment
   employer_id: ORG-1001

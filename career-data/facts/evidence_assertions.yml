@@ -17,7 +17,8 @@ evidence_assertions:
       dates:
         start: 2022-09
         end: 2023-08
-    supported_claims: []
+    supported_claims:
+    - C-101
 - evidence_id: E-3002
   source:
     document: EVIDENCE_LIBRARY/private/employment/E-3002.md
@@ -77,7 +78,7 @@ evidence_assertions:
         start: 2017-08
         end: 2018-06
     supported_claims:
-    - C-019
+    - C-009
 - evidence_id: E-3005
   source:
     document: EVIDENCE_LIBRARY/private/employment/E-3005.md
