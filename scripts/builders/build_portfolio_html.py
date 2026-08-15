@@ -22,13 +22,27 @@ def render_experience(exp):
                                     </div>
                                     <p class="tl-org">{exp['company']}</p>
 """
+    # Render responsibilities (role scope) - always shown
+    if exp.get("responsibilities"):
+        html += """                                    <div class="tl-responsibilities">
+                                        <h4 class="tl-section-title">Role Scope</h4>
+                                        <ul class="tl-bullets tl-responsibility-list">
+"""
+        for resp in exp["responsibilities"]:
+            html += f"                                            <li class=\"tl-responsibility\">{resp}</li>\n"
+        html += """                                        </ul>
+                                    </div>
+"""
+    # Render verified achievements (evidence-backed claims) - only when verified
     if exp.get("bullets"):
-        html += f"""
-                                    <ul class="tl-bullets">
+        html += """                                    <div class="tl-achievements">
+                                        <h4 class="tl-section-title">Verified Highlights</h4>
+                                        <ul class="tl-bullets tl-achievement-list">
 """
         for b in exp["bullets"]:
-            html += f"                                        <li>{b}</li>\n"
-        html += """                                    </ul>
+            html += f"                                            <li class=\"tl-achievement\">{b}</li>\n"
+        html += """                                        </ul>
+                                    </div>
 """
     
     html += """                                </div>

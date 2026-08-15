@@ -123,7 +123,8 @@ def build_profile_domain_model(graph):
                 "evidence_id": evidence_id,
                 "review_status": emp.get('review_status', 'pending')
             },
-            "cv_highlights": emp.get('cv_highlights', [])
+            "cv_highlights": emp.get('cv_highlights', []),
+            "responsibilities": emp.get('responsibilities', [])
         })
         
     # Map Education
@@ -240,7 +241,8 @@ def build():
                 "company": emp.get('employer_name', 'Unknown'),
                 "role": emp.get('role_title', 'Unknown'),
                 "date": f"{start} - {end}",
-                "bullets": []
+                "bullets": [],
+                "responsibilities": emp.get('responsibilities', [])
             }
             
             # Policy Rule 3: Only VERIFIED canonical claims enter presentation
