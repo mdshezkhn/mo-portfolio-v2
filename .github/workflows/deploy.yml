@@ -54,6 +54,9 @@ jobs:
       - name: Test build_profile_domain_model
         run: python -c "import sys; sys.path.append('.'); from scripts.query_engine import load_graph; from scripts.builders.build_domain_model import build_profile_domain_model; graph = load_graph('career-data'); build_profile_domain_model(graph); print('build_profile_domain_model OK')"
 
+      - name: Test policies loading
+        run: python -c "import sys, os; sys.path.append('.'); from scripts.builders.build_domain_model import POLICIES_PATH, load_yaml; print('POLICIES_PATH:', POLICIES_PATH); print('exists:', POLICIES_PATH.exists()); policies_doc = load_yaml(POLICIES_PATH); print('policies:', list(policies_doc.get('policies', {}).keys()))"
+
       - name: Test build view models
         run: python -c "import sys; sys.path.append('.'); from scripts.builders.build_domain_model import build; build(); print('build OK')"
 
