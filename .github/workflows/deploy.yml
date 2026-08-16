@@ -57,6 +57,12 @@ jobs:
       - name: Test policies loading
         run: python -c "import sys, os; sys.path.append('.'); from scripts.builders.build_domain_model import POLICIES_PATH, load_yaml; print('POLICIES_PATH:', POLICIES_PATH); print('exists:', POLICIES_PATH.exists()); policies_doc = load_yaml(POLICIES_PATH); print('policies:', list(policies_doc.get('policies', {}).keys()))"
 
+      - name: Test resolved_states
+        run: python -c "import sys; sys.path.append('.'); from scripts.verify.verification_resolver import resolve_verification_state; resolved = resolve_verification_state(); print('resolved_states OK:', len(resolved), 'entries')"
+
+      - name: Test golden claims
+        run: python -c "import sys, os; sys.path.append('.'); from scripts.builders.build_domain_model import CAREER_DATA, load_yaml; golden_path = CAREER_DATA / 'golden' / 'E-001' / 'source' / 'facts' / 'claims.yml'; print('golden_path:', golden_path); print('exists:', golden_path.exists()); data = load_yaml(golden_path); print('claims:', len(data.get('claims', [])))"
+
       - name: Test build view models
         run: python -c "import sys; sys.path.append('.'); from scripts.builders.build_domain_model import build; build(); print('build OK')"
 
