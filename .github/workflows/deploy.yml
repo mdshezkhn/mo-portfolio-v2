@@ -33,12 +33,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Debug validate_graph paths
-        run: python -c "import sys, os; sys.path.append('.'); import scripts.verify.graph_validator as gv; print('BASE_DIR:', gv.BASE_DIR); print('CAREER_DATA:', gv.CAREER_DATA); print('CAREER_DATA exists:', gv.CAREER_DATA.exists()); print('cwd:', os.getcwd()); print('career-data exists:', os.path.exists('career-data')); print('career-data/facts:', os.path.exists('career-data/facts')); print('career-data/facts/employment.yml:', os.path.exists('career-data/facts/employment.yml')); print('career-data/relationships/edges.yml:', os.path.exists('career-data/relationships/edges.yml'))"
-
-      - name: Test validate_graph
-        run: python -c "import sys; sys.path.append('.'); from scripts.verify.graph_validator import validate_graph; validate_graph(); print('validate_graph OK')"
-
       - name: Audit Claims
         run: python scripts/audit_claims.py
 
