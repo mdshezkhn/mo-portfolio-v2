@@ -51,6 +51,21 @@ jobs:
       - name: Run CI pipeline and capture error
         run: |
           python scripts/ci_pipeline.py 2>&1 || true
+      - name: Test Audit Claims stage
+        run: |
+          python scripts/audit_claims.py
+      - name: Test Validate IDs stage
+        run: |
+          python scripts/validate_ids.py
+      - name: Test Validate Employment YAML stage
+        run: |
+          python scripts/validate_yaml.py --file career-data/facts/employment.yml
+      - name: Test Validate Education YAML stage
+        run: |
+          python scripts/validate_yaml.py --file career-data/facts/education.yml
+      - name: Test Resolve Graph stage
+        run: |
+          python scripts/resolve_graph.py
       - name: Run CI Validation Pipeline
         run: python scripts/ci_pipeline.py
 
