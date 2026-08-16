@@ -45,6 +45,9 @@ jobs:
       - name: Test first script
         run: |
           python scripts/audit_claims.py
+      - name: Run CI pipeline with verbose output
+        run: |
+          python -u scripts/ci_pipeline.py 2>&1 | head -100
       - name: Run CI Validation Pipeline
         run: python scripts/ci_pipeline.py
 
