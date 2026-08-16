@@ -174,13 +174,20 @@ def build_profile_domain_model(graph):
     return domain
 
 def build():
+    print(f"DEBUG: Working directory: {Path.cwd()}")
+    print(f"DEBUG: BASE_DIR: {BASE_DIR}")
+    print(f"DEBUG: CAREER_DATA: {CAREER_DATA}")
+    print(f"DEBUG: CAREER_DATA exists: {CAREER_DATA.exists()}")
+    
     # 1. Clear Artifacts
     if ARTIFACTS_DIR.exists():
         shutil.rmtree(ARTIFACTS_DIR)
     ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
     
     # 2. Graph Validation (Fails build if corrupt)
+    print("DEBUG: Starting graph validation...")
     validate_graph()
+    print("DEBUG: Graph validation passed")
     
     # 3. Graph Resolution & Profile Domain Model Construction
     graph = load_graph(CAREER_DATA)
