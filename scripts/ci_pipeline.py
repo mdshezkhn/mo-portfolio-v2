@@ -54,7 +54,7 @@ def run_pipeline():
         try:
             env = os.environ.copy()
             env['PYTHONIOENCODING'] = 'utf-8'
-            result = subprocess.run(stage["cmd"], capture_output=True, text=True, encoding="utf-8", env=env)
+            result = subprocess.run(stage["cmd"], capture_output=True, text=True, encoding="utf-8", env=env, cwd=".")
             elapsed_ms = (time.time() - start_t) * 1000
             
             if result.returncode != 0:
