@@ -190,6 +190,16 @@ export function renderCredentialsRegistry() {
 
     if (!eduContainer && !profContainer) return;
 
+    // Server-side rendering (via build_portfolio_html.py) provides the initial cards.
+    // This function now only ensures data attributes for modal functionality are present.
+    // If containers are already populated (server-rendered), skip card rendering.
+    const eduAlreadyRendered = eduContainer && eduContainer.children.length > 0;
+    const profAlreadyRendered = profContainer && profContainer.children.length > 0;
+
+    if (eduAlreadyRendered && profAlreadyRendered) {
+        return;
+    }
+
     const eduItems = CREDENTIALS_REGISTRY.filter(item => item.type === 'education' && item.public);
     const profItems = CREDENTIALS_REGISTRY.filter(item => item.type === 'professional' && item.public);
 
@@ -240,11 +250,11 @@ export function renderCredentialsRegistry() {
         `;
     }
 
-    if (eduContainer) {
+    if (eduContainer && !eduAlreadyRendered) {
         eduContainer.innerHTML = eduItems.map(createCardHTML).join('');
     }
 
-    if (profContainer) {
+    if (profContainer && !profAlreadyRendered) {
         profContainer.innerHTML = profItems.map(createCardHTML).join('');
     }
 }
