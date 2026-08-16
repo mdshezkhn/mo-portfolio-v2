@@ -33,6 +33,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Debug environment
+        run: |
+          python --version
+          pip list
+          pwd
+          ls -la
       - name: Run CI Validation Pipeline
         run: python scripts/ci_pipeline.py
 
