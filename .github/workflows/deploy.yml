@@ -42,6 +42,21 @@ jobs:
         run: |
           python -c "import subprocess, sys, os; env = os.environ.copy(); env['PYTHONIOENCODING'] = 'utf-8'; result = subprocess.run([sys.executable, 'scripts/audit_claims.py'], capture_output=True, text=True, encoding='utf-8', env=env, cwd='.'); print('STDOUT:', result.stdout); print('STDERR:', result.stderr); print('Return code:', result.returncode); exit(0 if result.returncode == 0 else 1)"
 
+      - name: Test first stage of ci_pipeline.py
+        run: |
+          python -c "
+import subprocess, sys, os
+env = os.environ.copy()
+env['PYTHONIOENCODING'] = 'utf-8'
+cmd = [sys.executable, 'scripts/audit_claims.py']
+print('Running:', cmd)
+result = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8', env=env, cwd='.')
+print('STDOUT:', result.stdout)
+print('STDERR:', result.stderr)
+print('Return code:', result.returncode)
+exit(0 if result.returncode == 0 else 1)
+"
+
       - name: Run CI Validation Pipeline
         run: python scripts/ci_pipeline.py
 
