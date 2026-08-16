@@ -33,53 +33,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Debug environment
-        run: |
-          python --version
-          pip list
-          pwd
-          ls -la
-      - name: Test imports
-        run: |
-          python -c "import sys; print('Python:', sys.version); import yaml, pytest, bs4, requests, jsonschema, qrcode, vobject, svglib, reportlab, PyPDF2; print('All imports OK')"
-      - name: Test first script
-        run: |
-          python scripts/audit_claims.py
-      - name: Run CI pipeline with verbose output
-        run: |
-          python -u scripts/ci_pipeline.py 2>&1 | head -100
-      - name: Run CI pipeline and capture error
-        run: |
-          python scripts/ci_pipeline.py 2>&1 || true
-      - name: Test Audit Claims stage
-        run: |
-          python scripts/audit_claims.py
-      - name: Test Validate IDs stage
-        run: |
-          python scripts/validate_ids.py
-      - name: Test Validate Employment YAML stage
-        run: |
-          python scripts/validate_yaml.py --file career-data/facts/employment.yml
-      - name: Test Validate Education YAML stage
-        run: |
-          python scripts/validate_yaml.py --file career-data/facts/education.yml
-      - name: Test Resolve Graph stage
-        run: |
-          python scripts/resolve_graph.py
-      - name: Test Audit Claims via subprocess (like ci_pipeline.py)
-        run: |
-          python -c "
-import subprocess, sys, os
-env = os.environ.copy()
-env['PYTHONIOENCODING'] = 'utf-8'
-env['PYTHONPATH'] = '.'
-result = subprocess.run([sys.executable, 'scripts/audit_claims.py'], capture_output=True, text=True, encoding='utf-8', env=env)
-print('STDOUT:', result.stdout)
-print('STDERR:', result.stderr)
-print('Return code:', result.returncode)
-if result.returncode != 0:
-    exit(1)
-"
       - name: Run CI Validation Pipeline
         run: python scripts/ci_pipeline.py
 
