@@ -93,12 +93,11 @@ evidence_assertions:
     basis: source_document_review
   assertions:
     employment:
-      employer_id: ORG-1006
+      employer_id: ORG-1001
       dates:
-        start: 2016-11
-        end: 2017-08
-    supported_claims:
-    - C-009
+        start: 2018-07
+        end: 2020-08
+    supported_claims: []
 - evidence_id: E-0010
   source:
     document: mo-portfolio-v2/assets/images/certificates/bsc-doc-full.webp
@@ -141,6 +140,15 @@ evidence_assertions:
   transcription:
     method: manual_structured_extraction
     extracted_by: system_agent
+    extracted_at: '2026-08-11'
+  verification:
+    status: verified
+    basis: source_document_review
+  assertions:
+    qualification_id: QUAL-3003
+    institution_id: INST-9001
+    qualification_type: B.Ed.
+    status: completed
 - evidence_id: E-4001
   source:
     document: mo-portfolio-v2/assets/images/certificates/tesol-found-doc-full.webp
@@ -184,7 +192,7 @@ evidence_assertions:
     status: verified
     basis: source_document_review
   assertions:
-    qualification_id: QUAL-3003
-    institution_id: INST-9001
-    qualification_type: B.Ed.
+    qualification_id: QUAL-6007
+    institution_id: ORG-1010
+    qualification_type: Professional Development
     status: completed
