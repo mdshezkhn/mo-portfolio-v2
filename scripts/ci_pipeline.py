@@ -44,6 +44,9 @@ def run_pipeline():
     print("====================================")
     print(" Starting CI/CD Pipeline Validation ")
     print("====================================\n")
+    print(f"Working directory: {os.getcwd()}")
+    print(f"Python executable: {sys.executable}")
+    print(f"Script path: {os.path.abspath(__file__)}")
     
     total_start = time.time()
     
