@@ -33,21 +33,101 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Verify script exists
-        run: |
-          ls -la scripts/audit_claims.py
-          python scripts/audit_claims.py
+      - name: Audit Claims
+        run: python scripts/audit_claims.py
 
-      - name: Test subprocess with audit_claims.py
-        run: |
-          python -c "import subprocess, sys, os; env = os.environ.copy(); env['PYTHONIOENCODING'] = 'utf-8'; result = subprocess.run([sys.executable, 'scripts/audit_claims.py'], capture_output=True, text=True, encoding='utf-8', env=env, cwd='.'); print('STDOUT:', result.stdout); print('STDERR:', result.stderr); print('Return code:', result.returncode); exit(0 if result.returncode == 0 else 1)"
+      - name: Validate ID Registry
+        run: python scripts/validate_ids.py
 
-      - name: Test first stage of ci_pipeline.py
-        run: |
-          python -c "import subprocess, sys, os; env = os.environ.copy(); env['PYTHONIOENCODING'] = 'utf-8'; cmd = [sys.executable, 'scripts/audit_claims.py']; print('Running:', cmd); result = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8', env=env, cwd='.'); print('STDOUT:', result.stdout); print('STDERR:', result.stderr); print('Return code:', result.returncode); exit(0 if result.returncode == 0 else 1)"
+      - name: Validate Employment YAML
+        run: python scripts/validate_yaml.py --file career-data/facts/employment.yml
 
-      - name: Run CI Validation Pipeline
-        run: python scripts/ci_pipeline.py
+      - name: Validate Education YAML
+        run: python scripts/validate_yaml.py --file career-data/facts/education.yml
+
+      - name: Resolve Graph
+        run: python scripts/resolve_graph.py
+
+      - name: "Phase 3A: Build Domain Model"
+        run: python scripts/builders/build_domain_model.py
+
+      - name: "Phase 3A: Validate Domain Schema"
+        run: python scripts/validators/validate_schema.py
+
+      - name: "Phase 3A: Validate Domain Semantics"
+        run: python scripts/validators/validate_semantics.py
+
+      - name: "Phase 3B: Project CV VM"
+        run: python scripts/builders/project_cv_vm.py
+
+      - name: "Phase 3B: CV Contract Validation"
+        run: python -m pytest tests/contracts/test_cv_contract.py tests/contracts/test_domain_model_is_canonical.py --quiet
+
+      - name: Validate Semantics
+        run: python scripts/validate_semantics.py
+
+      - name: Metrics Engine
+        run: python scripts/metrics_engine.py
+
+      - name: Content Quality Engine
+        run: python scripts/content_quality_engine.py
+
+      - name: Claim Selection Engine
+        run: python scripts/selection_engine.py --market british
+
+      - name: Compile Claim Register
+        run: python scripts/compile_claim_register.py
+
+      - name: Compile Intermediate
+        run: python scripts/compile_intermediate.py
+
+      - name: Policy Engine
+        run: python scripts/policy_engine.py
+
+      - name: "Phase 3C1: Render HTML CV"
+        run: python scripts/renderers/render_html_cv.py
+
+      - name: "Phase 3C1: HTML Reference Regression"
+        run: python -m pytest tests/reference/test_html_regression.py --quiet
+
+      - name: "Phase 3C2: Render MD CV"
+        run: python scripts/renderers/render_md_cv.py
+
+      - name: "Phase 3C2: Markdown Reference Regression"
+        run: python -m pytest tests/reference/test_markdown_regression.py --quiet
+
+      - name: Cross-Artifact Verification
+        run: python scripts/verify_cross_artifact.py
+
+      - name: "Phase 3D: Build Portfolio HTML"
+        run: python scripts/builders/build_portfolio_html.py
+
+      - name: "Phase 3D: Audit DOM Boundary"
+        run: python scripts/verify/audit_dom_boundary.py
+
+      - name: Compiler Report
+        run: python scripts/build_compiler_report.py
+
+      - name: RC-7 Privacy Gate
+        run: python scripts/verify/privacy_gate.py
+
+      - name: RC-8 Security Gate
+        run: python scripts/verify/security_gate.py
+
+      - name: RC-9 Hygiene Gate
+        run: python scripts/verify/hygiene_gate.py
+
+      - name: RC-10 Governance Integrity Gate
+        run: python scripts/verify/governance_gate.py
+
+      - name: Security Fixture Regression Tests
+        run: python -m pytest tests/test_security_governance_fixtures.py --quiet
+
+      - name: Architecture Rules Test
+        run: python -m pytest tests/test_architecture_rules.py --quiet
+
+      - name: Snapshot Regression Tests
+        run: python -m pytest tests/test_snapshot_regression.py --quiet
 
   deploy:
     name: Deploy to GitHub Pages
