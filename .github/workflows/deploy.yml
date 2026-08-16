@@ -48,26 +48,17 @@ jobs:
       - name: Resolve Graph
         run: python scripts/resolve_graph.py
 
-      - name: Test import json
-        run: python -c "import json; print('json OK')"
+      - name: Test validate_graph
+        run: python -c "import sys; sys.path.append('.'); from scripts.verify.graph_validator import validate_graph; validate_graph(); print('validate_graph OK')"
 
-      - name: Test import yaml
-        run: python -c "import yaml; print('yaml OK')"
+      - name: Test load_graph
+        run: python -c "import sys; sys.path.append('.'); from scripts.query_engine import load_graph; graph = load_graph('career-data'); print('load_graph OK:', len(graph.entities_by_id), 'entities')"
 
-      - name: Test import pathlib
-        run: python -c "from pathlib import Path; print('pathlib OK')"
+      - name: Test build_profile_domain_model
+        run: python -c "import sys; sys.path.append('.'); from scripts.query_engine import load_graph; from scripts.builders.build_domain_model import build_profile_domain_model; graph = load_graph('career-data'); build_profile_domain_model(graph); print('build_profile_domain_model OK')"
 
-      - name: Test import shutil
-        run: python -c "import shutil; print('shutil OK')"
-
-      - name: Test import graph_validator
-        run: python -c "import sys; sys.path.append('.'); from scripts.verify.graph_validator import validate_graph; print('graph_validator OK')"
-
-      - name: Test import verification_resolver
-        run: python -c "import sys; sys.path.append('.'); from scripts.verify.verification_resolver import resolve_verification_state; print('verification_resolver OK')"
-
-      - name: Test import query_engine
-        run: python -c "import sys; sys.path.append('.'); from scripts.query_engine import load_graph; print('query_engine OK')"
+      - name: Test build view models
+        run: python -c "import sys; sys.path.append('.'); from scripts.builders.build_domain_model import build; build(); print('build OK')"
 
       - name: "Phase 3A: Build Domain Model"
         run: python scripts/builders/build_domain_model.py
