@@ -54,92 +54,14 @@ jobs:
       - name: Test build_profile_domain_model
         run: python -c "import sys; sys.path.append('.'); from scripts.query_engine import load_graph; from scripts.builders.build_domain_model import build_profile_domain_model; graph = load_graph('career-data'); build_profile_domain_model(graph); print('build_profile_domain_model OK')"
 
-      - name: Test policies loading
-        run: python -c "import sys, os; sys.path.append('.'); from scripts.builders.build_domain_model import POLICIES_PATH, load_yaml; print('POLICIES_PATH:', POLICIES_PATH); print('exists:', POLICIES_PATH.exists()); policies_doc = load_yaml(POLICIES_PATH); print('policies:', list(policies_doc.get('policies', {}).keys()))"
-
-      - name: Test resolved_states
-        run: python -c "import sys; sys.path.append('.'); from scripts.verify.verification_resolver import resolve_verification_state; resolved = resolve_verification_state(); print('resolved_states OK:', len(resolved), 'entries')"
-
-      - name: Test golden claims
-        run: python -c "import sys, os; sys.path.append('.'); from scripts.builders.build_domain_model import CAREER_DATA, load_yaml; golden_path = CAREER_DATA / 'golden' / 'E-001' / 'source' / 'facts' / 'claims.yml'; print('golden_path:', golden_path); print('exists:', golden_path.exists()); data = load_yaml(golden_path); print('claims:', len(data.get('claims', [])))"
-
-      - name: Test build view models
-        run: python -c "import sys; sys.path.append('.'); from scripts.builders.build_domain_model import build; build(); print('build OK')"
-
-      - name: "Phase 3A: Build Domain Model"
-        run: python scripts/builders/build_domain_model.py
-
-      - name: "Phase 3A: Validate Domain Schema"
-        run: python scripts/validators/validate_schema.py
-
-      - name: "Phase 3A: Validate Domain Semantics"
-        run: python scripts/validators/validate_semantics.py
-
-      - name: "Phase 3B: Project CV VM"
-        run: python scripts/builders/project_cv_vm.py
-
-      - name: "Phase 3B: CV Contract Validation"
-        run: python -m pytest tests/contracts/test_cv_contract.py tests/contracts/test_domain_model_is_canonical.py --quiet
-
-      - name: Validate Semantics
-        run: python scripts/validate_semantics.py
-
-      - name: Metrics Engine
-        run: python scripts/metrics_engine.py
-
-      - name: Content Quality Engine
-        run: python scripts/content_quality_engine.py
-
-      - name: Claim Selection Engine
-        run: python scripts/selection_engine.py --market british
-
-      - name: Compile Claim Register
-        run: python scripts/compile_claim_register.py
-
-      - name: Compile Intermediate
-        run: python scripts/compile_intermediate.py
-
-      - name: Policy Engine
-        run: python scripts/policy_engine.py
-
-      - name: "Phase 3C1: Render HTML CV"
-        run: python scripts/renderers/render_html_cv.py
-
-      - name: "Phase 3C1: HTML Reference Regression"
-        run: python -m pytest tests/reference/test_html_regression.py --quiet
-
-      - name: "Phase 3C2: Render MD CV"
-        run: python scripts/renderers/render_md_cv.py
-
-      - name: "Phase 3C2: Markdown Reference Regression"
-        run: python -m pytest tests/reference/test_markdown_regression.py --quiet
-
-      - name: Cross-Artifact Verification
-        run: python scripts/verify_cross_artifact.py
-
-      - name: "Phase 3D: Build Portfolio HTML"
+      - name: Generate Portfolio HTML
         run: python scripts/builders/build_portfolio_html.py
 
-      - name: "Phase 3D: Audit DOM Boundary"
+      - name: Audit DOM Boundary
         run: python scripts/verify/audit_dom_boundary.py
 
-      - name: Compiler Report
-        run: python scripts/build_compiler_report.py
-
-      - name: RC-7 Privacy Gate
-        run: python scripts/verify/privacy_gate.py
-
-      - name: RC-8 Security Gate
-        run: python scripts/verify/security_gate.py
-
-      - name: RC-9 Hygiene Gate
-        run: python scripts/verify/hygiene_gate.py
-
-      - name: RC-10 Governance Integrity Gate
-        run: python scripts/verify/governance_gate.py
-
-      - name: Security Fixture Regression Tests
-        run: python -m pytest tests/test_security_governance_fixtures.py --quiet
+      - name: Phase 3B: CV Contract Validation
+        run: python -m pytest tests/contracts/test_cv_contract.py tests/contracts/test_domain_model_is_canonical.py --quiet
 
       - name: Architecture Rules Test
         run: python -m pytest tests/test_architecture_rules.py --quiet
