@@ -490,11 +490,11 @@
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
-.cert-card[data-cert-src], .edu-card[data-cert-src] {
+.cert-card[data-gallery], .edu-card[data-gallery] {
     cursor: pointer;
 }
 
-.cert-card[data-cert-src]:hover, .edu-card[data-cert-src]:hover {
+.cert-card[data-gallery]:hover, .edu-card[data-gallery]:hover {
     transform: translateY(-4px);
     box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.12);
     border-color: var(--accent);
@@ -519,8 +519,8 @@
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.cert-card[data-cert-src]:hover .cert-thumb img,
-.edu-card[data-cert-src]:hover .cert-thumb img {
+.cert-card[data-gallery]:hover .cert-thumb img,
+.edu-card[data-gallery]:hover .cert-thumb img {
     transform: scale(1.03);
 }
 
@@ -585,8 +585,8 @@
     border-color: #1E3A5F;
 }
 
-.cert-card[data-cert-src]:hover .cert-thumb-overlay,
-.edu-card[data-cert-src]:hover .cert-thumb-overlay {
+.cert-card[data-gallery]:hover .cert-thumb-overlay,
+.edu-card[data-gallery]:hover .cert-thumb-overlay {
     opacity: 1;
 }
 
@@ -675,7 +675,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 9999;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background: rgba(15, 23, 42, 0.88);
@@ -686,6 +686,7 @@
 }
 
 .credential-modal.is-active {
+    display: flex;
     opacity: 1;
     pointer-events: auto;
 }
@@ -910,17 +911,18 @@
     width: 100vw;
     height: 100vh;
     z-index: 10000;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background: rgba(15, 23, 42, 0.88);
     backdrop-filter: blur(8px);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease, display 0.25s ease;
 }
 
 .evidence-standards-modal.is-active {
+    display: flex;
     opacity: 1;
     pointer-events: auto;
 }
