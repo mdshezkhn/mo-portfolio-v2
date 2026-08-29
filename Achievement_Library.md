@@ -45,7 +45,7 @@ portfolio. No primary evidence document has been processed yet, so every entry i
 - **Evidence Type:** Employment
 - **Evidence Strength:** Single Source
 - **Verification Status:** Pending
-- **Core Fact:** Led training and quality-assurance programmes for a team of 15+ trainers.
+- **Core Fact:** Led training and quality-assurance programmes for a team of trainers.
 - **Context:** Multi-campus organisation across UK, Dubai and Malta, Sep 2022 – Aug 2023.
 - **Impact:** Standardised training and QA across three markets; raised trainer capability and consistency.
 - **Evidence:** Employment letter (Pending).

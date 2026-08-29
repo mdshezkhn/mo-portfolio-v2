@@ -16,7 +16,7 @@ Year | Employer | Role | Country | Leadership Scope | Teaching Scope | Evidence 
 | Feb 2024 – Present | Aoxin International School | Primary EAL Teacher | China | — | Primary EAL | Employment letter | Pending |
 | Jul 2018 – Aug 2020 | Aoxin International School | EAL/English Teacher | China | Grade 5 writing moderation; mentor new teachers | Primary EAL/English | Employment letter | Pending |
 | 2020 – 2022 | WhiteHat Jr (BYJU'S) | Asst Manager, Teacher Quality & Development | India (Remote) | Instructional quality \n(Scope PENDING: 200 vs 1,000 educators) | QA (not classroom) | Employment letter | Pending |
-| Sep 2022 – Aug 2023 | GEDU Global Education | Training & Quality Lead | UK/Dubai/Malta | Training & QA, 15+ trainers | (Training) | Employment letter | Pending |
+| Sep 2022 – Aug 2023 | GEDU Global Education | Training & Quality Lead | UK/Dubai/Malta | Training & QA, trainers | (Training) | Employment letter | Pending |
 | pre-2014 | [TO VERIFY] | [TO VERIFY] | [TO VERIFY] | — | — | Source doc required | Pending |
 
 ---

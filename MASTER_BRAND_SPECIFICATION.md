@@ -210,7 +210,7 @@ However, the nature of the GEDU role is not yet confirmed by primary evidence. I
 | C-015 | Trainer scope: 200 educators | C | Low | No | E-0014 or E-0005 | Do not publish specific figure until confirmed. |
 | C-016 | Trainer scope: 1,000 educators | C | Low | No | E-0014 or E-0005 | Do not publish specific figure until confirmed. |
 | C-017 | Training & QA across 3 markets (GEDU) | B | Medium | Yes | E-0002 | General claim defensible; specific market list depends on Decision 2. |
-| C-018 | 15+ trainers managed (GEDU) | C | Low | No | E-0002 or E-0015 | Specific number — do not publish until confirmed. |
+| C-018 | Trainers managed (GEDU, no specific figure) | C | Low | No | E-0002 or E-0015 | Specific number — do not publish until confirmed. |
 | C-019 | Early-years teaching (Eton House) | B | High | Yes | E-0006 | Supported by employment correspondence; specific to one employer. |
 | C-020 | Languages — English fluent | B | High | Yes | — | Teaching career in English-medium schools is self-corroborating. |
 | C-021 | Languages — Hindi native | C | Medium | Yes | Personal statement | Personal statement only; acceptable for language claims of this type. |
