@@ -13,7 +13,10 @@ import { renderCredentialsRegistry } from './credentials-registry.js';
 import { initCredentialsModal } from './credentials-modal.js';
 import { initContactReveal } from './contact-reveal.js';
 
-document.addEventListener('DOMContentLoaded', function () {
+// Module scripts are deferred by default — they run after the HTML
+// is parsed, so DOMContentLoaded may already have fired. If the
+// document is still loading, wait for it; otherwise initialise now.
+function bootstrap() {
     initNavigation();
     initAnimations();
     initGallery();
@@ -21,4 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
     initImageFallbacks();
     initCredentialsModal();
     initContactReveal();
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bootstrap);
+} else {
+    bootstrap();
+}
