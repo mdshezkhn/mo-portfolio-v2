@@ -83,7 +83,8 @@
             "Safeguarding"
         ]
     }
-    </script>    <!-- JS: type=module enables ES module imports -->
+    </script>
+    <!-- JS: type=module enables ES module imports -->
     <script type="module" src="assets/js/main.js"></script>
 </head>
 <body>
@@ -124,7 +125,7 @@
                             <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v9m0 0l-4-4m4 4l4-4M5 19h14"/></svg>
                             View / Download CV
                         </a>
-                        <a href="#contact" class="btn btn-secondary">Coect</a>
+                        <a href="#contact" class="btn btn-secondary">Connect</a>
                     </div>
                     <ul class="hero-meta">
                         <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.5-6-10a6 6 0 1112 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></svg> Zhengzhou, China</li>
@@ -591,42 +592,28 @@
                             Download CV
                         </a>                        <div class="contact-links" style="margin-top: 2.5rem;">
                             <div class="contact-channel">
-                                <button type="button" class="contact-link contact-toggle" aria-expanded="false" aria-controls="reveal-wechat">
+                                <button type="button" class="contact-link contact-open-modal" data-contact-channel="wechat">
                                     <span class="clabel">WeChat</span>
                                     <span class="chevron" aria-hidden="true">&#9662;</span>
                                 </button>
-                                <div class="contact-reveal" id="reveal-wechat" hidden>
-                                    <span class="cval">+86-131 3771 9002</span>
-                                    <img src="assets/images/social/wechat-qr.png" alt="WeChat QR code" class="contact-qr" width="64" height="64" loading="lazy">
-                                </div>
                             </div>
                             <div class="contact-channel">
-                                <button type="button" class="contact-link contact-toggle" aria-expanded="false" aria-controls="reveal-whatsapp">
+                                <button type="button" class="contact-link contact-open-modal" data-contact-channel="whatsapp">
                                     <span class="clabel">WhatsApp</span>
                                     <span class="chevron" aria-hidden="true">&#9662;</span>
                                 </button>
-                                <div class="contact-reveal" id="reveal-whatsapp" hidden>
-                                    <span class="cval">+91 98695 06845</span>
-                                    <img src="assets/images/social/whatsapp-qr.png" alt="WhatsApp QR code" class="contact-qr" width="64" height="64" loading="lazy">
-                                </div>
                             </div>
                             <div class="contact-channel">
-                                <button type="button" class="contact-link contact-toggle" aria-expanded="false" aria-controls="reveal-email">
+                                <button type="button" class="contact-link contact-open-modal" data-contact-channel="email">
                                     <span class="clabel">Email</span>
                                     <span class="chevron" aria-hidden="true">&#9662;</span>
                                 </button>
-                                <div class="contact-reveal" id="reveal-email" hidden>
-                                    <a href="mailto:mdshezkhn@hotmail.com" class="cval cval-link">mdshezkhn@hotmail.com</a>
-                                </div>
                             </div>
                             <div class="contact-channel">
-                                <button type="button" class="contact-link contact-toggle" aria-expanded="false" aria-controls="reveal-linkedin">
+                                <button type="button" class="contact-link contact-open-modal" data-contact-channel="linkedin">
                                     <span class="clabel">LinkedIn</span>
                                     <span class="chevron" aria-hidden="true">&#9662;</span>
                                 </button>
-                                <div class="contact-reveal" id="reveal-linkedin" hidden>
-                                    <a href="https://www.linkedin.com/in/mdshezkhn" target="_blank" rel="noopener noreferrer" class="cval cval-link">linkedin.com/in/mdshezkhn</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -693,6 +680,22 @@
                     <button type="button" class="modal-nav-btn modal-next" aria-label="Next credential">Next &rarr;</button>
                 </div>
             </footer>
+        </div>
+    </div>
+    <!-- Contact Channel Modal — opens when a contact-link is clicked.
+         Content swaps based on data-contact-channel attribute. -->
+    <div id="contact-modal" class="credential-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title" hidden>
+        <div class="modal-box">
+            <header class="modal-header">
+                <div class="modal-title-group">
+                    <h3 id="contact-modal-title" class="modal-title">Get in touch</h3>
+                    <p class="modal-issuer" id="contact-modal-subtitle"></p>
+                </div>
+                <button type="button" class="modal-close contact-modal-close" aria-label="Close modal">&times;</button>
+            </header>
+            <div class="modal-body contact-modal-body">
+                <!-- Content is injected by contact-reveal.js based on the selected channel -->
+            </div>
         </div>
     </div>    <!-- Evidence Standards Policy Modal -->
     <!-- (Removed: visitor-facing provenance/standards explanation.
