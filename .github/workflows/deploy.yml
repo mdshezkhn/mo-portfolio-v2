@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+﻿name: Deploy to GitHub Pages
 
 on:
   push:
@@ -60,7 +60,7 @@ jobs:
       - name: Audit DOM Boundary
         run: python scripts/verify/audit_dom_boundary.py
 
-      - name: Phase 3B: CV Contract Validation
+      - name: "Phase 3B: CV Contract Validation"
         run: python -m pytest tests/contracts/test_cv_contract.py tests/contracts/test_domain_model_is_canonical.py --quiet
 
       - name: Architecture Rules Test
