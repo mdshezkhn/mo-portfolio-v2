@@ -197,7 +197,13 @@
         "evidence_id": null,
         "review_status": "approved"
       },
-      "cv_highlights": []
+      "cv_highlights": [],
+      "responsibilities": [
+        "Delivered EAL/English instruction across Primary Years 1\u20136 in a bilingual school environment, supporting multilingual learners with varied levels of English proficiency.",
+        "Planned and delivered curriculum-aligned lessons using structured instructional approaches, differentiation, TPR, and formative assessment to support language development and subject learning.",
+        "Integrated English with Science, Mathematics and other cross-curricular learning, helping students access subject content through English rather than treating language learning in isolation.",
+        "Adapted Canadian- and Singaporean-influenced curriculum expectations for Chinese primary learners and collaborated within a bilingual school context to support classroom learning."
+      ]
     },
     {
       "id": "EMP-2005",
@@ -230,6 +236,12 @@
           "text": "Teacher Trainer with quality assurance responsibilities.",
           "claim_id": "C-101"
         }
+      ],
+      "responsibilities": [
+        "Led teacher training and professional development activities focused on instructional quality, teaching practice, and classroom delivery.",
+        "Supported quality assurance processes designed to improve consistency in teaching standards and instructional practice across educators.",
+        "Worked across training, curriculum, assessment and quality functions, translating instructional expectations into practical support for teachers.",
+        "Contributed to teacher development through observation, feedback, coaching/training and quality-focused professional support."
       ]
     },
     {
@@ -261,6 +273,12 @@
           "text": "Educator coaching and mentoring.",
           "claim_id": "C-014"
         }
+      ],
+      "responsibilities": [
+        "Supported teacher quality operations across a large-scale online education environment, focusing on instructional standards and teaching effectiveness.",
+        "Worked with teachers on classroom quality, lesson delivery, feedback and professional development to strengthen consistency of instructional practice.",
+        "Used quality-assurance and review processes to identify instructional issues and support teachers in improving their practice.",
+        "Connected teacher development, quality monitoring and instructional expectations within a technology-enabled learning environment."
       ]
     },
     {
@@ -285,7 +303,13 @@
         "evidence_id": null,
         "review_status": "approved"
       },
-      "cv_highlights": []
+      "cv_highlights": [],
+      "responsibilities": [
+        "Delivered English instruction in an international-school environment, supporting learners developing English as an additional language.",
+        "Planned and delivered classroom lessons appropriate to learners' language proficiency and curriculum requirements.",
+        "Used classroom assessment and differentiated instructional strategies to support learner participation, language development and subject learning.",
+        "Worked within an international-school context to support students' English development and access to the wider curriculum."
+      ]
     },
     {
       "id": "EMP-2002",
@@ -314,6 +338,12 @@
           "text": "Early Years EAL teaching.",
           "claim_id": "C-009"
         }
+      ],
+      "responsibilities": [
+        "Delivered English/EAL learning within an international early-years/primary education environment, supporting learners developing English language skills.",
+        "Planned engaging, age-appropriate lessons and classroom activities designed around learner participation, language development and curriculum objectives.",
+        "Used differentiated and interactive teaching strategies to accommodate different levels of learner confidence, language proficiency and learning needs.",
+        "Worked collaboratively within an international education setting to support learner development and effective classroom practice."
       ]
     },
     {
@@ -343,6 +373,12 @@
           "text": "ESL Educator.",
           "claim_id": "C-009"
         }
+      ],
+      "responsibilities": [
+        "Delivered English language instruction to Chinese learners in a TEFL/EFL environment, building foundational communication and language skills.",
+        "Planned interactive English lessons using learner-centred activities and structured language practice appropriate to students' proficiency levels.",
+        "Adapted instruction to the needs of learners studying English as a foreign language within the Chinese educational context.",
+        "Developed early international teaching experience that established the foundation for subsequent primary-school EAL/ESL teaching in China."
       ]
     },
     {
@@ -372,6 +408,12 @@
           "text": "Primary educator responsibilities.",
           "claim_id": "C-024"
         }
+      ],
+      "responsibilities": [
+        "Delivered classroom instruction and supported learners through structured lesson planning, classroom management and assessment.",
+        "Designed and adapted learning activities to address different learner needs, levels and classroom contexts.",
+        "Used assessment and ongoing classroom observation to monitor learner progress and inform instructional decisions.",
+        "Built the foundational classroom-teaching experience that preceded the transition into international EAL/ESL education and teaching in China."
       ]
     }
   ],

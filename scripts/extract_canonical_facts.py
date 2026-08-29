@@ -39,7 +39,7 @@ def extract_canonical_facts():
             "source": "education.yml",
             "evidence": ev_str,
             "confidence": q.get("confidence", "V3"),
-            "policy": f"Public CV: {q['publication']['public_cv']}, Premium: {q['publication']['premium_schools']}"
+            "policy": f"Public CV: {q.get('publication', {}).get('public_cv', 'N/A')}, Premium: {q.get('publication', {}).get('premium_schools', 'N/A')}"
         })
         
     # 3. Claims Facts
