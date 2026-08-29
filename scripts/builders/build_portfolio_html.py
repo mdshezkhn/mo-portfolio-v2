@@ -33,10 +33,10 @@ def render_experience(exp):
         html += """                                        </ul>
                                     </div>
 """
-    # Render verified achievements (evidence-backed claims) - only when verified
+    # Render achievements from evidence-backed CV highlights — never labelled as "verified"
     if exp.get("bullets"):
         html += """                                    <div class="tl-achievements">
-                                        <h4 class="tl-section-title">Verified Highlights</h4>
+                                        <h4 class="tl-section-title">Key Achievements</h4>
                                         <ul class="tl-bullets tl-achievement-list">
 """
         for b in exp["bullets"]:
@@ -53,7 +53,10 @@ def render_experience(exp):
 
 def render_qualification(qual):
     cert_id = qual['id'].lower()
-    status_str = qual.get('status', 'Verified Qualification')
+    # Card status is a neutral credential label (e.g. "Awarded"). The previous
+    # default "Verified Qualification" exposed internal verification machinery
+    # to visitors; the credential itself is what should be communicated.
+    status_str = qual.get('status', 'Awarded')
     html = f"""
                     <div class="edu-card" data-cert-id="{cert_id}" data-title="{qual['degree']}" data-issuer="{qual['institution']}" data-status="{status_str}">
                         <div class="cert-thumb">
@@ -62,16 +65,12 @@ def render_qualification(qual):
                         <h4 class="edu-title">{qual['degree']}</h4>
                         <p class="edu-sch">{qual['institution']}</p>
                         <time class="edu-yr">{qual['date']}</time>
-                        <div class="verification-panel">
-                            <span class="v-badge">✓ {status_str}</span>
-                            <div class="v-details">Officially verified by provenance engine.</div>
-                        </div>
                     </div>"""
     return html
 
 def render_certification(qual):
     cert_id = qual['id'].lower()
-    status_str = qual.get('status', 'Verified Certification')
+    status_str = qual.get('status', 'Awarded')
     html = f"""
                     <div class="cert-card" data-cert-id="{cert_id}" data-title="{qual['degree']}" data-issuer="{qual['institution']}" data-status="{status_str}">
                         <div class="cert-thumb">
@@ -79,10 +78,6 @@ def render_certification(qual):
                         </div>
                         <h4 class="cert-title">{qual['degree']}</h4>
                         <p class="cert-org">{qual['institution']}</p>
-                        <div class="verification-panel">
-                            <span class="v-badge">✓ {status_str}</span>
-                            <div class="v-details">Officially verified by provenance engine.</div>
-                        </div>
                     </div>"""
     return html
 
