@@ -1,4 +1,4 @@
-/* ==========================================================
+﻿/* ==========================================================
    sections.css
    Page-section-specific styles: hero, story, philosophy,
    leadership, journey (timeline), research, gallery,
@@ -142,7 +142,7 @@
 
 /* Mobile: year hidden, dot + line at 24px, card has 64px left padding
    matching the original stacked layout. The grid is set on .tl-item
-   on desktop only — the @media (max-width: 899px) block below
+   on desktop only â€” the @media (max-width: 899px) block below
    reverts to padding-based layout for narrow viewports. */
 .tl-item {
     position: relative;
@@ -265,10 +265,10 @@
     hyphens: auto;
 }
 
-/* Multi-column layout removed – bullets now span the full content width
+/* Multi-column layout removed â€“ bullets now span the full content width
    of the timeline card rather than being compressed into a narrow first
    column.  The list flows naturally as a single column on all screen
-   sizes, preserving readability and eliminating the empty right‑hand
+   sizes, preserving readability and eliminating the empty rightâ€‘hand
    column. */
 .tl-bullets li {
     margin-bottom: 0.5rem;
@@ -316,7 +316,7 @@
 }
 
 .tl-achievement-list li::before {
-    content: "✓";
+    content: "âœ“";
     position: absolute;
     left: 0;
     color: var(--accent);
@@ -516,7 +516,7 @@
 }
 
 /* ==========================================================
-   GALLERY (Classroom Moments — §9 Authenticity beat)
+   GALLERY (Classroom Moments â€” Â§9 Authenticity beat)
 ========================================================= */
 
 .moments-intro {
@@ -608,7 +608,7 @@
     padding: 2rem 0;
 }
 
-/* ── Lightbox (built by gallery.js) ─────────────────────── */
+/* â”€â”€ Lightbox (built by gallery.js) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .lightbox {
     position: fixed;
     inset: 0;
@@ -687,7 +687,7 @@
     transform: translateY(-50%);
 }
 
-/* ── Research additions (Stage 6) ────────────────────── */
+/* â”€â”€ Research additions (Stage 6) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .research-sub {
     font-family: "Fraunces", serif;
     font-size: 1.1rem;
@@ -696,7 +696,7 @@
     margin: 2rem 0 0.75rem;
 }
 
-/* ── Credentials: languages + safeguarding (Stage 6) ─── */
+/* â”€â”€ Credentials: languages + safeguarding (Stage 6) â”€â”€â”€ */
 .lang-list {
     display: grid;
     gap: 0.6rem;
@@ -942,3 +942,7 @@
     box-shadow: none;
     border: 1px solid var(--border);
 }
+
+
+.cred-footnote { margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); font-style: italic; max-width: 60ch; }
+.contact-link .contact-qr { margin-left: 0.75rem; border-radius: 4px; vertical-align: middle; width: 64px; height: 64px; object-fit: cover; }
