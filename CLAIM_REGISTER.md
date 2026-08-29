@@ -108,7 +108,7 @@
 | **Canonical Wording** | `` |
 | **Status** | verified |
 | **Risk Level** | MEDIUM |
-| **Supported by Evidence IDs** | E-3004, E-3005, E-0004, E-0007 |
+| **Supported by Evidence IDs** | E-3004, E-0004, E-0007 |
 | **Used In** | CV_Master.md, LinkedIn_Ready_To_Paste.md, Portfolio_Copy.md |
 
 ---

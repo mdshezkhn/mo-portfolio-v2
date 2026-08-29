@@ -31,7 +31,7 @@ evidence:
   type: certificate
   date_issued: '2020-01-01'
 - id: E-3005
-  description: Zhejiang University ESL Educator employment record and evaluation.
+  description: Aoxin International School Endorsement Letter (July 2018 to August 2020) for English teacher role.
   entity_type: evidence
   schemaVersion: '1.0'
   filename: e-3005.pdf

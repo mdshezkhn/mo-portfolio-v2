@@ -171,7 +171,6 @@ claims:
   modifier: general
   evidence:
   - E-3004
-  - E-3005
   - E-0004
   - E-0007
   allowed_variants:
@@ -293,7 +292,7 @@ claims:
   - E-0014
   - E-0005
   allowed_variants:
-  - Led instructional quality for a team of 200+ educators
+  - Led instructional quality for a team of educators
   presentation_assets: []
   title: Led instructional quality for a team of 200+ educators
   schemaVersion: '1.0'
@@ -347,9 +346,9 @@ claims:
   - E-3001
   - E-0015
   allowed_variants:
-  - Managed a team of 15+ trainers
+  - Managed a team of trainers
   presentation_assets: []
-  title: Managed a team of 15+ trainers
+  title: Managed a team of trainers
   schemaVersion: '1.0'
   verification_date: '2026-08-02'
 - id: C-019
