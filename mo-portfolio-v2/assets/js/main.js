@@ -11,6 +11,7 @@ import { initGallery }    from './gallery.js';
 import { initImageFallbacks } from './utilities.js';
 import { renderCredentialsRegistry } from './credentials-registry.js';
 import { initCredentialsModal } from './credentials-modal.js';
+import { initContactReveal } from './contact-reveal.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     initNavigation();
@@ -19,4 +20,5 @@ document.addEventListener('DOMContentLoaded', function () {
     renderCredentialsRegistry();
     initImageFallbacks();
     initCredentialsModal();
+    initContactReveal();
 });
