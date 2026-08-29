@@ -144,7 +144,11 @@ export function initCredentialsModal() {
         modal.hidden = false;
         document.body.style.overflow = 'hidden';
 
-        if (closeBtn) closeBtn.focus();
+        // Focus the close button WITHOUT scrolling the page to the modal's
+        // position at the end of <body>. Without preventScroll the browser
+        // scrolls so the (offscreen) close button is visible, which jumps
+        // the user away from the credentials section they were on.
+        if (closeBtn) closeBtn.focus({ preventScroll: true });
     }
 
     function closeModal() {
@@ -155,7 +159,7 @@ export function initCredentialsModal() {
         resetZoom();
 
         if (previousActiveElement && typeof previousActiveElement.focus === 'function') {
-            previousActiveElement.focus();
+            previousActiveElement.focus({ preventScroll: true });
         }
     }
 
@@ -179,7 +183,7 @@ export function initCredentialsModal() {
         standardsModal.setAttribute('aria-hidden', 'false');
         standardsModal.hidden = false;
         document.body.style.overflow = 'hidden';
-        if (standardsCloseBtn) standardsCloseBtn.focus();
+        if (standardsCloseBtn) standardsCloseBtn.focus({ preventScroll: true });
     }
 
     function closeStandardsModal() {
@@ -189,7 +193,7 @@ export function initCredentialsModal() {
         standardsModal.hidden = true;
         document.body.style.overflow = '';
         if (previousActiveElement && typeof previousActiveElement.focus === 'function') {
-            previousActiveElement.focus();
+            previousActiveElement.focus({ preventScroll: true });
         }
     }
 
