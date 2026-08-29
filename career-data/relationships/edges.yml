@@ -68,9 +68,6 @@ edges:
 - from: C-009
   to: EMP-2001
   type: SUPPORTED_BY
-- from: C-009
-  to: E-3005
-  type: SUPPORTED_BY
 - from: QUAL-3002
   to: INST-9000
   type: STUDIED_AT
@@ -97,9 +94,6 @@ edges:
   type: SUPPORTED_BY
 - from: CLAIM-1003
   to: EMP-2003
-  type: SUPPORTED_BY
-- from: EMP-2001
-  to: E-3005
   type: SUPPORTED_BY
 - from: QUAL-6004
   to: ORG-1007
@@ -133,4 +127,7 @@ edges:
   type: SUPPORTED_BY
 - from: C-009
   to: E-3004
+  type: SUPPORTED_BY
+- from: EMP-2003
+  to: E-3005
   type: SUPPORTED_BY

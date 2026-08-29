@@ -20,7 +20,7 @@ def verify_public_scope():
             restricted_texts.append(v.lower())
             
     # Add specific unverified restricted phrases
-    restricted_phrases = ["200+ educators", "1,000+ educators", "1000+ educators", "15+ trainers"]
+    restricted_phrases = ["200+ educators", "1,000+ educators", "1000+ educators", "15+ trainers", "a team of trainers"]
     
     # Audit target: mo-portfolio-v2/index.html & compiled_assets/
     targets = [

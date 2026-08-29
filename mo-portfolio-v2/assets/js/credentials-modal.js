@@ -94,7 +94,12 @@ export function initCredentialsModal() {
         const title = card.getAttribute('data-title') || '';
         const issuer = card.getAttribute('data-issuer') || '';
         const year = card.getAttribute('data-year') || '';
-        const status = card.getAttribute('data-status') || 'Verified Qualification';
+        // Status defaults to a neutral credential label. The earlier
+        // "Verified Qualification" wording exposed the internal
+        // provenance/verification machinery to visitors; the badge
+        // now communicates the credential itself rather than how it
+        // was verified.
+        const status = card.getAttribute('data-status') || 'Awarded';
         
         let layoutData = {};
         try {

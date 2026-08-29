@@ -23,10 +23,10 @@ claims:
 - id: C-018
   status: restricted
   type: scale
-  canonical: Managed a team of 15+ trainers
+  canonical: Managed a team of trainers
   evidence: [E-3001, E-0015]
   restriction_reason: Internal use only until manager letter confirmed
-  allowed_variants: [Managed a team of 15+ trainers]
+  allowed_variants: [Managed a team of trainers]
   presentation_assets: []
 
 - id: C-024
