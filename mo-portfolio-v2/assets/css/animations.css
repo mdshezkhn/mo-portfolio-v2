@@ -1,14 +1,14 @@
-/* ==========================================================
+﻿/* ==========================================================
    animations.css
    All motion is opt-in. When prefers-reduced-motion is set,
-   this entire block is skipped — no keyframes, no hidden
-   states. JS respects this flag before adding .reveal.
-   Part of: Mohammed Shehzad Khan Portfolio v2.0
+   this entire block is skipped â€” no keyframes, no hidden
+   states. JS respects this flag before adding reveal classes.
+   Part of: Mohammed Shehzad Khan Portfolio v3
 ========================================================== */
 
 @media (prefers-reduced-motion: no-preference) {
 
-    /* ── Keyframes ──────────────────────────────────────── */
+    /* â”€â”€ Keyframes â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
     @keyframes hero-fade-up {
         from {
@@ -32,7 +32,7 @@
         }
     }
 
-    /* ── Hero entrance — staggered, top-to-bottom ───────── */
+    /* â”€â”€ Hero entrance â€” staggered, top-to-bottom â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     /* animation-fill-mode: both holds the from-state before
        the delay fires, preventing a flash. */
 
@@ -60,28 +60,43 @@
         animation: hero-fade-in 0.9s 0.15s ease both;
     }
 
-    /* ── Scroll-reveal ──────────────────────────────────── */
-    /* Hidden state is gated on .js (set by an inline head script
-       before first paint). Without JS, .reveal has no hidden rule,
-       so content remains fully visible. With JS, the hidden state
-       applies immediately — no flash — and .is-visible (added by
-       the IntersectionObserver in animations.js) reveals it. */
+    /* â”€â”€ Scroll-reveal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* SAFETY-NET MECHANISM (Phase 1.2 fix).
+       Content is visible by DEFAULT. Only the JS-added
+       .js-reveal-ready class may hide-then-reveal. This
+       guarantees no section can remain hidden on mobile:
+       the worst case is a section that fades in slightly
+       later, never a section that never appears. */
 
-    .js .reveal {
+    .js-reveal-ready {
         opacity: 0;
-        transform: translateY(10px);
-        transition: opacity 0.65s ease, transform 0.65s ease;
+        transform: translateY(8px);
+        transition: opacity 0.55s ease, transform 0.55s ease;
     }
 
-    .reveal.is-visible {
+    .js-reveal-ready.js-reveal-visible {
         opacity: 1;
         transform: none;
     }
 
-    /* ── Header scroll shadow ───────────────────────────── */
+    /* â”€â”€ Header scroll shadow â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
     .site-header.is-scrolled {
         box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
     }
 
+}
+
+/* â”€â”€ Reduced-motion override â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* When the user has requested reduced motion, no reveal
+   classes are ever added by JS, so content stays visible
+   with zero layout shift. This block is a defensive
+   guarantee in case the media query is not honoured. */
+
+@media (prefers-reduced-motion: reduce) {
+    .js-reveal-ready {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
 }

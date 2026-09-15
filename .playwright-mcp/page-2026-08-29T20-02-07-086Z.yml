@@ -1,0 +1,444 @@
+- generic [active] [ref=f4e1]:
+  - link "Skip to content" [ref=f4e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f4e3]:
+    - navigation "Main navigation" [ref=f4e4]:
+      - generic [ref=f4e5]:
+        - link "Mohammed Shehzad Khan" [ref=f4e7] [cursor=pointer]:
+          - /url: ./
+        - list [ref=f4e8]:
+          - listitem [ref=f4e9]:
+            - link "Story" [ref=f4e10] [cursor=pointer]:
+              - /url: "#story"
+          - listitem [ref=f4e11]:
+            - link "Journey" [ref=f4e12] [cursor=pointer]:
+              - /url: "#journey"
+          - listitem [ref=f4e13]:
+            - link "Impact" [ref=f4e14] [cursor=pointer]:
+              - /url: "#impact"
+          - listitem [ref=f4e15]:
+            - link "Credentials" [ref=f4e16] [cursor=pointer]:
+              - /url: "#credentials"
+          - listitem [ref=f4e17]:
+            - link "Philosophy" [ref=f4e18] [cursor=pointer]:
+              - /url: "#philosophy"
+          - listitem [ref=f4e19]:
+            - link "Gallery" [ref=f4e20] [cursor=pointer]:
+              - /url: "#moments"
+          - listitem [ref=f4e21]:
+            - link "Research" [ref=f4e22] [cursor=pointer]:
+              - /url: "#research"
+          - listitem [ref=f4e23]:
+            - link "Leadership" [ref=f4e24] [cursor=pointer]:
+              - /url: "#leadership"
+          - listitem [ref=f4e25]:
+            - link "Contact" [ref=f4e26] [cursor=pointer]:
+              - /url: "#contact"
+  - main [ref=f4e27]:
+    - region [ref=f4e28]:
+      - generic [ref=f4e29]:
+        - generic [ref=f4e30]:
+          - generic [ref=f4e31]: International Educator · China
+          - heading "Mohammed Shehzad Khan" [level=1] [ref=f4e32]
+          - paragraph [ref=f4e33]: International primary educator with strengths in multilingual/EAL learning and cross-curricular STEM facilitation. 11+ years across India and China. PGCE, University of Cumbria – completed and awarded 9 July 2026 (Pass). Available August 2027.
+          - generic [ref=f4e34]:
+            - link "View / Download CV" [ref=f4e35] [cursor=pointer]:
+              - /url: assets/documents/Mohammed_Shehzad_Khan_CV.pdf
+            - link "Connect" [ref=f4e38] [cursor=pointer]:
+              - /url: "#contact"
+          - list [ref=f4e39]:
+            - listitem [ref=f4e40]: Zhengzhou, China
+            - listitem [ref=f4e44]: Open to International Opportunities
+        - img "Portrait of Mohammed Shehzad Khan" [ref=f4e48]
+    - region [ref=f4e49]:
+      - generic [ref=f4e51]:
+        - generic [ref=f4e52]:
+          - heading "My Story" [level=2] [ref=f4e53]
+          - paragraph [ref=f4e54]: My teaching career began in Mumbai before taking me to mainland China in 2016.
+          - heading "My Journey" [level=3] [ref=f4e55]
+          - paragraph [ref=f4e56]:
+            - text: Since then, my experience has spaed
+            - strong [ref=f4e57]: kindergarten through secondary education
+            - text: ", giving me a broad understanding of learners across developmental stages. After teaching in"
+            - strong [ref=f4e58]: Shenzhen and Huzhou
+            - text: ", I found my professional home in"
+            - strong [ref=f4e59]: Zhengzhou's bilingual international schools
+            - text: ", where I have spent the majority of my career teaching"
+            - strong [ref=f4e60]: Primary Years 1–6
+            - text: . My work has centred on
+            - strong [ref=f4e61]: English as an Additional Language (EAL)
+            - text: ", using language as a bridge to"
+            - strong [ref=f4e62]: Science, Mathematics, and cross-curricular inquiry
+            - text: so that multilingual learners develop both
+            - strong [ref=f4e63]: academic English
+            - text: and
+            - strong [ref=f4e64]: deep conceptual understanding
+            - text: . Alongside my classroom responsibilities, I have led
+            - strong [ref=f4e65]: Grade 5 writing moderation
+            - text: and
+            - strong [ref=f4e66]: mentored newly appointed teachers
+            - text: .
+          - heading "Research-informed Practice" [level=3] [ref=f4e67]
+          - paragraph [ref=f4e68]:
+            - text: My practitioner research for the
+            - strong [ref=f4e69]: PGCE
+            - text: ", University of Cumbria examined how questioning strategies facilitate high-quality teaching and participation equity in bilingual classrooms. That work, grounded in Alexander's"
+            - strong [ref=f4e70]: dialogic teaching
+            - text: framework and translanguaging theory, changed how I plan and run discussions. I now build structured wait time and open-ended questioning sequences into lessons deliberately, not as an afterthought – and I can see the difference in which students engage.
+          - heading "Leadership Beyond the Classroom" [level=3] [ref=f4e71]
+          - paragraph [ref=f4e72]:
+            - text: Beyond my own classroom, I have demonstrated the capacity to elevate instructional quality. At
+            - strong [ref=f4e73]: WhiteHat Jr
+            - text: ", I conducted quality assurance reviews for educators, using LMS analytics to identify teaching inconsistencies and recommend targeted improvements. At"
+            - strong [ref=f4e74]: GEDU Global Education
+            - text: ", I delivered international professional development, designing and facilitating pedagogical training for trainers across campuses in the UK, Dubai, and Malta. Those roles reinforced that good teaching and good coaching require the same discipline: specific feedback, clear standards, and honest accountability."
+          - heading "Looking Ahead" [level=3] [ref=f4e75]
+          - paragraph [ref=f4e76]:
+            - text: I hold a Postgraduate Certificate in Education (PGCE), University of Cumbria, a B.Ed (University of Kashmir), and a B.Sc. in Physics. The physics degree directly supports the cross-curricular STEM integration work I bring to primary classrooms. I am seeking an August 2027 position in an international or UK-aligned school where I can contribute to curriculum development and
+            - strong [ref=f4e77]: instructional leadership
+            - text: .
+        - complementary [ref=f4e78]:
+          - generic [ref=f4e79]:
+            - generic [ref=f4e80]:
+              - generic [ref=f4e81]: 11+
+              - generic [ref=f4e82]: Years in Education
+            - generic [ref=f4e83]:
+              - generic [ref=f4e84]: PGCE
+              - generic [ref=f4e85]: University of Cumbria
+            - generic [ref=f4e86]:
+              - generic [ref=f4e87]: "4"
+              - generic [ref=f4e88]: School Settings Across 2 Countries
+            - generic [ref=f4e89]:
+              - generic [ref=f4e90]: Available
+              - generic [ref=f4e91]: August 2027
+            - generic [ref=f4e92]:
+              - generic [ref=f4e93]: Primary
+              - generic [ref=f4e94]: EAL · English · STEM Integration
+    - region [ref=f4e95]:
+      - generic [ref=f4e96]:
+        - generic [ref=f4e97]: Career Journey
+        - heading [level=2] [ref=f4e98]:
+          - text: A Decade of
+          - emphasis [ref=f4e99]: Teaching Across Borders
+        - paragraph [ref=f4e100]: From the classrooms of Mumbai to the international schools of Zhengzhou, each role has deepened my craft as an educator – shaping not just learners, but the teachers who teach them.
+        - generic [ref=f4e101]:
+          - generic [ref=f4e102]:
+            - time [ref=f4e103]: "2024"
+            - generic [ref=f4e107]:
+              - generic [ref=f4e108]:
+                - heading "EAL / English Teacher" [level=3] [ref=f4e109]
+                - time [ref=f4e110]: 2024-02 - 2026-07
+              - paragraph [ref=f4e111]: Aoxin International School
+              - generic [ref=f4e112]:
+                - heading "Role Scope" [level=4] [ref=f4e113]
+                - list [ref=f4e114]:
+                  - listitem [ref=f4e115]: Delivered EAL/English instruction across Primary Years 1–6 in a bilingual school environment, supporting multilingual learners with varied levels of English proficiency.
+                  - listitem [ref=f4e116]: Planned and delivered curriculum-aligned lessons using structured instructional approaches, differentiation, TPR, and formative assessment to support language development and subject learning.
+                  - listitem [ref=f4e117]: Integrated English with Science, Mathematics and other cross-curricular learning, helping students access subject content through English rather than treating language learning in isolation.
+                  - listitem [ref=f4e118]: Adapted Canadian- and Singaporean-influenced curriculum expectations for Chinese primary learners and collaborated within a bilingual school context to support classroom learning.
+          - generic [ref=f4e119]:
+            - time [ref=f4e120]: "2022"
+            - generic [ref=f4e124]:
+              - generic [ref=f4e125]:
+                - heading "Training and Quality Lead" [level=3] [ref=f4e126]
+                - time [ref=f4e127]: 2022-09 - 2023-08
+              - paragraph [ref=f4e128]: GEDU Global Education
+              - generic [ref=f4e129]:
+                - heading "Role Scope" [level=4] [ref=f4e130]
+                - list [ref=f4e131]:
+                  - listitem [ref=f4e132]: Led teacher training and professional development activities focused on instructional quality, teaching practice, and classroom delivery.
+                  - listitem [ref=f4e133]: Supported quality assurance processes designed to improve consistency in teaching standards and instructional practice across educators.
+                  - listitem [ref=f4e134]: Worked across training, curriculum, assessment and quality functions, translating instructional expectations into practical support for teachers.
+                  - listitem [ref=f4e135]: Contributed to teacher development through observation, feedback, coaching/training and quality-focused professional support.
+          - generic [ref=f4e136]:
+            - time [ref=f4e137]: "2020"
+            - generic [ref=f4e141]:
+              - generic [ref=f4e142]:
+                - heading "Assistant Manager — Teacher Quality & Development" [level=3] [ref=f4e143]
+                - time [ref=f4e144]: 2020-08 - 2022-07
+              - paragraph [ref=f4e145]: WhiteHat Jr
+              - generic [ref=f4e146]:
+                - heading "Role Scope" [level=4] [ref=f4e147]
+                - list [ref=f4e148]:
+                  - listitem [ref=f4e149]: Supported teacher quality operations across a large-scale online education environment, focusing on instructional standards and teaching effectiveness.
+                  - listitem [ref=f4e150]: Worked with teachers on classroom quality, lesson delivery, feedback and professional development to strengthen consistency of instructional practice.
+                  - listitem [ref=f4e151]: Used quality-assurance and review processes to identify instructional issues and support teachers in improving their practice.
+                  - listitem [ref=f4e152]: Connected teacher development, quality monitoring and instructional expectations within a technology-enabled learning environment.
+          - generic [ref=f4e153]:
+            - time [ref=f4e154]: "2018"
+            - generic [ref=f4e158]:
+              - generic [ref=f4e159]:
+                - heading "EAL / English Teacher" [level=3] [ref=f4e160]
+                - time [ref=f4e161]: 2018-07 - 2020-08
+              - paragraph [ref=f4e162]: Aoxin International School
+              - generic [ref=f4e163]:
+                - heading "Role Scope" [level=4] [ref=f4e164]
+                - list [ref=f4e165]:
+                  - listitem [ref=f4e166]: Delivered English instruction in an international-school environment, supporting learners developing English as an additional language.
+                  - listitem [ref=f4e167]: Planned and delivered classroom lessons appropriate to learners' language proficiency and curriculum requirements.
+                  - listitem [ref=f4e168]: Used classroom assessment and differentiated instructional strategies to support learner participation, language development and subject learning.
+                  - listitem [ref=f4e169]: Worked within an international-school context to support students' English development and access to the wider curriculum.
+          - generic [ref=f4e170]:
+            - time [ref=f4e171]: "2017"
+            - generic [ref=f4e175]:
+              - generic [ref=f4e176]:
+                - heading "ESL Teacher and Teacher Trainer" [level=3] [ref=f4e177]
+                - time [ref=f4e178]: 2017-08 - 2018-06
+              - paragraph [ref=f4e179]: Eton House Kindergarten
+              - generic [ref=f4e180]:
+                - heading "Role Scope" [level=4] [ref=f4e181]
+                - list [ref=f4e182]:
+                  - listitem [ref=f4e183]: Delivered English/EAL learning within an international early-years/primary education environment, supporting learners developing English language skills.
+                  - listitem [ref=f4e184]: Planned engaging, age-appropriate lessons and classroom activities designed around learner participation, language development and curriculum objectives.
+                  - listitem [ref=f4e185]: Used differentiated and interactive teaching strategies to accommodate different levels of learner confidence, language proficiency and learning needs.
+                  - listitem [ref=f4e186]: Worked collaboratively within an international education setting to support learner development and effective classroom practice.
+          - generic [ref=f4e187]:
+            - time [ref=f4e188]: "2016"
+            - generic [ref=f4e192]:
+              - generic [ref=f4e193]:
+                - heading "ESL Teacher" [level=3] [ref=f4e194]
+                - time [ref=f4e195]: 2016-11 - 2017-08
+              - paragraph [ref=f4e196]: Helen China TEFL Network
+              - generic [ref=f4e197]:
+                - heading "Role Scope" [level=4] [ref=f4e198]
+                - list [ref=f4e199]:
+                  - listitem [ref=f4e200]: Delivered English language instruction to Chinese learners in a TEFL/EFL environment, building foundational communication and language skills.
+                  - listitem [ref=f4e201]: Planned interactive English lessons using learner-centred activities and structured language practice appropriate to students' proficiency levels.
+                  - listitem [ref=f4e202]: Adapted instruction to the needs of learners studying English as a foreign language within the Chinese educational context.
+                  - listitem [ref=f4e203]: Developed early international teaching experience that established the foundation for subsequent primary-school EAL/ESL teaching in China.
+          - generic [ref=f4e204]:
+            - time [ref=f4e205]: "2014"
+            - generic [ref=f4e209]:
+              - generic [ref=f4e210]:
+                - heading "English, Science and Mathematics Teacher" [level=3] [ref=f4e211]
+                - time [ref=f4e212]: 2014-01 - 2016-11
+              - paragraph [ref=f4e213]: Scholars Academy
+              - generic [ref=f4e214]:
+                - heading "Role Scope" [level=4] [ref=f4e215]
+                - list [ref=f4e216]:
+                  - listitem [ref=f4e217]: Delivered classroom instruction and supported learners through structured lesson planning, classroom management and assessment.
+                  - listitem [ref=f4e218]: Designed and adapted learning activities to address different learner needs, levels and classroom contexts.
+                  - listitem [ref=f4e219]: Used assessment and ongoing classroom observation to monitor learner progress and inform instructional decisions.
+                  - listitem [ref=f4e220]: Built the foundational classroom-teaching experience that preceded the transition into international EAL/ESL education and teaching in China.
+    - region [ref=f4e221]:
+      - generic [ref=f4e222]:
+        - generic [ref=f4e223]: Expertise
+        - heading "Skills & Proficiencies" [level=2] [ref=f4e224]
+        - generic [ref=f4e225]:
+          - generic [ref=f4e226]:
+            - term [ref=f4e227]: Years
+            - definition [ref=f4e228]: 11+
+          - generic [ref=f4e229]:
+            - term [ref=f4e230]: Countries
+            - definition [ref=f4e231]: "2"
+          - generic [ref=f4e232]:
+            - term [ref=f4e233]: Schools
+            - definition [ref=f4e234]: "4"
+          - generic [ref=f4e235]:
+            - term [ref=f4e236]: Qualifications
+            - definition [ref=f4e237]: "4"
+            - definition [ref=f4e238]: PGCE · B.Ed · B.Sc
+        - generic [ref=f4e239]:
+          - generic [ref=f4e240]:
+            - heading "Classroom & Pedagogy" [level=3] [ref=f4e241]
+            - list [ref=f4e242]:
+              - listitem [ref=f4e243]: EAL / ESL Instruction
+              - listitem [ref=f4e244]: Primary Literacy Development
+              - listitem [ref=f4e245]: Differentiated Instruction
+              - listitem [ref=f4e246]: Formative & Summative Assessment
+              - listitem [ref=f4e247]: Inclusive Practice
+          - generic [ref=f4e248]:
+            - heading "STEM Integration" [level=3] [ref=f4e249]
+            - list [ref=f4e250]:
+              - listitem [ref=f4e251]: Cross-Curricular Science & Maths
+              - listitem [ref=f4e252]: Inquiry-Based Learning (5E Model)
+              - listitem [ref=f4e253]: White Rose Maths
+              - listitem [ref=f4e254]: PhET Simulations
+              - listitem [ref=f4e255]: Explorify
+          - generic [ref=f4e256]:
+            - heading "Leadership & Training" [level=3] [ref=f4e257]
+            - list [ref=f4e258]:
+              - listitem [ref=f4e259]: Teacher Mentoring
+              - listitem [ref=f4e260]: Instructional Quality Assurance
+              - listitem [ref=f4e261]: Curriculum Development
+              - listitem [ref=f4e262]: Professional Development Design
+              - listitem [ref=f4e263]: Performance Coaching
+          - generic [ref=f4e264]:
+            - heading "Research & Frameworks" [level=3] [ref=f4e265]
+            - list [ref=f4e266]:
+              - listitem [ref=f4e267]: Dialogic Teaching (Alexander, 2020)
+              - listitem [ref=f4e268]: Translanguaging
+              - listitem [ref=f4e269]: Thematic Analysis (Braun & Clarke)
+              - listitem [ref=f4e270]: BERA Guidelines
+              - listitem [ref=f4e271]: Questioning Strategies
+    - region [ref=f4e272]:
+      - generic [ref=f4e273]:
+        - generic [ref=f4e274]: Academic Formation
+        - heading "Education & Professional Qualifications" [level=2] [ref=f4e275]
+        - paragraph [ref=f4e276]: Selected academic qualifications and professional learning. Click any card to view the supporting document.
+        - heading "Education" [level=3] [ref=f4e277]
+        - generic [ref=f4e278]:
+          - button "View documentary evidence exhibit for Bachelor of Science, Physics (B.Sc.)" [ref=f4e279] [cursor=pointer]:
+            - generic [ref=f4e280]: 🔍 View document
+            - heading "Bachelor of Science, Physics (B.Sc.)" [level=4] [ref=f4e282]
+            - paragraph [ref=f4e283]: University of Mumbai
+            - time [ref=f4e284]: 2004 - 2007
+          - button "View documentary evidence exhibit for Postgraduate Certificate in Education (PGCE, non-QTS)" [ref=f4e285] [cursor=pointer]:
+            - generic [ref=f4e286]: 🔍 View document
+            - heading "Postgraduate Certificate in Education (PGCE, non-QTS)" [level=4] [ref=f4e288]
+            - paragraph [ref=f4e289]: University of Cumbria
+            - time [ref=f4e290]: 2025-09 - 2026-07-09
+          - button "View documentary evidence exhibit for Bachelor of Education (B.Ed.)" [ref=f4e291] [cursor=pointer]:
+            - generic [ref=f4e292]: 🔍 View document
+            - heading "Bachelor of Education (B.Ed.)" [level=4] [ref=f4e294]
+            - paragraph [ref=f4e295]: University of Kashmir
+            - time [ref=f4e296]: 2021-10 - 2024-01
+        - paragraph [ref=f4e297]: "Additional academic background: M.A. English Language & Literature, Harris University (2007-2009). Listed for higher-education-years eligibility; not featured as a primary qualification."
+    - region [ref=f4e298]:
+      - generic [ref=f4e299]:
+        - generic [ref=f4e300]: Teaching Philosophy
+        - heading [level=2] [ref=f4e301]:
+          - text: How I
+          - emphasis [ref=f4e302]: Teach & Lead
+        - generic [ref=f4e303]:
+          - generic [ref=f4e304]: "\"Language is not a barrier to learning – it is the bridge. When we design for multilingual learners first, we design better for everyone.\""
+          - generic [ref=f4e305]:
+            - generic [ref=f4e306]:
+              - heading "Dialogic Teaching" [level=3] [ref=f4e307]
+              - paragraph [ref=f4e308]: Grounded in Alexander's framework, I structure classrooms around high-quality talk – structured wait time, open-ended questioning, and cumulative dialogue where ideas build on each other. This shifts participation from the confident few to the whole class.
+            - generic [ref=f4e309]:
+              - heading "Translanguaging as Pedagogy" [level=3] [ref=f4e310]
+              - paragraph [ref=f4e311]: Students' full linguistic repertoires are assets, not obstacles. I design lessons where learners move fluidly between languages to construct meaning, develop academic English, and demonstrate conceptual understanding in science and mathematics.
+            - generic [ref=f4e312]:
+              - heading "STEM Integration Through Inquiry" [level=3] [ref=f4e313]
+              - paragraph [ref=f4e314]: My physics background informs a 5E-model approach (Engage, Explore, Explain, Elaborate, Evaluate) where language development and scientific reasoning advance together – not in sequence.
+            - generic [ref=f4e315]:
+              - heading "Assessment for Learning" [level=3] [ref=f4e316]
+              - paragraph [ref=f4e317]: "Formative assessment is embedded in every lesson: hinge questions, exit tickets, and student self-assessment against co-constructed criteria. This makes learning visible to both teacher and learner."
+    - region [ref=f4e318]:
+      - generic [ref=f4e319]:
+        - generic [ref=f4e320]: Classroom Moments
+        - heading [level=2] [ref=f4e321]:
+          - text: A Glimpse Inside the
+          - emphasis [ref=f4e322]: Classroom
+        - paragraph [ref=f4e323]: Authentic moments from bilingual primary classrooms – inquiry science, collaborative mathematics, and language-rich environments. All student faces blurred for privacy.
+        - generic [ref=f4e324]:
+          - tablist "Filter gallery by category" [ref=f4e325]:
+            - tab "All" [selected] [ref=f4e326] [cursor=pointer]
+            - tab "STEM Inquiry" [ref=f4e327] [cursor=pointer]
+            - tab "Literacy & Language" [ref=f4e328] [cursor=pointer]
+            - tab "Learning Environment" [ref=f4e329] [cursor=pointer]
+          - generic [ref=f4e330]:
+            - 'button "View image: Students conducting a science experiment with PhET simulation" [ref=f4e332]':
+              - img "Students conducting a science experiment with PhET simulation" [ref=f4e333]
+              - generic [ref=f4e334]: "Year 4 Science: Exploring circuits with PhET simulations"
+            - 'button "View image: Mathematics lesson with manipulatives and White Rose Maths" [ref=f4e336]':
+              - img "Mathematics lesson with manipulatives and White Rose Maths" [ref=f4e337]
+              - generic [ref=f4e338]: "Year 3 Maths: Fraction reasoning with concrete manipulatives"
+            - 'button "View image: Cross-curricular STEM project display" [ref=f4e340]':
+              - img "Cross-curricular STEM project display" [ref=f4e341]
+              - generic [ref=f4e342]: "Year 5 STEM Project: Bridge design challenge – planning, testing, presenting"
+            - 'button "View image: Guided reading session with EAL learners" [ref=f4e344]':
+              - img "Guided reading session with EAL learners" [ref=f4e345]
+              - generic [ref=f4e346]: "Year 2 Guided Reading: Translanguaging scaffolds for comprehension"
+            - 'button "View image: Student writing showcase with moderation exemplars" [ref=f4e348]':
+              - img "Student writing showcase with moderation exemplars" [ref=f4e349]
+              - generic [ref=f4e350]: "Grade 5 Writing Moderation: Exemplars for narrative and persuasive texts"
+            - 'button "View image: Vocabulary wall with dual-language labels" [ref=f4e352]':
+              - img "Vocabulary wall with dual-language labels" [ref=f4e353]
+              - generic [ref=f4e354]: "Classroom Environment: Tier 2/3 vocabulary with visual supports"
+            - 'button "View image: Flexible seating arrangement for collaborative learning" [ref=f4e356]':
+              - img "Flexible seating arrangement for collaborative learning" [ref=f4e357]
+              - generic [ref=f4e358]: "Flexible Learning Zones: Choice in how and where to learn"
+            - 'button "View image: Inquiry cycle display board with student questions" [ref=f4e360]':
+              - img "Inquiry cycle display board with student questions" [ref=f4e361]
+              - generic [ref=f4e362]: "Inquiry Cycle Wall: Student questions driving the learning journey"
+            - 'button "View image: Multilingual word wall with student contributions" [ref=f4e364]':
+              - img "Multilingual word wall with student contributions" [ref=f4e365]
+              - generic [ref=f4e366]: "Multilingual Word Wall: Students add home-language cognates"
+    - region [ref=f4e367]:
+      - generic [ref=f4e368]:
+        - generic [ref=f4e369]: Practitioner Research
+        - heading [level=2] [ref=f4e370]:
+          - text: Evidence-Informed
+          - emphasis [ref=f4e371]: Practice
+        - generic [ref=f4e372]:
+          - heading "Questioning Strategies for Participation Equity in Bilingual Classrooms" [level=3] [ref=f4e373]
+          - paragraph [ref=f4e374]: PGCE Practitioner Research • University of Cumbria • 2025–2026
+          - generic [ref=f4e375]:
+            - paragraph [ref=f4e376]: This study examined how structured questioning sequences – combining extended wait time, open-ended prompts, and dialogic follow-ups – affect participation patterns among multilingual learners in primary bilingual settings.
+            - paragraph [ref=f4e377]: "Key implications: wait time must be explicitly taught and modelled; question sequences should be pre-plaed, not improvised; and translanguaging scaffolds enable learners to rehearse ideas in stronger language before expressing in English."
+        - paragraph [ref=f4e378]: ◀ Earlier Enquiries & Professional Learning ◀
+        - generic [ref=f4e379]:
+          - heading "Teacher Quality Assurance at Scale" [level=3] [ref=f4e380]
+          - paragraph [ref=f4e381]: WhiteHat Jr • 2020–2022
+          - paragraph [ref=f4e383]: Analysis of LMS data was used to identify instructional quality indicators and develop a scalable observation framework for remote teaching contexts.
+    - region [ref=f4e384]:
+      - generic [ref=f4e385]:
+        - generic [ref=f4e386]: Instructional Leadership
+        - heading [level=2] [ref=f4e387]:
+          - text: Leading
+          - emphasis [ref=f4e388]: Learning & Development
+        - generic [ref=f4e389]:
+          - generic [ref=f4e390]: "\"Good teaching and good coaching require the same discipline: specific feedback, clear standards, and honest accountability.\""
+          - generic [ref=f4e391]:
+            - generic [ref=f4e392]:
+              - heading "Teacher Mentoring & Coaching" [level=3] [ref=f4e393]
+              - paragraph [ref=f4e394]: Mentored early-career teachers through structured induction programmes – weekly observations, targeted feedback cycles, and collaborative planning. Mentees consistently rated "effective" or above on end-of-year evaluations.
+            - generic [ref=f4e395]:
+              - heading "Professional Development Design" [level=3] [ref=f4e396]
+              - paragraph [ref=f4e397]: Designed and facilitated pedagogical training for trainers across UK, Dubai, and Malta campuses (GEDU Global Education). Programmes covered dialogic teaching, EAL strategies, and assessment for learning.
+            - generic [ref=f4e398]:
+              - heading "Quality Assurance & Instructional Coaching" [level=3] [ref=f4e399]
+              - paragraph [ref=f4e400]: At WhiteHat Jr, conducted quality assurance reviews using LMS analytics to identify teaching inconsistencies. Developed an observation framework to improve inter-rater reliability and instructional consistency.
+            - generic [ref=f4e401]:
+              - heading "Curriculum Development" [level=3] [ref=f4e402]
+              - paragraph [ref=f4e403]: Adapted Canadian- and Singaporean-influenced curriculum expectations for Chinese primary bilingual contexts. Led Grade 5 writing moderation across year groups, establishing consistent standards and exemplars for teacher reference.
+    - region [ref=f4e404]:
+      - generic [ref=f4e405]:
+        - generic [ref=f4e406]: Get In Touch
+        - heading [level=2] [ref=f4e407]:
+          - text: Open to
+          - emphasis [ref=f4e408]: New Opportunities
+        - generic [ref=f4e409]:
+          - generic [ref=f4e410]:
+            - paragraph [ref=f4e411]: International primary educator specializing in EAL/multilingual learning and STEM. Available August 2027. Let's connect.
+            - link "Download CV" [ref=f4e412] [cursor=pointer]:
+              - /url: assets/documents/Mohammed_Shehzad_Khan_CV.pdf
+            - generic [ref=f4e413]:
+              - button "WeChat" [ref=f4e415]:
+                - generic [ref=f4e417]: ▾
+              - button "WhatsApp" [ref=f4e419]:
+                - generic [ref=f4e421]: ▾
+              - button "Email" [ref=f4e423]:
+                - generic [ref=f4e425]: ▾
+              - button "LinkedIn" [ref=f4e427]:
+                - generic [ref=f4e429]: ▾
+          - img "Mohammed Shehzad Khan – professional portrait photo" [ref=f4e431]
+  - contentinfo [ref=f4e437]:
+    - generic [ref=f4e438]:
+      - paragraph [ref=f4e439]: © 2026 Mohammed Shehzad Khan
+      - navigation "Footer" [ref=f4e440]:
+        - link "Story" [ref=f4e441] [cursor=pointer]:
+          - /url: "#story"
+        - link "Journey" [ref=f4e442] [cursor=pointer]:
+          - /url: "#journey"
+        - link "Impact" [ref=f4e443] [cursor=pointer]:
+          - /url: "#impact"
+        - link "Credentials" [ref=f4e444] [cursor=pointer]:
+          - /url: "#credentials"
+        - link "Philosophy" [ref=f4e445] [cursor=pointer]:
+          - /url: "#philosophy"
+        - link "Gallery" [ref=f4e446] [cursor=pointer]:
+          - /url: "#moments"
+        - link "Research" [ref=f4e447] [cursor=pointer]:
+          - /url: "#research"
+        - link "Leadership" [ref=f4e448] [cursor=pointer]:
+          - /url: "#leadership"
+        - link "Contact" [ref=f4e449] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=f4e450]:
+        - link "LinkedIn" [ref=f4e451] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/mdshezkhn
+        - link "Email" [ref=f4e452] [cursor=pointer]:
+          - /url: mailto:mdshezkhn@hotmail.com

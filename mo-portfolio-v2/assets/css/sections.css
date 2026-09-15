@@ -61,6 +61,24 @@
     }
 }
 
+/* Monogram fallback when portrait image fails to load */
+.hero-image .monogram {
+    width: 460px;
+    max-width: 100%;
+    aspect-ratio: 4 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fraunces", serif;
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: linear-gradient(135deg, var(--bg-accent), var(--bg-surface));
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    box-shadow: 0 24px 60px rgba(15,23,42,.14);
+}
+
 .hero-meta {
     display: flex;
     gap: 1.5rem;
@@ -608,6 +626,62 @@
     padding: 2rem 0;
 }
 
+/* Placeholder state for the Classroom in Practice section.
+   Honest, no invented images. */
+.gallery-empty p {
+    max-width: 60ch;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* ==========================================================
+   CREDENTIALS — notes (name variants, safeguarding)
+========================================================= */
+
+.cred-intro {
+    max-width: 68ch;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin-bottom: 2.5rem;
+}
+
+.cred-footnote {
+    margin-top: 2.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.cred-name-note {
+    margin-top: 1.75rem;
+    padding: 1rem 1.25rem;
+    background: var(--bg-soft, #f8fafc);
+    border-left: 3px solid var(--accent-soft, #cbd5e1);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
+.cred-name-note strong {
+    color: var(--ink, #1e293b);
+    font-weight: 600;
+}
+
+.cred-safeguard {
+    margin-top: 1.25rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
+.cred-safeguard strong {
+    color: var(--ink, #1e293b);
+    font-weight: 600;
+}
+
 /* â”€â”€ Lightbox (built by gallery.js) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .lightbox {
     position: fixed;
@@ -793,6 +867,32 @@
     object-fit: cover;
     border-radius: var(--radius-sm);
     box-shadow: 0 24px 60px rgba(15,23,42,.1);
+}
+
+/* Fallback when the contact portrait is missing or fails to load.
+   A styled monogram is more professional than a broken-image icon. */
+.contact-image.media-missing,
+.contact-image[data-media-missing] {
+    justify-content: center;
+    min-height: 280px;
+}
+
+.contact-image.media-missing::after {
+    content: "MSK";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 400px;
+    max-width: 70vw;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(135deg, var(--accent, #1e3a5f), var(--accent-soft, #334155));
+    color: #fff;
+    font-family: "Fraunces", serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    box-shadow: 0 24px 60px rgba(15,23,42,.15);
 }
 
 
@@ -992,3 +1092,56 @@ button.contact-link:focus-visible {
 .contact-modal-qr-wrap { display: flex; justify-content: center; margin-top: 1rem; }
 .contact-modal-qr { width: 160px; height: 160px; border-radius: 8px; object-fit: contain; border: 1px solid var(--border); background: #fff; }
 .contact-modal-actions { display: flex; justify-content: center; margin-top: 0.5rem; }
+
+/* ==========================================================
+   Languages strip + gallery slots (Phase 2 additions)
+========================================================== */
+
+.languages-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.lang-item {
+    background: var(--bg-accent);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+}
+
+.lang-item strong {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* Gallery photo slots — dashed placeholders until consent-cleared images arrive */
+.gallery-slots {
+    margin-top: 2rem;
+}
+
+.gallery-slot {
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm);
+    padding: 2rem;
+    text-align: center;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* See Me Teach block */
+.see-me-teach {
+    margin-top: 1.5rem;
+}
+
+.see-me-teach h3 {
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}

@@ -122,7 +122,7 @@ export const CREDENTIALS_REGISTRY = [
         period: "November 2017",
         year: 2017,
         featured: true,
-        public: false,         // Not yet in portfolio.json
+        public: true,         // Surfaced on the site (real certificate exists)
         description: "Teaching English to Speakers of Other Languages — Advanced pedagogy and business English specialization.",
         thumbnail: "assets/images/certificates/tesol-adv-doc-thumb.webp",
         alt: "Official Certificate Preview: TESOL Certification Collection, Global TESOL College Canada",
@@ -151,7 +151,7 @@ export const CREDENTIALS_REGISTRY = [
         period: "July 2025",
         year: 2025,
         featured: true,
-        public: false,         // Not yet in portfolio.json
+        public: true,         // Surfaced on the site (real certificate exists)
         description: "Teaching English as a Foreign Language across international & multilingual contexts.",
         certificate: "assets/images/certificates/tefl-doc-full.webp",
         thumbnail: "assets/images/certificates/tefl-doc-thumb.webp",
@@ -174,7 +174,7 @@ export const CREDENTIALS_REGISTRY = [
         period: "April 2026",
         year: 2026,
         featured: true,
-        public: false,         // Not yet in portfolio.json
+        public: true,         // Surfaced on the site (real certificate exists)
         description: "Professional learning focused on children's rights, safeguarding, child protection, equity, inclusive education, and the UN Convention on the Rights of the Child.",
         certificate: "assets/images/certificates/unicef-doc-full.webp",
         thumbnail: "assets/images/certificates/unicef-doc-thumb.webp",
