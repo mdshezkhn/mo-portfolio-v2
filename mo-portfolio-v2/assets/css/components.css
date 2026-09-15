@@ -14,7 +14,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    backdrop-filter: blur(18px);
+    backdrop-filter: blur(24px);
     background: rgba(248,250,252,.97);
     border-bottom: 1px solid var(--border);
     transition: box-shadow var(--transition);
@@ -100,9 +100,19 @@
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Active section link */
 .nav-links a[aria-current="page"] {
     color: var(--accent);
+    position: relative;
+}
+.nav-links a[aria-current="page"]::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
 }
 
 /* ==========================================================
@@ -130,8 +140,9 @@
 }
 
 .btn-primary {
-    background: var(--accent);
+    background: linear-gradient(135deg, var(--accent), var(--accent-gradient));
     color: white;
+    border: 1px solid var(--accent);
 }
 
 .btn-primary:hover {
@@ -296,9 +307,12 @@
 .stat-card {
     padding: 1.5rem;
     text-align: center;
+    background: white;
     box-shadow: var(--shadow-subtle);
     display: flex;
     flex-direction: column;
+    border-top: 3px solid var(--accent);
+    border-image: linear-gradient(to right, var(--accent), var(--accent-gradient)) 1;
 }
 .stat-num {
     order: -1;
@@ -334,9 +348,10 @@
     font-size: 0.85rem;
     font-weight: 500;
     padding: 0.4rem 0.8rem;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border-strong);
-    color: var(--text-secondary);
+    border-radius: 9999px;
+    border: 1px solid var(--accent-tint);
+    background: var(--accent-tint);
+    color: var(--accent);
     transition: var(--transition);
 }
 .chip:hover {
@@ -344,6 +359,7 @@
     color: var(--accent);
     background: var(--accent-soft);
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30,58,95,.15);
 }
 
 /* ── Credentials: Education ───────────────────────────── */
@@ -353,6 +369,7 @@
 }
 .edu-card {
     padding: 1.5rem;
+    border-top: 3px solid var(--warm-accent);
 }
 .edu-yr {
     display: block;
@@ -367,6 +384,7 @@
 .cert-card {
     padding: 1.5rem;
     transition: transform var(--transition);
+    border-top: 3px solid var(--warm-accent);
 }
 .cert-card:hover {
     transform: translateY(-4px);
