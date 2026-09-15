@@ -13,11 +13,26 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: clamp(3rem, 6vw, 4.8rem);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    letter-spacing: -0.03em;
 }
 
 h2 {
     font-size: clamp(2.3rem, 4vw, 3.2rem);
+    position: relative;
+    padding-bottom: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, var(--warm-accent), var(--accent-gradient));
+    border-radius: 2px;
 }
 
 h3 {
@@ -29,6 +44,7 @@ h3 {
 p {
     color: var(--text-secondary);
     max-width: 62ch;
+    line-height: 1.8;
 }
 
 /* ── Badges ──────────────────────────────────────────── */
@@ -62,9 +78,12 @@ p {
     display: inline-block;
     margin-bottom: 1.25rem;
     font-family: "Manrope", sans-serif;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--warm-accent);
+    background: var(--accent-tint);
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: .15em;
 }
