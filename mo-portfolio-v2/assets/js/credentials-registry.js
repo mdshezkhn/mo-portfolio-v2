@@ -10,7 +10,7 @@
 //   QUAL-3000 → qual-3000: Bachelor of Science, Physics (B.Sc.), University of Mumbai
 //   QUAL-3002 → qual-3002: Postgraduate Certificate in Education (PGCE), University of Cumbria
 //   QUAL-3003 → qual-3003: Bachelor of Education (B.Ed.), University of Kashmir
-//   QUAL-3001 → qual-3001: M.A. English Language & Literature, Harris University (not in public CV)
+//   QUAL-3001 → qual-3001: M.A. English Language & Literature, Harris University (card rendered in index.html)
 //   QUAL-6004 → qual-6004: TESOL Certification (Global TESOL College)  [not yet in portfolio.json]
 //   QUAL-6005 → qual-6005: TEFL Certification (Teacher Record)         [not yet in portfolio.json]
 //   QUAL-6007 → qual-6007: UNICEF Child Protection                     [not yet in portfolio.json]
@@ -87,7 +87,7 @@ export const CREDENTIALS_REGISTRY = [
         }
     },
 
-    // --- EDUCATION SECTION (not publicly rendered in portfolio.json — kept for future use) ---
+    // --- EDUCATION SECTION (public credential — card rendered in index.html) ---
     {
         canonical_id: "QUAL-3001",
         id: "ma",
@@ -97,7 +97,7 @@ export const CREDENTIALS_REGISTRY = [
         period: "2007 — 2009",
         year: 2009,
         featured: false,
-        public: false,          // Not rendered publicly (narration: minimal_only, verified_only_gate)
+        public: true,          // Card rendered in index.html; surfaced with its certificate
         description: "Master of Arts degree in English Language and Literature.",
         certificate: "assets/images/certificates/ma-doc-full.webp",
         thumbnail: "assets/images/certificates/ma-doc-thumb.webp",
