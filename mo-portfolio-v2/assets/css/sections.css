@@ -1180,3 +1180,166 @@ button.contact-link:focus-visible {
     margin-top: 1rem;
     color: var(--text-secondary);
 }
+
+/* ============================================================
+   Hygiene additions (Commit 5)
+   ============================================================ */
+
+/* Edu notes – italic + muted */
+.edu-note {
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+/* Contact links – add margin-top */
+.contact-links {
+    margin-top: 2.5rem;
+}
+
+/* Modal tabs – hidden by default (JS toggles display via element.style) */
+.modal-tabs {
+    display: none;
+}
+
+/* Modal flex container (status badge + year) */
+.modal-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Modal exhibit year */
+.modal-exhibit-year {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748B;
+}
+
+/* Documentary evidence note */
+.doc-evidence {
+    font-size: 0.8rem;
+    color: #64748B;
+}
+
+/* Screen-reader only utility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Artefacts section */
+.artefacts-intro {
+    max-width: 72ch;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+}
+
+.artefacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.artefact-card {
+    position: relative;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.artefact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.artefact-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.artefact-badge span {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: var(--border);
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.artefact-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.artefact-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.artefact-video {
+    padding: 2rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    text-align: center;
+}
+
+.artefact-video h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+}
+
+.artefact-video .video-meta {
+    margin-top: 1rem;
+    color: var(--text-secondary);
+}
+
+/* Testimonials section */
+#testimonials {
+    padding: var(--space-xl) 0;
+}
+
+#testimonials h2 {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-note {
+    max-width: 72ch;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Video frame responsive 16:9 */
+.video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    background: var(--bg);
+}
+
+.video-frame video,
+.video-frame iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
