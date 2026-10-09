@@ -1,8 +1,8 @@
-# Mohammed Shehzad Khan — Digital Portfolio
+# Mohammed Shehzad Khan — Digital Portfolio v2
 
-Professional portfolio website for Mohammed Shehzad Khan, an international primary educator with 11+ years of experience across India and China.
+Professional portfolio website for Mohammed Shehzad Khan, an international primary educator and teacher developer with 12 years of experience across India and China.
 
-**Live URL (GitHub Pages):** `https://mdshezkhn.github.io/mo-portfolio/`
+**Live URL (GitHub Pages):** `https://mdshezkhn.github.io/mo-portfolio-v2/`
 
 ---
 
@@ -31,7 +31,7 @@ A recruiter-focused professional platform designed to be credible, maintainable,
 ## Folder Structure
 
 ```
-mo-portfolio/
+mo-portfolio-v2/
 │
 ├── index.html               ← Single-page portfolio (full content)
 ├── README.md                ← This file
@@ -40,12 +40,9 @@ mo-portfolio/
 ├── robots.txt               ← Search engine directives
 ├── sitemap.xml              ← SEO sitemap
 ├── manifest.webmanifest     ← PWA/home screen metadata
-├── favicon.ico              ← Browser tab icon
-│
 ├── assets/
 │   ├── css/
-│   │   ├── style.css        ← Master @import entry point
-│   │   ├── variables.css    ← All design tokens
+│   │   ├── variables.css    ← Design tokens
 │   │   ├── reset.css        ← Browser normalisation + accessibility
 │   │   ├── typography.css   ← Heading scale, badges, eyebrow
 │   │   ├── layout.css       ← Container and section spacing
@@ -58,28 +55,23 @@ mo-portfolio/
 │   │   ├── main.js          ← Entry point (imports all modules)
 │   │   ├── navigation.js    ← Mobile menu + active section
 │   │   ├── animations.js    ← Header shadow + scroll-reveal
-│   │   ├── timeline.js      ← Stub (Sprint 4)
-│   │   ├── gallery.js       ← Stub (Sprint 5)
-│   │   └── theme.js         ← Stub (Sprint 6)
+│   │   ├── utilities.js     ← Image fallbacks
+│   │   ├── credentials-registry.js ← Credential data & rendering
+│   │   ├── credentials-modal.js  ← Modal display logic
+│   │   └── contact-reveal.js     ← Contact channel modals
 │   │
 │   ├── images/
-│   │   ├── profile/         ← profile.jpeg (hero portrait)
+│   │   ├── profile/         ← Profile photos
 │   │   ├── certificates/    ← Certificate thumbnail images
-│   │   ├── hero/            ← Hero background images
-│   │   ├── classroom/       ← Classroom photography
-│   │   ├── leadership/      ← Leadership and PD photos
-│   │   ├── gallery/         ← Gallery images
-│   │   └── logos/           ← School/organisation logos
+│   │   ├── social/          ← Social sharing images
+│   │   └── icons/           ← Favicons and app icons
 │   │
 │   ├── documents/
 │   │   ├── cv/              ← Current CV (internal reference)
-│   │   ├── certificates/    ← Scanned certificates
-│   │   ├── pgce/            ← PGCE-related documents
-│   │   └── publications/    ← Research papers
+│   │   └── artefacts/       ← Teaching artefacts (Q1–Q4 placeholders)
 │   │
 │   ├── downloads/           ← Public-facing recruiter downloads
-│   ├── icons/               ← Favicons, apple-touch-icon, manifest icons
-│   └── videos/              ← Demo lesson recordings
+│   └── videos/              ← Demo lesson recordings (placeholder)
 │
 ├── docs/                    ← PRD, visual identity, architecture docs
 ├── archive/                 ← Previous CSS versions (not served)
@@ -97,9 +89,9 @@ mo-portfolio/
 | Markup     | HTML5 (semantic, ARIA-labelled)             |
 | Styling    | Vanilla CSS (modular, no framework)         |
 | Script     | Vanilla JavaScript ES Modules (no build)    |
-| Fonts      | Google Fonts: Fraunces + Manrope            |
-| Deployment | GitHub Pages · GitLab Pages · Gitee Pages   |
-| CI/CD      | GitHub Actions · GitLab CI/CD               |
+| Fonts      | Self-hosted: Fraunces + Manrope (Google Fonts blocked in China) |
+| Deployment | GitHub Pages                                |
+| CI/CD      | GitHub Actions                              |
 | Version    | Git                                         |
 
 ---
@@ -108,7 +100,7 @@ mo-portfolio/
 
 No build step required.
 
-1. Open the `mo-portfolio/` folder in VS Code.
+1. Open the `mo-portfolio-v2/` folder in VS Code.
 2. Install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
 3. Right-click `index.html` → **Open with Live Server**.
 4. Visit `http://127.0.0.1:5500/`.
@@ -119,37 +111,15 @@ No build step required.
 
 ## Deployment
 
-### GitHub Pages
+### GitHub Pages (Automatic via GitHub Actions)
 
-1. Create a repository at `github.com` (e.g. `mdshezkhn/mo-portfolio`).
-2. Add the remote: `git remote add origin https://github.com/mdshezkhn/mo-portfolio.git`
-3. Push: `git push -u origin main`
-4. In GitHub repo → **Settings** → **Pages** → Source: **GitHub Actions**.
-5. The [deploy.yml](.github/workflows/deploy.yml) workflow will auto-deploy on every push to `main`.
-6. Your site will be live at `https://mdshezkhn.github.io/mo-portfolio/`.
+The site deploys automatically on every push to `main` via GitHub Actions.
 
-> Update the `canonical` URL in `index.html` and the Sitemap/robots.txt with your actual URL.
+1. Push to `main` branch of `mdshezkhn/mo-portfolio-v2`
+2. The [deploy.yml](.github/workflows/deploy.yml) workflow builds and deploys the site
+3. Your site will be live at `https://mdshezkhn.github.io/mo-portfolio-v2/`
 
----
-
-### GitLab Pages
-
-1. Create a project at `gitlab.com` (e.g. `mdshezkhn/mo-portfolio`).
-2. Add the remote: `git remote add gitlab https://gitlab.com/mdshezkhn/mo-portfolio.git`
-3. Push: `git push gitlab main`
-4. The [.gitlab-ci.yml](.gitlab-ci.yml) pipeline will auto-deploy on every push.
-5. In GitLab project → **Deploy** → **Pages** to see your Pages URL.
-
----
-
-### Gitee Pages
-
-1. Create a repository at `gitee.com` (e.g. `mdshezkhn/mo-portfolio`).
-2. Add the remote: `git remote add gitee https://gitee.com/mdshezkhn/mo-portfolio.git`
-3. Push: `git push gitee main`
-4. In Gitee repo → **Services** → **Gitee Pages** → select `main` branch → **Deploy**.
-
-> Gitee Pages may require email/phone verification. The site uses only relative asset paths so it works on all three platforms without changes.
+> The canonical URL in `index.html` and sitemap.xml is already set correctly.
 
 ---
 
@@ -163,24 +133,36 @@ No build step required.
 
 ## How to Update Profile Photo
 
-1. Replace `assets/images/profile/profile.jpeg` with the new photo.
+1. Replace `assets/images/profile/profile.webp` with the new photo.
 2. Maintain the same filename to avoid updating HTML.
-3. Recommended: 460×575px, JPEG, under 200KB.
+3. Recommended: 460×575px, WEBP, under 200KB.
 
 ---
 
 ## How to Update Certificates
 
-1. Add new certificate thumbnail images to `assets/images/certificates/`.
-2. Add a new `.cert-card` block to the Certifications section of `index.html`.
-3. Follow the existing pattern (`cert-thumb`, `cert-name`, `cert-issuer`, `cert-desc`).
+Certificate thumbnails are managed automatically via `credentials-registry.js`. To add a new certificate:
+
+1. Add the thumbnail and full document to `assets/images/certificates/`
+2. Add an entry to `credentials-registry.js` in the `CREDENTIALS_REGISTRY` array
+3. Set `public: true` to surface it on the site
+4. Commit and push — the site will redeploy automatically
 
 ---
 
 ## Core Principles
 
-1. **Evidence over claims** — every statement traceable to a source.
-2. **Nothing AI-invented** — no fabricated achievements, dates, statistics, or testimonials.
-3. **Safeguarding first** — no identifiable students without documented consent.
-4. **Design for longevity** — timeless over trendy.
-5. **Accessibility (WCAG 2.1 AA)** — maintained in every update, not just at launch.
+1. **Evidence over claims** — every statement traceable to a source. All numbers, dates, and achievements are verifiable through documentation.
+2. **Nothing AI-invented** — no fabricated achievements, dates, statistics, or testimonials. Content is based on real experience and evidence.
+3. **Safeguarding first** — no identifiable students without documented consent. Classroom artefacts avoid student-identifiable material.
+4. **Design for longevity** — timeless over trendy. Focus on substance and clarity rather than fleeting design trends.
+5. **Accessibility (WCAG 2.1 AA)** — maintained in every update, not just at launch. Semantic HTML, ARIA labels, proper heading hierarchy, and colour contrast ratios.
+
+---
+
+## Credits & Acknowledgements
+
+- Site built and maintained by Mohammed Shehzad Khan
+- Icons: Custom SVGs based on Fraunces typeface
+- Fonts: Self-hosted Fraunces and Manrope for reliability in China
+- Deployment: GitHub Actions for zero-configuration CI/CD
