@@ -4,23 +4,25 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Node (not used, but here for safety)
+# Node / Next.js
 node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
 
 # Private documents — never commit
 private/
+
+# Working sources for generated assets (large originals stay local)
+portfolio-src/
 
 # Build outputs
 dist/
 
 # QA and audit artifacts
 _qa_shots/
-_before.html
-live_index.html
-lighthouse-report.json
-
-# Backup directories
-backups/
+qa/
 
 # Planning docs (keep local only)
 docs/PRD.md
@@ -37,3 +39,6 @@ docs/RECRUITER_OBJECTION_MAP.md
 docs/portfolio-constitution.md
 docs/governance/
 docs/specification/
+
+# Host runtime leak (never commit)
+.next-personal/
