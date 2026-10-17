@@ -29,7 +29,7 @@ export interface Profile {
 
 export const PROFILE: Profile = {
   name: "Mohammed Shehzad Khan",
-  firstName: "Shehzad",
+  firstName: "Mohammed",
   initials: "MSK",
   role: "International Primary EAL Educator",
   email: "mdshezkhn@hotmail.com",
