@@ -18,25 +18,6 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [2.0.0] - 2026-10-17 — Talking-video rebuild
-
-### Changed
-- **Full rebuild as a Next.js 15 "talking-video" portfolio** (React 19, TypeScript, Tailwind CSS 4, Lenis — the only animation dependency). Static export deployed via the updated GitHub Pages workflow (build step added, uploads `out/`).
-- New art direction: quiet premium paper/ink/gray system (`--paper #f4f2ee`), Inter Tight + Instrument Serif italic accent + JetBrains Mono, self-hosted via `next/font/local`.
-- Sections: Hero (talking video, seamless loop, mix-blend multiply, sound toggle) → About (hanging lanyard TEACHER ID card, pendulum physics, flip) → Skills (periodic table + sticky inspector, official brand logos) → Work (expanding accordion gallery, grayscale illustrative mini-UIs) → Certifications (ink-flood index) → Experience (scroll-drawn timeline) → Achievements (pinned horizontal gallery, count-up numbers) → Contact (letter-hop heading, copy-email chip, spinning badge).
-- All content moved to `src/lib/data.ts`, sourced exclusively from the résumé PDF; achievements use only verifiable counts (publication-policy compliant — no 200+/1,000+ claims).
-- First-load JS ≈ 129 kB. `npm run build` passes clean.
-
-### Added
-- `scripts/build-hero-assets.py` — ffmpeg pipeline: person detection/auto-crop, background whitening, seamless video+audio cross-fade loop, hero.mp4 (H.264/AAC) + hero.webm (VP9/Opus), portrait-bust; `--placeholder` mode generated the current silent breathing-zoom hero from the portrait photo.
-- `public/og.jpg` (1200×630), self-hosted fonts in `src/fonts`, brand logos in `public/logos` (simple-icons CC0 + hand-drawn Microsoft mark) with LICENSE.
-- Résumé copied to `public/resume/` for the Résumé ↓ buttons.
-
-### Preserved
-- Previous static site fully retained under `legacy/` (and git history); repo docs unchanged.
-
----
-
 ## [1.0.0] - 2026-07-22
 
 ### Added
