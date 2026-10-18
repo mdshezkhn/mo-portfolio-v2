@@ -105,6 +105,6 @@ education_records:
   review_status: approved
 - id: QUAL-6007
   entity_type: professional_development
-  degree: UNICEF Child Protection
+  degree: "What We Stand For: Essentials of Children's Rights"
   institution_id: ORG-1010
   review_status: approved

@@ -13,7 +13,7 @@
 //   QUAL-3001 → qual-3001: M.A. English Language & Literature, Harris University (card rendered in index.html)
 //   QUAL-6004 → qual-6004: TESOL Certification (Global TESOL College)  [not yet in portfolio.json]
 //   QUAL-6005 → qual-6005: TEFL Certification (Teacher Record)         [not yet in portfolio.json]
-//   QUAL-6007 → qual-6007: UNICEF Child Protection                     [not yet in portfolio.json]
+//   QUAL-6007 → qual-6007: What We Stand For: Essentials of Children's Rights                     [not yet in portfolio.json]
 
 export const CREDENTIALS_REGISTRY = [
     // --- EDUCATION SECTION (public credentials in portfolio.json) ---
