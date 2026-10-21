@@ -11,18 +11,21 @@ _MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 def format_period(raw):
-    """Render '2024-02 - 2026-07' as 'Feb 2024 - Jul 2026' for display only.
-    The machine-readable value remains in the <time datetime> attribute."""
+    """Render '2024-02 - 2026-07' (or full dates like '2026-07-09') as
+    'Feb 2024 - Jul 2026' for display only. The machine-readable value
+    remains in the <time datetime> attribute."""
     if not raw:
         return raw
+    import re as _re
+    # Normalise full dates (YYYY-MM-DD) down to YYYY-MM before matching.
+    raw = _re.sub(r"(\d{4})-(\d{2})-\d{2}", r"\1-\2", str(raw))
     def _one(tok):
         tok = tok.strip()
         parts = tok.split("-")
         if len(parts) == 2 and parts[0].isdigit() and 1 <= int(parts[1]) <= 12:
             return f"{_MONTHS[int(parts[1]) - 1]} {parts[0]}"
         return tok
-    import re as _re
-    m = _re.match(r"^\s*(\d{4}-\d{2})\s*(?:-|–)\s*(\d{4}-\d{2})\s*$", str(raw))
+    m = _re.match(r"^\s*(\d{4}-\d{2})\s*(?:-|–)\s*(\d{4}-\d{2})\s*$", raw)
     if m:
         return f"{_one(m.group(1))} - {_one(m.group(2))}"
     return raw
@@ -85,7 +88,7 @@ def render_qualification(qual):
                         </div>
                         <h4 class="edu-title">{qual['degree']}</h4>
                         <p class="edu-sch">{qual['institution']}</p>
-                        <time class="edu-yr">{qual['date']}</time>
+                        <time class="edu-yr" datetime="{qual['date']}">{format_period(qual['date'])}</time>
                     </div>"""
     return html
 
