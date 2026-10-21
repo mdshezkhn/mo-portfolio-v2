@@ -65,6 +65,15 @@ main[tabindex="-1"]:focus {
     top: 1rem;
 }
 
+.skip-link:focus {
+    left: 1rem;
+    z-index: 100;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+}
+
 .skip-link:focus-visible {
     left: 1rem;
     background: var(--accent);
