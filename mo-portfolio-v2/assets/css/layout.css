@@ -66,6 +66,9 @@ footer {
     gap: 1rem 1.25rem;
 }
 
+/* Dark-section override: global `p` colour (#374151) fails contrast on #0F172A. */
+footer p { color: rgba(255,255,255,0.7); }
+
 .footer-nav a {
     color: rgba(255,255,255,0.6);
     font-size: 0.9rem;
