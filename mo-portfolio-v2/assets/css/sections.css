@@ -289,8 +289,7 @@
     padding-left: 1.5rem;
     color: var(--text-secondary);
     width: 100%;
-    text-align: justify;
-    hyphens: auto;
+    text-align: left;
 }
 
 /* Multi-column layout removed â€“ bullets now span the full content width
@@ -832,6 +831,13 @@
 }
 
 #contact .clabel { color: rgba(255,255,255,0.6); }
+/* Dark-section overrides: the global `p` and `em` rules use light-theme
+   colours (#374151 / #1E3A5F) which fail contrast on #111827 (1.7:1 / 1.5:1).
+   Scoped here so other sections are untouched. Measured ratios vs #111827:
+   rgba(255,255,255,.85) = 12.9:1, --warm-accent = 5.2:1 (WCAG 2.2 AA pass). */
+#contact p { color: rgba(255,255,255,0.85); }
+#contact em { color: var(--warm-accent); }
+#contact .btn-primary { border-color: rgba(255,255,255,0.55); }
 #contact .contact-link { color: white; border-color: rgba(255,255,255,0.1); }
 #contact .contact-link:hover { border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.05); }
 
