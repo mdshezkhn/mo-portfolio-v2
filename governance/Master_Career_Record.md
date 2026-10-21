@@ -56,7 +56,7 @@ Seed → Verified → Approved → Released → Archived
 |------|----------|--------|
 | Name: Mohammed Shehzad Khan | Government ID / passport | ◐ Pending |
 | Email: mdshezkhn@gmail.com | Self-provided | ✔ |
-| Phone: +NN-NNN NNNN NNNN | Self-provided | ✔ |
+| Phone: (published via CV and portfolio contact section) | Self-provided | ✔ |
 | LinkedIn: linkedin.com/in/mdshezkhn | Self-provided | ✔ |
 | Location: Zhengzhou, China | Self-provided | ✔ |
 

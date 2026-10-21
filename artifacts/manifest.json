@@ -8942,16 +8942,6 @@
     },
     {
       "classification": "generated",
-      "filename": "RECRUITER_OBJECTION_MAP.md",
-      "mime_type": "text/markdown",
-      "modified_date": "2026-07-18T15:07:00.203233+00:00",
-      "relative_path": "mo-portfolio-v2/docs/RECRUITER_OBJECTION_MAP.md",
-      "sha256": "20e6908926189537ccdf58a26624d11bf374d632ed3561774f2a28dae8d4cd85",
-      "size": 5719,
-      "traceability": "prohibited"
-    },
-    {
-      "classification": "generated",
       "filename": "RELEASE_PLAN.md",
       "mime_type": "text/markdown",
       "modified_date": "2026-07-17T07:04:56+00:00",
