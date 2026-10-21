@@ -67,7 +67,7 @@ mo-portfolio-v2/
 │   │   └── icons/           ← Favicons and app icons
 │   │
 │   ├── documents/
-│   │   ├── cv/              ← Current CV (internal reference)
+│   │   ├── Mohammed_Shehzad_Khan_CV.pdf  ← Current CV
 │   │   └── artefacts/       ← Teaching artefacts (Q1–Q4 placeholders)
 │   │
 │   ├── downloads/           ← Public-facing recruiter downloads
@@ -125,7 +125,7 @@ The site deploys automatically on every push to `main` via GitHub Actions.
 
 ## How to Update the CV
 
-1. Replace `assets/documents/cv/Mohammed_Shehzad_Khan_CV.pdf` with the new version.
+1. Replace `assets/documents/Mohammed_Shehzad_Khan_CV.pdf` with the new version.
 2. If you rename the file, also update the `href` in the two Download CV buttons in `index.html`.
 3. Commit and push — the site will redeploy automatically.
 
