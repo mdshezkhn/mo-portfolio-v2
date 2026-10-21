@@ -176,12 +176,7 @@ employment_records:
     type: Fixed-term employment contract
     signed: 2023-12-27
     probation_end: 2024-04-14
-    monthly_fee_cny: NNNNN
     working_hours: 8 hours/day, 5 days/week, max 20 periods/week
-    benefits:
-    - One round-trip air ticket (economy class)
-    - Shared apartment with individual room
-    - Accommodation subsidy CNY NNNN/month if living alone
     termination_notice: 60 days advance notice required
   historical_highlights:
   - text: Delivered foundational EAL and English instruction to primary and lower-secondary

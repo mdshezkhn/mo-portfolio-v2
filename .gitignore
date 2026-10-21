@@ -102,3 +102,17 @@ career.ps1
 private/
 temp_certs/
 compiled_assets/
+# ── Security containment (2026-10-26) ─────────────────────────────
+# Operational / career-strategy material: local only, never public.
+# See remediation branch remediation/security-quality-2026-10.
+Candidate_Execution/
+application_strategies/
+EVIDENCE_LIBRARY/
+patches/
+docs/
+audit/
+releases/
+mo-portfolio/
+.playwright-mcp/
+Claude Code skills/
+career-data/facts/claims/restricted.yml
