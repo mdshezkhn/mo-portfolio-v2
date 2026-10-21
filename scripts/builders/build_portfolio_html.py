@@ -6,6 +6,27 @@ BASE_DIR = Path(__file__).parent.parent.parent
 PORTFOLIO_VM_PATH = BASE_DIR / "artifacts" / "cv_view_models" / "portfolio.json"
 INDEX_HTML_PATH = BASE_DIR / "mo-portfolio-v2" / "index.html"
 
+
+_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+def format_period(raw):
+    """Render '2024-02 - 2026-07' as 'Feb 2024 - Jul 2026' for display only.
+    The machine-readable value remains in the <time datetime> attribute."""
+    if not raw:
+        return raw
+    def _one(tok):
+        tok = tok.strip()
+        parts = tok.split("-")
+        if len(parts) == 2 and parts[0].isdigit() and 1 <= int(parts[1]) <= 12:
+            return f"{_MONTHS[int(parts[1]) - 1]} {parts[0]}"
+        return tok
+    import re as _re
+    m = _re.match(r"^\s*(\d{4}-\d{2})\s*(?:-|–)\s*(\d{4}-\d{2})\s*$", str(raw))
+    if m:
+        return f"{_one(m.group(1))} - {_one(m.group(2))}"
+    return raw
+
 def render_experience(exp):
     year = exp.get("date", "").split(" - ")[0].split("-")[0] if exp.get("date") else "Unknown"
     
@@ -18,14 +39,14 @@ def render_experience(exp):
                                 <div class="tl-main">
                                     <div class="tl-top">
                                         <h3 class="tl-title">{exp['role']}</h3>
-                                        <time class="tl-date" datetime="{exp['date']}">{exp['date']}</time>
+                                        <time class="tl-date" datetime="{exp['date']}">{format_period(exp['date'])}</time>
                                     </div>
                                     <p class="tl-org">{exp['company']}</p>
 """
     # Render responsibilities (role scope) - always shown
     if exp.get("responsibilities"):
         html += """                                    <div class="tl-responsibilities">
-                                        <h4 class="tl-section-title">Role Scope</h4>
+                                        <h4 class="tl-section-title">Responsibilities</h4>
                                         <ul class="tl-bullets tl-responsibility-list">
 """
         for resp in exp["responsibilities"]:
