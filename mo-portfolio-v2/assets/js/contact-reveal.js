@@ -1,7 +1,7 @@
 /* ==========================================================
    contact-reveal.js
    Contact-section modal launcher. Clicking a contact-link
-   (WeChat, WhatsApp, Email, LinkedIn) opens a single shared
+   (WeChat, Email, LinkedIn) opens a single shared
    modal whose body is populated from a channel-specific
    template. Phone numbers, email addresses, profile URLs, and
    QR thumbnails stay hidden until the visitor explicitly
@@ -20,20 +20,6 @@ const CHANNEL_CONTENT = {
                 <p class="contact-modal-hint">Scan the QR code below with the WeChat app to add me as a contact, or send the number above.</p>
                 <div class="contact-modal-qr-wrap">
                     <img src="assets/images/social/wechat-qr.png" alt="WeChat QR code" class="contact-modal-qr" loading="lazy">
-                </div>
-            </div>
-        `
-    },
-    whatsapp: {
-        title: 'Connect on WhatsApp',
-        subtitle: 'India — also reachable on WhatsApp',
-        bodyHtml: `
-            <div class="contact-modal-channel">
-                <p class="contact-modal-label">WhatsApp / Mobile</p>
-                <p class="contact-modal-value">+91 98695 06845</p>
-                <p class="contact-modal-hint">Scan the QR code below with the WhatsApp app, or send the number above.</p>
-                <div class="contact-modal-qr-wrap">
-                    <img src="assets/images/social/whatsapp-qr.png" alt="WhatsApp QR code" class="contact-modal-qr" loading="lazy">
                 </div>
             </div>
         `
