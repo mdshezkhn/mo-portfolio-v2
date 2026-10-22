@@ -18,13 +18,8 @@ contact_channels:
     source_type: user-approved-public-contact
     status: VERIFIED_FOR_PUBLICATION
   phone_china:
-    value: "+NN-NNN NNNN NNNN"
+    value: "+86-131 3771 9002"
     label: "China (WeChat)"
-    source_type: user-approved-public-contact
-    status: VERIFIED_FOR_PUBLICATION
-  phone_india:
-    value: "+NN NNNNN NNNNN"
-    label: "India (WhatsApp)"
     source_type: user-approved-public-contact
     status: VERIFIED_FOR_PUBLICATION
   linkedin:
